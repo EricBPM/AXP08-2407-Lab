@@ -1,0 +1,25 @@
+{
+    "enableBackup": false,
+    "historizedSymbolList": {
+        "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Actual_FtMin": {
+            "interval": "PT2S",
+            "maxEntries": 302400,
+            "recordingEnabled": true,
+            "rowLimit": 100000
+        },
+        "PLC1.GVL_Pelletizer.MyPelletizer.Rotor_Actual_RPM": {
+            "interval": "PT2S",
+            "maxEntries": 302400,
+            "recordingEnabled": true,
+            "rowLimit": 100000
+        },
+        "PLC1.GVL_Rotor.Rotor_Active_Torque": {
+            "interval": "PT2S",
+            "maxEntries": 302400,
+            "recordingEnabled": true,
+            "rowLimit": 100000
+        }
+    },
+    "inMemory": false,
+    "maxBackups": 1
+}

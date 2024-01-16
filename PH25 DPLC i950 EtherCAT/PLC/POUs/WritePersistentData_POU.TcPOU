@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="WritePersistentData_POU" Id="{bb6752cc-be10-4648-9020-b5bf89ac9f30}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM WritePersistentData_POU
+VAR
+    NETID  : T_AmsNetId := '';		//AMS Net ID. An empty string designates the local machine.
+    PORT   : UINT := 851;			//Always port 851 for our simple stuff
+    START  : BOOL;					//Start bit
+    TMOUT  : TIME := DEFAULT_ADS_TIMEOUT;	
+    fbWritePersistentData : FB_WritePersistentData;		//Instance name
+    fbR_Trig              : R_TRIG;						//Use a rising edge trigger. This coupled with a pelletizer Running command gives us deterministic saving of variables.
+END_VAR
+
+
+
+// This POU is only used on PCs without integrated UPS Backup. 
+// All Beckhoff controllers have this function integrated.
+// This was written in for the PH25-Beta machine which used a Teguar 3rd party PC as its contoller.
+//You can delete this whole POU if you are using a Beckhoff controller.]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+
+
+fbR_Trig( CLK:=GVL_Pelletizer.Pelletizer_Running);
+IF fbR_Trig.Q THEN
+	fbWritePersistentData(NETID:=NETID,PORT:=PORT, START := GVL_Pelletizer.Pelletizer_Running, TMOUT:=TMOUT, MODE:=1);
+ELSE
+    fbWritePersistentData( START:=FALSE);
+END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="WritePersistentData_POU">
+      <LineId Id="22" Count="2" />
+      <LineId Id="17" Count="1" />
+      <LineId Id="5" Count="0" />
+      <LineId Id="20" Count="1" />
+      <LineId Id="19" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

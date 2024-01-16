@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="DPLC" Id="{ff54fcd7-1f14-43df-9a76-1ad4a6403660}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM DPLC
+VAR
+	DPLC : E_DPLC;
+
+	
+
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[DPLC(
+	Pelletizer_Running := GVL_Pelletizer.Pelletizer_Running,
+	Pellet_Length_Inch_Input := GVL_Pelletizer.Pellet_Length_Inch_Input, 
+	Pellet_Length_Calibration_Value := GVL_Pelletizer.Pellet_Length_Calibration_Value,
+	Speed_Input_Percent := 	GVL_Feedroll.Feedroll_Analog_Input, 
+	FeedRate_Feet_Per_Minute_Input := GVL_Feedroll.FeedRate_Feet_Per_Minute_Input,
+	RotorMotor_Rated_RPM := GVL_Pelletizer.MyPelletizer.Rotor_Motor.Motor_Rated_RPM, 
+	RotorMotor_Rated_Hz := GVL_Pelletizer.MyPelletizer.Rotor_Motor.Motor_Rated_Hz, 
+	RotorMotor_Max_Hz := GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Maximum_Frequency,
+	RotorMotor_Min_Hz := GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Minimum_Frequency,
+	RotorMotor_Actual_RPM := GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Output_RPM,
+	Rotor_Drive_Pulley := GVL_Pelletizer.MyPelletizer.Rotor_Drive_Pulley,
+	Rotor_Driven_Pulley := GVL_Pelletizer.MyPelletizer.Rotor_Driven_Pulley, 
+	Rotor_Tooth_Count := GVL_Pelletizer.MyPelletizer.Rotor_Tooth_Count, 
+	Rotor_RPM_Limit := GVL_Pelletizer.MyPelletizer.Rotor_RPM_Limit,
+	FeedrollMotor_Rated_RPM := GVL_Pelletizer.MyPelletizer.Feedroll_Motor.Motor_Rated_RPM, 
+	FeedrollMotor_Rated_Hz := GVL_Pelletizer.MyPelletizer.Feedroll_Motor.Motor_Rated_Hz, 
+	FeedrollMotor_Max_Hz := GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Maximum_Frequency,
+	FeedrollMotor_Min_Hz := GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Minimum_Frequency,
+	Actual_FeedrollMotor_Speed_RPM := GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Output_RPM,
+	Feedroll_Drive_Pulley := GVL_Pelletizer.MyPelletizer.Feedroll_Drive_Pulley, 
+	Feedroll_Driven_Pulley := GVL_Pelletizer.MyPelletizer.Feedroll_Driven_Pulley, 
+	Feedroll_Diameter_Inch := GVL_Pelletizer.MyPelletizer.Feedroll_Diameter_Inch, 
+	Metric_Set_Bit := GVL_Pelletizer.Metric_Set_Bit,
+	Feedroll_Motor_Speed_Hz_int => GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Input_Hz,
+	Feedroll_Motor_Speed_RPM_int => GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Input_RPM,
+	Rotor_Motor_Speed_Hz_int => GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Input_Hz,
+	Rotor_Motor_Speed_RPM_int => GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Input_RPM,
+	FeedRate_Feet_Per_Minute => GVL_Pelletizer.MyPelletizer.Feedroll_Actual_FtMin,
+	FeedRate_Meters_Per_Minute => GVL_Pelletizer.MyPelletizer.Feedroll_Actual_MetersMin,
+	Rotor_Speed_RPM => GVL_Pelletizer.MyPelletizer.Rotor_Actual_RPM,
+	Rotor_RPM_Minimum => GVL_Rotor.Rotor_RPM_Minimum,
+	Maximum_Line_Speed => GVL_Pelletizer.Maximum_Line_Speed,
+	Minimum_Line_Speed => GVL_Pelletizer.Minimum_Line_Speed,
+	Maximum_Pellet_Length => GVL_Pelletizer.Maximum_Pellet_Length,
+	Minimum_Pellet_Length => GVL_Pelletizer.Minimum_Pellet_Length,
+);]]></ST>
+    </Implementation>
+    <LineIds Name="DPLC">
+      <LineId Id="208" Count="0" />
+      <LineId Id="283" Count="0" />
+      <LineId Id="209" Count="2" />
+      <LineId Id="284" Count="0" />
+      <LineId Id="212" Count="3" />
+      <LineId Id="294" Count="0" />
+      <LineId Id="216" Count="12" />
+      <LineId Id="230" Count="0" />
+      <LineId Id="263" Count="0" />
+      <LineId Id="231" Count="0" />
+      <LineId Id="264" Count="0" />
+      <LineId Id="233" Count="0" />
+      <LineId Id="285" Count="0" />
+      <LineId Id="266" Count="0" />
+      <LineId Id="234" Count="5" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

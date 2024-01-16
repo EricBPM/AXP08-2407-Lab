@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="E_DPLC" Id="{12f183b9-f611-49cc-a11a-80a2460e94a6}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK E_DPLC
+VAR_INPUT
+	Pelletizer_Running : BOOL;	
+
+	Pellet_Length_Inch_Input : REAL;			// Sets the length of pellet to be cut. Always in Inches
+	Pellet_Length_Calibration_Value : REAL;		//Set to 1 if not being used.
+	
+	Speed_Input_Percent: REAL;					//The speed input must be a percentage.
+	FeedRate_Feet_Per_Minute_Input : REAL;
+
+
+
+	RotorMotor_Rated_RPM : REAL;				//The Rotor Motor Rated RPM @ Nominal Frequency
+	RotorMotor_Rated_Hz: REAL;					//The Rotor Motor Rated Frequency
+	RotorMotor_Max_Hz : REAL;					//The Rotor Motor Max Frequency (The Upper Hz Limit)
+	RotorMotor_Min_Hz : REAL;					//The Rotor Motor Min Frequency (The Lower Hz Limit), Only used for calculations
+	RotorMotor_Actual_RPM : REAL;				//The speed read back from the rotor VFD for display.
+
+	Rotor_Drive_Pulley: REAL;					//The Drive Pulley attached to the Rotor Motor
+	Rotor_Driven_Pulley: REAL;					//The Driven Pulley attached to the Rotor Shaft
+	Rotor_Tooth_Count: REAL;					//The number of Teeth on the Rotor Body
+	Rotor_RPM_Limit: REAL;						//The software limit in which the rotor must not exceed, This can be different than the maximum Frequency.
+	
+	FeedrollMotor_Rated_RPM: REAL;				//The Feedroll Motor Rated RPM @ Nominal Frequency
+	FeedrollMotor_Rated_Hz: REAL;				//The Feedroll Motor Rated Frequency
+	FeedrollMotor_Max_Hz : REAL;				//The Feedroll Motor Max Frequency (The Upper Hz Limit)
+	FeedrollMotor_Min_Hz : REAL;				//The Feedroll Motor Min Frequency (The Lower Hz Limit), Only used for calculations
+	Actual_FeedrollMotor_Speed_RPM : INT;		//The Feedroll Motor Speed read back from the drive in RPM.
+
+	Feedroll_Drive_Pulley: REAL;				//The Drive Pulley attached to the Feedroll Motor
+	Feedroll_Driven_Pulley: REAL;				//The Driven Pulley attached to the Feedroll Shaft
+	Feedroll_Diameter_Inch: REAL;				//The Diameter of the driven Feedroll
+	
+
+	Metric_Set_Bit : BOOL;						//This converts the calculated variables into their metric form.
+
+END_VAR
+
+VAR
+	FeedrollMot_Speed_Hz : REAL;
+	FeedrollMot_Speed_RPM : REAL;
+	FeedrollMot_RPM_Per_Hz : REAL;
+
+	Feedroll_Pulley_Ratio: REAL;
+	Feedroll_Speed_RPM: REAL;
+	Feedroll_Speed_RPM_Actual : REAL;
+	Feedroll_Speed_RPM_Temp : REAL;
+	Feedroll_Circumference_Inch :REAL;
+
+	RotorMot_Speed_Hz : REAL;
+	RotorMot_Speed_RPM : REAL;
+	RotorMot_RPM_Per_Hz : REAL;
+
+
+	Rotor_Pulley_Ratio: REAL;
+	Cuts_Per_Minute: REAL;
+	
+	Min_Cuts_Per_Minute : REAL;
+	Max_Cuts_Per_Minute : REAL;
+	
+	FeedRate_Inches_Per_Minute: REAL;
+	FeedRate_Inches_Per_Minute_Temp : REAL;
+	
+	FeedRate_Feet_Per_Minute_Temp : REAL;		//
+	Rotor_Speed_RPM_Temp : REAL;				//This is used to see if we have exceeded the maximum rotor speed soft limit.
+END_VAR
+
+VAR_OUTPUT
+	Feedroll_Motor_Speed_Hz_int : INT;			//This is the variable to write to the Feedroll Drive if the drive must use Hz to control speed
+	Rotor_Motor_Speed_Hz_int : INT;  			//This is the variable to write to the Rotor Drive if the drive must use Hz to control speed
+												//***Note - Ms: Velocity Mode (-2) uses Hz to control speed
+
+	Feedroll_Motor_Speed_RPM_int : INT;			//This is the variable to write to the Feedroll Drive if the Drive uses RPM to control speed
+	Rotor_Motor_Speed_RPM_int : INT;			//This is the variable to write to the Rotor Drive if the Drive uses RPM to control speed
+												//***Note - It is preferred to use RPM as it yeilds a more accurate pellet length. 
+
+	FeedRate_Feet_Per_Minute: REAL;				//This is the Displayed Ft/min on the HMI
+	FeedRate_Meters_Per_Minute: REAL;			//This is the Displayed M/min on the HMI
+	Rotor_Speed_RPM : REAL;						//This is the Displayed Rotor RPM on the HMI
+	
+
+	Rotor_RPM_Exceeded : BOOL;					// This is a flag that says the max rotor speed has been exceeded.
+	
+//////Calculated Data for Display Only
+	Rotor_RPM_Minimum : REAL; // info for Gauge on HMI
+	Maximum_Line_Speed : REAL;	//info for machine limits
+	Minimum_Line_Speed: REAL;	//info for machine limits
+	Maximum_Pellet_Length : REAL;	//info for machine limits
+	Minimum_Pellet_Length : REAL;	//info for machine limits
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[////////////////////////////Notes and Information/////////////////////////////////////////////////////////////////////////////////////////////////////
+//         The feedroll Must be the master for the DPLC calculations
+//         The reason for this is so that the line speed can be set BEFORE the pellet length is determined
+//         When actively changing the pellet length while running, the rotor speed can change but the feedrate must be maintained.
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////Setup Calculations
+FeedrollMot_RPM_Per_Hz := FeedrollMotor_Rated_RPM / FeedrollMotor_Rated_Hz;
+Feedroll_Pulley_Ratio := Feedroll_Drive_Pulley / Feedroll_Driven_Pulley;
+Feedroll_Circumference_Inch := Feedroll_Diameter_Inch *  3.14159;
+
+RotorMot_RPM_Per_Hz := RotorMotor_Rated_RPM / RotorMotor_Rated_Hz;	
+Rotor_Pulley_Ratio := Rotor_Drive_Pulley / Rotor_Driven_pulley;
+
+/////////////////////////////////////Feedroll Calculations
+//////This block is the orignal forumla for a percentage based speed control input. 
+////// Due to the touchscreen speed control on this project it was deemed best scenario to have the speec input be in Linear Ft/min or M/min
+//FeedrollMot_Speed_RPM := (FeedrollMotor_Max_Hz * FeedrollMot_RPM_Per_Hz) * (Speed_input_Percent / 100);
+//FeedrollMot_Speed_Hz := FeedrollMotor_Max_Hz * (Speed_input_Percent / 100);
+//Feedroll_Speed_RPM := FeedrollMot_Speed_RPM * Feedroll_Pulley_Ratio;
+//FeedRate_Inches_Per_Minute := Feedroll_Speed_RPM * Feedroll_Circumference_Inch;
+//FeedRate_Feet_Per_Minute_Temp := FeedRate_Inches_Per_Minute / 12 ;						// This is the displayed ft/min on the HMI
+
+
+
+///////////////////////////////////////////////Feedroll Input Speed Control
+
+FeedRate_Inches_Per_Minute := FeedRate_Feet_Per_Minute_Input * 12;					//This SETS the feedroll Speed. This may be different than the ACTUAL Speed.
+
+
+
+Feedroll_Speed_RPM := FeedRate_Inches_Per_Minute / Feedroll_Circumference_Inch;
+FeedrollMot_Speed_RPM := Feedroll_Speed_RPM / Feedroll_Pulley_Ratio;
+FeedrollMot_Speed_Hz := FeedrollMot_Speed_RPM / FeedrollMot_RPM_Per_Hz;
+
+///////////////////////////////////////////////Feedroll Actual Speed (For HMI)		//display feedroll speed calculations.
+Feedroll_Speed_RPM_Actual := Actual_FeedrollMotor_Speed_RPM * Feedroll_Pulley_Ratio;
+FeedRate_Inches_Per_Minute := Feedroll_Speed_RPM_Actual * Feedroll_Circumference_Inch;
+FeedRate_Feet_Per_Minute_Temp := FeedRate_Inches_Per_Minute / 12 ;	
+
+//Static feedroll speed for control of Rotor
+Feedroll_Speed_RPM_Temp := FeedrollMot_Speed_RPM * Feedroll_Pulley_Ratio;
+FeedRate_Inches_Per_Minute_Temp := Feedroll_Speed_RPM_Temp * Feedroll_Circumference_Inch;					
+
+
+/////////////////////////////////////Rotor Calculations
+Cuts_Per_Minute := FeedRate_Inches_Per_Minute_Temp / (Pellet_Length_Inch_Input * Pellet_Length_Calibration_Value);
+Rotor_Speed_RPM_Temp := Cuts_Per_Minute / Rotor_Tooth_Count;						//the ROTOR needs to go this many RPM to achieve the pellet length
+RotorMot_Speed_RPM := Rotor_Speed_RPM_Temp / Rotor_Pulley_Ratio;
+RotorMot_Speed_Hz := RotorMot_Speed_RPM / RotorMot_RPM_Per_Hz;
+
+
+/////////////////////////////////////Incorrect Pellet Length Prevention.
+///???
+////////////////////////////////////////
+
+
+///////////////////////////////////Limits
+Maximum_Line_Speed := (Feedroll_Circumference_Inch / 12) * ((FeedrollMotor_Max_Hz * FeedrollMot_RPM_Per_Hz) * Feedroll_Pulley_Ratio);
+Minimum_Line_Speed := (Feedroll_Circumference_Inch / 12) * ((FeedrollMotor_Min_Hz * FeedrollMot_RPM_Per_Hz) * Feedroll_Pulley_Ratio);
+
+Rotor_RPM_Minimum := RotorMot_RPM_Per_Hz * RotorMotor_Min_Hz;
+
+Min_Cuts_Per_Minute := Rotor_Tooth_Count * ((RotorMot_RPM_Per_Hz * RotorMotor_Min_Hz) * Rotor_Pulley_Ratio);
+Max_Cuts_Per_Minute := Rotor_Tooth_Count * ((RotorMot_RPM_Per_Hz * RotorMotor_Max_Hz) * Rotor_Pulley_Ratio);
+
+Maximum_Pellet_Length := (Maximum_Line_Speed * 12) / Min_Cuts_Per_Minute;
+Minimum_Pellet_Length := (Minimum_Line_Speed * 12) / Max_Cuts_Per_Minute;
+
+
+IF Metric_Set_Bit THEN
+	//Convert feedroll speed to meters per min for display.
+	Maximum_Line_Speed := Maximum_Line_Speed * 0.3048;
+	Minimum_Line_Speed := Minimum_Line_Speed * 0.3048;
+	
+	//Convert min and max pellet length to mm so the input box does not error.
+	Maximum_Pellet_Length := Maximum_Pellet_Length * 25.4;
+	Minimum_Pellet_Length := Minimum_Pellet_Length * 25.4;
+END_IF
+
+
+
+
+
+/////////////////////////////////////////Start/Stop Command Control
+IF Pelletizer_Running THEN
+	Feedroll_Motor_Speed_Hz_int := REAL_TO_INT(FeedrollMot_Speed_Hz * 10);				//If the rotor speed is exceeded, then stop writing to the outputs and maintain the same speed. 
+	Feedroll_Motor_Speed_RPM_int := REAL_TO_INT(FeedrollMot_Speed_RPM);					//Write the data to the drive if we are in Running State
+	Rotor_Motor_Speed_Hz_int := REAL_TO_INT(RotorMot_Speed_Hz * 10);
+	Rotor_Motor_Speed_RPM_int := REAL_TO_INT(RotorMot_Speed_RPM);
+	
+	IF Metric_Set_Bit THEN
+		FeedRate_Feet_Per_Minute := FeedRate_Feet_Per_Minute_temp * 0.3048;							// This is the displayed ft/min on the HMI
+	ELSE
+		FeedRate_Feet_Per_Minute := FeedRate_Feet_Per_Minute_temp;							// This is the displayed ft/min on the HMI
+	END_IF
+	
+	Rotor_Speed_RPM := RotorMotor_Actual_RPM / Rotor_Pulley_Ratio;						//Take the Actual Rotor Motor RPM and get the rotor RPM for display.
+ELSE	
+	Feedroll_Motor_Speed_Hz_int := 0;													//If the pelletizer is not Running, set speeds and HMI to zero.
+	Feedroll_Motor_Speed_RPM_int := 0;					
+	Rotor_Motor_Speed_Hz_int := 0;
+	Rotor_Motor_Speed_RPM_int := 0;
+	
+	
+	Rotor_Speed_RPM := 0;
+	FeedRate_Feet_Per_Minute := 0;														// This is the displayed ft/min on the HMI
+END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="E_DPLC">
+      <LineId Id="1306" Count="4" />
+      <LineId Id="1317" Count="0" />
+      <LineId Id="1320" Count="6" />
+      <LineId Id="1328" Count="1" />
+      <LineId Id="1863" Count="0" />
+      <LineId Id="1911" Count="0" />
+      <LineId Id="1568" Count="0" />
+      <LineId Id="1415" Count="0" />
+      <LineId Id="1430" Count="0" />
+      <LineId Id="1333" Count="0" />
+      <LineId Id="1336" Count="0" />
+      <LineId Id="1884" Count="1" />
+      <LineId Id="1872" Count="1" />
+      <LineId Id="1979" Count="0" />
+      <LineId Id="2069" Count="0" />
+      <LineId Id="1982" Count="0" />
+      <LineId Id="1975" Count="1" />
+      <LineId Id="1879" Count="0" />
+      <LineId Id="1937" Count="0" />
+      <LineId Id="1875" Count="0" />
+      <LineId Id="1939" Count="1" />
+      <LineId Id="1944" Count="0" />
+      <LineId Id="1943" Count="0" />
+      <LineId Id="1941" Count="0" />
+      <LineId Id="2167" Count="0" />
+      <LineId Id="2163" Count="2" />
+      <LineId Id="1938" Count="0" />
+      <LineId Id="1871" Count="0" />
+      <LineId Id="1337" Count="4" />
+      <LineId Id="1864" Count="0" />
+      <LineId Id="1594" Count="0" />
+      <LineId Id="1799" Count="1" />
+      <LineId Id="1687" Count="0" />
+      <LineId Id="1912" Count="0" />
+      <LineId Id="1348" Count="15" />
+      <LineId Id="1365" Count="5" />
+      <LineId Id="9" Count="0" />
+      <LineId Id="1946" Count="11" />
+      <LineId Id="2070" Count="0" />
+      <LineId Id="2073" Count="1" />
+      <LineId Id="1958" Count="0" />
+      <LineId Id="2072" Count="0" />
+      <LineId Id="2075" Count="0" />
+      <LineId Id="1959" Count="6" />
+      <LineId Id="2071" Count="0" />
+      <LineId Id="1966" Count="1" />
+      <LineId Id="1886" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

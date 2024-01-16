@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL_Rotor" Id="{6c2a6d8a-af0d-464f-ab0d-6c6a990188ea}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+
+	Rotor_RPM_Limit_Exceeded : BOOL; 
+	Rotor_RPM_Minimum : REAL;
+	Rotor_RPM_Maximum : REAL;
+	Rotor_Active_Torque AT %I* : INT;
+	
+
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

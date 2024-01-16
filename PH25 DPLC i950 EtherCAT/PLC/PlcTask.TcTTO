@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <Task Name="PlcTask" Id="{82a2e32f-1539-4b12-a266-86981590dc01}">
+    <!--CycleTime in micro seconds.-->
+    <CycleTime>1000</CycleTime>
+    <Priority>20</Priority>
+    <PouCall>
+      <Name>DPLC</Name>
+    </PouCall>
+    <PouCall>
+      <Name>Main</Name>
+    </PouCall>
+    <PouCall>
+      <Name>Imperial_Metric_Switching</Name>
+    </PouCall>
+    <PouCall>
+      <Name>Pellet_Calibration</Name>
+    </PouCall>
+    <PouCall>
+      <Name>Events</Name>
+    </PouCall>
+    <PouCall>
+      <Name>Feedroll_Control</Name>
+    </PouCall>
+    <PouCall>
+      <Name>Control_Word_State</Name>
+    </PouCall>
+    <PouCall>
+      <Name>WritePersistentData_POU</Name>
+    </PouCall>
+    <TaskFBGuid>{e9887c5f-ca22-48da-a514-a04f0078f749}</TaskFBGuid>
+    <Fb_init>{65231c38-576e-4f7e-8f78-0f73cbadeac3}</Fb_init>
+    <Fb_exit>{648d000b-20d4-40c8-b81d-3b9f4bf789c3}</Fb_exit>
+    <CycleUpdate>{fc5dae96-47cf-4ad7-b13b-142b95054fb2}</CycleUpdate>
+    <PostCycleUpdate>{fc6d39f1-80bc-41dd-95a6-9f5582309f92}</PostCycleUpdate>
+  </Task>
+</TcPlcObject>

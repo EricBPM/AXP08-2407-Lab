@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="Pellet_Calibration" Id="{237dd450-47a8-4a46-9fe2-c44f1dca051f}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Pellet_Calibration
+VAR
+	SET_CALIBRATON_VALUE : BOOL;
+
+	
+	
+	Pellet_Length_Temp_Cal_Val : REAL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[ Pellet_Length_Temp_Cal_Val :=  GVL_Pelletizer.Pellet_Length_Inch_Input/ GVL_Pelletizer.Pellet_Length_Measured_Input;
+
+
+IF SET_CALIBRATON_VALUE THEN
+	GVL_Pelletizer.Pellet_Length_Calibration_Value := Pellet_Length_Temp_Cal_Val;
+END_IF
+
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="Pellet_Calibration">
+      <LineId Id="13" Count="2" />
+      <LineId Id="5" Count="0" />
+      <LineId Id="11" Count="1" />
+      <LineId Id="25" Count="1" />
+      <LineId Id="24" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

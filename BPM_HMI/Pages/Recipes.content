@@ -1,0 +1,902 @@
+<div id="Recipies" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="1024" data-tchmi-height="608" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value">
+
+<div id="TcHmiRecipeSelect" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRecipeSelect" data-tchmi-height="75" data-tchmi-height-unit="px" data-tchmi-left="-5" data-tchmi-left-unit="px" data-tchmi-server-interval="1000" data-tchmi-top="702" data-tchmi-top-unit="px" data-tchmi-width="1024" data-tchmi-width-unit="px">
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "teachRecipe",
+    "group": "Operator",
+    "permission": "Deny"
+  }
+]
+</script>
+</div>
+<div id="TcHmiRecipeEdit" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRecipeEdit" data-tchmi-height="153" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="827" data-tchmi-top-unit="px" data-tchmi-width="1024" data-tchmi-width-unit="px">
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "create",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "create",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "create",
+    "group": "Operator",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "rename",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "rename",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "rename",
+    "group": "Operator",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "delete",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "delete",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "delete",
+    "group": "Operator",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "editRecipe",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "editRecipe",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "editRecipe",
+    "group": "Operator",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "activateRecipe",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "activateRecipe",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "activateRecipe",
+    "group": "Operator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "teachRecipe",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "teachRecipe",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "teachRecipe",
+    "group": "Operator",
+    "permission": "Deny"
+  }
+]
+</script>
+</div>
+<div id="TcHmiTextblock_SelectRecipe" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-text="Selected recipe:" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="130" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="18" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center">
+</div>
+<div id="TcHmiCombobox_RecipeList" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="400" data-tchmi-width-unit="px" data-tchmi-combobox-text="Select recipe" data-tchmi-src-data="%f%ListRecipesAsReferenceArray(%s%TcHmiRecipeManagement.Config::recipeList%/s%)%/f%" data-tchmi-tooltip="Select a recipe from the list of recipes." data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+<div id="TcHmiButton_Activate" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="460" data-tchmi-left-unit="px" data-tchmi-text="Activate selected recipe" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-tooltip="The values of the selected recipe's members are written to the target." data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
+  {
+    "event": "TcHmiButton_Activate.onPressed",
+    "actions": [
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "ActivateRecipe",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "symbolExpression": "%ctrl%TcHmiCombobox_RecipeList::SelectedValue%/ctrl%"
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-padding" type="application/json">
+{
+  "left": 3,
+  "right": 3,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operator",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+<div id="TcHmiButton_Delete" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="Delete selected recipe" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-tooltip="The selected recipe is deleted in case there is more than one recipe available in the list." data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
+  {
+    "event": "TcHmiButton_Delete.onPressed",
+    "actions": [
+      {
+        "objectType": "Comment",
+        "comment": "The condition is added to check, whether there is more than one recipe available. Only in this case the selected recipe can be deleted. Otherwise,\r\nif the last recipe is deleted, it would not be possible to create new recipes within the client anymore."
+      },
+      {
+        "objectType": "Condition",
+        "active": true,
+        "asyncWait": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "FunctionExpression",
+                  "functionExpression": "%ctrl%TcHmiCombobox_RecipeList::SrcData%/ctrl%.length"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "1"
+                },
+                "compareOperator": ">",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Comment",
+                "comment": "The setting 'Wait for completion' (right click on the function) is deactivated for the DeleteRecipe function,\r\nbecause the attribute 'SelectedIndex' of the TcHmiCombobox_RecipeList has to be reset via the\r\nWriteToSymbol function, before the execution of the DeleteRecipe function has been finished. Otherwise\r\nthe TcHmiDatagrid_RecipeView would request the members of the already deleted recipe."
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "DeleteRecipe",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "symbolExpression": "%ctrl%TcHmiCombobox_RecipeList::SelectedValue%/ctrl%"
+                  }
+                ],
+                "asyncWait": false
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiCombobox_RecipeList::SelectedIndex%/ctrl%",
+                "valueType": "tchmi:general#/definitions/UDINT",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/UDINT",
+                  "value": null
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-padding" type="application/json">
+{
+  "left": 3,
+  "right": 3,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administrator",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+<div id="New_Recipe_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="350" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="175" data-tchmi-top-unit="px" data-tchmi-width="1005" data-tchmi-width-unit="px">
+<div id="TcHmiContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="215" data-tchmi-height-unit="px" data-tchmi-left="776" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="215" data-tchmi-width-unit="px">
+<div id="TcHmiTextblock_Value1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="9" data-tchmi-left-unit="px" data-tchmi-top="49" data-tchmi-top-unit="px" data-tchmi-width="200" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="18" data-tchmi-text-font-weight="Auto" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%f%'Pellet Length: ' +  TcHmi.Functions.Beckhoff.GaugeValueFormatter(%s%PLC1.Imperial_Metric_Switching.Pellet_Length_Displayed%/s%, 3)%/f%">
+</div>
+<div id="TcHmiTextblock_Value2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="9" data-tchmi-left-unit="px" data-tchmi-top="89" data-tchmi-top-unit="px" data-tchmi-width="200" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="18" data-tchmi-text-font-weight="Normal" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%f%'Feedroll Speed: ' + TcHmi.Functions.Beckhoff.GaugeValueFormatter(%s%PLC1.Imperial_Metric_Switching.Line_Speed_Displayed%/s%, 2)
+
+%/f%">
+</div>
+<div id="TcHmiTextblock_Value2_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="9" data-tchmi-left-unit="px" data-tchmi-text="%f%'Metric Units: ' + %s%PLC1.GVL_Pelletizer.Metric_Set_Bit%/s%%/f%" data-tchmi-top="129" data-tchmi-top-unit="px" data-tchmi-width="200" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="18" data-tchmi-text-font-weight="Normal" data-tchmi-text-vertical-alignment="Center">
+</div>
+<div id="TcHmiTextblock_OnlineValues" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="9" data-tchmi-left-unit="px" data-tchmi-text="Current values:" data-tchmi-top="9" data-tchmi-top-unit="px" data-tchmi-width="200" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="20" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center">
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 5.0,
+  "bottomRight": 5.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+<div id="TcHmiTextblock_Value2_4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="9" data-tchmi-left-unit="px" data-tchmi-text="%f%'Feedroll Pressure: ' + %s%PLC1.GVL_Feedroll.Feedroll_Pressure_Input%/s%%/f%" data-tchmi-top="169" data-tchmi-top-unit="px" data-tchmi-width="200" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="18" data-tchmi-text-font-weight="Normal" data-tchmi-text-vertical-alignment="Center">
+</div>
+
+
+
+
+</div>
+<div id="TcHmiButton_ReadValuesFromTarget" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="654" data-tchmi-left-unit="px" data-tchmi-text="Read current values" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-tooltip="The values in the third column of the datagrid are updated with the current values from the target." data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
+  {
+    "event": "TcHmiButton_ReadValuesFromTarget.onPressed",
+    "actions": [
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "UpdateDatagridFromTarget",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%TcHmiDatagrid_RecipeView%/ctrl%"
+          },
+          {
+            "objectType": "Symbol",
+            "symbolExpression": "%ctrl%TcHmiCombobox_RecipeList::SelectedValue%/ctrl%"
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-padding" type="application/json">
+{
+  "left": 3,
+  "right": 3,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operator",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+<div id="TcHmiDatagrid_RecipeView" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiDatagrid" data-tchmi-height="278" data-tchmi-height-unit="px" data-tchmi-left="8" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="620" data-tchmi-width-unit="px" data-tchmi-show-row-numbers="false" data-tchmi-header-font-size="20" data-tchmi-row-numbers-font-size="20" data-tchmi-header-height="40" data-tchmi-row-height="40" data-tchmi-grid-font-size="20" data-tchmi-table-border-width="1">
+<script data-tchmi-target-attribute="data-tchmi-src-column" type="application/json">
+[
+  {
+    "name": "memberName",
+    "label": "Member name",
+    "control": "TextBlock",
+    "width": 340,
+    "widthUnit": "px",
+    "resize": false,
+    "sortable": false,
+    "minWidth": 70,
+    "minWidthUnit": "px",
+    "editable": false,
+    "horizontalAlignment": "Center",
+    "verticalAlignment": "Center",
+    "headerHorizontalAlignment": "Center",
+    "headerVerticalAlignment": "Center",
+    "ignoreEscapeSequences": false,
+    "autoFocusOut": true,
+    "autoSelectText": false,
+    "format": null
+  },
+  {
+    "name": "value",
+    "label": "Saved value",
+    "control": "TextBlock",
+    "width": 140,
+    "widthUnit": "px",
+    "resize": false,
+    "sortable": false,
+    "minWidth": 70,
+    "minWidthUnit": "px",
+    "editable": false,
+    "horizontalAlignment": "Center",
+    "verticalAlignment": "Center",
+    "headerHorizontalAlignment": "Center",
+    "headerVerticalAlignment": "Center",
+    "ignoreEscapeSequences": false,
+    "autoFocusOut": true,
+    "autoSelectText": false,
+    "format": {
+      "objectType": "Function",
+      "active": true,
+      "fn": "TcHmi.Functions.Beckhoff.GaugeValueFormatter",
+      "fnParams": [
+        {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/Number",
+          "value": 3.0
+        }
+      ]
+    }
+  },
+  {
+    "name": "newValue",
+    "label": "New value",
+    "control": "TextBox",
+    "width": 140,
+    "widthUnit": "px",
+    "resize": false,
+    "sortable": false,
+    "minWidth": 70,
+    "minWidthUnit": "px",
+    "editable": true,
+    "horizontalAlignment": "Center",
+    "verticalAlignment": "Center",
+    "headerHorizontalAlignment": "Center",
+    "headerVerticalAlignment": "Center",
+    "ignoreEscapeSequences": false,
+    "autoFocusOut": true,
+    "autoSelectText": false,
+    "format": {
+      "objectType": "Function",
+      "active": true,
+      "fn": "TcHmi.Functions.Beckhoff.GaugeValueFormatter",
+      "fnParams": [
+        {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/Number",
+          "value": 3.0
+        }
+      ]
+    },
+    "dataDefinitions": {
+      "decimalDigits": 3.0
+    }
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-cell-content-padding" type="application/json">
+{
+  "left": 3,
+  "leftUnit": "px",
+  "right": 3,
+  "rightUnit": "px",
+  "top": 0,
+  "topUnit": "px",
+  "bottom": 0,
+  "bottomUnit": "px"
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
+  {
+    "event": "%s%TcHmiRecipeManagement.Config::recipeList%/s%",
+    "actions": [
+      {
+        "objectType": "Function",
+        "active": true,
+        "asyncWait": true,
+        "fn": "CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%TcHmiDatagrid_RecipeView%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "SrcData"
+          },
+          {
+            "objectType": "Symbol",
+            "symbolExpression": "%f%ConvertRecipeToDataGrid(%ctrl%TcHmiCombobox_RecipeList::SelectedValue%/ctrl%)%/f%"
+          }
+        ]
+      }
+    ]
+  }
+]</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "None",
+  "right": "None",
+  "top": "None",
+  "bottom": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 0,
+  "right": 0,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "observe",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  }
+]
+</script>
+</div>
+<div id="TcHmiButton_Update" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="654" data-tchmi-left-unit="px" data-tchmi-text="Update selected recipe with New Values" data-tchmi-top="125" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-tooltip="The values of the selected recipe's members are updated with the values of the third column of the datagrid." data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
+  {
+    "event": "TcHmiButton_Update.onPressed",
+    "actions": [
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "ConvertDatagridToRecipe",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%TcHmiDatagrid_RecipeView%/ctrl%"
+          },
+          {
+            "objectType": "Symbol",
+            "symbolExpression": "%ctrl%TcHmiCombobox_RecipeList::SelectedValue%/ctrl%"
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-padding" type="application/json">
+{
+  "left": 3,
+  "right": 3,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "observe",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  }
+]
+</script>
+</div>
+</div>
+<div id="TcHmiTextblock_NewRecipeName" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="New recipe name:" data-tchmi-top="548" data-tchmi-top-unit="px" data-tchmi-width="130" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="18" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center">
+</div>
+<div id="TcHmiTextbox_NewName" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="140" data-tchmi-left-unit="px" data-tchmi-text="NewRecipe" data-tchmi-top="548" data-tchmi-top-unit="px" data-tchmi-width="400" data-tchmi-width-unit="px" data-tchmi-tooltip="Fill in a name, which should be used in case a new recipe is added." data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operator",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+<div id="TcHmiButton_TeachAsNew" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="550" data-tchmi-left-unit="px" data-tchmi-text="Save As new recipe" data-tchmi-top="548" data-tchmi-top-unit="px" data-tchmi-width="270" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-tooltip="The values of the selected recipe's members are updated with the current values from the target and then saved into a new recipe with the defined name." data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
+  {
+    "event": "TcHmiButton_TeachAsNew.onPressed",
+    "actions": [
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TeachAsNewRecipe",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "symbolExpression": "%ctrl%TcHmiCombobox_RecipeList::SelectedValue%/ctrl%"
+          },
+          {
+            "objectType": "Symbol",
+            "symbolExpression": "%ctrl%TcHmiTextbox_NewName::Text%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/String",
+            "value": ""
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-padding" type="application/json">
+{
+  "left": 3,
+  "right": 3,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administrator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operator",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+</div>

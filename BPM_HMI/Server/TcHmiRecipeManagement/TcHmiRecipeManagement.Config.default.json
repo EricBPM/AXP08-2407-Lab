@@ -1,0 +1,121 @@
+{
+    "recipeList": {
+        "Default Material Recipe (Imperial)": {
+            "recipeTypeName": "Material Recipe (Imperial)",
+            "values": {
+                "Feed Rate (Ft/min)": 100.0,
+                "Feedroll Pressure": 20.0,
+                "Metric Measurements": false,
+                "Pellet Length (Inch)": 0.125
+            }
+        },
+        "Default Material Recipe (Metric)": {
+            "recipeTypeName": "Material Recipe (Metric)",
+            "values": {
+                "Feed Rate (M/min) ": 35.0,
+                "Feedroll Pressure": 20.0,
+                "Metric Measurements": true,
+                "Pellet Length (Millimeters)": 3.0
+            }
+        },
+        "MyNew": {
+            "recipeTypeName": "Material Recipe (Imperial)",
+            "values": {
+                "Feed Rate (Ft/min)": 103.0,
+                "Feedroll Pressure": 22.0,
+                "Metric Measurements": false,
+                "Pellet Length (Inch)": 0.125
+            }
+        }
+    },
+    "recipeTypeList": {
+        "Material Recipe (Imperial)": {
+            "members": {
+                "Feed Rate (Ft/min)": {
+                    "defaultValue": 100.0,
+                    "enabled": true,
+                    "group": "",
+                    "order": 1,
+                    "schema": {},
+                    "symbol": "PLC1.GVL_Feedroll.FeedRate_Feet_Per_Minute_Input",
+                    "unit": ""
+                },
+                "Feedroll Pressure": {
+                    "defaultValue": 20.0,
+                    "enabled": true,
+                    "group": "",
+                    "order": 2,
+                    "schema": {},
+                    "symbol": "PLC1.GVL_Feedroll.Feedroll_Pressure_Input",
+                    "unit": ""
+                },
+                "Metric Measurements": {
+                    "defaultValue": false,
+                    "enabled": true,
+                    "group": "",
+                    "order": 3,
+                    "schema": {},
+                    "symbol": "PLC1.GVL_Pelletizer.Metric_Set_Bit",
+                    "unit": ""
+                },
+                "Pellet Length (Inch)": {
+                    "defaultValue": 0.125,
+                    "enabled": true,
+                    "group": "",
+                    "order": 0,
+                    "schema": {},
+                    "symbol": "PLC1.GVL_Pelletizer.Pellet_Length_Inch_Input",
+                    "unit": ""
+                }
+            },
+            "options": {
+                "enabled": "None"
+            },
+            "recipeTypeNames": []
+        },
+        "Material Recipe (Metric)": {
+            "members": {
+                "Feed Rate (M/min) ": {
+                    "defaultValue": 35.0,
+                    "enabled": true,
+                    "group": "",
+                    "order": 1,
+                    "schema": {},
+                    "symbol": "PLC1.Imperial_Metric_Switching.Line_Speed_Metric_Input",
+                    "unit": ""
+                },
+                "Feedroll Pressure": {
+                    "defaultValue": 20.0,
+                    "enabled": true,
+                    "group": "",
+                    "order": 2,
+                    "schema": {},
+                    "symbol": "PLC1.GVL_Feedroll.Feedroll_Pressure_Input",
+                    "unit": ""
+                },
+                "Metric Measurements": {
+                    "defaultValue": true,
+                    "enabled": true,
+                    "group": "",
+                    "order": 3,
+                    "schema": {},
+                    "symbol": "PLC1.GVL_Pelletizer.Metric_Set_Bit",
+                    "unit": ""
+                },
+                "Pellet Length (Millimeters)": {
+                    "defaultValue": 3.0,
+                    "enabled": true,
+                    "group": "",
+                    "order": 0,
+                    "schema": {},
+                    "symbol": "PLC1.Imperial_Metric_Switching.Pellet_Length_Metric_Input",
+                    "unit": ""
+                }
+            },
+            "options": {
+                "enabled": "None"
+            },
+            "recipeTypeNames": []
+        }
+    }
+}

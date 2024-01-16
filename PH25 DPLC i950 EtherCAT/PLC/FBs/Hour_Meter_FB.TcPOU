@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="Hour_Meter_FB" Id="{fb40b7af-9bcc-47ec-87b2-16f4c6c8bd00}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK Hour_Meter_FB
+VAR_INPUT
+	Running : BOOL;
+END_VAR
+VAR_OUTPUT
+	Runtime_Hours : REAL;
+END_VAR
+VAR
+	Running_Temp : BOOL;
+	Minute_Timer : TON;
+	Minutes : REAL;
+	Hours : REAL;
+	Elapsed : TIME;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Minute_Timer(IN:=Running_Temp , PT:=T#60S , Q=>, ET=>Elapsed );
+
+IF Running THEN
+	Running_Temp := TRUE;
+END_IF
+IF Minute_Timer.Q THEN
+	Running_Temp := FALSE;
+	Minutes := Minutes + 1;
+END_IF
+IF Minutes >= 60 THEN
+	Minutes := 0;
+	Hours := Hours + 1;
+END_IF
+
+Runtime_Hours := Hours;]]></ST>
+    </Implementation>
+    <LineIds Name="Hour_Meter_FB">
+      <LineId Id="55" Count="0" />
+      <LineId Id="54" Count="0" />
+      <LineId Id="46" Count="0" />
+      <LineId Id="48" Count="1" />
+      <LineId Id="21" Count="0" />
+      <LineId Id="51" Count="0" />
+      <LineId Id="23" Count="1" />
+      <LineId Id="30" Count="0" />
+      <LineId Id="52" Count="0" />
+      <LineId Id="32" Count="1" />
+      <LineId Id="41" Count="0" />
+      <LineId Id="39" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

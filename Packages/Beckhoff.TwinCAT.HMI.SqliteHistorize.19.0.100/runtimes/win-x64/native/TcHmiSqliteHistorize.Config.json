@@ -1,0 +1,295 @@
+{
+  "$schema": "../../TcHmiSrv/schema/ExtensionSettings.Schema.json",
+  "version": "1.12.760.37",
+  "configVersion": "1.0.0.43",
+  "guid": "EB1F70B7-D988-4EFE-8AB5-6D46DD4CED09",
+  "visibility": "AlwaysShow",
+  "policies": [
+    "StrictPropertyValidation"
+  ],
+  "symbols": {
+    "GetTrendLineData": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "chartName": {
+            "type": "string",
+            "description": "descChartName"
+          },
+          "xAxisStart": {
+            "$ref": "tchmi:server#/definitions/stringTypeArray"
+          },
+          "xAxisEnd": {
+            "$ref": "tchmi:server#/definitions/stringTypeArray"
+          },
+          "displayWidth": {
+            "type": "number",
+            "minimum": 2
+          },
+          "yAxes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "symbol"
+              ],
+              "properties": {
+                "symbol": {
+                  "type": "string",
+                  "description": "descSymbolName"
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "chartName",
+          "yAxes",
+          "xAxisStart",
+          "displayWidth"
+        ]
+      },
+      "readValue": {
+        "function": true,
+        "type": "object",
+        "properties": {
+          "axesData": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "x": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "descAxisDataX"
+                  },
+                  "y": {
+                    "type": "number",
+                    "description": "descAxisDataY"
+                  },
+                  "error": {
+                    "type": "number"
+                  },
+                  "flags": {
+                    "type": "string",
+                    "description": "descAxisDataFlags"
+                  }
+                }
+              }
+            },
+            "description": "descAxisData"
+          }
+        }
+      },
+      "sample": {
+        "description": "Get data for TrendLineChart named 'MyTrendChart1'",
+        "value": {
+          "chartName": "MyTrendChart1",
+          "xAxisStart": "2016-08-08T09:19:00",
+          "xAxisEnd": "PT10S",
+          "displayWidth": 600,
+          "yAxes": [
+            {
+              "symbol": "test"
+            },
+            {
+              "symbol": "testINT"
+            }
+          ]
+        }
+      },
+      "description": "descGetTrendLineData"
+    },
+    "GetTrendLineWindow": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "chartName": {
+            "type": "string",
+            "description": "descChartName"
+          },
+          "xAxisStart": {
+            "$ref": "tchmi:server#/definitions/stringTypeArray"
+          },
+          "xAxisEnd": {
+            "$ref": "tchmi:server#/definitions/stringTypeArray"
+          },
+          "yAxes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "symbol"
+              ],
+              "properties": {
+                "symbol": {
+                  "type": "string",
+                  "description": "descSymbolName"
+                }
+              },
+              "additionalProperties": false
+            },
+            "description": "descTrendLineAxisY"
+          }
+        },
+        "required": [
+          "chartName",
+          "yAxes",
+          "xAxisStart"
+        ]
+      },
+      "readValue": {
+        "function": true,
+        "type": "object",
+        "properties": {
+          "xAxisStart": {
+            "type": "string",
+            "format": "date-time",
+            "description": "descTrendLineAxisStartX"
+          },
+          "xAxisEnd": {
+            "type": "string",
+            "format": "date-time",
+            "description": "descTrendLineAxisEndX"
+          }
+        }
+      },
+      "sample": {
+        "description": "Get window for TrendChart named 'MyTrendChart1'",
+        "value": {
+          "chartName": "MyTrendChart1",
+          "xAxisStart": "2016-08-08T09:19:00",
+          "xAxisEnd": "PT10S",
+          "yAxes": [
+            {
+              "symbol": "test"
+            },
+            {
+              "symbol": "testINT"
+            }
+          ]
+        }
+      },
+      "description": "descGetTrendLineWindow"
+    },
+    "HistorizeData": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "readValue": {
+        "function": true
+      },
+      "description": "descHistorizeData"
+    },
+    "Diagnostics": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "readValue": {
+        "type": "object",
+        "function": true,
+        "readOnly": true,
+        "properties": {
+          "databaseSize": {
+            "allOf": [
+              {
+                "$ref": "tchmi:general#/definitions/Number"
+              },
+              {
+                "readOnly": true,
+                "propertyOrder": 1,
+                "displayClass": "byte"
+              }
+            ]
+          },
+          "numEntries": {
+            "type": "integer",
+            "readOnly": true,
+            "propertyOrder": 2,
+            "configDescription": "descNumEntries"
+          },
+          "numEntriesLifetime": {
+            "type": "number",
+            "readOnly": true,
+            "propertyOrder": 3,
+            "configDescription": "descNumEntries"
+          },
+          "recordingTime": {
+            "type": "string",
+            "format": "timespan",
+            "readOnly": true,
+            "propertyOrder": 4
+          },
+          "estimatedDatabaseSize": {
+            "allOf": [
+              {
+                "$ref": "tchmi:general#/definitions/Number"
+              },
+              {
+                "readOnly": true,
+                "propertyOrder": 5,
+                "displayClass": "byte"
+              }
+            ]
+          },
+          "estimatedDatabaseSizePerSymbol": {
+            "readOnly": true,
+            "type": "object",
+            "additionalProperties": {
+              "allOf": [
+                {
+                  "$ref": "tchmi:general#/definitions/Number"
+                },
+                {
+                  "readOnly": true,
+                  "displayClass": "byte"
+                }
+              ]
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "description": "descDiagnostics"
+    },
+    "DeleteDatabaseEntries": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "symbolName": {
+            "type": "string"
+          },
+          "disableRecording": {
+            "type": "boolean"
+          }
+        }
+      },
+      "sample": {
+        "description": "Disable recording and delete database entries of 'MySymbol'. If 'symbolName' is not set all entries in the database will be deleted. 'disableRecording' disables the recording of one or all historize symbols depending if 'symbolName' is set.'",
+        "value": {
+          "symbolName": "MySymbol",
+          "disableRecording": true
+        }
+      },
+      "description": "descDeleteDatabaseEntries"
+    }
+  },
+  "packageVersion": "19.0.100",
+  "productVersion": "1.12.760.37",
+  "signature": "Bt0KD0ssl/DU7jU4LkU/FNvQEttgSFEm+t0fEXl3iCXH82CLeHG2hBEArwCkX3lsZHdgR0NGYvXo+1xH1a+8J0vYvFH6Ze3xsY5M3B2CJj8K2cwbhUw0SFZyJ/nhBotsNH+26qeT9WThqOg6u/r0zT5Yr34Ti6OtRBfp9MDzWcigMjhdqF7G2MzP4f9eCkOe1pk+sak8GsDrhryhSDuCOG6emcRAIM9PDYdaFjmp2XN3ErREIy4dMzies9+1Gc2dVlZ1HDc9TZG0wFQSojIXyvebN4ManD5Fxw4/yXNm6fSKHJvEFG3ljbdtkdaodpWS+OQU5buy5wi40YN4qPB8KQ=="
+}

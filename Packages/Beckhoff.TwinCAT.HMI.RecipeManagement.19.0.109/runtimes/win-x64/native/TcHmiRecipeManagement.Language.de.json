@@ -1,0 +1,12 @@
+{
+  "locale": "de",
+  "localizedText": {
+    "RECIPELIST": "Rezept-Liste",
+    "MSG_RM_READ_ERROR": "Fehler beim Lesen: {0}",
+    "MSG_RM_ACTIVATE_WARNING": "Warnung beim Aktivieren: {0}",
+    "DESC_FOLDER_RECIPE": "Ordner für Rezepte und/oder weitere Ordner",
+    "DESC_FOLDER_RECIPETYPE": "Ordner für Rezepttypen und/oder weitere Ordner",
+    "DESC_RECIPE": "Ein Rezept basiert auf einem Rezepttyp",
+    "DESC_RECIPETYPE": "Ein Rezepttyp ist eine allgemeine Beschreibung von einem Set von Symbolen"
+  }
+}

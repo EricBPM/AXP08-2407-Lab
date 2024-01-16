@@ -1,0 +1,241 @@
+<div id="Desktop" data-tchmi-type="TcHmi.Controls.System.TcHmiView" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width-unit="px" data-tchmi-width="1024" data-tchmi-height-unit="px" data-tchmi-height="768" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="100" data-tchmi-background-image-height="100">
+  
+<div id="Navigation_Bottom" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiNavigation" data-tchmi-left="0" data-tchmi-bottom="0" data-tchmi-right="0" data-tchmi-navigation-orientation="Horizontal" data-tchmi-show-back-button="true" data-tchmi-height="80" data-tchmi-scrollbar-style="None" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-opacity="1" data-tchmi-is-enabled="true" data-tchmi-top="688" data-tchmi-creator-locked="True" data-tchmi-keep-lowest-level="true" data-tchmi-static-menu-height="490" data-tchmi-static-menu-height-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-target-region="%ctrl%Region_Center%/ctrl%" data-tchmi-text-font-size="10" data-tchmi-icon-width="60" data-tchmi-icon-height="60" data-tchmi-icon-width-unit="%" data-tchmi-icon-height-unit="%">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">[
+"divider",
+"divider-bottom"
+]
+</script><script data-tchmi-target-attribute="data-tchmi-navigation-structure" type="application/json">
+[
+  {
+    "name": "Home",
+    "content": "Pages/Home.content",
+    "icon_a": "Images/house.svg",
+    "icon_n": "Images/house.svg",
+    "icon_p": "Images/house.svg"
+  },
+  {
+    "name": "Recipies",
+    "content": "Pages/Recipes.content",
+    "icon_a": "Images/book-bookmark.svg",
+    "icon_n": "Images/book-bookmark.svg",
+    "icon_p": "Images/book-bookmark.svg"
+  },
+  {
+    "name": "Data Log",
+    "content": "Pages/DataCollection.content",
+    "icon_a": "Images/DatalogIcon.svg",
+    "icon_n": "Images/DatalogIcon.svg",
+    "icon_p": "Images/DatalogIcon.svg"
+  },
+  {
+    "name": "Settings",
+    "content": "Pages/MachineSettings.content",
+    "icon_a": "Images/screwdriver-wrench.svg",
+    "icon_n": "Images/screwdriver-wrench.svg",
+    "icon_p": "Images/screwdriver-wrench.svg"
+  },
+  {
+    "name": "Event Log",
+    "content": "Pages/LogBook.content",
+    "icon_a": "Images/LogBook.png",
+    "icon_n": "Images/LogBook.png",
+    "icon_p": "Images/LogBook.png"
+  },
+  {
+    "name": "Diagnostics",
+    "content": "Pages/Diagnostics.content",
+    "icon_a": "Images/exclamation.svg",
+    "icon_n": "Images/exclamation.svg",
+    "icon_p": "Images/exclamation.svg"
+  }
+]
+</script>
+
+</div><div id="Header_Top" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiHeader" data-tchmi-height="80" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-right="0" data-tchmi-expandable="true" data-tchmi-bottom="80" data-tchmi-creator-locked="True">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">[
+"divider",
+"divider-top"
+]
+</script><script data-tchmi-target-attribute="data-tchmi-header-items" type="application/json">
+[
+  {
+    "itemType": "Image",
+    "priority": "1",
+    "itemAlign": "Left",
+    "prefWidth": 200.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 75.0,
+    "prefHeightUnit": "px",
+    "minWidth": 150.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "image": "Images/398x150 Logo (300DPI) - no background.png",
+    "altText": "Image"
+  },
+  {
+    "itemType": "EventLine",
+    "priority": "5",
+    "itemAlign": "Right",
+    "prefWidth": 800.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 100.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "messageFormat": [
+      {
+        "name": "timeRaised"
+      },
+      {
+        "text": " | "
+      },
+      {
+        "name": "text"
+      }
+    ],
+    "filter": [
+      {
+        "path": "domain",
+        "comparator": "==",
+        "value": "TcHmiEventLogger"
+      },
+      {
+        "logic": "OR"
+      },
+      {
+        "path": "domain",
+        "comparator": "==",
+        "value": "TcHmiAlarm"
+      }
+    ],
+    "targetContent": "content path"
+  },
+  {
+    "itemType": "AdsState",
+    "priority": "3",
+    "itemAlign": "Right",
+    "prefWidth": 160.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 48.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "adsRuntime": "TcSysService",
+    "iconWidth": 48.0,
+    "iconWidthUnit": "px",
+    "text": "TwinCAT",
+    "textPosition": "Left",
+    "serverInterval": 1000.0,
+    "serverDomain": "ADS",
+    "stateImages": {
+      "Fallback": "Images/TwinCAT/twincat-fallback.svg",
+      "Run": "Images/TwinCAT/twincat-run.svg",
+      "Stop": "Images/TwinCAT/twincat-stop.svg",
+      "Config": "Images/TwinCAT/twincat-config.svg",
+      "Exception": "Images/TwinCAT/twincat-exeption.svg"
+    }
+  },
+  {
+    "itemType": "AdsState",
+    "priority": "3",
+    "itemAlign": "Right",
+    "prefWidth": 160.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 48.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "adsRuntime": "PLC1",
+    "iconWidth": 48.0,
+    "iconWidthUnit": "px",
+    "text": "PLC",
+    "textPosition": "Left",
+    "serverInterval": 1000.0,
+    "serverDomain": "ADS",
+    "stateImages": {
+      "Fallback": "Images/PLC/plc-fallback.svg",
+      "Run": "Images/PLC/plc-run.svg",
+      "Stop": "Images/PLC/plc-stop.svg",
+      "Config": "Images/PLC/plc-config.svg",
+      "Exception": "Images/PLC/plc-exeption.svg"
+    }
+  },
+  {
+    "itemType": "UserManagement",
+    "priority": "3",
+    "itemAlign": "Right",
+    "prefWidth": 288.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 176.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "allowLogout": true,
+    "allowSwitchUser": true
+  },
+  {
+    "itemType": "Time",
+    "priority": "4",
+    "itemAlign": "Right",
+    "prefWidth": 128.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 96.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "timeDisplayLayout": "TimeDateMultiLine"
+  }
+]
+</script></div><div id="Region_Center" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-scrolling="Yes" data-tchmi-height-mode="Value" data-tchmi-creator-locked="True" data-tchmi-width-mode="Value" data-tchmi-top="%ctrl%Header_Top::RenderedBottom%/ctrl%" data-tchmi-bottom="%ctrl%Navigation_Bottom::RenderedTop%/ctrl%" data-tchmi-width="%ctrl%Navigation_Bottom::RenderedWidth%/ctrl%" data-tchmi-height="608">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json"></script></div>
+<div id="Fault_Reset_Button" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="60" data-tchmi-height-unit="px" data-tchmi-left="822" data-tchmi-left-unit="px" data-tchmi-text="DRIVE FAULT 
+PRESS TO RESET" data-tchmi-top="698" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-font-weight="Bold" data-tchmi-is-enabled="true" data-tchmi-opacity="%s%PLC1.GVL_Pelletizer.Pelletizer_Faulted%/s%" data-tchmi-state-symbol="%s%PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Fault_Reset%/s%">
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(205, 23, 23, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+
+
+
+</div>
+<div id="Emergency_Stop_Indicator" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="75" data-tchmi-height-unit="px" data-tchmi-left="722" data-tchmi-left-unit="px" data-tchmi-top="691" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-background-image="Images/Emergency Light.png" data-tchmi-background-image-width="75" data-tchmi-background-image-height="75" data-tchmi-stroke-thickness="0" data-tchmi-is-enabled="true" data-tchmi-opacity="%s%PLC1.GVL_Pelletizer.Emergency_Stop_Active%/s%">
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+</div>
+</div>

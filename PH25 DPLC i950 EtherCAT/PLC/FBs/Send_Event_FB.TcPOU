@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="Send_Event_FB" Id="{054f11c0-b164-48b2-a445-dc23d0bd1a51}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK Send_Event_FB
+VAR_INPUT
+	Event_Entry : TcEventEntry;
+	Send : BOOL;
+
+END_VAR
+VAR
+	fbMessage : FB_TcMessage;
+	Trigger : R_TRIG;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Trigger(CLK:=Send);
+
+
+IF Trigger.Q THEN
+	fbMessage.CreateEx(Event_Entry, 0);
+    fbMessage.Send(0);
+	fbMessage.Release();
+END_IF
+
+
+
+
+// You must create the Event using CreateEx. The input to this is the exact Event Entry you want to send.
+//Call this function and enable it by turning on the SEND input. This will send one message when the input is True. 
+//In order to send subsequent messages, the input must go from False back to True.
+
+
+// Event Entry:
+// Example Callout: TC_Events.Pelletizer_Events.Start_Button_Event
+// The Event list is under Type System, Click "Event Classes" tab on right side.
+// "Pelletizer Events" should be one of the last items on the list
+// Right Click > Edit
+
+
+//An idea would to create a structure/enumeration of these events to call them by number. 
+//I have not done this yet.]]></ST>
+    </Implementation>
+    <LineIds Name="Send_Event_FB">
+      <LineId Id="10" Count="6" />
+      <LineId Id="9" Count="0" />
+      <LineId Id="55" Count="9" />
+      <LineId Id="71" Count="0" />
+      <LineId Id="65" Count="5" />
+      <LineId Id="54" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

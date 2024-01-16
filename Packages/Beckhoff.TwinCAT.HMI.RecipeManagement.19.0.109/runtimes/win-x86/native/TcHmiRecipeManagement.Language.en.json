@@ -1,0 +1,12 @@
+{
+  "locale": "en",
+  "localizedText": {
+    "RECIPELIST": "RecipeList",
+    "MSG_RM_READ_ERROR": "Read error: {0}",
+    "MSG_RM_ACTIVATE_WARNING": "Activate warning: {0}",
+    "DESC_FOLDER_RECIPE": "Folder for recipes and/or folders",
+    "DESC_FOLDER_RECIPETYPE": "Folder for recipe types and/or folders",
+    "DESC_RECIPE":"Recipes are based on recipe types",
+    "DESC_RECIPETYPE": "Recipe type is a general description of a set of symbols"
+  }
+}

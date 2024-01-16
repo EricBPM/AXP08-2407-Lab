@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="Feedroll_Control" Id="{353dd5dd-1b9c-48d0-8599-587266c36cca}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Feedroll_Control
+VAR
+	Sensor_Scale : REAL := 27648;
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF GVL_Feedroll.Feedroll_Closed_Input THEN
+	GVL_Feedroll.Feedroll_Pressure_Output := REAL_TO_UINT((GVL_Feedroll.Feedroll_Pressure_Input / 100) * Sensor_Scale);
+ELSE
+	GVL_Feedroll.Feedroll_Pressure_Output := 0;
+END_IF
+
+
+
+// Analog output for feedroll control scales as follows:
+//4 ... 20 mA / 0 ... 27648
+//0 PSI - 4.00mA @ 0
+//87 PSI - 20.00mA @ 27648]]></ST>
+    </Implementation>
+    <LineIds Name="Feedroll_Control">
+      <LineId Id="5" Count="0" />
+      <LineId Id="11" Count="3" />
+      <LineId Id="16" Count="3" />
+      <LineId Id="15" Count="0" />
+      <LineId Id="21" Count="0" />
+      <LineId Id="23" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

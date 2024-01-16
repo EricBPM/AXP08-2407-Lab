@@ -1,0 +1,339 @@
+{
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.760.48/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
+  "basePath": "./framework",
+  "scaleMode": "None",
+  "startupView": "Desktop.view",
+  "loginPage": "/Pages/LoginPage.html",
+  "tcHmiServer": {
+    "websocketIntervalTime": 500,
+    "websocketTimeout": 20000,
+    "websocketSystemTimeout": 60000,
+    "websocketSubscriptionMode": "Change"
+  },
+  "activeTheme": "Base-Dark",
+  "themes": {
+    "Base-Dark": {
+      "resources": [
+        {
+          "name": "Themes/Base-Dark/Base-DarkStyle.css",
+          "description": "",
+          "type": "Stylesheet"
+        },
+        {
+          "name": "Themes/Base-Dark/Base-Dark.theme",
+          "description": "",
+          "type": "ThemedValues"
+        }
+      ],
+      "replacesThemeForControls": [],
+      "replacesThemeForPackageComponents": []
+    },
+    "Base": {
+      "resources": [
+        {
+          "name": "Themes/Base/Base.theme",
+          "description": "",
+          "type": "ThemedValues"
+        },
+        {
+          "name": "Themes/Base/BaseStyle.css",
+          "description": "",
+          "type": "Stylesheet"
+        }
+      ],
+      "replacesThemeForControls": [],
+      "replacesThemeForPackageComponents": []
+    }
+  },
+  "dependencyFiles": [
+    {
+      "name": "Fonts/Fonts.css",
+      "description": "",
+      "type": "Stylesheet"
+    },
+    {
+      "name": "RecipeFunctions/ConvertDatagridToRecipe.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/ConvertRecipeToDatagrid.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/DeleteRecipe.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/DownloadRecipe.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/ListRecipesAsReferenceArray.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/UpdateDatagridFromTarget.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/UploadRecipe.js",
+      "description": "",
+      "type": "JavaScript"
+    }
+  ],
+  "userControls": [],
+  "content": [
+    {
+      "url": "Pages/DataCollection.content",
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": true
+    },
+    {
+      "url": "Pages/Logbook.content",
+      "preload": false,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Diagnostics.content",
+      "preload": false,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Home.content",
+      "preload": false,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/MachineSettings.content",
+      "preload": false,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Recipes.content",
+      "preload": false,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    }
+  ],
+  "views": [
+    {
+      "url": "Desktop.view",
+      "preload": false,
+      "keepAlive": false,
+      "preloadBindings": false
+    }
+  ],
+  "userFunctions": [
+    {
+      "url": "RecipeFunctions/ConvertDatagridToRecipe.js"
+    },
+    {
+      "url": "RecipeFunctions/ConvertRecipeToDatagrid.js"
+    },
+    {
+      "url": "RecipeFunctions/DeleteRecipe.js"
+    },
+    {
+      "url": "RecipeFunctions/DownloadRecipe.js"
+    },
+    {
+      "url": "RecipeFunctions/ListRecipesAsReferenceArray.js"
+    },
+    {
+      "url": "RecipeFunctions/UpdateDatagridFromTarget.js"
+    },
+    {
+      "url": "RecipeFunctions/UploadRecipe.js"
+    }
+  ],
+  "symbols": {
+    "internal": {},
+    "themedResources": {
+      "TR_Icon_Home_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Normal Icon of page: Home",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_normal.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_normal.svg"
+        }
+      },
+      "TR_Icon_Home_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Pressed Icon of page: Home",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_pressed.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_pressed.svg"
+        }
+      },
+      "TR_Icon_Home_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Active Icon of page: Home",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_active.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_active.svg"
+        }
+      },
+      "TR_Icon_Recipies_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Normal Icon of page: Recipies",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_normal.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_normal.svg"
+        }
+      },
+      "TR_Icon_Recipies_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Pressed Icon of page: Recipies",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_pressed.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_pressed.svg"
+        }
+      },
+      "TR_Icon_Recipies_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Active Icon of page: Recipies",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_active.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_active.svg"
+        }
+      },
+      "TR_Icon_MachineSettings_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Normal Icon of page: Machine Settings",
+        "values": {
+          "Base": "Themes/Base/Images/Settings/settings_normal.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Settings/settings_normal.svg"
+        }
+      },
+      "TR_Icon_MachineSettings_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Pressed Icon of page: Machine Settings",
+        "values": {
+          "Base": "Themes/Base/Images/Settings/settings_pressed.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Settings/settings_pressed.svg"
+        }
+      },
+      "TR_Icon_MachineSettings_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Active Icon of page: Machine Settings",
+        "values": {
+          "Base": "Themes/Base/Images/Settings/settings_active.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Settings/settings_active.svg"
+        }
+      },
+      "TR_Icon_Diagnostics_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Normal Icon of page: Diagnostics",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_normal.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_normal.svg"
+        }
+      },
+      "TR_Icon_Diagnostics_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Pressed Icon of page: Diagnostics",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_pressed.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_pressed.svg"
+        }
+      },
+      "TR_Icon_Diagnostics_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Active Icon of page: Diagnostics",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_active.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_active.svg"
+        }
+      }
+    }
+  },
+  "trigger": [],
+  "actionTemplates": [],
+  "languages": {
+    "de": "Localization/de.localization",
+    "en": "Localization/en.localization"
+  },
+  "languageFallback": "",
+  "disableLoadingOptimization": false,
+  "creatorSettings": {
+    "viewport": {
+      "defaultWidth": 1024,
+      "defaultHeight": 768
+    }
+  },
+  "binding": {
+    "symbolError": "Ignore"
+  },
+  "packages": [
+    {
+      "name": "Beckhoff.TwinCAT.HMI.BaseTemplate",
+      "basePath": "/Beckhoff.TwinCAT.HMI.BaseTemplate"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Controls",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Controls"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.EcDiagnosticsControl",
+      "basePath": "/Beckhoff.TwinCAT.HMI.EcDiagnosticsControl"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Framework",
+      "basePath": "/framework"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Functions",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Functions"
+    },
+    {
+      "name": "JB.TcHmiGalleryFontawesome",
+      "basePath": "/JB.TcHmiGalleryFontawesome"
+    }
+  ],
+  "keyboardLayouts": [
+    {
+      "url": "KeyboardLayouts/German - compact.keyboard.json"
+    },
+    {
+      "url": "KeyboardLayouts/Numpad (plusminus).keyboard.json"
+    },
+    {
+      "url": "KeyboardLayouts/US - compact.keyboard.json"
+    }
+  ],
+  "systemKeyboard": {
+    "providerName": "Beckhoff.TcHmiKeyboard",
+    "projectKeyboardMapping": {
+      "de": {
+        "text": "KeyboardLayouts/German - compact.keyboard.json",
+        "decimal": "KeyboardLayouts/Numpad (plusminus).keyboard.json",
+        "numeric": ""
+      },
+      "en": {
+        "text": "KeyboardLayouts/US - compact.keyboard.json",
+        "decimal": "KeyboardLayouts/Numpad (plusminus).keyboard.json",
+        "numeric": ""
+      }
+    }
+  },
+  "systemPopups": {
+    "providerName": "Beckhoff.TcHmiPopups"
+  }
+}

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="VFD" Id="{2857eff3-0418-40bd-b7c0-909035c6172d}">
+    <Declaration><![CDATA[TYPE VFD :
+STRUCT
+	//The idea here is to structure these variables to be directly mapped to the VFD. This is my first try at this method
+	// so I created these variables before I knew what my Inverter needed to be controlled.
+	// I am using some of these variables so I do not want to delete these but there is a better method of binding all of these.
+
+	
+	VFD_Mains_Voltage : REAL;
+	VFD_Minimum_Frequency : REAL;
+	VFD_Maximum_Frequency : REAL;
+	VFD_Acceleration_Time : REAL;
+	VFD_Deceleration_Time : REAL;
+	VFD_Fault : BOOL;
+	VFD_Fault_Reset : BOOL;
+	VFD_Input_Hz : INT;
+	
+	
+	// PLC Inputs (Data read from the inverter)
+	VFD_Status_Word AT %I* : UINT;
+	VFD_Inverter_Status_Word AT %I* : UINT;		//The Inverter Status word is supplimentary, not needed for control.
+	VFD_Active_Operation_Mode AT %I* : SINT;	//You can use this to confirm the active operation mode. It shouldnt Change, not needed for control
+	VFD_Error_Code AT %I* : UINT;				//You could create a lookup table for the error codes. 
+	VFD_Actual_Output_RPM AT %I* : INT;			// Map this to the HMI for displaying the speed.
+	VFD_Digital_Input_Status AT %I* : UDINT;
+	
+	
+	// PLC Outputs (Data written to the inverter)
+	VFD_Input_RPM AT %Q* : INT;
+	VFD_Control_Word AT %Q* : UINT;
+	VFD_Inverter_Control_Word AT %Q* : UINT;
+	VFD_Operation_Mode AT %Q* : SINT := 2;		//Should always be set to 2 for this program = CiA Velocity Mode [2]
+
+	
+
+	
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
