@@ -1,0 +1,477 @@
+{
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.760.37/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
+  "basePath": "./framework",
+  "scaleMode": "None",
+  "startupView": "Desktop.view",
+  "loginPage": "/Pages/LoginPage.html",
+  "tcHmiServer": {
+    "websocketIntervalTime": 500,
+    "websocketTimeout": 20000,
+    "websocketSystemTimeout": 60000,
+    "websocketSubscriptionMode": "Change"
+  },
+  "activeTheme": "Base-Dark",
+  "themes": {
+    "Base-Dark": {
+      "resources": [
+        {
+          "name": "Themes/Base-Dark/Base-DarkStyle.css",
+          "description": "",
+          "type": "Stylesheet"
+        },
+        {
+          "name": "Themes/Base-Dark/Base-Dark.theme",
+          "description": "",
+          "type": "ThemedValues"
+        }
+      ],
+      "replacesThemeForControls": [],
+      "replacesThemeForPackageComponents": []
+    },
+    "Base": {
+      "resources": [
+        {
+          "name": "Themes/Base/Base.theme",
+          "description": "",
+          "type": "ThemedValues"
+        },
+        {
+          "name": "Themes/Base/BaseStyle.css",
+          "description": "",
+          "type": "Stylesheet"
+        }
+      ],
+      "replacesThemeForControls": [],
+      "replacesThemeForPackageComponents": []
+    }
+  },
+  "dependencyFiles": [
+    {
+      "name": "Fonts/Fonts.css",
+      "description": "",
+      "type": "Stylesheet"
+    }
+  ],
+  "userControls": [],
+  "content": [
+    {
+      "url": "Pages/SystemHome.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/SystemControl.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Recipe.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Trend.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Setting.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/EventLog.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Diagnostic.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Vision.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Resources.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/SubPages/SystemControlSubPages/PelletizerControl.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    }
+  ],
+  "views": [
+    {
+      "url": "Desktop.view",
+      "preload": false,
+      "keepAlive": false,
+      "preloadBindings": false
+    }
+  ],
+  "userFunctions": [],
+  "symbols": {
+    "internal": {
+      "MediaQueryList": {
+        "value": [
+          {
+            "name": "Mobile",
+            "maxWidth": 1047,
+            "minWidth": 0,
+            "controlBehaviourList": [
+              {
+                "controlType": "TcHmi.Controls.BaseTemplate.TcHmiNavigation",
+                "controlID": "Navigation_Left",
+                "displayOption": "burger_top"
+              }
+            ]
+          },
+          {
+            "name": "Desktop",
+            "maxWidth": 1920,
+            "minWidth": 900,
+            "controlBehaviourList": [
+              {
+                "controlType": "TcHmi.Controls.BaseTemplate.TcHmiNavigation",
+                "controlID": "Navigation_Left",
+                "displayOption": "full"
+              }
+            ]
+          }
+        ],
+        "type": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.MediaQueryList",
+        "persist": true,
+        "readonly": true
+      },
+      "AffectedControls": {
+        "value": [
+          {
+            "controlID": "Header_Top",
+            "position": "Top"
+          },
+          {
+            "controlID": "Navigation_Left",
+            "position": "Left"
+          },
+          {
+            "controlID": "Region_Center",
+            "position": "Center"
+          }
+        ],
+        "type": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.AffectedControlList",
+        "persist": true,
+        "readonly": true
+      }
+    },
+    "themedResources": {
+      "TR_Icon_SystemHome_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Normal Icon of page: System Home",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_normal.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_normal.svg"
+        }
+      },
+      "TR_Icon_SystemHome_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Pressed Icon of page: System Home",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_pressed.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_pressed.svg"
+        }
+      },
+      "TR_Icon_SystemHome_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Active Icon of page: System Home",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_active.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_active.svg"
+        }
+      },
+      "TR_Icon_SystemControl_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Normal Icon of page: System Control",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_normal.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_normal.svg"
+        }
+      },
+      "TR_Icon_SystemControl_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Pressed Icon of page: System Control",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_pressed.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_pressed.svg"
+        }
+      },
+      "TR_Icon_SystemControl_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Active Icon of page: System Control",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_active.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_active.svg"
+        }
+      },
+      "TR_Icon_Recipe_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Normal Icon of page: Recipe",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_normal.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_normal.svg"
+        }
+      },
+      "TR_Icon_Recipe_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Pressed Icon of page: Recipe",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_pressed.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_pressed.svg"
+        }
+      },
+      "TR_Icon_Recipe_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Active Icon of page: Recipe",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_active.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_active.svg"
+        }
+      },
+      "TR_Icon_Trend_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Normal Icon of page: Trend",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_normal.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_normal.svg"
+        }
+      },
+      "TR_Icon_Trend_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Pressed Icon of page: Trend",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_pressed.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_pressed.svg"
+        }
+      },
+      "TR_Icon_Trend_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Active Icon of page: Trend",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_active.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_active.svg"
+        }
+      },
+      "TR_Icon_Setting_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Normal Icon of page: Setting",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_normal.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_normal.svg"
+        }
+      },
+      "TR_Icon_Setting_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Pressed Icon of page: Setting",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_pressed.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_pressed.svg"
+        }
+      },
+      "TR_Icon_Setting_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Active Icon of page: Setting",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_active.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_active.svg"
+        }
+      },
+      "TR_Icon_EventLog_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Normal Icon of page: Event Log",
+        "values": {
+          "Base": "Themes/Base/Images/Events/message_normal.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Events/message_normal.svg"
+        }
+      },
+      "TR_Icon_EventLog_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Pressed Icon of page: Event Log",
+        "values": {
+          "Base": "Themes/Base/Images/Events/message_pressed.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Events/message_pressed.svg"
+        }
+      },
+      "TR_Icon_EventLog_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Active Icon of page: Event Log",
+        "values": {
+          "Base": "Themes/Base/Images/Events/message_active.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Events/message_active.svg"
+        }
+      },
+      "TR_Icon_Diagnostic_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Normal Icon of page: Diagnostic",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_normal.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_normal.svg"
+        }
+      },
+      "TR_Icon_Diagnostic_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Pressed Icon of page: Diagnostic",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_pressed.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_pressed.svg"
+        }
+      },
+      "TR_Icon_Diagnostic_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Active Icon of page: Diagnostic",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_active.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_active.svg"
+        }
+      },
+      "TR_Icon_Vision_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Normal Icon of page: Vision",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_normal.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_normal.svg"
+        }
+      },
+      "TR_Icon_Vision_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Pressed Icon of page: Vision",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_pressed.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_pressed.svg"
+        }
+      },
+      "TR_Icon_Vision_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Active Icon of page: Vision",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_active.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_active.svg"
+        }
+      },
+      "TR_Icon_Resources_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Normal Icon of page: Resources",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_normal.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_normal.svg"
+        }
+      },
+      "TR_Icon_Resources_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Pressed Icon of page: Resources",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_pressed.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_pressed.svg"
+        }
+      },
+      "TR_Icon_Resources_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "Active Icon of page: Resources",
+        "values": {
+          "Base": "Themes/Base/Images/Placeholder/placeholder_active.svg",
+          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_active.svg"
+        }
+      }
+    }
+  },
+  "trigger": [],
+  "actionTemplates": [],
+  "languages": {
+    "de": "Localization/de.localization",
+    "en": "Localization/en.localization"
+  },
+  "languageFallback": "",
+  "disableLoadingOptimization": false,
+  "creatorSettings": {
+    "viewport": {
+      "defaultWidth": 1366,
+      "defaultHeight": 768
+    }
+  },
+  "binding": {
+    "symbolError": "Ignore"
+  },
+  "packages": [
+    {
+      "name": "Beckhoff.TwinCAT.HMI.BaseTemplate",
+      "basePath": "/Beckhoff.TwinCAT.HMI.BaseTemplate"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Controls",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Controls"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.EcDiagnosticsControl",
+      "basePath": "/Beckhoff.TwinCAT.HMI.EcDiagnosticsControl"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Framework",
+      "basePath": "/framework"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Functions",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Functions"
+    }
+  ],
+  "keyboardLayouts": [
+    {
+      "url": "KeyboardLayouts/German - compact.keyboard.json"
+    },
+    {
+      "url": "KeyboardLayouts/Numpad (plusminus).keyboard.json"
+    },
+    {
+      "url": "KeyboardLayouts/US - compact.keyboard.json"
+    }
+  ],
+  "systemKeyboard": {
+    "providerName": "",
+    "projectKeyboardMapping": {
+      "de": {
+        "text": "KeyboardLayouts/German - compact.keyboard.json",
+        "decimal": "KeyboardLayouts/Numpad (plusminus).keyboard.json",
+        "numeric": ""
+      },
+      "en": {
+        "text": "KeyboardLayouts/US - compact.keyboard.json",
+        "decimal": "KeyboardLayouts/Numpad (plusminus).keyboard.json",
+        "numeric": ""
+      }
+    }
+  },
+  "systemPopups": {
+    "providerName": "Beckhoff.TcHmiPopups"
+  }
+}

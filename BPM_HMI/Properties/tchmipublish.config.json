@@ -1,43 +1,6 @@
 [
   {
-    "serverExtensions": [
-      {
-        "publishServerExtension": true,
-        "name": "ADS"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiEcDiagnostics"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiEventLogger"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiLua"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiRecipeManagement"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiSqliteHistorize"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiSqliteLogger"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiSrv"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiUserManagement"
-      }
-    ],
+    "serverExtensions": [],
     "isNew": false,
     "profileName": "Publish",
     "publishMode": "TcHmi",
@@ -56,7 +19,7 @@
     "userName": "",
     "encryptedPassword": "",
     "encryptedTcHmiServerPassword": "qWYfWeoHczH3GhutAMIjqA==",
-    "tcHmiServerHost": "PH25-Beta",
+    "tcHmiServerHost": "AXP08-2310",
     "tcHmiServerPort": "1020",
     "socketTimeout": "60",
     "clientCertificateCN": "",
@@ -65,8 +28,8 @@
     "launchBrowserAfterPublish": true,
     "createVirtualDirectoriesOnTargetSystem": true,
     "tcHmiServerUserName": "__SystemAdministrator",
-    "tcHmiDestinationUrl": "https://ph25-beta:1020/",
-    "publishConfiguration": "remote",
+    "tcHmiDestinationUrl": "https://axp08-2310:1020/",
+    "publishConfiguration": null,
     "tcHmiSavePassword": false,
     "tcHmiIgnoreCertificateErrors": true
   }
