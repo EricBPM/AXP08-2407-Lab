@@ -119,6 +119,7 @@
     <Folder Include="Pages\" />
     <Folder Include="Pages\SubPages" />
     <Folder Include="Pages\SubPages\SystemControlSubPages" />
+    <Folder Include="RecipeFunctions" />
     <Folder Include="Server\ADS\" />
     <Folder Include="Server\TcHmiEcDiagnostics" />
     <Folder Include="Server\TcHmiLua\" />
@@ -175,6 +176,15 @@
     <Content Include="Pages\Setting.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Pages\SubPages\SystemControlSubPages\AirKnifeControl.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\SubPages\SystemControlSubPages\WaterBathControl.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\SubPages\SystemControlSubPages\ExtruderControl.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Pages\SubPages\SystemControlSubPages\PelletizerControl.content">
       <SubType>Content</SubType>
     </Content>
@@ -188,6 +198,55 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Vision.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RecipeFunctions\ConvertDatagridToRecipe.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>RecipeFunctions\ConvertDatagridToRecipe.js</DependentUpon>
+    </Content>
+    <Content Include="RecipeFunctions\ConvertDatagridToRecipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RecipeFunctions\ConvertRecipeToDatagrid.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>RecipeFunctions\ConvertRecipeToDatagrid.js</DependentUpon>
+    </Content>
+    <Content Include="RecipeFunctions\ConvertRecipeToDatagrid.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RecipeFunctions\DeleteRecipe.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>RecipeFunctions\DeleteRecipe.js</DependentUpon>
+    </Content>
+    <Content Include="RecipeFunctions\DeleteRecipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RecipeFunctions\DownloadRecipe.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>RecipeFunctions\DownloadRecipe.js</DependentUpon>
+    </Content>
+    <Content Include="RecipeFunctions\DownloadRecipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RecipeFunctions\ListRecipesAsReferenceArray.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>RecipeFunctions\ListRecipesAsReferenceArray.js</DependentUpon>
+    </Content>
+    <Content Include="RecipeFunctions\ListRecipesAsReferenceArray.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RecipeFunctions\UpdateDatagridFromTarget.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>RecipeFunctions\UpdateDatagridFromTarget.js</DependentUpon>
+    </Content>
+    <Content Include="RecipeFunctions\UpdateDatagridFromTarget.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RecipeFunctions\UploadRecipe.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>RecipeFunctions\UploadRecipe.js</DependentUpon>
+    </Content>
+    <Content Include="RecipeFunctions\UploadRecipe.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Server\ADS\ADS.Config.default.json">

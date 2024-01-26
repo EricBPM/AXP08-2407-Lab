@@ -1,5 +1,5 @@
 {
-  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.760.37/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.760.48/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
   "basePath": "./framework",
   "scaleMode": "None",
   "startupView": "Desktop.view",
@@ -50,40 +50,47 @@
       "name": "Fonts/Fonts.css",
       "description": "",
       "type": "Stylesheet"
+    },
+    {
+      "name": "RecipeFunctions/ConvertDatagridToRecipe.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/ConvertRecipeToDatagrid.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/DeleteRecipe.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/DownloadRecipe.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/ListRecipesAsReferenceArray.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/UpdateDatagridFromTarget.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/UploadRecipe.js",
+      "description": "",
+      "type": "JavaScript"
     }
   ],
   "userControls": [],
   "content": [
     {
-      "url": "Pages/SystemHome.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/SystemControl.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/Recipe.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/Trend.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/Setting.content",
+      "url": "Pages/Diagnostic.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
@@ -97,14 +104,7 @@
       "preloadBindings": false
     },
     {
-      "url": "Pages/Diagnostic.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/Vision.content",
+      "url": "Pages/Recipe.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
@@ -118,7 +118,63 @@
       "preloadBindings": false
     },
     {
+      "url": "Pages/Setting.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/SubPages/SystemControlSubPages/AirKnifeControl.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/SubPages/SystemControlSubPages/WaterBathControl.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/SubPages/SystemControlSubPages/ExtruderControl.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
       "url": "Pages/SubPages/SystemControlSubPages/PelletizerControl.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/SystemControl.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/SystemHome.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Trend.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Vision.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
@@ -133,7 +189,29 @@
       "preloadBindings": false
     }
   ],
-  "userFunctions": [],
+  "userFunctions": [
+    {
+      "url": "RecipeFunctions/ConvertDatagridToRecipe.js"
+    },
+    {
+      "url": "RecipeFunctions/ConvertRecipeToDatagrid.js"
+    },
+    {
+      "url": "RecipeFunctions/DeleteRecipe.js"
+    },
+    {
+      "url": "RecipeFunctions/DownloadRecipe.js"
+    },
+    {
+      "url": "RecipeFunctions/ListRecipesAsReferenceArray.js"
+    },
+    {
+      "url": "RecipeFunctions/UpdateDatagridFromTarget.js"
+    },
+    {
+      "url": "RecipeFunctions/UploadRecipe.js"
+    }
+  ],
   "symbols": {
     "internal": {
       "MediaQueryList": {

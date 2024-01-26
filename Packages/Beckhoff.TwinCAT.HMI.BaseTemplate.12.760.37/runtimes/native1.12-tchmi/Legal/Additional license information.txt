@@ -1,1 +1,0 @@
-The Beckhoff.TwinCAT.HMI.BaseTemplate package is using the following open source software components:
