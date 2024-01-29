@@ -118,6 +118,34 @@
       "preloadBindings": false
     },
     {
+      "url": "Pages/Resources/SubNavigationMenu/AirKnifeSubNav.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Resources/SubNavigationMenu/ExtrudSubNav.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Resources/SubNavigationMenu/PelletizerSubNav.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Resources/SubNavigationMenu/WaterBathSubNav.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
       "url": "Pages/Setting.content",
       "preload": false,
       "keepAlive": false,

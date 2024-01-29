@@ -117,6 +117,12 @@
     <Folder Include="Localization" />
     <Folder Include="3DModel" />
     <Folder Include="Pages\" />
+    <Folder Include="Pages\Resources" />
+    <Folder Include="Pages\Resources\3D_Model" />
+    <Folder Include="Pages\Resources\Documents" />
+    <Folder Include="Pages\Resources\Misc" />
+    <Folder Include="Pages\Resources\SubNavigationMenu" />
+    <Folder Include="Pages\Resources\Video" />
     <Folder Include="Pages\SubPages" />
     <Folder Include="Pages\SubPages\SystemControlSubPages" />
     <Folder Include="RecipeFunctions" />
@@ -171,6 +177,18 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Resources.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\SubNavigationMenu\AirKnifeSubNav.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\SubNavigationMenu\ExtrudSubNav.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\SubNavigationMenu\PelletizerSubNav.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\SubNavigationMenu\WaterBathSubNav.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Setting.content">
