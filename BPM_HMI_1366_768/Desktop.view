@@ -167,97 +167,80 @@
                     "classList": [],
                     "accessRights": []
                 }
-            ]</script></div><div id="Navigation_Left" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiNavigation" data-tchmi-width="220" data-tchmi-left="0" data-tchmi-top="%ctrl%Header_Top::Height%/ctrl%" data-tchmi-bottom="0" data-tchmi-target-region="%ctrl%Region_Center%/ctrl%" data-tchmi-navigation-orientation="Vertical" data-tchmi-keep-lowest-level="true" data-tchmi-breadcrumb="%ctrl%Breadcrumb%/ctrl%">
+            ]</script></div><div id="Navigation_Left" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiNavigation" data-tchmi-width="220" data-tchmi-left="0" data-tchmi-top="%ctrl%Header_Top::Height%/ctrl%" data-tchmi-target-region="%ctrl%Region_Center%/ctrl%" data-tchmi-navigation-orientation="Vertical" data-tchmi-keep-lowest-level="true" data-tchmi-breadcrumb="%ctrl%Breadcrumb%/ctrl%" data-tchmi-show-back-button="false" data-tchmi-scrollbar-style="Auto" data-tchmi-width-mode="Value" data-tchmi-right="0" data-tchmi-bottom="0">
 
-<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">[
-"divider",
-"divider-left"
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "divider",
+  "divider-left"
 ]
 </script><script data-tchmi-target-attribute="data-tchmi-navigation-structure" type="application/json">
 [
   {
     "name": "%l%L_SystemHome%/l%",
-    "content": "Pages/SystemHome.content",
+    "content": "Pages/MainContent/SystemHome.content",
     "icon_a": "%tr%TR_Icon_SystemHome_active%/tr%",
     "icon_n": "%tr%TR_Icon_SystemHome_normal%/tr%",
     "icon_p": "%tr%TR_Icon_SystemHome_pressed%/tr%"
   },
   {
     "name": "%l%L_SystemControl%/l%",
-    "content": "Pages/SystemControl.content",
+    "content": "Pages/MainContent/SystemControl.content",
     "icon_a": "%tr%TR_Icon_SystemControl_active%/tr%",
     "icon_n": "%tr%TR_Icon_SystemControl_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_SystemControl_pressed%/tr%",
-    "subItem": [
-      {
-        "name": "Pelletizer Control",
-        "content": "Pages/SubPages/SystemControlSubPages/PelletizerControl.content"
-      },
-      {
-        "name": "Air Knife Controls",
-        "content": "Pages/SubPages/SystemControlSubPages/AirKnifeControl.content"
-      },
-      {
-        "name": "Water Bath Controls",
-        "content": "Pages/SubPages/SystemControlSubPages/WaterBathControl.content"
-      },
-      {
-        "name": "Extruder Controls",
-        "content": "Pages/SubPages/SystemControlSubPages/ExtruderControl.content"
-      }
-    ]
+    "icon_p": "%tr%TR_Icon_SystemControl_pressed%/tr%"
   },
   {
     "name": "%l%L_Recipe%/l%",
-    "content": "Pages/Recipe.content",
+    "content": "Pages/MainContent/Recipe.content",
     "icon_a": "%tr%TR_Icon_Recipe_active%/tr%",
     "icon_n": "%tr%TR_Icon_Recipe_normal%/tr%",
     "icon_p": "%tr%TR_Icon_Recipe_pressed%/tr%"
   },
   {
     "name": "%l%L_Trend%/l%",
-    "content": "Pages/Trend.content",
+    "content": "Pages/MainContent/Trend.content",
     "icon_a": "%tr%TR_Icon_Trend_active%/tr%",
     "icon_n": "%tr%TR_Icon_Trend_normal%/tr%",
     "icon_p": "%tr%TR_Icon_Trend_pressed%/tr%"
   },
   {
     "name": "%l%L_Setting%/l%",
-    "content": "Pages/Setting.content",
+    "content": "Pages/MainContent/Setting.content",
     "icon_a": "%tr%TR_Icon_Setting_active%/tr%",
     "icon_n": "%tr%TR_Icon_Setting_normal%/tr%",
     "icon_p": "%tr%TR_Icon_Setting_pressed%/tr%"
   },
   {
     "name": "%l%L_EventLog%/l%",
-    "content": "Pages/EventLog.content",
+    "content": "Pages/MainContent/EventLog.content",
     "icon_a": "%tr%TR_Icon_EventLog_active%/tr%",
     "icon_n": "%tr%TR_Icon_EventLog_normal%/tr%",
     "icon_p": "%tr%TR_Icon_EventLog_pressed%/tr%"
   },
   {
     "name": "%l%L_Diagnostic%/l%",
-    "content": "Pages/Diagnostic.content",
+    "content": "Pages/MainContent/Diagnostic.content",
     "icon_a": "%tr%TR_Icon_Diagnostic_active%/tr%",
     "icon_n": "%tr%TR_Icon_Diagnostic_normal%/tr%",
     "icon_p": "%tr%TR_Icon_Diagnostic_pressed%/tr%"
   },
   {
-    "name": "%l%L_Vision%/l%",
-    "content": "Pages/Vision.content",
-    "icon_a": "%tr%TR_Icon_Vision_active%/tr%",
-    "icon_n": "%tr%TR_Icon_Vision_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_Vision_pressed%/tr%"
+    "name": "Vision",
+    "content": "Pages/MainContent/Vision.content",
+    "icon_a": "%tr%TR_Icon_Resources_active%/tr%",
+    "icon_n": "%tr%TR_Icon_Resources_active%/tr%",
+    "icon_p": "%tr%TR_Icon_Resources_active%/tr%"
   },
   {
     "name": "%l%L_Resources%/l%",
-    "content": "Pages/Resources.content",
+    "content": "Pages/MainContent/Resources.content",
     "icon_a": "%tr%TR_Icon_Resources_active%/tr%",
     "icon_n": "%tr%TR_Icon_Resources_normal%/tr%",
     "icon_p": "%tr%TR_Icon_Resources_pressed%/tr%"
   }
 ]
-</script></div><div id="Region_Center" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-left="%ctrl%Navigation_Left::Width%/ctrl%" data-tchmi-top="%f%%ctrl%Header_Top::Height%/ctrl%+ 64%/f%" data-tchmi-scrolling="Yes" data-tchmi-bottom="0" data-tchmi-right="0">
+</script></div><div id="Region_Center" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-left="%ctrl%Navigation_Left::Width%/ctrl%" data-tchmi-top="%f%%ctrl%Header_Top::Height%/ctrl%+ 64%/f%" data-tchmi-scrolling="Auto" data-tchmi-bottom="0" data-tchmi-right="0">
 
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json"></script></div><div id="Breadcrumb" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiBreadcrumb" data-tchmi-height="32" data-tchmi-left="%f%%ctrl%Region_Center::Left%/ctrl%+ 16%/f%" data-tchmi-top="%f%%ctrl%Header_Top::Height%/ctrl%+ 16%/f%" data-tchmi-right="%f%%ctrl%Region_Center::Right%/ctrl%+ 16%/f%" data-tchmi-navigationcontrol="%ctrl%Navigation_Left%/ctrl%">
 

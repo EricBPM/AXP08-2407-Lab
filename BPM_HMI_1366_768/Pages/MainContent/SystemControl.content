@@ -64,7 +64,7 @@
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/SubPages/SystemControlSubPages/PelletizerControl.content"
+          "value": "Pages/SystemControlSubPages/PelletizerControl.content"
         },
         "asyncWait": true
       },
@@ -91,7 +91,7 @@
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/SubPages/SystemControlSubPages/PelletizerControl.content"
+          "value": "Pages/SystemControlSubPages/PelletizerControl.content"
         },
         "asyncWait": true
       }
@@ -177,7 +177,7 @@
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/SubPages/SystemControlSubPages/AirKnifeControl.content"
+          "value": "Pages/SystemControlSubPages/AirKnifeControl.content"
         },
         "asyncWait": true
       },
@@ -223,7 +223,7 @@
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/SubPages/SystemControlSubPages/WaterBathControl.content"
+          "value": "Pages/SystemControlSubPages/WaterBathControl.content"
         },
         "asyncWait": true
       },
@@ -269,7 +269,7 @@
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/SubPages/SystemControlSubPages/ExtruderControl.content"
+          "value": "Pages/SystemControlSubPages/ExtruderControl.content"
         },
         "asyncWait": true
       },

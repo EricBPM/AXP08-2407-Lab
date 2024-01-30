@@ -90,97 +90,6 @@
   "userControls": [],
   "content": [
     {
-      "url": "Pages/Diagnostic.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/EventLog.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/Recipe.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/Resources.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/Resources/ContentPages/3dModelContent/AirKnife_3dModel.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/Resources/ContentPages/3dModelContent/Extruder_3dModel.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/Resources/ContentPages/3dModelContent/Pelletizer_3dModel.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/Resources/ContentPages/3dModelContent/WaterBath_3dModel.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/Resources/ContentPages/DocumentsContent/AirKnife_Documents.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/Resources/ContentPages/DocumentsContent/Extruder_Documents.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/Resources/ContentPages/DocumentsContent/Pelletizer_Documents.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/Resources/ContentPages/DocumentsContent/WaterBath_Documents.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/Resources/ContentPages/VideoContent/AirKnife_Videos.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
       "url": "Pages/Resources/SubNavigationMenu/AirKnifeSubNav.content",
       "preload": false,
       "keepAlive": false,
@@ -209,63 +118,154 @@
       "preloadBindings": false
     },
     {
-      "url": "Pages/Setting.content",
+      "url": "Pages/ResourceSubPages/3dModelContent/AirKnife_3dModel.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
       "preloadBindings": false
     },
     {
-      "url": "Pages/SubPages/SystemControlSubPages/AirKnifeControl.content",
+      "url": "Pages/ResourceSubPages/3dModelContent/Extruder_3dModel.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
       "preloadBindings": false
     },
     {
-      "url": "Pages/SubPages/SystemControlSubPages/WaterBathControl.content",
+      "url": "Pages/ResourceSubPages/3dModelContent/Pelletizer_3dModel.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
       "preloadBindings": false
     },
     {
-      "url": "Pages/SubPages/SystemControlSubPages/ExtruderControl.content",
+      "url": "Pages/ResourceSubPages/3dModelContent/WaterBath_3dModel.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
       "preloadBindings": false
     },
     {
-      "url": "Pages/SubPages/SystemControlSubPages/PelletizerControl.content",
+      "url": "Pages/ResourceSubPages/DocumentsContent/AirKnife_Documents.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
       "preloadBindings": false
     },
     {
-      "url": "Pages/SystemControl.content",
+      "url": "Pages/ResourceSubPages/DocumentsContent/Extruder_Documents.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
       "preloadBindings": false
     },
     {
-      "url": "Pages/SystemHome.content",
+      "url": "Pages/ResourceSubPages/DocumentsContent/Pelletizer_Documents.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
       "preloadBindings": false
     },
     {
-      "url": "Pages/Trend.content",
+      "url": "Pages/ResourceSubPages/DocumentsContent/WaterBath_Documents.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
       "preloadBindings": false
     },
     {
-      "url": "Pages/Vision.content",
+      "url": "Pages/ResourceSubPages/VideoContent/AirKnife_Videos.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/SystemControlSubPages/AirKnifeControl.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/SystemControlSubPages/ExtruderControl.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/SystemControlSubPages/PelletizerControl.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/SystemControlSubPages/WaterBathControl.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/MainContent/Vision.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/MainContent/Diagnostic.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/MainContent/EventLog.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/MainContent/Recipe.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/MainContent/Resources.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/MainContent/Setting.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/MainContent/SystemControl.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/MainContent/Trend.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/MainContent/SystemHome.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,

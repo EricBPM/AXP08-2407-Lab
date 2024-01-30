@@ -117,18 +117,18 @@
     <Folder Include="Localization" />
     <Folder Include="3DModel" />
     <Folder Include="Pages\" />
+    <Folder Include="Pages\MainContent" />
     <Folder Include="Pages\Resources" />
+    <Folder Include="Pages\ResourceSubPages" />
+    <Folder Include="Pages\ResourceSubPages\3dModelContent" />
+    <Folder Include="Pages\ResourceSubPages\DocumentsContent" />
+    <Folder Include="Pages\ResourceSubPages\VideoContent" />
     <Folder Include="Pages\Resources\3D_Model" />
-    <Folder Include="Pages\Resources\ContentPages\3dModelContent" />
-    <Folder Include="Pages\Resources\ContentPages\DocumentsContent" />
-    <Folder Include="Pages\Resources\ContentPages\VideoContent" />
     <Folder Include="Pages\Resources\Documents" />
     <Folder Include="Pages\Resources\Misc" />
-    <Folder Include="Pages\Resources\ContentPages" />
     <Folder Include="Pages\Resources\SubNavigationMenu" />
     <Folder Include="Pages\Resources\Video" />
-    <Folder Include="Pages\SubPages" />
-    <Folder Include="Pages\SubPages\SystemControlSubPages" />
+    <Folder Include="Pages\SystemControlSubPages" />
     <Folder Include="RecipeFunctions" />
     <Folder Include="Server\ADS\" />
     <Folder Include="Server\TcHmiEcDiagnostics" />
@@ -171,16 +171,58 @@
     <Content Include="Imports\WBX1008-10.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Diagnostic.content">
+    <Content Include="Pages\MainContent\Diagnostic.content">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\EventLog.content">
+    <Content Include="Pages\MainContent\EventLog.content">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Recipe.content">
+    <Content Include="Pages\MainContent\Recipe.content">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Resources.content">
+    <Content Include="Pages\MainContent\Resources.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\MainContent\Setting.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\MainContent\SystemControl.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\MainContent\SystemHome.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\MainContent\Trend.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\MainContent\Vision.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\ResourceSubPages\3dModelContent\AirKnife_3dModel.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\ResourceSubPages\3dModelContent\Extruder_3dModel.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\ResourceSubPages\3dModelContent\Pelletizer_3dModel.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\ResourceSubPages\3dModelContent\WaterBath_3dModel.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\ResourceSubPages\DocumentsContent\AirKnife_Documents.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\ResourceSubPages\DocumentsContent\Extruder_Documents.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\ResourceSubPages\DocumentsContent\Pelletizer_Documents.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\ResourceSubPages\DocumentsContent\WaterBath_Documents.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\ResourceSubPages\VideoContent\AirKnife_Videos.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Resources\3D_Model\axp08-2310.html">
@@ -190,33 +232,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Resources\3D_Model\wbx1008-10-2333.html">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\Resources\ContentPages\3dModelContent\AirKnife_3dModel.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\Resources\ContentPages\3dModelContent\Extruder_3dModel.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\Resources\ContentPages\3dModelContent\Pelletizer_3dModel.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\Resources\ContentPages\3dModelContent\WaterBath_3dModel.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\Resources\ContentPages\DocumentsContent\AirKnife_Documents.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\Resources\ContentPages\DocumentsContent\Extruder_Documents.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\Resources\ContentPages\DocumentsContent\Pelletizer_Documents.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\Resources\ContentPages\DocumentsContent\WaterBath_Documents.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\Resources\ContentPages\VideoContent\AirKnife_Videos.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Resources\SubNavigationMenu\AirKnifeSubNav.content">
@@ -237,31 +252,16 @@
     <Content Include="Pages\Resources\Video\UpperFeedroll.mp4">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Setting.content">
+    <Content Include="Pages\SystemControlSubPages\AirKnifeControl.content">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\SubPages\SystemControlSubPages\AirKnifeControl.content">
+    <Content Include="Pages\SystemControlSubPages\ExtruderControl.content">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\SubPages\SystemControlSubPages\WaterBathControl.content">
+    <Content Include="Pages\SystemControlSubPages\PelletizerControl.content">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\SubPages\SystemControlSubPages\ExtruderControl.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\SubPages\SystemControlSubPages\PelletizerControl.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\SystemControl.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\SystemHome.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\Trend.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\Vision.content">
+    <Content Include="Pages\SystemControlSubPages\WaterBathControl.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="RecipeFunctions\ConvertDatagridToRecipe.function.json">

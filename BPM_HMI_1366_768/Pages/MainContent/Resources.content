@@ -1,6 +1,6 @@
 <div id="Resources" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="624" data-tchmi-width-unit="%" data-tchmi-height-unit="px" data-tchmi-bottom="10" data-tchmi-width-mode="Parent" data-tchmi-max-width="1126" data-tchmi-min-width="350" data-tchmi-right="10">
-<div id="Resources_Nav_Grid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-width="1124" data-tchmi-width-unit="px" data-tchmi-grid-column-index="0" data-tchmi-width-mode="Parent" data-tchmi-right="10" data-tchmi-left="10" data-tchmi-bottom="10" data-tchmi-max-width="1124" data-tchmi-min-width="350">
-<div id="Pelletizer_ResourcesNav_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-text="Pelletizer" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-word-wrap="false" data-tchmi-left="10" data-tchmi-width-mode="Parent" data-tchmi-left-unit="px" data-tchmi-grid-column-index="0" data-tchmi-height-mode="Parent" data-tchmi-width-unit="%" data-tchmi-width="100" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%Pelletizer_ResourcesNav_Btn::RenderedWidth%/ctrl%" data-tchmi-creator-locked="True">
+<div id="Resources_Nav_Grid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-width="1124" data-tchmi-width-unit="px" data-tchmi-grid-column-index="0" data-tchmi-width-mode="Parent" data-tchmi-right="10" data-tchmi-left="10" data-tchmi-bottom="0" data-tchmi-max-width="1124" data-tchmi-min-width="350">
+<div id="Pelletizer_ResourcesNav_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-text="Pelletizer" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-word-wrap="false" data-tchmi-left="5" data-tchmi-width-mode="Parent" data-tchmi-left-unit="px" data-tchmi-grid-column-index="0" data-tchmi-height-mode="Parent" data-tchmi-width-unit="%" data-tchmi-width="100" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-locked="True" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%f%%ctrl%Pelletizer_ResourcesNav_Btn::RenderedWidth%/ctrl%%/f%">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 5.0,
@@ -76,7 +76,7 @@
   }
 ]
 </script>
-<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="1" id="AirKnife_ResourcesNav_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-text="Air Knife" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-word-wrap="false" data-tchmi-width-mode="Parent" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Parent" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%AirKnife_ResourcesNav_Btn::RenderedWidth%/ctrl%" data-tchmi-creator-locked="True">
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="1" id="AirKnife_ResourcesNav_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-text="Air Knife" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-word-wrap="false" data-tchmi-width-mode="Parent" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Parent" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%AirKnife_ResourcesNav_Btn::RenderedWidth%/ctrl%" data-tchmi-creator-locked="True">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 5.0,
@@ -111,7 +111,7 @@
 ]
 </script>
 </div>
-<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="2" id="WaterBath_ResourcesNav_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-text="Water Bath" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-word-wrap="false" data-tchmi-text-font-size="%ctrl%WaterBath_ResourcesNav_Btn::RenderedWidth%/ctrl%" data-tchmi-width-mode="Parent" data-tchmi-left-unit="px" data-tchmi-left="10" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Parent" data-tchmi-text-font-size-unit="%" data-tchmi-creator-locked="True">
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="2" id="WaterBath_ResourcesNav_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-text="Water Bath" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-word-wrap="false" data-tchmi-text-font-size="%ctrl%WaterBath_ResourcesNav_Btn::RenderedWidth%/ctrl%" data-tchmi-width-mode="Parent" data-tchmi-left-unit="px" data-tchmi-left="5" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Parent" data-tchmi-text-font-size-unit="%" data-tchmi-creator-locked="True">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 5.0,
@@ -146,7 +146,7 @@
 ]
 </script>
 </div>
-<div data-tchmi-grid-row-index="0" id="Extrud_ResourcesNav_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-text="Extruder" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-word-wrap="false" data-tchmi-text-font-size="%ctrl%Extrud_ResourcesNav_Btn::RenderedWidth%/ctrl%" data-tchmi-width-mode="Parent" data-tchmi-grid-column-index="3" data-tchmi-left="10" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Parent" data-tchmi-text-font-size-unit="%" data-tchmi-creator-locked="True">
+<div data-tchmi-grid-row-index="0" id="Extrud_ResourcesNav_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-text="Extruder" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-word-wrap="false" data-tchmi-text-font-size="%ctrl%Extrud_ResourcesNav_Btn::RenderedWidth%/ctrl%" data-tchmi-width-mode="Parent" data-tchmi-grid-column-index="3" data-tchmi-left="5" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Parent" data-tchmi-text-font-size-unit="%" data-tchmi-creator-locked="True">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 5.0,
@@ -182,7 +182,7 @@
 </script>
 </div>
 </div>
-<div id="Resources_Region" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="419" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width-mode="Parent" data-tchmi-min-width="100" data-tchmi-max-width="1126" data-tchmi-bottom="131" data-tchmi-right="10" data-tchmi-target-content="Pages/Resources/ContentPages/3dModelContent/Pelletizer_3dModel.content">
+<div id="Resources_Region" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="509" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-mode="Parent" data-tchmi-min-width="100" data-tchmi-max-width="1126" data-tchmi-bottom="51" data-tchmi-right="10" data-tchmi-target-content="Pages/Resources/ContentPages/3dModelContent/Pelletizer_3dModel.content">
 <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
 {
   "left": "Solid",
@@ -218,6 +218,6 @@
 }
 </script>
 </div>
-<div id="SubNavRegion" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="441" data-tchmi-top-unit="px" data-tchmi-right="10" data-tchmi-width-mode="Parent" data-tchmi-max-width="1124" data-tchmi-min-width="350" data-tchmi-target-content="Pages/Resources/SubNavigationMenu/PelletizerSubNav.content">
+<div id="SubNavRegion" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-right="10" data-tchmi-width-mode="Parent" data-tchmi-max-width="1124" data-tchmi-min-width="0" data-tchmi-target-content="Pages/Resources/SubNavigationMenu/PelletizerSubNav.content" data-tchmi-bottom="55">
 </div>
 </div>
