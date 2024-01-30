@@ -31,22 +31,6 @@
         "asyncWait": true
       }
     ]
-  },
-  {
-    "event": "Pelletizer_ResourcesNav_Btn.onAttached",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%SystemControlRegion::TargetContent%/ctrl%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/SubPages/SystemControlSubPages/PelletizerControl.content"
-        },
-        "asyncWait": true
-      }
-    ]
   }
 ]
 </script>
@@ -114,22 +98,11 @@
       {
         "objectType": "WriteToSymbol",
         "active": true,
-        "symbolExpression": "%ctrl%SystemControlRegion::TargetContent%/ctrl%",
+        "symbolExpression": "%ctrl%SubNavRegion::TargetContent%/ctrl%",
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/SubPages/SystemControlSubPages/AirKnifeControl.content"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%CurrentContentIcon::Src%/ctrl%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Path",
-          "value": "Imports/evak-12-std-mech-1.png"
+          "value": "Pages/Resources/SubNavigationMenu/AirKnifeSubNav.content"
         },
         "asyncWait": true
       }
@@ -160,22 +133,11 @@
       {
         "objectType": "WriteToSymbol",
         "active": true,
-        "symbolExpression": "%ctrl%SystemControlRegion::TargetContent%/ctrl%",
+        "symbolExpression": "%ctrl%SubNavRegion::TargetContent%/ctrl%",
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/SubPages/SystemControlSubPages/WaterBathControl.content"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%CurrentContentIcon::Src%/ctrl%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Path",
-          "value": "Imports/WBX1008-10.png"
+          "value": "Pages/Resources/SubNavigationMenu/WaterBathSubNav.content"
         },
         "asyncWait": true
       }
@@ -206,22 +168,11 @@
       {
         "objectType": "WriteToSymbol",
         "active": true,
-        "symbolExpression": "%ctrl%SystemControlRegion::TargetContent%/ctrl%",
+        "symbolExpression": "%ctrl%SubNavRegion::TargetContent%/ctrl%",
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/SubPages/SystemControlSubPages/ExtruderControl.content"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%CurrentContentIcon::Src%/ctrl%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Path",
-          "value": "Imports/extru-removebg-preview.png"
+          "value": "Pages/Resources/SubNavigationMenu/ExtrudSubNav.content"
         },
         "asyncWait": true
       }
@@ -231,7 +182,7 @@
 </script>
 </div>
 </div>
-<div id="SystemControlRegion_1" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="419" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width-mode="Parent" data-tchmi-min-width="100" data-tchmi-max-width="1126" data-tchmi-bottom="131" data-tchmi-right="10">
+<div id="Resources_Region" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="419" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width-mode="Parent" data-tchmi-min-width="100" data-tchmi-max-width="1126" data-tchmi-bottom="131" data-tchmi-right="10" data-tchmi-target-content="Pages/Resources/ContentPages/3dModelContent/Pelletizer_3dModel.content">
 <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
 {
   "left": "Solid",
@@ -267,6 +218,6 @@
 }
 </script>
 </div>
-<div id="SubNavRegion" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="441" data-tchmi-top-unit="px" data-tchmi-right="10" data-tchmi-width-mode="Parent" data-tchmi-max-width="1124" data-tchmi-min-width="350">
+<div id="SubNavRegion" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="441" data-tchmi-top-unit="px" data-tchmi-right="10" data-tchmi-width-mode="Parent" data-tchmi-max-width="1124" data-tchmi-min-width="350" data-tchmi-target-content="Pages/Resources/SubNavigationMenu/PelletizerSubNav.content">
 </div>
 </div>
