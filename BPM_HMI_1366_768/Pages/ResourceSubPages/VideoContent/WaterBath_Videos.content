@@ -1,0 +1,24 @@
+<div id="AirKnife_Videos_3" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-height-mode="Parent" data-tchmi-width-mode="Parent">
+<div id="TcHmiVideo_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiVideo" data-tchmi-controls="true" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-mute="true" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-autoplay="true" data-tchmi-loop="true">
+
+<script data-tchmi-target-attribute="data-tchmi-src-list" type="application/json">
+[
+  {
+    "source": "Pages/Resources/Video/WaterBath_Video.mp4",
+    "type": "video/mp4"
+  }
+]
+</script>
+</div>
+<div id="TcHmiTextbox_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="381" data-tchmi-left-unit="px" data-tchmi-text="Need Video (Placeholder)" data-tchmi-top="19" data-tchmi-top-unit="px" data-tchmi-width="257" data-tchmi-width-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+</div>

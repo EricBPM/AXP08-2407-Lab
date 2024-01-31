@@ -215,6 +215,15 @@
     <Content Include="Pages\ResourceSubPages\DocumentsContent\WaterBath_Documents.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Pages\ResourceSubPages\VideoContent\Pelletizer_Videos.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\ResourceSubPages\VideoContent\WaterBath_Videos.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\ResourceSubPages\VideoContent\Extruder_Videos.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Pages\ResourceSubPages\VideoContent\AirKnife_Videos.content">
       <SubType>Content</SubType>
     </Content>
@@ -227,10 +236,10 @@
     <Content Include="Pages\Resources\3D_Model\wbx1008-10-2333.html">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Resources\SubNavigationMenu\ExtrudSubNav.content">
+    <Content Include="Pages\Resources\SubNavigationMenu\AirKnifeSubNav.content">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Resources\SubNavigationMenu\AirKnifeSubNav.content">
+    <Content Include="Pages\Resources\SubNavigationMenu\ExtruderSubNav.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Resources\SubNavigationMenu\WaterBathSubNav.content">

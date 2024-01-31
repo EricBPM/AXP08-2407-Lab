@@ -65,7 +65,7 @@
   "bottomRightUnit": "px"
 }
 </script>
-<div id="Pelletizer_3dModel_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-text="3D Model" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-right="25" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%Pelletizer_3dModel_Btn::RenderedWidth%/ctrl%">
+<div id="Pelletizer_3dModel_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-text="3D Model" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-right="25" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%Pelletizer_3dModel_Btn::RenderedWidth%/ctrl%" data-tchmi-toggle-group="SubNavToggleGroup">
 
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
@@ -101,7 +101,7 @@
 ]
 </script>
 </div>
-<div id="Pelletizer_Video_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-text="Video" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%Pelletizer_Video_Btn::RenderedWidth%/ctrl%" data-tchmi-right="25" data-tchmi-right-unit="%" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent">
+<div id="Pelletizer_Video_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-text="Video" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%Pelletizer_Video_Btn::RenderedWidth%/ctrl%" data-tchmi-right="25" data-tchmi-right-unit="%" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-toggle-group="SubNavToggleGroup">
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
@@ -115,18 +115,7 @@
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/ResourceSubPages/3dModelContent/Pelletizer_3dModel.content"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%Pelletizer_3dModel_Btn::ToggleState%/ctrl%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/ToggleState",
-          "value": "Normal"
+          "value": "Pages/ResourceSubPages/VideoContent/Pelletizer_Videos.content"
         },
         "asyncWait": true
       }
@@ -148,7 +137,7 @@
 }
 </script>
 </div>
-<div id="Pelletizer_Documents_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-text="Documents" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-right="25" data-tchmi-bottom-unit="px" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%Pelletizer_Documents_Btn::RenderedWidth%/ctrl%">
+<div id="Pelletizer_Documents_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-text="Documents" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-right="25" data-tchmi-bottom-unit="px" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%Pelletizer_Documents_Btn::RenderedWidth%/ctrl%" data-tchmi-toggle-group="SubNavToggleGroup">
 
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
@@ -161,6 +150,27 @@
   "bottomLeftUnit": "px",
   "bottomRightUnit": "px"
 }
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Pelletizer_Documents_Btn.onStatePressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Resources_Region::TargetContent%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/ContentPath",
+          "value": "Pages/ResourceSubPages/DocumentsContent/Pelletizer_Documents.content"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
 </script>
 </div>
 </div>

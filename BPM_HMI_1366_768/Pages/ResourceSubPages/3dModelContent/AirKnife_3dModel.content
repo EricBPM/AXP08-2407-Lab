@@ -2,4 +2,15 @@
 
 <div id="TcHmiIFrame" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiIFrame" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-src="Pages\Resources\3D_Model\evak-12-std-mech-1.html">
 </div>
+<div id="TcHmiTextbox_4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="316" data-tchmi-left-unit="px" data-tchmi-text="Need Correct Model (Placeholder)" data-tchmi-top="19" data-tchmi-top-unit="px" data-tchmi-width="257" data-tchmi-width-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
 </div>
