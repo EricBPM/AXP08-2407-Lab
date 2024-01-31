@@ -115,7 +115,6 @@
     <Folder Include="Imports\Videos" />
     <Folder Include="KeyboardLayouts\" />
     <Folder Include="Localization" />
-    <Folder Include="3DModel" />
     <Folder Include="Pages\" />
     <Folder Include="Pages\MainContent" />
     <Folder Include="Pages\Resources" />
@@ -149,12 +148,6 @@
     <Folder Include="Properties" />
     <Content Include=".eslintrc.json">
       <Visible>false</Visible>
-    </Content>
-    <Content Include="3DModel\axp08_2310.html">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="3DModel\evak_12_std_mech_1.html">
-      <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\evak-12-std-mech-1.png">
       <SubType>Content</SubType>
@@ -234,22 +227,28 @@
     <Content Include="Pages\Resources\3D_Model\wbx1008-10-2333.html">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Resources\SubNavigationMenu\AirKnifeSubNav.content">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Pages\Resources\SubNavigationMenu\ExtrudSubNav.content">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Resources\SubNavigationMenu\PelletizerSubNav.content">
+    <Content Include="Pages\Resources\SubNavigationMenu\AirKnifeSubNav.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Resources\SubNavigationMenu\WaterBathSubNav.content">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Resources\Video\RotorGapAdjust.mp4">
+    <Content Include="Pages\Resources\SubNavigationMenu\PelletizerSubNav.content">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Resources\Video\UpperFeedroll.mp4">
+    <Content Include="Pages\Resources\Video\AirKnife_Video.mp4">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Video\Pelletizer_Video.mp4">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Video\WaterBath_Video.mp4">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Video\Extruder_Video.mp4">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\SystemControlSubPages\AirKnifeControl.content">
