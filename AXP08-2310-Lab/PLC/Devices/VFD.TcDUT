@@ -1,40 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
   <DUT Name="VFD" Id="{2857eff3-0418-40bd-b7c0-909035c6172d}">
-    <Declaration><![CDATA[TYPE VFD :
+    <Declaration><![CDATA[TYPE VFD :		//Map these directly to the Process Data.
 STRUCT
-	//The idea here is to structure these variables to be directly mapped to the VFD. This is my first try at this method
-	// so I created these variables before I knew what my Inverter needed to be controlled.
-	// I am using some of these variables so I do not want to delete these but there is a better method of binding all of these.
+	// PLC Inputs (Data read from the inverter) TPDOs
+	VFD_Status_Word AT %I* : UINT;												//CiA Status Word
+	VFD_Actual_Speed AT %I* : INT;												//VFD Actual Output RPM 
+	VFD_Error_Code AT %I* : UINT;												//Error Message
+	VFD_Actual_Torque AT %I* : INT;												//Instantaneous Torque of the Motor (In Percent x.x%)
+	VFD_Actual_Current AT %I* : UINT;											//Instantaneous Current of the Motor (In Percent x.x%)
+	VFD_DC_Bus_Voltage AT %I* : UDINT;											//Instantaneous DC Bus Voltage of the VFD (x.xxx Volts)
 
-	
-	VFD_Mains_Voltage : REAL;
-	VFD_Minimum_Frequency : REAL;
-	VFD_Maximum_Frequency : REAL;
-	VFD_Acceleration_Time : REAL;
-	VFD_Deceleration_Time : REAL;
-	VFD_Fault : BOOL;
-	VFD_Fault_Reset : BOOL;
-	VFD_Input_Hz : INT;
-	
-	
-	// PLC Inputs (Data read from the inverter)
-	VFD_Status_Word AT %I* : UINT;
-	VFD_Inverter_Status_Word AT %I* : UINT;		//The Inverter Status word is supplimentary, not needed for control.
-	VFD_Active_Operation_Mode AT %I* : SINT;	//You can use this to confirm the active operation mode. It shouldnt Change, not needed for control
-	VFD_Error_Code AT %I* : UINT;				//You could create a lookup table for the error codes. 
-	VFD_Actual_Output_RPM AT %I* : INT;			// Map this to the HMI for displaying the speed.
-	VFD_Digital_Input_Status AT %I* : UDINT;
-	
-	
-	// PLC Outputs (Data written to the inverter)
-	VFD_Input_RPM AT %Q* : INT;
-	VFD_Control_Word AT %Q* : UINT;
-	VFD_Inverter_Control_Word AT %Q* : UINT;
-	VFD_Operation_Mode AT %Q* : SINT := 2;		//Should always be set to 2 for this program = CiA Velocity Mode [2]
+	VFD_Fault : BOOL := VFD_Status_Word.3;										//This is part of the Status Word; Fault bit 3
 
 	
 
+	// PLC Outputs (Data written to the inverter) RPDOs
+	VFD_Control_Word AT %Q* : UINT;												//State Machine for Controlling VFD (CiA)
+	VFD_Set_Speed AT %Q* : INT;													//Sets the Speed of the VFD in RPM
+	VFD_DigitalOutput1_Word AT %Q* : UINT;										//Map the NetInWord2 to something we can use.
+
+	VFD_DigitalOutput1_Bit : BOOL := VFD_DigitalOutput1_Word.0;					//Break out just the bit that we use to control the digital output
+	VFD_Fault_Reset : BOOL := VFD_Control_Word.7;								//This is part of the Control Word; Fault Reset bit 7
 	
 END_STRUCT
 END_TYPE

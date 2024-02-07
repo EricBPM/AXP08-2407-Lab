@@ -1,5 +1,5 @@
 <div id="Resources" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="624" data-tchmi-width-unit="%" data-tchmi-height-unit="px" data-tchmi-bottom="10" data-tchmi-width-mode="Parent" data-tchmi-max-width="1126" data-tchmi-min-width="350" data-tchmi-right="10">
-<div id="Resources_Nav_Grid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-width="1124" data-tchmi-width-unit="px" data-tchmi-grid-column-index="0" data-tchmi-width-mode="Parent" data-tchmi-right="10" data-tchmi-left="10" data-tchmi-bottom="0" data-tchmi-max-width="1124" data-tchmi-min-width="350">
+<div id="Resources_Nav_Grid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-width="1124" data-tchmi-width-unit="px" data-tchmi-grid-column-index="0" data-tchmi-width-mode="Parent" data-tchmi-right="10" data-tchmi-left="10" data-tchmi-bottom="0" data-tchmi-max-width="1124" data-tchmi-min-width="350" data-tchmi-creator-locked="True">
 
 <script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
 [
@@ -190,7 +190,7 @@
 </script>
 </div>
 </div>
-<div id="Resources_Region" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="509" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-mode="Parent" data-tchmi-min-width="100" data-tchmi-max-width="1126" data-tchmi-bottom="51" data-tchmi-right="10" data-tchmi-target-content="Pages/Resources/ContentPages/3dModelContent/Pelletizer_3dModel.content">
+<div id="Resources_Region" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="510" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-mode="Parent" data-tchmi-min-width="100" data-tchmi-max-width="1126" data-tchmi-bottom="50" data-tchmi-right="10" data-tchmi-target-content="Pages/Resources/ContentPages/3dModelContent/Pelletizer_3dModel.content" data-tchmi-creator-locked="True">
 <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
 {
   "left": "Solid",
@@ -226,6 +226,6 @@
 }
 </script>
 </div>
-<div id="SubNavRegion" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-right="10" data-tchmi-width-mode="Parent" data-tchmi-max-width="1124" data-tchmi-min-width="0" data-tchmi-target-content="Pages/Resources/SubNavigationMenu/PelletizerSubNav.content" data-tchmi-bottom="55">
+<div id="SubNavRegion" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-right="10" data-tchmi-width-mode="Parent" data-tchmi-max-width="1124" data-tchmi-min-width="0" data-tchmi-target-content="Pages/Resources/SubNavigationMenu/PelletizerSubNav.content" data-tchmi-bottom="55" data-tchmi-creator-locked="True">
 </div>
 </div>

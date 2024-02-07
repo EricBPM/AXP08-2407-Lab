@@ -508,7 +508,7 @@
 <div id="PelletLength_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-top="60.7" data-tchmi-top-unit="%" data-tchmi-width="20" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-right="63.4" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Value">
 <div id="PelletSize_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="47" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="%" data-tchmi-text="Pellet Length" data-tchmi-top="30" data-tchmi-top-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="24" data-tchmi-text-horizontal-alignment="Center" data-tchmi-zindex="5" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-right="20" data-tchmi-width-mode="Parent">
 </div>
-<div id="PelletSize_Input" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-height="60" data-tchmi-height-unit="px" data-tchmi-left="30" data-tchmi-left-unit="%" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-value="%s%PLC1.Imperial_Metric_Switching.Pellet_Length_Displayed%/s%" data-tchmi-value-font-size="30" data-tchmi-value-horizontal-alignment="Center" data-tchmi-max-value="26" data-tchmi-system-keyboard-input-mode="none" data-tchmi-zindex="3" data-tchmi-zero-padding="1" data-tchmi-right-unit="%" data-tchmi-right="30" data-tchmi-width-mode="Parent">
+<div id="PelletSize_Input" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-height="60" data-tchmi-height-unit="px" data-tchmi-left="30" data-tchmi-left-unit="%" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-value="%s%PLC1.GVL_Pelletizer.MyPelletizer.Pellet_Length_Inch_Input%/s%" data-tchmi-value-font-size="30" data-tchmi-value-horizontal-alignment="Center" data-tchmi-max-value="26" data-tchmi-system-keyboard-input-mode="none" data-tchmi-zindex="3" data-tchmi-zero-padding="1" data-tchmi-right-unit="%" data-tchmi-right="30" data-tchmi-width-mode="Parent">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -577,7 +577,7 @@
                 "compare1": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/BOOL",
-                  "symbolExpression": "%s%PLC1.GVL_Pelletizer.Metric_Set_Bit%/s%"
+                  "symbolExpression": "%s%PLC1.GVL_System.Metric_Set_Bit%/s%"
                 },
                 "compare2": {
                   "objectType": "StaticValue",
@@ -607,7 +607,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%s%PLC1.GVL_Pelletizer.Pellet_Length_Inch_Input%/s%",
+                "symbolExpression": "%s%PLC1.GVL_Pelletizer.MyPelletizer.Pellet_Length_Inch_Input%/s%",
                 "value": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/String",

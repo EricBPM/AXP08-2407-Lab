@@ -15,23 +15,23 @@ VAR PERSISTENT
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[IF GVL_Pelletizer.Metric_Set_Bit THEN		//Convert to Metric
+      <ST><![CDATA[IF GVL_System.Metric_Set_Bit THEN		//Convert to Metric
 
 	// Converts the displayed input value into Imperial Inches for the PLCs calculations. The Metric numbers are for display only.
 	Pellet_Length_Displayed := Pellet_Length_Metric_Input;
-	GVL_Pelletizer.Pellet_Length_Inch_Input := Pellet_Length_Metric_Input / 25.4;
+	GVL_Pelletizer.MyPelletizer.Pellet_Length_Inch_Input := Pellet_Length_Metric_Input / 25.4;
 		
 	// Converts the displayed input speed into Imperial feet per minute for the PLCs calculations. The Metric numbers are for display only.	
 	// This also converts the internal calculations back into Metric for viewing.
-	Line_Speed_Displayed := Line_Speed_Metric_Input;
-	GVL_Feedroll.FeedRate_Feet_Per_Minute_Input := Line_Speed_Metric_Input / 0.30480;
+	//Line_Speed_Displayed := Line_Speed_Metric_Input;
+	//GVL_Feedroll.FeedRate_Feet_Per_Minute_Input := Line_Speed_Metric_Input / 0.30480;
 ELSE		//Stay in Imperial
 
-	Pellet_Length_Displayed := GVL_Pelletizer.Pellet_Length_Inch_Input;
-	Pellet_Length_Metric_Input := GVL_Pelletizer.Pellet_Length_Inch_Input * 25.4;
+	Pellet_Length_Displayed := GVL_Pelletizer.MyPelletizer.Pellet_Length_Inch_Input;
+	Pellet_Length_Metric_Input := GVL_Pelletizer.MyPelletizer.Pellet_Length_Inch_Input * 25.4;
 		
-	Line_Speed_Displayed := GVL_Feedroll.FeedRate_Feet_Per_Minute_Input;
-	Line_Speed_Metric_Input := GVL_Feedroll.FeedRate_Feet_Per_Minute_Input * 0.30480;
+	//Line_Speed_Displayed := GVL_Feedroll.FeedRate_Feet_Per_Minute_Input;
+	//Line_Speed_Metric_Input := GVL_Feedroll.FeedRate_Feet_Per_Minute_Input * 0.30480;
 END_IF
 
 

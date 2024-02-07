@@ -11,11 +11,11 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[ Pellet_Length_Temp_Cal_Val :=  GVL_Pelletizer.Pellet_Length_Inch_Input/ GVL_Pelletizer.Pellet_Length_Measured_Input;
+      <ST><![CDATA[ Pellet_Length_Temp_Cal_Val :=  GVL_Pelletizer.MyPelletizer.Pellet_Length_Inch_Input / GVL_Pelletizer.MyPelletizer.Pellet_Length_Measured_Input;
 
 
 IF SET_CALIBRATON_VALUE THEN
-	GVL_Pelletizer.Pellet_Length_Calibration_Value := Pellet_Length_Temp_Cal_Val;
+	GVL_Pelletizer.MyPelletizer.Pellet_Length_Calibration_Value := Pellet_Length_Temp_Cal_Val;
 END_IF
 
 

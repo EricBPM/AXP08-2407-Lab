@@ -3,26 +3,33 @@
   <DUT Name="Pelletizer" Id="{8073b67d-482d-4ad2-83fe-9afc0e39941a}">
     <Declaration><![CDATA[TYPE Pelletizer :
 STRUCT
-	Feedroll_Motor : Motor;
 	Feedroll_VFD : VFD;
-	Rotor_Motor : Motor;
 	Rotor_VFD : VFD;
 
 	
 	Feedroll_Driven_Pulley : REAL;
 	Feedroll_Drive_Pulley : REAL;
 	Feedroll_Diameter_Inch : REAL;
-	Feedroll_Actual_RPM : INT;
-	Feedroll_Actual_FtMin : REAL;
-	Feedroll_Actual_MetersMin : REAL;
+	Feedroll_RPM: INT;
+	Feedroll_Motor_RPM : INT;
+	Feedroll_Feet_Per_Minute : REAL;
+	Feedroll_Meters_Per_Minute : REAL;
 
 	
 	Rotor_Driven_Pulley : REAL;
 	Rotor_Drive_Pulley : REAL;
 	Rotor_Tooth_Count : REAL;
 	Rotor_RPM_Limit : REAL;
-	Rotor_Actual_RPM : REAL;
+	Rotor_RPM : REAL;
+	Rotor_Motor_RPM : REAL;
 
+
+	Pellet_Length_Inch_Input : REAL := 0.125;
+	Pellet_Length_Calibration_Value : REAL := 1;
+	Pellet_Length_Measured_Input : REAL;			//For use in Calibration
+	
+	
+	Pelletizer_Info : Machine_Info;
 END_STRUCT
 END_TYPE
 ]]></Declaration>

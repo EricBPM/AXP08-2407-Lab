@@ -18,7 +18,7 @@
     <Released>false</Released>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Devices\Motor.TcDUT">
+    <Compile Include="Devices\Machine_Info.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Devices\Pelletizer.TcDUT">
@@ -27,7 +27,7 @@
     <Compile Include="Devices\VFD.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="FBs\E_DPLC.TcPOU">
+    <Compile Include="FBs\F_DPLC.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="FBs\Hour_Meter_FB.TcPOU">
@@ -36,53 +36,49 @@
     <Compile Include="FBs\Send_Event_FB.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="GVLs\GVL_Feedroll.TcGVL">
+    <Compile Include="Global_Machine\GVL_AirKnife.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
-    <Compile Include="GVLs\GVL_Rotor.TcGVL">
+    <Compile Include="Global_Machine\GVL_Pelletizer.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
-    <Compile Include="GVLs\GVL_Pelletizer.TcGVL">
+    <Compile Include="Global_Machine\GVL_System.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\Event Programs\Events.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\Imperial_Metric_Switching.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="POUs\Main.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\Pelletizer Programs\Control_Word_State.TcPOU">
+    <Compile Include="POUs\Pelletizer\Control_Word_State.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\Pelletizer Programs\DPLC.TcPOU">
+    <Compile Include="POUs\Pelletizer\DPLC.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\Pelletizer Programs\Pellet_Calibration.TcPOU">
+    <Compile Include="POUs\Pelletizer\Pellet_Calibration.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\Pelletizer Programs\Feedroll_Control.TcPOU">
+    <Compile Include="POUs\System\Events.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\WritePersistentData_POU.TcPOU">
+    <Compile Include="POUs\System\Imperial_Metric_Switching.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\System\WritePersistentData_POU.TcPOU">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Devices" />
-    <Folder Include="GVLs" />
+    <Folder Include="Global_Machine" />
     <Folder Include="FBs" />
-    <Folder Include="POUs\Event Programs" />
-    <Folder Include="POUs\Pelletizer Programs" />
-    <Folder Include="VISUs" />
+    <Folder Include="POUs\System" />
+    <Folder Include="POUs\Pelletizer" />
     <Folder Include="POUs" />
   </ItemGroup>
   <ItemGroup>

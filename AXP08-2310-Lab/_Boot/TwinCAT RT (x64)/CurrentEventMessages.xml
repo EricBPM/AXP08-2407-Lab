@@ -1,2371 +1,591 @@
 <?xml version="1.0"?>
 <TcEventSources Version="2">
 	<Source>
-		<GUID>{28111931-003B-0000-0040-001900070100}</GUID>
-		<Name LcId="1033">i950 (BS-STO) FW V01.07</Name>
+		<GUID>{28111931-003B-0000-0050-056900000700}</GUID>
+		<Name LcId="1033">i550 Cabinet V07.00.xx</Name>
 		<Event>
 			<Id>0</Id>
-			<Message LcId="1033">{0}: No error</Message>
-		</Event>
-		<Event>
-			<Id>1</Id>
-			<Message LcId="1033">Axis A</Message>
-		</Event>
-		<Event>
-			<Id>2</Id>
-			<Message LcId="1033">Axis B</Message>
-		</Event>
-		<Event>
-			<Id>3</Id>
-			<Message LcId="1033">Device</Message>
-		</Event>
-		<Event>
-			<Id>4</Id>
-			<Message LcId="1033">{0}: Short circuit or earth leakage at the motor end</Message>
+			<Message LcId="1033">No error</Message>
 		</Event>
 		<Event>
 			<Id>5</Id>
-			<Message LcId="1033">{0}: Short circuit at the motor end</Message>
+			<Message LcId="1033">Fault - Device utilization (ixt) too high</Message>
 		</Event>
 		<Event>
 			<Id>6</Id>
-			<Message LcId="1033">{0}: Trouble - utilization of the power section (ixt) too high</Message>
+			<Message LcId="1033">Warning - Device utilization (ixt) too high</Message>
 		</Event>
 		<Event>
 			<Id>7</Id>
-			<Message LcId="1033">{0}: Warning - Utilization of the power section (ixt) too high</Message>
+			<Message LcId="1033">Fault - DC bus overvoltage</Message>
 		</Event>
 		<Event>
 			<Id>8</Id>
-			<Message LcId="1033">{0}: Fault - Device utilization (ixt) too high</Message>
+			<Message LcId="1033">Fault - DC bus undervoltage</Message>
 		</Event>
 		<Event>
 			<Id>9</Id>
-			<Message LcId="1033">{0}: Warning - Device utilization (ixt) too high</Message>
-		</Event>
-		<Event>
-			<Id>10</Id>
-			<Message LcId="1033">{0}: Fault - DC bus overvoltage {1} V</Message>
+			<Message LcId="1033">Fault - Power unit overtemperature</Message>
 		</Event>
 		<Event>
 			<Id>11</Id>
-			<Message LcId="1033">{0}: Fault - DC bus undervoltage {1} V</Message>
-		</Event>
-		<Event>
-			<Id>12</Id>
-			<Message LcId="1033">{0}: Fault - Power unit overtemperature {1} °C</Message>
-		</Event>
-		<Event>
-			<Id>13</Id>
-			<Message LcId="1033">{0}: Motor overtemperature {1} °C</Message>
-		</Event>
-		<Event>
-			<Id>14</Id>
-			<Message LcId="1033">{0}: 24 V supply critical</Message>
-		</Event>
-		<Event>
-			<Id>15</Id>
-			<Message LcId="1033">{0}: Internal error</Message>
-		</Event>
-		<Event>
-			<Id>16</Id>
-			<Message LcId="1033">{0}: Incorrect parameter set download</Message>
-		</Event>
-		<Event>
-			<Id>17</Id>
-			<Message LcId="1033">{0}: Parameter error in object 0x{1,x}:{2}, CiA abort code 0x{3,x}</Message>
-		</Event>
-		<Event>
-			<Id>18</Id>
-			<Message LcId="1033">{0}: Fault - Pole position identification</Message>
-		</Event>
-		<Event>
-			<Id>19</Id>
-			<Message LcId="1033">{0}: Error - Motor feedback</Message>
-		</Event>
-		<Event>
-			<Id>20</Id>
-			<Message LcId="1033">{0}: Sync controller</Message>
-		</Event>
-		<Event>
-			<Id>21</Id>
-			<Message LcId="1033">{0}: ECAT DC - synchronisation required</Message>
-		</Event>
-		<Event>
-			<Id>22</Id>
-			<Message LcId="1033">{0}: Sync manager - address {1}</Message>
-		</Event>
-		<Event>
-			<Id>23</Id>
-			<Message LcId="1033">{0}: Sync manager - actual size {1}</Message>
-		</Event>
-		<Event>
-			<Id>24</Id>
-			<Message LcId="1033">{0}: Sync manager - settings {1}</Message>
-		</Event>
-		<Event>
-			<Id>25</Id>
-			<Message LcId="1033">{0}: EtherCAT communication</Message>
-		</Event>
-		<Event>
-			<Id>26</Id>
-			<Message LcId="1033">{0}: Fatal internal error</Message>
-		</Event>
-		<Event>
-			<Id>27</Id>
-			<Message LcId="1033">{0}: Fatal internal communication error, cycle {1}</Message>
-		</Event>
-		<Event>
-			<Id>28</Id>
-			<Message LcId="1033">{0}: Fault - Motor holding brake</Message>
-		</Event>
-		<Event>
-			<Id>29</Id>
-			<Message LcId="1033">{0}: Fatal internal error - task overflow {1}</Message>
-		</Event>
-		<Event>
-			<Id>30</Id>
-			<Message LcId="1033">{0}: PPI - Motor movement too large</Message>
-		</Event>
-		<Event>
-			<Id>31</Id>
-			<Message LcId="1033">{0}: Safe torque off (STO) activated</Message>
-		</Event>
-		<Event>
-			<Id>32</Id>
-			<Message LcId="1033">{0}: Motor overspeed</Message>
-		</Event>
-		<Event>
-			<Id>33</Id>
-			<Message LcId="1033">{0}:Not permitted during identification or in test mode</Message>
-		</Event>
-		<Event>
-			<Id>34</Id>
-			<Message LcId="1033">{0}: Ultimate motor current reached</Message>
-		</Event>
-		<Event>
-			<Id>35</Id>
-			<Message LcId="1033">{0}:Not permitted during identification</Message>
+			<Message LcId="1033">24 V supply critical</Message>
 		</Event>
 		<Event>
 			<Id>36</Id>
-			<Message LcId="1033"><![CDATA[{0}: Parameterized max. motor current > max. device current {1} A]]></Message>
+			<Message LcId="1033">Motor phase missing</Message>
 		</Event>
 		<Event>
 			<Id>37</Id>
-			<Message LcId="1033">{0}: Fault - Motor temperature sensor</Message>
+			<Message LcId="1033">Motor phase failure phase U</Message>
 		</Event>
 		<Event>
 			<Id>38</Id>
-			<Message LcId="1033">{0}: Fault - Heat sink temperature sensor</Message>
+			<Message LcId="1033">Motor phase failure phase V</Message>
 		</Event>
 		<Event>
 			<Id>39</Id>
-			<Message LcId="1033">{0}: Motor phase missing</Message>
-		</Event>
-		<Event>
-			<Id>40</Id>
-			<Message LcId="1033">{0}: Motor phase failure phase U</Message>
-		</Event>
-		<Event>
-			<Id>41</Id>
-			<Message LcId="1033">{0}: Motor phase failure phase V</Message>
-		</Event>
-		<Event>
-			<Id>42</Id>
-			<Message LcId="1033">{0}: Motor phase failure phase W</Message>
+			<Message LcId="1033">Motor phase failure phase W</Message>
 		</Event>
 		<Event>
 			<Id>43</Id>
-			<Message LcId="1033">{0}: PDO mapping: Unknown object</Message>
-		</Event>
-		<Event>
-			<Id>44</Id>
-			<Message LcId="1033">{0}: not a PDO mapping object (index {1})</Message>
+			<Message LcId="1033">Network: PDO mapping error</Message>
 		</Event>
 		<Event>
 			<Id>45</Id>
-			<Message LcId="1033">{0}: Too many objects mapped</Message>
-		</Event>
-		<Event>
-			<Id>46</Id>
-			<Message LcId="1033">{0}: PDO mapping - error</Message>
-		</Event>
-		<Event>
-			<Id>47</Id>
-			<Message LcId="1033">{0}: Clamp is active</Message>
-		</Event>
-		<Event>
-			<Id>48</Id>
-			<Message LcId="1033">{0}: Clamp responded too often</Message>
-		</Event>
-		<Event>
-			<Id>49</Id>
-			<Message LcId="1033">{0}: No resolver connected - command cannot be executed</Message>
-		</Event>
-		<Event>
-			<Id>50</Id>
-			<Message LcId="1033">{0}: Speed too low - command cannot be executed</Message>
-		</Event>
-		<Event>
-			<Id>51</Id>
-			<Message LcId="1033">No resolver as motor encoder connected - command cannot be executed</Message>
-		</Event>
-		<Event>
-			<Id>52</Id>
-			<Message LcId="1033">{0}: Time-out during resolver identification</Message>
-		</Event>
-		<Event>
-			<Id>53</Id>
-			<Message LcId="1033">{0}: Numeric problem during resolver identification</Message>
-		</Event>
-		<Event>
-			<Id>54</Id>
-			<Message LcId="1033">{0}: Inverter error too large</Message>
-		</Event>
-		<Event>
-			<Id>55</Id>
-			<Message LcId="1033">{0}: Identification aborted</Message>
-		</Event>
-		<Event>
-			<Id>56</Id>
-			<Message LcId="1033"><![CDATA[{0}: Motor utilization too high (i²xt) > {1} %]]></Message>
-		</Event>
-		<Event>
-			<Id>57</Id>
-			<Message LcId="1033">{0}: sync PLL Timeout</Message>
-		</Event>
-		<Event>
-			<Id>58</Id>
-			<Message LcId="1033">{0}: Motor feedback - communication error</Message>
-		</Event>
-		<Event>
-			<Id>59</Id>
-			<Message LcId="1033"><![CDATA[{0}: Not permitted in state 'operation enabled' or 'quick stop active']]></Message>
-		</Event>
-		<Event>
-			<Id>60</Id>
-			<Message LcId="1033">{0}: No HIPERFACE absolute value encoder as motor encoder connected - command cannot be executed</Message>
-		</Event>
-		<Event>
-			<Id>61</Id>
-			<Message LcId="1033">{0}: Connected HIPERFACE motor encoder is not supported</Message>
-		</Event>
-		<Event>
-			<Id>62</Id>
-			<Message LcId="1033">{0}: Connected HIPERFACE motor encoder is not supported - command cannot be executed</Message>
-		</Event>
-		<Event>
-			<Id>63</Id>
-			<Message LcId="1033">{0}: Communication time-out in manual control mode</Message>
+			<Message LcId="1033">Clamp responded too often</Message>
 		</Event>
 		<Event>
 			<Id>64</Id>
-			<Message LcId="1033">{0}: Motor parameter identification fault</Message>
+			<Message LcId="1033">Fault - Brake resistor overload</Message>
 		</Event>
 		<Event>
 			<Id>65</Id>
-			<Message LcId="1033">{0}: Motor feedback - wrong absolute value because motor speed is too high</Message>
-		</Event>
-		<Event>
-			<Id>66</Id>
-			<Message LcId="1033">{0}: Brand protection - check failed {1} times</Message>
-		</Event>
-		<Event>
-			<Id>67</Id>
-			<Message LcId="1033">{0}: Time-out holding brake feedforward control</Message>
-		</Event>
-		<Event>
-			<Id>68</Id>
-			<Message LcId="1033">{0}: Velocity error</Message>
-		</Event>
-		<Event>
-			<Id>69</Id>
-			<Message LcId="1033">{0}: Position error</Message>
-		</Event>
-		<Event>
-			<Id>70</Id>
-			<Message LcId="1033">{0}: Sync0 cycle time is invalid</Message>
-		</Event>
-		<Event>
-			<Id>71</Id>
-			<Message LcId="1033">{0}: Warning - Brake resistor overload</Message>
+			<Message LcId="1033">Mains phase fault</Message>
 		</Event>
 		<Event>
 			<Id>72</Id>
-			<Message LcId="1033">{0}: Brake resistor overload fault</Message>
-		</Event>
-		<Event>
-			<Id>73</Id>
-			<Message LcId="1033">{0}: Error - Brake transistor</Message>
-		</Event>
-		<Event>
-			<Id>74</Id>
-			<Message LcId="1033">{0}: Error - Charging circuit</Message>
-		</Event>
-		<Event>
-			<Id>75</Id>
-			<Message LcId="1033">{0}: Mains phase failure</Message>
-		</Event>
-		<Event>
-			<Id>76</Id>
-			<Message LcId="1033">{0}: Trouble - Device utilization (ixt) too high</Message>
-		</Event>
-		<Event>
-			<Id>77</Id>
-			<Message LcId="1033">{0}: load level warning ixt thermal state</Message>
-		</Event>
-		<Event>
-			<Id>78</Id>
-			<Message LcId="1033">{0}: Error - Load/master feedback</Message>
-		</Event>
-		<Event>
-			<Id>79</Id>
-			<Message LcId="1033">{0}: HIPERFACE load encoder/master encoder communication error</Message>
-		</Event>
-		<Event>
-			<Id>80</Id>
-			<Message LcId="1033">{0}: HIPERFACE load encoder/master encoder - wrong absolute value because motor speed is too high</Message>
-		</Event>
-		<Event>
-			<Id>81</Id>
-			<Message LcId="1033">{0}: Connected HIPERFACE load encoder/master encoder is not supported</Message>
-		</Event>
-		<Event>
-			<Id>82</Id>
-			<Message LcId="1033">{0}: execution of command not possible because this Hiperface type at slot B is not supported</Message>
+			<Message LcId="1033">Motor parameter identification fault</Message>
 		</Event>
 		<Event>
 			<Id>83</Id>
-			<Message LcId="1033">{0}: No resolver as load encoder/master encoder connected - command cannot be executed</Message>
+			<Message LcId="1033">Assertion level monitoring (Low/High)</Message>
 		</Event>
 		<Event>
 			<Id>84</Id>
-			<Message LcId="1033">{0}: No HIPERFACE absolute value encoder as load encoder/master encoder connected - command cannot be executed</Message>
+			<Message LcId="1033">Fault - Analog input 1</Message>
 		</Event>
 		<Event>
 			<Id>85</Id>
-			<Message LcId="1033">{0}: FIQ runtime error</Message>
+			<Message LcId="1033">Analog input 2 fault</Message>
 		</Event>
 		<Event>
 			<Id>86</Id>
-			<Message LcId="1033">{0}: Fault - Analog input 1</Message>
-		</Event>
-		<Event>
-			<Id>87</Id>
-			<Message LcId="1033">Network - Watchdog time-out</Message>
-		</Event>
-		<Event>
-			<Id>88</Id>
-			<Message LcId="1033">Network - Invalid configuration</Message>
-		</Event>
-		<Event>
-			<Id>89</Id>
-			<Message LcId="1033">Network - Initialization error</Message>
-		</Event>
-		<Event>
-			<Id>90</Id>
-			<Message LcId="1033">Network - Invalid cyclic process data</Message>
-		</Event>
-		<Event>
-			<Id>91</Id>
-			<Message LcId="1033">{0}: Warning - Heat sink fan</Message>
-		</Event>
-		<Event>
-			<Id>92</Id>
-			<Message LcId="1033">{0} Warning - Internal fan</Message>
+			<Message LcId="1033">Power unit unknown</Message>
 		</Event>
 		<Event>
 			<Id>93</Id>
-			<Message LcId="1033">{0}: Thermal overload of control unit</Message>
-		</Event>
-		<Event>
-			<Id>94</Id>
-			<Message LcId="1033">{0}: Internal error</Message>
-		</Event>
-		<Event>
-			<Id>95</Id>
-			<Message LcId="1033">{0}: Internal error</Message>
-		</Event>
-		<Event>
-			<Id>96</Id>
-			<Message LcId="1033">{0}: Internal error</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>97</Id>
-			<Message LcId="1033">{0}: Internal error</Message>
-		</Event>
-		<Event>
-			<Id>98</Id>
-			<Message LcId="1033">{0}: Internal error</Message>
-		</Event>
-		<Event>
-			<Id>99</Id>
-			<Message LcId="1033">{0}: Internal error</Message>
-		</Event>
-		<Event>
-			<Id>100</Id>
-			<Message LcId="1033">{0}: Internal error</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>101</Id>
-			<Message LcId="1033">CTRL - Feature not supported</Message>
-		</Event>
-		<Event>
-			<Id>102</Id>
-			<Message LcId="1033">CTRL - Invalid index</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>103</Id>
-			<Message LcId="1033">ISW - Invalid offset</Message>
+			<Message LcId="1033">Fault - Heat sink temperature sensor</Message>
 		</Event>
 		<Event>
 			<Id>104</Id>
-			<Message LcId="1033">CTRL - Invalid size</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>105</Id>
-			<Message LcId="1033">ISW - Invalid data</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>106</Id>
-			<Message LcId="1033">ISW - Not ready</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>107</Id>
-			<Message LcId="1033">CTRL - Busy</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>108</Id>
-			<Message LcId="1033">ISW - Cannot queue acyclic EtherCAT command</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>109</Id>
-			<Message LcId="1033">CFG - No memory left</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>110</Id>
-			<Message LcId="1033">CTRL - Invalid parameter</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>111</Id>
-			<Message LcId="1033">CTRL - Not found</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>112</Id>
-			<Message LcId="1033">ISW - Invalid state</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>113</Id>
-			<Message LcId="1033">ISW - Cannot add slave to timer list</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>114</Id>
-			<Message LcId="1033">SLV - Time-out</Message>
+			<Message LcId="1033">Memory module is full</Message>
 		</Event>
 		<Event>
 			<Id>115</Id>
-			<Message LcId="1033">ISW - Open failed</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>116</Id>
-			<Message LcId="1033">LLA - Send failed</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>117</Id>
-			<Message LcId="1033">CFG - Error when queuing a mailbox command</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>118</Id>
-			<Message LcId="1033">ISW - Invalid mailbox command</Message>
-		</Event>
-		<Event>
-			<Id>119</Id>
-			<Message LcId="1033">ISW - Unknown mailbox protocol command</Message>
-		</Event>
-		<Event>
-			<Id>120</Id>
-			<Message LcId="1033">ISW - Access denied</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>121</Id>
-			<Message LcId="1033">CFG - Invalid product key</Message>
+			<Message LcId="1033">Trigger/functions connected incorrectly</Message>
 		</Event>
 		<Event>
 			<Id>122</Id>
-			<Message LcId="1033">PRJ - Wrong format of master XML file</Message>
+			<Message LcId="1033">CU: load error ID tag</Message>
 		</Event>
 		<Event>
 			<Id>123</Id>
-			<Message LcId="1033">CTRL - Function disabled</Message>
+			<Message LcId="1033">PU: load error ID tag</Message>
 		</Event>
 		<Event>
 			<Id>124</Id>
-			<Message LcId="1033">PRJ - Mismatch of bus configuration and number of connected slaves</Message>
+			<Message LcId="1033">Memory module not present</Message>
 		</Event>
 		<Event>
 			<Id>125</Id>
-			<Message LcId="1033">PRJ - Error reading master XML file</Message>
+			<Message LcId="1033">Invalid user data</Message>
 		</Event>
 		<Event>
 			<Id>126</Id>
-			<Message LcId="1033">PRJ - Configurator error - cyclic commands are missing in master XML file</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>127</Id>
-			<Message LcId="1033">PRJ - AL_STATUS register read command is missing in master XML file</Message>
-		</Event>
-		<Event>
-			<Id>128</Id>
-			<Message LcId="1033">ISW - Fatal internal McSm error</Message>
-		</Event>
-		<Event>
-			<Id>129</Id>
-			<Message LcId="1033">SLV - Slave error</Message>
+			<Message LcId="1033">Safety option - Internal error</Message>
 		</Event>
 		<Event>
 			<Id>130</Id>
-			<Message LcId="1033">SLV - Frame lost, IDX mismatch</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>131</Id>
-			<Message LcId="1033">SLV - At least one EtherCAT command is missing in the received frame</Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>132</Id>
-			<Message LcId="1033">CTRL - IOCTL EC_IOCTL_DC_LATCH_REQ_LTIMVALS not possible in DC Latching auto read mode</Message>
+			<Message LcId="1033">DC bus overvoltage warning</Message>
 		</Event>
 		<Event>
 			<Id>133</Id>
-			<Message LcId="1033">SLV - Auto increment address - increment mismatch (slave missing)</Message>
-		</Event>
-		<Event>
-			<Id>134</Id>
-			<Message LcId="1033">CTRL - Slave in invalid state, e.g. not in OP (API not callable in this state)</Message>
-		</Event>
-		<Event>
-			<Id>135</Id>
-			<Message LcId="1033">SLV - Fixed station address lost or slave missing - FPRD to AL_STATUS failed</Message>
+			<Message LcId="1033">DC bus undervoltage warning</Message>
 		</Event>
 		<Event>
 			<Id>136</Id>
-			<Message LcId="1033">PRJ - Too many cyclic commands in XML configuration file</Message>
+			<Message LcId="1033">PU overtemperature warning</Message>
 		</Event>
 		<Event>
 			<Id>137</Id>
-			<Message LcId="1033">RAP - Master core not accessible</Message>
+			<Message LcId="1033">CiA: Continuous over current (internal)</Message>
 		</Event>
 		<Event>
 			<Id>138</Id>
-			<Message LcId="1033">SLV - COE mailbox send - WKC error</Message>
-		</Event>
-		<Event>
-			<Id>139</Id>
-			<Message LcId="1033">SLV - COE mailbox receive - WKC error</Message>
+			<Message LcId="1033">Short circuit at the motor end</Message>
 		</Event>
 		<Event>
 			<Id>140</Id>
-			<Message LcId="1033">CTRL - No mailbox support</Message>
+			<Message LcId="1033">CiA: i²xt overload (thermal state)</Message>
 		</Event>
 		<Event>
 			<Id>141</Id>
-			<Message LcId="1033">CoE - protocol not supported</Message>
+			<Message LcId="1033">CAN: warning</Message>
 		</Event>
 		<Event>
 			<Id>142</Id>
-			<Message LcId="1033">PRJ - EoE protocol not supported</Message>
-		</Event>
-		<Event>
-			<Id>143</Id>
-			<Message LcId="1033">FoE - protocol not supported</Message>
+			<Message LcId="1033">CAN: bus off</Message>
 		</Event>
 		<Event>
 			<Id>144</Id>
-			<Message LcId="1033">PRJ - SoE protocol not supported</Message>
+			<Message LcId="1033">CAN: heartbeat time-out consumer 4</Message>
 		</Event>
 		<Event>
 			<Id>145</Id>
-			<Message LcId="1033">PRJ - VoE protocol not supported</Message>
+			<Message LcId="1033">CAN: heartbeat time-out consumer 3</Message>
 		</Event>
 		<Event>
 			<Id>146</Id>
-			<Message LcId="1033">PRJ - Configuration violates evaluation limits</Message>
+			<Message LcId="1033">CAN: heartbeat time-out consumer 2</Message>
 		</Event>
 		<Event>
 			<Id>147</Id>
-			<Message LcId="1033">CFG - Evaluation time expired</Message>
-		</Event>
-		<Event>
-			<Id>148</Id>
-			<Message LcId="1033">{0} ({1}): CoE 0x{2,X}:{3} - invalid slave state</Message>
+			<Message LcId="1033">CAN: heartbeat time-out consumer 1</Message>
 		</Event>
 		<Event>
 			<Id>149</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Toggle bit not alternated (0x05030000)']]></Message>
+			<Message LcId="1033">CAN: RPDO3 time-out</Message>
 		</Event>
 		<Event>
 			<Id>150</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'SDO protocol time-out (0x05040000)']]></Message>
+			<Message LcId="1033">CAN: RPDO2 time-out</Message>
 		</Event>
 		<Event>
 			<Id>151</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Client/server command specifier not valid or unknown (0x05040001)']]></Message>
+			<Message LcId="1033">CAN: RPDO1 time-out</Message>
 		</Event>
 		<Event>
 			<Id>152</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Invalid block size (block mode only) (0x05040002)']]></Message>
+			<Message LcId="1033">Motor overcurrent</Message>
 		</Event>
 		<Event>
 			<Id>153</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Invalid sequence number (block mode only) (0x05040003)']]></Message>
+			<Message LcId="1033">Motor overtemperature</Message>
 		</Event>
 		<Event>
 			<Id>154</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'CRC error (block mode only) (0x05040004)']]></Message>
+			<Message LcId="1033">User-defined fault 2</Message>
 		</Event>
 		<Event>
 			<Id>155</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Out of memory (0x05040005)']]></Message>
+			<Message LcId="1033">User-defined fault 1</Message>
 		</Event>
 		<Event>
 			<Id>156</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Unsupported access to an object (0x06010000)']]></Message>
+			<Message LcId="1033">Motor overspeed</Message>
 		</Event>
 		<Event>
 			<Id>157</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Attempt to read a write only object (0x06010001)']]></Message>
+			<Message LcId="1033">Fault - Pole position identification</Message>
 		</Event>
 		<Event>
 			<Id>158</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Attempt to write a read only object (0x06010002)']]></Message>
+			<Message LcId="1033">Warning invert rotation</Message>
 		</Event>
 		<Event>
 			<Id>159</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Object does not exist in the object dictionary (0x06020000)']]></Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>160</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Object cannot be mapped to the PDO (0x06040041)']]></Message>
+			<Message LcId="1033">Warning - Internal fan</Message>
 		</Event>
 		<Event>
 			<Id>161</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Number and length of objects to be mapped exceed PDO length (0x06040042)']]></Message>
-		</Event>
-		<Event>
-			<Id>162</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'General parameter incompatibility (0x06040043)']]></Message>
+			<Message LcId="1033">Heat sink fan warning</Message>
 		</Event>
 		<Event>
 			<Id>163</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'General internal incompatibility in the device (0x06040047)']]></Message>
-		</Event>
-		<Event>
-			<Id>164</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Access failed due to an hardware error (0x06060000)']]></Message>
-		</Event>
-		<Event>
-			<Id>165</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Data type or length of service parameters do not match (0x06070010)']]></Message>
+			<Message LcId="1033">Short circuit or earth leakage at the motor end</Message>
 		</Event>
 		<Event>
 			<Id>166</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Data type does not match, service parameter too high (0x06070012)']]></Message>
+			<Message LcId="1033">Analog output 1 fault</Message>
 		</Event>
 		<Event>
 			<Id>167</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Data type does not match, service parameter too low (0x06070013)']]></Message>
+			<Message LcId="1033">Analog output 2 fault</Message>
 		</Event>
 		<Event>
 			<Id>168</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Subindex does not exist (0x06090011)']]></Message>
+			<Message LcId="1033">Modbus: network time-out</Message>
 		</Event>
 		<Event>
 			<Id>169</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Write access - Parameter value exceeds limits (0x06090030)']]></Message>
+			<Message LcId="1033">Modbus: incorrect request by master</Message>
 		</Event>
 		<Event>
 			<Id>170</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Write access - Parameter value too high (0x06090031)']]></Message>
-		</Event>
-		<Event>
-			<Id>171</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Write access - Parameter value too low (0x06090032)']]></Message>
+			<Message LcId="1033">Data not compl. saved before powerdown</Message>
 		</Event>
 		<Event>
 			<Id>172</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Maximum value less than minimum value (0x06090036)']]></Message>
+			<Message LcId="1033">Network: configuration error</Message>
 		</Event>
 		<Event>
 			<Id>173</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'General error (0x08000000)']]></Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>174</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Data cannot be transferred to the application/stored in the application (0x08000020)']]></Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>175</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Local control - Data cannot be transferred to the application/stored in the application (0x08000021)']]></Message>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
 			<Id>176</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Actual device state - Data cannot be transferred to the application/stored in the application (0x08000022)']]></Message>
+			<Message LcId="1033">Warning - Brake resistor overload</Message>
 		</Event>
 		<Event>
 			<Id>177</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Object dictionary - Dynamic generation fails or object dictionary is missing (0x08000023)']]></Message>
+			<Message LcId="1033">Network - Watchdog time-out</Message>
 		</Event>
 		<Event>
 			<Id>178</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - SDO Abort 'Unknown abort code']]></Message>
-		</Event>
-		<Event>
-			<Id>179</Id>
-			<Message LcId="1033">{0} ({1}): CoE 0x{2,X}:{3} - Invalid parameter</Message>
-		</Event>
-		<Event>
-			<Id>180</Id>
-			<Message LcId="1033">{0} ({1}): CoE 0x{2,X}:{3} - CoE protocol not supported</Message>
-		</Event>
-		<Event>
-			<Id>181</Id>
-			<Message LcId="1033">{0} ({1}): CoE 0x{2,X}:{3} - Unknown FoE error</Message>
-		</Event>
-		<Event>
-			<Id>182</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - FoE error 'Not found']]></Message>
-		</Event>
-		<Event>
-			<Id>183</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - FoE error 'Access denied']]></Message>
-		</Event>
-		<Event>
-			<Id>184</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - FoE error 'Disk full']]></Message>
-		</Event>
-		<Event>
-			<Id>185</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - FoE error 'Illegal']]></Message>
-		</Event>
-		<Event>
-			<Id>186</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - FoE error 'Wrong packet number']]></Message>
-		</Event>
-		<Event>
-			<Id>187</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - FoE error 'Already existing']]></Message>
-		</Event>
-		<Event>
-			<Id>188</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - FoE error 'User missing']]></Message>
-		</Event>
-		<Event>
-			<Id>189</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - FoE error 'Only possible in bootstrap']]></Message>
-		</Event>
-		<Event>
-			<Id>190</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - FoE error 'No bootstrap']]></Message>
-		</Event>
-		<Event>
-			<Id>191</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - FoE error 'No access rights']]></Message>
-		</Event>
-		<Event>
-			<Id>192</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - FoE error 'Program error']]></Message>
-		</Event>
-		<Event>
-			<Id>193</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): CoE 0x{2,X}:{3} - FoE error 'Invalid parameter']]></Message>
-		</Event>
-		<Event>
-			<Id>194</Id>
-			<Message LcId="1033">CTRL - Master configuration not found</Message>
-		</Event>
-		<Event>
-			<Id>195</Id>
-			<Message LcId="1033">SLV - Command error while EEPROM upload</Message>
-		</Event>
-		<Event>
-			<Id>196</Id>
-			<Message LcId="1033">SLV - Command error while EEPROM download</Message>
-		</Event>
-		<Event>
-			<Id>197</Id>
-			<Message LcId="1033">PRJ - Cyclic command too long</Message>
-		</Event>
-		<Event>
-			<Id>198</Id>
-			<Message LcId="1033">PRJ - Invalid input offset in cyc cmd, please check InputOffs</Message>
-		</Event>
-		<Event>
-			<Id>199</Id>
-			<Message LcId="1033">PRJ - Invalid output offset in cyc cmd, please check OutputOffs</Message>
-		</Event>
-		<Event>
-			<Id>200</Id>
-			<Message LcId="1033">RAP - Invalid cookie</Message>
-		</Event>
-		<Event>
-			<Id>201</Id>
-			<Message LcId="1033">RAP - Watchdog expired</Message>
-		</Event>
-		<Event>
-			<Id>202</Id>
-			<Message LcId="1033">RAP - Connecting 2nd server denied, multi server support is disabled</Message>
-		</Event>
-		<Event>
-			<Id>203</Id>
-			<Message LcId="1033">RAP - Logon aborted</Message>
-		</Event>
-		<Event>
-			<Id>204</Id>
-			<Message LcId="1033">RAP - Invalid version</Message>
-		</Event>
-		<Event>
-			<Id>205</Id>
-			<Message LcId="1033">RAP - Server stopped</Message>
-		</Event>
-		<Event>
-			<Id>206</Id>
-			<Message LcId="1033">RAP - Watchdog expired</Message>
-		</Event>
-		<Event>
-			<Id>207</Id>
-			<Message LcId="1033">RAP - Reconnect time expired</Message>
-		</Event>
-		<Event>
-			<Id>208</Id>
-			<Message LcId="1033">RAP - Client logged on</Message>
-		</Event>
-		<Event>
-			<Id>209</Id>
-			<Message LcId="1033">RAP - Client reconnected</Message>
-		</Event>
-		<Event>
-			<Id>210</Id>
-			<Message LcId="1033">RAP - Socket changed after reconnect</Message>
-		</Event>
-		<Event>
-			<Id>211</Id>
-			<Message LcId="1033">DCM - Init function not called or call not successful</Message>
-		</Event>
-		<Event>
-			<Id>212</Id>
-			<Message LcId="1033">DCM - Controller error - synchronization out of limit</Message>
-		</Event>
-		<Event>
-			<Id>213</Id>
-			<Message LcId="1033">DCM - Not enough memory</Message>
-		</Event>
-		<Event>
-			<Id>214</Id>
-			<Message LcId="1033">DCM - Hardware layer - (BSP) invalid</Message>
-		</Event>
-		<Event>
-			<Id>215</Id>
-			<Message LcId="1033">DCM - Hardware layer - Error while modifying the timer</Message>
-		</Event>
-		<Event>
-			<Id>216</Id>
-			<Message LcId="1033">DCM - Hardware layer - Timer is not running</Message>
-		</Event>
-		<Event>
-			<Id>217</Id>
-			<Message LcId="1033">DCM - Hardware layer - Function is called on wrong CPU</Message>
-		</Event>
-		<Event>
-			<Id>218</Id>
-			<Message LcId="1033"><![CDATA[{0}: EtherCAT - State changed from '{1}' to '{2}']]></Message>
-		</Event>
-		<Event>
-			<Id>219</Id>
-			<Message LcId="1033">{0}: EtherCAT - Bus scan successful, {1} slaves found</Message>
-		</Event>
-		<Event>
-			<Id>220</Id>
-			<Message LcId="1033"><![CDATA[{0}: EtherCAT - Bus scan error '{1} ({2,X})', {3} slaves found]]></Message>
-		</Event>
-		<Event>
-			<Id>221</Id>
-			<Message LcId="1033">{0}: EtherCAT - Distributed clocks state {1} ({2,X})</Message>
-		</Event>
-		<Event>
-			<Id>222</Id>
-			<Message LcId="1033">{0}: EtherCAT - Distributed clocks - Latching state {1} ({2,X})</Message>
-		</Event>
-		<Event>
-			<Id>223</Id>
-			<Message LcId="1033">{0}: CoE - SDO download failure, statVal={1}, errCode={2,X} ({3})</Message>
-		</Event>
-		<Event>
-			<Id>224</Id>
-			<Message LcId="1033">{0}: CoE - SDO upload failure, statVal={1}, errCode={2,X} ({3})</Message>
-		</Event>
-		<Event>
-			<Id>225</Id>
-			<Message LcId="1033">{0}: CoE - OD-list upload failure, statVal={1}, errCode={2,X} ({3})</Message>
-		</Event>
-		<Event>
-			<Id>226</Id>
-			<Message LcId="1033">{0}: CoE - Object description upload failure, statVal={1}, errCode={2,X} ({3})</Message>
-		</Event>
-		<Event>
-			<Id>227</Id>
-			<Message LcId="1033">{0}: CoE - Object entry description upload failure, statVal={1}, errCode={2,X} ({3})</Message>
-		</Event>
-		<Event>
-			<Id>228</Id>
-			<Message LcId="1033">{0}: CoE - Emergency transfer failure, statVal={1}, errCode={2,X} ({3})</Message>
-		</Event>
-		<Event>
-			<Id>229</Id>
-			<Message LcId="1033">{0} ({1}): CoE - Emergency request - id={2,X}, len={3}, ErrCode=0x{4,X}, ErrReg=0x{5,X}, data: 0x{6,X} 0x{7,X} 0x{8,X} 0x{9,X} 0x{10,X}</Message>
-		</Event>
-		<Event>
-			<Id>230</Id>
-			<Message LcId="1033">{0}: Cyclic command - WKC error, Command: {1},  Address: {2,X}, WKC act/set={3}/{4}</Message>
-		</Event>
-		<Event>
-			<Id>231</Id>
-			<Message LcId="1033">{0}: Master init command - WKC error, Command: {1}, logical/physical address: {2,X}, WKC act/set={3}/{4}</Message>
-		</Event>
-		<Event>
-			<Id>232</Id>
-			<Message LcId="1033">{0} ({1}): Slave init command - WKC error, Command: {2}, logical/physical address: 0x{3,X}, WKC act/set={4}/{5}</Message>
-		</Event>
-		<Event>
-			<Id>233</Id>
-			<Message LcId="1033">{0} ({1}): EoE receive - WKC error, Command: {2}, logical/physical address: 0x{3,X}, WKC act/set={4}/{5}</Message>
-		</Event>
-		<Event>
-			<Id>234</Id>
-			<Message LcId="1033">{0} ({1}): CoE receive - WKC error, Command: {2}, logical/physical address: 0x{3,X}, WKC act/set={4}/{5}</Message>
-		</Event>
-		<Event>
-			<Id>235</Id>
-			<Message LcId="1033">{0} ({1}): FoE receive - WKC error, Command: {2}, logical/physical address: 0x{3,X}, WKC act/set={4}/{5}</Message>
-		</Event>
-		<Event>
-			<Id>236</Id>
-			<Message LcId="1033">{0} ({1}): SoE receive - WKC error,  Command: {2}, logical/physical address: 0x{3,X}, WKC act/set={4}/{5}</Message>
-		</Event>
-		<Event>
-			<Id>237</Id>
-			<Message LcId="1033">{0} ({1}): EoE send - WKC error, Command: {2}, logical/physical address: 0x{3,X}, WKC act/set={4}/{5}</Message>
-		</Event>
-		<Event>
-			<Id>238</Id>
-			<Message LcId="1033">{0} ({1}): CoE send - WKC error, Command: {2}, logical/physical address: 0x{3,X}, WKC act/set={4}/{5}</Message>
-		</Event>
-		<Event>
-			<Id>239</Id>
-			<Message LcId="1033">{0} ({1}): FoE send - WKC error, Command: {2}, logical/physical address: 0x{3,X}, WKC act/set={4}/{5}</Message>
-		</Event>
-		<Event>
-			<Id>240</Id>
-			<Message LcId="1033">{0} ({1}): SoE send - WKC error, Command: {2}, logical/physical address: 0x{3,X}, WKC act/set={4}/{5}</Message>
-		</Event>
-		<Event>
-			<Id>241</Id>
-			<Message LcId="1033">{0}: Retry sending a {1} frame due to {2}</Message>
-		</Event>
-		<Event>
-			<Id>242</Id>
-			<Message LcId="1033">{0}: {1} response on {2} Ethernet frame</Message>
-		</Event>
-		<Event>
-			<Id>243</Id>
-			<Message LcId="1033">{0}: Additional error information - {1}</Message>
-		</Event>
-		<Event>
-			<Id>244</Id>
-			<Message LcId="1033">{0}: EtherCAT command - IDX actual value=0x{1,X}</Message>
-		</Event>
-		<Event>
-			<Id>245</Id>
-			<Message LcId="1033">{0}: EtherCAT command - IDX set value=0x{1,X}</Message>
-		</Event>
-		<Event>
-			<Id>246</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): Init command response error - No response, state change='{2}']]></Message>
-		</Event>
-		<Event>
-			<Id>247</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): Init command response error - Validation error, state change='{2}']]></Message>
-		</Event>
-		<Event>
-			<Id>248</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}):Init command response error - Failed, state change='{2}']]></Message>
-		</Event>
-		<Event>
-			<Id>249</Id>
-			<Message LcId="1033"><![CDATA[{0}: Master init command response error - No response, state change='{1}']]></Message>
-		</Event>
-		<Event>
-			<Id>250</Id>
-			<Message LcId="1033"><![CDATA[{0}: Master init command response error - Validation error, state change='{1}']]></Message>
-		</Event>
-		<Event>
-			<Id>251</Id>
-			<Message LcId="1033">{0} ({1}): Missing EtherCAT {2} command in Ethernet frame, index of command: {3}!lu!</Message>
-		</Event>
-		<Event>
-			<Id>252</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): Mailbox init command - Time-out, State change of slave='{2}']]></Message>
-		</Event>
-		<Event>
-			<Id>253</Id>
-			<Message LcId="1033"><![CDATA[{0}: At least one EtherCAT slave not in 'Operational']]></Message>
-		</Event>
-		<Event>
-			<Id>254</Id>
-			<Message LcId="1033">{0}: EtherCAT cable connected</Message>
-		</Event>
-		<Event>
-			<Id>255</Id>
-			<Message LcId="1033">{0}: EtherCAT cable not connected</Message>
-		</Event>
-		<Event>
-			<Id>256</Id>
-			<Message LcId="1033">{0}: Cyclic commands - Time-out</Message>
-		</Event>
-		<Event>
-			<Id>257</Id>
-			<Message LcId="1033">{0}: Redundant operation - Ethernet cable is missing at 2nd EtherCAT interface</Message>
-		</Event>
-		<Event>
-			<Id>258</Id>
-			<Message LcId="1033"><![CDATA[{0}: At least one slave is in state 'Error']]></Message>
-		</Event>
-		<Event>
-			<Id>259</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): Slave error, AL state: '{2}' (0x{3,X}), AL state code: '{4}' (0x{5,X})]]></Message>
-		</Event>
-		<Event>
-			<Id>260</Id>
-			<Message LcId="1033">{0} ({1}): Communication to device interrupted</Message>
-		</Event>
-		<Event>
-			<Id>261</Id>
-			<Message LcId="1033">{0} ({1}): SDO abort, {2} (0x{3,X}), Index=0x{4,x}, Subindex=0x{5,X}</Message>
-		</Event>
-		<Event>
-			<Id>262</Id>
-			<Message LcId="1033"><![CDATA[{0}: DC slaves are 'in-sync', deviation {1} ns]]></Message>
-		</Event>
-		<Event>
-			<Id>263</Id>
-			<Message LcId="1033"><![CDATA[{0}: DC slaves are 'out-of-sync', deviation {1} ns]]></Message>
-		</Event>
-		<Event>
-			<Id>264</Id>
-			<Message LcId="1033">{0} ({1}): DC single latch on slave {2,X}, Ident 0x{3,X}</Message>
-		</Event>
-		<Event>
-			<Id>265</Id>
-			<Message LcId="1033">{0}: MbxTferRcv - file upload failure, statVal={1}, errCode={2,X} ({3})</Message>
-		</Event>
-		<Event>
-			<Id>266</Id>
-			<Message LcId="1033">{0}: MbxTferRcv - file download failure, statVal={1}, errCode={2,X} ({3})</Message>
-		</Event>
-		<Event>
-			<Id>267</Id>
-			<Message LcId="1033">{0}: Client registration lost</Message>
-		</Event>
-		<Event>
-			<Id>268</Id>
-			<Message LcId="1033">{0}:Redundant operation - Ethernet cable connected</Message>
-		</Event>
-		<Event>
-			<Id>269</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): SoE write error init command mbox, state change of slave='{2}']]></Message>
-		</Event>
-		<Event>
-			<Id>270</Id>
-			<Message LcId="1033">{0}: Hot Connect - all groups detected - {1} groups found, {2} groups are present, Mask: 0x{3,X}</Message>
-		</Event>
-		<Event>
-			<Id>271</Id>
-			<Message LcId="1033"><![CDATA[{0}: Hot Connect - all group errors detected '{1} ({2,X})', {3} groups found]]></Message>
-		</Event>
-		<Event>
-			<Id>272</Id>
-			<Message LcId="1033">{0} ({1}): Slave removed from bus</Message>
-		</Event>
-		<Event>
-			<Id>273</Id>
-			<Message LcId="1033">{0} ({1}): Slave added to bus</Message>
-		</Event>
-		<Event>
-			<Id>274</Id>
-			<Message LcId="1033">{0}: Topology was changed {1} ({2,X})</Message>
-		</Event>
-		<Event>
-			<Id>275</Id>
-			<Message LcId="1033">{0}: Port closed</Message>
-		</Event>
-		<Event>
-			<Id>276</Id>
-			<Message LcId="1033">{0}: MbxTferRcv - Write IDN failure, statVal={1}, errCode={2,X} ({3})</Message>
-		</Event>
-		<Event>
-			<Id>277</Id>
-			<Message LcId="1033">{0}: MbxTferRcv - Read IDN failure, statVal={1}, errCode={2,X} ({3})</Message>
-		</Event>
-		<Event>
-			<Id>278</Id>
-			<Message LcId="1033">{0}: SoE - Emergency transfer failure, statVal={1}, errCode={2,X} ({3})</Message>
-		</Event>
-		<Event>
-			<Id>279</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): SoE - Emergency request, id ={2,X}, len={3}, errCode=0x{4,X}, data: '{5,X} {6,X} {7,X} {8,X} {9,X}']]></Message>
-		</Event>
-		<Event>
-			<Id>280</Id>
-			<Message LcId="1033">{0}: SoE - Notification transfer failure, statVal={1}, errCode={2,X} ({3})</Message>
-		</Event>
-		<Event>
-			<Id>281</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): SoE - Notification request, id ={2,X}, len={3}, Header=0x{4,X}, IDN={5}, data: '{6,X} {7,X} {8,X} {9,X} {10,X}']]></Message>
-		</Event>
-		<Event>
-			<Id>282</Id>
-			<Message LcId="1033">{0} ({1}): FoE abort, {2} (0x{3,X})</Message>
-		</Event>
-		<Event>
-			<Id>283</Id>
-			<Message LcId="1033"><![CDATA[{0}: Bus scan state, '{1}' ({2,X}), {3} slaves handled]]></Message>
-		</Event>
-		<Event>
-			<Id>284</Id>
-			<Message LcId="1033">{0}: Latch/Edge, Latch: {1}, Edge: {2,X}.{3,X}</Message>
-		</Event>
-		<Event>
-			<Id>285</Id>
-			<Message LcId="1033">{0}: Latch/Edge, Latch: {1}, Edge: No edge</Message>
-		</Event>
-		<Event>
-			<Id>286</Id>
-			<Message LcId="1033">{0}: Remote API diagnosis port - Connection established</Message>
-		</Event>
-		<Event>
-			<Id>287</Id>
-			<Message LcId="1033">{0}: Remote API diagnosis port - Connection disconnected</Message>
-		</Event>
-		<Event>
-			<Id>288</Id>
-			<Message LcId="1033">{0}: Client registered from cookie 0x{1,X}, Instance {2,X}, Id 0x{3,X}, Result {4}</Message>
-		</Event>
-		<Event>
-			<Id>289</Id>
-			<Message LcId="1033">{0}: Client unregistered from cookie 0x{1,X}, Instance {2,X}, Id 0x{3,X}, Result {4}</Message>
-		</Event>
-		<Event>
-			<Id>290</Id>
-			<Message LcId="1033">{0}: Unknown notification: 0x{1,X}</Message>
-		</Event>
-		<Event>
-			<Id>291</Id>
-			<Message LcId="1033">{0} ({1}): Slave latched, latch mask: L0+: {2} / L0-: {3} / L1+: {4} / L1-: {5}</Message>
-		</Event>
-		<Event>
-			<Id>292</Id>
-			<Message LcId="1033">{0}: Bus scan - Error {1} ({2,X})</Message>
-		</Event>
-		<Event>
-			<Id>293</Id>
-			<Message LcId="1033">{0}: Invalid number of slaves: set={1}, actual={2}</Message>
-		</Event>
-		<Event>
-			<Id>294</Id>
-			<Message LcId="1033">{0}: Cannot get SlaveInfo {1} ({2,X})</Message>
-		</Event>
-		<Event>
-			<Id>295</Id>
-			<Message LcId="1033">{0} ({1}): Deviation of slave</Message>
-		</Event>
-		<Event>
-			<Id>296</Id>
-			<Message LcId="1033">{0} ({1}): Slave is not configured</Message>
-		</Event>
-		<Event>
-			<Id>297</Id>
-			<Message LcId="1033">SlaveInfo {0},  Index: {1},  Auto-inc address: {2,X},  vendor: 0x{3,X}, product: 0x{4,X}</Message>
-		</Event>
-		<Event>
-			<Id>298</Id>
-			<Message LcId="1033">SLV - Error 0x{0,X} retrieving configuration data</Message>
-		</Event>
-		<Event>
-			<Id>299</Id>
-			<Message LcId="1033">Bus scan - Deviation {0},  index: {1}, vendor: {2,X}, product: 0x{3,X}</Message>
-		</Event>
-		<Event>
-			<Id>300</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): Communication to device interrupted, state requested/actual: '{2}'/'{3}']]></Message>
-		</Event>
-		<Event>
-			<Id>301</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): Slave state error, state requested/actual: '{2}'/'{3}']]></Message>
-		</Event>
-		<Event>
-			<Id>302</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): Wrong response on 'configured fix address request' for slave]]></Message>
-		</Event>
-		<Event>
-			<Id>303</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): Wrong response on 'alias address' request for slave]]></Message>
-		</Event>
-		<Event>
-			<Id>304</Id>
-			<Message LcId="1033">{0}: Cannot execute EC_IOCTL_DC_SLV_SYNC_DEVLIMIT_GET, errCode={1} ({2,X})</Message>
-		</Event>
-		<Event>
-			<Id>305</Id>
-			<Message LcId="1033">{0} ({1}): Cannot read latch timer, errCode={2} (0x{3,X})</Message>
-		</Event>
-		<Event>
-			<Id>306</Id>
-			<Message LcId="1033">{0}: Cannot execute EC_IOCTL_DC_SLV_SYNC_RESTART, errCode={1} ({2,X})</Message>
-		</Event>
-		<Event>
-			<Id>307</Id>
-			<Message LcId="1033">{0}: RAP - Invalid parameter size for {1}</Message>
-		</Event>
-		<Event>
-			<Id>308</Id>
-			<Message LcId="1033">{0}: RAP - Marshaling error, Cookie: 0x{1,X}, Command: {2,X}, Cause: {3} (0x{4,X}), Protocol Header: 0x{5,X}</Message>
-		</Event>
-		<Event>
-			<Id>309</Id>
-			<Message LcId="1033">{0}: Unable to enqueue {1} (missing calls to ProcessNotificationJobs)</Message>
-		</Event>
-		<Event>
-			<Id>310</Id>
-			<Message LcId="1033">{0}: No connection to slaves</Message>
-		</Event>
-		<Event>
-			<Id>311</Id>
-			<Message LcId="1033">{0}: ecatSetTargetState cannot set EtherCAT master into target state, Master is busy (time-out)</Message>
-		</Event>
-		<Event>
-			<Id>312</Id>
-			<Message LcId="1033"><![CDATA[{0}: ecatStop() returns 'Busy', retry...]]></Message>
-		</Event>
-		<Event>
-			<Id>313</Id>
-			<Message LcId="1033">{0}: Mailbox transfer request - Error=0x{1,x}</Message>
-		</Event>
-		<Event>
-			<Id>314</Id>
-			<Message LcId="1033">{0}: Mailbox transfer: {1}</Message>
-		</Event>
-		<Event>
-			<Id>315</Id>
-			<Message LcId="1033">{0}: Waiting for mailbox transfer from master...</Message>
-		</Event>
-		<Event>
-			<Id>316</Id>
-			<Message LcId="1033">{0}: Mailbox transfer - Fatal time-out error</Message>
-		</Event>
-		<Event>
-			<Id>317</Id>
-			<Message LcId="1033">{0}: Bus cycle ({1} us) and Sync period ({2} us) are different</Message>
-		</Event>
-		<Event>
-			<Id>318</Id>
-			<Message LcId="1033">{0}: Error 0x{1,X} getting the bus scan state</Message>
-		</Event>
-		<Event>
-			<Id>319</Id>
-			<Message LcId="1033">{0} ({1}): Wrong response on DC supported request or slave</Message>
-		</Event>
-		<Event>
-			<Id>320</Id>
-			<Message LcId="1033"><![CDATA[{0} ({1}): Unable to set 'DC slave sync disable']]></Message>
-		</Event>
-		<Event>
-			<Id>321</Id>
-			<Message LcId="1033">{0}: Error 0x{1,X} when restarting bus scan</Message>
-		</Event>
-		<Event>
-			<Id>322</Id>
-			<Message LcId="1033">{0}: Bus scan time-out, {1,X} slaves found</Message>
-		</Event>
-		<Event>
-			<Id>323</Id>
-			<Message LcId="1033">{0} ({1}): Configuration error - Check of VendorID failed (0x{2,X}/0x{3,X})</Message>
-		</Event>
-		<Event>
-			<Id>324</Id>
-			<Message LcId="1033">{0} ({1}): Configuration error - Check of ProductCode failed (0x{2,X}/0x{3,X})</Message>
-		</Event>
-		<Event>
-			<Id>325</Id>
-			<Message LcId="1033">{0} ({1}): Configuration error - Check of Revision failed (0x{2,X}/0x{3,X})</Message>
-		</Event>
-		<Event>
-			<Id>326</Id>
-			<Message LcId="1033">{0} ({1}): Configuration error - Check of VendorID failed (0x{2,X}/missing)</Message>
-		</Event>
-		<Event>
-			<Id>327</Id>
-			<Message LcId="1033"><![CDATA[{0}: Configuration error - Odd device at bus end after '{1} ({2})', Identification 0x{3,X}/0x{4,X}/0x{5,X}]]></Message>
-		</Event>
-		<Event>
-			<Id>328</Id>
-			<Message LcId="1033">{0}: Internal error counter resetted</Message>
-		</Event>
-		<Event>
-			<Id>329</Id>
-			<Message LcId="1033"><![CDATA[{0}: All slaves 'Operational' again]]></Message>
-		</Event>
-		<Event>
-			<Id>330</Id>
-			<Message LcId="1033">{0}: Cyclic command - WKC error (repeated {1} times)</Message>
-		</Event>
-		<Event>
-			<Id>331</Id>
-			<Message LcId="1033">{0}: Frame response - Error (repeated {1} times)</Message>
-		</Event>
-		<Event>
-			<Id>332</Id>
-			<Message LcId="1033"><![CDATA[{0}: Not all slaves are 'Operational' (repeated {1} times)]]></Message>
-		</Event>
-		<Event>
-			<Id>333</Id>
-			<Message LcId="1033">{0} ({1}): Emergency message - Overflow, further messages blocked</Message>
-		</Event>
-		<Event>
-			<Id>334</Id>
-			<Message LcId="1033">{0}: New configuration loaded</Message>
-		</Event>
-		<Event>
-			<Id>335</Id>
-			<Message LcId="1033">{0}: New configuration loaded, no slaves defined</Message>
-		</Event>
-		<Event>
-			<Id>336</Id>
-			<Message LcId="1033">{0}: Master - Start failed, configuration error</Message>
-		</Event>
-		<Event>
-			<Id>337</Id>
-			<Message LcId="1033">{0}: New configuration loaded from slaves EEPROM</Message>
-		</Event>
-		<Event>
-			<Id>338</Id>
-			<Message LcId="1033">{0}: Master - Start failed</Message>
-		</Event>
-		<Event>
-			<Id>339</Id>
-			<Message LcId="1033">{0}: Master - Start failed, bus configuration error</Message>
-		</Event>
-		<Event>
-			<Id>340</Id>
-			<Message LcId="1033">{0}: Master - Start failed,  EtherCAT cable disconnected</Message>
-		</Event>
-		<Event>
-			<Id>341</Id>
-			<Message LcId="1033">{0}: Master - Start failed, DC/DCM configuration</Message>
-		</Event>
-		<Event>
-			<Id>342</Id>
-			<Message LcId="1033"><![CDATA[{0}: Master - Start failed, cannot set slaves to 'Pre-Operational']]></Message>
-		</Event>
-		<Event>
-			<Id>343</Id>
-			<Message LcId="1033"><![CDATA[{0}: Master - Set 'Operational' failed (0x{1,X})]]></Message>
-		</Event>
-		<Event>
-			<Id>344</Id>
-			<Message LcId="1033"><![CDATA[{0}: Master - Set 'Operational' failed, Master not initialized]]></Message>
-		</Event>
-		<Event>
-			<Id>345</Id>
-			<Message LcId="1033"><![CDATA[{0}: Master - Set 'Operational' failed, EtherCAT cable disconnected]]></Message>
-		</Event>
-		<Event>
-			<Id>346</Id>
-			<Message LcId="1033"><![CDATA[{0}: Master - Set 'Operational' failed, DCM not in-sync]]></Message>
-		</Event>
-		<Event>
-			<Id>347</Id>
-			<Message LcId="1033"><![CDATA[{0}: Master - Set 'Operational' failed, bus cycle and DC different]]></Message>
-		</Event>
-		<Event>
-			<Id>348</Id>
-			<Message LcId="1033"><![CDATA[{0}: Master - Set 'Operational' takes some time...]]></Message>
-		</Event>
-		<Event>
-			<Id>349</Id>
-			<Message LcId="1033"><![CDATA[{0}: Master - Set 'Operational' failed, time-out]]></Message>
-		</Event>
-		<Event>
-			<Id>350</Id>
-			<Message LcId="1033"><![CDATA[{0}: Master - Set 'Operational' failed, slave error]]></Message>
-		</Event>
-		<Event>
-			<Id>351</Id>
-			<Message LcId="1033"><![CDATA[{0}: Master - Set 'Operational' aborted by reset command]]></Message>
-		</Event>
-		<Event>
-			<Id>352</Id>
-			<Message LcId="1033">{0}: Master - Stopping failed (0x{1,X})</Message>
-		</Event>
-		<Event>
-			<Id>353</Id>
-			<Message LcId="1033"><![CDATA[{0}: Master - Stopping failed, cannot set Slaves 'Pre-Operational']]></Message>
-		</Event>
-		<Event>
-			<Id>354</Id>
-			<Message LcId="1033">{0}: Master - Shutdown failed (0x{1,X})</Message>
-		</Event>
-		<Event>
-			<Id>355</Id>
-			<Message LcId="1033">{0}: Remote API Server - Start failed</Message>
-		</Event>
-		<Event>
-			<Id>356</Id>
-			<Message LcId="1033">{0}: Start Download Service</Message>
-		</Event>
-		<Event>
-			<Id>357</Id>
-			<Message LcId="1033">{0}: Download Service done</Message>
-		</Event>
-		<Event>
-			<Id>358</Id>
-			<Message LcId="1033">{0}: MMC - Internal error (0x{1,X})</Message>
-		</Event>
-		<Event>
-			<Id>359</Id>
-			<Message LcId="1033"><![CDATA[{0}: MMC - 'Modular Machine Configuration' is active, EtherCAT master is controlled by L_ETC_MMCController]]></Message>
-		</Event>
-		<Event>
-			<Id>360</Id>
-			<Message LcId="1033"><![CDATA[{0}: MMC - Service {1} started, configuration '{2}']]></Message>
-		</Event>
-		<Event>
-			<Id>361</Id>
-			<Message LcId="1033">{0}: MMC - Service stopped</Message>
-		</Event>
-		<Event>
-			<Id>362</Id>
-			<Message LcId="1033">{0}: MMC - Error in configuration files</Message>
-		</Event>
-		<Event>
-			<Id>363</Id>
-			<Message LcId="1033">{0}: MMC - File does not exist {1}</Message>
-		</Event>
-		<Event>
-			<Id>364</Id>
-			<Message LcId="1033">{0}: MMC - Parsing error at line {1} ({2})</Message>
-		</Event>
-		<Event>
-			<Id>365</Id>
-			<Message LcId="1033">{0}: MMC - parsing of file successful {1}</Message>
-		</Event>
-		<Event>
-			<Id>366</Id>
-			<Message LcId="1033">{0}: MMC - Devices not sending or devices missing {1} ({2})</Message>
-		</Event>
-		<Event>
-			<Id>367</Id>
-			<Message LcId="1033">{0}: MMC - Number of devices in device tree differs at line {1} ({2})</Message>
-		</Event>
-		<Event>
-			<Id>368</Id>
-			<Message LcId="1033">{0}: MMC - Device type mismatch for Alias Address {1} at position {2} (0x{3,X} 0x{4,X} / 0x{5,X} 0x{6,X})</Message>
-		</Event>
-		<Event>
-			<Id>369</Id>
-			<Message LcId="1033">{0}: MMC - Invalid Alias Address {1} at position {2} (0x{3,X}/0x{4,X}/0x{5,X}/0x{6,X})</Message>
-		</Event>
-		<Event>
-			<Id>370</Id>
-			<Message LcId="1033">{0}: MMC - Duplicated Alias Address {1} at positions {2} and {3}</Message>
-		</Event>
-		<Event>
-			<Id>371</Id>
-			<Message LcId="1033">{0}: MMC - No configuration checks</Message>
-		</Event>
-		<Event>
-			<Id>372</Id>
-			<Message LcId="1033">{0}: MMC - Invalid configuration</Message>
-		</Event>
-		<Event>
-			<Id>373</Id>
-			<Message LcId="1033">{0}: MMC - Mandatory slave {1} missing</Message>
-		</Event>
-		<Event>
-			<Id>374</Id>
-			<Message LcId="1033">{0}: MMC - Optional slave {1} is present, but not allowed</Message>
-		</Event>
-		<Event>
-			<Id>375</Id>
-			<Message LcId="1033">{0}: MMC - No valid service active</Message>
-		</Event>
-		<Event>
-			<Id>376</Id>
-			<Message LcId="1033">{0}: MMC - Address assignment error, less slaves connected ({1}) than configured ({2})</Message>
-		</Event>
-		<Event>
-			<Id>377</Id>
-			<Message LcId="1033">{0}: MMC - Address assignment error, more slaves connected than configured</Message>
-		</Event>
-		<Event>
-			<Id>378</Id>
-			<Message LcId="1033">{0}: MMC - Address assignment error, invalid device at position {1} ({2,X} 0x{3,X}/0x{4,X} 0x{5,X})</Message>
-		</Event>
-		<Event>
-			<Id>379</Id>
-			<Message LcId="1033">{0}: MMC - Address assignment successful, address {1} at position {2}</Message>
-		</Event>
-		<Event>
-			<Id>380</Id>
-			<Message LcId="1033">{0}: MMC - Address assignment failed, address {1} at position {2}, error 0x{3,X}</Message>
-		</Event>
-		<Event>
-			<Id>381</Id>
-			<Message LcId="1033">{0}: MMC - Address assignment done</Message>
-		</Event>
-		<Event>
-			<Id>382</Id>
-			<Message LcId="1033">{0}: MMC - Address assignment error, writing address {1} at position {2} by CoE 0x{3,X}:{4}, error 0x{5,X}</Message>
-		</Event>
-		<Event>
-			<Id>383</Id>
-			<Message LcId="1033">{0}: MMC - Slave ident error, slave {1} ident failed, CoE 0x{2,X}:{3}, error 0x{4,X}</Message>
-		</Event>
-		<Event>
-			<Id>384</Id>
-			<Message LcId="1033">{0}: MMC - Slave ident error, slave {1} ident data failed, CoE 0x{2,X}:{3}, set 0x{4,X}/actual 0x{5,X}</Message>
-		</Event>
-		<Event>
-			<Id>385</Id>
-			<Message LcId="1033"><![CDATA[{0}: MMC - Service state cannot be changed, set bus to 'INIT' first]]></Message>
-		</Event>
-		<Event>
-			<Id>386</Id>
-			<Message LcId="1033">{0}: Last ETC message</Message>
-		</Event>
-		<Event>
-			<Id>387</Id>
-			<Message LcId="1033">{0}: Error - Motor temperature monitoring (PTC)</Message>
-		</Event>
-		<Event>
-			<Id>388</Id>
-			<Message LcId="1033">{0}: General error (see manual)</Message>
-		</Event>
-		<Event>
-			<Id>389</Id>
-			<Message LcId="1033">CmpLenzeErrorManagementAccess loaded without errors</Message>
-		</Event>
-		<Event>
-			<Id>390</Id>
-			<Message LcId="1033">Logbook cleared</Message>
-		</Event>
-		<Event>
-			<Id>391</Id>
-			<Message LcId="1033">Corrupt restore data</Message>
-		</Event>
-		<Event>
-			<Id>392</Id>
 			<Message LcId="1033">Network - Disruption of cyclic data exchange</Message>
 		</Event>
 		<Event>
-			<Id>393</Id>
-			<Message LcId="1033">{0}: Motor overtemperature (load encoder/master encoder), {1} °C</Message>
+			<Id>179</Id>
+			<Message LcId="1033">Network - Initialization error</Message>
 		</Event>
 		<Event>
-			<Id>394</Id>
-			<Message LcId="1033">{0}: Motor temperature sensor error (load encoder/master encoder)</Message>
+			<Id>181</Id>
+			<Message LcId="1033">Automatic start disabled</Message>
 		</Event>
 		<Event>
-			<Id>395</Id>
-			<Message LcId="1033">{0}: Energy saving state active</Message>
+			<Id>182</Id>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
-			<Id>396</Id>
-			<Message LcId="1033">Boot application - More Application Credit required, required {0}, available {1}</Message>
+			<Id>183</Id>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
-			<Id>397</Id>
-			<Message LcId="1033">Test-Mode - More Application Credit required, application is starting delayed</Message>
+			<Id>184</Id>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
-			<Id>398</Id>
-			<Message LcId="1033">Application-Credit - Invalid license data</Message>
+			<Id>185</Id>
+			<Message LcId="1033">Internal error</Message>
 		</Event>
 		<Event>
-			<Id>399</Id>
-			<Message LcId="1033">Application-Credit - License data missing</Message>
+			<Id>186</Id>
+			<Message LcId="1033">Network - Invalid cyclic process data</Message>
 		</Event>
 		<Event>
-			<Id>400</Id>
-			<Message LcId="1033">{0}: Internal communication to PLC failed</Message>
+			<Id>187</Id>
+			<Message LcId="1033">Maximuml allowed troubles exceeded</Message>
 		</Event>
 		<Event>
-			<Id>401</Id>
-			<Message LcId="1033">{0}: Cannot save applikation parameter on SD-Card</Message>
+			<Id>188</Id>
+			<Message LcId="1033">DC-bus voltage to low for power up</Message>
 		</Event>
 		<Event>
-			<Id>402</Id>
-			<Message LcId="1033">{0}: SD Card not mounted</Message>
+			<Id>190</Id>
+			<Message LcId="1033">Keypad removed</Message>
 		</Event>
 		<Event>
-			<Id>403</Id>
-			<Message LcId="1033">{0}: No memory space on SD-Card available</Message>
+			<Id>191</Id>
+			<Message LcId="1033">User-defined fault (LECOM)</Message>
 		</Event>
 		<Event>
-			<Id>404</Id>
-			<Message LcId="1033">{0}: No physical Memory (intern. RAM) available</Message>
+			<Id>192</Id>
+			<Message LcId="1033">Network: user fault 1</Message>
 		</Event>
 		<Event>
-			<Id>405</Id>
-			<Message LcId="1033">{0}: Mains failure</Message>
+			<Id>193</Id>
+			<Message LcId="1033">Network: user fault 2</Message>
 		</Event>
 		<Event>
-			<Id>406</Id>
-			<Message LcId="1033">{0}: Check EtherCAT out-port of master</Message>
+			<Id>194</Id>
+			<Message LcId="1033">NetWordIN1 configuration incorrect</Message>
 		</Event>
 		<Event>
-			<Id>407</Id>
-			<Message LcId="1033">{0}: Check EtherCAT in-port of the slave</Message>
+			<Id>195</Id>
+			<Message LcId="1033">Max. motor freq. reached</Message>
 		</Event>
 		<Event>
-			<Id>408</Id>
-			<Message LcId="1033">Network - Initialization with safety option failed</Message>
+			<Id>196</Id>
+			<Message LcId="1033">Memory module: invalid OEM data</Message>
 		</Event>
 		<Event>
-			<Id>409</Id>
-			<Message LcId="1033">Network - Communication time-out with safety option</Message>
+			<Id>197</Id>
+			<Message LcId="1033">EPM firmware version incomp.</Message>
 		</Event>
 		<Event>
-			<Id>410</Id>
-			<Message LcId="1033">Initialization: 0x{0,X},{1} parameter-value could not be written (error-code: 0x{2,X})</Message>
+			<Id>198</Id>
+			<Message LcId="1033">EPM data: firmware type incompatible</Message>
 		</Event>
 		<Event>
-			<Id>411</Id>
-			<Message LcId="1033">Set Default: 0x{0,X},{1} parameter-value could not be written (error-code: 0x{2,X})</Message>
+			<Id>199</Id>
+			<Message LcId="1033">EPM data: new firmware type detected</Message>
 		</Event>
 		<Event>
-			<Id>412</Id>
-			<Message LcId="1033">Parameter-initialization incomplete</Message>
+			<Id>201</Id>
+			<Message LcId="1033">Invalid para. changeover configuration</Message>
 		</Event>
 		<Event>
-			<Id>413</Id>
-			<Message LcId="1033"><![CDATA[Loading 'factory-settings' incomplete]]></Message>
+			<Id>202</Id>
+			<Message LcId="1033">EPM data: unknown parameter found</Message>
 		</Event>
 		<Event>
-			<Id>414</Id>
-			<Message LcId="1033"><![CDATA[Loading 'TA-default-values' incomplete]]></Message>
+			<Id>203</Id>
+			<Message LcId="1033">OEM hardware incompatible</Message>
 		</Event>
 		<Event>
-			<Id>415</Id>
-			<Message LcId="1033">Registration in softplc failed</Message>
+			<Id>204</Id>
+			<Message LcId="1033">Feedback system: speed limit</Message>
 		</Event>
 		<Event>
-			<Id>416</Id>
-			<Message LcId="1033">Open parameter-description failed</Message>
+			<Id>205</Id>
+			<Message LcId="1033">EPM data: PU size incompatible</Message>
 		</Event>
 		<Event>
-			<Id>417</Id>
-			<Message LcId="1033">Open parameter-set failed</Message>
+			<Id>206</Id>
+			<Message LcId="1033">EPM data: new PU size detected</Message>
 		</Event>
 		<Event>
-			<Id>418</Id>
-			<Message LcId="1033">{0}: PDO mapping object is used by plc (index {1})</Message>
-		</Event>
-		<Event>
-			<Id>419</Id>
-			<Message LcId="1033">Timeout during waiting of logbook data restored</Message>
-		</Event>
-		<Event>
-			<Id>420</Id>
-			<Message LcId="1033">Logbook data restored general error</Message>
-		</Event>
-		<Event>
-			<Id>421</Id>
-			<Message LcId="1033">First boot with this OS version</Message>
-		</Event>
-		<Event>
-			<Id>422</Id>
-			<Message LcId="1033">{0}: cable check: motor moved too much</Message>
-		</Event>
-		<Event>
-			<Id>423</Id>
-			<Message LcId="1033">{0}: cable check: wrong motor angle detected</Message>
-		</Event>
-		<Event>
-			<Id>424</Id>
-			<Message LcId="1033">{0}: General initializing error with Safety option</Message>
-		</Event>
-		<Event>
-			<Id>425</Id>
-			<Message LcId="1033">{0}: Internal communication timeout with safety option</Message>
-		</Event>
-		<Event>
-			<Id>426</Id>
-			<Message LcId="1033">{0}: The chronology of the logbook is not consistant</Message>
-		</Event>
-		<Event>
-			<Id>427</Id>
-			<Message LcId="1033">{0}: SBC activated</Message>
-		</Event>
-		<Event>
-			<Id>428</Id>
-			<Message LcId="1033">{0}: Brake Error in Safetyoption active</Message>
-		</Event>
-		<Event>
-			<Id>429</Id>
-			<Message LcId="1033">Logbook was repaired by logbook service</Message>
-		</Event>
-		<Event>
-			<Id>430</Id>
-			<Message LcId="1033">Logbook read persist data error</Message>
-		</Event>
-		<Event>
-			<Id>431</Id>
-			<Message LcId="1033">{0}: No valid pole position detected</Message>
-		</Event>
-		<Event>
-			<Id>432</Id>
-			<Message LcId="1033">{0}: Encoder not supported</Message>
-		</Event>
-		<Event>
-			<Id>433</Id>
-			<Message LcId="1033">Application [{0}] was loaded. Allocate area: {1}.</Message>
-		</Event>
-		<Event>
-			<Id>434</Id>
-			<Message LcId="1033">Application [{0}] was started.</Message>
-		</Event>
-		<Event>
-			<Id>435</Id>
-			<Message LcId="1033">Application [{0}] was stopped.</Message>
-		</Event>
-		<Event>
-			<Id>436</Id>
-			<Message LcId="1033">Reset warm done. Application: [{0}].</Message>
-		</Event>
-		<Event>
-			<Id>437</Id>
-			<Message LcId="1033">Reset cold done. Application: [{0}].</Message>
-		</Event>
-		<Event>
-			<Id>438</Id>
-			<Message LcId="1033">Reset origin done. Application: [{0}].</Message>
-		</Event>
-		<Event>
-			<Id>439</Id>
-			<Message LcId="1033">Boot project created. Application: [{0}].</Message>
-		</Event>
-		<Event>
-			<Id>440</Id>
-			<Message LcId="1033">{0}: not allowed during Lenze modes</Message>
-		</Event>
-		<Event>
-			<Id>441</Id>
-			<Message LcId="1033">PLC {0} buffer overflow</Message>
-		</Event>
-		<Event>
-			<Id>442</Id>
-			<Message LcId="1033">Application [{0}] was downloaded via [{1}].</Message>
-		</Event>
-		<Event>
-			<Id>443</Id>
-			<Message LcId="1033">Retain data are initialized of {0}.</Message>
-		</Event>
-		<Event>
-			<Id>444</Id>
-			<Message LcId="1033">Boot project of application [{0}] loaded.</Message>
-		</Event>
-		<Event>
-			<Id>445</Id>
-			<Message LcId="1033">No retain data in boot project of application [{0}].</Message>
-		</Event>
-		<Event>
-			<Id>446</Id>
-			<Message LcId="1033">Retain data match to boot project of application [{0}].</Message>
-		</Event>
-		<Event>
-			<Id>447</Id>
-			<Message LcId="1033">Retain data mismatch to boot project of application [{0}].</Message>
-		</Event>
-		<Event>
-			<Id>448</Id>
-			<Message LcId="1033">Network interface: {0}</Message>
-		</Event>
-		<Event>
-			<Id>449</Id>
+			<Id>207</Id>
 			<Message LcId="1033">Network - Time-out explicit message</Message>
 		</Event>
 		<Event>
-			<Id>450</Id>
+			<Id>208</Id>
 			<Message LcId="1033">Network - Overall communication time-out</Message>
 		</Event>
 		<Event>
-			<Id>451</Id>
-			<Message LcId="1033">PLC information: {0} ({1})</Message>
+			<Id>209</Id>
+			<Message LcId="1033">Torque limit reached</Message>
 		</Event>
 		<Event>
-			<Id>452</Id>
-			<Message LcId="1033">PLC warning: {0} ({1})</Message>
+			<Id>210</Id>
+			<Message LcId="1033">Memory module: wrong type</Message>
 		</Event>
 		<Event>
-			<Id>453</Id>
-			<Message LcId="1033">PLC error: {0} ({1})</Message>
+			<Id>211</Id>
+			<Message LcId="1033">Overload 24 V supply</Message>
 		</Event>
 		<Event>
-			<Id>454</Id>
-			<Message LcId="1033">PLC exception: {0} ({1})</Message>
+			<Id>212</Id>
+			<Message LcId="1033">Encoder open circuit</Message>
 		</Event>
 		<Event>
-			<Id>455</Id>
-			<Message LcId="1033">CANopen: RPDO1 Timeout</Message>
+			<Id>213</Id>
+			<Message LcId="1033">Parameter loss</Message>
 		</Event>
 		<Event>
-			<Id>456</Id>
-			<Message LcId="1033">CANopen: RPDO2 Timeout</Message>
+			<Id>214</Id>
+			<Message LcId="1033">Communication faulty</Message>
 		</Event>
 		<Event>
-			<Id>457</Id>
-			<Message LcId="1033">CANopen: RPDO3 Timeout</Message>
+			<Id>215</Id>
+			<Message LcId="1033">Keypad full control</Message>
 		</Event>
 		<Event>
-			<Id>458</Id>
-			<Message LcId="1033">CANopen: RPDO4 Timeout</Message>
+			<Id>216</Id>
+			<Message LcId="1033">Time-out (PAM)</Message>
 		</Event>
 		<Event>
-			<Id>459</Id>
-			<Message LcId="1033">CANopen: Heartbeat-Timeout Consumer 1</Message>
+			<Id>217</Id>
+			<Message LcId="1033">SL-PSM stall detection</Message>
 		</Event>
 		<Event>
-			<Id>460</Id>
-			<Message LcId="1033">CANopen: Heartbeat-Timeout Consumer 2</Message>
+			<Id>218</Id>
+			<Message LcId="1033">HTL input fault</Message>
 		</Event>
 		<Event>
-			<Id>461</Id>
-			<Message LcId="1033">CANopen: Heartbeat-Timeout Consumer 3</Message>
+			<Id>220</Id>
+			<Message LcId="1033">Wrong password</Message>
 		</Event>
 		<Event>
-			<Id>462</Id>
-			<Message LcId="1033">CANopen: Heartbeat-Timeout Consumer 4</Message>
+			<Id>221</Id>
+			<Message LcId="1033">Warning</Message>
 		</Event>
 		<Event>
-			<Id>463</Id>
-			<Message LcId="1033">CANopen: Warning</Message>
+			<Id>222</Id>
+			<Message LcId="1033">Fatal Error</Message>
 		</Event>
 		<Event>
-			<Id>464</Id>
-			<Message LcId="1033">CANopen: BusOff</Message>
+			<Id>223</Id>
+			<Message LcId="1033">Power unit fatal error</Message>
 		</Event>
 		<Event>
-			<Id>20608</Id>
-			<Message LcId="1033">{0}: Internal error - AIS</Message>
+			<Id>224</Id>
+			<Message LcId="1033">Modbus TCP master time-out</Message>
 		</Event>
 		<Event>
-			<Id>20609</Id>
-			<Message LcId="1033">{0}: Internal error - AIE</Message>
+			<Id>225</Id>
+			<Message LcId="1033">Modbus TCP Keep Alive time-out</Message>
 		</Event>
 		<Event>
-			<Id>20610</Id>
-			<Message LcId="1033">{0}: Internal error - Button S82</Message>
+			<Id>226</Id>
+			<Message LcId="1033">UPS operation active</Message>
 		</Event>
 		<Event>
-			<Id>20611</Id>
-			<Message LcId="1033">{0}: IRS - Internal error</Message>
+			<Id>230</Id>
+			<Message LcId="1033">FMF Error</Message>
 		</Event>
 		<Event>
-			<Id>20612</Id>
-			<Message LcId="1033">{0}: IRL - Internal error</Message>
+			<Id>231</Id>
+			<Message LcId="1033">BACnet time-out</Message>
 		</Event>
 		<Event>
-			<Id>20619</Id>
-			<Message LcId="1033">{0}: SD-Inx/CLx - Error</Message>
+			<Id>232</Id>
+			<Message LcId="1033">POWERLINK: Loss of SoC</Message>
 		</Event>
 		<Event>
-			<Id>20620</Id>
-			<Message LcId="1033">{0}: Internal switch-off path - Error</Message>
+			<Id>233</Id>
+			<Message LcId="1033">POWERLINK: CRC error</Message>
 		</Event>
 		<Event>
-			<Id>20621</Id>
-			<Message LcId="1033">{0}: Internal switch-off path - Test pulse error</Message>
+			<Id>234</Id>
+			<Message LcId="1033">Load loss detected</Message>
 		</Event>
 		<Event>
-			<Id>20622</Id>
-			<Message LcId="1033">{0}: SBC - Test pulse error</Message>
+			<Id>235</Id>
+			<Message LcId="1033">Wrong ID tag</Message>
 		</Event>
 		<Event>
-			<Id>20623</Id>
-			<Message LcId="1033">{0}: SBC - Remains stuck at LOW</Message>
+			<Id>236</Id>
+			<Message LcId="1033">Maximum current reached</Message>
 		</Event>
 		<Event>
-			<Id>20756</Id>
-			<Message LcId="1033">{0}: Reference voltage error</Message>
+			<Id>237</Id>
+			<Message LcId="1033">Function not allowed in selected operating mode</Message>
 		</Event>
 		<Event>
-			<Id>20757</Id>
-			<Message LcId="1033">{0}: 6 V voltage error</Message>
+			<Id>238</Id>
+			<Message LcId="1033">Power stage communication Tx packet not ready in time</Message>
 		</Event>
 		<Event>
-			<Id>20758</Id>
-			<Message LcId="1033">{0}: 5 V voltage error</Message>
+			<Id>265</Id>
+			<Message LcId="1033">Motor overload</Message>
 		</Event>
 		<Event>
-			<Id>20759</Id>
-			<Message LcId="1033">{0}: 3.3 V voltage error</Message>
+			<Id>1794</Id>
+			<Message LcId="1033">Manual mode activated</Message>
 		</Event>
 		<Event>
-			<Id>24960</Id>
-			<Message LcId="1033">{0}: Internal error - STO activated</Message>
+			<Id>1795</Id>
+			<Message LcId="1033">Manual mode disabled</Message>
 		</Event>
 		<Event>
-			<Id>24965</Id>
-			<Message LcId="1033">{0}: Communication error - Basic device</Message>
+			<Id>1796</Id>
+			<Message LcId="1033">Manual mode time-out</Message>
 		</Event>
 		<Event>
-			<Id>24966</Id>
-			<Message LcId="1033">{0}: Synchronization error - Basic device</Message>
+			<Id>1804</Id>
+			<Message LcId="1033">Cascading overload</Message>
 		</Event>
 		<Event>
-			<Id>24967</Id>
-			<Message LcId="1033">{0}: Device configuration SBC incompatible</Message>
+			<Id>1954</Id>
+			<Message LcId="1033"><![CDATA[Changed "device ID" not yet active]]></Message>
 		</Event>
 		<Event>
-			<Id>24971</Id>
-			<Message LcId="1033">{0}: HDSL: Device configuration incompatible</Message>
-		</Event>
-		<Event>
-			<Id>25472</Id>
-			<Message LcId="1033">{0}: F-parameter error</Message>
-		</Event>
-		<Event>
-			<Id>25473</Id>
-			<Message LcId="1033">{0}: F_Dest_Add unequal F-address</Message>
-		</Event>
-		<Event>
-			<Id>25474</Id>
-			<Message LcId="1033">{0}: F_Dest_Add = 0 or FFFFhex</Message>
-		</Event>
-		<Event>
-			<Id>25475</Id>
-			<Message LcId="1033">{0}: F_Source_Add = 0 or FFFFhex</Message>
-		</Event>
-		<Event>
-			<Id>25476</Id>
-			<Message LcId="1033">{0}: F_WD_Time = 0 ms</Message>
-		</Event>
-		<Event>
-			<Id>25477</Id>
-			<Message LcId="1033">{0}: F_SIL exceeds technical SIL</Message>
-		</Event>
-		<Event>
-			<Id>25478</Id>
-			<Message LcId="1033">{0}: F_CRC_Length error</Message>
-		</Event>
-		<Event>
-			<Id>25479</Id>
-			<Message LcId="1033">{0}: Wrong F-parameter version</Message>
-		</Event>
-		<Event>
-			<Id>25480</Id>
-			<Message LcId="1033">{0}: F_Block_ID not supported</Message>
-		</Event>
-		<Event>
-			<Id>25481</Id>
-			<Message LcId="1033">{0}: New safety parameter set deleted</Message>
-		</Event>
-		<Event>
-			<Id>25482</Id>
-			<Message LcId="1033">{0}: New safety parameter set loaded</Message>
-		</Event>
-		<Event>
-			<Id>25483</Id>
-			<Message LcId="1033">{0}: Memory module - Access error</Message>
-		</Event>
-		<Event>
-			<Id>25484</Id>
-			<Message LcId="1033">{0}: Different safety parameter sets</Message>
-		</Event>
-		<Event>
-			<Id>25485</Id>
-			<Message LcId="1033">{0}: Extended Safety - No safety parameter set</Message>
-		</Event>
-		<Event>
-			<Id>25486</Id>
-			<Message LcId="1033">{0}: Extended Safety - Safety parameter set defect</Message>
-		</Event>
-		<Event>
-			<Id>25487</Id>
-			<Message LcId="1033">{0}: Safety parameter set format error</Message>
-		</Event>
-		<Event>
-			<Id>25488</Id>
-			<Message LcId="1033">{0}: Safety parameter set - Plausibility error</Message>
-		</Event>
-		<Event>
-			<Id>25489</Id>
-			<Message LcId="1033">{0}: Safety parameter set - Communication error</Message>
-		</Event>
-		<Event>
-			<Id>25490</Id>
-			<Message LcId="1033">{0}: Different safety addresses detected</Message>
-		</Event>
-		<Event>
-			<Id>25491</Id>
-			<Message LcId="1033">{0}: SSM - Wrong PDO version</Message>
-		</Event>
-		<Event>
-			<Id>25492</Id>
-			<Message LcId="1033">{0}: Memory module access error release information</Message>
-		</Event>
-		<Event>
-			<Id>25493</Id>
-			<Message LcId="1033">{0}: Internal limitation active</Message>
-		</Event>
-		<Event>
-			<Id>33162</Id>
-			<Message LcId="1033">{0}: PROFIsafe passivated</Message>
-		</Event>
-		<Event>
-			<Id>33163</Id>
-			<Message LcId="1033">{0}: PROFIsafe has left data exchange</Message>
-		</Event>
-		<Event>
-			<Id>33165</Id>
-			<Message LcId="1033">{0}: PROFIsafe - CRC1 error</Message>
-		</Event>
-		<Event>
-			<Id>33166</Id>
-			<Message LcId="1033">{0}: PROFIsafe - Device specific error</Message>
-		</Event>
-		<Event>
-			<Id>33167</Id>
-			<Message LcId="1033">{0}: iParameters - Saving, watchdog expired</Message>
-		</Event>
-		<Event>
-			<Id>33173</Id>
-			<Message LcId="1033">{0}: FSoE - Unexpected command</Message>
-		</Event>
-		<Event>
-			<Id>33174</Id>
-			<Message LcId="1033">{0}: FSoE - Unknown command</Message>
-		</Event>
-		<Event>
-			<Id>33175</Id>
-			<Message LcId="1033">{0}: FSoE - Invalid connection ID</Message>
-		</Event>
-		<Event>
-			<Id>33176</Id>
-			<Message LcId="1033">{0}: FSoE - CRC error</Message>
-		</Event>
-		<Event>
-			<Id>33177</Id>
-			<Message LcId="1033">{0}: FSoE - Watchdog expired</Message>
-		</Event>
-		<Event>
-			<Id>33180</Id>
-			<Message LcId="1033">{0}: FSoE - Invalid communication parameter data</Message>
-		</Event>
-		<Event>
-			<Id>33181</Id>
-			<Message LcId="1033">{0}: FSoE - Invalid application parameter length</Message>
-		</Event>
-		<Event>
-			<Id>33182</Id>
-			<Message LcId="1033">{0}: FSoE - Invalid application parameter data</Message>
-		</Event>
-		<Event>
-			<Id>33183</Id>
-			<Message LcId="1033">{0}: FSoE - Passivated</Message>
-		</Event>
-		<Event>
-			<Id>33187</Id>
-			<Message LcId="1033">{0}: iParameters - Restore, watchdog expired</Message>
-		</Event>
-		<Event>
-			<Id>33188</Id>
-			<Message LcId="1033">{0}: PROFIsafe - iParCRC error</Message>
-		</Event>
-		<Event>
-			<Id>33189</Id>
-			<Message LcId="1033">{0}: PROFIsafe - CRC2 error</Message>
-		</Event>
-		<Event>
-			<Id>33190</Id>
-			<Message LcId="1033">{0}: F_WD_Time or F_WD_Time_2 expired</Message>
-		</Event>
-		<Event>
-			<Id>33191</Id>
-			<Message LcId="1033">{0}: Reserved (PROFIsafe standard)</Message>
-		</Event>
-		<Event>
-			<Id>33192</Id>
-			<Message LcId="1033">{0}: FSoE - Invalid slave address</Message>
-		</Event>
-		<Event>
-			<Id>33193</Id>
-			<Message LcId="1033">{0}: FSoE - Invalid communication parameter length</Message>
-		</Event>
-		<Event>
-			<Id>33194</Id>
-			<Message LcId="1033">{0}: FSoE - Data exchange left</Message>
-		</Event>
-		<Event>
-			<Id>36992</Id>
-			<Message LcId="1033">{0}: Discrepancy check or function check error - SD-In1</Message>
-		</Event>
-		<Event>
-			<Id>36993</Id>
-			<Message LcId="1033">{0}: Discrepancy check or function check error - SD-In2</Message>
-		</Event>
-		<Event>
-			<Id>36994</Id>
-			<Message LcId="1033">{0}: Discrepancy check or function check error - SD-In3</Message>
-		</Event>
-		<Event>
-			<Id>36995</Id>
-			<Message LcId="1033">{0}: Discrepancy check or function check error - SD-In4</Message>
-		</Event>
-		<Event>
-			<Id>36996</Id>
-			<Message LcId="1033">{0}: Disabled SD-In1 = HIGH</Message>
-		</Event>
-		<Event>
-			<Id>36997</Id>
-			<Message LcId="1033">{0}: Disabled SD-In2 = HIGH</Message>
-		</Event>
-		<Event>
-			<Id>36998</Id>
-			<Message LcId="1033">{0}: Disabled SD-In3 = HIGH</Message>
-		</Event>
-		<Event>
-			<Id>36999</Id>
-			<Message LcId="1033">{0}: Disabled SD-In4 = HIGH</Message>
-		</Event>
-		<Event>
-			<Id>37000</Id>
-			<Message LcId="1033">{0}: SD-Out1 - Channel A remains stuck at HIGH</Message>
-		</Event>
-		<Event>
-			<Id>37001</Id>
-			<Message LcId="1033">{0}: SD-Out1 - Channel A remains stuck at LOW</Message>
-		</Event>
-		<Event>
-			<Id>37002</Id>
-			<Message LcId="1033">{0}: SD-Out1 - Channel B remains stuck at HIGH</Message>
-		</Event>
-		<Event>
-			<Id>37003</Id>
-			<Message LcId="1033">{0}: SD-Out1 - Channel B remains stuck at LOW</Message>
-		</Event>
-		<Event>
-			<Id>37004</Id>
-			<Message LcId="1033">{0}: SD-In1 - Channel A remains stuck at HIGH</Message>
-		</Event>
-		<Event>
-			<Id>37005</Id>
-			<Message LcId="1033">{0}: SD-In1 - Channel B remains stuck at HIGH</Message>
-		</Event>
-		<Event>
-			<Id>37006</Id>
-			<Message LcId="1033">{0}: SD-In2 - Channel A remains stuck at HIGH</Message>
-		</Event>
-		<Event>
-			<Id>37007</Id>
-			<Message LcId="1033">{0}: SD-In2 - Channel B remains stuck at HIGH</Message>
-		</Event>
-		<Event>
-			<Id>37008</Id>
-			<Message LcId="1033">{0}: SD-In3 - Channel A remains stuck at HIGH</Message>
-		</Event>
-		<Event>
-			<Id>37009</Id>
-			<Message LcId="1033">{0}: SD-In3 - Channel B remains stuck at HIGH</Message>
-		</Event>
-		<Event>
-			<Id>37010</Id>
-			<Message LcId="1033">{0}: SD-In4 - Channel A remains stuck at HIGH</Message>
-		</Event>
-		<Event>
-			<Id>37011</Id>
-			<Message LcId="1033">{0}: SD-In4 - Channel B remains stuck at HIGH</Message>
-		</Event>
-		<Event>
-			<Id>37012</Id>
-			<Message LcId="1033">{0}: CLA/CLB - Short circuit</Message>
-		</Event>
-		<Event>
-			<Id>65416</Id>
-			<Message LcId="1033">{0}: SS1/SS2 - Stop time exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65417</Id>
-			<Message LcId="1033">{0}: SLS1 - Nlim1 exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65418</Id>
-			<Message LcId="1033">{0}: SLS2 - Nlim2 exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65419</Id>
-			<Message LcId="1033">{0}: SLS3 - Nlim3 exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65420</Id>
-			<Message LcId="1033">{0}: SLS4 - Nlim4 exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65421</Id>
-			<Message LcId="1033">{0}: SLS/SMS - Error stop not executed</Message>
-		</Event>
-		<Event>
-			<Id>65422</Id>
-			<Message LcId="1033">{0}: SDIpos - Wrong direction</Message>
-		</Event>
-		<Event>
-			<Id>65423</Id>
-			<Message LcId="1033">{0}: SDIneg - Wrong direction</Message>
-		</Event>
-		<Event>
-			<Id>65424</Id>
-			<Message LcId="1033">{0}: SMS - Nmax exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65425</Id>
-			<Message LcId="1033">{0}: SOS - Tolerance limit exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65426</Id>
-			<Message LcId="1033">{0}: No feedback system configured</Message>
-		</Event>
-		<Event>
-			<Id>65427</Id>
-			<Message LcId="1033">{0}: CAS - Round trip time exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65428</Id>
-			<Message LcId="1033">{0}: CAS - Hardware or discrepancy error</Message>
-		</Event>
-		<Event>
-			<Id>65429</Id>
-			<Message LcId="1033">{0}: SS1/SS2 - Speed ramp exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65430</Id>
-			<Message LcId="1033">{0}: SLI - Safely limited increment exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65431</Id>
-			<Message LcId="1033">{0}: SLP1 - Position limits exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65432</Id>
-			<Message LcId="1033">{0}: SLP2 - Position limits exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65433</Id>
-			<Message LcId="1033">{0}: SLP3 - Position limits exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65434</Id>
-			<Message LcId="1033">{0}: SLP4 - Position limits exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65435</Id>
-			<Message LcId="1033">{0}: SLP - No home position</Message>
-		</Event>
-		<Event>
-			<Id>65437</Id>
-			<Message LcId="1033">{0}: PDSS - Velocity exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65438</Id>
-			<Message LcId="1033">{0}: PDSS - Creep velocity SCS exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65439</Id>
-			<Message LcId="1033">{0}: PDSS - No diagnostic mark detected</Message>
-		</Event>
-		<Event>
-			<Id>65440</Id>
-			<Message LcId="1033">{0}: PDSS - Diagnostic mark detected at invalid position</Message>
-		</Event>
-		<Event>
-			<Id>65446</Id>
-			<Message LcId="1033">{0}: SHom - Time-out</Message>
-		</Event>
-		<Event>
-			<Id>65447</Id>
-			<Message LcId="1033">{0}: SHom - Home position deleted</Message>
-		</Event>
-		<Event>
-			<Id>65448</Id>
-			<Message LcId="1033">{0}: SHom - Maximum slip value exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65449</Id>
-			<Message LcId="1033">{0}: SHom - Tolerance of start position exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65450</Id>
-			<Message LcId="1033">{0}: SHom - Tolerance of position comparison exceeded</Message>
-		</Event>
-		<Event>
-			<Id>65451</Id>
-			<Message LcId="1033">{0}: SSM - Invalid safe velocity</Message>
-		</Event>
-		<Event>
-			<Id>65452</Id>
-			<Message LcId="1033">{0}: SSM - Encoder error</Message>
-		</Event>
-		<Event>
-			<Id>65453</Id>
-			<Message LcId="1033">{0}: SSM - Resolver error</Message>
-		</Event>
-		<Event>
-			<Id>65454</Id>
-			<Message LcId="1033">{0}: SSM - Error in standard device data</Message>
-		</Event>
-		<Event>
-			<Id>65455</Id>
-			<Message LcId="1033">{0}: SSM - Speed deviation too high</Message>
-		</Event>
-		<Event>
-			<Id>65456</Id>
-			<Message LcId="1033">{0}: SSM - Synchronization error</Message>
-		</Event>
-		<Event>
-			<Id>65457</Id>
-			<Message LcId="1033">{0}: MUT: Muting function active</Message>
-		</Event>
-		<Event>
-			<Id>65458</Id>
-			<Message LcId="1033">{0}: MUT - Muting function finished</Message>
-		</Event>
-		<Event>
-			<Id>65459</Id>
-			<Message LcId="1033">{0}: MUT - Muting function canceled</Message>
-		</Event>
-		<Event>
-			<Id>65460</Id>
-			<Message LcId="1033">{0}: HDSL: Error encoder supply</Message>
-		</Event>
-		<Event>
-			<Id>65461</Id>
-			<Message LcId="1033">{0}: HDSL: Encoder error detected</Message>
-		</Event>
-		<Event>
-			<Id>65462</Id>
-			<Message LcId="1033">{0}: HDSL: Encoder fault</Message>
-		</Event>
-		<Event>
-			<Id>65463</Id>
-			<Message LcId="1033">{0}: SSM: HDSL Encoder fault</Message>
+			<Id>2363</Id>
+			<Message LcId="1033">Back-to-Box activated</Message>
 		</Event>
 		<Property>
 			<Name>DisplayTxtId</Name>
@@ -2373,63 +593,595 @@
 		</Property>
 	</Source>
 	<Source>
-		<GUID>{80ACA4BE-DDD5-4CCF-BE66-BF62FE26EF5E}</GUID>
-		<Name LcId="1033">Pelletizer Events</Name>
+		<GUID>{28111931-003B-0000-0050-056904000600}</GUID>
+		<Name LcId="1033">i550 Cabinet V06.04.xx</Name>
 		<Event>
-			<Id>1</Id>
-			<Message LcId="1033">The Start Button has been pressed!</Message>
-		</Event>
-		<Event>
-			<Id>2</Id>
-			<Message LcId="1033">The Stop Button has been pressed!</Message>
-		</Event>
-		<Event>
-			<Id>3</Id>
-			<Message LcId="1033">Emergency Stop has been pressed!</Message>
-		</Event>
-		<Event>
-			<Id>4</Id>
-			<Message LcId="1033">Emergency Stop has been cleared!</Message>
+			<Id>0</Id>
+			<Message LcId="1033">No error</Message>
 		</Event>
 		<Event>
 			<Id>5</Id>
-			<Message LcId="1033">The Feedroll VFD has faulted!</Message>
+			<Message LcId="1033">Fault - Device utilization (ixt) too high</Message>
 		</Event>
 		<Event>
 			<Id>6</Id>
-			<Message LcId="1033">The Rotor VFD has faulted!</Message>
-		</Event>
-		<Event>
-			<Id>11</Id>
-			<Message LcId="1033">A Fault Reset has been issued to the Feedroll Drive!</Message>
-		</Event>
-		<Event>
-			<Id>12</Id>
-			<Message LcId="1033">A Fault Reset has been issued to the Rotor Drive!</Message>
+			<Message LcId="1033">Warning - Device utilization (ixt) too high</Message>
 		</Event>
 		<Event>
 			<Id>7</Id>
-			<Message LcId="1033">The Feedthroat has been removed!</Message>
+			<Message LcId="1033">Fault - DC bus overvoltage</Message>
 		</Event>
 		<Event>
 			<Id>8</Id>
-			<Message LcId="1033">The Feedthroat has been installed!</Message>
+			<Message LcId="1033">Fault - DC bus undervoltage</Message>
 		</Event>
 		<Event>
 			<Id>9</Id>
-			<Message LcId="1033">The Dischage Chute has been removed!</Message>
+			<Message LcId="1033">Fault - Power unit overtemperature</Message>
 		</Event>
 		<Event>
-			<Id>10</Id>
-			<Message LcId="1033">The Dischage Chute has been installed!</Message>
+			<Id>11</Id>
+			<Message LcId="1033">24 V supply critical</Message>
 		</Event>
 		<Event>
-			<Id>13</Id>
-			<Message LcId="1033">Power has been disconnected from the machine! Powering Down!</Message>
+			<Id>36</Id>
+			<Message LcId="1033">Motor phase missing</Message>
 		</Event>
 		<Event>
-			<Id>14</Id>
-			<Message LcId="1033">Power has been applied to the machine! Powering On!</Message>
+			<Id>37</Id>
+			<Message LcId="1033">Motor phase failure phase U</Message>
 		</Event>
+		<Event>
+			<Id>38</Id>
+			<Message LcId="1033">Motor phase failure phase V</Message>
+		</Event>
+		<Event>
+			<Id>39</Id>
+			<Message LcId="1033">Motor phase failure phase W</Message>
+		</Event>
+		<Event>
+			<Id>43</Id>
+			<Message LcId="1033">Network: PDO mapping error</Message>
+		</Event>
+		<Event>
+			<Id>45</Id>
+			<Message LcId="1033">Clamp responded too often</Message>
+		</Event>
+		<Event>
+			<Id>64</Id>
+			<Message LcId="1033">Fault - Brake resistor overload</Message>
+		</Event>
+		<Event>
+			<Id>65</Id>
+			<Message LcId="1033">Mains phase fault</Message>
+		</Event>
+		<Event>
+			<Id>72</Id>
+			<Message LcId="1033">Motor parameter identification fault</Message>
+		</Event>
+		<Event>
+			<Id>83</Id>
+			<Message LcId="1033">Assertion level monitoring (Low/High)</Message>
+		</Event>
+		<Event>
+			<Id>84</Id>
+			<Message LcId="1033">Fault - Analog input 1</Message>
+		</Event>
+		<Event>
+			<Id>85</Id>
+			<Message LcId="1033">Analog input 2 fault</Message>
+		</Event>
+		<Event>
+			<Id>86</Id>
+			<Message LcId="1033">Power unit unknown</Message>
+		</Event>
+		<Event>
+			<Id>93</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>97</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>101</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>103</Id>
+			<Message LcId="1033">Fault - Heat sink temperature sensor</Message>
+		</Event>
+		<Event>
+			<Id>104</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>105</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>106</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>107</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>108</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>109</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>110</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>111</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>112</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>113</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>114</Id>
+			<Message LcId="1033">Memory module is full</Message>
+		</Event>
+		<Event>
+			<Id>115</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>116</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>117</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>118</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>121</Id>
+			<Message LcId="1033">Trigger/functions connected incorrectly</Message>
+		</Event>
+		<Event>
+			<Id>122</Id>
+			<Message LcId="1033">CU: load error ID tag</Message>
+		</Event>
+		<Event>
+			<Id>123</Id>
+			<Message LcId="1033">PU: load error ID tag</Message>
+		</Event>
+		<Event>
+			<Id>124</Id>
+			<Message LcId="1033">Memory module not present</Message>
+		</Event>
+		<Event>
+			<Id>125</Id>
+			<Message LcId="1033">Invalid user data</Message>
+		</Event>
+		<Event>
+			<Id>126</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>127</Id>
+			<Message LcId="1033">Safety option - Internal error</Message>
+		</Event>
+		<Event>
+			<Id>130</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>131</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>132</Id>
+			<Message LcId="1033">DC bus overvoltage warning</Message>
+		</Event>
+		<Event>
+			<Id>133</Id>
+			<Message LcId="1033">DC bus undervoltage warning</Message>
+		</Event>
+		<Event>
+			<Id>136</Id>
+			<Message LcId="1033">PU overtemperature warning</Message>
+		</Event>
+		<Event>
+			<Id>137</Id>
+			<Message LcId="1033">CiA: Continuous over current (internal)</Message>
+		</Event>
+		<Event>
+			<Id>138</Id>
+			<Message LcId="1033">Short circuit at the motor end</Message>
+		</Event>
+		<Event>
+			<Id>140</Id>
+			<Message LcId="1033">CiA: i²xt overload (thermal state)</Message>
+		</Event>
+		<Event>
+			<Id>141</Id>
+			<Message LcId="1033">CAN: warning</Message>
+		</Event>
+		<Event>
+			<Id>142</Id>
+			<Message LcId="1033">CAN: bus off</Message>
+		</Event>
+		<Event>
+			<Id>144</Id>
+			<Message LcId="1033">CAN: heartbeat time-out consumer 4</Message>
+		</Event>
+		<Event>
+			<Id>145</Id>
+			<Message LcId="1033">CAN: heartbeat time-out consumer 3</Message>
+		</Event>
+		<Event>
+			<Id>146</Id>
+			<Message LcId="1033">CAN: heartbeat time-out consumer 2</Message>
+		</Event>
+		<Event>
+			<Id>147</Id>
+			<Message LcId="1033">CAN: heartbeat time-out consumer 1</Message>
+		</Event>
+		<Event>
+			<Id>149</Id>
+			<Message LcId="1033">CAN: RPDO3 time-out</Message>
+		</Event>
+		<Event>
+			<Id>150</Id>
+			<Message LcId="1033">CAN: RPDO2 time-out</Message>
+		</Event>
+		<Event>
+			<Id>151</Id>
+			<Message LcId="1033">CAN: RPDO1 time-out</Message>
+		</Event>
+		<Event>
+			<Id>152</Id>
+			<Message LcId="1033">Motor overcurrent</Message>
+		</Event>
+		<Event>
+			<Id>153</Id>
+			<Message LcId="1033">Motor overtemperature</Message>
+		</Event>
+		<Event>
+			<Id>154</Id>
+			<Message LcId="1033">User-defined fault 2</Message>
+		</Event>
+		<Event>
+			<Id>155</Id>
+			<Message LcId="1033">User-defined fault 1</Message>
+		</Event>
+		<Event>
+			<Id>156</Id>
+			<Message LcId="1033">Motor overspeed</Message>
+		</Event>
+		<Event>
+			<Id>157</Id>
+			<Message LcId="1033">Fault - Pole position identification</Message>
+		</Event>
+		<Event>
+			<Id>158</Id>
+			<Message LcId="1033">Warning invert rotation</Message>
+		</Event>
+		<Event>
+			<Id>159</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>160</Id>
+			<Message LcId="1033">Warning - Internal fan</Message>
+		</Event>
+		<Event>
+			<Id>161</Id>
+			<Message LcId="1033">Heat sink fan warning</Message>
+		</Event>
+		<Event>
+			<Id>163</Id>
+			<Message LcId="1033">Short circuit or earth leakage at the motor end</Message>
+		</Event>
+		<Event>
+			<Id>166</Id>
+			<Message LcId="1033">Analog output 1 fault</Message>
+		</Event>
+		<Event>
+			<Id>167</Id>
+			<Message LcId="1033">Analog output 2 fault</Message>
+		</Event>
+		<Event>
+			<Id>168</Id>
+			<Message LcId="1033">Modbus: network time-out</Message>
+		</Event>
+		<Event>
+			<Id>169</Id>
+			<Message LcId="1033">Modbus: incorrect request by master</Message>
+		</Event>
+		<Event>
+			<Id>170</Id>
+			<Message LcId="1033">Data not compl. saved before powerdown</Message>
+		</Event>
+		<Event>
+			<Id>172</Id>
+			<Message LcId="1033">Network: configuration error</Message>
+		</Event>
+		<Event>
+			<Id>173</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>174</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>175</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>176</Id>
+			<Message LcId="1033">Warning - Brake resistor overload</Message>
+		</Event>
+		<Event>
+			<Id>177</Id>
+			<Message LcId="1033">Network - Watchdog time-out</Message>
+		</Event>
+		<Event>
+			<Id>178</Id>
+			<Message LcId="1033">Network - Disruption of cyclic data exchange</Message>
+		</Event>
+		<Event>
+			<Id>179</Id>
+			<Message LcId="1033">Network - Initialization error</Message>
+		</Event>
+		<Event>
+			<Id>181</Id>
+			<Message LcId="1033">Automatic start disabled</Message>
+		</Event>
+		<Event>
+			<Id>182</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>183</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>184</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>185</Id>
+			<Message LcId="1033">Internal error</Message>
+		</Event>
+		<Event>
+			<Id>186</Id>
+			<Message LcId="1033">Network - Invalid cyclic process data</Message>
+		</Event>
+		<Event>
+			<Id>187</Id>
+			<Message LcId="1033">Maximuml allowed troubles exceeded</Message>
+		</Event>
+		<Event>
+			<Id>188</Id>
+			<Message LcId="1033">DC-bus voltage to low for power up</Message>
+		</Event>
+		<Event>
+			<Id>190</Id>
+			<Message LcId="1033">Keypad removed</Message>
+		</Event>
+		<Event>
+			<Id>191</Id>
+			<Message LcId="1033">User-defined fault (LECOM)</Message>
+		</Event>
+		<Event>
+			<Id>192</Id>
+			<Message LcId="1033">Network: user fault 1</Message>
+		</Event>
+		<Event>
+			<Id>193</Id>
+			<Message LcId="1033">Network: user fault 2</Message>
+		</Event>
+		<Event>
+			<Id>194</Id>
+			<Message LcId="1033">NetWordIN1 configuration incorrect</Message>
+		</Event>
+		<Event>
+			<Id>195</Id>
+			<Message LcId="1033">Max. motor freq. reached</Message>
+		</Event>
+		<Event>
+			<Id>196</Id>
+			<Message LcId="1033">Memory module: invalid OEM data</Message>
+		</Event>
+		<Event>
+			<Id>197</Id>
+			<Message LcId="1033">EPM firmware version incomp.</Message>
+		</Event>
+		<Event>
+			<Id>198</Id>
+			<Message LcId="1033">EPM data: firmware type incompatible</Message>
+		</Event>
+		<Event>
+			<Id>199</Id>
+			<Message LcId="1033">EPM data: new firmware type detected</Message>
+		</Event>
+		<Event>
+			<Id>201</Id>
+			<Message LcId="1033">Invalid para. changeover configuration</Message>
+		</Event>
+		<Event>
+			<Id>202</Id>
+			<Message LcId="1033">EPM data: unknown parameter found</Message>
+		</Event>
+		<Event>
+			<Id>203</Id>
+			<Message LcId="1033">OEM hardware incompatible</Message>
+		</Event>
+		<Event>
+			<Id>204</Id>
+			<Message LcId="1033">Feedback system: speed limit</Message>
+		</Event>
+		<Event>
+			<Id>205</Id>
+			<Message LcId="1033">EPM data: PU size incompatible</Message>
+		</Event>
+		<Event>
+			<Id>206</Id>
+			<Message LcId="1033">EPM data: new PU size detected</Message>
+		</Event>
+		<Event>
+			<Id>207</Id>
+			<Message LcId="1033">Network - Time-out explicit message</Message>
+		</Event>
+		<Event>
+			<Id>208</Id>
+			<Message LcId="1033">Network - Overall communication time-out</Message>
+		</Event>
+		<Event>
+			<Id>209</Id>
+			<Message LcId="1033">Torque limit reached</Message>
+		</Event>
+		<Event>
+			<Id>210</Id>
+			<Message LcId="1033">Memory module: wrong type</Message>
+		</Event>
+		<Event>
+			<Id>211</Id>
+			<Message LcId="1033">Overload 24 V supply</Message>
+		</Event>
+		<Event>
+			<Id>212</Id>
+			<Message LcId="1033">Encoder open circuit</Message>
+		</Event>
+		<Event>
+			<Id>213</Id>
+			<Message LcId="1033">Parameter loss</Message>
+		</Event>
+		<Event>
+			<Id>214</Id>
+			<Message LcId="1033">Communication faulty</Message>
+		</Event>
+		<Event>
+			<Id>215</Id>
+			<Message LcId="1033">Keypad full control</Message>
+		</Event>
+		<Event>
+			<Id>216</Id>
+			<Message LcId="1033">Time-out (PAM)</Message>
+		</Event>
+		<Event>
+			<Id>217</Id>
+			<Message LcId="1033">SL-PSM stall detection</Message>
+		</Event>
+		<Event>
+			<Id>218</Id>
+			<Message LcId="1033">HTL input fault</Message>
+		</Event>
+		<Event>
+			<Id>220</Id>
+			<Message LcId="1033">Wrong password</Message>
+		</Event>
+		<Event>
+			<Id>221</Id>
+			<Message LcId="1033">Warning</Message>
+		</Event>
+		<Event>
+			<Id>222</Id>
+			<Message LcId="1033">Fatal Error</Message>
+		</Event>
+		<Event>
+			<Id>223</Id>
+			<Message LcId="1033">Power unit fatal error</Message>
+		</Event>
+		<Event>
+			<Id>224</Id>
+			<Message LcId="1033">Modbus TCP master time-out</Message>
+		</Event>
+		<Event>
+			<Id>225</Id>
+			<Message LcId="1033">Modbus TCP Keep Alive time-out</Message>
+		</Event>
+		<Event>
+			<Id>226</Id>
+			<Message LcId="1033">UPS operation active</Message>
+		</Event>
+		<Event>
+			<Id>230</Id>
+			<Message LcId="1033">FMF Error</Message>
+		</Event>
+		<Event>
+			<Id>231</Id>
+			<Message LcId="1033">BACnet time-out</Message>
+		</Event>
+		<Event>
+			<Id>232</Id>
+			<Message LcId="1033">POWERLINK: Loss of SoC</Message>
+		</Event>
+		<Event>
+			<Id>233</Id>
+			<Message LcId="1033">POWERLINK: CRC error</Message>
+		</Event>
+		<Event>
+			<Id>234</Id>
+			<Message LcId="1033">Load loss detected</Message>
+		</Event>
+		<Event>
+			<Id>235</Id>
+			<Message LcId="1033">Wrong ID tag</Message>
+		</Event>
+		<Event>
+			<Id>236</Id>
+			<Message LcId="1033">Maximum current reached</Message>
+		</Event>
+		<Event>
+			<Id>237</Id>
+			<Message LcId="1033">Function not allowed in selected operating mode</Message>
+		</Event>
+		<Event>
+			<Id>238</Id>
+			<Message LcId="1033">Power stage communication Tx packet not ready in time</Message>
+		</Event>
+		<Event>
+			<Id>265</Id>
+			<Message LcId="1033">Motor overload</Message>
+		</Event>
+		<Event>
+			<Id>1794</Id>
+			<Message LcId="1033">Manual mode activated</Message>
+		</Event>
+		<Event>
+			<Id>1795</Id>
+			<Message LcId="1033">Manual mode disabled</Message>
+		</Event>
+		<Event>
+			<Id>1796</Id>
+			<Message LcId="1033">Manual mode time-out</Message>
+		</Event>
+		<Event>
+			<Id>1804</Id>
+			<Message LcId="1033">Cascading overload</Message>
+		</Event>
+		<Event>
+			<Id>1954</Id>
+			<Message LcId="1033"><![CDATA[Changed "device ID" not yet active]]></Message>
+		</Event>
+		<Event>
+			<Id>2363</Id>
+			<Message LcId="1033">Back-to-Box activated</Message>
+		</Event>
+		<Property>
+			<Name>DisplayTxtId</Name>
+			<Value>true</Value>
+		</Property>
 	</Source>
 </TcEventSources>

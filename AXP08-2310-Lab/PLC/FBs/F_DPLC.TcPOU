@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="F_DPLC" Id="{c0b9f200-6415-41ee-b92f-997f69f29d8b}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK F_DPLC
+VAR_INPUT
+	Pellet_Length_Inch_Input : REAL;
+	
+	//Feedroll
+	Feedroll_Diameter : REAL;
+	Feedroll_Drive_Gear : REAL;
+	Feedroll_Driven_Gear : REAL;
+	Feedroll_Motor_RPM : REAL;
+	
+	//Rotor
+	Rotor_Drive_Gear : REAL;
+	Rotor_Driven_Gear : REAL;
+	Rotor_Tooth_Count : REAL;
+	
+END_VAR
+VAR_OUTPUT
+	
+	Rotor_Motor_RPM : REAL;
+	Feedroll_Feet_Per_Minute : REAL;
+
+END_VAR
+VAR
+	Feedroll_RPM : REAL;
+	Feedroll_Inch_Per_Minute : REAL;
+
+	Rotor_Cuts_Per_Minute : REAL;
+	Rotor_RPM : REAL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Feedroll_RPM := Feedroll_Motor_RPM * (Feedroll_Driven_Gear / Feedroll_Drive_Gear);
+
+Feedroll_Inch_Per_Minute := Feedroll_RPM * (Feedroll_Diameter * 3.14159);
+
+Feedroll_Feet_Per_Minute := Feedroll_Inch_Per_Minute / 12.0;
+
+
+
+
+Rotor_Cuts_Per_Minute := Feedroll_Inch_Per_Minute / Pellet_Length_Inch_Input;
+
+Rotor_RPM := Rotor_Cuts_Per_Minute / Rotor_Tooth_Count;
+
+Rotor_Motor_RPM := Rotor_RPM / (Rotor_Driven_Gear / Rotor_Drive_Gear);
+]]></ST>
+    </Implementation>
+    <LineIds Name="F_DPLC">
+      <LineId Id="9" Count="0" />
+      <LineId Id="23" Count="0" />
+      <LineId Id="22" Count="0" />
+      <LineId Id="27" Count="0" />
+      <LineId Id="26" Count="0" />
+      <LineId Id="29" Count="4" />
+      <LineId Id="39" Count="0" />
+      <LineId Id="38" Count="0" />
+      <LineId Id="41" Count="0" />
+      <LineId Id="40" Count="0" />
+      <LineId Id="28" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

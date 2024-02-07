@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL_Pelletizer" Id="{2c5f70f4-a9f8-4704-8562-03f72ee33d82}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+///PERSISTENT VARIABLES: retain their value after an uncontrolled termination, a Reset cold or a new download of the PLC project. 
+VAR_GLOBAL PERSISTENT	
+//MyPelletizer structure. This is the main reference to all major variables for a pelletizer. 
+// To call variables throughout program: Ex) GVL_Pelletizer.MyPelletizer.Feedroll_Motor.Motor_Rated_RPM := 1755;
+	MyPelletizer : Pelletizer;
+////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

@@ -123,23 +123,36 @@
 </script>
 </div>
 </div>
-<div id="WBX_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="213" data-tchmi-height-unit="px" data-tchmi-left="466" data-tchmi-left-unit="px" data-tchmi-top="273" data-tchmi-top-unit="px" data-tchmi-width="327" data-tchmi-width-unit="px" data-tchmi-zindex="0" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="True">
+<div id="WBX_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="213" data-tchmi-height-unit="px" data-tchmi-left="466" data-tchmi-left-unit="px" data-tchmi-top="273" data-tchmi-top-unit="px" data-tchmi-width="327" data-tchmi-width-unit="px" data-tchmi-zindex="0" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
 <div id="WBX_Image" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-src="Imports/WBX1008-10.png" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="True">
 </div>
 </div>
-<div id="EVAK_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="249" data-tchmi-height-unit="px" data-tchmi-left="299" data-tchmi-left-unit="px" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="207" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="True">
+<div id="EVAK_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="249" data-tchmi-height-unit="px" data-tchmi-left="299" data-tchmi-left-unit="px" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="207" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
 <div id="EVAK_Image" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="249" data-tchmi-height-unit="px" data-tchmi-left="-26" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="207" data-tchmi-width-unit="px" data-tchmi-src="Imports/evak-12-std-mech-1.png" data-tchmi-zindex="1" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="True">
 </div>
 </div>
-<div id="Extruder_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="434" data-tchmi-height-unit="px" data-tchmi-left="749" data-tchmi-left-unit="px" data-tchmi-top="191" data-tchmi-top-unit="px" data-tchmi-width="397" data-tchmi-width-unit="px" data-tchmi-zindex="2" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="True">
-<div id="EXTRUD_Image" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="469" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="678" data-tchmi-width-unit="px" data-tchmi-src="Imports/extru-removebg-preview.png" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="True">
+<div id="Extruder_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="434" data-tchmi-height-unit="px" data-tchmi-left="749" data-tchmi-left-unit="px" data-tchmi-top="191" data-tchmi-top-unit="px" data-tchmi-width="397" data-tchmi-width-unit="px" data-tchmi-zindex="2" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
+<div id="EXTRUD_Image" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="469" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="678" data-tchmi-width-unit="px" data-tchmi-src="Imports/extru-removebg-preview.png" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
 </div>
-<div id="TcHmiTextblock" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="69" data-tchmi-height-unit="px" data-tchmi-left="185" data-tchmi-left-unit="px" data-tchmi-text="EXTRUDERPLACEHOLDER" data-tchmi-top="295" data-tchmi-top-unit="px" data-tchmi-width="175" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="24" data-tchmi-text-font-weight="Bold" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="True">
+<div id="TcHmiTextblock" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="69" data-tchmi-height-unit="px" data-tchmi-left="185" data-tchmi-left-unit="px" data-tchmi-text="EXTRUDERPLACEHOLDER" data-tchmi-top="295" data-tchmi-top-unit="px" data-tchmi-width="175" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="24" data-tchmi-text-font-weight="Bold" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(0, 0, 0, 1)"
 }
 </script>
 </div>
+</div>
+<div id="Runtime_Textblock" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="25" data-tchmi-left-unit="px" data-tchmi-text="Runtime Hours" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-bottom="71" data-tchmi-height="29">
+</div>
+<div id="Runtime_Textbox" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-text="%s%PLC1.GVL_System.RunTime%/s%" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Right" data-tchmi-is-enabled="false" data-tchmi-height="50" data-tchmi-width-mode="Value" data-tchmi-left="25" data-tchmi-top="553" data-tchmi-width="150">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
 </div>
 </div>

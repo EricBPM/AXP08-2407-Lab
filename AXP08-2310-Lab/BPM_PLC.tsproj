@@ -85,16 +85,15 @@
 		</DataType>
 	</DataTypes>
 	<ImageDatas>
-		<ImageData Id="1000">424de6000000000000007600000028000000100000000e000000010004000000000070000000000000000000000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00ffccccffffffffffffcfecefffffffffffcfecefffffffffffcfeceff80008ffffcfeceff00000ffffcfeceff00900ffffcfeceff00000ffffcfeceff80008ffffcfecefffffffffffccccefffffffffffccccefffffffffffccccefffffffffffecceeffffffffffffeeeefffffffff</ImageData>
-		<ImageData Id="1001">424d16050000000000003604000028000000100000000e0000000100080000000000e00000000000000000000000000000000000000000000000000080000080000000808000800000008000800080800000c0c0c000c0dcc000f0caa6000020400000206000002080000020a0000020c0000020e00000400000004020000040400000406000004080000040a0000040c0000040e00000600000006020000060400000606000006080000060a0000060c0000060e00000800000008020000080400000806000008080000080a0000080c0000080e00000a0000000a0200000a0400000a0600000a0800000a0a00000a0c00000a0e00000c0000000c0200000c0400000c0600000c0800000c0a00000c0c00000c0e00000e0000000e0200000e0400000e0600000e0800000e0a00000e0c00000e0e00040000000400020004000400040006000400080004000a0004000c0004000e00040200000402020004020400040206000402080004020a0004020c0004020e00040400000404020004040400040406000404080004040a0004040c0004040e00040600000406020004060400040606000406080004060a0004060c0004060e00040800000408020004080400040806000408080004080a0004080c0004080e00040a0000040a0200040a0400040a0600040a0800040a0a00040a0c00040a0e00040c0000040c0200040c0400040c0600040c0800040c0a00040c0c00040c0e00040e0000040e0200040e0400040e0600040e0800040e0a00040e0c00040e0e00080000000800020008000400080006000800080008000a0008000c0008000e00080200000802020008020400080206000802080008020a0008020c0008020e00080400000804020008040400080406000804080008040a0008040c0008040e00080600000806020008060400080606000806080008060a0008060c0008060e00080800000808020008080400080806000808080008080a0008080c0008080e00080a0000080a0200080a0400080a0600080a0800080a0a00080a0c00080a0e00080c0000080c0200080c0400080c0600080c0800080c0a00080c0c00080c0e00080e0000080e0200080e0400080e0600080e0800080e0a00080e0c00080e0e000c0000000c0002000c0004000c0006000c0008000c000a000c000c000c000e000c0200000c0202000c0204000c0206000c0208000c020a000c020c000c020e000c0400000c0402000c0404000c0406000c0408000c040a000c040c000c040e000c0600000c0602000c0604000c0606000c0608000c060a000c060c000c060e000c0800000c0802000c0804000c0806000c0808000c080a000c080c000c080e000c0a00000c0a02000c0a04000c0a06000c0a08000c0a0a000c0a0c000c0a0e000c0c00000c0c02000c0c04000c0c06000c0c08000c0c0a000f0fbff00a4a0a000808080000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00fdfdfdfdfdfda4a4a4a4f7a4a4a4a4a4fdfdfdfdfdfda4a4a4a4f7a4f7f7a4a4fdfdfdfdfdfda4a4a4a4f7a4f7f7f7a4fdfdfdfdfdfda4a4a4a4f7a4a4a4a4a4fdfdfdfdfdfda4a452a4f7a452f0f0a4fdfdfdfdfdfda40707a4f7a452f0f0a4fdfdfdfdfdfda40707a4f7a452f0f0a4fdfdfdfdfdfda40707a4f7a452f0f0a4fdfdfdfdfdfda40707a4f7a452f0f0a4fdfdfdfdfdfda4a452a4f7a452f0f0a4fdfdfdfdfdfda4a4a4a4f7a4520808a4fdfdfdfdfdfda4a4a4a4f7a452f0f0a4fdfdfdfdfdfda4a4a4a4f7a452f0f0a4fdfdfdfdfdfda4a4a4a4f7a4a4a4a4a4</ImageData>
+		<ImageData Id="1000">424de6000000000000007600000028000000100000000e000000010004000000000070000000000000000000000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00fffffffffffffffffccccccffffffffffcfffecefffffffffcfffecef80008fffcfffecef00000fffcfffecef00900fffcfffecef00000fffcfffecef80008fffccccccefffffffffcfffecefffffffffccffccefffffffffecccceeffffffffffeeeeefffffffffffffffffffffffff</ImageData>
 	</ImageDatas>
 	<Project ProjectGUID="{3124E0AA-9BB0-4D73-B39B-C2A7FA057F7D}" TargetNetId="169.254.135.64.1.1" Target64Bit="true" ShowHideConfigurations="#x3c7">
 		<System>
 			<Settings MaxCpus="6"/>
 			<Licenses>
 				<Target>
-					<ManualSelect>{8161723B-0C2E-405C-B829-EDC5DAAB5104}</ManualSelect>
 					<ManualSelect>{D58728E0-7762-4145-8A93-80D55E0453A6}</ManualSelect>
+					<ManualSelect>{8161723B-0C2E-405C-B829-EDC5DAAB5104}</ManualSelect>
 					<ManualSelect>{BDCC0070-42D5-49AE-ABF1-1D4434813D60}</ManualSelect>
 				</Target>
 			</Licenses>
@@ -106,115 +105,103 @@
 		</System>
 		<Plc>
 			<Project GUID="{C2463DFE-8D25-458F-B39B-892E853BBF0C}" Name="PLC" PrjFilePath="PLC\PLC.plcproj" TmcFilePath="PLC\PLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{EA0EE4D6-6D13-66F2-50C6-C75B7F90EC74}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{FB03E9F6-4541-6F44-824E-234DD2716E32}">
 					<Name>PLC Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
 						<Name>PlcTask Inputs</Name>
 						<Var>
-							<Name>GVL_Rotor.Rotor_Active_Torque</Name>
-							<Type>INT</Type>
-						</Var>
-						<Var>
 							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Status_Word</Name>
-							<Comment><![CDATA[ PLC Inputs (Data read from the inverter)]]></Comment>
+							<Comment><![CDATA[CiA Status Word]]></Comment>
 							<Type>UINT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Inverter_Status_Word</Name>
-							<Comment><![CDATA[The Inverter Status word is supplimentary, not needed for control.]]></Comment>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Active_Operation_Mode</Name>
-							<Comment><![CDATA[You can use this to confirm the active operation mode. It shouldnt Change, not needed for control]]></Comment>
-							<Type>SINT</Type>
+							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Speed</Name>
+							<Comment><![CDATA[VFD Actual Output RPM ]]></Comment>
+							<Type>INT</Type>
 						</Var>
 						<Var>
 							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Error_Code</Name>
-							<Comment><![CDATA[You could create a lookup table for the error codes. ]]></Comment>
+							<Comment><![CDATA[Error Message]]></Comment>
 							<Type>UINT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Output_RPM</Name>
-							<Comment><![CDATA[ Map this to the HMI for displaying the speed.]]></Comment>
+							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Torque</Name>
+							<Comment><![CDATA[Instantaneous Torque of the Motor (In Percent x.x%)]]></Comment>
 							<Type>INT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Digital_Input_Status</Name>
+							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Current</Name>
+							<Comment><![CDATA[Instantaneous Current of the Motor (In Percent x.x%)]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_DC_Bus_Voltage</Name>
+							<Comment><![CDATA[Instantaneous DC Bus Voltage of the VFD (x.xxx Volts)]]></Comment>
 							<Type>UDINT</Type>
 						</Var>
 						<Var>
 							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Status_Word</Name>
-							<Comment><![CDATA[ PLC Inputs (Data read from the inverter)]]></Comment>
+							<Comment><![CDATA[CiA Status Word]]></Comment>
 							<Type>UINT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Inverter_Status_Word</Name>
-							<Comment><![CDATA[The Inverter Status word is supplimentary, not needed for control.]]></Comment>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Active_Operation_Mode</Name>
-							<Comment><![CDATA[You can use this to confirm the active operation mode. It shouldnt Change, not needed for control]]></Comment>
-							<Type>SINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Error_Code</Name>
-							<Comment><![CDATA[You could create a lookup table for the error codes. ]]></Comment>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Output_RPM</Name>
-							<Comment><![CDATA[ Map this to the HMI for displaying the speed.]]></Comment>
+							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Speed</Name>
+							<Comment><![CDATA[VFD Actual Output RPM ]]></Comment>
 							<Type>INT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Digital_Input_Status</Name>
+							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Error_Code</Name>
+							<Comment><![CDATA[Error Message]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Torque</Name>
+							<Comment><![CDATA[Instantaneous Torque of the Motor (In Percent x.x%)]]></Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Current</Name>
+							<Comment><![CDATA[Instantaneous Current of the Motor (In Percent x.x%)]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_DC_Bus_Voltage</Name>
+							<Comment><![CDATA[Instantaneous DC Bus Voltage of the VFD (x.xxx Volts)]]></Comment>
 							<Type>UDINT</Type>
 						</Var>
 					</Vars>
 					<Vars VarGrpType="2" AreaNo="1">
 						<Name>PlcTask Outputs</Name>
 						<Var>
-							<Name>GVL_Feedroll.Feedroll_Pressure_Output</Name>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Input_RPM</Name>
-							<Comment><![CDATA[ PLC Outputs (Data written to the inverter)]]></Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
 							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Control_Word</Name>
+							<Comment><![CDATA[State Machine for Controlling VFD (CiA)]]></Comment>
 							<Type>UINT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Inverter_Control_Word</Name>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Operation_Mode</Name>
-							<Comment><![CDATA[Should always be set to 2 for this program = CiA Velocity Mode [2]]]></Comment>
-							<Type>SINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Input_RPM</Name>
-							<Comment><![CDATA[ PLC Outputs (Data written to the inverter)]]></Comment>
+							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Set_Speed</Name>
+							<Comment><![CDATA[Sets the Speed of the VFD in RPM]]></Comment>
 							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_DigitalOutput1_Word</Name>
+							<Comment><![CDATA[Map the NetInWord2 to something we can use.]]></Comment>
+							<Type>UINT</Type>
 						</Var>
 						<Var>
 							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Control_Word</Name>
+							<Comment><![CDATA[State Machine for Controlling VFD (CiA)]]></Comment>
 							<Type>UINT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Inverter_Control_Word</Name>
-							<Type>UINT</Type>
+							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Set_Speed</Name>
+							<Comment><![CDATA[Sets the Speed of the VFD in RPM]]></Comment>
+							<Type>INT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Operation_Mode</Name>
-							<Comment><![CDATA[Should always be set to 2 for this program = CiA Velocity Mode [2]]]></Comment>
-							<Type>SINT</Type>
+							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_DigitalOutput1_Word</Name>
+							<Comment><![CDATA[Map the NetInWord2 to something we can use.]]></Comment>
+							<Type>UINT</Type>
 						</Var>
 					</Vars>
 					<UnrestoredVarLinks ImportTime="2023-11-20T15:55:37">
@@ -254,237 +241,115 @@
 				<Image Id="1" AddrType="9" ImageType="3">
 					<Name>Image</Name>
 				</Image>
-				<Box Id="4" BoxType="9099" BoxFlags="#x00000020">
-					<Name>Rotor Drive (i950 (BS-STO))</Name>
+				<Box Id="1" BoxType="9099" BoxFlags="#x00000020">
+					<Name>Rotor Drive</Name>
 					<ImageId>1000</ImageId>
-					<EtherCAT SlaveType="2" PdiType="#x0c80" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="13" EoeType="3" FoeType="1" VendorId="#x0000003b" ProductCode="#x19004000" RevisionNo="#x00010700" InfoDataAddr="true" InfoDataSoeDS401="true" EnableWdTime0420="true" CheckRevisionNoType="2" PortPhys="17" SlotGroupPdoIncrement="16" SlotGroupIndexIncrement="2048" Type="i950 (BS-STO) FW V01.07" Desc="i950 (BS-STO)" PortABoxInfo="#x00ffffff">
-						<SyncMan>001000022600010001000000800000020002001026010000</SyncMan>
-						<SyncMan>001200022200010002000000800000020002001222010000</SyncMan>
-						<SyncMan>0014070064000100030000000000c8001f00001464010000</SyncMan>
-						<SyncMan>00170f0020000100040000000000c8002d00001720010000</SyncMan>
-						<Fmmu>0000000000000000001400020100000001000000040000000000000000000000</Fmmu>
-						<Fmmu>0000000000000000001700010100000002000000040000000000000000000000</Fmmu>
+					<EtherCAT SlaveType="2" PdiType="#x3080" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="13" EoeType="1" FoeType="1" VendorId="#x0000003b" ProductCode="#x69055000" RevisionNo="#x00070000" InfoDataAddr="true" EnableWdDivider0400="true" EnableWdTime0420="true" TimeoutStateChange2="3000" TimeoutStateChange3="3000" TimeoutStateChange4="3000" TimeoutMailbox2="2000" CheckRevisionNoType="2" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="i550 Cabinet V07.00.xx" Desc="Inverter i550 Cabinet" PortABoxInfo="#x00ffffff">
+						<SyncMan>001080002600010001000000800000018000001026010000</SyncMan>
+						<SyncMan>001180002200010002000000800000018000001122010000</SyncMan>
+						<SyncMan>001206006400010003000000000020000400001264010000</SyncMan>
+						<SyncMan>00130e002000010004000000000020000600001320010000</SyncMan>
+						<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000001300010100000002000000000000000000000000000000</Fmmu>
 						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
-						<SwitchPortData>01000000e903fea90000ffffe827fea90000000044726976655f345f5f693935305f5f0000000000000000000000000000000000000000000000000000000000</SwitchPortData>
-						<BootStrapData>0010000200120002</BootStrapData>
-						<SuName></SuName>
-						<SuName>SyncUnit 1</SuName>
-						<SuTask>#x00000000</SuTask>
-						<SuTask>#x00000000</SuTask>
-						<DcMode>467265652052756e0000000000000000467265652052756e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
-						<DcMode>4443000000000000000000000000000044432d53796e6368726f6e6f7573000000000000000000000000000000000000000000000000000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
-						<Pdo Name="Inputs" Index="#x1a03" Flags="#x0490" SyncMan="3">
-							<Entry Name="CiA status word" Index="#x6041" Flags="#x00002000">
+						<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+						<BootStrapData>0010000100110001</BootStrapData>
+						<MBoxUserCmdData>0200030009000000110000000300000000000000000000000000000000000000202428000100000000436f6e74726f6c2073656c656374696f6e00</MBoxUserCmdData>
+						<MBoxUserCmdData>020003000900000012000000030000000000000000000000000000000000000020002c0001000000044d6f746f7220636f6e74726f6c206d6f646500</MBoxUserCmdData>
+						<MBoxUserCmdData>02000300090000002a00000003000000000000000000000000000000000000002060280101000000054672657175656e637920636f6e74726f6c3a2044656661756c7420736574706f696e7420736f7572636500</MBoxUserCmdData>
+						<MBoxUserCmdData>02000300090000000f0000000300000000000000000000000000000000000000203126010100000001456e61626c6520696e76657274657200</MBoxUserCmdData>
+						<MBoxUserCmdData>020003000900000003000000030000000000000000000000000000000000000020312602010000000b52756e00</MBoxUserCmdData>
+						<MBoxUserCmdData>020003000900000005000000030000000000000000000000000000000000000020342601010000003852656c617900</MBoxUserCmdData>
+						<MBoxUserCmdData>02000300090000001000000003000000000000000000000000000000000000002034260201000000224469676974616c206f7574707574203100</MBoxUserCmdData>
+						<Pdo Name="TPDO (A) Velocity" Index="#x1a03" Flags="#x0010" SyncMan="3">
+							<Entry Name="CiA status word" Index="#x6041">
 								<Type>UINT</Type>
 							</Entry>
-							<Entry Name="Inverter status word" Index="#x2831" Flags="#x00002000">
-								<Type>UINT</Type>
-							</Entry>
-							<Entry Name="CiA: Active operation mode" Index="#x6061" Flags="#x00002000">
-								<Type>SINT</Type>
-							</Entry>
-							<Entry Name="Error code" Index="#x603f" Flags="#x00002000">
-								<Type>UINT</Type>
-							</Entry>
-							<Entry Name="Actual speed" Index="#x6044" Flags="#x00002000">
+							<Entry Name="Actual speed" Index="#x6044">
 								<Type>INT</Type>
 							</Entry>
-						</Pdo>
-						<Pdo Name="Touch probe (TP): Input image" Index="#x1a04" Flags="#x0490">
-							<Entry Name="Touch probe status" Index="#x60b9" Flags="#x00002000">
+							<Entry Name="Error code" Index="#x603f">
 								<Type>UINT</Type>
 							</Entry>
-							<Entry Name="Touch probe 1: Position at pos. edge" Index="#x60ba" Flags="#x00002000">
-								<Type>DINT</Type>
-							</Entry>
-							<Entry Name="Touch probe 1: Position at neg. edge" Index="#x60bb" Flags="#x00002000">
-								<Type>DINT</Type>
-							</Entry>
-							<Entry Name="Touch probe 2: Position at pos. edge" Index="#x60bc" Flags="#x00002000">
-								<Type>DINT</Type>
-							</Entry>
-							<Entry Name="Touch probe 2: Position at neg. edge" Index="#x60bd" Flags="#x00002000">
-								<Type>DINT</Type>
-							</Entry>
 						</Pdo>
-						<Pdo Name="Free inputs" Index="#x1a05" Flags="#x0480" SyncMan="3">
-							<Entry Name="Digital input status" Index="#x60fd">
-								<Type>UDINT</Type>
-							</Entry>
+						<Pdo Name="TPDO (A) user config" Index="#x1a05" Flags="#x0000" SyncMan="3">
 							<Entry Name="Actual torque" Index="#x6077">
 								<Type>INT</Type>
 							</Entry>
+							<Entry Name="Actual current" Index="#x6078">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="DC-bus voltage" Index="#x6079">
+								<Type>UDINT</Type>
+							</Entry>
 						</Pdo>
-						<Pdo Name="Outputs" Index="#x1603" InOut="1" Flags="#x0490" SyncMan="2">
-							<Entry Name="CiA control word" Index="#x6040" Flags="#x00002000">
+						<Pdo Name="RPDO (A) Velocity" Index="#x1603" InOut="1" Flags="#x0010" SyncMan="2">
+							<Entry Name="CiA control word" Index="#x6040">
 								<Type>UINT</Type>
 							</Entry>
-							<Entry Name="Inverter control word" Index="#x2830" Flags="#x00002000">
-								<Type>UINT</Type>
-							</Entry>
-							<Entry Name="CiA: Operation mode" Index="#x6060" Flags="#x00002000">
-								<Type>SINT</Type>
-							</Entry>
-							<Entry Name="Set speed" Index="#x6042" Flags="#x00002000">
+							<Entry Name="Set speed" Index="#x6042">
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Touch probe (TP): Output signals" Index="#x1604" InOut="1" Flags="#x0490">
-							<Entry Name="Touch probe settings" Index="#x60b8" Flags="#x00002000">
+						<Pdo Name="RPDO (A) user config" Index="#x1605" InOut="1" Flags="#x0000" SyncMan="2">
+							<Entry Name="Digital Output 1: NetWordIn2 Bit0" Index="#x4008" Sub="#x02">
 								<Type>UINT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Free outputs" Index="#x1605" InOut="1" Flags="#x0480" SyncMan="2"/>
-						<CoeProfile ProfileNo="402"/>
-						<Slot Name="Axis A">
-							<SlotData>0000010001000000000010000000000800000000000000000000000000000000</SlotData>
-							<ModuleIdent>24</ModuleIdent>
-							<ModuleIdent>25</ModuleIdent>
-							<ModuleIdent>19</ModuleIdent>
-							<ModuleIdent>20</ModuleIdent>
-							<ModuleIdent>21</ModuleIdent>
-							<ModuleIdent>26</ModuleIdent>
-							<Module Id="#x03090001" Type="VL + Free Mapping" Class="">
-								<Name>Module 1 (VL + Free Mapping)</Name>
-								<ImageId>405</ImageId>
-								<ModuleData>3b00000015000000000004000000000000000000000000000000000000000000</ModuleData>
-								<PdoIndex>6659</PdoIndex>
-								<PdoIndex>6660</PdoIndex>
-								<PdoIndex>6661</PdoIndex>
-								<PdoIndex>5635</PdoIndex>
-								<PdoIndex>5636</PdoIndex>
-								<PdoIndex>5637</PdoIndex>
-								<CoeProfile ProfileNo="#x00000192"/>
-							</Module>
-						</Slot>
 					</EtherCAT>
 				</Box>
-				<Box Id="5" BoxType="9099" BoxFlags="#x00000020">
-					<Name>Feedroll Drive (i950 (BS-STO))</Name>
+				<Box Id="2" BoxType="9099" BoxFlags="#x00000020">
+					<Name>Feedroll Drive</Name>
 					<ImageId>1000</ImageId>
-					<EtherCAT SlaveType="2" PdiType="#x0c80" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="13" EoeType="3" FoeType="1" VendorId="#x0000003b" ProductCode="#x19004000" RevisionNo="#x00010700" InfoDataAddr="true" InfoDataSoeDS401="true" EnableWdTime0420="true" CheckRevisionNoType="2" PortPhys="17" SlotGroupPdoIncrement="16" SlotGroupIndexIncrement="2048" Type="i950 (BS-STO) FW V01.07" Desc="i950 (BS-STO)" PortABoxInfo="#x01000004">
-						<SyncMan>001000022600010001000000800000020002001026010000</SyncMan>
-						<SyncMan>001200022200010002000000800000020002001222010000</SyncMan>
-						<SyncMan>0014070064000100030000000000c8001f00001464010000</SyncMan>
-						<SyncMan>00170d0020000100040000000000c8002d00001720010000</SyncMan>
-						<Fmmu>0000000000000000001400020100000001000000040000000000000000000000</Fmmu>
-						<Fmmu>0000000000000000001700010100000002000000040000000000000000000000</Fmmu>
+					<EtherCAT SlaveType="2" PdiType="#x3080" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="13" EoeType="1" FoeType="1" VendorId="#x0000003b" ProductCode="#x69055000" RevisionNo="#x00060004" InfoDataAddr="true" EnableWdDivider0400="true" EnableWdTime0420="true" TimeoutStateChange2="3000" TimeoutStateChange3="3000" TimeoutStateChange4="3000" TimeoutMailbox2="2000" CheckRevisionNoType="2" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="i550 Cabinet V06.04.xx" Desc="Inverter i550 Cabinet" PortABoxInfo="#x01000001">
+						<SyncMan>001080002600010001000000800000018000001026010000</SyncMan>
+						<SyncMan>001180002200010002000000800000018000001122010000</SyncMan>
+						<SyncMan>001206006400010003000000000020000400001264010000</SyncMan>
+						<SyncMan>00130e002000010004000000000020000600001320010000</SyncMan>
+						<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000001300010100000002000000000000000000000000000000</Fmmu>
 						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
-						<SwitchPortData>01000000ea03fea90000ffffe827fea90000000044726976655f355f5f693935305f5f0000000000000000000000000000000000000000000000000000000000</SwitchPortData>
-						<BootStrapData>0010000200120002</BootStrapData>
-						<SuName></SuName>
-						<SuName>SyncUnit 1</SuName>
-						<SuTask>#x00000000</SuTask>
-						<SuTask>#x00000000</SuTask>
-						<DcMode>467265652052756e0000000000000000467265652052756e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
-						<DcMode>4443000000000000000000000000000044432d53796e6368726f6e6f7573000000000000000000000000000000000000000000000000000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
-						<Pdo Name="Inputs" Index="#x1a03" Flags="#x0490" SyncMan="3">
-							<Entry Name="CiA status word" Index="#x6041" Flags="#x00002000">
+						<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+						<BootStrapData>0010000100110001</BootStrapData>
+						<MBoxUserCmdData>0200030009000000110000000300000000000000000000000000000000000000202428000100000000436f6e74726f6c2073656c656374696f6e00</MBoxUserCmdData>
+						<MBoxUserCmdData>020003000900000012000000030000000000000000000000000000000000000020002c0001000000044d6f746f7220636f6e74726f6c206d6f646500</MBoxUserCmdData>
+						<MBoxUserCmdData>02000300090000002a00000003000000000000000000000000000000000000002060280101000000024672657175656e637920636f6e74726f6c3a2044656661756c7420736574706f696e7420736f7572636500</MBoxUserCmdData>
+						<MBoxUserCmdData>02000300090000000f0000000300000000000000000000000000000000000000203126010100000001456e61626c6520696e76657274657200</MBoxUserCmdData>
+						<MBoxUserCmdData>020003000900000003000000030000000000000000000000000000000000000020312602010000000b52756e00</MBoxUserCmdData>
+						<MBoxUserCmdData>020003000900000005000000030000000000000000000000000000000000000020342601010000003852656c617900</MBoxUserCmdData>
+						<MBoxUserCmdData>02000300090000001000000003000000000000000000000000000000000000002034260201000000224469676974616c206f7574707574203100</MBoxUserCmdData>
+						<Pdo Name="TPDO (A) Velocity" Index="#x1a03" Flags="#x0010" SyncMan="3">
+							<Entry Name="CiA status word" Index="#x6041">
 								<Type>UINT</Type>
 							</Entry>
-							<Entry Name="Inverter status word" Index="#x2831" Flags="#x00002000">
+							<Entry Name="Actual speed" Index="#x6044">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="Error code" Index="#x603f">
 								<Type>UINT</Type>
 							</Entry>
-							<Entry Name="CiA: Active operation mode" Index="#x6061" Flags="#x00002000">
-								<Type>SINT</Type>
+						</Pdo>
+						<Pdo Name="TPDO (A) user config" Index="#x1a05" Flags="#x0000" SyncMan="3">
+							<Entry Name="Actual torque" Index="#x6077">
+								<Type>INT</Type>
 							</Entry>
-							<Entry Name="Error code" Index="#x603f" Flags="#x00002000">
+							<Entry Name="Actual current" Index="#x6078">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="DC-bus voltage" Index="#x6079">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="RPDO (A) Velocity" Index="#x1603" InOut="1" Flags="#x0010" SyncMan="2">
+							<Entry Name="CiA control word" Index="#x6040">
 								<Type>UINT</Type>
 							</Entry>
-							<Entry Name="Actual speed" Index="#x6044" Flags="#x00002000">
+							<Entry Name="Set speed" Index="#x6042">
 								<Type>INT</Type>
 							</Entry>
 						</Pdo>
-						<Pdo Name="Touch probe (TP): Input image" Index="#x1a04" Flags="#x0490">
-							<Entry Name="Touch probe status" Index="#x60b9" Flags="#x00002000">
-								<Type>UINT</Type>
-							</Entry>
-							<Entry Name="Touch probe 1: Position at pos. edge" Index="#x60ba" Flags="#x00002000">
-								<Type>DINT</Type>
-							</Entry>
-							<Entry Name="Touch probe 1: Position at neg. edge" Index="#x60bb" Flags="#x00002000">
-								<Type>DINT</Type>
-							</Entry>
-							<Entry Name="Touch probe 2: Position at pos. edge" Index="#x60bc" Flags="#x00002000">
-								<Type>DINT</Type>
-							</Entry>
-							<Entry Name="Touch probe 2: Position at neg. edge" Index="#x60bd" Flags="#x00002000">
-								<Type>DINT</Type>
-							</Entry>
-						</Pdo>
-						<Pdo Name="Free inputs" Index="#x1a05" Flags="#x0480" SyncMan="3">
-							<Entry Name="Digital input status" Index="#x60fd">
-								<Type>UDINT</Type>
-							</Entry>
-						</Pdo>
-						<Pdo Name="Outputs" Index="#x1603" InOut="1" Flags="#x0490" SyncMan="2">
-							<Entry Name="CiA control word" Index="#x6040" Flags="#x00002000">
-								<Type>UINT</Type>
-							</Entry>
-							<Entry Name="Inverter control word" Index="#x2830" Flags="#x00002000">
-								<Type>UINT</Type>
-							</Entry>
-							<Entry Name="CiA: Operation mode" Index="#x6060" Flags="#x00002000">
-								<Type>SINT</Type>
-							</Entry>
-							<Entry Name="Set speed" Index="#x6042" Flags="#x00002000">
-								<Type>INT</Type>
-							</Entry>
-						</Pdo>
-						<Pdo Name="Touch probe (TP): Output signals" Index="#x1604" InOut="1" Flags="#x0490">
-							<Entry Name="Touch probe settings" Index="#x60b8" Flags="#x00002000">
-								<Type>UINT</Type>
-							</Entry>
-						</Pdo>
-						<Pdo Name="Free outputs" Index="#x1605" InOut="1" Flags="#x0480" SyncMan="2"/>
-						<CoeProfile ProfileNo="402"/>
-						<Slot Name="Axis A">
-							<SlotData>0000010001000000000010000000000800000000000000000000000000000000</SlotData>
-							<ModuleIdent>24</ModuleIdent>
-							<ModuleIdent>25</ModuleIdent>
-							<ModuleIdent>19</ModuleIdent>
-							<ModuleIdent>20</ModuleIdent>
-							<ModuleIdent>21</ModuleIdent>
-							<ModuleIdent>26</ModuleIdent>
-							<Module Id="#x03090002" Type="VL + Free Mapping" Class="">
-								<Name>Module 1 (VL + Free Mapping)</Name>
-								<ImageId>405</ImageId>
-								<ModuleData>3b00000015000000000004000000000000000000000000000000000000000000</ModuleData>
-								<PdoIndex>6659</PdoIndex>
-								<PdoIndex>6660</PdoIndex>
-								<PdoIndex>6661</PdoIndex>
-								<PdoIndex>5635</PdoIndex>
-								<PdoIndex>5636</PdoIndex>
-								<PdoIndex>5637</PdoIndex>
-								<CoeProfile ProfileNo="#x00000192"/>
-							</Module>
-						</Slot>
-					</EtherCAT>
-				</Box>
-				<Box Id="6" BoxType="9099">
-					<Name>Box 6 (Lenze EPM-S130)</Name>
-					<ImageId>1001</ImageId>
-					<EtherCAT SlaveType="2" PdiType="#x0c08" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="51" FoeType="1" VendorId="#x0000003b" ProductCode="#x00000514" RevisionNo="#x00010029" SerialNo="#x00855d26" InfoDataAddr="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="Lenze EPM-S130 EtherCAT Buskoppler (MDP)" Desc="Lenze EPM-S130" PortABoxInfo="#x01000005">
-						<SyncMan>001c00022600010001000000000000000002001c26010000</SyncMan>
-						<SyncMan>001e00022200010002000000000000000002001e22010000</SyncMan>
-						<SyncMan>001004002400010003000000000000000000001024020000</SyncMan>
-						<SyncMan>001608000000010004000000000000000000001600020000</SyncMan>
-						<Fmmu>0000000000000000001000020100000001000000020000000200000000000000</Fmmu>
-						<Fmmu>0000000000000000001600010100000002000000020000000300000000000000</Fmmu>
-						<BootStrapData>0012140200151402</BootStrapData>
-						<Pdo Name="Status PDO" Index="#x1aff" Flags="#x0011" SyncMan="3">
-							<Entry Name="Hardware Interrupt Counter" Index="#xf100" Sub="#x01">
-								<Type>UDINT</Type>
-							</Entry>
-							<Entry Name="Diagnostic Interrupt Counter" Index="#xf100" Sub="#x02">
-								<Type>UDINT</Type>
-							</Entry>
-						</Pdo>
-						<Pdo Name="RxPDO Map" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="2">
-							<Entry Name="Output  " Index="#x7000" Sub="#x01">
-								<Type>UINT</Type>
-							</Entry>
-							<Entry Name="Output  " Index="#x7000" Sub="#x02">
+						<Pdo Name="RPDO (A) user config" Index="#x1605" InOut="1" Flags="#x0000" SyncMan="2">
+							<Entry Name="Digital Output 1: NetWordIn2 Bit0" Index="#x4008" Sub="#x02">
 								<Type>UINT</Type>
 							</Entry>
 						</Pdo>
@@ -497,33 +362,27 @@
 	<Mappings>
 		<MappingInfo Identifier="{00000000-2001-0850-0020-500810000403}" Id="#x02030010"/>
 		<OwnerA Name="TIPC^PLC^PLC Instance">
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Box 6 (Lenze EPM-S130)">
-				<Link VarA="PlcTask Outputs^GVL_Feedroll.Feedroll_Pressure_Output" VarB="RxPDO Map^Output  "/>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Feedroll Drive">
+				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Current" VarB="TPDO (A) user config^Actual current"/>
+				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Speed" VarB="TPDO (A) Velocity^Actual speed"/>
+				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Torque" VarB="TPDO (A) user config^Actual torque"/>
+				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_DC_Bus_Voltage" VarB="TPDO (A) user config^DC-bus voltage"/>
+				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Error_Code" VarB="TPDO (A) Velocity^Error code"/>
+				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Status_Word" VarB="TPDO (A) Velocity^CiA status word"/>
+				<Link VarA="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Control_Word" VarB="RPDO (A) Velocity^CiA control word"/>
+				<Link VarA="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_DigitalOutput1_Word" VarB="RPDO (A) user config^Digital Output 1: NetWordIn2 Bit0"/>
+				<Link VarA="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Set_Speed" VarB="RPDO (A) Velocity^Set speed"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Feedroll Drive (i950 (BS-STO))">
-				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Active_Operation_Mode" VarB="Module 1 (VL + Free Mapping)^Inputs^CiA: Active operation mode"/>
-				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Output_RPM" VarB="Module 1 (VL + Free Mapping)^Inputs^Actual speed"/>
-				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Digital_Input_Status" VarB="Module 1 (VL + Free Mapping)^Free inputs^Digital input status"/>
-				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Error_Code" VarB="Module 1 (VL + Free Mapping)^Inputs^Error code"/>
-				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Inverter_Status_Word" VarB="Module 1 (VL + Free Mapping)^Inputs^Inverter status word"/>
-				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Status_Word" VarB="Module 1 (VL + Free Mapping)^Inputs^CiA status word"/>
-				<Link VarA="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Control_Word" VarB="Module 1 (VL + Free Mapping)^Outputs^CiA control word"/>
-				<Link VarA="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Input_RPM" VarB="Module 1 (VL + Free Mapping)^Outputs^Set speed"/>
-				<Link VarA="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Inverter_Control_Word" VarB="Module 1 (VL + Free Mapping)^Outputs^Inverter control word"/>
-				<Link VarA="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Operation_Mode" VarB="Module 1 (VL + Free Mapping)^Outputs^CiA: Operation mode"/>
-			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Rotor Drive (i950 (BS-STO))">
-				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Active_Operation_Mode" VarB="Module 1 (VL + Free Mapping)^Inputs^CiA: Active operation mode"/>
-				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Output_RPM" VarB="Module 1 (VL + Free Mapping)^Inputs^Actual speed"/>
-				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Digital_Input_Status" VarB="Module 1 (VL + Free Mapping)^Free inputs^Digital input status"/>
-				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Error_Code" VarB="Module 1 (VL + Free Mapping)^Inputs^Error code"/>
-				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Inverter_Status_Word" VarB="Module 1 (VL + Free Mapping)^Inputs^Inverter status word"/>
-				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Status_Word" VarB="Module 1 (VL + Free Mapping)^Inputs^CiA status word"/>
-				<Link VarA="PlcTask Inputs^GVL_Rotor.Rotor_Active_Torque" VarB="Module 1 (VL + Free Mapping)^Free inputs^Actual torque"/>
-				<Link VarA="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Control_Word" VarB="Module 1 (VL + Free Mapping)^Outputs^CiA control word"/>
-				<Link VarA="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Input_RPM" VarB="Module 1 (VL + Free Mapping)^Outputs^Set speed"/>
-				<Link VarA="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Inverter_Control_Word" VarB="Module 1 (VL + Free Mapping)^Outputs^Inverter control word"/>
-				<Link VarA="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Operation_Mode" VarB="Module 1 (VL + Free Mapping)^Outputs^CiA: Operation mode"/>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Rotor Drive">
+				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Current" VarB="TPDO (A) user config^Actual current"/>
+				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Speed" VarB="TPDO (A) Velocity^Actual speed"/>
+				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Torque" VarB="TPDO (A) user config^Actual torque"/>
+				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_DC_Bus_Voltage" VarB="TPDO (A) user config^DC-bus voltage"/>
+				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Error_Code" VarB="TPDO (A) Velocity^Error code"/>
+				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Status_Word" VarB="TPDO (A) Velocity^CiA status word"/>
+				<Link VarA="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Control_Word" VarB="RPDO (A) Velocity^CiA control word"/>
+				<Link VarA="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_DigitalOutput1_Word" VarB="RPDO (A) user config^Digital Output 1: NetWordIn2 Bit0"/>
+				<Link VarA="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Set_Speed" VarB="RPDO (A) Velocity^Set speed"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

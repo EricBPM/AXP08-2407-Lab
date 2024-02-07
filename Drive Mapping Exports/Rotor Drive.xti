@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.42" ClassName="CFlbTermDef" SubType="9099">
+	<ImageDatas>
+		<ImageData Id="1000">424de6000000000000007600000028000000100000000e000000010004000000000070000000000000000000000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00fffffffffffffffffccccccffffffffffcfffecefffffffffcfffecef80008fffcfffecef00000fffcfffecef00900fffcfffecef00000fffcfffecef80008fffccccccefffffffffcfffecefffffffffccffccefffffffffecccceeffffffffffeeeeefffffffffffffffffffffffff</ImageData>
+	</ImageDatas>
+	<Box Id="1" BoxType="9099" BoxFlags="#x00000020">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="2" PdiType="#x3080" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="13" EoeType="1" FoeType="1" VendorId="#x0000003b" ProductCode="#x69055000" RevisionNo="#x00070000" InfoDataAddr="true" EnableWdDivider0400="true" EnableWdTime0420="true" TimeoutStateChange2="3000" TimeoutStateChange3="3000" TimeoutStateChange4="3000" TimeoutMailbox2="2000" CheckRevisionNoType="2" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="i550 Cabinet V07.00.xx" Desc="Inverter i550 Cabinet">
+			<SyncMan>001080002600010001000000800000018000001026010000</SyncMan>
+			<SyncMan>001180002200010002000000800000018000001122010000</SyncMan>
+			<SyncMan>001206006400010003000000000020000400001264010000</SyncMan>
+			<SyncMan>00130e002000010004000000000020000600001320010000</SyncMan>
+			<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+			<Fmmu>0000000000000000001300010100000002000000000000000000000000000000</Fmmu>
+			<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+			<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+			<BootStrapData>0010000100110001</BootStrapData>
+			<MBoxUserCmdData>0200030009000000110000000300000000000000000000000000000000000000202428000100000000436f6e74726f6c2073656c656374696f6e00</MBoxUserCmdData>
+			<MBoxUserCmdData>020003000900000012000000030000000000000000000000000000000000000020002c0001000000044d6f746f7220636f6e74726f6c206d6f646500</MBoxUserCmdData>
+			<MBoxUserCmdData>02000300090000002a00000003000000000000000000000000000000000000002060280101000000054672657175656e637920636f6e74726f6c3a2044656661756c7420736574706f696e7420736f7572636500</MBoxUserCmdData>
+			<MBoxUserCmdData>02000300090000000f0000000300000000000000000000000000000000000000203126010100000001456e61626c6520696e76657274657200</MBoxUserCmdData>
+			<MBoxUserCmdData>020003000900000003000000030000000000000000000000000000000000000020312602010000000b52756e00</MBoxUserCmdData>
+			<MBoxUserCmdData>020003000900000005000000030000000000000000000000000000000000000020342601010000003852656c617900</MBoxUserCmdData>
+			<MBoxUserCmdData>02000300090000001000000003000000000000000000000000000000000000002034260201000000224469676974616c206f7574707574203100</MBoxUserCmdData>
+			<Pdo Name="TPDO (A) Velocity" Index="#x1a03" Flags="#x0010" SyncMan="3">
+				<Entry Name="CiA status word" Index="#x6041">
+					<Type>UINT</Type>
+				</Entry>
+				<Entry Name="Actual speed" Index="#x6044">
+					<Type>INT</Type>
+				</Entry>
+				<Entry Name="Error code" Index="#x603f">
+					<Type>UINT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="TPDO (A) user config" Index="#x1a05" Flags="#x0000" SyncMan="3">
+				<Entry Name="Actual torque" Index="#x6077">
+					<Type>INT</Type>
+				</Entry>
+				<Entry Name="Actual current" Index="#x6078">
+					<Type>INT</Type>
+				</Entry>
+				<Entry Name="DC-bus voltage" Index="#x6079">
+					<Type>UDINT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="RPDO (A) Velocity" Index="#x1603" InOut="1" Flags="#x0010" SyncMan="2">
+				<Entry Name="CiA control word" Index="#x6040">
+					<Type>UINT</Type>
+				</Entry>
+				<Entry Name="Set speed" Index="#x6042">
+					<Type>INT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="RPDO (A) user config" Index="#x1605" InOut="1" Flags="#x0000" SyncMan="2">
+				<Entry Name="Digital Output 1: NetWordIn2 Bit0" Index="#x4008" Sub="#x02">
+					<Type>UINT</Type>
+				</Entry>
+			</Pdo>
+		</EtherCAT>
+	</Box>
+	<Mappings>
+		<OwnerA Name="__THIS__">
+			<OwnerB Name="TIPC^PLC^PLC Instance">
+				<Link VarA="RPDO (A) Velocity^CiA control word" VarB="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Control_Word"/>
+				<Link VarA="RPDO (A) Velocity^Set speed" VarB="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Set_Speed"/>
+				<Link VarA="RPDO (A) user config^Digital Output 1: NetWordIn2 Bit0" VarB="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_DigitalOutput1_Word"/>
+				<Link VarA="TPDO (A) Velocity^Actual speed" VarB="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Speed"/>
+				<Link VarA="TPDO (A) Velocity^CiA status word" VarB="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Status_Word"/>
+				<Link VarA="TPDO (A) Velocity^Error code" VarB="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Error_Code"/>
+				<Link VarA="TPDO (A) user config^Actual current" VarB="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Current"/>
+				<Link VarA="TPDO (A) user config^Actual torque" VarB="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Torque"/>
+				<Link VarA="TPDO (A) user config^DC-bus voltage" VarB="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_DC_Bus_Voltage"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
+</TcSmItem>
