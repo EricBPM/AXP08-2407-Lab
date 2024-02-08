@@ -328,7 +328,7 @@
 <div id="FeedrollSpeed_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-right="2" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Value" data-tchmi-right-unit="%" data-tchmi-left="63.4" data-tchmi-left-unit="%" data-tchmi-height="300" data-tchmi-min-width="200" data-tchmi-max-width="500">
 <div id="FeedrollSpeed_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-text="Feedroll Speed" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="6" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="25" data-tchmi-bottom="15" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-left="25" data-tchmi-top="70">
 </div>
-<div id="Feedroll_Speed_Gauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadialGauge" data-tchmi-base-animation-time="50" data-tchmi-gauge-alignment="Center" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-show-labels="true" data-tchmi-show-ticks="false" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-min-value="0" data-tchmi-value="%s%PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Actual_FtMin%/s%" data-tchmi-max-value="%s%PLC1.GVL_Pelletizer.Maximum_Line_Speed%/s%" data-tchmi-unit="Ft/Min" data-tchmi-sub-tick-position="Outside" data-tchmi-value-font-size="20" data-tchmi-unit-font-size="18" data-tchmi-step="0" data-tchmi-zindex="5" data-tchmi-right="0" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-bottom="0" data-tchmi-left="0">
+<div id="Feedroll_Speed_Gauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadialGauge" data-tchmi-base-animation-time="1000" data-tchmi-gauge-alignment="Center" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-show-labels="true" data-tchmi-show-ticks="false" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-min-value="0" data-tchmi-value="%s%PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Feet_Per_Minute%/s%" data-tchmi-max-value="%s%PLC1.Machine_Limits.Feedroll_Max_Ft_Per_Min%/s%" data-tchmi-unit="Ft/Min" data-tchmi-sub-tick-position="Outside" data-tchmi-value-font-size="20" data-tchmi-unit-font-size="18" data-tchmi-step="0" data-tchmi-zindex="5" data-tchmi-right="0" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-bottom="0" data-tchmi-left="0" data-tchmi-label-range="100">
 <script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
 [
   {
@@ -336,14 +336,14 @@
       "color": "rgba(255, 0, 0, 1)"
     },
     "start": 0.0,
-    "end": "%s%PLC1.GVL_Pelletizer.Minimum_Line_Speed%/s%"
+    "end": "%s%PLC1.Machine_Limits.Feedroll_Min_Ft_Per_Min%/s%"
   },
   {
     "color": {
       "color": "rgba(0, 128, 0, 1)"
     },
-    "start": "%s%PLC1.GVL_Pelletizer.Minimum_Line_Speed%/s%",
-    "end": "%s%PLC1.GVL_Pelletizer.Maximum_Line_Speed%/s%"
+    "start": "%s%PLC1.Machine_Limits.Feedroll_Min_Ft_Per_Min%/s%",
+    "end": "%s%PLC1.Machine_Limits.Feedroll_Max_Ft_Per_Min%/s%"
   }
 ]
 </script>
@@ -374,7 +374,7 @@
 </div>
 </div>
 <div id="RotorSpeed_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="300" data-tchmi-height-unit="px" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width="20" data-tchmi-width-unit="%" data-tchmi-creator-visibility="Visible" data-tchmi-right-unit="%" data-tchmi-width-mode="Parent" data-tchmi-max-width="500" data-tchmi-min-width="200" data-tchmi-right="63.4">
-<div id="Rotor_Speed_Gauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadialGauge" data-tchmi-base-animation-time="50" data-tchmi-gauge-alignment="Center" data-tchmi-label-range="200" data-tchmi-left-unit="px" data-tchmi-show-labels="true" data-tchmi-show-ticks="false" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-max-value="%s%PLC1.GVL_Pelletizer.MyPelletizer.Rotor_RPM_Limit%/s%" data-tchmi-value="%s%PLC1.GVL_Pelletizer.MyPelletizer.Rotor_Actual_RPM%/s%" data-tchmi-unit="RPM" data-tchmi-sub-tick-position="Outside" data-tchmi-step="0" data-tchmi-unit-font-size="18" data-tchmi-zindex="5" data-tchmi-ignore-invalid-values="false" data-tchmi-left="0" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent">
+<div id="Rotor_Speed_Gauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadialGauge" data-tchmi-base-animation-time="1000" data-tchmi-gauge-alignment="Center" data-tchmi-label-range="200" data-tchmi-left-unit="px" data-tchmi-show-labels="true" data-tchmi-show-ticks="false" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-max-value="%s%PLC1.GVL_Pelletizer.MyPelletizer.Rotor_RPM_Limit%/s%" data-tchmi-value="%s%PLC1.GVL_Pelletizer.MyPelletizer.Rotor_RPM%/s%" data-tchmi-unit="RPM" data-tchmi-sub-tick-position="Outside" data-tchmi-step="0" data-tchmi-unit-font-size="18" data-tchmi-zindex="5" data-tchmi-ignore-invalid-values="false" data-tchmi-left="0" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent">
 <script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
 [
   {
@@ -382,13 +382,13 @@
       "color": "rgba(255, 0, 0, 1)"
     },
     "start": 0.0,
-    "end": "%s%PLC1.GVL_Rotor.Rotor_RPM_Minimum%/s%"
+    "end": "%s%PLC1.Machine_Limits.Rotor_Min_RPM%/s%"
   },
   {
     "color": {
       "color": "rgba(0, 128, 0, 1)"
     },
-    "start": "%s%PLC1.GVL_Rotor.Rotor_RPM_Minimum%/s%",
+    "start": "%s%PLC1.Machine_Limits.Rotor_Min_RPM%/s%",
     "end": "%s%PLC1.GVL_Pelletizer.MyPelletizer.Rotor_RPM_Limit%/s%"
   }
 ]
@@ -426,7 +426,7 @@
 </div>
 </div>
 <div id="RotorTorque_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="120" data-tchmi-height-unit="px" data-tchmi-width-mode="Parent" data-tchmi-bottom="10" data-tchmi-right="10" data-tchmi-left="60" data-tchmi-left-unit="%">
-<div id="RotorTorque_LinearGauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLinearGauge" data-tchmi-base-animation-time="1000" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-label-range="20" data-tchmi-show-labels="true" data-tchmi-show-ticks="true" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-label-font-weight="Normal" data-tchmi-unit="Rotor Torque Utilization %" data-tchmi-orientation="Horizontal" data-tchmi-unit-font-weight="Normal" data-tchmi-unit-font-style="Auto" data-tchmi-value-font-weight="Normal" data-tchmi-value="%f%%s%PLC1.GVL_Rotor.Rotor_Active_Torque%/s% / 10%/f%" data-tchmi-label-font-size="14" data-tchmi-unit-font-size="18" data-tchmi-zindex="5" data-tchmi-unit-orientation="Theme" data-tchmi-min-value="0" data-tchmi-max-value="100" data-tchmi-ignore-invalid-values="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-height-mode="Parent" data-tchmi-width-mode="Parent" data-tchmi-left="0" data-tchmi-top="0">
+<div id="RotorTorque_LinearGauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLinearGauge" data-tchmi-base-animation-time="200" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-label-range="20" data-tchmi-show-labels="true" data-tchmi-show-ticks="true" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-label-font-weight="Normal" data-tchmi-unit="Rotor Torque Utilization %" data-tchmi-orientation="Horizontal" data-tchmi-unit-font-weight="Normal" data-tchmi-unit-font-style="Auto" data-tchmi-value-font-weight="Normal" data-tchmi-label-font-size="14" data-tchmi-unit-font-size="18" data-tchmi-zindex="5" data-tchmi-unit-orientation="Theme" data-tchmi-min-value="0" data-tchmi-max-value="100" data-tchmi-ignore-invalid-values="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-height-mode="Parent" data-tchmi-width-mode="Parent" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-value="%s%PLC1.Torque_Scaling.Rotor_Actual_Torque_Scaled%/s%">
 <script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
 [
   {
@@ -455,8 +455,15 @@
 <script data-tchmi-target-attribute="data-tchmi-value-format" type="application/json">
 {
   "objectType": "Function",
-  "fn": "GaugeValueFormatter",
-  "fnParams": []
+  "active": true,
+  "fn": "TcHmi.Functions.Beckhoff.GaugeValueFormatter",
+  "fnParams": [
+    {
+      "objectType": "StaticValue",
+      "valueType": "tchmi:general#/definitions/Number",
+      "value": 1.0
+    }
+  ]
 }
 </script>
 <script data-tchmi-target-attribute="data-tchmi-tick-definition" type="application/json">
@@ -644,5 +651,7 @@
 
 
 </div>
+</div>
+<div id="Preset_Pellet_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="412" data-tchmi-left-unit="px" data-tchmi-top="310" data-tchmi-top-unit="px" data-tchmi-width="153" data-tchmi-width-unit="px">
 </div>
 </div>

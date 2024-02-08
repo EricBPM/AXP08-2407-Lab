@@ -2566,6 +2566,23 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Feet_Per_Minute": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Pelletizer::MyPelletizer::Feedroll_Feet_Per_Minute",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/REAL"
+                    },
+                    {
+                        "propertyOrder": 8
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.GVL_Pelletizer.MyPelletizer.Pellet_Length_Calibration_Value": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -2720,6 +2737,23 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.GVL_Pelletizer.MyPelletizer.Rotor_RPM": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Pelletizer::MyPelletizer::Rotor_RPM",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/REAL"
+                    },
+                    {
+                        "propertyOrder": 14
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.GVL_Pelletizer.MyPelletizer.Rotor_RPM_Limit": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -2749,6 +2783,27 @@
                     },
                     {
                         "propertyOrder": 12
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Torque": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Pelletizer::MyPelletizer::Rotor_VFD::VFD_Actual_Torque",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/INT"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        },
+                        "comment": "Instantaneous Torque of the Motor (In Percent x.x%)",
+                        "propertyOrder": 4
                     }
                 ]
             },
@@ -2784,6 +2839,126 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Machine_Limits.Feedroll_Max_Ft_Per_Min": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Machine_Limits::Feedroll_Max_Ft_Per_Min",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Machine_Limits.Feedroll_Min_Ft_Per_Min": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Machine_Limits::Feedroll_Min_Ft_Per_Min",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Machine_Limits.Feedroll_Motor_Maximum_Hz": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Machine_Limits::Feedroll_Motor_Maximum_Hz",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Machine_Limits.Feedroll_Motor_Minimum_Hz": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Machine_Limits::Feedroll_Motor_Minimum_Hz",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Machine_Limits.Feedroll_Motor_Rated_Hz": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Machine_Limits::Feedroll_Motor_Rated_Hz",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Machine_Limits.Feedroll_Motor_Rated_RPM": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Machine_Limits::Feedroll_Motor_Rated_RPM",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Machine_Limits.Rotor_Max_RPM": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Machine_Limits::Rotor_Max_RPM",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Machine_Limits.Rotor_Min_RPM": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Machine_Limits::Rotor_Min_RPM",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Machine_Limits.Rotor_Motor_Maximum_Hz": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Machine_Limits::Rotor_Motor_Maximum_Hz",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Machine_Limits.Rotor_Motor_Minimum_Hz": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Machine_Limits::Rotor_Motor_Minimum_Hz",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Machine_Limits.Rotor_Motor_Rated_Hz": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Machine_Limits::Rotor_Motor_Rated_Hz",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Machine_Limits.Rotor_Motor_Rated_RPM": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Machine_Limits::Rotor_Motor_Rated_RPM",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Pellet_Calibration.SET_CALIBRATON_VALUE": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -2791,6 +2966,16 @@
             "MAPPING": "PLC1::Pellet_Calibration::SET_CALIBRATON_VALUE",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Torque_Scaling.Rotor_Actual_Torque_Scaled": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Torque_Scaling::Rotor_Actual_Torque_Scaled",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -4735,6 +4920,7 @@
                 "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Diameter_Inch": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Drive_Pulley": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Driven_Pulley": 3,
+                "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Feet_Per_Minute": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Pellet_Length_Calibration_Value": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Pellet_Length_Inch_Input": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Pellet_Length_Measured_Input": 3,
@@ -4744,12 +4930,28 @@
                 "PLC1.GVL_Pelletizer.MyPelletizer.Pelletizer_Info.Work_Order_Number": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Rotor_Drive_Pulley": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Rotor_Driven_Pulley": 3,
+                "PLC1.GVL_Pelletizer.MyPelletizer.Rotor_RPM": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Rotor_RPM_Limit": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Rotor_Tooth_Count": 3,
+                "PLC1.GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Speed": 3,
+                "PLC1.GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Torque": 3,
                 "PLC1.GVL_System.Metric_Set_Bit": 3,
                 "PLC1.GVL_System.RunTime": 3,
                 "PLC1.Imperial_Metric_Switching.Pellet_Length_Metric_Input": 3,
+                "PLC1.Machine_Limits.Feedroll_Max_Ft_Per_Min": 3,
+                "PLC1.Machine_Limits.Feedroll_Min_Ft_Per_Min": 3,
+                "PLC1.Machine_Limits.Feedroll_Motor_Maximum_Hz": 3,
+                "PLC1.Machine_Limits.Feedroll_Motor_Minimum_Hz": 3,
+                "PLC1.Machine_Limits.Feedroll_Motor_Rated_Hz": 3,
+                "PLC1.Machine_Limits.Feedroll_Motor_Rated_RPM": 3,
+                "PLC1.Machine_Limits.Rotor_Max_RPM": 3,
+                "PLC1.Machine_Limits.Rotor_Min_RPM": 3,
+                "PLC1.Machine_Limits.Rotor_Motor_Maximum_Hz": 3,
+                "PLC1.Machine_Limits.Rotor_Motor_Minimum_Hz": 3,
+                "PLC1.Machine_Limits.Rotor_Motor_Rated_Hz": 3,
+                "PLC1.Machine_Limits.Rotor_Motor_Rated_RPM": 3,
                 "PLC1.Pellet_Calibration.SET_CALIBRATON_VALUE": 3,
+                "PLC1.Torque_Scaling.Rotor_Actual_Torque_Scaled": 3,
                 "SetLocale": 3,
                 "SubscribeEvents": 3,
                 "TcHmiEcDiagnostics.Diagnostics": 1,

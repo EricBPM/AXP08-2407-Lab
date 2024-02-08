@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="Machine_Limits" Id="{d653ad06-d18f-47c0-83a8-659e1ee4e265}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Machine_Limits
+VAR PERSISTENT
+//For calculation purposes only. This calculates the min and max line speeds so that we can display these ranges on the speed gauges.
+
+Feedroll_Motor_Rated_RPM : REAL := 1750;	
+Feedroll_Motor_Rated_Hz : REAL := 60;		
+Feedroll_Motor_Maximum_Hz : REAL;	
+Feedroll_Motor_Minimum_Hz : REAL;	
+Feedroll_Max_Ft_Per_Min : REAL;
+Feedroll_Min_Ft_Per_Min  : REAL;
+Feedroll_Motor_RPM_Per_Hz : REAL;
+Feedroll_Pulley_Ratio : REAL;
+Feedroll_Circumference_Feet : REAL := (GVL_Pelletizer.MyPelletizer.Feedroll_Diameter_Inch * 3.14159) / 12.0;
+
+Rotor_Motor_Rated_RPM : REAL := 1750;	
+Rotor_Motor_Rated_Hz : REAL := 60;	
+Rotor_Motor_Maximum_Hz : REAL;	
+Rotor_Motor_Minimum_Hz : REAL;	
+Rotor_Max_RPM : REAL;
+Rotor_Min_RPM : REAL;
+Rotor_Motor_RPM_Per_Hz : REAL;
+Rotor_Pulley_Ratio : REAL;
+
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Feedroll_Pulley_Ratio := (GVL_Pelletizer.MyPelletizer.Feedroll_Drive_Pulley / GVL_Pelletizer.MyPelletizer.Feedroll_Driven_Pulley);
+
+Feedroll_Motor_RPM_Per_Hz := Feedroll_Motor_Rated_RPM / Feedroll_Motor_Rated_Hz;
+
+Feedroll_Max_Ft_Per_Min := ((Feedroll_Motor_RPM_Per_Hz * Feedroll_Motor_Maximum_Hz) * Feedroll_Pulley_Ratio) * Feedroll_Circumference_Feet;
+
+Feedroll_Min_Ft_Per_Min := ((Feedroll_Motor_RPM_Per_Hz * Feedroll_Motor_Minimum_Hz) * Feedroll_Pulley_Ratio) * Feedroll_Circumference_Feet;
+
+
+
+Rotor_Pulley_Ratio := (GVL_Pelletizer.MyPelletizer.Rotor_Drive_Pulley / GVL_Pelletizer.MyPelletizer.Rotor_Driven_Pulley);
+
+Rotor_Motor_RPM_Per_Hz := Rotor_Motor_Rated_RPM / Rotor_Motor_Rated_Hz;
+
+Rotor_Max_RPM := (Rotor_Motor_RPM_Per_Hz * Rotor_Motor_Maximum_Hz) * Rotor_Pulley_Ratio;
+
+Rotor_Min_RPM := (Rotor_Motor_RPM_Per_Hz * Rotor_Motor_Minimum_Hz) * Rotor_Pulley_Ratio;
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="Machine_Limits">
+      <LineId Id="56" Count="1" />
+      <LineId Id="5" Count="0" />
+      <LineId Id="27" Count="0" />
+      <LineId Id="26" Count="0" />
+      <LineId Id="31" Count="0" />
+      <LineId Id="30" Count="0" />
+      <LineId Id="33" Count="0" />
+      <LineId Id="50" Count="0" />
+      <LineId Id="44" Count="1" />
+      <LineId Id="34" Count="0" />
+      <LineId Id="39" Count="3" />
+      <LineId Id="32" Count="0" />
+      <LineId Id="55" Count="0" />
+      <LineId Id="54" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

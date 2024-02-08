@@ -60,7 +60,13 @@
     <Compile Include="POUs\Pelletizer\DPLC.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\Pelletizer\Machine_Limits.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\Pelletizer\Pellet_Calibration.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\Pelletizer\Torque_Scaling.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\System\Events.TcPOU">

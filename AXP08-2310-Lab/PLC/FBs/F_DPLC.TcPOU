@@ -19,8 +19,10 @@ VAR_INPUT
 END_VAR
 VAR_OUTPUT
 	
-	Rotor_Motor_RPM : REAL;
-	Feedroll_Feet_Per_Minute : REAL;
+	Rotor_Motor_RPM : REAL;	//Commands the motor speed
+	Rotor_RPM : REAL;		//Displays the actualy Rotor Speed
+	
+	Feedroll_Feet_Per_Minute : REAL;	//Displays the Actual Ft/min
 
 END_VAR
 VAR
@@ -28,11 +30,10 @@ VAR
 	Feedroll_Inch_Per_Minute : REAL;
 
 	Rotor_Cuts_Per_Minute : REAL;
-	Rotor_RPM : REAL;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Feedroll_RPM := Feedroll_Motor_RPM * (Feedroll_Driven_Gear / Feedroll_Drive_Gear);
+      <ST><![CDATA[Feedroll_RPM := Feedroll_Motor_RPM * (Feedroll_Drive_Gear / Feedroll_Driven_Gear);
 
 Feedroll_Inch_Per_Minute := Feedroll_RPM * (Feedroll_Diameter * 3.14159);
 
@@ -45,7 +46,7 @@ Rotor_Cuts_Per_Minute := Feedroll_Inch_Per_Minute / Pellet_Length_Inch_Input;
 
 Rotor_RPM := Rotor_Cuts_Per_Minute / Rotor_Tooth_Count;
 
-Rotor_Motor_RPM := Rotor_RPM / (Rotor_Driven_Gear / Rotor_Drive_Gear);
+Rotor_Motor_RPM := Rotor_RPM / (Rotor_Drive_Gear / Rotor_Driven_Gear);
 ]]></ST>
     </Implementation>
     <LineIds Name="F_DPLC">

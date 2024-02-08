@@ -7,19 +7,19 @@ STRUCT
 	Rotor_VFD : VFD;
 
 	
-	Feedroll_Driven_Pulley : REAL;
-	Feedroll_Drive_Pulley : REAL;
-	Feedroll_Diameter_Inch : REAL;
+	Feedroll_Driven_Pulley : REAL := 1;
+	Feedroll_Drive_Pulley : REAL := 1;
+	Feedroll_Diameter_Inch : REAL := 1.88;
 	Feedroll_RPM: INT;
 	Feedroll_Motor_RPM : INT;
 	Feedroll_Feet_Per_Minute : REAL;
 	Feedroll_Meters_Per_Minute : REAL;
 
 	
-	Rotor_Driven_Pulley : REAL;
-	Rotor_Drive_Pulley : REAL;
-	Rotor_Tooth_Count : REAL;
-	Rotor_RPM_Limit : REAL;
+	Rotor_Driven_Pulley : REAL := 1;
+	Rotor_Drive_Pulley : REAL := 1;
+	Rotor_Tooth_Count : REAL := 32;
+	Rotor_RPM_Limit : REAL:= 1000;
 	Rotor_RPM : REAL;
 	Rotor_Motor_RPM : REAL;
 

@@ -20,6 +20,7 @@ DPLC(
 	Rotor_Driven_Gear				:= GVL_Pelletizer.MyPelletizer.Rotor_Driven_Pulley,
 	Rotor_Tooth_Count				:= GVL_Pelletizer.MyPelletizer.Rotor_Tooth_Count,
 	Rotor_Motor_RPM					=> GVL_Pelletizer.MyPelletizer.Rotor_Motor_RPM,
+	Rotor_RPM						=> GVL_Pelletizer.MyPelletizer.Rotor_RPM,
 	Feedroll_Feet_Per_Minute		=> GVL_Pelletizer.MyPelletizer.Feedroll_Feet_Per_Minute
 );
 	
@@ -31,7 +32,9 @@ GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Set_Speed := REAL_TO_INT(GVL_Pelletize
       <LineId Id="239" Count="0" />
       <LineId Id="303" Count="3" />
       <LineId Id="308" Count="0" />
-      <LineId Id="311" Count="5" />
+      <LineId Id="311" Count="3" />
+      <LineId Id="323" Count="0" />
+      <LineId Id="315" Count="1" />
       <LineId Id="310" Count="0" />
       <LineId Id="321" Count="0" />
     </LineIds>
