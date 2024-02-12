@@ -66,7 +66,7 @@
     <Compile Include="POUs\Pelletizer\Pellet_Calibration.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\Pelletizer\Torque_Scaling.TcPOU">
+    <Compile Include="POUs\Pelletizer\Scaling_And_Conversions.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\System\Events.TcPOU">

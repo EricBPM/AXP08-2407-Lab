@@ -90,7 +90,7 @@
 ]
 </script>
 
-    <div id="TcHmiContainer_MachineSettings_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="px" data-tchmi-left="-6" data-tchmi-left-unit="px" data-tchmi-top="-3" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-right="6" data-tchmi-bottom="3" data-tchmi-creator-locked="True" data-tchmi-grid-column-index="7" data-tchmi-visibility="Visible">
+    <div id="TcHmiContainer_MachineSettings_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-creator-locked="True" data-tchmi-grid-column-index="7" data-tchmi-visibility="Visible">
 
 
       <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">

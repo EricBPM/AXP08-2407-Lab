@@ -12357,6 +12357,12 @@
     "TcHmiUserControlHost": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiUserControlHost"
     },
+    "TcHmi.Controls.LineTrendExt.LineTrendExtControl": {
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "LineTrendExtControl",
+      "frameworkControlNamespace": "TcHmi.Controls.LineTrendExt"
+    },
     "TcHmi.Functions.BaseTemplate.MediaQueryList": {
       "id": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.MediaQueryList",
       "type": "array",

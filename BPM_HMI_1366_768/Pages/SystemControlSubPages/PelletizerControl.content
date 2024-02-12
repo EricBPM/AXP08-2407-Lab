@@ -1,521 +1,56 @@
-<div id="PelletizerControl" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-height="511" data-tchmi-width-mode="Parent" data-tchmi-top-unit="%" data-tchmi-left-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-min-width="320" data-tchmi-max-width="1126">
-<div id="PelletizerHeaderTextblock" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="37" data-tchmi-height-unit="px" data-tchmi-text="Pelletizer Control" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-word-wrap="false" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="24" data-tchmi-text-font-style="Auto" data-tchmi-right="35" data-tchmi-right-unit="%" data-tchmi-width-mode="Parent" data-tchmi-left="35" data-tchmi-left-unit="%">
+<div id="PelletizerControl" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width-mode="Value" data-tchmi-top-unit="px" data-tchmi-left-unit="px" data-tchmi-height-mode="Content" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height="511" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-max-width="1126" data-tchmi-min-width="320">
+<div id="Layout_Grid_Pelletizer_Cntrl" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Content" data-tchmi-min-width="320" data-tchmi-max-width="1126" data-tchmi-cell-wrap="true">
 
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-{
-  "left": 2,
-  "right": 2,
-  "top": 2,
-  "bottom": 2,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
-{
-  "left": "Solid",
-  "right": "Solid",
-  "top": "Solid",
-  "bottom": "Solid"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
-{
-  "topLeft": 5.0,
-  "topRight": 5.0,
-  "bottomLeft": 5.0,
-  "bottomRight": 5.0,
-  "topLeftUnit": "px",
-  "topRightUnit": "px",
-  "bottomLeftUnit": "px",
-  "bottomRightUnit": "px"
-}
-</script>
-</div>
-<div id="Imperial_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="53" data-tchmi-left-unit="px" data-tchmi-text="Imperial (Inch)" data-tchmi-top="648" data-tchmi-top-unit="px" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="5">
-</div>
-<div id="Standard_Metric_Toggle" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleSwitch" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="123" data-tchmi-left-unit="px" data-tchmi-top="652" data-tchmi-top-unit="px" data-tchmi-width="94" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="5" data-tchmi-state-symbol="%s%PLC1.GVL_Pelletizer.Metric_Set_Bit%/s%">
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
 [
   {
-    "event": "Standard_Metric_Toggle.onAttached",
-    "actions": [
-      {
-        "objectType": "Condition",
-        "active": false,
-        "parts": [
-          {
-            "if": [
-              {
-                "compare1": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "symbolExpression": "%s%PLC1.GVL_Pelletizer.Metric_Set_Bit%/s%"
-                },
-                "compare2": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "value": true
-                },
-                "compareOperator": "==",
-                "logic": null
-              }
-            ],
-            "then": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Feedroll_Speed_Gauge::Unit%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "M/min"
-                },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Speed_Control_Textblock::Text%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "Speed Control (M/min)"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "else": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Feedroll_Speed_Gauge::Unit%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "Ft/min"
-                },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Speed_Control_Textblock::Text%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "Speed Control (Ft/min)"
-                },
-                "asyncWait": true
-              }
-            ]
-          }
-        ],
-        "asyncWait": true
-      },
-      {
-        "objectType": "Condition",
-        "active": true,
-        "parts": [
-          {
-            "if": [
-              {
-                "compare1": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "symbolExpression": "%s%PLC1.GVL_Pelletizer.Metric_Set_Bit%/s%"
-                },
-                "compare2": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "value": true
-                },
-                "compareOperator": "==",
-                "logic": null
-              }
-            ],
-            "then": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Feedroll_Speed_Gauge::Unit%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "M/min"
-                },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Speed_Control_Textblock::Text%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "Speed Control (M/min)"
-                },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Speed_Control_Numeric_Input::DecimalDigits%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/Number",
-                  "value": 2.0
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "else": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Feedroll_Speed_Gauge::Unit%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "Ft/min"
-                },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Speed_Control_Textblock::Text%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "Speed Control (Ft/min)"
-                },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Speed_Control_Numeric_Input::DecimalDigits%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/Number",
-                  "value": 1.0
-                },
-                "asyncWait": true
-              }
-            ]
-          }
-        ],
-        "asyncWait": true
-      }
-    ]
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidth": 320.0,
+    "minWidthUnit": "px",
+    "overflow": false
   },
   {
-    "event": "Standard_Metric_Toggle.onToggleStateChanged",
-    "actions": [
-      {
-        "objectType": "Condition",
-        "active": true,
-        "parts": [
-          {
-            "if": [
-              {
-                "compare1": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "symbolExpression": "%s%PLC1.GVL_Pelletizer.Metric_Set_Bit%/s%"
-                },
-                "compare2": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "value": true
-                },
-                "compareOperator": "==",
-                "logic": null
-              }
-            ],
-            "then": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Feedroll_Speed_Gauge::Unit%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "M/min"
-                },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Speed_Control_Textblock::Text%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "Speed Control (M/min)"
-                },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Feedroll_Speed_Gauge::LabelRange%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/Number",
-                  "value": 10.0
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "else": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Feedroll_Speed_Gauge::Unit%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "Ft/min"
-                },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Speed_Control_Textblock::Text%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "Speed Control (Ft/min)"
-                },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Feedroll_Speed_Gauge::LabelRange%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/Number",
-                  "value": 30.0
-                },
-                "asyncWait": true
-              }
-            ]
-          }
-        ],
-        "asyncWait": true
-      }
-    ]
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidth": 320.0,
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidth": 320.0,
+    "minWidthUnit": "px",
+    "overflow": false
   }
 ]
 </script>
-</div>
-<div id="Metric_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="217" data-tchmi-left-unit="px" data-tchmi-text="Metric (mm)" data-tchmi-top="648" data-tchmi-top-unit="px" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-zindex="5">
-</div>
-<div id="FeedrollSpeed_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-right="2" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Value" data-tchmi-right-unit="%" data-tchmi-left="63.4" data-tchmi-left-unit="%" data-tchmi-height="300" data-tchmi-min-width="200" data-tchmi-max-width="500">
-<div id="FeedrollSpeed_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-text="Feedroll Speed" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="6" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-right="25" data-tchmi-bottom="15" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-left="25" data-tchmi-top="70">
-</div>
-<div id="Feedroll_Speed_Gauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadialGauge" data-tchmi-base-animation-time="1000" data-tchmi-gauge-alignment="Center" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-show-labels="true" data-tchmi-show-ticks="false" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-min-value="0" data-tchmi-value="%s%PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Feet_Per_Minute%/s%" data-tchmi-max-value="%s%PLC1.Machine_Limits.Feedroll_Max_Ft_Per_Min%/s%" data-tchmi-unit="Ft/Min" data-tchmi-sub-tick-position="Outside" data-tchmi-value-font-size="20" data-tchmi-unit-font-size="18" data-tchmi-step="0" data-tchmi-zindex="5" data-tchmi-right="0" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-bottom="0" data-tchmi-left="0" data-tchmi-label-range="100">
-<script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
+
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
 [
   {
-    "color": {
-      "color": "rgba(255, 0, 0, 1)"
-    },
-    "start": 0.0,
-    "end": "%s%PLC1.Machine_Limits.Feedroll_Min_Ft_Per_Min%/s%"
-  },
-  {
-    "color": {
-      "color": "rgba(0, 128, 0, 1)"
-    },
-    "start": "%s%PLC1.Machine_Limits.Feedroll_Min_Ft_Per_Min%/s%",
-    "end": "%s%PLC1.Machine_Limits.Feedroll_Max_Ft_Per_Min%/s%"
+    "height": 100.0,
+    "heightUnit": "%",
+    "heightMode": "Value",
+    "maxHeight": 511.0,
+    "maxHeightUnit": "px",
+    "minHeight": 300.0,
+    "minHeightUnit": "px",
+    "overflow": false
   }
 ]
 </script>
-<script data-tchmi-target-attribute="data-tchmi-value-format" type="application/json">
-{
-  "objectType": "Function",
-  "active": true,
-  "fn": "TcHmi.Functions.Beckhoff.GaugeValueFormatter",
-  "fnParams": [
-    {
-      "objectType": "StaticValue",
-      "valueType": "tchmi:general#/definitions/Number",
-      "value": 1.0
-    }
-  ]
-}
-</script>
-
-
-
-
-
-<script data-tchmi-target-attribute="data-tchmi-tick-definition" type="application/json">
-{
-  "mainTickRange": 30.0
-}
-</script>
+<div id="PelletLength_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="270" data-tchmi-height-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-creator-locked="True" data-tchmi-grid-column-index="1" data-tchmi-right="0" data-tchmi-left="0" data-tchmi-bottom-unit="%" data-tchmi-bottom="30">
+<div id="PelletSize_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="47" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="%" data-tchmi-text="Pellet Length" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="24" data-tchmi-text-horizontal-alignment="Center" data-tchmi-zindex="5" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-right="20" data-tchmi-width-mode="Parent">
 </div>
-</div>
-<div id="RotorSpeed_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="300" data-tchmi-height-unit="px" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width="20" data-tchmi-width-unit="%" data-tchmi-creator-visibility="Visible" data-tchmi-right-unit="%" data-tchmi-width-mode="Parent" data-tchmi-max-width="500" data-tchmi-min-width="200" data-tchmi-right="63.4">
-<div id="Rotor_Speed_Gauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadialGauge" data-tchmi-base-animation-time="1000" data-tchmi-gauge-alignment="Center" data-tchmi-label-range="200" data-tchmi-left-unit="px" data-tchmi-show-labels="true" data-tchmi-show-ticks="false" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-max-value="%s%PLC1.GVL_Pelletizer.MyPelletizer.Rotor_RPM_Limit%/s%" data-tchmi-value="%s%PLC1.GVL_Pelletizer.MyPelletizer.Rotor_RPM%/s%" data-tchmi-unit="RPM" data-tchmi-sub-tick-position="Outside" data-tchmi-step="0" data-tchmi-unit-font-size="18" data-tchmi-zindex="5" data-tchmi-ignore-invalid-values="false" data-tchmi-left="0" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent">
-<script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
-[
-  {
-    "color": {
-      "color": "rgba(255, 0, 0, 1)"
-    },
-    "start": 0.0,
-    "end": "%s%PLC1.Machine_Limits.Rotor_Min_RPM%/s%"
-  },
-  {
-    "color": {
-      "color": "rgba(0, 128, 0, 1)"
-    },
-    "start": "%s%PLC1.Machine_Limits.Rotor_Min_RPM%/s%",
-    "end": "%s%PLC1.GVL_Pelletizer.MyPelletizer.Rotor_RPM_Limit%/s%"
-  }
-]
-</script>
-<script data-tchmi-target-attribute="data-tchmi-value-format" type="application/json">
-{
-  "objectType": "Function",
-  "active": true,
-  "fn": "TcHmi.Functions.Beckhoff.GaugeValueFormatter",
-  "fnParams": [
-    {
-      "objectType": "StaticValue",
-      "valueType": "tchmi:general#/definitions/Number",
-      "value": 0.0
-    }
-  ]
-}
-</script>
-
-
-
-<script data-tchmi-target-attribute="data-tchmi-tick-definition" type="application/json">
-{
-  "mainTickRange": 200.0
-}
-</script>
-
-
-
-<script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
-[]
-</script>
-</div>
-<div id="RotorSpeed_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-text="Rotor Speed" data-tchmi-top="70" data-tchmi-top-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="5" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="25" data-tchmi-bottom="15" data-tchmi-height-mode="Parent" data-tchmi-width-mode="Parent">
-</div>
-</div>
-<div id="RotorTorque_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="120" data-tchmi-height-unit="px" data-tchmi-width-mode="Parent" data-tchmi-bottom="10" data-tchmi-right="10" data-tchmi-left="60" data-tchmi-left-unit="%">
-<div id="RotorTorque_LinearGauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLinearGauge" data-tchmi-base-animation-time="200" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-label-range="20" data-tchmi-show-labels="true" data-tchmi-show-ticks="true" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-label-font-weight="Normal" data-tchmi-unit="Rotor Torque Utilization %" data-tchmi-orientation="Horizontal" data-tchmi-unit-font-weight="Normal" data-tchmi-unit-font-style="Auto" data-tchmi-value-font-weight="Normal" data-tchmi-label-font-size="14" data-tchmi-unit-font-size="18" data-tchmi-zindex="5" data-tchmi-unit-orientation="Theme" data-tchmi-min-value="0" data-tchmi-max-value="100" data-tchmi-ignore-invalid-values="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-height-mode="Parent" data-tchmi-width-mode="Parent" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-value="%s%PLC1.Torque_Scaling.Rotor_Actual_Torque_Scaled%/s%">
-<script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
-[
-  {
-    "color": {
-      "color": "rgba(0, 128, 0, 1)"
-    },
-    "start": 0.0,
-    "end": 75.0
-  },
-  {
-    "color": {
-      "color": "rgba(255, 165, 0, 1)"
-    },
-    "start": 75.0,
-    "end": 90.0
-  },
-  {
-    "color": {
-      "color": "rgba(255, 0, 0, 1)"
-    },
-    "start": 90.0,
-    "end": 100.0
-  }
-]
-</script>
-<script data-tchmi-target-attribute="data-tchmi-value-format" type="application/json">
-{
-  "objectType": "Function",
-  "active": true,
-  "fn": "TcHmi.Functions.Beckhoff.GaugeValueFormatter",
-  "fnParams": [
-    {
-      "objectType": "StaticValue",
-      "valueType": "tchmi:general#/definitions/Number",
-      "value": 1.0
-    }
-  ]
-}
-</script>
-<script data-tchmi-target-attribute="data-tchmi-tick-definition" type="application/json">
-{
-  "mainTickRange": 20,
-  "subTickRange": 5
-}
-</script>
-
-
-
-
-
-
-
-
-
-
-<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
-{
-  "topLeft": 20.0,
-  "topRight": 20.0,
-  "bottomLeft": 20.0,
-  "bottomRight": 20.0,
-  "topLeftUnit": "px",
-  "topRightUnit": "px",
-  "bottomLeftUnit": "px",
-  "bottomRightUnit": "px"
-}
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-</div>
-<div id="PelletLength_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-top="60.7" data-tchmi-top-unit="%" data-tchmi-width="20" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-right="63.4" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Value">
-<div id="PelletSize_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="47" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="%" data-tchmi-text="Pellet Length" data-tchmi-top="30" data-tchmi-top-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="24" data-tchmi-text-horizontal-alignment="Center" data-tchmi-zindex="5" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-right="20" data-tchmi-width-mode="Parent">
-</div>
-<div id="PelletSize_Input" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-height="60" data-tchmi-height-unit="px" data-tchmi-left="30" data-tchmi-left-unit="%" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-value="%s%PLC1.GVL_Pelletizer.MyPelletizer.Pellet_Length_Inch_Input%/s%" data-tchmi-value-font-size="30" data-tchmi-value-horizontal-alignment="Center" data-tchmi-max-value="26" data-tchmi-system-keyboard-input-mode="none" data-tchmi-zindex="3" data-tchmi-zero-padding="1" data-tchmi-right-unit="%" data-tchmi-right="30" data-tchmi-width-mode="Parent">
+<div id="PelletSize_Input" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-height="60" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="%" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-value="%s%PLC1.GVL_Pelletizer.MyPelletizer.Pellet_Length_Inch_Input%/s%" data-tchmi-value-font-size="30" data-tchmi-value-horizontal-alignment="Center" data-tchmi-max-value="26" data-tchmi-system-keyboard-input-mode="none" data-tchmi-zindex="3" data-tchmi-zero-padding="1" data-tchmi-right-unit="%" data-tchmi-right="20" data-tchmi-width-mode="Parent">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -651,7 +186,695 @@
 
 
 </div>
+<div id="Preset_Pellet_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-bottom="0" data-tchmi-width-mode="Parent" data-tchmi-right="0">
+
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<div id="Preset_1_Input" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-max-value="20" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-value="0.125" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-value-horizontal-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
 </div>
-<div id="Preset_Pellet_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="412" data-tchmi-left-unit="px" data-tchmi-top="310" data-tchmi-top-unit="px" data-tchmi-width="153" data-tchmi-width-unit="px">
+<div id="Preset_2_Input" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="1" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-max-value="20" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-value="0.118" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-value-horizontal-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="Preset_3_Input" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="2" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-value="0.2" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-value-horizontal-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="Preset_1_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="Preset 1" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Preset_1_Btn.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.GVL_Pelletizer.MyPelletizer.Pellet_Length_Inch_Input%/s%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%ctrl%Preset_1_Input::Value%/ctrl%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="Preset_2_btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="Preset 2" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Preset_2_btn.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.GVL_Pelletizer.MyPelletizer.Pellet_Length_Inch_Input%/s%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%ctrl%Preset_2_Input::Value%/ctrl%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="Preset_3_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="2" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="Preset 3" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Preset_3_Btn.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.GVL_Pelletizer.MyPelletizer.Pellet_Length_Inch_Input%/s%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%ctrl%Preset_3_Input::Value%/ctrl%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 5.0,
+  "bottomRight": 5.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+
+
+<div id="Gauge_Layout_Grid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="511" data-tchmi-height-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-cell-wrap="false" data-tchmi-width-mode="Value">
+
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeight": 255.0,
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeight": 255.0,
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<div id="RotorSpeed_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="50" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-creator-visibility="Visible" data-tchmi-width-mode="Parent" data-tchmi-right="0" data-tchmi-right-unit="px" data-tchmi-bottom="0" data-tchmi-height-mode="Parent">
+<div id="Rotor_Speed_Gauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadialGauge" data-tchmi-base-animation-time="1000" data-tchmi-gauge-alignment="Center" data-tchmi-label-range="200" data-tchmi-left-unit="px" data-tchmi-show-labels="true" data-tchmi-show-ticks="false" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-max-value="%s%PLC1.GVL_Pelletizer.MyPelletizer.Rotor_RPM_Limit%/s%" data-tchmi-value="%s%PLC1.GVL_Pelletizer.MyPelletizer.Rotor_RPM%/s%" data-tchmi-unit="RPM" data-tchmi-sub-tick-position="Outside" data-tchmi-step="0" data-tchmi-unit-font-size="18" data-tchmi-zindex="5" data-tchmi-ignore-invalid-values="false" data-tchmi-left="0" data-tchmi-right="0" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-creator-locked="True">
+<script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
+[
+  {
+    "color": {
+      "color": "rgba(255, 0, 0, 1)"
+    },
+    "start": 0.0,
+    "end": "%s%PLC1.Machine_Limits.Rotor_Min_RPM%/s%"
+  },
+  {
+    "color": {
+      "color": "rgba(0, 128, 0, 1)"
+    },
+    "start": "%s%PLC1.Machine_Limits.Rotor_Min_RPM%/s%",
+    "end": "%s%PLC1.GVL_Pelletizer.MyPelletizer.Rotor_RPM_Limit%/s%"
+  }
+]
+</script>
+<script data-tchmi-target-attribute="data-tchmi-value-format" type="application/json">
+{
+  "objectType": "Function",
+  "active": true,
+  "fn": "TcHmi.Functions.Beckhoff.GaugeValueFormatter",
+  "fnParams": [
+    {
+      "objectType": "StaticValue",
+      "valueType": "tchmi:general#/definitions/Number",
+      "value": 0.0
+    }
+  ]
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-tick-definition" type="application/json">
+{
+  "mainTickRange": 200.0
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+[]
+</script>
+
+
+
+
+
+
+</div>
+<div id="RotorSpeed_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-text="Rotor Speed" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="5" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="25" data-tchmi-bottom="9" data-tchmi-height-mode="Value" data-tchmi-width-mode="Parent" data-tchmi-height="40">
+</div>
+</div>
+<div id="FeedrollSpeed_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-height="50" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-grid-row-index="1" data-tchmi-bottom="0" data-tchmi-bottom-unit="px" data-tchmi-right="0" data-tchmi-right-unit="px" data-tchmi-height-unit="%" data-tchmi-top="0">
+<div id="FeedrollSpeed_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-text="Feedroll Speed" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="6" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Value" data-tchmi-right="25" data-tchmi-bottom="9" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-left-unit="%" data-tchmi-left="25" data-tchmi-height="40">
+</div>
+<div id="Feedroll_Speed_Gauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadialGauge" data-tchmi-base-animation-time="1000" data-tchmi-gauge-alignment="Center" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-show-labels="true" data-tchmi-show-ticks="false" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-min-value="0" data-tchmi-value="%s%PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Feet_Per_Minute%/s%" data-tchmi-max-value="%s%PLC1.Machine_Limits.Feedroll_Max_Ft_Per_Min%/s%" data-tchmi-unit="Ft/Min" data-tchmi-sub-tick-position="Outside" data-tchmi-value-font-size="20" data-tchmi-unit-font-size="18" data-tchmi-step="0" data-tchmi-zindex="5" data-tchmi-right="0" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-bottom="5" data-tchmi-left="0" data-tchmi-label-range="100" data-tchmi-creator-locked="True">
+<script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
+[
+  {
+    "color": {
+      "color": "rgba(255, 0, 0, 1)"
+    },
+    "start": 0.0,
+    "end": "%s%PLC1.Machine_Limits.Feedroll_Min_Ft_Per_Min%/s%"
+  },
+  {
+    "color": {
+      "color": "rgba(0, 128, 0, 1)"
+    },
+    "start": "%s%PLC1.Machine_Limits.Feedroll_Min_Ft_Per_Min%/s%",
+    "end": "%s%PLC1.Machine_Limits.Feedroll_Max_Ft_Per_Min%/s%"
+  }
+]
+</script>
+<script data-tchmi-target-attribute="data-tchmi-value-format" type="application/json">
+{
+  "objectType": "Function",
+  "active": true,
+  "fn": "TcHmi.Functions.Beckhoff.GaugeValueFormatter",
+  "fnParams": [
+    {
+      "objectType": "StaticValue",
+      "valueType": "tchmi:general#/definitions/Number",
+      "value": 1.0
+    }
+  ]
+}
+</script>
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-tick-definition" type="application/json">
+{
+  "mainTickRange": 30.0
+}
+</script>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-cell-options" type="application/json">
+[
+  {
+    "columnIndex": 0,
+    "rowIndex": 0,
+    "backgroundImageWidthUnit": "px",
+    "backgroundImageHeightUnit": "px",
+    "backgroundImageHorizontalAlignment": "Center",
+    "backgroundImageVerticalAlignment": "Center"
+  },
+  {
+    "columnIndex": 1,
+    "rowIndex": 0,
+    "backgroundImageWidthUnit": "px",
+    "backgroundImageHeightUnit": "px",
+    "backgroundImageHorizontalAlignment": "Center",
+    "backgroundImageVerticalAlignment": "Center"
+  },
+  {
+    "columnIndex": 2,
+    "rowIndex": 0,
+    "backgroundImageWidthUnit": "px",
+    "backgroundImageHeightUnit": "px",
+    "backgroundImageHorizontalAlignment": "Center",
+    "backgroundImageVerticalAlignment": "Center"
+  }
+]
+</script>
+<div id="PelletizerHeaderTextblock" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="37" data-tchmi-height-unit="px" data-tchmi-text="Pelletizer Control" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-word-wrap="false" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="24" data-tchmi-text-font-style="Auto" data-tchmi-width-mode="Value" data-tchmi-left="20" data-tchmi-left-unit="%" data-tchmi-grid-column-index="1" data-tchmi-right="20" data-tchmi-right-unit="%">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 5.0,
+  "bottomRight": 5.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div id="RotorTorque_LinearGauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLinearGauge" data-tchmi-base-animation-time="200" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-label-range="20" data-tchmi-show-labels="true" data-tchmi-show-ticks="true" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-label-font-weight="Normal" data-tchmi-unit="Rotor Motor Torque Utilization %" data-tchmi-orientation="Horizontal" data-tchmi-unit-font-weight="Normal" data-tchmi-unit-font-style="Auto" data-tchmi-value-font-weight="Normal" data-tchmi-label-font-size="10" data-tchmi-unit-font-size="18" data-tchmi-zindex="5" data-tchmi-unit-orientation="Theme" data-tchmi-min-value="0" data-tchmi-max-value="100" data-tchmi-ignore-invalid-values="true" data-tchmi-height-mode="Value" data-tchmi-width-mode="Parent" data-tchmi-value="%s%PLC1.Scaling_And_Conversions.Rotor_Actual_Torque_Scaled%/s%" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-right="10" data-tchmi-left="20" data-tchmi-top="10">
+<script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
+[
+  {
+    "color": {
+      "color": "rgba(0, 128, 0, 1)"
+    },
+    "start": 0.0,
+    "end": 75.0
+  },
+  {
+    "color": {
+      "color": "rgba(255, 165, 0, 1)"
+    },
+    "start": 75.0,
+    "end": 90.0
+  },
+  {
+    "color": {
+      "color": "rgba(255, 0, 0, 1)"
+    },
+    "start": 90.0,
+    "end": 100.0
+  }
+]
+</script>
+<script data-tchmi-target-attribute="data-tchmi-value-format" type="application/json">
+{
+  "objectType": "Function",
+  "active": true,
+  "fn": "TcHmi.Functions.Beckhoff.GaugeValueFormatter",
+  "fnParams": [
+    {
+      "objectType": "StaticValue",
+      "valueType": "tchmi:general#/definitions/Number",
+      "value": 1.0
+    }
+  ]
+}
+</script>
+<script data-tchmi-target-attribute="data-tchmi-tick-definition" type="application/json">
+{
+  "mainTickRange": 20,
+  "subTickRange": 5
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div id="Feedroll_Motor_Current_LinearGauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLinearGauge" data-tchmi-base-animation-time="1000" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-label-range="20" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-show-labels="true" data-tchmi-show-ticks="true" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-width-mode="Parent" data-tchmi-unit-font-size="18" data-tchmi-unit-font-weight="Normal" data-tchmi-unit="Feedroll Motor Current %" data-tchmi-label-font-size="10" data-tchmi-value="%s%PLC1.Scaling_And_Conversions.Feedroll_Actual_Current_Scaled%/s%">
+<script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
+[
+  {
+    "color": {
+      "color": "rgba(0, 128, 0, 1)"
+    },
+    "start": 0.0,
+    "end": 75.0
+  },
+  {
+    "color": {
+      "color": "rgba(255, 165, 0, 1)"
+    },
+    "start": 75.0,
+    "end": 90.0
+  },
+  {
+    "color": {
+      "color": "rgba(255, 0, 0, 1)"
+    },
+    "start": 90.0,
+    "end": 100.0
+  }
+]
+</script>
+<script data-tchmi-target-attribute="data-tchmi-value-format" type="application/json">
+{
+  "objectType": "Function",
+  "active": true,
+  "fn": "TcHmi.Functions.Beckhoff.GaugeValueFormatter",
+  "fnParams": [
+    {
+      "objectType": "StaticValue",
+      "valueType": "tchmi:general#/definitions/Number",
+      "value": 1.0
+    }
+  ]
+}
+</script>
+<script data-tchmi-target-attribute="data-tchmi-tick-definition" type="application/json">
+{
+  "mainTickRange": 20,
+  "subTickRange": 5
+}
+</script>
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div id="Feedroll_Motor_Torque_LinearGauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLinearGauge" data-tchmi-base-animation-time="1000" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-label-range="20" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-show-labels="true" data-tchmi-show-ticks="true" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-right="10" data-tchmi-bottom="120" data-tchmi-width-mode="Parent" data-tchmi-unit="Feedroll Motor Torque Utilization %" data-tchmi-unit-font-weight="Normal" data-tchmi-unit-font-size="18" data-tchmi-label-font-size="10" data-tchmi-value="%s%PLC1.Scaling_And_Conversions.Feedroll_Actual_Torque_Scaled%/s%">
+<script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
+[
+  {
+    "color": {
+      "color": "rgba(0, 128, 0, 1)"
+    },
+    "start": 0.0,
+    "end": 75.0
+  },
+  {
+    "color": {
+      "color": "rgba(255, 165, 0, 1)"
+    },
+    "start": 75.0,
+    "end": 90.0
+  },
+  {
+    "color": {
+      "color": "rgba(255, 0, 0, 1)"
+    },
+    "start": 90.0,
+    "end": 100.0
+  }
+]
+</script>
+<script data-tchmi-target-attribute="data-tchmi-value-format" type="application/json">
+{
+  "objectType": "Function",
+  "active": true,
+  "fn": "TcHmi.Functions.Beckhoff.GaugeValueFormatter",
+  "fnParams": [
+    {
+      "objectType": "StaticValue",
+      "valueType": "tchmi:general#/definitions/Number",
+      "value": 1.0
+    }
+  ]
+}
+</script>
+<script data-tchmi-target-attribute="data-tchmi-tick-definition" type="application/json">
+{
+  "mainTickRange": 20,
+  "subTickRange": 5
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiLinearGauge_4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLinearGauge" data-tchmi-base-animation-time="1000" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-label-range="20" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-show-labels="true" data-tchmi-show-ticks="true" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-right="10" data-tchmi-width-mode="Parent" data-tchmi-unit="Rotor Motor Current %" data-tchmi-unit-font-size="18" data-tchmi-unit-font-weight="Normal" data-tchmi-label-font-size="10" data-tchmi-value="%s%PLC1.Scaling_And_Conversions.Rotor_Actual_Current_Scaled%/s%">
+<script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
+[
+  {
+    "color": {
+      "color": "rgba(0, 128, 0, 1)"
+    },
+    "start": 0.0,
+    "end": 75.0
+  },
+  {
+    "color": {
+      "color": "rgba(255, 165, 0, 1)"
+    },
+    "start": 75.0,
+    "end": 90.0
+  },
+  {
+    "color": {
+      "color": "rgba(255, 0, 0, 1)"
+    },
+    "start": 90.0,
+    "end": 100.0
+  }
+]
+</script>
+<script data-tchmi-target-attribute="data-tchmi-value-format" type="application/json">
+{
+  "objectType": "Function",
+  "active": true,
+  "fn": "TcHmi.Functions.Beckhoff.GaugeValueFormatter",
+  "fnParams": [
+    {
+      "objectType": "StaticValue",
+      "valueType": "tchmi:general#/definitions/Number",
+      "value": 1.0
+    }
+  ]
+}
+</script>
+<script data-tchmi-target-attribute="data-tchmi-tick-definition" type="application/json">
+{
+  "mainTickRange": 20,
+  "subTickRange": 5
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div id="Feedroll_DC_Bus_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="false" data-tchmi-decimal-digits="2" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-max-value="10000" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="false" data-tchmi-value="%s%PLC1.Scaling_And_Conversions.Feedroll_DC_Bus_Voltage_Scaled%/s%" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-bottom="10" data-tchmi-right="10" data-tchmi-value-font-size="36" data-tchmi-value-horizontal-alignment="Center" data-tchmi-is-enabled="false">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="Rotor_DC_Bus_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="false" data-tchmi-decimal-digits="2" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-max-value="0" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="false" data-tchmi-value="%s%PLC1.Scaling_And_Conversions.Rotor_DC_Bus_Voltage_Scaled%/s%" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-bottom="10" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="36" data-tchmi-is-enabled="false">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="Rotor_DC_Bus_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="37" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="Rotor DC Bus Voltage" data-tchmi-top="364" data-tchmi-top-unit="px" data-tchmi-width="45" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-width-mode="Value" data-tchmi-text-font-size="16">
+</div>
+<div id="Feedroll_DC_Bus_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="37" data-tchmi-height-unit="px" data-tchmi-text="Feedroll DC Bus Voltage" data-tchmi-top="364" data-tchmi-top-unit="px" data-tchmi-width="45" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-width-mode="Value" data-tchmi-text-font-size="16" data-tchmi-right="0">
+</div>
 </div>
 </div>

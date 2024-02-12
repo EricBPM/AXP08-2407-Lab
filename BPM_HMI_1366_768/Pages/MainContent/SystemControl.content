@@ -1,6 +1,6 @@
 <div id="SystemControl" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="624" data-tchmi-width-unit="%" data-tchmi-height-unit="px" data-tchmi-width-mode="Parent" data-tchmi-min-width="400" data-tchmi-max-width="1146" data-tchmi-right="10" data-tchmi-bottom="10">
 
-<div id="SystemControlRegion" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="511" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width-mode="Parent" data-tchmi-min-width="100" data-tchmi-max-width="1126" data-tchmi-bottom="100" data-tchmi-right="10">
+<div id="SystemControlRegion" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="515" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-mode="Parent" data-tchmi-min-width="100" data-tchmi-max-width="1126" data-tchmi-bottom="100" data-tchmi-right="10" data-tchmi-scrolling="Auto">
 
 <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
 {
@@ -38,72 +38,6 @@
 </script>
 </div>
 <div id="SystemControl_Nav_Grid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-width="1124" data-tchmi-width-unit="px" data-tchmi-grid-column-index="0" data-tchmi-width-mode="Parent" data-tchmi-right="10" data-tchmi-left="10" data-tchmi-bottom="10" data-tchmi-max-width="1124" data-tchmi-min-width="350">
-<div id="Pelletizer_Content_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-text="Pelletizer" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-word-wrap="false" data-tchmi-left="10" data-tchmi-width-mode="Parent" data-tchmi-left-unit="px" data-tchmi-grid-column-index="1" data-tchmi-height-mode="Parent" data-tchmi-width-unit="%" data-tchmi-width="100" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%Pelletizer_Content_Btn::RenderedWidth%/ctrl%">
-<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
-{
-  "topLeft": 5.0,
-  "topRight": 5.0,
-  "bottomLeft": 5.0,
-  "bottomRight": 5.0,
-  "topLeftUnit": "px",
-  "topRightUnit": "px",
-  "bottomLeftUnit": "px",
-  "bottomRightUnit": "px"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "Pelletizer_Content_Btn.onPressed",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%SystemControlRegion::TargetContent%/ctrl%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/SystemControlSubPages/PelletizerControl.content"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%CurrentContentIcon::Src%/ctrl%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Path",
-          "value": "Imports/axp08-2310-lab.png"
-        },
-        "asyncWait": true
-      }
-    ]
-  },
-  {
-    "event": "Pelletizer_Content_Btn.onAttached",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%SystemControlRegion::TargetContent%/ctrl%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/SystemControlSubPages/PelletizerControl.content"
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]
-</script>
-
-
-
-
-</div>
 <div id="CurrentContentIcon" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-src="Imports/axp08-2310-lab.png" data-tchmi-height-mode="Value" data-tchmi-width-mode="Parent" data-tchmi-width-unit="%" data-tchmi-width="100" data-tchmi-left="32" data-tchmi-top="0" data-tchmi-right="32" data-tchmi-bottom="0" data-tchmi-left-unit="%" data-tchmi-right-unit="%">
 </div>
 
@@ -151,7 +85,8 @@
   }
 ]
 </script>
-<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="2" id="EVAK_Content_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-text="Air Knife" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-word-wrap="false" data-tchmi-width-mode="Parent" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Parent" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%EVAK_Content_Btn::RenderedWidth%/ctrl%">
+<div id="Pelletizer_Control_Content_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Pelletizer" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%Pelletizer_Control_Content_Btn::RenderedWidth%/ctrl%" data-tchmi-toggle-group="Control_ToggleGroup">
+
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 5.0,
@@ -168,7 +103,80 @@
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "EVAK_Content_Btn.onPressed",
+    "event": "Pelletizer_Control_Content_Btn.onAttached",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%SystemControlRegion::TargetContent%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/ContentPath",
+          "value": "Pages/SystemControlSubPages/PelletizerControl.content"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Pelletizer_Control_Content_Btn::ToggleState%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/ToggleState",
+          "value": "Active"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Pelletizer_Control_Content_Btn.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%SystemControlRegion::TargetContent%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/ContentPath",
+          "value": "Pages/SystemControlSubPages/PelletizerControl.content"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%CurrentContentIcon::Src%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Path",
+          "value": "Imports/axp08-2310-lab.png"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="AirKnife_Control_Content_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Air Knife" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%AirKnife_Control_Content_Btn::RenderedWidth%/ctrl%" data-tchmi-toggle-group="Control_ToggleGroup">
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 5.0,
+  "bottomRight": 5.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "AirKnife_Control_Content_Btn.onPressed",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -197,7 +205,7 @@
 ]
 </script>
 </div>
-<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="3" id="WBX_Content_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-text="Water Bath" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-word-wrap="false" data-tchmi-text-font-size="%ctrl%WBX_Content_Btn::RenderedWidth%/ctrl%" data-tchmi-width-mode="Parent" data-tchmi-left-unit="px" data-tchmi-left="10" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Parent" data-tchmi-text-font-size-unit="%">
+<div id="WaterBath_Control_Content_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-grid-column-index="3" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Water Bath" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%WaterBath_Control_Content_Btn::RenderedWidth%/ctrl%" data-tchmi-toggle-group="Control_ToggleGroup">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 5.0,
@@ -214,7 +222,7 @@
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "WBX_Content_Btn.onPressed",
+    "event": "WaterBath_Control_Content_Btn.onPressed",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -243,7 +251,7 @@
 ]
 </script>
 </div>
-<div data-tchmi-grid-row-index="0" id="EXTRUD_Content_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-text="Extruder" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-word-wrap="false" data-tchmi-text-font-size="%ctrl%EXTRUD_Content_Btn::RenderedWidth%/ctrl%" data-tchmi-width-mode="Parent" data-tchmi-grid-column-index="4" data-tchmi-left="11" data-tchmi-right="9" data-tchmi-bottom="10" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Parent" data-tchmi-text-font-size-unit="%">
+<div id="Extruder_Control_Content_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-grid-column-index="4" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Extruder" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%Extruder_Control_Content_Btn::RenderedWidth%/ctrl%" data-tchmi-toggle-group="Control_ToggleGroup">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 5.0,
@@ -260,7 +268,7 @@
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "EXTRUD_Content_Btn.onPressed",
+    "event": "Extruder_Control_Content_Btn.onPressed",
     "actions": [
       {
         "objectType": "WriteToSymbol",

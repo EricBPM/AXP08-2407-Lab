@@ -6,7 +6,7 @@
     "CACHEMAXAGE": "P30D",
     "CACHEMAXENTRYSIZE": 1048576,
     "CACHEMAXSIZE": 2097152,
-    "CERTIFICATE": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURzakNDQXBxZ0F3SUJBZ0lKQUliU3NBdWltSHhSTUEwR0NTcUdTSWIzRFFFQkN3VUFNRWd4Q3pBSkJnTlYKQkFZVEFrUkZNUnN3R1FZRFZRUUtEQkpVZDJsdVEwRlVJRWhOU1NCVFpYSjJaWEl4SERBYUJnTlZCQU1NRTBWdQpaMmx1WldWeWFXNW5NbEJEWDNKdmIzUXdJQmNOTWpRd01qQTFNVFl3T1RNMFdoZ1BNakEyTWpBMk1EVXhOakE1Ck16UmFNRU14Q3pBSkJnTlZCQVlUQWtSRk1Sc3dHUVlEVlFRS0RCSlVkMmx1UTBGVUlFaE5TU0JUWlhKMlpYSXgKRnpBVkJnTlZCQU1NRGtWdVoybHVaV1Z5YVc1bk1sQkRNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QQpNSUlCQ2dLQ0FRRUFzOW9WRE5YUm5kSVJ2a0Z6eTM5V2phdllKYWlvQlhYbHVDZW9RSFh5UDR5bnNDTGdtYndLClN5dit6dDJzWi9Qc3hFaHFVSFBaMFhpcURnOS9ZR2FvRC9Jdm5SSm1XaTZuT3IrYTYrcTdyWEs1dmZmaWdYZ1cKNTdTZURiNXZ5TmRXR0NOZG5WQ01HUTBoQXBZQ1diRDZVTXNWRC8wUmM5MXdZZ3IzeG1VSk9lSTNIa2ErK21URgpKVnBVajJZVUFUYWZycEtKSFZhckFqUm9ReXV1aHdVNzZOUWRIMndhMGY1TG1UUWlhakVic1NkbmJqUzFWMEtXCmNucjdTaGh2STEzR25XV29JeE5wcXl1K1RrZVVZcVN5SFFUNWROazM1RXM0eFlXS0Q4elhmQXYyaDlqZUZ4QlEKeENEQU96UXRNTnVUSnRsT2NUdUhUSCtGYnJWSlVZakd1d0lEQVFBQm80R2hNSUdlTUc4R0ExVWRFUVJvTUdhQwpDV3h2WTJGc2FHOXpkSWNFZndBQUFZY1FBQUFBQUFBQUFBQUFBQUFBQUFBQUFZSU9SVzVuYVc1bFpYSnBibWN5ClVFT0NHVVZ1WjJsdVpXVnlhVzVuTWxCRExsTkNRVmt1Ykc5allXeUhCQW9BQVN1SEVBQUFBQUFBQUFBQUFBQUEKQUFBQUFBRXdIUVlEVlIwT0JCWUVGTURJMTZPYWQ0YkVFMHpqT1R5ekFVSnM1UVBKTUF3R0ExVWRFd0VCL3dRQwpNQUF3RFFZSktvWklodmNOQVFFTEJRQURnZ0VCQUd1N2VveVdTaWROSGVpZ2Z6aFI5WUtMTm5jM1JoTmdwM09GCm1hbVJPeWtvTGVWMnk1ZklsTmdKUmNmQWJQODlUc0QyNTJmNElsRlEwUmlUa3B3eVZuMmExbnhVY0dFN1hVTysKZi81cTdUSUtkNno2TVU1WTArTzI4Sm4yRmdLRzZDSjRmVUJVOTVOZGZzU1BLdlFLalRMbENaZzJ5QzcrMXduago3amMrSG5XNDlKKyt0YmdLL1g0Y2RkUDRxbElQN3JaYXhvelpCUzJXZ0ZSV253N1BZN2tNWWJFYmxKRUl4L2E0CjRmRHhqUUJKRExjeHBWME45TUVIeGFaakltRzg5dDlwVU5mdTZxeitsTmpqWTJGRU9rWHdVaXN6RThWN2FGY1UKcDU4cUpQenV4bS9oaWdoWEV0T2gzdWpkR09qYjJKL2g2UjNIRWtVWWEwQkZTd1VtRnVZPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCi0tLS0tQkVHSU4gQ0VSVElGSUNBVEUtLS0tLQpNSUlEdWpDQ0FxS2dBd0lCQWdJSkFKOExiQ2M4Sjh5aE1BMEdDU3FHU0liM0RRRUJDd1VBTUVneEN6QUpCZ05WCkJBWVRBa1JGTVJzd0dRWURWUVFLREJKVWQybHVRMEZVSUVoTlNTQlRaWEoyWlhJeEhEQWFCZ05WQkFNTUUwVnUKWjJsdVpXVnlhVzVuTWxCRFgzSnZiM1F3SUJjTk1qUXdNakExTVRZd09UTTBXaGdQTWpBMk1qQTJNRFV4TmpBNQpNelJhTUVneEN6QUpCZ05WQkFZVEFrUkZNUnN3R1FZRFZRUUtEQkpVZDJsdVEwRlVJRWhOU1NCVFpYSjJaWEl4CkhEQWFCZ05WQkFNTUUwVnVaMmx1WldWeWFXNW5NbEJEWDNKdmIzUXdnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUEKQTRJQkR3QXdnZ0VLQW9JQkFRRGNPTUtKQnpxQUpIVW9qTklLSFRqWVZUWWJZc0tMaCt2QXo5REtQcTk1MWZkNgpsY1hpV09sb0dyaDJmTEVqVlpveXdQSWFGRWpUK2NvSlZweW5zdmhNZXhhYVhzUjhSR043OUZpd1hoTlEvSUtoCktoVGRITGcvQisxdkdRd2kxZ1FFbzNkRVNzSWw1ckF0aWNpcTR6RUNqcXVyOXBTUWNaYldCTWVmamRVTnk4bkgKNEVMOGJoa2x5VGFYMGhrSGNZRnkwTTJONnQvK0Jaekw1aWJCem1FbjJ0eDBoakorQjh5MHNDK3ZPclJYT3JyWgpWYzJVV3ByNlpvTWxaUzZmaEFsNCt5ZkpPTnl3Ky9rdUNrTk1yeGFGM1FGRDAwdXV6cmtUZmRFdnM0MjEzOG45CitnZ3I2Q2doNnFpdERRUEV6MWZTQjBKU0t3VUNoa0o5WHFnMmRqUFhBZ01CQUFHamdhUXdnYUV3YndZRFZSMFIKQkdnd1pvSUpiRzlqWVd4b2IzTjBod1IvQUFBQmh4QUFBQUFBQUFBQUFBQUFBQUFBQUFBQmdnNUZibWRwYm1WbApjbWx1WnpKUVE0SVpSVzVuYVc1bFpYSnBibWN5VUVNdVUwSkJXUzVzYjJOaGJJY0VDZ0FCSzRjUUFBQUFBQUFBCkFBQUFBQUFBQUFBQUFUQWRCZ05WSFE0RUZnUVVCRHRmejNtalI2MmZhY216ZU91eTMyUytNOVF3RHdZRFZSMFQKQVFIL0JBVXdBd0VCL3pBTkJna3Foa2lHOXcwQkFRc0ZBQU9DQVFFQWZudlhxTmw1Zm5aZ2VmaENwdmtRSTVKOApKbHM5ckxEWDBTazh1VjNVeDQzRW9qR0tDak5lQldqcGdEUWVEeGg5SEYzR2ExQmVNcGRlUGdYNVg2aXZZVitPCnNQWnRYR1QwNmNxK3JhcTFvdXZxbkNzUlJTNVVCazhEYnpNaXBaMGRTZHFGVVM3U0RTTVpSSS9yalZXMndvS2QKNG9EZDBFR1B1UDNPbllTRFRNU094YTlrM1pCbUlDU2poZEpyaGhNWThTUXN2Q1NJbXlmeHpPK05SWUpzQ2VLMApUNFFkVFFSVm9ndjI4WXRVaGU5YXV6K09uZE9iQTdObG1xejdDOG1vOVBBV2dlWFVLUks4ZVJxaTE0UXdBZnF0CmYxNUdNNlBPb1RmNlE4Zy92OEk0T3RQMTFQcU9ndWxobDh4Zjlvd1NkaGROSWxmT0RQZU1HKzJyWkJYR1N3PT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
+    "CERTIFICATE": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURzakNDQXBxZ0F3SUJBZ0lKQU9yNlpUWWE2R3IwTUEwR0NTcUdTSWIzRFFFQkN3VUFNRWd4Q3pBSkJnTlYKQkFZVEFrUkZNUnN3R1FZRFZRUUtEQkpVZDJsdVEwRlVJRWhOU1NCVFpYSjJaWEl4SERBYUJnTlZCQU1NRTBWdQpaMmx1WldWeWFXNW5NbEJEWDNKdmIzUXdJQmNOTWpRd01qRXlNVFkwTmpVMFdoZ1BNakEyTWpBMk1USXhOalEyCk5UUmFNRU14Q3pBSkJnTlZCQVlUQWtSRk1Sc3dHUVlEVlFRS0RCSlVkMmx1UTBGVUlFaE5TU0JUWlhKMlpYSXgKRnpBVkJnTlZCQU1NRGtWdVoybHVaV1Z5YVc1bk1sQkRNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QQpNSUlCQ2dLQ0FRRUFtUG5HalNEZnpMVy9nd01OYllhTnNXeEs1dXhyTjdPSlFhNzBzZ25NRU5kVDJTQ05GQmd1Cng3UC90cGZveFBaWUY3VXdHeE1TanlPS2llZkdUMUpqSDY3NTFQZ3VydW5ta1hGWXlLSXpuN0Y5emVidDBITjcKWmVDNHNqZVZjSU8xSzVUOHVqNzJXNTRUNFJNZytMNXRnWHpKcnl4b1lmblhZak5nbytkN3gxK3c5OU45RDJMagpKRndxM01TenVNVkoxVml0UGdJb0VUc3FzSkl3VjlvMTNtSVBxMkVOWDlpcXpPQkFsWTFZOFlDZDI1enpGenNnCkVlUlVMZ3RyTFVTSUx6OHNPMXZYZElzYWxRdTVwWG9idjBKOTdoM0MrOGlFY3ljTmVjMTNMYmVIVHkxMVJKdE8KQ0ViNEtsaFFDUCs4eDUydExSQ3MrN3BLdzhzN1JsaldCUUlEQVFBQm80R2hNSUdlTUc4R0ExVWRFUVJvTUdhQwpDV3h2WTJGc2FHOXpkSWNFZndBQUFZY1FBQUFBQUFBQUFBQUFBQUFBQUFBQUFZSU9SVzVuYVc1bFpYSnBibWN5ClVFT0NHVVZ1WjJsdVpXVnlhVzVuTWxCRExsTkNRVmt1Ykc5allXeUhCQW9BQVN1SEVBQUFBQUFBQUFBQUFBQUEKQUFBQUFBRXdIUVlEVlIwT0JCWUVGUE5aOHRNQXRCZzFtaDg1WktudmpEUGhJMmUvTUF3R0ExVWRFd0VCL3dRQwpNQUF3RFFZSktvWklodmNOQVFFTEJRQURnZ0VCQUhwTVNHVldCUmdxbU81QjBHWE9NdjFFalp0ZTBBOHFsdVNRCjJMemhhWnVJbmpBUEdiVFplTDF6RkpTTThKMHdnNlpkOEx2SzRaT1huR1p5ZTJFUTh1SUlNekhyWXNvc1VPaUcKbTFOd1V1cXNmNVZXb3NDb3FVZ0ZuWmZXSVRRaTVDRlpLb2IwVEo1ZjNTRkVsN2hTeHNnaldtZ2RQNSswMEpOMQpkMkVDVVRDZ29RK0dIMmFUSmV6ZThCWFUvWE5tZnpUNjFIbmZpMmNQb1JWRHFpbmZ1czZJS1Vwamg5dDdJaDVwCkdkWXV0SjlmYzErZWcwT3FRTWcxU0t0TFZudW5Tc21yeGFlUUpUS2lmYlRsUjdySS9sY2o5c3FMSHk0NVhhZHAKWDFJL2pWQytsSjdsSHlBQ2RtVW1IcVVGZHRKbStGN1BJdjRGODhIeVBINlpNL2s1ekhnPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCi0tLS0tQkVHSU4gQ0VSVElGSUNBVEUtLS0tLQpNSUlEdWpDQ0FxS2dBd0lCQWdJSkFPY2xYNFVtUUZBQU1BMEdDU3FHU0liM0RRRUJDd1VBTUVneEN6QUpCZ05WCkJBWVRBa1JGTVJzd0dRWURWUVFLREJKVWQybHVRMEZVSUVoTlNTQlRaWEoyWlhJeEhEQWFCZ05WQkFNTUUwVnUKWjJsdVpXVnlhVzVuTWxCRFgzSnZiM1F3SUJjTk1qUXdNakV5TVRZME5qVTBXaGdQTWpBMk1qQTJNVEl4TmpRMgpOVFJhTUVneEN6QUpCZ05WQkFZVEFrUkZNUnN3R1FZRFZRUUtEQkpVZDJsdVEwRlVJRWhOU1NCVFpYSjJaWEl4CkhEQWFCZ05WQkFNTUUwVnVaMmx1WldWeWFXNW5NbEJEWDNKdmIzUXdnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUEKQTRJQkR3QXdnZ0VLQW9JQkFRRHpVbzVYaEErNmZ5MFRUR1FOZXF2VDc4bzJtWHhjVTNLSDRzajY0S1pjNG14Lwo1TlE4bEVmWTVOYUl0ellFblBwOE5LbXBlVGU1SEVFUG9IU0hGQmxtcCt4enZ0Nmt3dms4YjZMNmJ6b25yblhKCmlBWjJPTSt2K0tSV1BKaFpod3MxZkZ3Wml4dnpVNmtVNzF2VjBiZjZENjg3QjFFRnVIdEg1Yk51NVJqL2ptWXEKdFFWd0ViNVJoRTlYL2FpMEZSMkRRUnpqVDZzYXlZcUhCbTVGZDVBeDI5M2xwZFh4QUVUUlVMUDBrZmFhTm9ONgpmSHdYL3hrOVhncUNhZmpCbWgzMkt2ZG9PSEo1Nm1uQTZzSDJPbkhNK3hIeUV6VnNaZENvYURUVEk0NnlBQ3RiCnRHOCtHRjk3Zm9wL09oVWV4K0UzNGZQUFRCRzZidHNCZHo0cy95UnhBZ01CQUFHamdhUXdnYUV3YndZRFZSMFIKQkdnd1pvSUpiRzlqWVd4b2IzTjBod1IvQUFBQmh4QUFBQUFBQUFBQUFBQUFBQUFBQUFBQmdnNUZibWRwYm1WbApjbWx1WnpKUVE0SVpSVzVuYVc1bFpYSnBibWN5VUVNdVUwSkJXUzVzYjJOaGJJY0VDZ0FCSzRjUUFBQUFBQUFBCkFBQUFBQUFBQUFBQUFUQWRCZ05WSFE0RUZnUVVIbDVHa05hdmlLMVR0REwwNys0YmNydDgzVWd3RHdZRFZSMFQKQVFIL0JBVXdBd0VCL3pBTkJna3Foa2lHOXcwQkFRc0ZBQU9DQVFFQUdVOW9HNWEwbzBRNjNGSFhuN1F4Z0JsSQoxTlZTd1dma05qUnJXQVVBMW1Gbm1QVDBEZytyS1BWbFM3N1l2cUtoTnhEY0Q5ZjVSMlR3Q1NTby9FelZjOHlyCndjQkZkOTlqdTlZZlp4YkNsQXd6cXo3d2s5NDNrV1pXY2VLNjZuOVlaZ3pFLzFnVzRVUHVuYVQ4U2MvNWMwQXgKNERtNHN2VUdwRFBMMWgrdVJGOURnQ3pHZW5OVG01dWxRcVducndCWlhpcktnU0x4ODlnWlVOcVc4SG5GZkpLWQp6TjNLb2hkb2NiMkNmWmM1NytmREhFOWx2dXNoNHFlemYvMks1WlpISmJrNG40Q1FFSkwrWW82UEpBQW1FblpDClh0cVc4UWwyWmE5aElGUWJUcWdneEhWeVoreHpuSWEzN1FTSDljUW5kQk1tVHkrcmhEdnpLdDJiQ2t1V0RnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
     "CERTIFICATEEXPIRATION": "P14000D",
     "CHECKSUMENABLED": true,
     "CHUNKSIZE": 1048576,
@@ -62,6 +62,13 @@
             "REQUIRED": true,
             "STARTUPTYPE": 0
         },
+        "TcHmiSqliteHistorize": {
+            "ENABLED": true,
+            "NAME": "TcHmiSqliteHistorize",
+            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.SqliteHistorize.19.0.120\\runtimes\\win-x64\\native\\",
+            "REQUIRED": false,
+            "STARTUPTYPE": 1
+        },
         "TcHmiSqliteLogger": {
             "ENABLED": true,
             "NAME": "TcHmiSqliteLogger",
@@ -103,7 +110,7 @@
     "HTTP_FLOODPROTECTION": 10,
     "INITTIMEOUT": "PT10S",
     "KEEP_ALIVE": "PT40S",
-    "KEY": "LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2d0lCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktrd2dnU2xBZ0VBQW9JQkFRQ3oyaFVNMWRHZDBoRysKUVhQTGYxYU5xOWdscUtnRmRlVzRKNmhBZGZJL2pLZXdJdUNadkFwTEsvN08zYXhuOCt6RVNHcFFjOW5SZUtvTwpEMzlnWnFnUDhpK2RFbVphTHFjNnY1cnI2cnV0Y3JtOTkrS0JlQmJudEo0TnZtL0kxMVlZSTEyZFVJd1pEU0VDCmxnSlpzUHBReXhVUC9SRnozWEJpQ3ZmR1pRazU0amNlUnI3NlpNVWxXbFNQWmhRQk5wK3Vrb2tkVnFzQ05HaEQKSzY2SEJUdm8xQjBmYkJyUi9rdVpOQ0pxTVJ1eEoyZHVOTFZYUXBaeWV2dEtHRzhqWGNhZFphZ2pFMm1ySzc1TwpSNVJpcExJZEJQbDAyVGZrU3pqRmhZb1B6TmQ4Qy9hSDJONFhFRkRFSU1BN05DMHcyNU1tMlU1eE80ZE1mNFZ1CnRVbFJpTWE3QWdNQkFBRUNnZ0VCQUtGamJBcEZnTUVuTlliTmd4UXo0ejVqMnlVSDhDWmVRbEo3TzY4RVorcUEKMUNUcFZ6UjlHWnVWRWlVZHBFendCU0dwZmNWT0FFTEpEWWhxZmJuS3hMcnliNmw2VG1CVWh2bmY0Q3dkU21aOQprWkdYZENrTDB6bit5T202WHVNUjRJN3VoVjNhWHExSUs3di9Vb0tibmpPTDJRMnM0TkZnL3l6cmZLWUtHanBXCmRDdFFXZkdnL2FpUTA0Rnc0alQ0R2VmOElKdnJsS2lrUllGUUhnRDVQTytXMmsveFNwVFNiQm1jMElVU0MwNVYKQm1pQzZLOFprbDZkdGlMajVidDFuc1ZFOFRLaGZRVGNNMFVCRkRmNE5VMDRxeU8rSklGNHBZbXBGNUtjMGNiYwpjcUpENiszYjZXNEEzRktTU0NPblUvQmorTGlDUjEvMDhhR1pUSDIySTZFQ2dZRUEzU2pFdnRkN0k4Y1lwR1pICnB6ekR4SC9hK3hIMXJ5OTJjUDZHVHRsSElySWdJL3c5QVZSdFdWV1lFUkJ4dlljR0d1aUMrTFNwaDVGa25Ca3cKVkllUEdHUmtnaVBJelMyYUhKWXA4aXBpd1lmUThDMUx5dklaeWk2Wm1zc1ZIZUJySzRnV0szSTFzNEJVaFNxRQplM0VlZlh0QVMwdlo0TlNaZkV5VXpQN1BmZ3NDZ1lFQTBDOW8vK3hVWnIwUm5lY1V2SWlsRDR5ekkyVFdpMjgrCmZvQ3AyZ2U1VS9JMVUwT3Zqbmw3cGFkNE5PR0JJbmNCQWtsellOSHVuc0I5dis5K0swMFZ0V3hTK3RlN2FPSWUKbmxsYUppN2FZenlTQjlkWXFrdXUxZGoxbWhBSDIrM1FMSTEvcEdmd0Rtb3BBSVhzMEJHRWpyRDkxbldwTGpXUwo0RmFaWXpidE9CRUNnWUVBdXp3VXRXMUF0MTJMbzBOa1RsWEhkOGkyMy9Db2k1UW5OaXFHRXFNbzhsclRreU90CmtqNmtCUW5PSUVSSHh5bFZKZHJMWnp1c2V6WEFjOWR2YjJFRTZLVzE0ZWZoekxOYTBmRGZ1a0hnTWZDR0Y1Q0IKcG1PcEtkNmg5TWNTTGFVZGxsRTBVN3Z4Y3ZLbW04Y1BPbUxlYVdXN1hRUHVoY1gzMjZBS0tqTmYvMWtDZ1lFQQpsd3d2QkxDMXRDMHQ0UUZPZkZRd1hvM1pVNjdRTXk2dGl4OVRIVXhKWE96NVg4WldVK3MwbVVaZTR3OVNvR3p6Cm9ITW1jWE1mekxNaENlZDhCWExTYzJWNjkyRWJLc2dWS3hMdFk1TFBCUDFuZnFUeVFlelRsM2pwQ2JUajN1QTMKRUh4QnhrbGJWVG9WTWJuNXppVkhwamdvbERlZVhsYWtrSHlFb2dXeUsrRUNnWUE4Wjl1amxVSXZ1QVppZVl3RQp6amc2cUNTMHlldm8za0I3RXk1UzRiNXJoaktwd0pLSkNvYTVGakx2U0F3MFBQUVBpZDJJSFFKRXFFdnVsQmlXCjJzV2N5QjNQUVp4MSswUEp3cnBGRXZFd21IV0JhL3o4UXQzdEtNVTRCcmt3WEd4dC9lVmd4QURQQVBqbDhSb0QKeGM3alROdHBlTlJvM2RlVnFzTmlTeVJhbnc9PQotLS0tLUVORCBQUklWQVRFIEtFWS0tLS0tCg==",
+    "KEY": "LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2UUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktjd2dnU2pBZ0VBQW9JQkFRQ1krY2FOSU4vTXRiK0QKQXcxdGhvMnhiRXJtN0dzM3M0bEJydlN5Q2N3UTExUFpJSTBVR0M3SHMvKzJsK2pFOWxnWHRUQWJFeEtQSTRxSgo1OFpQVW1NZnJ2blUrQzZ1NmVhUmNWaklvak9mc1gzTjV1M1FjM3RsNExpeU41VndnN1VybFB5NlB2WmJuaFBoCkV5RDR2bTJCZk1tdkxHaGgrZGRpTTJDajUzdkhYN0QzMDMwUFl1TWtYQ3JjeExPNHhVblZXSzArQWlnUk95cXcKa2pCWDJqWGVZZytyWVExZjJLck00RUNWalZqeGdKM2JuUE1YT3lBUjVGUXVDMnN0UklndlB5dzdXOWQwaXhxVgpDN21sZWh1L1FuM3VIY0w3eUlSekp3MTV6WGN0dDRkUExYVkVtMDRJUnZncVdGQUkvN3pIbmEwdEVLejd1a3JECnl6dEdXTllGQWdNQkFBRUNnZ0VBTVhwUUl1Tm9IMkVGZ1UxaWNYTmNydThVeHQzZXk5UlE1Nks3MkQzYzkvRjkKV0RQMERYVEk1S1N1WjVONG9RUUFlQ0tOWGFSc2swbHVqSzRmY1JaM293N0lGWDcwTW5US3MyNFN4a25ZSXFXWQp5QmtTQUNMcDNZaXlsRW53RnNVeXV0YmtheVRrTDd2UU9ETWtyZStCb2FrSDNwV2hhVmNTdDl0Z1BZTW9nTkpOCmN3QndHdC8xd21MMTFyTUNEQkFpQVRIaW5JVmF2RW5ZRGMydmwzaFBzYlJoYmV3ZHRpSkhpeW0rdFlxRkRBRXkKK1J0OHNCa241OVgrRE9YczJuemtiQk05SmczN1dlTnQyc2pSOUp4VnVXSGdiRkVWdmVFSWI4QklQMGZYYmF3bwpLOG5ZTnBuUkZnUUZTYko3ZHI0OE5jL0M3Ykd0S3B1cmNnOFI3RkNBb1FLQmdRREtJSk5BRS80Q3BQSXJkSGlPCkhITEx6Z29ZZkZVdEtIV090SGIzQml2S0ZuT2NwQmlmRU5vaGxpSlM0ekd6c0s4K1UrRTg4R2pUd1VpVm9tU0MKaU9HVTZmb1F4dC9iUHBjNFdkejJrUUozdkl5ckFzZmpWVHpOZi9aeGZyWVpYNFJwVmtrZGxpNmFkN25yOUdMTwpzZHZaNEtLMHY5c1ZNZHhoMkhhNlczQUFHUUtCZ1FEQnY0VklPL0lmdmVGd00wZk5YS0FBdVUxQlF4aGVCKytsClZqZWpBUzBQYzJQcERobVdncTlLRjloUmxXZitUZEp2ckhkcTVFUVo4T2ozbVhUZEtmQm1PTG5SZzlVMDNjcTYKVUVMaXdORTVvMkMzNW5scWc3R1kwZXV2VWxrTHI3NzhHOFZLdy9VMnJUSmVXZUVhM04vYkxCeElUTEMxbW9uUQoxelFLVTc4U3pRS0JnQU1udFFTNEN5d0JaU0pXaEJjN3pITHYrV3BlYm5udytyektobHpleE1vM3hZQTVjNFR3CkgyZU16MlpaMDRuSmhVTEV6bXhFR0c3TndwTkxZS1JFL0xoMVdvanVnY29MVlJMMUhDVGhLSmV6NHNJOG5lQW4Ka1habnUvSVRsMFlZSHBvQ1ZjdlhiMHpMOTZQK1FaaVdZQ2NyZ1g2dXkvMnR0SkgyYmd3RXAxL3BBb0dCQUpvYQptb2wwM01Xd2d3SjZWMDhac0U1REZSYW1wbGdNV2VtWkpSR3JHc3NpVGNLT0szNFNuaGdCMVZZMnp3dHZuTVNrCldpdVVPaktqOHJrVnZ1VTJ1WGFsQWUrS3UyZWNUZVpaZG9uak1jZDFrclZUUlJtYWZBVUFXMFVNNjdTbTZmS2UKcUJNcXYvem9UNXJLUklqWVM5bUpRVW1rYmgxVU9PLzZhL01XMzNDMUFvR0FIbldpQjd4VFZUM21SM3NDRHljOApBejBpSmEyMUhkM2FRSFltZHU0ZnVGSXlCUzc2WHE1Y1lpYUtLcWxTOHM0cUpMM1dBZ0tUMUxoTHhsMmhvV2p6CjU3MWRhTy9CZHB3bkd5cHp2dm14K2JXQkpuQ3llbE5WQXAvVHJMMHFmRWxHc3NvaTh5cVlGSDJsVFpSWkRqa3UKV09lVFptMGdiU3dmY0FYbVBzV2hjTXM9Ci0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0K",
     "KEYPASSWORD": "",
     "LOCKOUT_PROTECTION_CLIENT_CERTIFICATE": true,
     "MAXCONNECTIONSPERCLIENT": 32,
@@ -455,8 +462,8 @@
     "REMOTESERVERS_CERTIFICATES": [],
     "REQUIREAUTH": 0,
     "SAMESITE_ATTRIBUTE": 2,
-    "SELFSIGNEDROOTCA": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUR1akNDQXFLZ0F3SUJBZ0lKQUo4TGJDYzhKOHloTUEwR0NTcUdTSWIzRFFFQkN3VUFNRWd4Q3pBSkJnTlYKQkFZVEFrUkZNUnN3R1FZRFZRUUtEQkpVZDJsdVEwRlVJRWhOU1NCVFpYSjJaWEl4SERBYUJnTlZCQU1NRTBWdQpaMmx1WldWeWFXNW5NbEJEWDNKdmIzUXdJQmNOTWpRd01qQTFNVFl3T1RNMFdoZ1BNakEyTWpBMk1EVXhOakE1Ck16UmFNRWd4Q3pBSkJnTlZCQVlUQWtSRk1Sc3dHUVlEVlFRS0RCSlVkMmx1UTBGVUlFaE5TU0JUWlhKMlpYSXgKSERBYUJnTlZCQU1NRTBWdVoybHVaV1Z5YVc1bk1sQkRYM0p2YjNRd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQQpBNElCRHdBd2dnRUtBb0lCQVFEY09NS0pCenFBSkhVb2pOSUtIVGpZVlRZYllzS0xoK3ZBejlES1BxOTUxZmQ2CmxjWGlXT2xvR3JoMmZMRWpWWm95d1BJYUZFalQrY29KVnB5bnN2aE1leGFhWHNSOFJHTjc5Rml3WGhOUS9JS2gKS2hUZEhMZy9CKzF2R1F3aTFnUUVvM2RFU3NJbDVyQXRpY2lxNHpFQ2pxdXI5cFNRY1piV0JNZWZqZFVOeThuSAo0RUw4YmhrbHlUYVgwaGtIY1lGeTBNMk42dC8rQlp6TDVpYkJ6bUVuMnR4MGhqSitCOHkwc0Mrdk9yUlhPcnJaClZjMlVXcHI2Wm9NbFpTNmZoQWw0K3lmSk9OeXcrL2t1Q2tOTXJ4YUYzUUZEMDB1dXpya1RmZEV2czQyMTM4bjkKK2dncjZDZ2g2cWl0RFFQRXoxZlNCMEpTS3dVQ2hrSjlYcWcyZGpQWEFnTUJBQUdqZ2FRd2dhRXdid1lEVlIwUgpCR2d3Wm9JSmJHOWpZV3hvYjNOMGh3Ui9BQUFCaHhBQUFBQUFBQUFBQUFBQUFBQUFBQUFCZ2c1RmJtZHBibVZsCmNtbHVaekpRUTRJWlJXNW5hVzVsWlhKcGJtY3lVRU11VTBKQldTNXNiMk5oYkljRUNnQUJLNGNRQUFBQUFBQUEKQUFBQUFBQUFBQUFBQVRBZEJnTlZIUTRFRmdRVUJEdGZ6M21qUjYyZmFjbXplT3V5MzJTK005UXdEd1lEVlIwVApBUUgvQkFVd0F3RUIvekFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBZm52WHFObDVmblpnZWZoQ3B2a1FJNUo4CkpsczlyTERYMFNrOHVWM1V4NDNFb2pHS0NqTmVCV2pwZ0RRZUR4aDlIRjNHYTFCZU1wZGVQZ1g1WDZpdllWK08Kc1BadFhHVDA2Y3ErcmFxMW91dnFuQ3NSUlM1VUJrOERiek1pcFowZFNkcUZVUzdTRFNNWlJJL3JqVlcyd29LZAo0b0RkMEVHUHVQM09uWVNEVE1TT3hhOWszWkJtSUNTamhkSnJoaE1ZOFNRc3ZDU0lteWZ4ek8rTlJZSnNDZUswClQ0UWRUUVJWb2d2MjhZdFVoZTlhdXorT25kT2JBN05sbXF6N0M4bW85UEFXZ2VYVUtSSzhlUnFpMTRRd0FmcXQKZjE1R002UE9vVGY2UThnL3Y4STRPdFAxMVBxT2d1bGhsOHhmOW93U2RoZE5JbGZPRFBlTUcrMnJaQlhHU3c9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
-    "SELFSIGNEDROOTCAKEY": "LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2d0lCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktrd2dnU2xBZ0VBQW9JQkFRQ3oyaFVNMWRHZDBoRysKUVhQTGYxYU5xOWdscUtnRmRlVzRKNmhBZGZJL2pLZXdJdUNadkFwTEsvN08zYXhuOCt6RVNHcFFjOW5SZUtvTwpEMzlnWnFnUDhpK2RFbVphTHFjNnY1cnI2cnV0Y3JtOTkrS0JlQmJudEo0TnZtL0kxMVlZSTEyZFVJd1pEU0VDCmxnSlpzUHBReXhVUC9SRnozWEJpQ3ZmR1pRazU0amNlUnI3NlpNVWxXbFNQWmhRQk5wK3Vrb2tkVnFzQ05HaEQKSzY2SEJUdm8xQjBmYkJyUi9rdVpOQ0pxTVJ1eEoyZHVOTFZYUXBaeWV2dEtHRzhqWGNhZFphZ2pFMm1ySzc1TwpSNVJpcExJZEJQbDAyVGZrU3pqRmhZb1B6TmQ4Qy9hSDJONFhFRkRFSU1BN05DMHcyNU1tMlU1eE80ZE1mNFZ1CnRVbFJpTWE3QWdNQkFBRUNnZ0VCQUtGamJBcEZnTUVuTlliTmd4UXo0ejVqMnlVSDhDWmVRbEo3TzY4RVorcUEKMUNUcFZ6UjlHWnVWRWlVZHBFendCU0dwZmNWT0FFTEpEWWhxZmJuS3hMcnliNmw2VG1CVWh2bmY0Q3dkU21aOQprWkdYZENrTDB6bit5T202WHVNUjRJN3VoVjNhWHExSUs3di9Vb0tibmpPTDJRMnM0TkZnL3l6cmZLWUtHanBXCmRDdFFXZkdnL2FpUTA0Rnc0alQ0R2VmOElKdnJsS2lrUllGUUhnRDVQTytXMmsveFNwVFNiQm1jMElVU0MwNVYKQm1pQzZLOFprbDZkdGlMajVidDFuc1ZFOFRLaGZRVGNNMFVCRkRmNE5VMDRxeU8rSklGNHBZbXBGNUtjMGNiYwpjcUpENiszYjZXNEEzRktTU0NPblUvQmorTGlDUjEvMDhhR1pUSDIySTZFQ2dZRUEzU2pFdnRkN0k4Y1lwR1pICnB6ekR4SC9hK3hIMXJ5OTJjUDZHVHRsSElySWdJL3c5QVZSdFdWV1lFUkJ4dlljR0d1aUMrTFNwaDVGa25Ca3cKVkllUEdHUmtnaVBJelMyYUhKWXA4aXBpd1lmUThDMUx5dklaeWk2Wm1zc1ZIZUJySzRnV0szSTFzNEJVaFNxRQplM0VlZlh0QVMwdlo0TlNaZkV5VXpQN1BmZ3NDZ1lFQTBDOW8vK3hVWnIwUm5lY1V2SWlsRDR5ekkyVFdpMjgrCmZvQ3AyZ2U1VS9JMVUwT3Zqbmw3cGFkNE5PR0JJbmNCQWtsellOSHVuc0I5dis5K0swMFZ0V3hTK3RlN2FPSWUKbmxsYUppN2FZenlTQjlkWXFrdXUxZGoxbWhBSDIrM1FMSTEvcEdmd0Rtb3BBSVhzMEJHRWpyRDkxbldwTGpXUwo0RmFaWXpidE9CRUNnWUVBdXp3VXRXMUF0MTJMbzBOa1RsWEhkOGkyMy9Db2k1UW5OaXFHRXFNbzhsclRreU90CmtqNmtCUW5PSUVSSHh5bFZKZHJMWnp1c2V6WEFjOWR2YjJFRTZLVzE0ZWZoekxOYTBmRGZ1a0hnTWZDR0Y1Q0IKcG1PcEtkNmg5TWNTTGFVZGxsRTBVN3Z4Y3ZLbW04Y1BPbUxlYVdXN1hRUHVoY1gzMjZBS0tqTmYvMWtDZ1lFQQpsd3d2QkxDMXRDMHQ0UUZPZkZRd1hvM1pVNjdRTXk2dGl4OVRIVXhKWE96NVg4WldVK3MwbVVaZTR3OVNvR3p6Cm9ITW1jWE1mekxNaENlZDhCWExTYzJWNjkyRWJLc2dWS3hMdFk1TFBCUDFuZnFUeVFlelRsM2pwQ2JUajN1QTMKRUh4QnhrbGJWVG9WTWJuNXppVkhwamdvbERlZVhsYWtrSHlFb2dXeUsrRUNnWUE4Wjl1amxVSXZ1QVppZVl3RQp6amc2cUNTMHlldm8za0I3RXk1UzRiNXJoaktwd0pLSkNvYTVGakx2U0F3MFBQUVBpZDJJSFFKRXFFdnVsQmlXCjJzV2N5QjNQUVp4MSswUEp3cnBGRXZFd21IV0JhL3o4UXQzdEtNVTRCcmt3WEd4dC9lVmd4QURQQVBqbDhSb0QKeGM3alROdHBlTlJvM2RlVnFzTmlTeVJhbnc9PQotLS0tLUVORCBQUklWQVRFIEtFWS0tLS0tCg==",
+    "SELFSIGNEDROOTCA": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUR1akNDQXFLZ0F3SUJBZ0lKQU9jbFg0VW1RRkFBTUEwR0NTcUdTSWIzRFFFQkN3VUFNRWd4Q3pBSkJnTlYKQkFZVEFrUkZNUnN3R1FZRFZRUUtEQkpVZDJsdVEwRlVJRWhOU1NCVFpYSjJaWEl4SERBYUJnTlZCQU1NRTBWdQpaMmx1WldWeWFXNW5NbEJEWDNKdmIzUXdJQmNOTWpRd01qRXlNVFkwTmpVMFdoZ1BNakEyTWpBMk1USXhOalEyCk5UUmFNRWd4Q3pBSkJnTlZCQVlUQWtSRk1Sc3dHUVlEVlFRS0RCSlVkMmx1UTBGVUlFaE5TU0JUWlhKMlpYSXgKSERBYUJnTlZCQU1NRTBWdVoybHVaV1Z5YVc1bk1sQkRYM0p2YjNRd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQQpBNElCRHdBd2dnRUtBb0lCQVFEelVvNVhoQSs2ZnkwVFRHUU5lcXZUNzhvMm1YeGNVM0tINHNqNjRLWmM0bXgvCjVOUThsRWZZNU5hSXR6WUVuUHA4TkttcGVUZTVIRUVQb0hTSEZCbG1wK3h6dnQ2a3d2azhiNkw2YnpvbnJuWEoKaUFaMk9NK3YrS1JXUEpoWmh3czFmRndaaXh2elU2a1U3MXZWMGJmNkQ2ODdCMUVGdUh0SDViTnU1Umovam1ZcQp0UVZ3RWI1UmhFOVgvYWkwRlIyRFFSempUNnNheVlxSEJtNUZkNUF4MjkzbHBkWHhBRVRSVUxQMGtmYWFOb042CmZId1gveGs5WGdxQ2FmakJtaDMyS3Zkb09ISjU2bW5BNnNIMk9uSE0reEh5RXpWc1pkQ29hRFRUSTQ2eUFDdGIKdEc4K0dGOTdmb3AvT2hVZXgrRTM0ZlBQVEJHNmJ0c0JkejRzL3lSeEFnTUJBQUdqZ2FRd2dhRXdid1lEVlIwUgpCR2d3Wm9JSmJHOWpZV3hvYjNOMGh3Ui9BQUFCaHhBQUFBQUFBQUFBQUFBQUFBQUFBQUFCZ2c1RmJtZHBibVZsCmNtbHVaekpRUTRJWlJXNW5hVzVsWlhKcGJtY3lVRU11VTBKQldTNXNiMk5oYkljRUNnQUJLNGNRQUFBQUFBQUEKQUFBQUFBQUFBQUFBQVRBZEJnTlZIUTRFRmdRVUhsNUdrTmF2aUsxVHRETDA3KzRiY3J0ODNVZ3dEd1lEVlIwVApBUUgvQkFVd0F3RUIvekFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBR1U5b0c1YTBvMFE2M0ZIWG43UXhnQmxJCjFOVlN3V2ZrTmpScldBVUExbUZubVBUMERnK3JLUFZsUzc3WXZxS2hOeERjRDlmNVIyVHdDU1NvL0V6VmM4eXIKd2NCRmQ5OWp1OVlmWnhiQ2xBd3pxejd3azk0M2tXWldjZUs2Nm45WVpnekUvMWdXNFVQdW5hVDhTYy81YzBBeAo0RG00c3ZVR3BEUEwxaCt1UkY5RGdDekdlbk5UbTV1bFFxV25yd0JaWGlyS2dTTHg4OWdaVU5xVzhIbkZmSktZCnpOM0tvaGRvY2IyQ2ZaYzU3K2ZESEU5bHZ1c2g0cWV6Zi8ySzVaWkhKYms0bjRDUUVKTCtZbzZQSkFBbUVuWkMKWHRxVzhRbDJaYTloSUZRYlRxZ2d4SFZ5Wit4em5JYTM3UVNIOWNRbmRCTW1UeStyaER2ekt0MmJDa3VXRGc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+    "SELFSIGNEDROOTCAKEY": "LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2UUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktjd2dnU2pBZ0VBQW9JQkFRQ1krY2FOSU4vTXRiK0QKQXcxdGhvMnhiRXJtN0dzM3M0bEJydlN5Q2N3UTExUFpJSTBVR0M3SHMvKzJsK2pFOWxnWHRUQWJFeEtQSTRxSgo1OFpQVW1NZnJ2blUrQzZ1NmVhUmNWaklvak9mc1gzTjV1M1FjM3RsNExpeU41VndnN1VybFB5NlB2WmJuaFBoCkV5RDR2bTJCZk1tdkxHaGgrZGRpTTJDajUzdkhYN0QzMDMwUFl1TWtYQ3JjeExPNHhVblZXSzArQWlnUk95cXcKa2pCWDJqWGVZZytyWVExZjJLck00RUNWalZqeGdKM2JuUE1YT3lBUjVGUXVDMnN0UklndlB5dzdXOWQwaXhxVgpDN21sZWh1L1FuM3VIY0w3eUlSekp3MTV6WGN0dDRkUExYVkVtMDRJUnZncVdGQUkvN3pIbmEwdEVLejd1a3JECnl6dEdXTllGQWdNQkFBRUNnZ0VBTVhwUUl1Tm9IMkVGZ1UxaWNYTmNydThVeHQzZXk5UlE1Nks3MkQzYzkvRjkKV0RQMERYVEk1S1N1WjVONG9RUUFlQ0tOWGFSc2swbHVqSzRmY1JaM293N0lGWDcwTW5US3MyNFN4a25ZSXFXWQp5QmtTQUNMcDNZaXlsRW53RnNVeXV0YmtheVRrTDd2UU9ETWtyZStCb2FrSDNwV2hhVmNTdDl0Z1BZTW9nTkpOCmN3QndHdC8xd21MMTFyTUNEQkFpQVRIaW5JVmF2RW5ZRGMydmwzaFBzYlJoYmV3ZHRpSkhpeW0rdFlxRkRBRXkKK1J0OHNCa241OVgrRE9YczJuemtiQk05SmczN1dlTnQyc2pSOUp4VnVXSGdiRkVWdmVFSWI4QklQMGZYYmF3bwpLOG5ZTnBuUkZnUUZTYko3ZHI0OE5jL0M3Ykd0S3B1cmNnOFI3RkNBb1FLQmdRREtJSk5BRS80Q3BQSXJkSGlPCkhITEx6Z29ZZkZVdEtIV090SGIzQml2S0ZuT2NwQmlmRU5vaGxpSlM0ekd6c0s4K1UrRTg4R2pUd1VpVm9tU0MKaU9HVTZmb1F4dC9iUHBjNFdkejJrUUozdkl5ckFzZmpWVHpOZi9aeGZyWVpYNFJwVmtrZGxpNmFkN25yOUdMTwpzZHZaNEtLMHY5c1ZNZHhoMkhhNlczQUFHUUtCZ1FEQnY0VklPL0lmdmVGd00wZk5YS0FBdVUxQlF4aGVCKytsClZqZWpBUzBQYzJQcERobVdncTlLRjloUmxXZitUZEp2ckhkcTVFUVo4T2ozbVhUZEtmQm1PTG5SZzlVMDNjcTYKVUVMaXdORTVvMkMzNW5scWc3R1kwZXV2VWxrTHI3NzhHOFZLdy9VMnJUSmVXZUVhM04vYkxCeElUTEMxbW9uUQoxelFLVTc4U3pRS0JnQU1udFFTNEN5d0JaU0pXaEJjN3pITHYrV3BlYm5udytyektobHpleE1vM3hZQTVjNFR3CkgyZU16MlpaMDRuSmhVTEV6bXhFR0c3TndwTkxZS1JFL0xoMVdvanVnY29MVlJMMUhDVGhLSmV6NHNJOG5lQW4Ka1habnUvSVRsMFlZSHBvQ1ZjdlhiMHpMOTZQK1FaaVdZQ2NyZ1g2dXkvMnR0SkgyYmd3RXAxL3BBb0dCQUpvYQptb2wwM01Xd2d3SjZWMDhac0U1REZSYW1wbGdNV2VtWkpSR3JHc3NpVGNLT0szNFNuaGdCMVZZMnp3dHZuTVNrCldpdVVPaktqOHJrVnZ1VTJ1WGFsQWUrS3UyZWNUZVpaZG9uak1jZDFrclZUUlJtYWZBVUFXMFVNNjdTbTZmS2UKcUJNcXYvem9UNXJLUklqWVM5bUpRVW1rYmgxVU9PLzZhL01XMzNDMUFvR0FIbldpQjd4VFZUM21SM3NDRHljOApBejBpSmEyMUhkM2FRSFltZHU0ZnVGSXlCUzc2WHE1Y1lpYUtLcWxTOHM0cUpMM1dBZ0tUMUxoTHhsMmhvV2p6CjU3MWRhTy9CZHB3bkd5cHp2dm14K2JXQkpuQ3llbE5WQXAvVHJMMHFmRWxHc3NvaTh5cVlGSDJsVFpSWkRqa3UKV09lVFptMGdiU3dmY0FYbVBzV2hjTXM9Ci0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0K",
     "SESSIONSTORAGE": {},
     "SHOW_CONFIGURATION_HINTS": true,
     "SHOW_MAINTENANCE_MODE": true,
@@ -2969,11 +2976,61 @@
             },
             "USEMAPPING": true
         },
-        "PLC1.Torque_Scaling.Rotor_Actual_Torque_Scaled": {
+        "PLC1.Scaling_And_Conversions.Feedroll_Actual_Current_Scaled": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
             "DYNAMIC": true,
-            "MAPPING": "PLC1::Torque_Scaling::Rotor_Actual_Torque_Scaled",
+            "MAPPING": "PLC1::Scaling_And_Conversions::Feedroll_Actual_Current_Scaled",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scaling_And_Conversions.Feedroll_Actual_Torque_Scaled": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Scaling_And_Conversions::Feedroll_Actual_Torque_Scaled",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scaling_And_Conversions.Feedroll_DC_Bus_Voltage_Scaled": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Scaling_And_Conversions::Feedroll_DC_Bus_Voltage_Scaled",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scaling_And_Conversions.Rotor_Actual_Current_Scaled": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Scaling_And_Conversions::Rotor_Actual_Current_Scaled",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scaling_And_Conversions.Rotor_Actual_Torque_Scaled": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Scaling_And_Conversions::Rotor_Actual_Torque_Scaled",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scaling_And_Conversions.Rotor_DC_Bus_Voltage_Scaled": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Scaling_And_Conversions::Rotor_DC_Bus_Voltage_Scaled",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/REAL"
             },
@@ -4322,6 +4379,271 @@
             "SCHEMA": {},
             "USEMAPPING": true
         },
+        "TcHmiSqliteHistorize.Config": {
+            "ACCESS": 0,
+            "DOMAIN": "TcHmiSqliteHistorize",
+            "DYNAMIC": false,
+            "HIDDEN": true,
+            "MAPPING": "Config",
+            "OPTIONS": {},
+            "SCHEMA": {},
+            "USEMAPPING": true
+        },
+        "TcHmiSqliteHistorize.DeleteDatabaseEntries": {
+            "ACCESS": 3,
+            "DOMAIN": "TcHmiSqliteHistorize",
+            "DYNAMIC": false,
+            "HIDDEN": true,
+            "MAPPING": "DeleteDatabaseEntries",
+            "OPTIONS": {},
+            "SCHEMA": {
+                "function": true,
+                "writeValue": {
+                    "properties": {
+                        "disableRecording": {
+                            "type": "boolean"
+                        },
+                        "symbolName": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                }
+            },
+            "USEMAPPING": true
+        },
+        "TcHmiSqliteHistorize.Diagnostics": {
+            "ACCESS": 1,
+            "DOMAIN": "TcHmiSqliteHistorize",
+            "DYNAMIC": false,
+            "HIDDEN": true,
+            "MAPPING": "Diagnostics",
+            "OPTIONS": {},
+            "SCHEMA": {
+                "additionalProperties": false,
+                "function": true,
+                "properties": {
+                    "databaseSize": {
+                        "allOf": [
+                            {
+                                "$ref": "tchmi:general#/definitions/Number"
+                            },
+                            {
+                                "displayClass": "byte",
+                                "propertyOrder": 1,
+                                "readOnly": true
+                            }
+                        ]
+                    },
+                    "estimatedDatabaseSize": {
+                        "allOf": [
+                            {
+                                "$ref": "tchmi:general#/definitions/Number"
+                            },
+                            {
+                                "displayClass": "byte",
+                                "propertyOrder": 5,
+                                "readOnly": true
+                            }
+                        ]
+                    },
+                    "estimatedDatabaseSizePerSymbol": {
+                        "additionalProperties": {
+                            "allOf": [
+                                {
+                                    "$ref": "tchmi:general#/definitions/Number"
+                                },
+                                {
+                                    "displayClass": "byte",
+                                    "readOnly": true
+                                }
+                            ]
+                        },
+                        "readOnly": true,
+                        "type": "object"
+                    },
+                    "numEntries": {
+                        "configDescription": "descNumEntries",
+                        "propertyOrder": 2,
+                        "readOnly": true,
+                        "type": "integer"
+                    },
+                    "numEntriesLifetime": {
+                        "configDescription": "descNumEntries",
+                        "propertyOrder": 3,
+                        "readOnly": true,
+                        "type": "number"
+                    },
+                    "recordingTime": {
+                        "format": "timespan",
+                        "propertyOrder": 4,
+                        "readOnly": true,
+                        "type": "string"
+                    }
+                },
+                "readOnly": true,
+                "type": "object"
+            },
+            "USEMAPPING": true
+        },
+        "TcHmiSqliteHistorize.GetTrendLineData": {
+            "ACCESS": 3,
+            "DOMAIN": "TcHmiSqliteHistorize",
+            "DYNAMIC": false,
+            "HIDDEN": true,
+            "MAPPING": "GetTrendLineData",
+            "OPTIONS": {},
+            "SCHEMA": {
+                "function": true,
+                "properties": {
+                    "axesData": {
+                        "description": "descAxisData",
+                        "items": {
+                            "items": {
+                                "properties": {
+                                    "error": {
+                                        "type": "number"
+                                    },
+                                    "flags": {
+                                        "description": "descAxisDataFlags",
+                                        "type": "string"
+                                    },
+                                    "x": {
+                                        "description": "descAxisDataX",
+                                        "format": "date-time",
+                                        "type": "string"
+                                    },
+                                    "y": {
+                                        "description": "descAxisDataY",
+                                        "type": "number"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "type": "array"
+                        },
+                        "type": "array"
+                    }
+                },
+                "type": "object",
+                "writeValue": {
+                    "properties": {
+                        "chartName": {
+                            "description": "descChartName",
+                            "type": "string"
+                        },
+                        "displayWidth": {
+                            "minimum": 2.0,
+                            "type": "number"
+                        },
+                        "xAxisEnd": {
+                            "$ref": "tchmi:server#/definitions/stringTypeArray"
+                        },
+                        "xAxisStart": {
+                            "$ref": "tchmi:server#/definitions/stringTypeArray"
+                        },
+                        "yAxes": {
+                            "items": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "symbol": {
+                                        "description": "descSymbolName",
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "symbol"
+                                ],
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [
+                        "chartName",
+                        "yAxes",
+                        "xAxisStart",
+                        "displayWidth"
+                    ],
+                    "type": "object"
+                }
+            },
+            "USEMAPPING": true
+        },
+        "TcHmiSqliteHistorize.GetTrendLineWindow": {
+            "ACCESS": 3,
+            "DOMAIN": "TcHmiSqliteHistorize",
+            "DYNAMIC": false,
+            "HIDDEN": true,
+            "MAPPING": "GetTrendLineWindow",
+            "OPTIONS": {},
+            "SCHEMA": {
+                "function": true,
+                "properties": {
+                    "xAxisEnd": {
+                        "description": "descTrendLineAxisEndX",
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "xAxisStart": {
+                        "description": "descTrendLineAxisStartX",
+                        "format": "date-time",
+                        "type": "string"
+                    }
+                },
+                "type": "object",
+                "writeValue": {
+                    "properties": {
+                        "chartName": {
+                            "description": "descChartName",
+                            "type": "string"
+                        },
+                        "xAxisEnd": {
+                            "$ref": "tchmi:server#/definitions/stringTypeArray"
+                        },
+                        "xAxisStart": {
+                            "$ref": "tchmi:server#/definitions/stringTypeArray"
+                        },
+                        "yAxes": {
+                            "description": "descTrendLineAxisY",
+                            "items": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "symbol": {
+                                        "description": "descSymbolName",
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "symbol"
+                                ],
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [
+                        "chartName",
+                        "yAxes",
+                        "xAxisStart"
+                    ],
+                    "type": "object"
+                }
+            },
+            "USEMAPPING": true
+        },
+        "TcHmiSqliteHistorize.HistorizeData": {
+            "ACCESS": 3,
+            "DOMAIN": "TcHmiSqliteHistorize",
+            "DYNAMIC": false,
+            "HIDDEN": true,
+            "MAPPING": "HistorizeData",
+            "OPTIONS": {},
+            "SCHEMA": {
+                "function": true
+            },
+            "USEMAPPING": true
+        },
         "TcHmiSqliteLogger.Clear": {
             "ACCESS": 3,
             "DOMAIN": "TcHmiSqliteLogger",
@@ -4951,6 +5273,12 @@
                 "PLC1.Machine_Limits.Rotor_Motor_Rated_Hz": 3,
                 "PLC1.Machine_Limits.Rotor_Motor_Rated_RPM": 3,
                 "PLC1.Pellet_Calibration.SET_CALIBRATON_VALUE": 3,
+                "PLC1.Scaling_And_Conversions.Feedroll_Actual_Current_Scaled": 3,
+                "PLC1.Scaling_And_Conversions.Feedroll_Actual_Torque_Scaled": 3,
+                "PLC1.Scaling_And_Conversions.Feedroll_DC_Bus_Voltage_Scaled": 3,
+                "PLC1.Scaling_And_Conversions.Rotor_Actual_Current_Scaled": 3,
+                "PLC1.Scaling_And_Conversions.Rotor_Actual_Torque_Scaled": 3,
+                "PLC1.Scaling_And_Conversions.Rotor_DC_Bus_Voltage_Scaled": 3,
                 "PLC1.Torque_Scaling.Rotor_Actual_Torque_Scaled": 3,
                 "SetLocale": 3,
                 "SubscribeEvents": 3,
@@ -4965,6 +5293,11 @@
                 "TcHmiEcDiagnostics.ListConfiguredDevices": 1,
                 "TcHmiEcDiagnostics.ListMastersOfRoute": 3,
                 "TcHmiEcDiagnostics.ListSlavesWithForcedProcessData": 3,
+                "TcHmiSqliteHistorize.DeleteDatabaseEntries": 3,
+                "TcHmiSqliteHistorize.Diagnostics": 1,
+                "TcHmiSqliteHistorize.GetTrendLineData": 3,
+                "TcHmiSqliteHistorize.GetTrendLineWindow": 3,
+                "TcHmiSqliteHistorize.HistorizeData": 3,
                 "TcHmiSqliteLogger.Diagnostics": 1,
                 "TcHmiUserManagement.ChangePassword": 3,
                 "Unsubscribe": 3,
@@ -5010,11 +5343,12 @@
     "VIRTUALDIRECTORIES": {
         "/": "..\\..\\BPM_HMI_1366_768\\",
         "/Beckhoff.TwinCAT.HMI.BaseTemplate": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.BaseTemplate.12.760.48\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.Controls": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Controls.12.760.48\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.Controls": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Controls.12.760.59\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.EcDiagnosticsControl": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.EcDiagnosticsControl.12.760.48\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.Functions": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Functions.12.760.48\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.Functions": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Functions.12.760.59\\runtimes\\native1.12-tchmi",
+        "/LineTrendExt": "..\\..\\Packages\\LineTrendExt.1.0.0\\runtimes\\native1.12-tchmi",
         "/bin": "..\\..\\BPM_HMI_1366_768\\bin\\",
         "/bin/framework": "..\\..\\BPM_HMI_1366_768\\bin\\framework",
-        "/framework": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Framework.12.760.48\\runtimes\\native1.12-tchmi"
+        "/framework": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Framework.12.760.59\\runtimes\\native1.12-tchmi"
     }
 }

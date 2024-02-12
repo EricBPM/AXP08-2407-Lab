@@ -15,6 +15,10 @@
       },
       {
         "publishServerExtension": true,
+        "name": "TcHmiSqliteHistorize"
+      },
+      {
+        "publishServerExtension": true,
         "name": "TcHmiSqliteLogger"
       },
       {
@@ -71,6 +75,10 @@
       {
         "publishServerExtension": true,
         "name": "TcHmiLua"
+      },
+      {
+        "publishServerExtension": true,
+        "name": "TcHmiSqliteHistorize"
       },
       {
         "publishServerExtension": true,

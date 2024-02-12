@@ -1,31 +1,140 @@
 <div id="Trend" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="10" data-tchmi-width="100" data-tchmi-height="624" data-tchmi-width-unit="%" data-tchmi-height-unit="px" data-tchmi-max-width="1126" data-tchmi-min-width="350" data-tchmi-width-mode="Parent" data-tchmi-right="10" data-tchmi-bottom="0">
-
-<div id="TcHmiTrendLineChart" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTrendLineChart" data-tchmi-end="Latest" data-tchmi-height="624" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-start="First" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-x-axis-name="x-axis 1" data-tchmi-x-sub-tick-steps="4" data-tchmi-y-sub-tick-steps="4" data-tchmi-right="10" data-tchmi-show-legend="true" data-tchmi-show-menu-bar="true" data-tchmi-width-mode="Parent">
+<div id="LineTrendExtControl" data-tchmi-type="TcHmi.Controls.LineTrendExt.LineTrendExtControl" data-tchmi-end="Latest" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-start="First" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-x-axis-name="x-axis 1" data-tchmi-x-sub-tick-steps="4" data-tchmi-y-sub-tick-steps="4" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Value" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-height-unit="%" data-tchmi-height="96" data-tchmi-show-menu-bar="true" data-tchmi-show-legend="true">
 <script data-tchmi-target-attribute="data-tchmi-y-axis" type="application/json">
 [
   {
     "id": 1,
     "showAxis": true,
     "position": "Left",
-    "logarithmicScale": false,
-    "axisLabeling": "Number",
-    "labelFontColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiTrendLineChart::YAxisLabelFontColor%/tr%",
+    "mainTickMinValue": 0.0,
+    "mainTickMaxValue": 100.0,
     "showLabels": true,
-    "axisColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiTrendLineChart::YAxisAxisColor%/tr%",
-    "mainTickMinValue": 0,
-    "mainTickMaxValue": 100,
     "showAxisName": true,
     "axisName": "y-axis 1",
-    "axisNameFontFamily": null,
+    "axisNameFontFamily": "",
     "axisNameFontSize": 15,
     "axisNameFontSizeUnit": "px",
     "axisNameFontWeight": "Bold",
-    "axisNameFontColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiTrendLineChart::YAxisAxisNameFontColor%/tr%",
     "decimalPlaces": 2,
-    "autoScaling": false
+    "unit": "",
+    "autoScaling": false,
+    "logarithmicScale": false,
+    "axisLabeling": "Number",
+    "labelFontColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiTrendLineChart::YAxisLabelFontColor%/tr%",
+    "axisColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiTrendLineChart::YAxisAxisColor%/tr%",
+    "axisNameFontColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiTrendLineChart::YAxisAxisNameFontColor%/tr%"
   }
 ]
 </script>
 
+
+<script data-tchmi-target-attribute="data-tchmi-line-graph-descriptions" type="application/json">
+[
+  {
+    "yAxisId": 1,
+    "legendName": "Feedroll Speed (Ft/min)",
+    "scaleFactor": 1.0,
+    "showAxis": true,
+    "lineWidth": 1,
+    "pointDot": false,
+    "pointDotRadius": 3,
+    "pointDotStrokeWidth": 1,
+    "lineColor": {
+      "color": "rgba(214, 241, 73, 1)"
+    },
+    "pointDotFillColor": {
+      "color": "rgba(214, 241, 73, 1)"
+    },
+    "pointDotStrokeColor": {
+      "color": "rgba(214, 241, 73, 1)"
+    },
+    "pointDotInStopMode": true,
+    "fillMode": "None",
+    "fillColor": {
+      "color": "rgba(214, 241, 73, 1)"
+    },
+    "fillTransparency": 50.0,
+    "symbol": "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Feet_Per_Minute"
+  },
+  {
+    "yAxisId": 1,
+    "legendName": "Rotor Speed (RPM)",
+    "scaleFactor": 1.0,
+    "showAxis": true,
+    "lineWidth": 1,
+    "pointDot": false,
+    "pointDotRadius": 3,
+    "pointDotStrokeWidth": 1,
+    "lineColor": {
+      "color": "rgba(19, 169, 239, 1)"
+    },
+    "pointDotFillColor": {
+      "color": "rgba(19, 169, 239, 1)"
+    },
+    "pointDotStrokeColor": {
+      "color": "rgba(19, 169, 239, 1)"
+    },
+    "pointDotInStopMode": true,
+    "fillMode": "None",
+    "fillColor": {
+      "color": "rgba(19, 169, 239, 1)"
+    },
+    "fillTransparency": 50.0,
+    "symbol": "PLC1.GVL_Pelletizer.MyPelletizer.Rotor_RPM"
+  },
+  {
+    "yAxisId": 1,
+    "legendName": "Feedroll DC-Bus Voltage",
+    "scaleFactor": 1.0,
+    "showAxis": true,
+    "lineWidth": 1,
+    "pointDot": false,
+    "pointDotRadius": 3,
+    "pointDotStrokeWidth": 1,
+    "lineColor": {
+      "color": "rgba(248, 110, 45, 1)"
+    },
+    "pointDotFillColor": {
+      "color": "rgba(248, 110, 45, 1)"
+    },
+    "pointDotStrokeColor": {
+      "color": "rgba(248, 110, 45, 1)"
+    },
+    "pointDotInStopMode": true,
+    "fillMode": "None",
+    "fillColor": {
+      "color": "rgba(248, 110, 45, 1)"
+    },
+    "fillTransparency": 50.0,
+    "symbol": "PLC1.Scaling_And_Conversions.Feedroll_DC_Bus_Voltage_Scaled"
+  },
+  {
+    "yAxisId": 1,
+    "legendName": "Rotor DC-Bus Voltage",
+    "scaleFactor": 1.0,
+    "showAxis": true,
+    "lineWidth": 1,
+    "pointDot": false,
+    "pointDotRadius": 3,
+    "pointDotStrokeWidth": 1,
+    "lineColor": {
+      "color": "rgba(115, 246, 103, 1)"
+    },
+    "pointDotFillColor": {
+      "color": "rgba(115, 246, 103, 1)"
+    },
+    "pointDotStrokeColor": {
+      "color": "rgba(115, 246, 103, 1)"
+    },
+    "pointDotInStopMode": true,
+    "fillMode": "None",
+    "fillColor": {
+      "color": "rgba(115, 246, 103, 1)"
+    },
+    "fillTransparency": 50.0,
+    "symbol": "PLC1.Scaling_And_Conversions.Rotor_DC_Bus_Voltage_Scaled"
+  }
+]
+</script>
 </div>
 </div>

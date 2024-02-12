@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="Scaling_And_Conversions" Id="{8e970592-64c0-43ad-8110-566d9f1a776b}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Scaling_And_Conversions
+VAR
+	Rotor_Actual_Torque_Scaled : REAL;
+	Feedroll_Actual_Torque_Scaled : REAL;
+	
+	Rotor_Actual_Current_Scaled : REAL;
+	Feedroll_Actual_Current_Scaled : REAL;
+	
+	Rotor_DC_Bus_Voltage_Scaled : REAL;
+	Feedroll_DC_Bus_Voltage_Scaled : REAL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Rotor_Actual_Torque_Scaled := INT_TO_REAL(GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Torque) / 10;
+Feedroll_Actual_Torque_Scaled := INT_TO_REAL(GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Torque) / 10;
+
+Rotor_Actual_Current_Scaled := INT_TO_REAL(GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Current) / 10;
+Feedroll_Actual_Current_Scaled := INT_TO_REAL(GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Current) / 10;
+
+Rotor_DC_Bus_Voltage_Scaled := UDINT_TO_REAL(GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_DC_Bus_Voltage) / 1000;
+Feedroll_DC_Bus_Voltage_Scaled := UDINT_TO_REAL(GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_DC_Bus_Voltage) / 1000;
+
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="Scaling_And_Conversions">
+      <LineId Id="5" Count="0" />
+      <LineId Id="25" Count="1" />
+      <LineId Id="23" Count="0" />
+      <LineId Id="29" Count="0" />
+      <LineId Id="31" Count="1" />
+      <LineId Id="34" Count="0" />
+      <LineId Id="33" Count="0" />
+      <LineId Id="30" Count="0" />
+      <LineId Id="28" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
