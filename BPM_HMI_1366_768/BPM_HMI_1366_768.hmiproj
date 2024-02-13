@@ -12,7 +12,7 @@
     <HmiTitle>Please enter your Title...</HmiTitle>
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
-    <HmiCommunicationServerPort>3000</HmiCommunicationServerPort>
+    <HmiCommunicationServerPort>3001</HmiCommunicationServerPort>
     <HmiLogTcHmiServerMessages>false</HmiLogTcHmiServerMessages>
     <HmiLogDesignerModeComMessages>false</HmiLogDesignerModeComMessages>
     <HmiServerVersion>Latest</HmiServerVersion>
@@ -23,7 +23,7 @@
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>BPM_HMI_1366_768</Name>
     <HmiCommunicationRouterPort>10101</HmiCommunicationRouterPort>
-    <HmiCommunicationServerAuthPort>13000</HmiCommunicationServerAuthPort>
+    <HmiCommunicationServerAuthPort>13001</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.760.37</HmiInitial>
     <HmiRecent>1.12.760.59</HmiRecent>
     <HmiServerNodeAdvancedView>False</HmiServerNodeAdvancedView>
@@ -117,6 +117,7 @@
     <Folder Include="Localization" />
     <Folder Include="Pages\" />
     <Folder Include="Pages\MainContent" />
+    <Folder Include="Pages\TrendSubPages" />
     <Folder Include="Pages\SettingsContent" />
     <Folder Include="Pages\Resources" />
     <Folder Include="Pages\ResourceSubPages" />
@@ -284,6 +285,18 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\SystemControlSubPages\WaterBathControl.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\TrendSubPages\AirKnifeTrend.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\TrendSubPages\ExtruderTrend.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\TrendSubPages\PelletizerTrend.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\TrendSubPages\WaterbathTrend.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="RecipeFunctions\ConvertDatagridToRecipe.function.json">
