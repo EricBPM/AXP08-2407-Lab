@@ -2522,6 +2522,83 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_AirKnife::AirKnife_Percent_Speed_Input",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_AirKnife.AirKnife_Start": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_AirKnife::AirKnife_Start",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Fault": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_AirKnife::AirKnife_VFD::VFD_Fault",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "This is part of the Status Word; Fault bit 3",
+                        "propertyOrder": 7
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Fault_Reset": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_AirKnife::AirKnife_VFD::VFD_Fault_Reset",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "This is part of the Control Word; Fault Reset bit 7",
+                        "propertyOrder": 12
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_AirKnife::AirKnife_VFD::VFD_Set_Speed",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/INT"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Output"
+                        },
+                        "comment": "Sets the Speed of the VFD in RPM",
+                        "propertyOrder": 9
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Diameter_Inch": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -5239,6 +5316,11 @@
                 "LocalizeText": 3,
                 "Login": 3,
                 "Logout": 3,
+                "PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input": 3,
+                "PLC1.GVL_AirKnife.AirKnife_Start": 3,
+                "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Fault": 3,
+                "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Fault_Reset": 3,
+                "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Diameter_Inch": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Drive_Pulley": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Driven_Pulley": 3,

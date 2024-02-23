@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="Air_Knife_Control_Word" Id="{12fc9c02-157b-47ed-bf98-fa68d5cf5ece}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Air_Knife_Control_Word
+VAR
+	
+	AirKnife_Lower_Status_Byte : UINT;
+	
+	Status_BitMask : UINT := 65280;
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[GVL_AirKnife.AirKnife_VFD.VFD_Fault := GVL_AirKnife.AirKnife_VFD.VFD_Status_Word.3;	//Set fault bit equal to the status word fault bit.
+
+IF GVL_AirKnife.AirKnife_VFD.VFD_Fault_Reset THEN
+	//if the fault reset button was pressed, set the fault reset bit in the control word.
+	GVL_AirKnife.AirKnife_VFD.VFD_Control_Word.7 := TRUE;
+ELSE
+	GVL_AirKnife.AirKnife_VFD.VFD_Control_Word.7 := FALSE;
+END_IF
+
+
+
+IF GVL_AirKnife.AirKnife_VFD.VFD_Fault THEN
+	//If Faulted, then switch off drives
+	GVL_AirKnife.AirKnife_VFD.VFD_Control_Word.0 := FALSE;
+END_IF
+
+
+
+IF GVL_AirKnife.AirKnife_Start THEN
+//Feedroll Case Statement
+	AirKnife_Lower_Status_Byte := GVL_AirKnife.AirKnife_VFD.VFD_Status_Word OR Status_BitMask;	// Bitwise OR with bits 7-15 of status word because we dont care about them for control.
+	
+	CASE AirKnife_Lower_Status_Byte OF
+		65392: //Voltage Enabled, Switch On Disabled.
+		GVL_AirKnife.AirKnife_VFD.VFD_Control_Word := 6;	//Enable Voltage, Disable Quick Stop	
+	
+		65360: //Voltage Enabled, Switch On Disabled.
+		GVL_AirKnife.AirKnife_VFD.VFD_Control_Word := 6;	//Enable Voltage, Disable Quick Stop
+	
+		65329: //Ready To Switch On, Voltage Enabled, Quick Stop Disabled.
+		GVL_AirKnife.AirKnife_VFD.VFD_Control_Word := 7;	//Enable Voltage, Disable Quick Stop, Switch On
+	
+		65331: //Ready To Switch On, Switched On, Voltage Enabled, Quick Stop Disabled.
+		GVL_AirKnife.AirKnife_VFD.VFD_Control_Word := 15;	//Enable Voltage, Disable Quick Stop, Switch On, Enable Operation
+	
+		65335: //Ready To Switch On, Switched On, Operation Enabled, Voltage Enabled, Quick Stop Disabled.
+		GVL_AirKnife.AirKnife_VFD.VFD_Control_Word.0 := TRUE;	//Switch On Bit. 
+	END_CASE;
+	
+ELSE	
+	//If we are not running, switch off Drives
+	GVL_AirKnife.AirKnife_VFD.VFD_Control_Word.0 := 0;
+END_IF
+
+
+
+
+//The last thing is to scale the motor RPM to a percentage.
+GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed := REAL_TO_INT((3450 / 100) * GVL_AirKnife.AirKnife_Percent_Speed_Input);
+// I should add some parameters for the air knife settings screen to the max RPM 
+]]></ST>
+    </Implementation>
+    <LineIds Name="Air_Knife_Control_Word">
+      <LineId Id="224" Count="0" />
+      <LineId Id="230" Count="0" />
+      <LineId Id="229" Count="0" />
+      <LineId Id="243" Count="0" />
+      <LineId Id="231" Count="3" />
+      <LineId Id="227" Count="1" />
+      <LineId Id="225" Count="0" />
+      <LineId Id="206" Count="1" />
+      <LineId Id="203" Count="0" />
+      <LineId Id="201" Count="0" />
+      <LineId Id="195" Count="1" />
+      <LineId Id="178" Count="0" />
+      <LineId Id="151" Count="0" />
+      <LineId Id="69" Count="0" />
+      <LineId Id="73" Count="0" />
+      <LineId Id="138" Count="0" />
+      <LineId Id="125" Count="0" />
+      <LineId Id="244" Count="0" />
+      <LineId Id="246" Count="0" />
+      <LineId Id="245" Count="0" />
+      <LineId Id="247" Count="0" />
+      <LineId Id="127" Count="1" />
+      <LineId Id="248" Count="0" />
+      <LineId Id="130" Count="1" />
+      <LineId Id="249" Count="0" />
+      <LineId Id="133" Count="3" />
+      <LineId Id="74" Count="0" />
+      <LineId Id="154" Count="0" />
+      <LineId Id="156" Count="0" />
+      <LineId Id="160" Count="0" />
+      <LineId Id="157" Count="0" />
+      <LineId Id="153" Count="0" />
+      <LineId Id="252" Count="6" />
+      <LineId Id="251" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

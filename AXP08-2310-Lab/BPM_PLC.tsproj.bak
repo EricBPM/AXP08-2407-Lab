@@ -105,11 +105,41 @@
 		</System>
 		<Plc>
 			<Project GUID="{C2463DFE-8D25-458F-B39B-892E853BBF0C}" Name="PLC" PrjFilePath="PLC\PLC.plcproj" TmcFilePath="PLC\PLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{D402FFEC-B50F-C984-5523-63344342E872}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{1E1BCC7B-C2DC-977A-9627-E9A2B3E70A1E}">
 					<Name>PLC Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
 						<Name>PlcTask Inputs</Name>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Status_Word</Name>
+							<Comment><![CDATA[CiA Status Word]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Actual_Speed</Name>
+							<Comment><![CDATA[VFD Actual Output RPM ]]></Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Error_Code</Name>
+							<Comment><![CDATA[Error Message]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Actual_Torque</Name>
+							<Comment><![CDATA[Instantaneous Torque of the Motor (In Percent x.x%)]]></Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Actual_Current</Name>
+							<Comment><![CDATA[Instantaneous Current of the Motor (In Percent x.x%)]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_DC_Bus_Voltage</Name>
+							<Comment><![CDATA[Instantaneous DC Bus Voltage of the VFD (x.xxx Volts)]]></Comment>
+							<Type>UDINT</Type>
+						</Var>
 						<Var>
 							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Status_Word</Name>
 							<Comment><![CDATA[CiA Status Word]]></Comment>
@@ -173,6 +203,21 @@
 					</Vars>
 					<Vars VarGrpType="2" AreaNo="1">
 						<Name>PlcTask Outputs</Name>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Control_Word</Name>
+							<Comment><![CDATA[State Machine for Controlling VFD (CiA)]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed</Name>
+							<Comment><![CDATA[Sets the Speed of the VFD in RPM]]></Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_DigitalOutput1_Word</Name>
+							<Comment><![CDATA[Map the NetInWord2 to something we can use.]]></Comment>
+							<Type>UINT</Type>
+						</Var>
 						<Var>
 							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Control_Word</Name>
 							<Comment><![CDATA[State Machine for Controlling VFD (CiA)]]></Comment>
@@ -355,13 +400,66 @@
 						</Pdo>
 					</EtherCAT>
 				</Box>
-				<EtherCAT EnableVirtualSwitch="true" MaxSwitchPorts="3" MaxSwitchFrames="140"/>
+				<Box Id="5" BoxType="9099" BoxFlags="#x00000020">
+					<Name>AirKnife Drive</Name>
+					<ImageId>1000</ImageId>
+					<EtherCAT SlaveType="2" PdiType="#x3080" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="13" EoeType="1" FoeType="1" VendorId="#x0000003b" ProductCode="#x69055500" RevisionNo="#x00070000" InfoDataAddr="true" EnableWdDivider0400="true" EnableWdTime0420="true" TimeoutStateChange2="3000" TimeoutStateChange3="3000" TimeoutStateChange4="3000" TimeoutMailbox2="2000" CheckRevisionNoType="2" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="i550 Protec V07.00.xx" Desc="Inverter i550 Protec" PortABoxInfo="#xffffffff">
+						<SyncMan>001080002600010001000000800000018000001026010000</SyncMan>
+						<SyncMan>001180002200010002000000800000018000001122010000</SyncMan>
+						<SyncMan>001204006400010003000000000020000400001264010000</SyncMan>
+						<SyncMan>00130a002000010004000000000020000600001320010000</SyncMan>
+						<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000001300010100000002000000000000000000000000000000</Fmmu>
+						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+						<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+						<BootStrapData>0010000100110001</BootStrapData>
+						<HcData>010000000800000002000000000000001000000000000000000000000000000053797374656d486f74436f6e6e65637400</HcData>
+						<Pdo Name="TPDO (A) Velocity" Index="#x1a03" Flags="#x0010" SyncMan="3">
+							<Entry Name="CiA status word" Index="#x6041">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Actual speed" Index="#x6044">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="Error code" Index="#x603f">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="TPDO (A) user config" Index="#x1a05" Flags="#x0000" SyncMan="3">
+							<Entry Name="DC-bus voltage" Index="#x2d87">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Actual current" Index="#x6078">
+								<Type>INT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="RPDO (A) Velocity" Index="#x1603" InOut="1" Flags="#x0010" SyncMan="2">
+							<Entry Name="CiA control word" Index="#x6040">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Set speed" Index="#x6042">
+								<Type>INT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="RPDO (A) user config" Index="#x1605" InOut="1" Flags="#x0000" SyncMan="2"/>
+					</EtherCAT>
+				</Box>
+				<EtherCAT EnableVirtualSwitch="true" MaxSwitchPorts="4" MaxSwitchFrames="160">
+					<SyncUnit Name="[SystemHotConnect]" HcName="SystemHotConnect"/>
+				</EtherCAT>
 			</Device>
 		</Io>
 	</Project>
 	<Mappings>
 		<MappingInfo Identifier="{00000000-2001-0850-0020-500810000403}" Id="#x02030010"/>
 		<OwnerA Name="TIPC^PLC^PLC Instance">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^AirKnife Drive">
+				<Link VarA="PlcTask Inputs^GVL_AirKnife.AirKnife_VFD.VFD_Actual_Current" VarB="TPDO (A) user config^Actual current"/>
+				<Link VarA="PlcTask Inputs^GVL_AirKnife.AirKnife_VFD.VFD_DC_Bus_Voltage" VarB="TPDO (A) user config^DC-bus voltage"/>
+				<Link VarA="PlcTask Inputs^GVL_AirKnife.AirKnife_VFD.VFD_Status_Word" VarB="TPDO (A) Velocity^CiA status word"/>
+				<Link VarA="PlcTask Outputs^GVL_AirKnife.AirKnife_VFD.VFD_Control_Word" VarB="RPDO (A) Velocity^CiA control word"/>
+				<Link VarA="PlcTask Outputs^GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed" VarB="RPDO (A) Velocity^Set speed"/>
+			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Feedroll Drive">
 				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Current" VarB="TPDO (A) user config^Actual current"/>
 				<Link VarA="PlcTask Inputs^GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Speed" VarB="TPDO (A) Velocity^Actual speed"/>

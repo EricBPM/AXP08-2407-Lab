@@ -8,9 +8,13 @@ VAR
 	
 	Rotor_Actual_Current_Scaled : REAL;
 	Feedroll_Actual_Current_Scaled : REAL;
+	AirKnife_Actual_Current_Scaled : REAL;
 	
 	Rotor_DC_Bus_Voltage_Scaled : REAL;
 	Feedroll_DC_Bus_Voltage_Scaled : REAL;
+	AirKnife_DC_Bus_Voltage_Scaled : REAL;
+	
+
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -19,10 +23,12 @@ Feedroll_Actual_Torque_Scaled := INT_TO_REAL(GVL_Pelletizer.MyPelletizer.Feedrol
 
 Rotor_Actual_Current_Scaled := INT_TO_REAL(GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Current) / 10;
 Feedroll_Actual_Current_Scaled := INT_TO_REAL(GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Current) / 10;
+AirKnife_Actual_Current_Scaled := INT_TO_REAL(GVL_Airknife.AirKnife_VFD.VFD_Actual_Current) / 10;
+
 
 Rotor_DC_Bus_Voltage_Scaled := UDINT_TO_REAL(GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_DC_Bus_Voltage) / 1000;
 Feedroll_DC_Bus_Voltage_Scaled := UDINT_TO_REAL(GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_DC_Bus_Voltage) / 1000;
-
+AirKnife_DC_Bus_Voltage_Scaled := UDINT_TO_REAL(GVL_AirKnife.AirKnife_Vfd.VFD_DC_Bus_Voltage) / 1000;
 
 ]]></ST>
     </Implementation>
@@ -31,6 +37,8 @@ Feedroll_DC_Bus_Voltage_Scaled := UDINT_TO_REAL(GVL_Pelletizer.MyPelletizer.Feed
       <LineId Id="25" Count="1" />
       <LineId Id="23" Count="0" />
       <LineId Id="29" Count="0" />
+      <LineId Id="50" Count="0" />
+      <LineId Id="49" Count="0" />
       <LineId Id="31" Count="1" />
       <LineId Id="34" Count="0" />
       <LineId Id="33" Count="0" />

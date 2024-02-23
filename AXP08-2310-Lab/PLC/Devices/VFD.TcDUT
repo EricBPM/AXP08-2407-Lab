@@ -11,7 +11,7 @@ STRUCT
 	VFD_Actual_Current AT %I* : UINT;											//Instantaneous Current of the Motor (In Percent x.x%)
 	VFD_DC_Bus_Voltage AT %I* : UDINT;											//Instantaneous DC Bus Voltage of the VFD (x.xxx Volts)
 
-	VFD_Fault : BOOL := VFD_Status_Word.3;										//This is part of the Status Word; Fault bit 3
+	VFD_Fault : BOOL;		 //:= VFD_Status_Word.3;				This callout doesnt seem to work during Runtime.						//This is part of the Status Word; Fault bit 3
 
 	
 
@@ -21,7 +21,7 @@ STRUCT
 	VFD_DigitalOutput1_Word AT %Q* : UINT;										//Map the NetInWord2 to something we can use.
 
 	VFD_DigitalOutput1_Bit : BOOL := VFD_DigitalOutput1_Word.0;					//Break out just the bit that we use to control the digital output
-	VFD_Fault_Reset : BOOL := VFD_Control_Word.7;								//This is part of the Control Word; Fault Reset bit 7
+	VFD_Fault_Reset : BOOL;	// := VFD_Control_Word.7;				This callout doesnt seem to work during Runtime.				//This is part of the Control Word; Fault Reset bit 7
 	
 END_STRUCT
 END_TYPE

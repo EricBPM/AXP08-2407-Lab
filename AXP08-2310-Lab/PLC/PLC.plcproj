@@ -51,10 +51,10 @@
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\Main.TcPOU">
+    <Compile Include="POUs\AirKnife\Air_Knife_Control_Word.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\Pelletizer\Control_Word_State.TcPOU">
+    <Compile Include="POUs\Main.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\Pelletizer\DPLC.TcPOU">
@@ -83,6 +83,7 @@
     <Folder Include="Devices" />
     <Folder Include="Global_Machine" />
     <Folder Include="FBs" />
+    <Folder Include="POUs\AirKnife" />
     <Folder Include="POUs\System" />
     <Folder Include="POUs\Pelletizer" />
     <Folder Include="POUs" />
