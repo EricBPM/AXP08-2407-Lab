@@ -2542,6 +2542,16 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.GVL_AirKnife.AirKnife_StartwithSystem": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_AirKnife::AirKnife_StartwithSystem",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Fault": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -3050,6 +3060,16 @@
             "MAPPING": "PLC1::Pellet_Calibration::SET_CALIBRATON_VALUE",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scaling_And_Conversions.AirKnife_Actual_Current_Scaled": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Scaling_And_Conversions::AirKnife_Actual_Current_Scaled",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -5318,6 +5338,7 @@
                 "Logout": 3,
                 "PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input": 3,
                 "PLC1.GVL_AirKnife.AirKnife_Start": 3,
+                "PLC1.GVL_AirKnife.AirKnife_StartwithSystem": 3,
                 "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Fault": 3,
                 "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Fault_Reset": 3,
                 "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed": 3,
@@ -5355,6 +5376,7 @@
                 "PLC1.Machine_Limits.Rotor_Motor_Rated_Hz": 3,
                 "PLC1.Machine_Limits.Rotor_Motor_Rated_RPM": 3,
                 "PLC1.Pellet_Calibration.SET_CALIBRATON_VALUE": 3,
+                "PLC1.Scaling_And_Conversions.AirKnife_Actual_Current_Scaled": 3,
                 "PLC1.Scaling_And_Conversions.Feedroll_Actual_Current_Scaled": 3,
                 "PLC1.Scaling_And_Conversions.Feedroll_Actual_Torque_Scaled": 3,
                 "PLC1.Scaling_And_Conversions.Feedroll_DC_Bus_Voltage_Scaled": 3,

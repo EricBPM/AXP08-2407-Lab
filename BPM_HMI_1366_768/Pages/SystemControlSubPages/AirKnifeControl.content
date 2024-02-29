@@ -40,7 +40,7 @@
 }
 </script>
 </div>
-<div id="AirKnife_ActualAmps_Gauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLinearGauge" data-tchmi-base-animation-time="1000" data-tchmi-height="445" data-tchmi-height-unit="px" data-tchmi-label-range="20" data-tchmi-show-labels="true" data-tchmi-show-ticks="true" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-top="56" data-tchmi-top-unit="px" data-tchmi-width="223" data-tchmi-width-unit="px" data-tchmi-right="10" data-tchmi-orientation="Vertical">
+<div id="AirKnife_ActualAmps_Gauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLinearGauge" data-tchmi-base-animation-time="1000" data-tchmi-height="445" data-tchmi-height-unit="px" data-tchmi-label-range="20" data-tchmi-show-labels="true" data-tchmi-show-ticks="true" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-top="56" data-tchmi-top-unit="px" data-tchmi-width="223" data-tchmi-width-unit="px" data-tchmi-right="10" data-tchmi-orientation="Vertical" data-tchmi-value="%s%PLC1.Scaling_And_Conversions.AirKnife_Actual_Current_Scaled%/s%">
 <script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
 [
   {
@@ -83,7 +83,92 @@
 </div>
 <div id="Speed_Control_TextBlock" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="Speed Control" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="210" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="24" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 </div>
-<div id="OneBtnStart_CheckBox" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCheckbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="35" data-tchmi-left-unit="%" data-tchmi-text="One Button Start" data-tchmi-top="461" data-tchmi-top-unit="px" data-tchmi-width="338" data-tchmi-width-unit="px" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-font-size="36" data-tchmi-right="33.4" data-tchmi-right-unit="%">
+<div id="OneBtnStart_CheckBox" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCheckbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="35" data-tchmi-left-unit="%" data-tchmi-text="Start with System" data-tchmi-top="461" data-tchmi-top-unit="px" data-tchmi-width="338" data-tchmi-width-unit="px" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-font-size="36" data-tchmi-right="33.4" data-tchmi-right-unit="%" data-tchmi-state-symbol="%s%PLC1.GVL_AirKnife.AirKnife_StartwithSystem%/s%">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "OneBtnStart_CheckBox.onToggleStateChanged",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%ctrl%OneBtnStart_CheckBox::ToggleState%/ctrl%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ToggleState",
+                  "value": "Active"
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%AirKnife_Start_Btn::IsEnabled%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/Boolean",
+                  "value": false
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%AirKnife_Stop_Btn::IsEnabled%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/Boolean",
+                  "value": false
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%AirKnife_Start_Btn::IsEnabled%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/Boolean",
+                  "value": true
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%AirKnife_Stop_Btn::IsEnabled%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/Boolean",
+                  "value": true
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
 </div>
 <div id="AirKnife_Speed_NumericInput" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="57" data-tchmi-height-unit="px" data-tchmi-left="37" data-tchmi-left-unit="px" data-tchmi-max-value="3450" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="632" data-tchmi-top-unit="px" data-tchmi-value="%s%PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed%/s%" data-tchmi-width="210" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="36" data-tchmi-ignore-invalid-values="true" data-tchmi-system-keyboard-input-mode="numeric">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
@@ -745,29 +830,22 @@
 </div>
 <div id="AirKnife_DC_Bus_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-height="33" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="AirKnife DC Bus Voltage" data-tchmi-top="368" data-tchmi-top-unit="px" data-tchmi-width="210" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-width-mode="Value" data-tchmi-text-font-size="16">
 </div>
-<div id="TcHmiRadialGauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadialGauge" data-tchmi-base-animation-time="1000" data-tchmi-gauge-alignment="Center" data-tchmi-height="300" data-tchmi-height-unit="px" data-tchmi-label-range="20" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-show-labels="true" data-tchmi-show-ticks="true" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="300" data-tchmi-width-unit="px" data-tchmi-editable="true" data-tchmi-value="%s%PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input%/s%">
+<div id="AirKnife_SpeedGauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadialGauge" data-tchmi-base-animation-time="1000" data-tchmi-gauge-alignment="Center" data-tchmi-height="300" data-tchmi-height-unit="px" data-tchmi-label-range="20" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-show-labels="true" data-tchmi-show-ticks="true" data-tchmi-show-value-text="true" data-tchmi-start-from-zero="true" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="300" data-tchmi-width-unit="px" data-tchmi-editable="true" data-tchmi-value="%s%PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input%/s%" data-tchmi-value-font-size="30">
 <script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
 [
   {
     "color": {
       "color": "rgba(0, 128, 0, 1)"
     },
-    "start": 0,
-    "end": 35
-  },
-  {
-    "color": {
-      "color": "rgba(255, 165, 0, 1)"
-    },
-    "start": 35,
-    "end": 70
+    "start": 20.0,
+    "end": 100.0
   },
   {
     "color": {
       "color": "rgba(255, 0, 0, 1)"
     },
-    "start": 70,
-    "end": 100
+    "start": 0.0,
+    "end": 20.0
   }
 ]
 </script>
@@ -796,7 +874,7 @@
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "TcHmiRadialGauge.onValueChanged",
+    "event": "AirKnife_SpeedGauge.onValueChanged",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -805,7 +883,7 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%ctrl%TcHmiRadialGauge::Value%/ctrl%"
+          "symbolExpression": "%ctrl%AirKnife_SpeedGauge::Value%/ctrl%"
         },
         "asyncWait": true
       }

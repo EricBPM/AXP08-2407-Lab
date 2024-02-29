@@ -63,16 +63,19 @@
     <Compile Include="POUs\Pelletizer\Machine_Limits.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\Pelletizer\Pellet_Calibration.TcPOU">
+    <Compile Include="POUs\Pelletizer\Pelletizer_Control.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\Pelletizer\Scaling_And_Conversions.TcPOU">
+    <Compile Include="POUs\Pelletizer\Pellet_Calibration.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\System\Events.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\System\Imperial_Metric_Switching.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\System\Scaling_And_Conversions.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\System\WritePersistentData_POU.TcPOU">

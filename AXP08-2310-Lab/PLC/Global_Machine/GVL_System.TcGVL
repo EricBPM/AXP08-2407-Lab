@@ -2,7 +2,7 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
   <GVL Name="GVL_System" Id="{cb411092-50b8-4834-89ab-4fb8df238ecd}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
-VAR_GLOBAL
+VAR_GLOBAL PERSISTENT
 	
 	RunTime : REAL;
 	Emergency_Stop_Active : BOOL;

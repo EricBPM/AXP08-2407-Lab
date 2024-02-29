@@ -28,8 +28,8 @@ IF GVL_AirKnife.AirKnife_VFD.VFD_Fault THEN
 END_IF
 
 
-
-IF GVL_AirKnife.AirKnife_Start THEN
+	//If the Start button on the HMI is pressed, OR it is set to start with the rest of the system. The checkbox must be set and pelletizer must be started.
+IF GVL_AirKnife.AirKnife_Start OR (GVL_AirKnife.AirKnife_StartwithSystem AND GVL_Pelletizer.MyPelletizer.Pelletizer_Start) THEN
 //Feedroll Case Statement
 	AirKnife_Lower_Status_Byte := GVL_AirKnife.AirKnife_VFD.VFD_Status_Word OR Status_BitMask;	// Bitwise OR with bits 7-15 of status word because we dont care about them for control.
 	

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="Pelletizer_Control" Id="{fab7e893-3672-4480-a2c7-2eaba39d3914}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Pelletizer_Control
+VAR
+	Pelletizer_Lower_Status_Byte : UINT;
+	
+	Status_BitMask : UINT := 65280;
+	DigitalInputStatus: INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[//Bit 15 is digital input 1 which is the pelletizer control relay. If both of these are ON, we are in a started state.
+IF (GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Digital_Input_Status.16 = TRUE) AND (GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Digital_Input_Status.16 = TRUE) THEN
+	GVL_Pelletizer.MyPelletizer.Pelletizer_Start := TRUE;
+ELSE	
+	GVL_Pelletizer.MyPelletizer.Pelletizer_Start := FALSE;
+END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="Pelletizer_Control">
+      <LineId Id="7" Count="0" />
+      <LineId Id="40" Count="0" />
+      <LineId Id="42" Count="0" />
+      <LineId Id="44" Count="0" />
+      <LineId Id="46" Count="0" />
+      <LineId Id="43" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

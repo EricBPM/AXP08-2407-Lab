@@ -30,6 +30,9 @@ STRUCT
 	
 	
 	Pelletizer_Info : Machine_Info;
+	
+	Pelletizer_Start : BOOL;
+	
 END_STRUCT
 END_TYPE
 ]]></Declaration>

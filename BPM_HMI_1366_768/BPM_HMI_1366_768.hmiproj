@@ -108,6 +108,7 @@
     <Folder Include="Fonts\" />
     <Folder Include="Images" />
     <Folder Include="Images\Manifest" />
+    <Folder Include="Images\Icons" />
     <Folder Include="Images\PLC\" />
     <Folder Include="Images\TwinCAT\" />
     <Folder Include="Imports" />
@@ -152,6 +153,18 @@
     <Content Include=".eslintrc.json">
       <Visible>false</Visible>
     </Content>
+    <Content Include="Images\Icons\arrow-down.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Icons\arrow-left.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Icons\arrow-right.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Icons\arrow-up.svg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\evak-12-std-mech-1.png">
       <SubType>Content</SubType>
     </Content>
@@ -159,6 +172,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\extru-removebg-preview.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Overview_Line_Layout_Raw4-removebg.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Overview_Line_Layout_Raw4.JPG">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Untitled-removebg-preview.png">
