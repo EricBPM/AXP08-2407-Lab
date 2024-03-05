@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="Machine_Status" Id="{0fb206cd-a8a2-4a59-bc2b-cd719b567cca}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Machine_Status
+VAR
+	AirKnife_Status_String : STRING;
+	AirKnife_Disconnected : BOOL;
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[AirKnife_Status_String := SlaveStatus_FB(GVL_AirKnife.AirKnife_VFD.VFD_Connection_Status, Slave_Disconnected => AirKnife_Disconnected);
+]]></ST>
+    </Implementation>
+    <LineIds Name="Machine_Status">
+      <LineId Id="5" Count="0" />
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

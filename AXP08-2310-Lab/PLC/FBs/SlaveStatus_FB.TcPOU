@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="SlaveStatus_FB" Id="{765bba84-5c53-4b07-9219-51c66998cc41}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION SlaveStatus_FB : STRING
+VAR_INPUT
+	InfoData_State : UINT; // Input variable containing the status bitmask
+END_VAR
+VAR
+	Bit8_Message : STRING;
+	Bitmask : UINT := 16#FFF0;
+	Masked_State: UINT;
+END_VAR
+VAR_OUTPUT
+	Slave_Disconnected : BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Masked_State := bitmask OR InfoData_State;
+
+
+IF InfoData_State.8 THEN
+	Bit8_Message := ' - Slave NOT present';
+	Slave_Disconnected := TRUE;
+ELSE
+	Bit8_Message := '';
+	Slave_Disconnected := FALSE;
+END_IF
+	
+
+
+
+CASE Masked_State OF
+    16#FFF1: SlaveStatus_FB 		:= 'Slave in INIT state';		//16#___1; // Slave in 'INIT' state
+    16#FFF2: SlaveStatus_FB 		:= 'Slave in PREOP state';		//16#___2; // Slave in 'PREOP' state
+    16#FFF3: SlaveStatus_FB 		:= 'Slave in BOOT state';		//16#___3; // Slave in 'BOOT' state
+    16#FFF4: SlaveStatus_FB 		:= 'Slave in SAFEOP state';		//16#___4; // Slave in 'SAFEOP' state
+    16#FFF8: SlaveStatus_FB 		:= 'Slave in OP state';			//16#___8 Slave in 'OP' state
+ELSE
+    // Handle invalid input or unknown status
+    SlaveStatus_FB := 'Abnormal Status'; // Set an appropriate error value
+END_CASE;
+
+SlaveStatus_FB := CONCAT(SlaveStatus_FB, Bit8_message);	//Add both messages to display.
+
+
+
+//Breakdown of Statuses for Infomation, we dont care about all of them. Just the EtherCAT State and the slave Not present bit. 
+//0x___1 = Slave in 'INIT' state
+//0x___2 = Slave in 'PREOP' state
+//0x___3 = Slave in 'BOOT' state
+//0x___4 = Slave in 'SAFEOP' state
+//0x___8 = Slave in 'OP' state
+//0x001_ = Slave signals error
+//0x002_ = Invalid vendorId, productCode... read
+//0x004_ = Initialization error occurred
+//0x008_ = Slave disabled
+//0x010_ = Slave not present
+//0x020_ = Slave signals link error
+//0x040_ = Slave signals missing link
+//0x080_ = Slave signals unexpected link
+//0x100_ = Communication port A
+//0x200_ = Communication port B
+//0x400_ = Communication port C
+//0x800_ = Communication port D]]></ST>
+    </Implementation>
+    <LineIds Name="SlaveStatus_FB">
+      <LineId Id="145" Count="2" />
+      <LineId Id="105" Count="0" />
+      <LineId Id="112" Count="0" />
+      <LineId Id="132" Count="0" />
+      <LineId Id="113" Count="0" />
+      <LineId Id="129" Count="0" />
+      <LineId Id="137" Count="0" />
+      <LineId Id="130" Count="0" />
+      <LineId Id="120" Count="0" />
+      <LineId Id="143" Count="1" />
+      <LineId Id="66" Count="6" />
+      <LineId Id="96" Count="0" />
+      <LineId Id="86" Count="1" />
+      <LineId Id="45" Count="0" />
+      <LineId Id="47" Count="0" />
+      <LineId Id="65" Count="0" />
+      <LineId Id="140" Count="1" />
+      <LineId Id="16" Count="17" />
+      <LineId Id="7" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

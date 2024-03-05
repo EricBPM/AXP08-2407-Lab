@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL_Waterbath" Id="{4e0389f6-d444-475e-b034-359833017b6d}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	//OUTPUTS
+	Prop_Valve AT %Q* : DINT; 
+	Pump_Start AT %Q* : BOOL;
+	Pump_OL_Reset AT %Q* : BOOL;
+
+	//INPUTS
+	Process_Water_IN AT %I* : DINT;
+	Process_Water_OUT AT %I* : DINT;
+	Process_Water_FLOW AT %I* : DINT;
+	Process_Water_Setpoint : DINT;
+	
+	Pump_Local_Control AT %I* : BOOL;
+	Pump_Fault AT %I* : BOOL;
+
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

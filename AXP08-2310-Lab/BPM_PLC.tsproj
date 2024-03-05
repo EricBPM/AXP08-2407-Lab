@@ -105,11 +105,74 @@
 		</System>
 		<Plc>
 			<Project GUID="{C2463DFE-8D25-458F-B39B-892E853BBF0C}" Name="PLC" PrjFilePath="PLC\PLC.plcproj" TmcFilePath="PLC\PLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{8108775C-8A8E-AE39-7A81-771D086CC17A}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{6ED7F9FA-99D5-B06D-40B1-D47349720809}">
 					<Name>PLC Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
 						<Name>PlcTask Inputs</Name>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_Analog_Input</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Status_Word</Name>
+							<Comment><![CDATA[CiA Status Word]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Actual_Speed</Name>
+							<Comment><![CDATA[VFD Actual Output RPM ]]></Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Error_Code</Name>
+							<Comment><![CDATA[Error Message]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Actual_Torque</Name>
+							<Comment><![CDATA[Instantaneous Torque of the Motor (In Percent x.x%)]]></Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Actual_Current</Name>
+							<Comment><![CDATA[Instantaneous Current of the Motor (In Percent x.x%)]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_DC_Bus_Voltage</Name>
+							<Comment><![CDATA[Instantaneous DC Bus Voltage of the VFD (x.xxx Volts)]]></Comment>
+							<Type>UDINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Digital_Input_Status</Name>
+							<Type>UDINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Connection_Status</Name>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Waterbath.Pump_Local_Control</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Waterbath.Pump_Fault</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Waterbath.Process_Water_IN</Name>
+							<Comment><![CDATA[INPUTS]]></Comment>
+							<Type>DINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Waterbath.Process_Water_OUT</Name>
+							<Type>DINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Waterbath.Process_Water_FLOW</Name>
+							<Type>DINT</Type>
+						</Var>
 						<Var>
 							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Status_Word</Name>
 							<Comment><![CDATA[CiA Status Word]]></Comment>
@@ -143,6 +206,10 @@
 						<Var>
 							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Digital_Input_Status</Name>
 							<Type>UDINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Connection_Status</Name>
+							<Type>UINT</Type>
 						</Var>
 						<Var>
 							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Status_Word</Name>
@@ -179,42 +246,40 @@
 							<Type>UDINT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Status_Word</Name>
-							<Comment><![CDATA[CiA Status Word]]></Comment>
+							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Connection_Status</Name>
 							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Digital_Input_Status</Name>
-							<Type>UDINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Actual_Speed</Name>
-							<Comment><![CDATA[VFD Actual Output RPM ]]></Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Error_Code</Name>
-							<Comment><![CDATA[Error Message]]></Comment>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Actual_Torque</Name>
-							<Comment><![CDATA[Instantaneous Torque of the Motor (In Percent x.x%)]]></Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Actual_Current</Name>
-							<Comment><![CDATA[Instantaneous Current of the Motor (In Percent x.x%)]]></Comment>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_DC_Bus_Voltage</Name>
-							<Comment><![CDATA[Instantaneous DC Bus Voltage of the VFD (x.xxx Volts)]]></Comment>
-							<Type>UDINT</Type>
 						</Var>
 					</Vars>
 					<Vars VarGrpType="2" AreaNo="1">
 						<Name>PlcTask Outputs</Name>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Control_Word</Name>
+							<Comment><![CDATA[State Machine for Controlling VFD (CiA)]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed</Name>
+							<Comment><![CDATA[Sets the Speed of the VFD in RPM]]></Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_DigitalOutput1_Word</Name>
+							<Comment><![CDATA[Map the NetInWord2 to something we can use.]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Waterbath.Prop_Valve</Name>
+							<Comment><![CDATA[OUTPUTS]]></Comment>
+							<Type>DINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Waterbath.Pump_Start</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Waterbath.Pump_OL_Reset</Name>
+							<Type>BOOL</Type>
+						</Var>
 						<Var>
 							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Control_Word</Name>
 							<Comment><![CDATA[State Machine for Controlling VFD (CiA)]]></Comment>
@@ -224,6 +289,11 @@
 							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Set_Speed</Name>
 							<Comment><![CDATA[Sets the Speed of the VFD in RPM]]></Comment>
 							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_DigitalOutput1_Word</Name>
+							<Comment><![CDATA[Map the NetInWord2 to something we can use.]]></Comment>
+							<Type>UINT</Type>
 						</Var>
 						<Var>
 							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Control_Word</Name>
@@ -237,26 +307,6 @@
 						</Var>
 						<Var>
 							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_DigitalOutput1_Word</Name>
-							<Comment><![CDATA[Map the NetInWord2 to something we can use.]]></Comment>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_DigitalOutput1_Word</Name>
-							<Comment><![CDATA[Map the NetInWord2 to something we can use.]]></Comment>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Control_Word</Name>
-							<Comment><![CDATA[State Machine for Controlling VFD (CiA)]]></Comment>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed</Name>
-							<Comment><![CDATA[Sets the Speed of the VFD in RPM]]></Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_DigitalOutput1_Word</Name>
 							<Comment><![CDATA[Map the NetInWord2 to something we can use.]]></Comment>
 							<Type>UINT</Type>
 						</Var>
@@ -425,7 +475,7 @@
 						<SyncMan>001080002600010001000000800000018000001026010000</SyncMan>
 						<SyncMan>001180002200010002000000800000018000001122010000</SyncMan>
 						<SyncMan>001204006400010003000000000020000400001264010000</SyncMan>
-						<SyncMan>00130a002000010004000000000020000600001320010000</SyncMan>
+						<SyncMan>00130c002000010004000000000020000600001320010000</SyncMan>
 						<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000001300010100000002000000000000000000000000000000</Fmmu>
 						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
@@ -450,6 +500,9 @@
 							<Entry Name="Actual current" Index="#x6078">
 								<Type>INT</Type>
 							</Entry>
+							<Entry Name="AnalogInput1_Diagnostic" Index="#x2da4" Sub="#x01">
+								<Type>INT</Type>
+							</Entry>
 						</Pdo>
 						<Pdo Name="RPDO (A) Velocity" Index="#x1603" InOut="1" Flags="#x0010" SyncMan="2">
 							<Entry Name="CiA control word" Index="#x6040">
@@ -470,9 +523,12 @@
 	</Project>
 	<Mappings>
 		<MappingInfo Identifier="{00000000-2001-0850-0020-500810000403}" Id="#x02030010"/>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500821000403}" Id="#x02030020"/>
 		<OwnerA Name="TIPC^PLC^PLC Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^AirKnife Drive">
+				<Link VarA="PlcTask Inputs^GVL_AirKnife.AirKnife_Analog_Input" VarB="TPDO (A) user config^AnalogInput1_Diagnostic"/>
 				<Link VarA="PlcTask Inputs^GVL_AirKnife.AirKnife_VFD.VFD_Actual_Current" VarB="TPDO (A) user config^Actual current"/>
+				<Link VarA="PlcTask Inputs^GVL_AirKnife.AirKnife_VFD.VFD_Connection_Status" VarB="InfoData^State"/>
 				<Link VarA="PlcTask Inputs^GVL_AirKnife.AirKnife_VFD.VFD_DC_Bus_Voltage" VarB="TPDO (A) user config^DC-bus voltage"/>
 				<Link VarA="PlcTask Inputs^GVL_AirKnife.AirKnife_VFD.VFD_Status_Word" VarB="TPDO (A) Velocity^CiA status word"/>
 				<Link VarA="PlcTask Outputs^GVL_AirKnife.AirKnife_VFD.VFD_Control_Word" VarB="RPDO (A) Velocity^CiA control word"/>

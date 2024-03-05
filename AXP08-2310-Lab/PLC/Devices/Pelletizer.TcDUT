@@ -32,7 +32,8 @@ STRUCT
 	Pelletizer_Info : Machine_Info;
 	
 	Pelletizer_Start : BOOL;
-	
+	Pelletizer_Fault : BOOL;
+	Pelletizer_Fault_Reset : BOOL;
 END_STRUCT
 END_TYPE
 ]]></Declaration>

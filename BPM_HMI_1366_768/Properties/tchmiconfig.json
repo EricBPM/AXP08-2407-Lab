@@ -91,10 +91,10 @@
   "content": [
     {
       "url": "Pages/MainContent/Diagnostic.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": true,
+      "preloadBindings": true
     },
     {
       "url": "Pages/MainContent/EventLog.content",
@@ -105,45 +105,45 @@
     },
     {
       "url": "Pages/MainContent/Recipe.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": true,
+      "preloadBindings": true
     },
     {
       "url": "Pages/MainContent/Resources.content",
-      "preload": false,
-      "keepAlive": false,
+      "preload": true,
+      "keepAlive": true,
       "loadSync": false,
       "preloadBindings": false
     },
     {
       "url": "Pages/MainContent/Setting.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": true,
+      "preloadBindings": true
     },
     {
       "url": "Pages/MainContent/SystemControl.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": true,
+      "preloadBindings": true
     },
     {
       "url": "Pages/MainContent/SystemHome.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": true,
+      "preloadBindings": true
     },
     {
       "url": "Pages/MainContent/Trend.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": true,
+      "preloadBindings": true
     },
     {
       "url": "Pages/MainContent/Vision.content",
@@ -294,59 +294,59 @@
     },
     {
       "url": "Pages/SystemControlSubPages/AirKnifeControl.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": true,
+      "preloadBindings": true
     },
     {
       "url": "Pages/SystemControlSubPages/ExtruderControl.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": true,
+      "preloadBindings": true
     },
     {
       "url": "Pages/SystemControlSubPages/PelletizerControl.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": true,
+      "preloadBindings": true
     },
     {
       "url": "Pages/SystemControlSubPages/WaterBathControl.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": true,
+      "preloadBindings": true
     },
     {
       "url": "Pages/TrendSubPages/AirKnifeTrend.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": true,
+      "preloadBindings": true
     },
     {
       "url": "Pages/TrendSubPages/ExtruderTrend.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": true,
+      "preloadBindings": true
     },
     {
       "url": "Pages/TrendSubPages/PelletizerTrend.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": true,
+      "preloadBindings": true
     },
     {
       "url": "Pages/TrendSubPages/WaterbathTrend.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": true,
+      "preloadBindings": true
     }
   ],
   "views": [

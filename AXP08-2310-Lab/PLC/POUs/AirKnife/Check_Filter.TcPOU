@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="Check_Filter" Id="{523ae28a-dfdb-4838-a9ab-aefc8dd43478}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Check_Filter
+VAR
+	Change_Filter : BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Change_Filter := False;]]></ST>
+    </Implementation>
+    <LineIds Name="Check_Filter">
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

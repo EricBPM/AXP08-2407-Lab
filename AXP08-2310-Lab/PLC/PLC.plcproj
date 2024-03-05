@@ -36,6 +36,9 @@
     <Compile Include="FBs\Send_Event_FB.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="FBs\SlaveStatus_FB.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Global_Machine\GVL_AirKnife.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
@@ -48,10 +51,17 @@
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
+    <Compile Include="Global_Machine\GVL_Waterbath.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\AirKnife\Air_Knife_Control_Word.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\AirKnife\Check_Filter.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\Main.TcPOU">
@@ -73,6 +83,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\System\Imperial_Metric_Switching.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\System\Machine_Status.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\System\Scaling_And_Conversions.TcPOU">

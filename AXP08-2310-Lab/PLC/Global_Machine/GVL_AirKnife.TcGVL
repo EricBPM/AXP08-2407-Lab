@@ -7,6 +7,8 @@ VAR_GLOBAL PERSISTENT
 	AirKnife_Start : BOOL;
 	AirKnife_Percent_Speed_Input : REAL := 100;
 	AirKnife_StartwithSystem : BOOL;
+	AirKnife_Analog_Input AT %I* : INT;
+	
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

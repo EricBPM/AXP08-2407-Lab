@@ -13,7 +13,7 @@ STRUCT
 	VFD_Digital_Input_Status AT %I* : UDINT;
 
 	VFD_Fault : BOOL;		 //:= VFD_Status_Word.3;				This callout doesnt seem to work during Runtime.						//This is part of the Status Word; Fault bit 3
-
+	VFD_Connection_Status AT %I* : UINT;
 	
 
 	// PLC Outputs (Data written to the inverter) RPDOs

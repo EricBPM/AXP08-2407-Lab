@@ -165,6 +165,9 @@
     <Content Include="Images\Icons\arrow-up.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Images\Icons\RedFaulted.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\evak-12-std-mech-1.png">
       <SubType>Content</SubType>
     </Content>
@@ -188,27 +191,34 @@
     </Content>
     <Content Include="Pages\MainContent\Diagnostic.content">
       <SubType>Content</SubType>
+      <Cache>True</Cache>
     </Content>
     <Content Include="Pages\MainContent\EventLog.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\MainContent\Recipe.content">
       <SubType>Content</SubType>
+      <Cache>True</Cache>
     </Content>
     <Content Include="Pages\MainContent\Resources.content">
       <SubType>Content</SubType>
+      <Cache>True</Cache>
     </Content>
     <Content Include="Pages\MainContent\Setting.content">
       <SubType>Content</SubType>
+      <Cache>True</Cache>
     </Content>
     <Content Include="Pages\MainContent\SystemControl.content">
       <SubType>Content</SubType>
+      <Cache>True</Cache>
     </Content>
     <Content Include="Pages\MainContent\SystemHome.content">
       <SubType>Content</SubType>
+      <Cache>True</Cache>
     </Content>
     <Content Include="Pages\MainContent\Trend.content">
       <SubType>Content</SubType>
+      <Cache>True</Cache>
     </Content>
     <Content Include="Pages\MainContent\Vision.content">
       <SubType>Content</SubType>
@@ -296,27 +306,35 @@
     </Content>
     <Content Include="Pages\SystemControlSubPages\AirKnifeControl.content">
       <SubType>Content</SubType>
+      <Cache>True</Cache>
     </Content>
     <Content Include="Pages\SystemControlSubPages\ExtruderControl.content">
       <SubType>Content</SubType>
+      <Cache>True</Cache>
     </Content>
     <Content Include="Pages\SystemControlSubPages\PelletizerControl.content">
       <SubType>Content</SubType>
+      <Cache>True</Cache>
     </Content>
     <Content Include="Pages\SystemControlSubPages\WaterBathControl.content">
       <SubType>Content</SubType>
+      <Cache>True</Cache>
     </Content>
     <Content Include="Pages\TrendSubPages\AirKnifeTrend.content">
       <SubType>Content</SubType>
+      <Cache>True</Cache>
     </Content>
     <Content Include="Pages\TrendSubPages\ExtruderTrend.content">
       <SubType>Content</SubType>
+      <Cache>True</Cache>
     </Content>
     <Content Include="Pages\TrendSubPages\PelletizerTrend.content">
       <SubType>Content</SubType>
+      <Cache>True</Cache>
     </Content>
     <Content Include="Pages\TrendSubPages\WaterbathTrend.content">
       <SubType>Content</SubType>
+      <Cache>True</Cache>
     </Content>
     <Content Include="RecipeFunctions\ConvertDatagridToRecipe.function.json">
       <SubType>Content</SubType>

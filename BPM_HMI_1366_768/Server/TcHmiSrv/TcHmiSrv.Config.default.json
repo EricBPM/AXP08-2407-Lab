@@ -2522,6 +2522,16 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Check_Filter.Change_Filter": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Check_Filter::Change_Filter",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -2677,6 +2687,24 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Fault": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Pelletizer::MyPelletizer::Feedroll_VFD::VFD_Fault",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": ":= VFD_Status_Word.3;\t\t\t\tThis callout doesnt seem to work during Runtime.\t\t\t\t\t\t//This is part of the Status Word; Fault bit 3",
+                        "propertyOrder": 8
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.GVL_Pelletizer.MyPelletizer.Pellet_Length_Calibration_Value": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -2724,6 +2752,40 @@
                     {
                         "comment": "For use in Calibration",
                         "propertyOrder": 18
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Pelletizer.MyPelletizer.Pelletizer_Fault": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Pelletizer::MyPelletizer::Pelletizer_Fault",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "propertyOrder": 21
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Pelletizer.MyPelletizer.Pelletizer_Fault_Reset": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Pelletizer::MyPelletizer::Pelletizer_Fault_Reset",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "propertyOrder": 22
                     }
                 ]
             },
@@ -2923,6 +2985,103 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.GVL_Waterbath.Process_Water_FLOW": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Process_Water_FLOW",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/DINT"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        }
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Waterbath.Process_Water_IN": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Process_Water_IN",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/DINT"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        },
+                        "comment": "INPUTS"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Waterbath.Process_Water_OUT": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Process_Water_OUT",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/DINT"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        }
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Waterbath.Process_Water_Setpoint": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Process_Water_Setpoint",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/DINT"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        }
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Waterbath.Prop_Valve": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Prop_Valve",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/DINT"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Output"
+                        },
+                        "comment": "OUTPUTS"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Imperial_Metric_Switching.Pellet_Length_Metric_Input": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -3053,6 +3212,26 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Machine_Status.AirKnife_Status_String": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Machine_Status::AirKnife_Status_String",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/STRING%2880%29"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Main.connected": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Main::connected",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Pellet_Calibration.SET_CALIBRATON_VALUE": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -3068,6 +3247,16 @@
             "DOMAIN": "ADS",
             "DYNAMIC": true,
             "MAPPING": "PLC1::Scaling_And_Conversions::AirKnife_Actual_Current_Scaled",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scaling_And_Conversions.AirKnife_Vacuum_Level": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Scaling_And_Conversions::AirKnife_Vacuum_Level",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/REAL"
             },
@@ -5336,6 +5525,7 @@
                 "LocalizeText": 3,
                 "Login": 3,
                 "Logout": 3,
+                "PLC1.Check_Filter.Change_Filter": 3,
                 "PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input": 3,
                 "PLC1.GVL_AirKnife.AirKnife_Start": 3,
                 "PLC1.GVL_AirKnife.AirKnife_StartwithSystem": 3,
@@ -5346,9 +5536,12 @@
                 "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Drive_Pulley": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Driven_Pulley": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Feet_Per_Minute": 3,
+                "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Fault": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Pellet_Length_Calibration_Value": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Pellet_Length_Inch_Input": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Pellet_Length_Measured_Input": 3,
+                "PLC1.GVL_Pelletizer.MyPelletizer.Pelletizer_Fault": 3,
+                "PLC1.GVL_Pelletizer.MyPelletizer.Pelletizer_Fault_Reset": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Pelletizer_Info.Electrical_Bill_ID": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Pelletizer_Info.Machine_Serial_Number": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Pelletizer_Info.Purchase_Order_Number": 3,
@@ -5362,6 +5555,11 @@
                 "PLC1.GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Torque": 3,
                 "PLC1.GVL_System.Metric_Set_Bit": 3,
                 "PLC1.GVL_System.RunTime": 3,
+                "PLC1.GVL_Waterbath.Process_Water_FLOW": 3,
+                "PLC1.GVL_Waterbath.Process_Water_IN": 3,
+                "PLC1.GVL_Waterbath.Process_Water_OUT": 3,
+                "PLC1.GVL_Waterbath.Process_Water_Setpoint": 3,
+                "PLC1.GVL_Waterbath.Prop_Valve": 3,
                 "PLC1.Imperial_Metric_Switching.Pellet_Length_Metric_Input": 3,
                 "PLC1.Machine_Limits.Feedroll_Max_Ft_Per_Min": 3,
                 "PLC1.Machine_Limits.Feedroll_Min_Ft_Per_Min": 3,
@@ -5375,8 +5573,11 @@
                 "PLC1.Machine_Limits.Rotor_Motor_Minimum_Hz": 3,
                 "PLC1.Machine_Limits.Rotor_Motor_Rated_Hz": 3,
                 "PLC1.Machine_Limits.Rotor_Motor_Rated_RPM": 3,
+                "PLC1.Machine_Status.AirKnife_Status_String": 3,
+                "PLC1.Main.connected": 3,
                 "PLC1.Pellet_Calibration.SET_CALIBRATON_VALUE": 3,
                 "PLC1.Scaling_And_Conversions.AirKnife_Actual_Current_Scaled": 3,
+                "PLC1.Scaling_And_Conversions.AirKnife_Vacuum_Level": 3,
                 "PLC1.Scaling_And_Conversions.Feedroll_Actual_Current_Scaled": 3,
                 "PLC1.Scaling_And_Conversions.Feedroll_Actual_Torque_Scaled": 3,
                 "PLC1.Scaling_And_Conversions.Feedroll_DC_Bus_Voltage_Scaled": 3,
