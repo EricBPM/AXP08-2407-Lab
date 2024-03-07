@@ -23,9 +23,9 @@ END_VAR
       <ST><![CDATA[Rotor_Actual_Torque_Scaled := INT_TO_REAL(GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Torque) / 10;
 Feedroll_Actual_Torque_Scaled := INT_TO_REAL(GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Torque) / 10;
 
-Rotor_Actual_Current_Scaled := INT_TO_REAL(GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Current) / 10;
-Feedroll_Actual_Current_Scaled := INT_TO_REAL(GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Current) / 10;
-AirKnife_Actual_Current_Scaled := INT_TO_REAL(GVL_Airknife.AirKnife_VFD.VFD_Actual_Current) / 10;
+Rotor_Actual_Current_Scaled := UINT_TO_REAL(GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Current) / 10;
+Feedroll_Actual_Current_Scaled := UINT_TO_REAL(GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Current) / 10;
+AirKnife_Actual_Current_Scaled := UINT_TO_REAL(GVL_Airknife.AirKnife_VFD.VFD_Actual_Current) / 10;
 
 
 Rotor_DC_Bus_Voltage_Scaled := UDINT_TO_REAL(GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_DC_Bus_Voltage) / 1000;

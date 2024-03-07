@@ -84,6 +84,13 @@
             "PROCESSID": -1,
             "REQUIRED": true,
             "STARTUPTYPE": 1
+        },
+        "TcHmiVision": {
+            "ENABLED": true,
+            "NAME": "TcHmiVision",
+            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Vision.13.7.120\\runtimes\\win\\net472\\",
+            "REQUIRED": false,
+            "STARTUPTYPE": 1
         }
     },
     "FILES": {
@@ -2532,6 +2539,16 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Diameter_Algo.ImageInGrayDisplay.jpeg": {
+            "ACCESS": 3,
+            "DOMAIN": "TcHmiVision",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Diameter_Algo::ImageInGrayDisplay::jpeg",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BINARY"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -2982,6 +2999,46 @@
             "MAPPING": "PLC1::GVL_System::RunTime",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Vision.Image_Count": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Vision::Image_Count",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/UINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Vision.Images_Omitted": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Vision::Images_Omitted",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/ULINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Vision.Start_Camera_Sequence": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Vision::Start_Camera_Sequence",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Vision.Trigger_Image": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Vision::Trigger_Image",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
             },
             "USEMAPPING": true
         },
@@ -5313,6 +5370,83 @@
             },
             "USEMAPPING": true
         },
+        "TcHmiVision.Config": {
+            "ACCESS": 0,
+            "DOMAIN": "TcHmiVision",
+            "DYNAMIC": false,
+            "HIDDEN": true,
+            "MAPPING": "Config",
+            "OPTIONS": {},
+            "SCHEMA": {},
+            "USEMAPPING": true
+        },
+        "TcHmiVision.Diagnostics": {
+            "ACCESS": 1,
+            "DOMAIN": "TcHmiVision",
+            "DYNAMIC": false,
+            "HIDDEN": true,
+            "MAPPING": "Diagnostics",
+            "OPTIONS": {},
+            "SCHEMA": {
+                "function": true,
+                "properties": {
+                    "Runtimes": {
+                        "additionalProperties": {
+                            "properties": {
+                                "adsState": {
+                                    "propertyOrder": 3,
+                                    "readOnly": true,
+                                    "type": "string"
+                                },
+                                "connectionState": {
+                                    "propertyOrder": 1,
+                                    "readOnly": true,
+                                    "type": "string"
+                                },
+                                "systemServiceAdsState": {
+                                    "propertyOrder": 2,
+                                    "readOnly": true,
+                                    "type": "string"
+                                }
+                            },
+                            "readOnly": true,
+                            "type": "object"
+                        },
+                        "readOnly": true,
+                        "type": "object"
+                    }
+                },
+                "readOnly": true,
+                "transient": true,
+                "type": "object"
+            },
+            "USEMAPPING": true
+        },
+        "TcHmiVision.GetSchema": {
+            "ACCESS": 3,
+            "DOMAIN": "TcHmiVision",
+            "DYNAMIC": false,
+            "HIDDEN": true,
+            "MAPPING": "GetSchema",
+            "OPTIONS": {},
+            "SCHEMA": {
+                "function": true,
+                "writeValue": {
+                    "type": "string"
+                }
+            },
+            "USEMAPPING": true
+        },
+        "TcHmiVision.ListSymbols": {
+            "ACCESS": 3,
+            "DOMAIN": "TcHmiVision",
+            "DYNAMIC": false,
+            "HIDDEN": true,
+            "MAPPING": "ListSymbols",
+            "OPTIONS": {},
+            "SCHEMA": {},
+            "USEMAPPING": true
+        },
         "Unsubscribe": {
             "ACCESS": 3,
             "DOMAIN": "TcHmiSrv",
@@ -5526,6 +5660,7 @@
                 "Login": 3,
                 "Logout": 3,
                 "PLC1.Check_Filter.Change_Filter": 3,
+                "PLC1.Diameter_Algo.ImageInGrayDisplay.jpeg": 3,
                 "PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input": 3,
                 "PLC1.GVL_AirKnife.AirKnife_Start": 3,
                 "PLC1.GVL_AirKnife.AirKnife_StartwithSystem": 3,
@@ -5555,6 +5690,10 @@
                 "PLC1.GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Torque": 3,
                 "PLC1.GVL_System.Metric_Set_Bit": 3,
                 "PLC1.GVL_System.RunTime": 3,
+                "PLC1.GVL_Vision.Image_Count": 3,
+                "PLC1.GVL_Vision.Images_Omitted": 3,
+                "PLC1.GVL_Vision.Start_Camera_Sequence": 3,
+                "PLC1.GVL_Vision.Trigger_Image": 3,
                 "PLC1.GVL_Waterbath.Process_Water_FLOW": 3,
                 "PLC1.GVL_Waterbath.Process_Water_IN": 3,
                 "PLC1.GVL_Waterbath.Process_Water_OUT": 3,
