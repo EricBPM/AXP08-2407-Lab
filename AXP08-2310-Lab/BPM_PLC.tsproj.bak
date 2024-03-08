@@ -3426,12 +3426,6 @@
 				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" DisableFpExceptions="true" AdtTasks="true">
 					<Name>PlcTask</Name>
 				</Task>
-				<Task Id="4" Priority="5" CycleTime="10000" AmsPort="351" Affinity="#x00000020" AdtTasks="true">
-					<Name>VnTask ImgAcq (Alvium G5 2050c)</Name>
-				</Task>
-				<Task Id="5" Priority="6" CycleTime="10000" AmsPort="352" Affinity="#x00000020" AdtTasks="true">
-					<Name>VnTask ADS (Alvium G5 2050c)</Name>
-				</Task>
 				<Task Id="6" Priority="7" CycleTime="10000" AmsPort="353" AdtTasks="true">
 					<Name>VnTask ImgAcq (AlviumG5)</Name>
 				</Task>
@@ -3442,7 +3436,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{C2463DFE-8D25-458F-B39B-892E853BBF0C}" Name="PLC" PrjFilePath="PLC\PLC.plcproj" TmcFilePath="PLC\PLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{F52F4F80-EA97-5E0E-6DAA-E746A1B2CD3F}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{68F480DD-64A8-876B-30A7-840FA817F3AA}">
 					<Name>PLC Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
@@ -3635,13 +3629,13 @@
 							<Type>UINT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Waterbath.Pump_Start</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
 							<Name>GVL_Waterbath.Prop_Valve</Name>
 							<Comment><![CDATA[OUTPUTS]]></Comment>
 							<Type>DINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Waterbath.Pump_Start</Name>
+							<Type>BOOL</Type>
 						</Var>
 						<Var>
 							<Name>GVL_Waterbath.Pump_OL_Reset</Name>
@@ -3673,32 +3667,6 @@
 							<Comment><![CDATA[ Internal reference to the corresponding TcVnGevImageProvider TcCOM module ID, which needs to be set via TC init symbol. ]]></Comment>
 							<AreaNo>#x00000003</AreaNo>
 							<Data>80000101</Data>
-							<Properties>
-								<Property>
-									<Name>TcCategoryOID</Name>
-									<Value>TcVnGevImageProvider</Value>
-								</Property>
-							</Properties>
-						</InitSymbol>
-						<InitSymbol>
-							<Name>Diameter_Algo.ReadRegister.oidITcVnGevImageProvider</Name>
-							<Type GUID="{18071995-0000-0000-0000-00000000000F}">OTCID</Type>
-							<Comment><![CDATA[ Internal reference to the corresponding TcVnGevImageProvider TcCOM module ID, which needs to be set via TC init symbol. ]]></Comment>
-							<AreaNo>#x00000003</AreaNo>
-							<Data>00000000</Data>
-							<Properties>
-								<Property>
-									<Name>TcCategoryOID</Name>
-									<Value>TcVnGevImageProvider</Value>
-								</Property>
-							</Properties>
-						</InitSymbol>
-						<InitSymbol>
-							<Name>Diameter_Algo.WriteRegister.oidITcVnGevImageProvider</Name>
-							<Type GUID="{18071995-0000-0000-0000-00000000000F}">OTCID</Type>
-							<Comment><![CDATA[ Internal reference to the corresponding TcVnGevImageProvider TcCOM module ID, which needs to be set via TC init symbol. ]]></Comment>
-							<AreaNo>#x00000003</AreaNo>
-							<Data>00000000</Data>
 							<Properties>
 								<Property>
 									<Name>TcCategoryOID</Name>
@@ -39939,7 +39907,7 @@
 											<RegisterValue>07-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x100A0074">
-											<RegisterValue>DD-01-00-00</RegisterValue>
+											<RegisterValue>EC-01-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x00800084">
 											<RegisterValue>07-00-00-00</RegisterValue>
@@ -45404,6 +45372,9 @@
 										<Register Address="0xA00000EC">
 											<RegisterValue>04-00-00-00</RegisterValue>
 										</Register>
+										<Register Address="0x00800908">
+											<RegisterValue>03-00-00-00</RegisterValue>
+										</Register>
 										<Register Address="0xA00000F0">
 											<RegisterValue>04-00-00-00</RegisterValue>
 										</Register>
@@ -45413,15 +45384,18 @@
 										<Register Address="0xA00000F8">
 											<RegisterValue>04-00-00-00</RegisterValue>
 										</Register>
+										<Register Address="0x00800F3C">
+											<RegisterValue>03-00-00-00</RegisterValue>
+										</Register>
 										<Register Address="0xA00000FC">
 											<RegisterValue>04-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x00800FB4">
+											<RegisterValue>03-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x00000D08">
 											<RegisterValue>00-00-00-00</RegisterValue>
 										</Register>
-										<Register Address="0x00800908">
-											<RegisterValue>03-00-00-00</RegisterValue>
-										</Register>
 										<Register Address="0x10440014">
 											<RegisterValue>00-40-EA-3F</RegisterValue>
 										</Register>
@@ -45628,12 +45602,6 @@
 											<Selector SelectorName="ColorTransformationValueSelector">8</Selector>
 											<Selector SelectorName="SubRegionSelector">3</Selector>
 											<RegisterValue>00-00-80-3F</RegisterValue>
-										</Register>
-										<Register Address="0x00800F3C">
-											<RegisterValue>03-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x00800FB4">
-											<RegisterValue>03-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0xD0001158">
 											<RegisterValue>01-00-00-00</RegisterValue>
@@ -45651,36 +45619,6 @@
 											<RegisterValue>FF-FF-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x00000044">
-											<RegisterValue>00-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x00000958">
-											<RegisterValue>00-00-13-88</RegisterValue>
-										</Register>
-										<Register Address="0x00000938">
-											<RegisterValue>00-00-4E-20</RegisterValue>
-										</Register>
-										<Register Address="0x00000024">
-											<RegisterValue>A9-FE-08-B9</RegisterValue>
-										</Register>
-										<Register Address="0x0000064C">
-											<RegisterValue>A9-FE-08-65</RegisterValue>
-										</Register>
-										<Register Address="0x0000065C">
-											<RegisterValue>FF-FF-FF-00</RegisterValue>
-										</Register>
-										<Register Address="0x0000066C">
-											<RegisterValue>00-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x000000E8">
-											<RegisterValue>00-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x000000EC">
-											<RegisterValue>00-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x000000F0">
-											<RegisterValue>00-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x000000F4">
 											<RegisterValue>00-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x008010B0">
@@ -45812,11 +45750,41 @@
 										<Register Address="0x000000E4">
 											<RegisterValue>00-00-00-00</RegisterValue>
 										</Register>
+										<Register Address="0x000000E8">
+											<RegisterValue>00-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x000000EC">
+											<RegisterValue>00-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x000000F0">
+											<RegisterValue>00-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x000000F4">
+											<RegisterValue>00-00-00-00</RegisterValue>
+										</Register>
 										<Register Address="0x00000934">
 											<RegisterValue>D0-4E-00-6F</RegisterValue>
 										</Register>
+										<Register Address="0x00000938">
+											<RegisterValue>00-00-4E-20</RegisterValue>
+										</Register>
+										<Register Address="0x00000958">
+											<RegisterValue>00-00-13-88</RegisterValue>
+										</Register>
+										<Register Address="0x00000024">
+											<RegisterValue>A9-FE-08-B9</RegisterValue>
+										</Register>
 										<Register Address="0x00000014">
 											<RegisterValue>00-00-00-06</RegisterValue>
+										</Register>
+										<Register Address="0x0000064C">
+											<RegisterValue>A9-FE-08-65</RegisterValue>
+										</Register>
+										<Register Address="0x0000065C">
+											<RegisterValue>FF-FF-FF-00</RegisterValue>
+										</Register>
+										<Register Address="0x0000066C">
+											<RegisterValue>00-00-00-00</RegisterValue>
 										</Register>
 									</RegisterValues>
 									<MetaData>

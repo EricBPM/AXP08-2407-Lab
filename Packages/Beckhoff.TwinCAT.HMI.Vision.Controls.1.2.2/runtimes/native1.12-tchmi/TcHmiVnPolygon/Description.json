@@ -1,0 +1,189 @@
+{
+    "$schema":  "../.hmiframework/Schema/ControlDescription.Schema.json",
+    "apiVersion":  1,
+    "name":  "TcHmiVnPolygon",
+    "namespace":  "TcHmi.Controls.Beckhoff.Vision",
+    "displayName":  "Polygon (Interactive)",
+    "version":  {
+                    "full":  "1.2.2.0",
+                    "major":  1,
+                    "minor":  2,
+                    "revision":  2,
+                    "build":  0
+                },
+    "visible":  true,
+    "themeable":  "Standard",
+    "base":  "TcHmi.Controls.Beckhoff.Vision.TcHmiVnShape",
+    "description":  "Adjustable polygon shape.",
+    "properties":  {
+                       "containerControl":  false,
+                       "geometry":  {
+                                        "width":  150,
+                                        "height":  150
+                                    }
+                   },
+    "icons":  [
+                  {
+                      "name":  "Icons/16x16.png",
+                      "width":  16,
+                      "height":  16
+                  },
+                  {
+                      "name":  "Icons/24x24.png",
+                      "width":  24,
+                      "height":  24
+                  },
+                  {
+                      "name":  "Icons/32x32.png",
+                      "width":  32,
+                      "height":  32
+                  },
+                  {
+                      "name":  "Icons/64x64.png",
+                      "width":  64,
+                      "height":  64
+                  }
+              ],
+    "template":  "Template.html",
+    "dependencyFiles":  [
+                            {
+                                "name":  "TcHmiVnPolygon.js",
+                                "type":  "JavaScript",
+                                "description":  "Contains all the main logic."
+                            },
+                            {
+                                "name":  "Style.css",
+                                "type":  "Stylesheet",
+                                "description":  "Theme independent style"
+                            }
+                        ],
+    "themes":  {
+                   "Base":  {
+                                "resources":  [
+                                                  {
+                                                      "name":  "Themes/Base/Style.css",
+                                                      "type":  "Stylesheet",
+                                                      "description":  "Theme dependent style"
+                                                  }
+                                              ]
+                            }
+               },
+    "attributes":  [
+                       {
+                           "name":  "data-tchmi-shape-data",
+                           "propertyName":  "ShapeData",
+                           "propertySetterName":  "setShapeData",
+                           "propertyGetterName":  "getShapeData",
+                           "displayName":  "ShapeData",
+                           "visible":  true,
+                           "themeable":  "None",
+                           "displayPriority":  1,
+                           "type":  "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.Vision.TcHmiVnPolygon.PolygonData",
+                           "category":  "Common",
+                           "description":  "Array in the from [X, Y][].",
+                           "readOnly":  false,
+                           "bindable":  true,
+                           "defaultBindingMode":  "TwoWay",
+                           "heritable":  true,
+                           "defaultValue":  null,
+                           "defaultValueInternal":  [
+
+                                                    ]
+                       },
+                       {
+                           "name":  "data-tchmi-num-points",
+                           "propertyName":  "NumPoints",
+                           "propertySetterName":  "setNumPoints",
+                           "propertyGetterName":  "getNumPoints",
+                           "displayName":  "NumPoints",
+                           "visible":  true,
+                           "themeable":  "Advanced",
+                           "displayPriority":  2,
+                           "type":  "tchmi:general#/definitions/Number",
+                           "category":  "Common",
+                           "description":  "Maximum number of points in the polygon.",
+                           "readOnly":  false,
+                           "bindable":  true,
+                           "defaultBindingMode":  "OneWay",
+                           "heritable":  true,
+                           "defaultValue":  null,
+                           "defaultValueInternal":  0
+                       },
+                       {
+                           "name":  "data-tchmi-closed",
+                           "propertyName":  "Closed",
+                           "propertySetterName":  "setClosed",
+                           "propertyGetterName":  "getClosed",
+                           "displayName":  "Closed",
+                           "visible":  true,
+                           "themeable":  "Advanced",
+                           "displayPriority":  3,
+                           "type":  "tchmi:general#/definitions/Boolean",
+                           "category":  "Common",
+                           "description":  "If polygon is closed or open.",
+                           "readOnly":  false,
+                           "bindable":  true,
+                           "defaultBindingMode":  "OneWay",
+                           "heritable":  true,
+                           "defaultValue":  null,
+                           "defaultValueInternal":  true
+                       },
+                       {
+                           "name":  "data-tchmi-rotation-handle",
+                           "propertyName":  "RotationHandle",
+                           "propertySetterName":  "setRotationHandle",
+                           "propertyGetterName":  "getRotationHandle",
+                           "displayName":  "RotationHandle",
+                           "visible":  true,
+                           "themeable":  "Advanced",
+                           "displayPriority":  4,
+                           "type":  "tchmi:general#/definitions/Boolean",
+                           "category":  "Usage",
+                           "description":  "Offer rotation handle to edit the polygon.",
+                           "readOnly":  false,
+                           "bindable":  true,
+                           "defaultBindingMode":  "OneWay",
+                           "heritable":  true,
+                           "defaultValue":  true,
+                           "defaultValueInternal":  true
+                       },
+                       {
+                           "name":  "data-tchmi-angle-interval",
+                           "propertyName":  "AngleInterval",
+                           "propertySetterName":  "setAngleInterval",
+                           "propertyGetterName":  "getAngleInterval",
+                           "displayName":  "AngleInterval",
+                           "visible":  true,
+                           "themeable":  "Advanced",
+                           "displayPriority":  5,
+                           "type":  "tchmi:general#/definitions/Number",
+                           "category":  "Usage",
+                           "description":  "Interval of allowed rotation angles (in degrees).",
+                           "readOnly":  false,
+                           "bindable":  true,
+                           "defaultBindingMode":  "OneWay",
+                           "heritable":  true,
+                           "defaultValue":  null,
+                           "defaultValueInternal":  0
+                       }
+                   ],
+    "attributeCategories":  [
+                                {
+                                    "name":  "Usage",
+                                    "displayPriority":  501,
+                                    "defaultCollapsed":  false,
+                                    "description":  "Which elements will appear on screen."
+                                }
+                            ],
+    "functions":  [
+
+                  ],
+    "events":  [
+
+               ],
+    "dataTypes":  [
+                      {
+                          "schema":  "Schema/Types.Schema.json"
+                      }
+                  ]
+}

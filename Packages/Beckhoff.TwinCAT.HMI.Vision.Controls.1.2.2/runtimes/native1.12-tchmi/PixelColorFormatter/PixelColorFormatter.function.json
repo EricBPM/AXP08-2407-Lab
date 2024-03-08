@@ -1,0 +1,44 @@
+{
+    "$schema":  "../.hmiframework/Schema/FunctionDescription.Schema.json",
+    "apiVersion":  1,
+    "version":  {
+                    "full":  "1.2.2.0",
+                    "major":  1,
+                    "minor":  2,
+                    "revision":  2,
+                    "build":  0
+                },
+    "dependencyFiles":  [
+                            {
+                                "name":  "PixelColorFormatter.js",
+                                "type":  "JavaScript",
+                                "description":  ""
+                            }
+                        ],
+    "function":  {
+                     "name":  "PixelColorFormatter",
+                     "namespace":  "TcHmi.Functions.Beckhoff.Vision",
+                     "displayName":  "PixelColorFormatter",
+                     "description":  "Formatter for the PixelColor of the TcHmiVnImage control.",
+                     "waitMode":  "Synchronous",
+                     "injectContextObject":  false,
+                     "visible":  true,
+                     "category":  "Formatting",
+                     "returnValue":  {
+                                         "type":  "tchmi:general#/definitions/String"
+                                     },
+                     "arguments":  [
+                                       {
+                                           "name":  "PixelColor",
+                                           "displayName":  "PixelColor",
+                                           "type":  "tchmi:general#/definitions/Array",
+                                           "description":  "PixelColor to be formatted.",
+                                           "defaultValue":  [
+
+                                                            ],
+                                           "required":  true,
+                                           "bindable":  true
+                                       }
+                                   ]
+                 }
+}

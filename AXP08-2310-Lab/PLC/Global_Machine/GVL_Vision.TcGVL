@@ -9,7 +9,16 @@ VAR_GLOBAL
 	Images_Omitted : ULINT;
 	
 	
+	
+	
+	ROI_Size : TcVnRotatedRectangle;
+	ImageIn				: ITcVNImage;
+	ImageInGrayDisplay	: ITcVnDisplayableImage;
+	ImageInRawImage		: ITcVnDisplayableImage;
+	ImageInInfo 		: TcVnImageInfo;
 
+	
+	
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

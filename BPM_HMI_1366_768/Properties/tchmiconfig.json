@@ -691,6 +691,10 @@
       "basePath": "/Beckhoff.TwinCAT.HMI.Functions"
     },
     {
+      "name": "Beckhoff.TwinCAT.HMI.Vision.Controls",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Vision.Controls"
+    },
+    {
       "name": "LineTrendExt",
       "basePath": "/LineTrendExt"
     }

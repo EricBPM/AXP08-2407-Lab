@@ -1,0 +1,58 @@
+{
+    "$schema":  "../.hmiframework/Schema/FunctionDescription.Schema.json",
+    "apiVersion":  1,
+    "version":  {
+                    "full":  "1.2.2.0",
+                    "major":  1,
+                    "minor":  2,
+                    "revision":  2,
+                    "build":  0
+                },
+    "dependencyFiles":  [
+                            {
+                                "name":  "BoxColorConverter.js",
+                                "type":  "JavaScript",
+                                "description":  ""
+                            }
+                        ],
+    "function":  {
+                     "name":  "BoxColorConverter",
+                     "namespace":  "TcHmi.Functions.Beckhoff.Vision",
+                     "displayName":  "BoxColorConverter",
+                     "description":  "Converts a color between a certain color format and the RGB color format.",
+                     "waitMode":  "Synchronous",
+                     "category":  "Vision",
+                     "returnValue":  {
+                                         "type":  "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.Vision.TcHmiVnColor.ColorValue"
+                                     },
+                     "arguments":  [
+                                       {
+                                           "name":  "color",
+                                           "displayName":  "color",
+                                           "type":  "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.Vision.Vector4",
+                                           "description":  "",
+                                           "defaultValue":  null,
+                                           "required":  true,
+                                           "bindable":  true
+                                       },
+                                       {
+                                           "name":  "reverse",
+                                           "displayName":  "reverse",
+                                           "type":  "tchmi:general#/definitions/Boolean",
+                                           "description":  "Reverse the color conversion.",
+                                           "defaultValue":  false,
+                                           "required":  true,
+                                           "bindable":  true
+                                       },
+                                       {
+                                           "name":  "format",
+                                           "displayName":  "format",
+                                           "type":  "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.Vision.Color.Space",
+                                           "description":  "Format of the color.",
+                                           "defaultValue":  "RGB",
+                                           "required":  true,
+                                           "bindable":  true
+                                       }
+                                   ]
+                 }
+}

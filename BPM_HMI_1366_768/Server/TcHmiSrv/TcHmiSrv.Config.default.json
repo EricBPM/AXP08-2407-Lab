@@ -27,7 +27,96 @@
     "DEFAULTTIMEFORMATLOCALE": "client",
     "DEFAULTTIMEZONE": "client",
     "DEFAULTUSERGROUP": "__SystemUsers",
-    "DEFINITIONS": {},
+    "DEFINITIONS": {
+        "PLC1.ITcVnDisplayableImage": {
+            "attributes": {
+                "Category": "TcVnDisplayableImage",
+                "CppApi_NoSmartPointer": "",
+                "RelatedType": "{48da88b5-7b23-4bd4-921b-d39483f1d3ba}",
+                "docuFolder": "Interfaces\\Images"
+            },
+            "type": "object"
+        },
+        "PLC1.VN.TcVnPoint2_REAL": {
+            "$ref": "#/definitions/PLC1.VN.TcVnVector2_REAL"
+        },
+        "PLC1.VN.TcVnRotatedRectangle": {
+            "properties": {
+                "aCenter": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.VN.TcVnPoint2_REAL"
+                        },
+                        {
+                            "comment": "Center point",
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "fAngle": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "comment": "Angle in degree",
+                            "propertyOrder": 3
+                        }
+                    ]
+                },
+                "stSize": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.VN.TcVnSize2_REAL"
+                        },
+                        {
+                            "comment": "Size composed of fWidth and fHeight",
+                            "propertyOrder": 2
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.VN.TcVnSize2_REAL": {
+            "properties": {
+                "fHeight": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "comment": "Height",
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "fWidth": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "comment": "Width",
+                            "propertyOrder": 1
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.VN.TcVnVector2_REAL": {
+            "attributes": {
+                "CppApi_ReplacedLibraryNamespaceType": ""
+            },
+            "items": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "maxItems": 2,
+            "minItems": 2,
+            "type": "array"
+        }
+    },
     "DEFLATECOMPRESSIONLEVEL": 5,
     "DIAGNOSTICS_DOMAINS": [],
     "DISABLED_CONFIGURATION_HINTS": [],
@@ -2549,6 +2638,46 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Diameter_Algo.aEndPoint.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Diameter_Algo::aEndPoint[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Diameter_Algo.aEndPoint.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Diameter_Algo::aEndPoint[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Diameter_Algo.aStartPoint.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Diameter_Algo::aStartPoint[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Diameter_Algo.aStartPoint.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Diameter_Algo::aStartPoint[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -3002,6 +3131,46 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.GVL_Vision.ImageInGrayDisplay": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Vision::ImageInGrayDisplay",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.ITcVnDisplayableImage"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Vision.ImageInGrayDisplay.bmp": {
+            "ACCESS": 3,
+            "DOMAIN": "TcHmiVision",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Vision::ImageInGrayDisplay::bmp",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BINARY"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Vision.ImageInGrayDisplay.jpeg": {
+            "ACCESS": 3,
+            "DOMAIN": "TcHmiVision",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Vision::ImageInGrayDisplay::jpeg",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BINARY"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Vision.ImageInRawImage.jpeg": {
+            "ACCESS": 3,
+            "DOMAIN": "TcHmiVision",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Vision::ImageInRawImage::jpeg",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BINARY"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.GVL_Vision.Image_Count": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -3019,6 +3188,16 @@
             "MAPPING": "PLC1::GVL_Vision::Images_Omitted",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/ULINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Vision.ROI_Size": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Vision::ROI_Size",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.VN.TcVnRotatedRectangle"
             },
             "USEMAPPING": true
         },
@@ -5661,6 +5840,10 @@
                 "Logout": 3,
                 "PLC1.Check_Filter.Change_Filter": 3,
                 "PLC1.Diameter_Algo.ImageInGrayDisplay.jpeg": 3,
+                "PLC1.Diameter_Algo.aEndPoint.0": 3,
+                "PLC1.Diameter_Algo.aEndPoint.1": 3,
+                "PLC1.Diameter_Algo.aStartPoint.0": 3,
+                "PLC1.Diameter_Algo.aStartPoint.1": 3,
                 "PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input": 3,
                 "PLC1.GVL_AirKnife.AirKnife_Start": 3,
                 "PLC1.GVL_AirKnife.AirKnife_StartwithSystem": 3,
@@ -5690,8 +5873,13 @@
                 "PLC1.GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Actual_Torque": 3,
                 "PLC1.GVL_System.Metric_Set_Bit": 3,
                 "PLC1.GVL_System.RunTime": 3,
+                "PLC1.GVL_Vision.ImageInGrayDisplay": 3,
+                "PLC1.GVL_Vision.ImageInGrayDisplay.bmp": 3,
+                "PLC1.GVL_Vision.ImageInGrayDisplay.jpeg": 3,
+                "PLC1.GVL_Vision.ImageInRawImage.jpeg": 3,
                 "PLC1.GVL_Vision.Image_Count": 3,
                 "PLC1.GVL_Vision.Images_Omitted": 3,
+                "PLC1.GVL_Vision.ROI_Size": 3,
                 "PLC1.GVL_Vision.Start_Camera_Sequence": 3,
                 "PLC1.GVL_Vision.Trigger_Image": 3,
                 "PLC1.GVL_Waterbath.Process_Water_FLOW": 3,
@@ -5790,6 +5978,7 @@
         "/Beckhoff.TwinCAT.HMI.Controls": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Controls.12.760.59\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.EcDiagnosticsControl": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.EcDiagnosticsControl.12.760.48\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.Functions": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Functions.12.760.59\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.Vision.Controls": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Vision.Controls.1.2.2\\runtimes\\native1.12-tchmi",
         "/LineTrendExt": "..\\..\\Packages\\LineTrendExt.1.0.0\\runtimes\\native1.12-tchmi",
         "/bin": "..\\..\\BPM_HMI_1366_768\\bin\\",
         "/bin/framework": "..\\..\\BPM_HMI_1366_768\\bin\\framework",

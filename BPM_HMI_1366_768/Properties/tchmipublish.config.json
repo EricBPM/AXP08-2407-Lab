@@ -1,39 +1,6 @@
 [
   {
-    "serverExtensions": [
-      {
-        "publishServerExtension": true,
-        "name": "ADS"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiEcDiagnostics"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiLua"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiSqliteHistorize"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiSqliteLogger"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiSrv"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiUserManagement"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiVision"
-      }
-    ],
+    "serverExtensions": [],
     "isNew": false,
     "profileName": "RemotePublish",
     "publishMode": "TcHmi",

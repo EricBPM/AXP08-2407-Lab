@@ -1,0 +1,40 @@
+{
+    "$schema":  "../.hmiframework/Schema/FunctionDescription.Schema.json",
+    "apiVersion":  1,
+    "version":  {
+                    "full":  "1.2.2.0",
+                    "major":  1,
+                    "minor":  2,
+                    "revision":  2,
+                    "build":  0
+                },
+    "dependencyFiles":  [
+                            {
+                                "name":  "ToRotatedRectangle.js",
+                                "type":  "JavaScript",
+                                "description":  ""
+                            }
+                        ],
+    "function":  {
+                     "name":  "ToRotatedRectangle",
+                     "namespace":  "TcHmi.Functions.Beckhoff.Vision",
+                     "displayName":  "ToRotatedRectangle",
+                     "description":  "Convert an UprightRectangle to a RotatedRectangle.",
+                     "waitMode":  "Synchronous",
+                     "category":  "Data Conversion",
+                     "returnValue":  {
+                                         "type":  "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.Vision.TcVnRotatedRectangle"
+                                     },
+                     "arguments":  [
+                                       {
+                                           "name":  "rectangle",
+                                           "displayName":  "rectangle",
+                                           "type":  "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.Vision.TcVnRectangle",
+                                           "description":  "Rectangle to be converted.",
+                                           "defaultValue":  null,
+                                           "required":  true,
+                                           "bindable":  true
+                                       }
+                                   ]
+                 }
+}

@@ -101,6 +101,9 @@
     <Compile Include="POUs\Vision\Diameter_Algo.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\Vision\Vision_GUI_Control.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Devices" />

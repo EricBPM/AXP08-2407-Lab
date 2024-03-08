@@ -1,0 +1,56 @@
+{
+    "$schema":  "../.hmiframework/Schema/FunctionDescription.Schema.json",
+    "apiVersion":  1,
+    "version":  {
+                    "full":  "1.2.2.0",
+                    "major":  1,
+                    "minor":  2,
+                    "revision":  2,
+                    "build":  0
+                },
+    "dependencyFiles":  [
+                            {
+                                "name":  "ShapeValueFormatter.js",
+                                "type":  "JavaScript",
+                                "description":  ""
+                            }
+                        ],
+    "function":  {
+                     "name":  "ShapeValueFormatter",
+                     "namespace":  "TcHmi.Functions.Beckhoff.Vision",
+                     "displayName":  "ShapeValueFormatter",
+                     "description":  "Formats shape description as a string depending on shape type.",
+                     "waitMode":  "Synchronous",
+                     "injectContextObject":  false,
+                     "visible":  true,
+                     "category":  "Formatting",
+                     "returnValue":  {
+                                         "type":  "tchmi:general#/definitions/String"
+                                     },
+                     "arguments":  [
+                                       {
+                                           "name":  "shapeData",
+                                           "displayName":  "shapeData",
+                                           "type":  "tchmi:general#/definitions/Any",
+                                           "description":  "Geometric description of the shape. Description is shape-specific.",
+                                           "defaultValue":  null,
+                                           "required":  true,
+                                           "bindable":  true
+                                       },
+                                       {
+                                           "name":  "shapeType",
+                                           "displayName":  "shapeType",
+                                           "type":  "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.Vision.ShapeType",
+                                           "description":  "Type of the shape.",
+                                           "defaultValue":  "Point",
+                                           "required":  true,
+                                           "bindable":  true
+                                       }
+                                   ]
+                 },
+    "dataTypes":  [
+                      {
+                          "schema":  "../Schema/Types.Schema.json"
+                      }
+                  ]
+}
