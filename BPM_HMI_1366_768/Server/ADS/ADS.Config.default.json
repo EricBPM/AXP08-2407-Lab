@@ -25,7 +25,7 @@
         "TcSysService": {
             "ENABLED": true,
             "NETID": "169.254.135.64.1.1",
-            "PORT": 10000,
+            "PORT": 851,
             "READ_ONLY": false,
             "SYMBOLS": {},
             "USE_WHITELISTING": false

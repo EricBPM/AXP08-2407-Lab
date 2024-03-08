@@ -12,6 +12,15 @@ VAR
 	
 	fb_Camera		: FB_VN_GevCameraControl;
 	CamState		: ETcVNCameraState;
+	
+	ReadRegister 	: FB_VN_ReadMemory;
+	WriteRegister 	: FB_VN_WriteMemory;
+	Exposure		: PVOID;
+	Readreg : PVOID;
+	Writebool	: BOOL;
+	Readbool	: BOOL;
+
+	
 	bNewImageIn		: BOOL;
 	bFirstScan		: BOOL := TRUE;
 	count1			: UINT;
@@ -29,7 +38,6 @@ VAR
 	hrFunc        		: HRESULT;
 
 //Images
-	ipImageIn           : ITcVnImage;
 	ImageIn				: ITcVNImage;
 	ImageInGray			: ITcVNImage;
 	ImageInGrayDisplay	: ITcVnDisplayableImage;
@@ -100,109 +108,323 @@ sText           : STRING(255);
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[IF GVL_Vision.Start_Camera_Sequence THEN
-	// Initialization section
-	IF bFirstScan = TRUE THEN
-		count1 := count1 + 1;
-		bFirstScan := FALSE;
+	
+	CamState :=  fb_Camera.GetState();
+	
+	// CameraControl is in error state, so try to reset the camera connection
+	IF CamState = TCVN_CS_ERROR THEN
+		hr :=  fb_Camera.Reset();
+	
+	// Camera trigger image
+	ELSIF CamState = TCVN_CS_TRIGGERING THEN
+		hr := fb_Camera.TriggerImage();
+	
+	// Camera not yet initialized
+	ELSIF CamState < TCVN_CS_INITIALIZED THEN
+		hr :=  fb_Camera.InitializeCamera();
+	
+	// Camera not yet opened
+	ELSIF CamState < TCVN_CS_OPENED THEN
+		hr := fb_Camera.OpenCamera();
+	
+	// Camera not yet streaming
+	ELSIF CamState < TCVN_CS_ACQUIRING THEN
+		hr := fb_Camera.StartAcquisition();
+	
+	// Camera streaming
+	ELSIF CamState = TCVN_CS_ACQUIRING THEN
+	
+		IF GVL_Vision.Trigger_Image THEN
+			hr := fb_Camera.TriggerImage();
+			IF SUCCEEDED(hr) THEN
+				GVL_Vision.Trigger_Image := FALSE;
+			END_IF
+		ELSE
+			hr := fb_Camera.GetCurrentImage(ImageIn);
+			IF SUCCEEDED(hr) AND ImageIn <> 0 THEN
+				GVL_Vision.Image_Count := GVL_Vision.Image_Count + 1;
+				
+				
+				
+				
+				// Place to call vision algorithms
+				hr := F_VN_TransformIntoDisplayableImageExp(ImageIn, ImageInGrayDisplay, bAllowDeepCopy:=TRUE, hr);
+			END_IF
+		END_IF
+	END_IF
+ELSE
+	CamState :=  fb_Camera.GetState();
+	IF CamState = TCVN_CS_ACQUIRING THEN
+		hr := fb_Camera.StopAcquisition();
+	ELSIF CamState = TCVN_CS_STOPACQUISITION THEN
+		hr := fb_Camera.StopAcquisition();
+	END_IF
+	
+	IF GVL_Vision.Trigger_Image THEN
+		hr := fb_Camera.Reset();
 	END_IF
 	
 	
-	// Camera State Control and Monitor for a New Image.
-	CamState := fb_Camera.GetState();  // CamState must be constantly monitored when not processing an image.
-	bNewImageIn := FALSE;
-	CASE CamState OF
-	-1: // ERROR
-		nCountCamStateError := nCountCamStateError +1;
-		hr := fb_Camera.Reset();
-	0,1,2,3,4,5: // INITIAL, INITIALIZING, INITIALIZED, OPENING, OPENED, STARTACQUISITION
-		nCountCamState0to5 := nCountCamState0to5 +1;
-		hr := fb_Camera.StartAcquisition();
-	6: // ACQUIRING
-		hr := fb_Camera.GetCurrentImageWithGvspInfo(ImageIn,ImageInGvspInfo);
-		//hr := fb_Camera.GetCurrentImage(ImageIn);
-		IF SUCCEEDED(hr) AND ImageIn <> 0 THEN
-			GVL_Vision.Image_Count := GVL_Vision.Image_Count +1;
-			bNewImageIn := TRUE;
-		END_IF
-	9: // TRIGGERING
-		nCountCamStateTriggering := nCountCamStateTriggering +1;
-			// After a Software Trigger, Camera acquires an image and then enters Triggering Mode which is considered an Intermediate state
-			// The Software Trigger must be called again to complete the transition back to Acquiring mode
-			// This also applies to the File Source Control when in Trigger mode
-		hr := fb_Camera.TriggerImage();
-	END_CASE
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//ReadRegister(nAddress:=16#10240000, nLength:=8, pBuffer:=readreg, bRead:=readbool, nTimeout:=T#3S, nErrorID=>hr);
+
+	//writeRegister(nAddress:=16#10240000, nLength:=8,pData:= Exposure,bWrite:=Writebool, nTimeout:=T#3S, nErrorID=>hr);
+	
+	
+	
+END_IF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// I didnt want to delete this out but its not working right. The state machine is kind of jacked up. I found a good
+// example from Beckhoff Infosys that shows a better state machine than this. Trying that state machine over the one below. 
+
+
+
+
+
+
+//IF GVL_Vision.Start_Camera_Sequence THEN
+//	// Initialization section
+//	IF bFirstScan = TRUE THEN
+//		count1 := count1 + 1;
+//		bFirstScan := FALSE;
+//	END_IF
+	
+	
+//	// Camera State Control and Monitor for a New Image.
+//	CamState := fb_Camera.GetState();  // CamState must be constantly monitored when not processing an image.
+//	bNewImageIn := FALSE;
+//	CASE CamState OF
+//	-1: // ERROR
+//		nCountCamStateError := nCountCamStateError +1;
+//		hr := fb_Camera.Reset();
+//	0:	//INITIAL STATE
+//		hr := fb_Camera.InitializeCamera();
+//	1,2,3: //INITIALIZING, INITIALIZED, OPENING, OPENED,
+//		//Do nothing until it is Initialized or Open.
+//	4,5: // OPENED, START_ACQUISITION
+//		nCountCamState0to5 := nCountCamState0to5 +1;
+//		hr := fb_Camera.StartAcquisition();
+//	6: // ACQUIRING
+//		hr := fb_Camera.GetCurrentImageWithGvspInfo(ImageIn,ImageInGvspInfo);
+//		//hr := fb_Camera.GetCurrentImage(ImageIn);
+//		IF SUCCEEDED(hr) AND ImageIn <> 0 THEN
+//			GVL_Vision.Image_Count := GVL_Vision.Image_Count +1;
+//			bNewImageIn := TRUE;
+//		END_IF
+//	9: // TRIGGERING
+//		nCountCamStateTriggering := nCountCamStateTriggering +1;
+//			// After a Software Trigger, Camera acquires an image and then enters Triggering Mode which is considered an Intermediate state
+//			// The Software Trigger must be called again to complete the transition back to Acquiring mode
+//			// This also applies to the File Source Control when in Trigger mode
+//		hr := fb_Camera.TriggerImage();
+//	END_CASE
+//	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	
 	
 	
 	
 	
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	IF bNewImageIn THEN // All image processing will be within or called from within this IF
-		hr_OmittedImage := fb_Camera.GetOmittedImagesNum(GVL_Vision.Images_Omitted); // Images discarded from the ImageQueue due to images arriving faster than they can be processed
-		nImage_ID_Num := ImageInGvspInfo.BlockId; // Get Image Number from the Block ID of the camera image
+//	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//	IF bNewImageIn THEN // All image processing will be within or called from within this IF
+//		hr_OmittedImage := fb_Camera.GetOmittedImagesNum(GVL_Vision.Images_Omitted); // Images discarded from the ImageQueue due to images arriving faster than they can be processed
+//		nImage_ID_Num := ImageInGvspInfo.BlockId; // Get Image Number from the Block ID of the camera image
 	
-	// The "Get Image Info" section and the following IF statement allow ImageIn to be in any of the following formats:
-	// Mono 8 (typical for a monochrome camera or monochrome filesource image.
-	// Bayer_RG	(typical for a color camera.
-	// RGB (typical for a filesource color image.
+//	// The "Get Image Info" section and the following IF statement allow ImageIn to be in any of the following formats:
+//	// Mono 8 (typical for a monochrome camera or monochrome filesource image.
+//	// Bayer_RG	(typical for a color camera.
+//	// RGB (typical for a filesource color image.
 		
-		// Get image info
-		hr := F_VN_GetImageInfo(ImageIn, stImageInfo, hr);
-		nImagePixelFormatChannels := stImageInfo.stPixelFormat.nChannels; // 1 indicates Image is monochrome, >1 indicates image is color
-		nImagePixelEncoding := stImageInfo.stPixelFormat.ePixelEncoding; // 2 indicates that color image is formatted Bayer_RG (needs to be converted to RGB)
-		nImageEffectivePixelSize := stImageInfo.stPixelFormat.nElementSize; // Image pixel bit depth
-		hr := S_OK;
-		IF (nImagePixelFormatChannels > 1) THEN // Image is color
-			// Modify Color Space conversion type with regards to color image type being delivered by the camera.
-			// Color images from cameras are typically encoded Bayer_RG or Bayer_GR
-			hr := F_VN_ConvertColorSpace(ImageIn, ImageInGray, TCVN_CST_BAYER_RG_TO_GRAY, hr);
-		END_IF	
+//		// Get image info
+//		hr := F_VN_GetImageInfo(ImageIn, stImageInfo, hr);
+//		nImagePixelFormatChannels := stImageInfo.stPixelFormat.nChannels; // 1 indicates Image is monochrome, >1 indicates image is color
+//		nImagePixelEncoding := stImageInfo.stPixelFormat.ePixelEncoding; // 2 indicates that color image is formatted Bayer_RG (needs to be converted to RGB)
+//		nImageEffectivePixelSize := stImageInfo.stPixelFormat.nElementSize; // Image pixel bit depth
+//		hr := S_OK;
+//		IF (nImagePixelFormatChannels > 1) THEN // Image is color
+//			// Modify Color Space conversion type with regards to color image type being delivered by the camera.
+//			// Color images from cameras are typically encoded Bayer_RG or Bayer_GR
+//			hr := F_VN_ConvertColorSpace(ImageIn, ImageInGray, TCVN_CST_BAYER_RG_TO_GRAY, hr);
+//		END_IF	
 					
 		
 		
 		
-		//hrWD := F_VN_StartRelWatchdog(tStop, hr);
-	//LineFunctions Here!
-		//hrWD := F_VN_StopWatchdog(hrWD, nFractionProcessed=>nFraction, tRest=>tRest);
+//		//hrWD := F_VN_StartRelWatchdog(tStop, hr);
+//	//LineFunctions Here!
+//		//hrWD := F_VN_StopWatchdog(hrWD, nFractionProcessed=>nFraction, tRest=>tRest);
 	
 		
+
 		
 	
-		
+//		// Display source and result image
+//		hr := F_VN_TransformIntoDisplayableImage(ImageInGray, ImageInGrayDisplay, S_OK);
+//		//hr := F_VN_CopyIntoDisplayableImage(ImageInGray, ImageInGrayDisplay, hr);
 	
-		// Display source and result image
-		hr := F_VN_TransformIntoDisplayableImage(ImageInGray, ImageInGrayDisplay, S_OK);
-		//hr := F_VN_CopyIntoDisplayableImage(ImageInGray, ImageInGrayDisplay, hr);
+//	END_IF
+
 	
-	END_IF
+//	// Generate Software Trigger from visualization (Camera must be configured for Software Trigger)
+//	bOSR_PbCamSwTrig(CLK:=GVL_Vision.Trigger_Image); // From visualization Camera Software Trigger control
+//	IF bOSR_PbCamSwTrig.Q THEN
+//		nCountSwTrigger := nCountSwTrigger +1;
+//		hr_Software_Trig := fb_Camera.TriggerImage();
+//	END_IF
 	
-	
-	
-	
-	
-	
-	
-	
-	// Generate Software Trigger from visualization (Camera must be configured for Software Trigger)
-	bOSR_PbCamSwTrig(CLK:=GVL_Vision.Trigger_Image); // From visualization Camera Software Trigger control
-	IF bOSR_PbCamSwTrig.Q THEN
-		nCountSwTrigger := nCountSwTrigger +1;
-		hr_Software_Trig := fb_Camera.TriggerImage();
-	END_IF
-	
-ELSE
-	hr := fb_Camera.StopAcquisition();
-	hr := fb_Camera.ClearImageQueue();
-END_IF
+//ELSE
+//	hr := fb_Camera.StopAcquisition();
+//	hr := fb_Camera.ClearImageQueue();
+//END_IF
 ]]></ST>
     </Implementation>
     <LineIds Name="Diameter_Algo">
-      <LineId Id="434" Count="0" />
+      <LineId Id="548" Count="0" />
+      <LineId Id="664" Count="0" />
+      <LineId Id="680" Count="8" />
+      <LineId Id="737" Count="6" />
+      <LineId Id="696" Count="14" />
+      <LineId Id="763" Count="0" />
+      <LineId Id="714" Count="1" />
+      <LineId Id="719" Count="0" />
+      <LineId Id="765" Count="2" />
+      <LineId Id="720" Count="3" />
+      <LineId Id="667" Count="0" />
+      <LineId Id="754" Count="0" />
+      <LineId Id="771" Count="0" />
+      <LineId Id="768" Count="0" />
+      <LineId Id="772" Count="1" />
+      <LineId Id="895" Count="2" />
+      <LineId Id="769" Count="0" />
+      <LineId Id="762" Count="0" />
+      <LineId Id="760" Count="0" />
+      <LineId Id="886" Count="1" />
+      <LineId Id="892" Count="1" />
+      <LineId Id="888" Count="3" />
+      <LineId Id="757" Count="0" />
+      <LineId Id="876" Count="1" />
+      <LineId Id="550" Count="0" />
+      <LineId Id="875" Count="0" />
+      <LineId Id="551" Count="3" />
+      <LineId Id="557" Count="101" />
+      <LineId Id="663" Count="0" />
+      <LineId Id="659" Count="3" />
+      <LineId Id="555" Count="1" />
+      <LineId Id="544" Count="0" />
       <LineId Id="134" Count="5" />
       <LineId Id="439" Count="0" />
-      <LineId Id="140" Count="24" />
+      <LineId Id="140" Count="6" />
+      <LineId Id="542" Count="1" />
+      <LineId Id="147" Count="0" />
+      <LineId Id="540" Count="1" />
+      <LineId Id="148" Count="16" />
       <LineId Id="418" Count="4" />
       <LineId Id="165" Count="22" />
       <LineId Id="429" Count="2" />
@@ -211,9 +433,9 @@ END_IF
       <LineId Id="432" Count="0" />
       <LineId Id="270" Count="0" />
       <LineId Id="433" Count="0" />
-      <LineId Id="303" Count="7" />
-      <LineId Id="423" Count="5" />
-      <LineId Id="311" Count="7" />
+      <LineId Id="304" Count="6" />
+      <LineId Id="428" Count="0" />
+      <LineId Id="312" Count="6" />
       <LineId Id="438" Count="0" />
       <LineId Id="319" Count="0" />
       <LineId Id="440" Count="0" />
