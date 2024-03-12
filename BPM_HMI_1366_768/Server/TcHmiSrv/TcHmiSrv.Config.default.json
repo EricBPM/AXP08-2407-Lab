@@ -37,6 +37,76 @@
             },
             "type": "object"
         },
+        "PLC1.Tc3_Vision.ETcVnCameraState": {
+            "attributes": {
+                "Namespace": "Tc3_Vision"
+            },
+            "enum": [
+                -1,
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ],
+            "options": [
+                {
+                    "label": "TCVN_CS_ERROR",
+                    "value": -1
+                },
+                {
+                    "label": "TCVN_CS_INITIAL",
+                    "value": 0
+                },
+                {
+                    "label": "TCVN_CS_INITIALIZING",
+                    "value": 1
+                },
+                {
+                    "label": "TCVN_CS_INITIALIZED",
+                    "value": 2
+                },
+                {
+                    "label": "TCVN_CS_OPENING",
+                    "value": 3
+                },
+                {
+                    "label": "TCVN_CS_OPENED",
+                    "value": 4
+                },
+                {
+                    "label": "TCVN_CS_STARTACQUISITION",
+                    "value": 5
+                },
+                {
+                    "label": "TCVN_CS_ACQUIRING",
+                    "value": 6
+                },
+                {
+                    "label": "TCVN_CS_STOPACQUISITION",
+                    "value": 7
+                },
+                {
+                    "label": "TCVN_CS_RESETTINGFEATURES",
+                    "value": 8
+                },
+                {
+                    "label": "TCVN_CS_TRIGGERING",
+                    "value": 9
+                },
+                {
+                    "label": "TCVN_CS_CLOSING",
+                    "value": 10
+                }
+            ],
+            "type": "integer"
+        },
         "PLC1.VN.TcVnPoint2_REAL": {
             "$ref": "#/definitions/PLC1.VN.TcVnVector2_REAL"
         },
@@ -2628,6 +2698,43 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Diameter_Algo.CamState": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Diameter_Algo::CamState",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc3_Vision.ETcVnCameraState"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Diameter_Algo.ConvertedWidth": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Diameter_Algo::ConvertedWidth",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Diameter_Algo.FudgeFactor": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Diameter_Algo::FudgeFactor",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/REAL"
+                    },
+                    {
+                        "comment": "Move to Global for HMI Config"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Diameter_Algo.ImageInGrayDisplay.jpeg": {
             "ACCESS": 3,
             "DOMAIN": "TcHmiVision",
@@ -2635,6 +2742,16 @@
             "MAPPING": "PLC1::Diameter_Algo::ImageInGrayDisplay::jpeg",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BINARY"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Diameter_Algo.StrandWidth": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Diameter_Algo::StrandWidth",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/LREAL"
             },
             "USEMAPPING": true
         },
@@ -2675,6 +2792,76 @@
             "MAPPING": "PLC1::Diameter_Algo::aStartPoint[1]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Diameter_Algo.fAvgStrength_1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Diameter_Algo::fAvgStrength_1",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Diameter_Algo.fMinStrength_1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Diameter_Algo::fMinStrength_1",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Diameter_Algo.fSearchLineDist_1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Diameter_Algo::fSearchLineDist_1",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Diameter_Algo.hrFunc": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Diameter_Algo::hrFunc",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/HRESULT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Diameter_Algo.nMaxThickness_1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Diameter_Algo::nMaxThickness_1",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/UDINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Diameter_Algo.nSearchLines_1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Diameter_Algo::nSearchLines_1",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/UDINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Diameter_Algo.nSubpixIter_1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Diameter_Algo::nSubpixIter_1",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/UDINT"
             },
             "USEMAPPING": true
         },
@@ -5839,11 +6026,22 @@
                 "Login": 3,
                 "Logout": 3,
                 "PLC1.Check_Filter.Change_Filter": 3,
+                "PLC1.Diameter_Algo.CamState": 3,
+                "PLC1.Diameter_Algo.ConvertedWidth": 3,
+                "PLC1.Diameter_Algo.FudgeFactor": 3,
                 "PLC1.Diameter_Algo.ImageInGrayDisplay.jpeg": 3,
+                "PLC1.Diameter_Algo.StrandWidth": 3,
                 "PLC1.Diameter_Algo.aEndPoint.0": 3,
                 "PLC1.Diameter_Algo.aEndPoint.1": 3,
                 "PLC1.Diameter_Algo.aStartPoint.0": 3,
                 "PLC1.Diameter_Algo.aStartPoint.1": 3,
+                "PLC1.Diameter_Algo.fAvgStrength_1": 3,
+                "PLC1.Diameter_Algo.fMinStrength_1": 3,
+                "PLC1.Diameter_Algo.fSearchLineDist_1": 3,
+                "PLC1.Diameter_Algo.hrFunc": 3,
+                "PLC1.Diameter_Algo.nMaxThickness_1": 3,
+                "PLC1.Diameter_Algo.nSearchLines_1": 3,
+                "PLC1.Diameter_Algo.nSubpixIter_1": 3,
                 "PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input": 3,
                 "PLC1.GVL_AirKnife.AirKnife_Start": 3,
                 "PLC1.GVL_AirKnife.AirKnife_StartwithSystem": 3,

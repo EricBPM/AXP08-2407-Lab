@@ -3,22 +3,98 @@
   <POU Name="Diameter_Algo" Id="{5f7b8fc5-d7f2-4611-a186-251f8b0276fd}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM Diameter_Algo
 VAR PERSISTENT
+	//Dont lose the calibration factor. 
+	FudgeFactor 	: REAL := 702.65;
+	
 END_VAR
 VAR
-	//I need to move variables to the Global Section for HMI Controls. The Camera controls can stay here. 
+//I need to move variables to the Global Section for HMI Controls. The Camera controls can stay here. 
 	fb_Camera		: FB_VN_GevCameraControl;
 	CamState		: ETcVNCameraState;	
+//Results		--Move to Global
+	hr					: HRESULT;
+	hrFunc        		: HRESULT;
+	hrWD            	: HRESULT;
 
-
-
+	
 //Move to Global for HMI Config
-	FudgeFactor 	: REAL := 0.3145;
-	StrandWidth 	: REAL;
+
+	StrandWidth 	: LREAL;
 	StrandText 		: STRING;
 	ConvertedWidth 	: REAL;
+////////////////////////////////////////
+
+// Image data
+	ImageInGvspInfo 	: Gvsp_Image_Info;
+	stImageInfo			: TcVNImageInfo;
+	nImagePixelFormatChannels	: BYTE;
+	nImageEffectivePixelSize	: UINT;
+	nImagePixelEncoding			: BYTE;
+
+
+//Drawing 
+	Edge1Points : ITcVnContainer;
+	Edge2Points : ITcVnContainer;
+	
+	EdgeDist1 : ITcVnContainer;
+	EdgeDist2 : ITcVnContainer;
+
+    aFoundPoint1		:   TcVnPoint2_LREAL;
+    aFoundPoint2		:   TcVnPoint2_LREAL;
 	
 
+//F_VN_LocateEdgeExp Parameters FIRST EDGE, Light to Dark
+	eDirection_1			: ETcVnEdgeDirection := TCVN_ED_LIGHT_TO_DARK;
+	fMinStrength_1			: REAL := 50;
+	nSearchLines_1			: UDINT := 101; 
+	fSearchLineDist_1		: REAL := 3;
+	nMaxThickness_1			: UDINT := 15;
+	nSubpixIter_1			: UDINT := 100;
+	eAlgorithm_1			: ETcVnEdgeDetectionAlgorithm := TCVN_EDA_INTERPOLATION;
+	fAvgStrength_1			: REAL;
+	bInvert_1				: BOOL := FALSE;
 	
+//F_VN_LocateEdgeExp Parameters SECOND EDGE, Dark to Light
+	eDirection_2      		: ETcVnEdgeDirection := TCVN_ED_DARK_TO_LIGHT;
+	fMinStrength_2    		: REAL := 50;
+	nSearchLines_2    		: UDINT := 101; 
+	fSearchLineDist_2 		: REAL := 3;
+	nMaxThickness_2   		: UDINT := 15;
+	nSubpixIter_2     		: UDINT := 100;
+	eAlgorithm_2      		: ETcVnEdgeDetectionAlgorithm := TCVN_EDA_INTERPOLATION;
+	fAvgStrength_2    		: REAL;
+	bInvert_2				: BOOL := FALSE;
+	
+//F_VN_MeasureEdgeDistanceExp
+	fAvgDistance				: REAL;
+	eDirection_M      			: ETcVnEdgeDirection := TCVN_ED_LIGHT_TO_DARK;
+	fMinStrength_M    			: REAL := 50;
+	nSearchLines_M    			: UDINT := 101; 
+	fSearchLineDist_M 			: REAL := 3;
+	nMaxThickness_M   			: UDINT := 15;
+	bInvertSearchDirection_M	: BOOL := FALSE;
+	fSearchGap_M 				: REAL;
+	nSubpixIter_M     			: UDINT := 100;
+	fApproxPrecision_M   		:   REAL  :=  0.0001;
+	eAlgorithm_M      			: ETcVnEdgeDetectionAlgorithm := TCVN_EDA_INTERPOLATION;
+
+	
+
+
+
+	
+	
+	
+	
+
+// Search Window
+	aStartPoint     : TcVnPoint2_REAL := [1300, 1300];
+	aEndPoint       : TcVnPoint2_REAL := [2800, 1300];
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//////These are used Variables & Constants for other functions. Dont delete or move them. 
 // Colors
 	aColorWhite		: TcVnVector4_LREAL := [255, 255, 255, 255];
 	aColorBlack		: TcVnVector4_LREAL := [0, 0, 0, 255];
@@ -26,64 +102,18 @@ VAR
 	aColorBlue		: TcVnVector4_LREAL := [0, 0, 255, 255];
 	aColorRed		: TcVnVector4_LREAL := [255, 0, 0, 255];
 	aColorMagenta	: TcVnVector4_LREAL := [255, 0, 255, 255];
-//Results		--Move to Global
-	hr					: HRESULT;
-	hr_Software_Trig	: HRESULT;
-	hr_OmittedImage		: HRESULT;
-	hrFunc        		: HRESULT;
-
-//Images
-
-
+// Watchdog
+	tStop           : DINT := 50000;
+	tRest           : DINT;
+	nFraction       : UDINT;
+// drawing
+	aLine           : TcVnVector4_LREAL;
+	sText           : STRING(255);
 // F_VN_PutTextExp parameters
 	nX: UDINT	:= 25;
 	nY: UDINT	:= 60;
 	fFontScale	: LREAL := 3;
 	nThickness	: DINT := 3;
-
-// Image data
-	ImageInGvspInfo 	: Gvsp_Image_Info;
-	nImage_ID_Num		: ULINT;
-	stImageInfo			: TcVNImageInfo;
-	sImage_ID_NumText	: STRING;
-	nImagePixelFormatChannels	: BYTE;
-	nImageEffectivePixelSize	: UINT;
-	nImagePixelEncoding			: BYTE;
-
-
-//Drawing 
-	ipEdgePoints1 : ITcVnContainer;
-	ipEdgePoints2 : ITcVnContainer;
-	ipEdge1 : ITcVnContainer;
-	ipEdge2 : ITcVnContainer;
-	StrengthScore : REAL;
-    aPoint1		:   TcVnPoint2_REAL;
-    aPoint2		:   TcVnPoint2_REAL;
-	
-// parameters
-aStartPoint     : TcVnPoint2_REAL := [1300, 1300];
-aEndPoint       : TcVnPoint2_REAL := [2800, 1300];
-
-eDirection      : ETcVnEdgeDirection := TCVN_ED_LIGHT_TO_DARK;
-fMinStrength    : REAL := 50;
-nSearchLines    : UDINT := 101; 
-fSearchLineDist : REAL := 3;
-nMaxThickness   : UDINT := 15;
-nSubpixIter     : UDINT := 100;
-eAlgorithm      : ETcVnEdgeDetectionAlgorithm := TCVN_EDA_INTERPOLATION;
-fAvgStrength    : REAL;
-bInvert			: BOOL := FALSE;
-
-// Watchdog
-hrWD            : HRESULT;
-tStop           : DINT := 25000;
-tRest           : DINT;
-nFraction       : UDINT;
-
-// drawing
-aLine           : TcVnVector4_LREAL;
-sText           : STRING(255);
-
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[IF GVL_Vision.Start_Camera_Sequence THEN
@@ -123,75 +153,124 @@ END_VAR]]></Declaration>
 			IF SUCCEEDED(hr) AND GVL_Vision.ImageIn <> 0 THEN
 				GVL_Vision.Image_Count := GVL_Vision.Image_Count + 1;
 				
+				hr := F_VN_CopyIntoDisplayableImage(GVL_Vision.ImageIn, GVL_Vision.ImageInRawImage, hr);
+				hr := F_Vn_GetImageInfo(GVL_Vision.ImageIn, GVL_Vision.ImageInInfo, hr);
+
 				
 /////////////////////////////////////////////////////////////////////////////// Place to call vision algorithms
-//Add WatchdogTimer
 
-//Raw Image Processing
-			sText := CONCAT(CONCAT('Processed ', UDINT_TO_STRING(nFraction)), '%');
-			hr := F_VN_PutTextExp(sText, GVL_Vision.ImageIn, nX, nY, TCVN_FT_HERSHEY_SIMPLEX, fFontScale, aColorWhite, 2, TCVN_LT_8_CONNECTED, FALSE, hr);
-			sText := CONCAT(CONCAT('Time ', DINT_TO_STRING(tStop - tRest)), 'us');
-			hr := F_VN_PutTextExp(sText, GVL_Vision.ImageIn, nX, nY + 70, TCVN_FT_HERSHEY_SIMPLEX, fFontScale, aColorWhite, 2, TCVN_LT_8_CONNECTED, FALSE,hr);
-			hr := F_VN_CopyIntoDisplayableImage(GVL_Vision.ImageIn, GVL_Vision.ImageInRawImage, hr);
+
 			
 			
-			
-			
-//Draw ROI From Rectangle
+//Draw Search Window From Rectangle
 			aStartPoint[0] := GVL_Vision.ROI_Size.aCenter[0] - (GVL_Vision.ROI_Size.stSize.fWidth / 2);		//Start Point X
 			aStartPoint[1] := GVL_Vision.ROI_Size.aCenter[1]; 												//Start Point Y
 			aEndPoint[0] := GVL_Vision.ROI_Size.aCenter[0] + (GVL_Vision.ROI_Size.stSize.fWidth / 2);		//End Point X
 			aEndPoint[1] := GVL_Vision.ROI_Size.aCenter[1]; 												//End Point Y
 			
-			hr := F_VN_DrawPointExp(REAL_TO_UDINT(aStartPoint[0]), REAL_TO_UDINT(aStartPoint[1]), GVL_Vision.ImageIn, TCVN_DS_SQUARE, aColorblack, nSize:= 15, nThickness:=5, TCVN_LT_8_CONNECTED, hr);
-			hr := F_VN_DrawPointExp(REAL_TO_UDINT(aEndPoint[0]), REAL_TO_UDINT(aEndPoint[1]), GVL_Vision.ImageIn, TCVN_DS_SQUARE, aColorblack, nSize:= 15, nThickness:=5, TCVN_LT_8_CONNECTED, hr); 
+			//Draw Search Window points from Shape - This would need to be moved if I want to show this, these are being considered lines in the working image
+			//hr := F_VN_DrawPointExp(REAL_TO_UDINT(aStartPoint[0]), REAL_TO_UDINT(aStartPoint[1]), GVL_Vision.ImageIn, TCVN_DS_SQUARE, aColorblack, nSize:= 15, nThickness:=5, TCVN_LT_8_CONNECTED, hr);
+			//hr := F_VN_DrawPointExp(REAL_TO_UDINT(aEndPoint[0]), REAL_TO_UDINT(aEndPoint[1]), GVL_Vision.ImageIn, TCVN_DS_SQUARE, aColorblack, nSize:= 15, nThickness:=5, TCVN_LT_8_CONNECTED, hr); 
 
-			hr := F_Vn_GetImageInfo(GVL_Vision.ImageIn, GVL_Vision.ImageInInfo, hr);
+			
+			
+			
+			
 			//Troubleshoot the function! Maybe not this one. maybe just find one line at a time.
-				hrFunc := F_VN_MeasureMinEdgeDistanceExp(
-							ipSrcImage              :=   GVL_Vision.ImageIn, 
-							fMinDistance            :=   StrandWidth,
-							aStartPoint             :=   aStartPoint, 
-							aEndPoint               :=   aEndPoint,
-							eEdgeDirection          :=   TCVN_ED_LIGHT_TO_DARK,
-							fMinStrength            :=   fMinStrength, 
-							nSearchLines            :=   nSearchLines,
-							fSearchLineDist         :=  fSearchLineDist,
-							nMaxThickness           :=  nMaxThickness,
-							bInvertSearchDirection  :=  bInvert,
-							fSearchGap := 0,
-							nSubpixelsIterations    :=  nSubpixIter,
-							fApproxPrecision        :=  0.0001,
-							eAlgorithm              :=  TCVN_EDA_APPROX_ERF,
-							ipEdgePoints1           :=  ipEdge1, 
-							ipEdgePoints2           :=  ipEdge2, 
-							aPoint1                 :=  aPoint1, 
-							aPoint2                 :=  aPoint2,
-							hrPrev                  :=  hrFunc
-			);		
-		
+//				hrFunc := F_VN_MeasureMinEdgeDistanceExp(
+//							ipSrcImage              :=   GVL_Vision.ImageIn, 
+//							fMinDistance            :=   StrandWidth,
+//							aStartPoint             :=   aStartPoint, 
+//							aEndPoint               :=   aEndPoint,
+//							eEdgeDirection          :=   TCVN_ED_LIGHT_TO_DARK,
+//							fMinStrength            :=   fMinStrength, 
+//							nSearchLines            :=   nSearchLines,
+//							fSearchLineDist         :=  fSearchLineDist,
+//							nMaxThickness           :=  nMaxThickness,
+//							bInvertSearchDirection  :=  bInvert,
+//							fSearchGap := 0,
+//							nSubpixelsIterations    :=  nSubpixIter,
+//							fApproxPrecision        :=  0.0001,
+//							eAlgorithm              :=  TCVN_EDA_APPROX_ERF,
+//							ipEdgePoints1           :=  ipEdge1, 
+//							ipEdgePoints2           :=  ipEdge2, 
+//							aPoint1                 :=  aPoint1, 
+//							aPoint2                 :=  aPoint2,
+//							hrPrev                  :=  hrFunc
+//			);	
+
+			hrWD := F_VN_StartRelWatchdog(tStop, hr);
+			
+			   hrFunc := F_VN_LocateEdgeExp(	//Edge 1 Function
+							  ipSrcImage             :=   GVL_Vision.ImageIn,
+							  ipEdgePoints           :=   Edge1Points,
+							  aStartPoint            :=   aStartPoint,
+							  aEndPoint              :=   aEndPoint,
+							  eEdgeDirection         :=   TCVN_ED_Light_TO_DARK,
+							  fMinStrength           :=   fMinStrength_1,
+							  nSearchLines           :=   nSearchLines_1,
+							  fSearchLineDist        :=   fSearchLineDist_1,
+							  nMaxThickness          :=   nMaxThickness_1,
+							  nSubpixelsIterations   :=   nSubpixIter_1,
+							  fApproxPrecision       :=   0.0001,
+							  eAlgorithm             :=   eAlgorithm_1,
+							  hrPrev                 :=   hr,
+							  fAvgStrength           =>   fAvgStrength_1);
+							  
+				hrFunc := F_VN_LocateEdgeExp(	//Edge 2 Function - Using same parameters for both for now, unless there is a reason to map both sets. 
+							  ipSrcImage             :=   GVL_Vision.ImageIn,
+							  ipEdgePoints           :=   Edge2Points,
+							  aStartPoint            :=   aStartPoint,
+							  aEndPoint              :=   aEndPoint,
+							  eEdgeDirection         :=   TCVN_ED_DARK_TO_LIGHT,
+							  fMinStrength           :=   fMinStrength_1,
+							  nSearchLines           :=   nSearchLines_1,
+							  fSearchLineDist        :=   fSearchLineDist_1,
+							  nMaxThickness          :=   nMaxThickness_1,
+							  nSubpixelsIterations   :=   nSubpixIter_1,
+							  fApproxPrecision       :=   0.0001,
+							  eAlgorithm             :=   eAlgorithm_1,
+							  hrPrev                 :=   hr,
+							  fAvgStrength           =>   fAvgStrength_1);			  
+							  
+			hrWD := F_VN_StopWatchdog(hrWD, nFractionProcessed=>nFraction, tRest=>tRest);
+	
 		// Draw First Line
-			hr := F_VN_FitLine(ipEdge1, aLine, hr);
+			hr := F_VN_FitLine(Edge1Points, aLine, hr);
 			hr := F_VN_DrawLine_TcVnVector4_LREAL(aLine, GVL_Vision.ImageIn, aColorblack, 2, hr);
-			hr := F_VN_DrawPointsExp(ipEdge1, GVL_Vision.ImageIn, TCVN_DS_PLUS, aColorwhite, 1, 1, TCVN_LT_8_CONNECTED, hr);
+			hr := F_VN_DrawPointsExp(Edge1Points, GVL_Vision.ImageIn, TCVN_DS_PLUS, aColorBlack, 3, 3, TCVN_LT_8_CONNECTED, hr);
 		//Draw Second Line
-			hr := F_VN_FitLine(ipEdge2, aLine, hr);
+			hr := F_VN_FitLine(Edge2Points, aLine, hr);
 			hr := F_VN_DrawLine_TcVnVector4_LREAL(aLine, GVL_Vision.ImageIn, aColorblack, 2, hr);
-			hr := F_VN_DrawPointsExp(ipEdge2, GVL_Vision.ImageIn, TCVN_DS_PLUS, aColorwhite, 1, 1, TCVN_LT_8_CONNECTED, hr);
+			hr := F_VN_DrawPointsExp(Edge2Points, GVL_Vision.ImageIn, TCVN_DS_PLUS, aColorBlack, 3, 3, TCVN_LT_8_CONNECTED, hr);
+			
+		//Find the closest points in the two Line Sets.	
+			hr := F_VN_ClosestPointsBF(Edge1Points, Edge2Points, StrandWidth, aFoundPoint1, aFoundpoint2, hr);
+			
+		//Processed Percent and Processing Time. Add text to image
+			sText := CONCAT(CONCAT('Processed ', UDINT_TO_STRING(nFraction)), '%');
+			hr := F_VN_PutTextExp(sText, GVL_Vision.ImageIn, nX, nY, TCVN_FT_HERSHEY_SIMPLEX, fFontScale, aColorWhite, 2, TCVN_LT_8_CONNECTED, FALSE, hr);
+			sText := CONCAT(CONCAT('Time ', DINT_TO_STRING(tStop - tRest)), 'us');
+			hr := F_VN_PutTextExp(sText, GVL_Vision.ImageIn, nX, nY + 70, TCVN_FT_HERSHEY_SIMPLEX, fFontScale, aColorWhite, 2, TCVN_LT_8_CONNECTED, FALSE,hr);
+			
+
+
+
+	
 		
-		// Image marking example: Place the Image Number in White and in Black text in the upper left corner of the image
+		//Image marking example: Place the Image Number in White and in Black text in the upper left corner of the image
 			//sImage_ID_NumText := ULINT_TO_STRING(nImage_ID_Num); // Change Image Number to String
 			//hr := F_VN_PutTextExp(sImage_ID_NumText, ImageIn, nX, nY + 210, TCVN_FT_HERSHEY_SIMPLEX, fFontScale, aColorWhite, nThickness, TCVN_LT_8_CONNECTED, FALSE, hr);
 		
 		
 		//Strand Width Information
-			//StrandText := CONCAT('Pixel Count: ', REAL_TO_STRING(StrandWidth));
-			//hr := F_VN_PutTextExp(StrandText, ImageIn, nX, nY + 280, TCVN_FT_HERSHEY_SIMPLEX, fFontScale, aColorBlack, nThickness, TCVN_LT_8_CONNECTED, FALSE, hr);
+			StrandText := CONCAT('Pixel Count: ', REAL_TO_STRING(StrandWidth));
+			hr := F_VN_PutTextExp(StrandText, GVL_Vision.ImageIn, nX, nY + 280, TCVN_FT_HERSHEY_SIMPLEX, fFontScale, aColorBlack, nThickness, TCVN_LT_8_CONNECTED, FALSE, hr);
 		
-			//ConvertedWidth := StrandWidth * FudgeFactor; 	//Hand Calculated Cal factor based off of Cal Card
-			//StrandText := CONCAT('Calculated Width: ', REAL_TO_STRING(ConvertedWidth));
+			ConvertedWidth := StrandWidth / FudgeFactor; 	//Hand Calculated Cal factor based off of Cal Card
+			StrandText := CONCAT('Calculated Width: ', REAL_TO_STRING(ConvertedWidth));
 		
-			//hr := F_VN_PutTextExp(StrandText, ImageIn, nX, nY + 350, TCVN_FT_HERSHEY_SIMPLEX, fFontScale, aColorBlack, nThickness, TCVN_LT_8_CONNECTED, FALSE, hr);
+			hr := F_VN_PutTextExp(StrandText, GVL_Vision.ImageIn, nX, nY + 350, TCVN_FT_HERSHEY_SIMPLEX, fFontScale, aColorBlack, nThickness, TCVN_LT_8_CONNECTED, FALSE, hr);
 					
 				
 		
@@ -217,6 +296,7 @@ ELSE
 	IF GVL_Vision.Trigger_Image THEN
 		hr := fb_Camera.Reset();
 	END_IF
+	GVL_Vision.Image_Count := 0;//Reset Image Count on stop.
 END_IF
 
 ]]></ST>
@@ -229,29 +309,47 @@ END_IF
       <LineId Id="696" Count="14" />
       <LineId Id="763" Count="0" />
       <LineId Id="714" Count="1" />
+      <LineId Id="1257" Count="0" />
       <LineId Id="719" Count="0" />
-      <LineId Id="900" Count="1" />
-      <LineId Id="906" Count="0" />
-      <LineId Id="902" Count="1" />
-      <LineId Id="924" Count="3" />
-      <LineId Id="966" Count="0" />
+      <LineId Id="1259" Count="0" />
+      <LineId Id="1256" Count="0" />
+      <LineId Id="900" Count="2" />
       <LineId Id="957" Count="0" />
-      <LineId Id="1052" Count="2" />
+      <LineId Id="1053" Count="1" />
       <LineId Id="967" Count="1" />
       <LineId Id="970" Count="0" />
       <LineId Id="969" Count="0" />
       <LineId Id="987" Count="0" />
       <LineId Id="985" Count="0" />
+      <LineId Id="1255" Count="0" />
       <LineId Id="929" Count="0" />
       <LineId Id="931" Count="0" />
       <LineId Id="1056" Count="0" />
-      <LineId Id="1029" Count="0" />
+      <LineId Id="1143" Count="0" />
+      <LineId Id="1260" Count="1" />
+      <LineId Id="1144" Count="0" />
       <LineId Id="1057" Count="0" />
       <LineId Id="1031" Count="19" />
       <LineId Id="1030" Count="0" />
-      <LineId Id="932" Count="0" />
+      <LineId Id="1288" Count="0" />
+      <LineId Id="1147" Count="0" />
+      <LineId Id="1289" Count="0" />
+      <LineId Id="1148" Count="14" />
+      <LineId Id="1284" Count="0" />
+      <LineId Id="1270" Count="13" />
+      <LineId Id="1269" Count="0" />
+      <LineId Id="1265" Count="0" />
+      <LineId Id="1146" Count="0" />
+      <LineId Id="1145" Count="0" />
       <LineId Id="1028" Count="0" />
-      <LineId Id="933" Count="19" />
+      <LineId Id="933" Count="6" />
+      <LineId Id="1285" Count="0" />
+      <LineId Id="1295" Count="0" />
+      <LineId Id="1286" Count="1" />
+      <LineId Id="1408" Count="4" />
+      <LineId Id="1291" Count="3" />
+      <LineId Id="1290" Count="0" />
+      <LineId Id="940" Count="12" />
       <LineId Id="904" Count="1" />
       <LineId Id="765" Count="1" />
       <LineId Id="908" Count="0" />
@@ -271,9 +369,10 @@ END_IF
       <LineId Id="769" Count="0" />
       <LineId Id="762" Count="0" />
       <LineId Id="760" Count="0" />
+      <LineId Id="1164" Count="0" />
       <LineId Id="757" Count="0" />
       <LineId Id="876" Count="0" />
-      <LineId Id="5" Count="0" />
+      <LineId Id="1141" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>
