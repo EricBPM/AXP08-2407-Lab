@@ -101,7 +101,7 @@
     <Compile Include="POUs\Vision\Diameter_Algo.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\Vision\Vision_GUI_Control.TcPOU">
+    <Compile Include="VisionTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -110,6 +110,7 @@
     <Folder Include="Global_Machine" />
     <Folder Include="FBs" />
     <Folder Include="POUs\AirKnife" />
+    <Folder Include="POUs\WaterBath" />
     <Folder Include="POUs\Vision" />
     <Folder Include="POUs\System" />
     <Folder Include="POUs\Pelletizer" />

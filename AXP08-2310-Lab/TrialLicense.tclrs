@@ -2,9 +2,9 @@
 <TcLicenseInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2011/11/TcLicenseInfo">
 	<LicenseInfo>
 		<SystemId>{360B2C88-552F-28EB-2731-AA86809D368D}</SystemId>
-		<IssueTime>2024-03-06T15:07:00</IssueTime>
-		<ExpireTime>2024-03-14T00:00:00</ExpireTime>
-		<LicenseKey>39fbf103d608e210f9aa277ecedab827e7269502a277943887eac77e94a05dbf78c17d2edaed88db4fee9edd96fed5c424920ef717f03dbe8d96ccb7d9d6ddf56b17eb516acb072cf83c25df05b30ce0ed020cc9aac35a682e0a94766f1999482880e40e005aed815143a8352a4dabddf374203771305997450e028c2739e7296ff4ba6605ad276e9337a2bcc5b971ecdf276b8d037e6ac30157fed4342dd4bde943401cfa981505d6dc3b7592fa5a6987e7875cc732d951db1d7147112955770f53077a43f5453d1914bb56c465eb9e167677c4787b3b60b108f267bc0ac19038c6f23b403b2dd6e4a98fce9cc7d4ea4d7092f34718d29192ca8ede83b66ba6</LicenseKey>
+		<IssueTime>2024-03-14T18:12:00</IssueTime>
+		<ExpireTime>2024-03-22T00:00:00</ExpireTime>
+		<LicenseKey>4bf1f68f15cf6a6318829f0b4c82961d4836f908fec67856b5940c95bc69f3056010a84199501ae9018a52ddbba11dba0b52d8157174e6c82c402cf9e635eb6182a132b65d343dbc890c81bc7b1db39d41a8d58f2435ef7334163d34894214a92da078a93f6008a1c737cacd87903bdc7bdb4fad1ce620aaa750c73fbbad95b3ffbaac08df173c4f50b43d745c9da5043da1602abe9e11adb23dd352bae3dfdb3b8f49350c0fadea7f0b8ef77a50d23057eff9a95dec586b84adf12306e0587b5585c1307159cbc3889a9dad50dc2882eeaa50fcae1195b5e7f5904c687e72ac48bed7cd89584ef92c37280a4f41e55cfbb8beacef2f22ed017afca94f04baef</LicenseKey>
 		<License>
 			<LicenseId>{4C256767-E6E6-4AF5-BD68-9F7ABAD0C200}</LicenseId>
 			<Name>TC3 ADS</Name>
@@ -61,14 +61,14 @@
 			<OrderNo>TF2000</OrderNo>
 		</License>
 		<License>
-			<LicenseId>{D58728E0-7762-4145-8A93-80D55E0453A6}</LicenseId>
-			<Name>TC3 HMI Extension SDK</Name>
-			<OrderNo>TF2200</OrderNo>
-		</License>
-		<License>
 			<LicenseId>{8161723B-0C2E-405C-B829-EDC5DAAB5104}</LicenseId>
 			<Name>TC3 HMI Clients Pack 10</Name>
 			<OrderNo>TF2030</OrderNo>
+		</License>
+		<License>
+			<LicenseId>{D58728E0-7762-4145-8A93-80D55E0453A6}</LicenseId>
+			<Name>TC3 HMI Extension SDK</Name>
+			<OrderNo>TF2200</OrderNo>
 		</License>
 		<License>
 			<LicenseId>{CC0BCBD5-3EA7-D7D4-4C71-A8B125F0DB72}</LicenseId>

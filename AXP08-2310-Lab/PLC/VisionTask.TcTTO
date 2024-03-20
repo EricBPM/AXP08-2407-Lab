@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <Task Name="VisionTask" Id="{c7d8f886-4b5a-4408-a7d1-d79c39b39934}">
+    <!--CycleTime in micro seconds.-->
+    <CycleTime>50000</CycleTime>
+    <Priority>12</Priority>
+    <PouCall>
+      <Name>Diameter_Algo</Name>
+    </PouCall>
+    <TaskFBGuid>{1053a6bb-e625-48bb-b97d-78b91cbf7ee0}</TaskFBGuid>
+    <Fb_init>{bc0a3d70-32eb-47b1-af70-26599f399c85}</Fb_init>
+    <Fb_exit>{c513ca58-af6d-4289-bda1-d9be5fae7d70}</Fb_exit>
+    <CycleUpdate>{7a490b69-3d69-440e-9c65-8cc969c5b81e}</CycleUpdate>
+    <PostCycleUpdate>{863d67ad-e7bf-4af1-82f7-2e94315b924b}</PostCycleUpdate>
+  </Task>
+</TcPlcObject>

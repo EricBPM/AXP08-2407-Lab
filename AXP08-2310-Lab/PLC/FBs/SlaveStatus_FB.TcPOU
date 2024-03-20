@@ -19,7 +19,7 @@ END_VAR
 
 
 IF InfoData_State.8 THEN
-	Bit8_Message := ' - Slave NOT present';
+	Bit8_Message := ' - Slave NOT present ';
 	Slave_Disconnected := TRUE;
 ELSE
 	Bit8_Message := '';

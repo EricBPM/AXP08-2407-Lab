@@ -6,168 +6,171 @@
 "divider",
 "divider-top"
 ]
-</script><script data-tchmi-target-attribute="data-tchmi-header-items" type="application/json">[
-                {
-                    "itemType": "Image",
-                    "priority": "2",
-                    "itemAlign": "Left",
-                    "prefWidth": 288.0,
-                    "prefWidthUnit": "px",
-                    "prefHeight": 95.0,
-                    "prefHeightUnit": "px",
-                    "minWidth": 128.0,
-                    "minWidthUnit": "px",
-                    "classList": [],
-                    "accessRights": [],
-                    "image": "Images/Beckhoff_Logo.svg",
-                    "altText": "Beckhoff",
-                    "targetRegion": "%ctrl%Region_Center%/ctrl%",
-                    "targetContent": "Pages/System Home.content"
-                },
-                {
-                    "itemType": "Text",
-                    "priority": "1",
-                    "itemAlign": "Left",
-                    "prefWidth": 288.0,
-                    "prefWidthUnit": "px",
-                    "prefHeight": 95.0,
-                    "prefHeightUnit": "px",
-                    "minWidth": 128.0,
-                    "minWidthUnit": "px",
-                    "classList": [],
-                    "accessRights": [],
-                    "text": "BPM_HMI_1366_768"
-                },
-                {
-                    "itemType": "EventLine",
-                    "priority": "5",
-                    "itemAlign": "Right",
-                    "prefWidth": 800.0,
-                    "prefWidthUnit": "px",
-                    "prefHeight": 48.0,
-                    "prefHeightUnit": "px",
-                    "minWidth": 288.0,
-                    "minWidthUnit": "px",
-                    "classList": [],
-                    "accessRights": [],
-                    "messageFormat": [
-                        {
-                            "name": "timeRaised"
-                        },
-                        {
-                            "text": " | "
-                        },
-                        {
-                            "name": "domain"
-                        },
-                        {
-                            "text": " | "
-                        },
-                        {
-                            "name": "text"
-                        }
-                    ],
-                    "filter": [
-                        {
-                            "path": "domain",
-                            "comparator": "==",
-                            "value": "TcHmiEventLogger"
-                        },
-                        {
-                            "logic": "OR"
-                        },
-                        {
-                            "path": "domain",
-                            "comparator": "==",
-                            "value": "TcHmiAlarm"
-                        }
-                    ],
-                    "targetRegion": "%ctrl%Region_Center%/ctrl%",
-                    "targetContent": "Pages/EventLog.content"
-                },
-                {
-                    "itemType": "AdsState",
-                    "priority": "3",
-                    "itemAlign": "Right",
-                    "prefWidth": 160.0,
-                    "prefWidthUnit": "px",
-                    "prefHeight": 48.0,
-                    "prefHeightUnit": "px",
-                    "minWidth": 48.0,
-                    "minWidthUnit": "px",
-                    "classList": [],
-                    "accessRights": [],
-                    "adsRuntime": "TcSysService",
-                    "iconWidth": 48,
-                    "iconWidthUnit": "px",
-                    "text": "TwinCAT",
-                    "textPosition": "Left",
-                    "serverInterval": 1000,
-                    "serverDomain": "ADS",
-                    "stateImages": {
-                        "Fallback": "Images/TwinCAT/twincat-fallback.svg",
-                        "Run": "Images/TwinCAT/twincat-run.svg",
-                        "Stop": "Images/TwinCAT/twincat-stop.svg",
-                        "Config": "Images/TwinCAT/twincat-config.svg",
-                        "Exception": "Images/TwinCAT/twincat-exeption.svg"
-                    }
-                },
-                {
-                    "itemType": "AdsState",
-                    "priority": "3",
-                    "itemAlign": "Right",
-                    "prefWidth": 160.0,
-                    "prefWidthUnit": "px",
-                    "prefHeight": 48.0,
-                    "prefHeightUnit": "px",
-                    "minWidth": 48.0,
-                    "minWidthUnit": "px",
-                    "classList": [],
-                    "accessRights": [],
-                    "adsRuntime": "PLC1",
-                    "iconWidth": 48,
-                    "iconWidthUnit": "px",
-                    "text": "PLC",
-                    "textPosition": "Left",
-                    "serverInterval": 1000,
-                    "serverDomain": "ADS",
-                    "stateImages": {
-                        "Fallback": "Images/PLC/plc-fallback.svg",
-                        "Run": "Images/PLC/plc-run.svg",
-                        "Stop": "Images/PLC/plc-stop.svg",
-                        "Config": "Images/PLC/plc-config.svg",
-                        "Exception": "Images/PLC/plc-exeption.svg"
-                    }
-                },
-                {
-                    "itemType": "UserManagement",
-                    "priority": "3",
-                    "itemAlign": "Right",
-                    "prefWidth": 288.0,
-                    "prefWidthUnit": "px",
-                    "prefHeight": 48.0,
-                    "prefHeightUnit": "px",
-                    "minWidth": 176.0,
-                    "minWidthUnit": "px",
-                    "classList": [],
-                    "accessRights": [],
-                    "allowLogout": true,
-                    "allowSwitchUser": false
-                },
-                {
-                    "itemType": "Time",
-                    "priority": "4",
-                    "itemAlign": "Right",
-                    "prefWidth": 128.0,
-                    "prefWidthUnit": "px",
-                    "prefHeight": 48.0,
-                    "prefHeightUnit": "px",
-                    "minWidth": 96.0,
-                    "minWidthUnit": "px",
-                    "classList": [],
-                    "accessRights": []
-                }
-            ]</script></div><div id="Navigation_Left" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiNavigation" data-tchmi-width="220" data-tchmi-left="0" data-tchmi-top="%ctrl%Header_Top::Height%/ctrl%" data-tchmi-target-region="%ctrl%Region_Center%/ctrl%" data-tchmi-navigation-orientation="Vertical" data-tchmi-keep-lowest-level="true" data-tchmi-breadcrumb="%ctrl%Breadcrumb%/ctrl%" data-tchmi-show-back-button="false" data-tchmi-scrollbar-style="Auto" data-tchmi-width-mode="Value" data-tchmi-right="0" data-tchmi-bottom="0">
+</script><script data-tchmi-target-attribute="data-tchmi-header-items" type="application/json">
+[
+  {
+    "itemType": "Image",
+    "priority": "2",
+    "itemAlign": "Left",
+    "prefWidth": 200.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 75.0,
+    "prefHeightUnit": "px",
+    "minWidth": 200.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "image": "Images/398x150 Logo (300DPI) - no background.png",
+    "altText": "Beckhoff",
+    "targetRegion": "%ctrl%Region_Center%/ctrl%",
+    "targetContent": "Pages/System Home.content"
+  },
+  {
+    "itemType": "Text",
+    "priority": "1",
+    "itemAlign": "Left",
+    "prefWidth": 288.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 95.0,
+    "prefHeightUnit": "px",
+    "minWidth": 128.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "text": "AXP08-2310"
+  },
+  {
+    "itemType": "EventLine",
+    "priority": "5",
+    "itemAlign": "Right",
+    "prefWidth": 800.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 288.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "messageFormat": [
+      {
+        "name": "timeRaised"
+      },
+      {
+        "text": " | "
+      },
+      {
+        "name": "domain"
+      },
+      {
+        "text": " | "
+      },
+      {
+        "name": "text"
+      }
+    ],
+    "filter": [
+      {
+        "path": "domain",
+        "comparator": "==",
+        "value": "TcHmiEventLogger"
+      },
+      {
+        "logic": "OR"
+      },
+      {
+        "path": "domain",
+        "comparator": "==",
+        "value": "TcHmiAlarm"
+      }
+    ],
+    "targetRegion": "%ctrl%Region_Center%/ctrl%",
+    "targetContent": "Pages/EventLog.content"
+  },
+  {
+    "itemType": "AdsState",
+    "priority": "3",
+    "itemAlign": "Right",
+    "prefWidth": 160.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 48.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "adsRuntime": "TcSysService",
+    "iconWidth": 48.0,
+    "iconWidthUnit": "px",
+    "text": "TwinCAT",
+    "textPosition": "Left",
+    "serverInterval": 1000.0,
+    "serverDomain": "ADS",
+    "stateImages": {
+      "Fallback": "Images/TwinCAT/twincat-fallback.svg",
+      "Run": "Images/TwinCAT/twincat-run.svg",
+      "Stop": "Images/TwinCAT/twincat-stop.svg",
+      "Config": "Images/TwinCAT/twincat-config.svg",
+      "Exception": "Images/TwinCAT/twincat-exeption.svg"
+    }
+  },
+  {
+    "itemType": "AdsState",
+    "priority": "3",
+    "itemAlign": "Right",
+    "prefWidth": 160.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 48.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "adsRuntime": "PLC1",
+    "iconWidth": 48.0,
+    "iconWidthUnit": "px",
+    "text": "PLC",
+    "textPosition": "Left",
+    "serverInterval": 1000.0,
+    "serverDomain": "ADS",
+    "stateImages": {
+      "Fallback": "Images/PLC/plc-fallback.svg",
+      "Run": "Images/PLC/plc-run.svg",
+      "Stop": "Images/PLC/plc-stop.svg",
+      "Config": "Images/PLC/plc-config.svg",
+      "Exception": "Images/PLC/plc-exeption.svg"
+    }
+  },
+  {
+    "itemType": "UserManagement",
+    "priority": "3",
+    "itemAlign": "Right",
+    "prefWidth": 288.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 176.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "allowLogout": true,
+    "allowSwitchUser": false
+  },
+  {
+    "itemType": "Time",
+    "priority": "4",
+    "itemAlign": "Right",
+    "prefWidth": 128.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 96.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "timeDisplayLayout": "TimeDateMultiLine"
+  }
+]
+</script></div><div id="Navigation_Left" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiNavigation" data-tchmi-width="220" data-tchmi-left="0" data-tchmi-top="%ctrl%Header_Top::Height%/ctrl%" data-tchmi-target-region="%ctrl%Region_Center%/ctrl%" data-tchmi-navigation-orientation="Vertical" data-tchmi-keep-lowest-level="true" data-tchmi-breadcrumb="%ctrl%Breadcrumb%/ctrl%" data-tchmi-show-back-button="false" data-tchmi-scrollbar-style="Auto" data-tchmi-width-mode="Value" data-tchmi-right="0" data-tchmi-bottom="0">
 
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [

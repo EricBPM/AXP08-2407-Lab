@@ -2,6 +2,18 @@
     "commitInterval": "PT10S",
     "enableBackup": false,
     "historizedSymbolList": {
+        "PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input": {
+            "interval": "PT1S",
+            "maxEntries": 10000,
+            "recordingEnabled": true,
+            "rowLimit": 100000
+        },
+        "PLC1.GVL_AirKnife.AirKnife_Vacuum_Level": {
+            "interval": "PT1S",
+            "maxEntries": 10000,
+            "recordingEnabled": true,
+            "rowLimit": 100000
+        },
         "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Feet_Per_Minute": {
             "interval": "PT1S",
             "maxEntries": 10000,

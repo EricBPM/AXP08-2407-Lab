@@ -1,6 +1,6 @@
 {
     "AUTHCLIENTCERTIFICATE": false,
-    "AUTO_LOGINUSER": "",
+    "AUTO_LOGINUSER": "Admin",
     "AUTO_LOGOFF": "P30D",
     "CACHEENABLED": true,
     "CACHEMAXAGE": "P30D",
@@ -2865,6 +2865,16 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.GVL_AirKnife.AirKnife_Filter_Change_Setting": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_AirKnife::AirKnife_Filter_Change_Setting",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -2949,6 +2959,16 @@
                         "propertyOrder": 9
                     }
                 ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_AirKnife.AirKnife_Vacuum_Level": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_AirKnife::AirKnife_Vacuum_Level",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -3635,11 +3655,31 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Machine_Status.AirKnife_Disconnected": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Machine_Status::AirKnife_Disconnected",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Machine_Status.AirKnife_Status_String": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
             "DYNAMIC": true,
             "MAPPING": "PLC1::Machine_Status::AirKnife_Status_String",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/STRING%2880%29"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Machine_Status.Pelletizer_Status_String": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Machine_Status::Pelletizer_Status_String",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/STRING%2880%29"
             },
@@ -3670,6 +3710,16 @@
             "DOMAIN": "ADS",
             "DYNAMIC": true,
             "MAPPING": "PLC1::Scaling_And_Conversions::AirKnife_Actual_Current_Scaled",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scaling_And_Conversions.AirKnife_DC_Bus_Voltage_Scaled": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Scaling_And_Conversions::AirKnife_DC_Bus_Voltage_Scaled",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/REAL"
             },
@@ -6042,12 +6092,14 @@
                 "PLC1.Diameter_Algo.nMaxThickness_1": 3,
                 "PLC1.Diameter_Algo.nSearchLines_1": 3,
                 "PLC1.Diameter_Algo.nSubpixIter_1": 3,
+                "PLC1.GVL_AirKnife.AirKnife_Filter_Change_Setting": 3,
                 "PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input": 3,
                 "PLC1.GVL_AirKnife.AirKnife_Start": 3,
                 "PLC1.GVL_AirKnife.AirKnife_StartwithSystem": 3,
                 "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Fault": 3,
                 "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Fault_Reset": 3,
                 "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed": 3,
+                "PLC1.GVL_AirKnife.AirKnife_Vacuum_Level": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Diameter_Inch": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Drive_Pulley": 3,
                 "PLC1.GVL_Pelletizer.MyPelletizer.Feedroll_Driven_Pulley": 3,
@@ -6098,10 +6150,13 @@
                 "PLC1.Machine_Limits.Rotor_Motor_Minimum_Hz": 3,
                 "PLC1.Machine_Limits.Rotor_Motor_Rated_Hz": 3,
                 "PLC1.Machine_Limits.Rotor_Motor_Rated_RPM": 3,
+                "PLC1.Machine_Status.AirKnife_Disconnected": 3,
                 "PLC1.Machine_Status.AirKnife_Status_String": 3,
+                "PLC1.Machine_Status.Pelletizer_Status_String": 3,
                 "PLC1.Main.connected": 3,
                 "PLC1.Pellet_Calibration.SET_CALIBRATON_VALUE": 3,
                 "PLC1.Scaling_And_Conversions.AirKnife_Actual_Current_Scaled": 3,
+                "PLC1.Scaling_And_Conversions.AirKnife_DC_Bus_Voltage_Scaled": 3,
                 "PLC1.Scaling_And_Conversions.AirKnife_Vacuum_Level": 3,
                 "PLC1.Scaling_And_Conversions.Feedroll_Actual_Current_Scaled": 3,
                 "PLC1.Scaling_And_Conversions.Feedroll_Actual_Torque_Scaled": 3,
@@ -6139,6 +6194,16 @@
     },
     "USERGROUPUSERS": {
         "TcHmiUserManagement": {
+            "Admin": {
+                "USERGROUPUSERS_AUTO_LOGOFF": "PT9H",
+                "USERGROUPUSERS_GROUPS": [
+                    "__SystemUsers",
+                    "__SystemAdministrators"
+                ],
+                "USERGROUPUSERS_LOCALE": "client",
+                "USERGROUPUSERS_TIMEFORMATLOCALE": "project",
+                "USERGROUPUSERS_TIMEZONE": "project"
+            },
             "__SystemAdministrator": {
                 "USERGROUPUSERS_AUTO_LOGOFF": "PT0S",
                 "USERGROUPUSERS_GROUPS": [

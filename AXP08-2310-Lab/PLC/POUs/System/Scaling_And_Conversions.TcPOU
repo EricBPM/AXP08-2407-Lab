@@ -14,7 +14,7 @@ VAR
 	Feedroll_DC_Bus_Voltage_Scaled : REAL;
 	AirKnife_DC_Bus_Voltage_Scaled : REAL;
 	
-	AirKnife_Vacuum_Level : REAL;
+
 	AirKnife_Vacuum_Scaler : REAL := -4.0176; //-401.76 inH2O (-14.5PSI) / 100% = 4.0176
 	
 END_VAR
@@ -32,7 +32,7 @@ Rotor_DC_Bus_Voltage_Scaled := UDINT_TO_REAL(GVL_Pelletizer.MyPelletizer.Rotor_V
 Feedroll_DC_Bus_Voltage_Scaled := UDINT_TO_REAL(GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_DC_Bus_Voltage) / 1000;
 AirKnife_DC_Bus_Voltage_Scaled := UDINT_TO_REAL(GVL_AirKnife.AirKnife_Vfd.VFD_DC_Bus_Voltage) / 1000;
 
-AirKnife_Vacuum_Level := INT_TO_REAL(GVL_AirKnife.AirKnife_Analog_Input / 10) * AirKnife_Vacuum_Scaler;
+GVL_Airknife.AirKnife_Vacuum_Level := INT_TO_REAL(GVL_AirKnife.AirKnife_Analog_Input / 10) * AirKnife_Vacuum_Scaler;
 //Sensor Scale:
 //100% = -401.76 Inches of Water
 //0% = 0 inches of water

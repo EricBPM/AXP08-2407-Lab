@@ -27,5 +27,62 @@
 ]
 </script>
 
+
+<script data-tchmi-target-attribute="data-tchmi-line-graph-descriptions" type="application/json">
+[
+  {
+    "yAxisId": 1,
+    "legendName": "Vacuum Level (inH20)",
+    "scaleFactor": 1.0,
+    "showAxis": true,
+    "lineWidth": 1,
+    "pointDot": false,
+    "pointDotRadius": 3,
+    "pointDotStrokeWidth": 1,
+    "lineColor": {
+      "color": "rgba(4, 185, 62, 1)"
+    },
+    "pointDotFillColor": {
+      "color": "rgba(4, 185, 62, 1)"
+    },
+    "pointDotStrokeColor": {
+      "color": "rgba(4, 185, 62, 1)"
+    },
+    "pointDotInStopMode": true,
+    "fillMode": "None",
+    "fillColor": {
+      "color": "rgba(4, 185, 62, 1)"
+    },
+    "fillTransparency": 50.0,
+    "symbol": "PLC1.GVL_AirKnife.AirKnife_Vacuum_Level"
+  },
+  {
+    "yAxisId": 1,
+    "legendName": "Speed Setting",
+    "scaleFactor": 1.0,
+    "showAxis": true,
+    "lineWidth": 1,
+    "pointDot": false,
+    "pointDotRadius": 3,
+    "pointDotStrokeWidth": 1,
+    "lineColor": {
+      "color": "rgba(46, 248, 224, 1)"
+    },
+    "pointDotFillColor": {
+      "color": "rgba(46, 248, 224, 1)"
+    },
+    "pointDotStrokeColor": {
+      "color": "rgba(46, 248, 224, 1)"
+    },
+    "pointDotInStopMode": true,
+    "fillMode": "None",
+    "fillColor": {
+      "color": "rgba(46, 248, 224, 1)"
+    },
+    "fillTransparency": 50.0,
+    "symbol": "PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input"
+  }
+]
+</script>
 </div>
 </div>

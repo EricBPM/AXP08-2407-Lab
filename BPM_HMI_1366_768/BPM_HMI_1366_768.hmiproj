@@ -113,6 +113,7 @@
     <Folder Include="Images\TwinCAT\" />
     <Folder Include="Imports" />
     <Folder Include="Imports\Images" />
+    <Folder Include="Imports\MachineIcons" />
     <Folder Include="Imports\Videos" />
     <Folder Include="KeyboardLayouts\" />
     <Folder Include="Localization" />
@@ -154,6 +155,9 @@
     <Content Include=".eslintrc.json">
       <Visible>false</Visible>
     </Content>
+    <Content Include="Images\398x150 Logo %28300DPI%29 - no background.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Images\Icons\arrow-down.svg">
       <SubType>Content</SubType>
     </Content>
@@ -169,25 +173,22 @@
     <Content Include="Images\Icons\RedFaulted.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Imports\evak-12-std-mech-1.png">
+    <Content Include="Imports\CAMERA_STAND_FRONT_VIEW-removebg-preview.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Imports\axp08-2310-lab.png">
+    <Content Include="Imports\MachineIcons\axp08-2310-lab.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Imports\extru-removebg-preview.png">
+    <Content Include="Imports\MachineIcons\evak-12-std-mech-1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\MachineIcons\extru-removebg-preview.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\MachineIcons\WBX1008-10-2404-removebg-preview.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Overview_Line_Layout_Raw4-removebg.png">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Imports\Overview_Line_Layout_Raw4.JPG">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Imports\Untitled-removebg-preview.png">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Imports\WBX1008-10.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\MainContent\Diagnostic.content">

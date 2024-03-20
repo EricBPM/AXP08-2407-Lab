@@ -119,11 +119,11 @@
       {
         "objectType": "WriteToSymbol",
         "active": true,
-        "symbolExpression": "%ctrl%SubNavRegion::TargetContent%/ctrl%",
+        "symbolExpression": "%ctrl%Settings_Region::TargetContent%/ctrl%",
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/Resources/SubNavigationMenu/AirKnifeSubNav.content"
+          "value": "Pages/SettingsContent/AirKnife_Settings.content"
         },
         "asyncWait": true
       }
@@ -154,11 +154,11 @@
       {
         "objectType": "WriteToSymbol",
         "active": true,
-        "symbolExpression": "%ctrl%SubNavRegion::TargetContent%/ctrl%",
+        "symbolExpression": "%ctrl%Settings_Region::TargetContent%/ctrl%",
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/Resources/SubNavigationMenu/WaterBathSubNav.content"
+          "value": "Pages/SettingsContent/WaterBath_Settings.content"
         },
         "asyncWait": true
       }
@@ -189,22 +189,11 @@
       {
         "objectType": "WriteToSymbol",
         "active": true,
-        "symbolExpression": "%ctrl%SubNavRegion::TargetContent%/ctrl%",
+        "symbolExpression": "%ctrl%Settings_Region::TargetContent%/ctrl%",
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/Resources/SubNavigationMenu/ExtrudSubNav.content"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%AirKnife_ResourcesNav_Btn::ToggleState%/ctrl%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/ToggleState",
-          "value": null
+          "value": "Pages/SettingsContent/Extruder_Settings.content"
         },
         "asyncWait": true
       }

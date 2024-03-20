@@ -3,7 +3,7 @@
   <Task Name="PlcTask" Id="{82a2e32f-1539-4b12-a266-86981590dc01}">
     <!--CycleTime in micro seconds.-->
     <CycleTime>10000</CycleTime>
-    <Priority>20</Priority>
+    <Priority>10</Priority>
     <PouCall>
       <Name>Main</Name>
     </PouCall>
@@ -12,9 +12,6 @@
     </PouCall>
     <PouCall>
       <Name>Machine_Status</Name>
-    </PouCall>
-    <PouCall>
-      <Name>Diameter_Algo</Name>
     </PouCall>
     <TaskFBGuid>{e9887c5f-ca22-48da-a514-a04f0078f749}</TaskFBGuid>
     <Fb_init>{65231c38-576e-4f7e-8f78-0f73cbadeac3}</Fb_init>
