@@ -2710,6 +2710,42 @@
 			</Hides>
 		</DataType>
 		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
+			<BitSize>1</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000005}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..4] OF BIT</Name>
+			<BitSize>5</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>5</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000004}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..3] OF BIT</Name>
+			<BitSize>4</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>4</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000007}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..6] OF BIT</Name>
+			<BitSize>7</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>7</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
 			<Name GUID="{03010035-0000-0000-E000-000000000064}" TcBaseType="true">ITcIoEthProtocol</Name>
 			<BitSize X64="64">32</BitSize>
 			<BaseType GUID="{00000001-0000-0000-E000-000000000064}">ITcUnknown</BaseType>
@@ -3403,7 +3439,11 @@
 	<ImageDatas>
 		<ImageData Id="1000">424d360300000000000036000000280000001000000010000000010018000000000000000000c40e0000c40e00000000000000000000554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3be1d7d1e1d7d1e1d7d1e1d7d1e1d7d1e1d7d1e1d7d1dfd6cfdfd6cfdfd6cfdfd6cfdfd6cfdfd6cfdfd6cf554f3b554f3be3dbd4e3dbd4554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3bdfd6cfdfd6cf554f3b554f3be3dbd4e3dbd4554f3bc1b39ac1b399c0b299bfb097beae94bbac90b8a88cb7a488554f3bdfd6cfdfd6cf554f3b554f3bece4dfece4df554f3bc6b9a3c6b8a2c5b7a0c4b59fc2b49bbfb197bdae92baaa8d554f3bdfd6cfdfd6cf554f3b554f3bece4dfece4df554f3bcbbfaacbbeaac9bda9c9bba5c6b8a2c3b59ec0b298bdae93554f3bdfd6cfdfd6cf554f3b554f3bece4dfece4df554f3bcfc6b1d0c4b1cec3afcdc1adcabea8c7baa5c4b69ec0b298554f3be1d7d1dfd6cf554f3b554f3beee6e1eee6e1554f3bd4cabad4cabad2c9b6d1c6b3cec3afcabfa9c8baa4c4b59e554f3be1d7d1dfd6cf554f3b554f3bf2ebe7f2ebe7554f3b554f3b554f3bd7cfbed4cbbad2c7b4cec2af554f3b554f3b554f3be3dbd4e1d7d1554f3b554f3bf2ebe7f2ebe7f5eeebf2ebe7554f3bdad4c4d8cfbfd4cabad0c6b3554f3be7ded9e3dbd4e3dbd4e1d7d1554f3b554f3bf5eeebf5eeebf5eeebf5eeeb554f3bded8cbdad3c4d7cdbdd2c8b6554f3bece4dfe3dbd4e3dbd4e1d7d1554f3b554f3bf5eeebf5eeeb554f3b554f3b554f3be1dbcfdcd6c7d8cfbfd3c9b8554f3b554f3b554f3be3dbd4e1d7d1554f3b554f3bf5eeebf7f0ed554f3be8e3dbe5e1d7e1dbcfddd5c8d8cfbfd3cab7cec4b0c9bda8554f3be3dbd4e1d7d1554f3b554f3bf5eeebf5eeeb554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3be3dbd4e1d7d1554f3b554f3bf5eeebf5eeebf5eeebf5eeebf5eeebf2ebe7f2ebe7eee6e1ece4dfece4dfece4dfe3dbd4e3dbd4e1d7d1554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b554f3b</ImageData>
 		<ImageData Id="1001">424de6000000000000007600000028000000100000000e000000010004000000000070000000000000000000000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00fffffffffffffffffccccccffffffffffcfffecefffffffffcfffecef80008fffcfffecef00000fffcfffecef00900fffcfffecef00000fffcfffecef80008fffccccccefffffffffcfffecefffffffffccffccefffffffffecccceeffffffffffeeeeefffffffffffffffffffffffff</ImageData>
-		<ImageData Id="1002">424de6000000000000007600000028000000100000000e000000010004000000000070000000000000000000000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00ffffffffffffffffff788833338887ffff78883bb38887ffffffff3bb3ffffffffffff8778fffffffffffffffffffffffffffffffff999ffff78f78fffffffffff78f78ffff999ffff78f7888fffffffff78f78f78f999ffff78f78f78ffffffff78f7888ff999ffffffffffffffffff</ImageData>
+		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000000000c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ff000000c0c0c0c0c0c0000000808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000000000c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1003">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1004">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1005">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1006">424de6000000000000007600000028000000100000000e000000010004000000000070000000000000000000000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00ffffffffffffffffff788833338887ffff78883bb38887ffffffff3bb3ffffffffffff8778fffffffffffffffffffffffffffffffff999ffff78f78fffffffffff78f78ffff999ffff78f7888fffffffff78f78f78f999ffff78f78f78ffffffff78f7888ff999ffffffffffffffffff</ImageData>
 	</ImageDatas>
 	<Project ProjectGUID="{3124E0AA-9BB0-4D73-B39B-C2A7FA057F7D}" TargetNetId="169.254.135.64.1.1" Target64Bit="true" AutoPrioManagement="true" ShowHideConfigurations="#x2c7">
 		<System>
@@ -3419,8 +3459,8 @@
 			<Licenses>
 				<Target>
 					<ManualSelect>{B1065A48-8131-4608-A378-D67FA8BD826E}</ManualSelect>
-					<ManualSelect>{D58728E0-7762-4145-8A93-80D55E0453A6}</ManualSelect>
 					<ManualSelect>{8161723B-0C2E-405C-B829-EDC5DAAB5104}</ManualSelect>
+					<ManualSelect>{D58728E0-7762-4145-8A93-80D55E0453A6}</ManualSelect>
 					<ManualSelect>{BDCC0070-42D5-49AE-ABF1-1D4434813D60}</ManualSelect>
 				</Target>
 			</Licenses>
@@ -3441,48 +3481,11 @@
 		</System>
 		<Plc>
 			<Project GUID="{C2463DFE-8D25-458F-B39B-892E853BBF0C}" Name="PLC" PrjFilePath="PLC\PLC.plcproj" TmcFilePath="PLC\PLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{B6951376-892B-4FC0-B52C-5FB6BA451EC0}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{2B7D6F84-E17D-8D9A-9522-FAA266CFBC0B}">
 					<Name>PLC Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
 						<Name>PlcTask Inputs</Name>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Status_Word</Name>
-							<Comment><![CDATA[CiA Status Word]]></Comment>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Actual_Speed</Name>
-							<Comment><![CDATA[VFD Actual Output RPM ]]></Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Actual_Torque</Name>
-							<Comment><![CDATA[Instantaneous Torque of the Motor (In Percent x.x%)]]></Comment>
-							<Type>INT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Actual_Current</Name>
-							<Comment><![CDATA[Instantaneous Current of the Motor (In Percent x.x%)]]></Comment>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_DC_Bus_Voltage</Name>
-							<Comment><![CDATA[Instantaneous DC Bus Voltage of the VFD (x.xxx Volts)]]></Comment>
-							<Type>UDINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Digital_Input_Status</Name>
-							<Type>UDINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Connection_Status</Name>
-							<Type>UINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_Analog_Input</Name>
-							<Type>INT</Type>
-						</Var>
 						<Var>
 							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Status_Word</Name>
 							<Comment><![CDATA[CiA Status Word]]></Comment>
@@ -3549,19 +3552,67 @@
 							<Name>GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Connection_Status</Name>
 							<Type>UINT</Type>
 						</Var>
-					</Vars>
-					<Vars VarGrpType="2" AreaNo="1">
-						<Name>PlcTask Outputs</Name>
 						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Control_Word</Name>
-							<Comment><![CDATA[State Machine for Controlling VFD (CiA)]]></Comment>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Status_Word</Name>
+							<Comment><![CDATA[CiA Status Word]]></Comment>
 							<Type>UINT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed</Name>
-							<Comment><![CDATA[Sets the Speed of the VFD in RPM]]></Comment>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Actual_Speed</Name>
+							<Comment><![CDATA[VFD Actual Output RPM ]]></Comment>
 							<Type>INT</Type>
 						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Actual_Torque</Name>
+							<Comment><![CDATA[Instantaneous Torque of the Motor (In Percent x.x%)]]></Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Actual_Current</Name>
+							<Comment><![CDATA[Instantaneous Current of the Motor (In Percent x.x%)]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_DC_Bus_Voltage</Name>
+							<Comment><![CDATA[Instantaneous DC Bus Voltage of the VFD (x.xxx Volts)]]></Comment>
+							<Type>UDINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Digital_Input_Status</Name>
+							<Type>UDINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Connection_Status</Name>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_Analog_Input</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Waterbath.Waterbath_System_Control</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Waterbath.Process_Water_IN</Name>
+							<Comment><![CDATA[INPUTS]]></Comment>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Waterbath.Process_Water_OUT</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Waterbath.Process_Water_FLOW</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Waterbath.Waterbath_Connection_Status</Name>
+							<Type>UINT</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2" AreaNo="1">
+						<Name>PlcTask Outputs</Name>
 						<Var>
 							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Control_Word</Name>
 							<Comment><![CDATA[State Machine for Controlling VFD (CiA)]]></Comment>
@@ -3582,14 +3633,23 @@
 							<Comment><![CDATA[Sets the Speed of the VFD in RPM]]></Comment>
 							<Type>INT</Type>
 						</Var>
+						<Var>
+							<Name>GVL_Waterbath.Pump_Start</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Control_Word</Name>
+							<Comment><![CDATA[State Machine for Controlling VFD (CiA)]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed</Name>
+							<Comment><![CDATA[Sets the Speed of the VFD in RPM]]></Comment>
+							<Type>INT</Type>
+						</Var>
 					</Vars>
 					<Vars VarGrpType="1" ContextId="1" AreaNo="16">
 						<Name>VisionTask Inputs</Name>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Error_Code</Name>
-							<Comment><![CDATA[Error Message]]></Comment>
-							<Type>UINT</Type>
-						</Var>
 						<Var>
 							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Error_Code</Name>
 							<Comment><![CDATA[Error Message]]></Comment>
@@ -3601,21 +3661,9 @@
 							<Type>UINT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Waterbath.Pump_Local_Control</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Waterbath.Process_Water_IN</Name>
-							<Comment><![CDATA[INPUTS]]></Comment>
-							<Type>DINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Waterbath.Process_Water_OUT</Name>
-							<Type>DINT</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Waterbath.Process_Water_FLOW</Name>
-							<Type>DINT</Type>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_Error_Code</Name>
+							<Comment><![CDATA[Error Message]]></Comment>
+							<Type>UINT</Type>
 						</Var>
 						<Var>
 							<Name>GVL_Waterbath.Pump_Fault</Name>
@@ -3624,11 +3672,6 @@
 					</Vars>
 					<Vars VarGrpType="2" ContextId="1" AreaNo="17">
 						<Name>VisionTask Outputs</Name>
-						<Var>
-							<Name>GVL_AirKnife.AirKnife_VFD.VFD_DigitalOutput1_Word</Name>
-							<Comment><![CDATA[Map the NetInWord2 to something we can use.]]></Comment>
-							<Type>UINT</Type>
-						</Var>
 						<Var>
 							<Name>GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_DigitalOutput1_Word</Name>
 							<Comment><![CDATA[Map the NetInWord2 to something we can use.]]></Comment>
@@ -3640,17 +3683,18 @@
 							<Type>UINT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Waterbath.Pump_Start</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL_Waterbath.Pump_OL_Reset</Name>
-							<Type>BOOL</Type>
+							<Name>GVL_AirKnife.AirKnife_VFD.VFD_DigitalOutput1_Word</Name>
+							<Comment><![CDATA[Map the NetInWord2 to something we can use.]]></Comment>
+							<Type>UINT</Type>
 						</Var>
 						<Var>
 							<Name>GVL_Waterbath.Prop_Valve</Name>
 							<Comment><![CDATA[OUTPUTS]]></Comment>
-							<Type>DINT</Type>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Waterbath.Pump_OL_Reset</Name>
+							<Type>BOOL</Type>
 						</Var>
 					</Vars>
 					<UnrestoredVarLinks ImportTime="2023-11-20T15:55:37">
@@ -39859,7 +39903,7 @@
 											<RegisterValue>07-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x10040020">
-											<RegisterValue>38-DB-C7-01</RegisterValue>
+											<RegisterValue>E0-B8-5A-02</RegisterValue>
 										</Register>
 										<Register Address="0x10040024">
 											<RegisterValue>00-00-00-00</RegisterValue>
@@ -39931,7 +39975,7 @@
 											<RegisterValue>07-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x100A0074">
-											<RegisterValue>E2-01-00-00</RegisterValue>
+											<RegisterValue>56-01-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x00800084">
 											<RegisterValue>07-00-00-00</RegisterValue>
@@ -40555,6 +40599,12 @@
 										<Register Address="0x10120020">
 											<RegisterValue>08-00-00-00</RegisterValue>
 										</Register>
+										<Register Address="0x00800334">
+											<RegisterValue>03-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x10120000">
+											<RegisterValue>78-15-00-00</RegisterValue>
+										</Register>
 										<Register Address="0xD0010000">
 											<RegisterValue>03-00-00-00</RegisterValue>
 										</Register>
@@ -40585,6 +40635,12 @@
 										<Register Address="0x10130020">
 											<RegisterValue>02-00-00-00</RegisterValue>
 										</Register>
+										<Register Address="0x00800364">
+											<RegisterValue>03-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x10130000">
+											<RegisterValue>58-0E-00-00</RegisterValue>
+										</Register>
 										<Register Address="0x008002E4">
 											<RegisterValue>03-00-00-00</RegisterValue>
 										</Register>
@@ -40606,23 +40662,11 @@
 										<Register Address="0x10120010">
 											<RegisterValue>08-00-00-00</RegisterValue>
 										</Register>
-										<Register Address="0x00800334">
-											<RegisterValue>03-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x10120000">
-											<RegisterValue>78-15-00-00</RegisterValue>
-										</Register>
 										<Register Address="0x00800368">
 											<RegisterValue>07-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x10130010">
 											<RegisterValue>08-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x00800364">
-											<RegisterValue>03-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x10130000">
-											<RegisterValue>58-0E-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x0080039C">
 											<RegisterValue>07-00-00-00</RegisterValue>
@@ -40672,24 +40716,6 @@
 										<Register Address="0x1011010C">
 											<RegisterValue>00-00-00-00</RegisterValue>
 										</Register>
-										<Register Address="0x0080031C">
-											<RegisterValue>02-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x00800340">
-											<RegisterValue>02-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x00800370">
-											<RegisterValue>02-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x008003A4">
-											<RegisterValue>02-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x008003E8">
-											<RegisterValue>02-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x00800AE0">
-											<RegisterValue>03-00-00-00</RegisterValue>
-										</Register>
 										<Register Address="0x10440000">
 											<RegisterValue>03-00-00-00</RegisterValue>
 										</Register>
@@ -40697,30 +40723,6 @@
 											<RegisterValue>04-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x10440004">
-											<RegisterValue>03-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x00800AFC">
-											<RegisterValue>03-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x00800560">
-											<RegisterValue>03-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x008005D8">
-											<RegisterValue>03-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x008005A4">
-											<RegisterValue>03-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x00800570">
-											<RegisterValue>03-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x00800488">
-											<RegisterValue>03-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x008004A0">
-											<RegisterValue>03-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x008004B8">
 											<RegisterValue>03-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x10550000">
@@ -40748,6 +40750,48 @@
 											<RegisterValue>03-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x10550020">
+											<RegisterValue>03-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x0080031C">
+											<RegisterValue>02-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x00800340">
+											<RegisterValue>02-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x00800370">
+											<RegisterValue>02-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x008003A4">
+											<RegisterValue>02-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x008003E8">
+											<RegisterValue>02-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x00800AE0">
+											<RegisterValue>03-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x00800AFC">
+											<RegisterValue>03-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x00800560">
+											<RegisterValue>03-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x008005D8">
+											<RegisterValue>03-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x008005A4">
+											<RegisterValue>03-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x00800570">
+											<RegisterValue>03-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x00800488">
+											<RegisterValue>03-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x008004A0">
+											<RegisterValue>03-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x008004B8">
 											<RegisterValue>03-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x008004C8">
@@ -41258,6 +41302,9 @@
 										<Register Address="0xC0000028">
 											<RegisterValue>03-00-00-00</RegisterValue>
 										</Register>
+										<Register Address="0xC0000018">
+											<RegisterValue>03-00-00-00</RegisterValue>
+										</Register>
 										<Register Address="0x008002EC">
 											<RegisterValue>07-00-00-00</RegisterValue>
 										</Register>
@@ -41562,10 +41609,10 @@
 											<RegisterValue>07-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x10240010">
-											<RegisterValue>2F-DD-24-06</RegisterValue>
+											<RegisterValue>4C-37-89-41</RegisterValue>
 										</Register>
 										<Register Address="0x10240014">
-											<RegisterValue>81-55-29-40</RegisterValue>
+											<RegisterValue>60-45-4B-40</RegisterValue>
 										</Register>
 										<Register Address="0x008008C0">
 											<RegisterValue>03-00-00-00</RegisterValue>
@@ -41580,19 +41627,19 @@
 											<RegisterValue>07-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x10240030">
-											<RegisterValue>46-B6-F3-FD</RegisterValue>
+											<RegisterValue>91-ED-7C-3F</RegisterValue>
 										</Register>
 										<Register Address="0x10240034">
-											<RegisterValue>D4-F8-24-40</RegisterValue>
+											<RegisterValue>35-2E-4A-40</RegisterValue>
 										</Register>
 										<Register Address="0x008008C8">
 											<RegisterValue>07-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x10240020">
-											<RegisterValue>42-60-E5-C4</RegisterValue>
+											<RegisterValue>62-10-58-71</RegisterValue>
 										</Register>
 										<Register Address="0x10240024">
-											<RegisterValue>CF-12-63-41</RegisterValue>
+											<RegisterValue>CD-12-63-41</RegisterValue>
 										</Register>
 										<Register Address="0x00800818">
 											<RegisterValue>03-00-00-00</RegisterValue>
@@ -41746,13 +41793,13 @@
 											<RegisterValue>07-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x10220110">
-											<RegisterValue>71-EC-B8-3F</RegisterValue>
+											<RegisterValue>94-FD-94-3E</RegisterValue>
 										</Register>
 										<Register Address="0x00800880">
 											<RegisterValue>07-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x10220108">
-											<RegisterValue>7B-2B-AA-40</RegisterValue>
+											<RegisterValue>B3-3D-F5-3F</RegisterValue>
 										</Register>
 										<Register Address="0x10220200">
 											<RegisterValue>00-00-00-00</RegisterValue>
@@ -42223,6 +42270,12 @@
 										<Register Address="0x10500000">
 											<RegisterValue>01-00-00-00</RegisterValue>
 										</Register>
+										<Register Address="0x00800B60">
+											<RegisterValue>03-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x00800B7C">
+											<RegisterValue>03-00-00-00</RegisterValue>
+										</Register>
 										<Register Address="0x10500010">
 											<RegisterValue>00-00-00-00</RegisterValue>
 										</Register>
@@ -42238,18 +42291,12 @@
 										<Register Address="0x00800B50">
 											<RegisterValue>03-00-00-00</RegisterValue>
 										</Register>
-										<Register Address="0x00800B60">
-											<RegisterValue>03-00-00-00</RegisterValue>
-										</Register>
 										<Register Address="0x10500054">
 											<RegisterValue>00-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x10500054">
 											<Selector SelectorName="LUTSelector">1</Selector>
 											<RegisterValue>00-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x00800B7C">
-											<RegisterValue>03-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x10500034">
 											<RegisterValue>00-00-00-00</RegisterValue>
@@ -43565,6 +43612,13 @@
 										<Register Address="0xD0001154">
 											<RegisterValue>03-00-00-00</RegisterValue>
 										</Register>
+										<Register Address="0xD0005344">
+											<RegisterValue>00-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0xD0005344">
+											<Selector SelectorName="FileSelector">17</Selector>
+											<RegisterValue>00-00-00-00</RegisterValue>
+										</Register>
 										<Register Address="0xD0000204">
 											<RegisterValue>23-00-00-00</RegisterValue>
 										</Register>
@@ -43639,13 +43693,6 @@
 										</Register>
 										<Register Address="0xD00003BC">
 											<RegisterValue>73-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0xD0005344">
-											<RegisterValue>00-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0xD0005344">
-											<Selector SelectorName="FileSelector">17</Selector>
-											<RegisterValue>00-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0xD0005208">
 											<RegisterValue>00-00-00-00</RegisterValue>
@@ -43970,9 +44017,6 @@
 										</Register>
 										<Register Address="0xD001007C">
 											<RegisterValue>05-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0xC0000018">
-											<RegisterValue>03-00-00-00</RegisterValue>
 										</Register>
 										<Register Address="0x00800820">
 											<RegisterValue>00-00-00-00</RegisterValue>
@@ -45411,6 +45455,30 @@
 										<Register Address="0x00000D08">
 											<RegisterValue>00-00-00-00</RegisterValue>
 										</Register>
+										<Register Address="0x008002F8">
+											<RegisterValue>07-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x10110010">
+											<RegisterValue>78-15-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x00800350">
+											<RegisterValue>07-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x0080030C">
+											<RegisterValue>07-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x10110030">
+											<RegisterValue>58-0E-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x00800380">
+											<RegisterValue>07-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x008003B4">
+											<RegisterValue>07-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x008003F8">
+											<RegisterValue>07-00-00-00</RegisterValue>
+										</Register>
 										<Register Address="0x00800908">
 											<RegisterValue>03-00-00-00</RegisterValue>
 										</Register>
@@ -45645,6 +45713,36 @@
 										<Register Address="0x00000044">
 											<RegisterValue>00-00-00-00</RegisterValue>
 										</Register>
+										<Register Address="0x00000958">
+											<RegisterValue>00-00-13-88</RegisterValue>
+										</Register>
+										<Register Address="0x00000938">
+											<RegisterValue>00-00-4E-20</RegisterValue>
+										</Register>
+										<Register Address="0x00000024">
+											<RegisterValue>A9-FE-08-B9</RegisterValue>
+										</Register>
+										<Register Address="0x0000064C">
+											<RegisterValue>A9-FE-08-65</RegisterValue>
+										</Register>
+										<Register Address="0x0000065C">
+											<RegisterValue>FF-FF-FF-00</RegisterValue>
+										</Register>
+										<Register Address="0x0000066C">
+											<RegisterValue>00-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x000000E8">
+											<RegisterValue>00-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x000000EC">
+											<RegisterValue>00-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x000000F0">
+											<RegisterValue>00-00-00-00</RegisterValue>
+										</Register>
+										<Register Address="0x000000F4">
+											<RegisterValue>00-00-00-00</RegisterValue>
+										</Register>
 										<Register Address="0x008010B0">
 											<RegisterValue>00-00-00-00</RegisterValue>
 										</Register>
@@ -45774,41 +45872,11 @@
 										<Register Address="0x000000E4">
 											<RegisterValue>00-00-00-00</RegisterValue>
 										</Register>
-										<Register Address="0x000000E8">
-											<RegisterValue>00-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x000000EC">
-											<RegisterValue>00-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x000000F0">
-											<RegisterValue>00-00-00-00</RegisterValue>
-										</Register>
-										<Register Address="0x000000F4">
-											<RegisterValue>00-00-00-00</RegisterValue>
-										</Register>
 										<Register Address="0x00000934">
 											<RegisterValue>D0-4E-00-6F</RegisterValue>
 										</Register>
-										<Register Address="0x00000938">
-											<RegisterValue>00-00-4E-20</RegisterValue>
-										</Register>
-										<Register Address="0x00000958">
-											<RegisterValue>00-00-13-88</RegisterValue>
-										</Register>
-										<Register Address="0x00000024">
-											<RegisterValue>A9-FE-08-B9</RegisterValue>
-										</Register>
 										<Register Address="0x00000014">
 											<RegisterValue>00-00-00-06</RegisterValue>
-										</Register>
-										<Register Address="0x0000064C">
-											<RegisterValue>A9-FE-08-65</RegisterValue>
-										</Register>
-										<Register Address="0x0000065C">
-											<RegisterValue>FF-FF-FF-00</RegisterValue>
-										</Register>
-										<Register Address="0x0000066C">
-											<RegisterValue>00-00-00-00</RegisterValue>
 										</Register>
 									</RegisterValues>
 									<MetaData>
@@ -46327,7 +46395,7 @@
 									<ForceIp Name="ForceIp" IsChecked="false"/>
 									<CameraRegister Name="Camera Features" IsChecked="true">
 										<CameraRegisterChild Index="0" Name="Device User ID" Address="0x10020184" Data="00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00" Key="0" InternalKey="0" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-00"/>
-										<CameraRegisterChild Index="1" Name="Device Link Throughput Limit Mode" Address="0x10040000" Data="01-00-00-00" Key="1" InternalKey="1" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-00"/>
+										<CameraRegisterChild Index="1" Name="Device Link Throughput Limit Mode" Address="0x10040000" Data="01-00-00-00" Key="1" InternalKey="1" SelectedIndex="1" SelectedValue="0" Flags="01-00-00-00"/>
 										<CameraRegisterChild Index="2" Name="Device Link Throughput Limit" Address="0x10040010" Data="C0-C2-DA-06" Key="2" InternalKey="2" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-00"/>
 										<CameraRegisterChild Index="3" Name="Device Link Throughput Limit" Address="0x10040014" Data="00-00-00-00" Key="3" InternalKey="3" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-00"/>
 										<CameraRegisterChild Index="4" Name="Device Indicator Mode" Address="0x100A0010" Data="01-00-00-00" Key="4" InternalKey="4" SelectedIndex="1" SelectedValue="0" Flags="01-00-00-00"/>
@@ -46976,7 +47044,7 @@
 											<CameraRegisterChild Index="0" Name="File Access Length" Address="0xFFFFFFFF" Key="566" InternalKey="566" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-00"/>
 										</CameraRegisterChild>
 										<CameraRegisterChild Index="191" Name="File Operation Selector" Address="0x00000000" Key="567" InternalKey="567" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-01">
-											<CameraRegisterChild Index="0" Name="File Access Length" Address="0xFFFFFFFF" Key="568" InternalKey="568" SelectedIndex="0" SelectedValue="0" Flags="00-00-00-00"/>
+											<CameraRegisterChild Index="0" Name="File Access Length" Address="0xFFFFFFFF" Key="568" InternalKey="568" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-00"/>
 										</CameraRegisterChild>
 										<CameraRegisterChild Index="192" Name="File Operation Selector" Address="0x00000000" Key="559" InternalKey="559" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-01">
 											<CameraRegisterChild Index="0" Name="File Access Length" Address="0xFFFFFFFF" Key="560" InternalKey="560" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-00"/>
@@ -46986,7 +47054,7 @@
 											<CameraRegisterChild Index="0" Name="Transfer Control Mode" Address="0x11120010" Data="00-00-00-00" Key="571" InternalKey="571" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-00"/>
 										</CameraRegisterChild>
 										<CameraRegisterChild Index="195" Name="Correction Selector" Address="0x00000000" Key="576" InternalKey="576" SelectedIndex="1" SelectedValue="0" Flags="01-00-00-01">
-											<CameraRegisterChild Index="0" Name="Correction Mode" Address="0xD0010024" Data="01-00-00-00" Key="577" InternalKey="577" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-00"/>
+											<CameraRegisterChild Index="0" Name="Correction Mode" Address="0xD0010024" Data="01-00-00-00" Key="577" InternalKey="577" SelectedIndex="1" SelectedValue="0" Flags="01-00-00-00"/>
 											<CameraRegisterChild Index="1" Name="Correction Set" Address="0xD0010044" Data="00-00-00-00" Key="578" InternalKey="578" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-00"/>
 											<CameraRegisterChild Index="2" Name="Correction Set Default" Address="0xD0010064" Data="00-00-00-00" Key="579" InternalKey="579" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-00"/>
 										</CameraRegisterChild>
@@ -47111,7 +47179,7 @@
 										<CameraRegisterChild Index="232" Name="PTP Enable" Address="0xB00200D0" Data="00-00-00-00" Key="682" InternalKey="682" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-00"/>
 										<CameraRegisterChild Index="233" Name="PTP Operation Mode" Address="0xB00203D0" Data="00-00-00-00" Key="683" InternalKey="683" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-00"/>
 										<CameraRegisterChild Index="234" Name="Chunk Selector" Address="0x00000000" Key="684" InternalKey="684" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-01">
-											<CameraRegisterChild Index="0" Name="Chunk Enable" Address="0xFFFFFFFF" Key="685" InternalKey="685" SelectedIndex="0" SelectedValue="0" Flags="00-00-00-00"/>
+											<CameraRegisterChild Index="0" Name="Chunk Enable" Address="0xFFFFFFFF" Key="685" InternalKey="685" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-00"/>
 										</CameraRegisterChild>
 										<CameraRegisterChild Index="235" Name="Counter Selector" Address="0x00000000" Key="646" InternalKey="646" SelectedIndex="0" SelectedValue="0" Flags="01-00-00-01">
 											<CameraRegisterChild Index="0" Name="Counter Value" Address="0xB00118D0" Data="00-00-00-00" Key="647" InternalKey="647" SelectedIndex="0" SelectedValue="0" Flags="00-00-00-00"/>
@@ -48325,6 +48393,9 @@
 				<Image Id="1" AddrType="9" ImageType="3">
 					<Name>Image</Name>
 				</Image>
+				<Image Id="3" AddrType="10" ImageType="3">
+					<Name>Image-2</Name>
+				</Image>
 				<Box Id="1" BoxType="9099" BoxFlags="#x00000020">
 					<Name>Rotor Drive</Name>
 					<ImageId>1001</ImageId>
@@ -48458,7 +48529,7 @@
 						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
 						<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
 						<BootStrapData>0010000100110001</BootStrapData>
-						<HcData>010000000800000002000000000000001000000000000000000000000000000053797374656d486f74436f6e6e65637400</HcData>
+						<HcData>0100000008000000020000000000000000000000000000000000000000000000</HcData>
 						<Pdo Name="TPDO (A) Velocity" Index="#x1a03" Flags="#x0010" SyncMan="3">
 							<Entry Name="CiA status word" Index="#x6041">
 								<Type>UINT</Type>
@@ -48492,8 +48563,643 @@
 						<Pdo Name="RPDO (A) user config" Index="#x1605" InOut="1" Flags="#x0000" SyncMan="2"/>
 					</EtherCAT>
 				</Box>
-				<EtherCAT EnableVirtualSwitch="true" MaxSwitchPorts="4" MaxSwitchFrames="160">
-					<SyncUnit Name="[SystemHotConnect]" HcName="SystemHotConnect"/>
+				<Box Id="7" BoxType="9099">
+					<Name>WaterBath (EK1101)</Name>
+					<ImageId>1002</ImageId>
+					<EtherCAT SlaveType="1" PdiType="#x0d04" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044d2c52" RevisionNo="#x00120000" PortPhys="305" IdentificationAdo="4096" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1101 EtherCAT Coupler (2A E-Bus, ID switch)" Desc="EK1101" PortABoxInfo="#xffffffff">
+						<SyncMan>001002000000010004000000000000000000001000000000</SyncMan>
+						<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+						<HcData>0500000008000000020000000000000000000000000000000000000000000000</HcData>
+						<Pdo Name="ID" Index="#x1a00" Flags="#x0010" SyncMan="0">
+							<Entry Name="ID" Index="#x6000" Sub="#x01">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+					</EtherCAT>
+					<Box Id="8" BoxType="9099">
+						<Name>Term 8 (EL1859)</Name>
+						<ImageId>7</ImageId>
+						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x07433052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1859 8Ch. Dig. Input 24V, 3ms, 8Ch. Dig. Output 24V, 0.5A" Desc="EL1859" PortABoxInfo="#x01000007">
+							<SyncMan>010f01004400010003000000010001000100010f44090000</SyncMan>
+							<SyncMan>001001000000010004000000010001000100001000010000</SyncMan>
+							<Fmmu>0000000000000000010f00020100000001000000000000000000000000000000</Fmmu>
+							<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+							<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="1">
+								<Entry Name="System Control On" Index="#x6000" Sub="#x01">
+									<Type>BIT</Type>
+									<Comment><![CDATA[If this bit is off, it is in local mode and the pump runs automatically. ]]></Comment>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="1">
+								<Entry Name="Pump Overload Tripped" Index="#x6010" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="1">
+								<Entry Name="Input" Index="#x6020" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="1">
+								<Entry Name="Input" Index="#x6030" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="1">
+								<Entry Name="Input" Index="#x6040" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="1">
+								<Entry Name="Input" Index="#x6050" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="1">
+								<Entry Name="Input" Index="#x6060" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="1">
+								<Entry Name="Input" Index="#x6070" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 9" Index="#x1608" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Pump Run" Index="#x7080" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 10" Index="#x1609" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Pump Motor Overload Reset" Index="#x7090" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 11" Index="#x160a" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x70a0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 12" Index="#x160b" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x70b0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 13" Index="#x160c" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x70c0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 14" Index="#x160d" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x70d0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 15" Index="#x160e" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x70e0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 16" Index="#x160f" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x70f0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+						</EtherCAT>
+					</Box>
+					<Box Id="9" BoxType="9099" BoxFlags="#x00000020">
+						<Name>Term 9 (EL3174)</Name>
+						<ImageId>1003</ImageId>
+						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0c663052" RevisionNo="#x00110000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3174 4Ch. Ana. Input +/-10V Diff., +/-20mA SingleEnded, 16 Bit" Desc="EL3174" PortABoxInfo="#x01000008">
+							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+							<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+							<SyncMan>801110002000010004000000000000001000801120010000</SyncMan>
+							<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+							<BootStrapData>0010f400f410f400</BootStrapData>
+							<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+							<DcMode>4443494e00000000000000000000000044432d53796e6368726f6e2028696e7075742062617365642900000000000000000000006079feffa8610000000000070100000000000000000001000000000000000000000000000000000000000000</DcMode>
+							<Pdo Name="AI Standard Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+								</Entry>
+								<Entry Name="Status__Overrange" Index="#x6000" Sub="#x02">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+								</Entry>
+								<Entry Name="Status__Limit 1" Index="#x6000" Sub="#x03">
+									<Type>BIT2</Type>
+									<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+								</Entry>
+								<Entry Name="Status__Limit 2" Index="#x6000" Sub="#x05">
+									<Type>BIT2</Type>
+									<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+								</Entry>
+								<Entry Name="Status__Error" Index="#x6000" Sub="#x07">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+								</Entry>
+								<Entry Name="Status__">
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__">
+									<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__Sync error" Index="#x6000" Sub="#x0e">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x0f">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO Toggle" Index="#x6000" Sub="#x10">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Flow Rate IN" Index="#x6000" Sub="#x11">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="AI Compact Channel 1" Index="#x1a01" Flags="#x0010">
+								<ExcludePdo>#x1a00</ExcludePdo>
+								<Entry Name="Value" Index="#x6000" Sub="#x11">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="AI Standard Channel 2" Index="#x1a02" Flags="#x0010" SyncMan="3">
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<Entry Name="Status__Underrange" Index="#x6010" Sub="#x01">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+								</Entry>
+								<Entry Name="Status__Overrange" Index="#x6010" Sub="#x02">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+								</Entry>
+								<Entry Name="Status__Limit 1" Index="#x6010" Sub="#x03">
+									<Type>BIT2</Type>
+									<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+								</Entry>
+								<Entry Name="Status__Limit 2" Index="#x6010" Sub="#x05">
+									<Type>BIT2</Type>
+									<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+								</Entry>
+								<Entry Name="Status__Error" Index="#x6010" Sub="#x07">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+								</Entry>
+								<Entry Name="Status__">
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__">
+									<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__Sync error" Index="#x6010" Sub="#x0e">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO Toggle" Index="#x6010" Sub="#x10">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Water Temperature IN" Index="#x6010" Sub="#x11">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="AI Compact Channel 2" Index="#x1a03" Flags="#x0010">
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<Entry Name="Value" Index="#x6010" Sub="#x11">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="AI Standard Channel 3" Index="#x1a04" Flags="#x0010" SyncMan="3">
+								<ExcludePdo>#x1a05</ExcludePdo>
+								<Entry Name="Status__Underrange" Index="#x6020" Sub="#x01">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+								</Entry>
+								<Entry Name="Status__Overrange" Index="#x6020" Sub="#x02">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+								</Entry>
+								<Entry Name="Status__Limit 1" Index="#x6020" Sub="#x03">
+									<Type>BIT2</Type>
+									<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+								</Entry>
+								<Entry Name="Status__Limit 2" Index="#x6020" Sub="#x05">
+									<Type>BIT2</Type>
+									<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+								</Entry>
+								<Entry Name="Status__Error" Index="#x6020" Sub="#x07">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+								</Entry>
+								<Entry Name="Status__">
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__">
+									<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__Sync error" Index="#x6020" Sub="#x0e">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO State" Index="#x6020" Sub="#x0f">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO Toggle" Index="#x6020" Sub="#x10">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Value" Index="#x6020" Sub="#x11">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="AI Compact Channel 3" Index="#x1a05" Flags="#x0010">
+								<ExcludePdo>#x1a04</ExcludePdo>
+								<Entry Name="Value" Index="#x6020" Sub="#x11">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="AI Standard Channel 4" Index="#x1a06" Flags="#x0010" SyncMan="3">
+								<ExcludePdo>#x1a07</ExcludePdo>
+								<Entry Name="Status__Underrange" Index="#x6030" Sub="#x01">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+								</Entry>
+								<Entry Name="Status__Overrange" Index="#x6030" Sub="#x02">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+								</Entry>
+								<Entry Name="Status__Limit 1" Index="#x6030" Sub="#x03">
+									<Type>BIT2</Type>
+									<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+								</Entry>
+								<Entry Name="Status__Limit 2" Index="#x6030" Sub="#x05">
+									<Type>BIT2</Type>
+									<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+								</Entry>
+								<Entry Name="Status__Error" Index="#x6030" Sub="#x07">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+								</Entry>
+								<Entry Name="Status__">
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__">
+									<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__Sync error" Index="#x6030" Sub="#x0e">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO State" Index="#x6030" Sub="#x0f">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO Toggle" Index="#x6030" Sub="#x10">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Value" Index="#x6030" Sub="#x11">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="AI Compact Channel 4" Index="#x1a07" Flags="#x0010">
+								<ExcludePdo>#x1a06</ExcludePdo>
+								<Entry Name="Value" Index="#x6030" Sub="#x11">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<CoeProfile ProfileNo="19665801"/>
+							<CoeProfile ProfileNo="19665801"/>
+							<CoeProfile ProfileNo="19665801"/>
+							<CoeProfile ProfileNo="19665801"/>
+						</EtherCAT>
+					</Box>
+					<Box Id="10" BoxType="9099" BoxFlags="#x00000020">
+						<Name>Term 10 (EL4124)</Name>
+						<ImageId>1004</ImageId>
+						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x101c3052" RevisionNo="#x03fc0000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL4124 4Ch. Ana. Output 4-20mA, 16bit" Desc="EL4124" PortABoxInfo="#x01000009">
+							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+							<SyncMan>001108002400010003000000000000000800001124010000</SyncMan>
+							<SyncMan>801100000000000004000000000000000000801100000000</SyncMan>
+							<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+							<BootStrapData>0010f400f410f400</BootStrapData>
+							<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+							<DcMode>4443000000000000000000000000000044432d53796e6368726f6e0000000000000000000000000000000000000000000000000000000000a0860100000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
+							<Pdo Name="AO Output Channel 1" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="2">
+								<Entry Name="Proportional Valve" Index="#x7000" Sub="#x11" Flags="#x00040000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="AO Output Channel 2" Index="#x1601" InOut="1" Flags="#x0011" SyncMan="2">
+								<Entry Name="Analog output" Index="#x7010" Sub="#x11" Flags="#x00040000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="AO Output Channel 3" Index="#x1602" InOut="1" Flags="#x0011" SyncMan="2">
+								<Entry Name="Analog output" Index="#x7020" Sub="#x11" Flags="#x00040000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="AO Output Channel 4" Index="#x1603" InOut="1" Flags="#x0011" SyncMan="2">
+								<Entry Name="Analog output" Index="#x7030" Sub="#x11" Flags="#x00040000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<CoeProfile ProfileNo="26219401"/>
+							<CoeProfile ProfileNo="26219401"/>
+							<CoeProfile ProfileNo="26219401"/>
+							<CoeProfile ProfileNo="26219401"/>
+						</EtherCAT>
+					</Box>
+					<Box Id="11" BoxType="9099" BoxFlags="#x00000020">
+						<Name>Term 11 (EL3318)</Name>
+						<ImageId>1003</ImageId>
+						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0cf63052" RevisionNo="#x00160000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3318 8Ch. Ana Input Thermocouple (TC)" Desc="EL3318" PortABoxInfo="#x0100000a">
+							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+							<SyncMan>001100002400000003000000000000000000001124010000</SyncMan>
+							<SyncMan>801120002000010004000000000000002000801120010000</SyncMan>
+							<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+							<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+							<BootStrapData>0010f400f410f400</BootStrapData>
+							<Pdo Name="TC Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="3">
+								<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__Overrange" Index="#x6000" Sub="#x02">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__Error" Index="#x6000" Sub="#x07">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x0f">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO Toggle" Index="#x1800" Sub="#x09">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Water Temperature OUT" Index="#x6000" Sub="#x11" Flags="#x00050000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="TC Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="3">
+								<Entry Name="Status__Underrange" Index="#x6010" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__Overrange" Index="#x6010" Sub="#x02">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__Error" Index="#x6010" Sub="#x07">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO Toggle" Index="#x1801" Sub="#x09">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Value" Index="#x6010" Sub="#x11" Flags="#x00050000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="TC Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="3">
+								<Entry Name="Status__Underrange" Index="#x6020" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__Overrange" Index="#x6020" Sub="#x02">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__Error" Index="#x6020" Sub="#x07">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO State" Index="#x6020" Sub="#x0f">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO Toggle" Index="#x1802" Sub="#x09">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Value" Index="#x6020" Sub="#x11" Flags="#x00050000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="TC Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="3">
+								<Entry Name="Status__Underrange" Index="#x6030" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__Overrange" Index="#x6030" Sub="#x02">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__Error" Index="#x6030" Sub="#x07">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO State" Index="#x6030" Sub="#x0f">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO Toggle" Index="#x1803" Sub="#x09">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Value" Index="#x6030" Sub="#x11" Flags="#x00050000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="TC Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="3">
+								<Entry Name="Status__Underrange" Index="#x6040" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__Overrange" Index="#x6040" Sub="#x02">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__Error" Index="#x6040" Sub="#x07">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO State" Index="#x6040" Sub="#x0f">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO Toggle" Index="#x1804" Sub="#x09">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Value" Index="#x6040" Sub="#x11" Flags="#x00050000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="TC Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="3">
+								<Entry Name="Status__Underrange" Index="#x6050" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__Overrange" Index="#x6050" Sub="#x02">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__Error" Index="#x6050" Sub="#x07">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO State" Index="#x6050" Sub="#x0f">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO Toggle" Index="#x1805" Sub="#x09">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Value" Index="#x6050" Sub="#x11" Flags="#x00050000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="TC Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="3">
+								<Entry Name="Status__Underrange" Index="#x6060" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__Overrange" Index="#x6060" Sub="#x02">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__Error" Index="#x6060" Sub="#x07">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO State" Index="#x6060" Sub="#x0f">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO Toggle" Index="#x1806" Sub="#x09">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Value" Index="#x6060" Sub="#x11" Flags="#x00050000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="TC Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="3">
+								<Entry Name="Status__Underrange" Index="#x6070" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__Overrange" Index="#x6070" Sub="#x02">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__Error" Index="#x6070" Sub="#x07">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry>
+									<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO State" Index="#x6070" Sub="#x0f">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO Toggle" Index="#x1807" Sub="#x09">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Value" Index="#x6070" Sub="#x11" Flags="#x00050000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="TC Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010">
+								<Entry Name="CJCompensation" Index="#x7000" Sub="#x11" Flags="#x00050000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="TC Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010">
+								<Entry Name="CJCompensation" Index="#x7010" Sub="#x11" Flags="#x00050000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="TC Outputs Channel 3" Index="#x1602" InOut="1" Flags="#x0010">
+								<Entry Name="CJCompensation" Index="#x7020" Sub="#x11" Flags="#x00050000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="TC Outputs Channel 4" Index="#x1603" InOut="1" Flags="#x0010">
+								<Entry Name="CJCompensation" Index="#x7030" Sub="#x11" Flags="#x00050000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="TC Outputs Channel 5" Index="#x1604" InOut="1" Flags="#x0010">
+								<Entry Name="CJCompensation" Index="#x7040" Sub="#x11" Flags="#x00050000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="TC Outputs Channel 6" Index="#x1605" InOut="1" Flags="#x0010">
+								<Entry Name="CJCompensation" Index="#x7050" Sub="#x11" Flags="#x00050000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="TC Outputs Channel 7" Index="#x1606" InOut="1" Flags="#x0010">
+								<Entry Name="CJCompensation" Index="#x7060" Sub="#x11" Flags="#x00050000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="TC Outputs Channel 8" Index="#x1607" InOut="1" Flags="#x0010">
+								<Entry Name="CJCompensation" Index="#x7070" Sub="#x11" Flags="#x00050000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<CoeProfile ProfileNo="21631881"/>
+							<CoeProfile ProfileNo="21631881"/>
+							<CoeProfile ProfileNo="21631881"/>
+							<CoeProfile ProfileNo="21631881"/>
+							<CoeProfile ProfileNo="21631881"/>
+							<CoeProfile ProfileNo="21631881"/>
+							<CoeProfile ProfileNo="21631881"/>
+							<CoeProfile ProfileNo="21631881"/>
+						</EtherCAT>
+					</Box>
+					<Box Id="12" BoxType="9099">
+						<Name>Term 12 (EL9011)</Name>
+						<ImageId>1005</ImageId>
+						<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23333050" InfoDataState="false" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9011 End Terminal" Desc="EL9011" PortABoxInfo="#x0100000b"/>
+					</Box>
+				</Box>
+				<EtherCAT EnableVirtualSwitch="true" MaxSwitchPorts="5" MaxSwitchFrames="180">
+					<SyncUnit Name="[AirKnife Drive]" HcName="AirKnife Drive"/>
+					<SyncUnit Name="[WaterBath (EK1101)]" HcName="WaterBath (EK1101)"/>
 				</EtherCAT>
 			</Device>
 			<Device Id="2" DevType="109" DevFlags="#x0004">
@@ -48507,7 +49213,7 @@
 				</AddressInfo>
 				<Module Id="#x01010020" KeepUnrestoredLinks="2">
 					<Name>IpStack (TCP/UDP RT)</Name>
-					<ImageId>1002</ImageId>
+					<ImageId>1006</ImageId>
 					<TmcDesc GUID="{080D0399-6A65-408D-80E1-18D8F699496A}">
 						<Name>TCP/UDP RT</Name>
 						<CLSID ClassFactory="TCIOETH">{03010070-0000-0000-F000-000000000064}</CLSID>
@@ -49021,8 +49727,9 @@
 		</Io>
 	</Project>
 	<Mappings>
+		<MappingInfo Identifier="{00000000-2001-0850-0120-500831000403}" Id="#x02030030"/>
 		<MappingInfo Identifier="{00000000-2002-0850-0020-500810000403}" Id="#x02030010"/>
-		<MappingInfo Identifier="{00000000-2002-0850-0020-500821000403}" Id="#x02030030"/>
+		<MappingInfo Identifier="{00000000-2002-0850-0020-500822000403}" Id="#x02030040"/>
 		<MappingInfo Identifier="{08502001-0010-0304-0020-500810000403}" Id="#x02030020" Watchdog="00000000000000000000000000000000"/>
 		<OwnerA Name="TIPC^PLC^PLC Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^AirKnife Drive">
@@ -49059,6 +49766,25 @@
 				<Link VarA="PlcTask Outputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Set_Speed" VarB="RPDO (A) Velocity^Set speed"/>
 				<Link VarA="VisionTask Inputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Error_Code" VarB="TPDO (A) Velocity^Error code"/>
 				<Link VarA="VisionTask Outputs^GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_DigitalOutput1_Word" VarB="RPDO (A) user config^Digital Output 1: NetWordIn2 Bit0"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^WaterBath (EK1101)">
+				<Link VarA="PlcTask Inputs^GVL_Waterbath.Waterbath_Connection_Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^WaterBath (EK1101)^Term 10 (EL4124)">
+				<Link VarA="VisionTask Outputs^GVL_Waterbath.Prop_Valve" VarB="AO Output Channel 1^Proportional Valve"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^WaterBath (EK1101)^Term 11 (EL3318)">
+				<Link VarA="PlcTask Inputs^GVL_Waterbath.Process_Water_OUT" VarB="TC Channel 1^Water Temperature OUT"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^WaterBath (EK1101)^Term 8 (EL1859)">
+				<Link VarA="PlcTask Inputs^GVL_Waterbath.Waterbath_System_Control" VarB="Channel 1^System Control On"/>
+				<Link VarA="PlcTask Outputs^GVL_Waterbath.Pump_Start" VarB="Channel 9^Pump Run"/>
+				<Link VarA="VisionTask Inputs^GVL_Waterbath.Pump_Fault" VarB="Channel 2^Pump Overload Tripped"/>
+				<Link VarA="VisionTask Outputs^GVL_Waterbath.Pump_OL_Reset" VarB="Channel 10^Pump Motor Overload Reset"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^WaterBath (EK1101)^Term 9 (EL3174)">
+				<Link VarA="PlcTask Inputs^GVL_Waterbath.Process_Water_FLOW" VarB="AI Standard Channel 1^Flow Rate IN"/>
+				<Link VarA="PlcTask Inputs^GVL_Waterbath.Process_Water_IN" VarB="AI Standard Channel 2^Water Temperature IN"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

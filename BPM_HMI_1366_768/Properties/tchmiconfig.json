@@ -115,7 +115,7 @@
       "preload": true,
       "keepAlive": true,
       "loadSync": false,
-      "preloadBindings": false
+      "preloadBindings": true
     },
     {
       "url": "Pages/MainContent/Setting.content",
@@ -148,7 +148,7 @@
     {
       "url": "Pages/MainContent/Vision.content",
       "preload": false,
-      "keepAlive": false,
+      "keepAlive": true,
       "loadSync": false,
       "preloadBindings": false
     },

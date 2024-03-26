@@ -1,6 +1,6 @@
 <div id="AirKnifeTrend" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="624" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-width-unit="%" data-tchmi-width-mode="Parent" data-tchmi-min-width="400" data-tchmi-max-width="1146">
 
-<div id="AirKnife_LineTrendExtControl" data-tchmi-type="TcHmi.Controls.LineTrendExt.LineTrendExtControl" data-tchmi-end="Latest" data-tchmi-height="485" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-start="First" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-x-axis-name="x-axis 1" data-tchmi-x-sub-tick-steps="4" data-tchmi-y-sub-tick-steps="4" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-width-mode="Parent" data-tchmi-show-legend="true" data-tchmi-show-menu-bar="true">
+<div id="AirKnife_LineTrendExtControl" data-tchmi-type="TcHmi.Controls.LineTrendExt.LineTrendExtControl" data-tchmi-end="Latest" data-tchmi-height="485" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-start="PT20M" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-x-axis-name="x-axis 1" data-tchmi-x-sub-tick-steps="4" data-tchmi-y-sub-tick-steps="4" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-width-mode="Parent" data-tchmi-show-legend="true" data-tchmi-show-menu-bar="true">
 <script data-tchmi-target-attribute="data-tchmi-y-axis" type="application/json">
 [
   {
@@ -55,6 +55,24 @@
     },
     "fillTransparency": 50.0,
     "symbol": "PLC1.GVL_AirKnife.AirKnife_Vacuum_Level"
+  },
+  {
+    "yAxisId": 1,
+    "legendName": "Air Knife DC Bus Voltage",
+    "scaleFactor": 1.0,
+    "showAxis": true,
+    "lineWidth": 1,
+    "pointDot": false,
+    "pointDotRadius": 3,
+    "pointDotStrokeWidth": 1,
+    "lineColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::LineGraphDescriptionLineColor%/tr%",
+    "pointDotFillColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::LineGraphDescriptionPointDotFillColor%/tr%",
+    "pointDotStrokeColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::LineGraphDescriptionPointDotStrokeColor%/tr%",
+    "pointDotInStopMode": true,
+    "fillMode": "None",
+    "fillColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::LineGraphDescriptionFillColor%/tr%",
+    "fillTransparency": 50.0,
+    "symbol": "PLC1.Scaling_And_Conversions.AirKnife_DC_Bus_Voltage_Scaled"
   },
   {
     "yAxisId": 1,

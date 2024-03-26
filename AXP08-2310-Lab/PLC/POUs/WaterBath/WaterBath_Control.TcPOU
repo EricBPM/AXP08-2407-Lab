@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="WaterBath_Control" Id="{c7a292ea-ddf7-4656-b0aa-3864839d40cf}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM WaterBath_Control
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF GvL_Waterbath.Waterbath_Start OR (GVL_Waterbath.Waterbath_StartwithSystem AND GVL_Pelletizer.MyPelletizer.Pelletizer_Start) THEN
+	GVL_Waterbath.Pump_Start := TRUE;
+ELSE
+	GVL_Waterbath.Pump_Start := FALSE;
+END_IF
+
+
+GVL_Waterbath.Waterbath_Local_Control := NOT GVL_Waterbath.Waterbath_System_Control;
+
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="WaterBath_Control">
+      <LineId Id="5" Count="4" />
+      <LineId Id="12" Count="2" />
+      <LineId Id="23" Count="1" />
+      <LineId Id="26" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

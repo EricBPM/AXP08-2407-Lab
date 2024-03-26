@@ -28,8 +28,11 @@ IF GVL_AirKnife.AirKnife_VFD.VFD_Fault THEN
 END_IF
 
 
+
+
 	//If the Start button on the HMI is pressed, OR it is set to start with the rest of the system. The checkbox must be set and pelletizer must be started.
 IF GVL_AirKnife.AirKnife_Start OR (GVL_AirKnife.AirKnife_StartwithSystem AND GVL_Pelletizer.MyPelletizer.Pelletizer_Start) THEN
+	
 //Feedroll Case Statement
 	AirKnife_Lower_Status_Byte := GVL_AirKnife.AirKnife_VFD.VFD_Status_Word OR Status_BitMask;	// Bitwise OR with bits 7-15 of status word because we dont care about them for control.
 	
@@ -49,12 +52,11 @@ IF GVL_AirKnife.AirKnife_Start OR (GVL_AirKnife.AirKnife_StartwithSystem AND GVL
 		65335: //Ready To Switch On, Switched On, Operation Enabled, Voltage Enabled, Quick Stop Disabled.
 		GVL_AirKnife.AirKnife_VFD.VFD_Control_Word.0 := TRUE;	//Switch On Bit. 
 	END_CASE;
-	
+
 ELSE	
 	//If we are not running, switch off Drives
 	GVL_AirKnife.AirKnife_VFD.VFD_Control_Word.0 := 0;
 END_IF
-
 
 
 
@@ -74,9 +76,12 @@ GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed := REAL_TO_INT((3450 / 100) * GVL_AirKni
       <LineId Id="206" Count="1" />
       <LineId Id="203" Count="0" />
       <LineId Id="201" Count="0" />
-      <LineId Id="195" Count="1" />
+      <LineId Id="280" Count="0" />
+      <LineId Id="288" Count="1" />
+      <LineId Id="279" Count="0" />
       <LineId Id="178" Count="0" />
       <LineId Id="151" Count="0" />
+      <LineId Id="302" Count="0" />
       <LineId Id="69" Count="0" />
       <LineId Id="73" Count="0" />
       <LineId Id="138" Count="0" />
@@ -96,7 +101,9 @@ GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed := REAL_TO_INT((3450 / 100) * GVL_AirKni
       <LineId Id="160" Count="0" />
       <LineId Id="157" Count="0" />
       <LineId Id="153" Count="0" />
-      <LineId Id="252" Count="6" />
+      <LineId Id="252" Count="0" />
+      <LineId Id="295" Count="0" />
+      <LineId Id="255" Count="3" />
       <LineId Id="251" Count="0" />
     </LineIds>
   </POU>

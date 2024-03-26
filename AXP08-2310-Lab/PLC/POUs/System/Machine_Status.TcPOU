@@ -14,11 +14,12 @@ VAR
 	
 	Pelletizer_Status_String : STRING;
 	
+	Waterbath_Status_String : STRING;
+	Waterbath_Disconnected : bool;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[AirKnife_Status_String := SlaveStatus_FB(GVL_AirKnife.AirKnife_VFD.VFD_Connection_Status, Slave_Disconnected => AirKnife_Disconnected);
-
+      <ST><![CDATA[
 Rotor_Status_String := SlaveStatus_FB(GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Connection_Status, Slave_Disconnected => Rotor_Disconnected);
 Feedroll_Status_String := SlaveStatus_FB(GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Connection_Status, Slave_Disconnected => Feedroll_Disconnected);
 
@@ -27,10 +28,14 @@ IF Rotor_Disconnected OR Feedroll_Disconnected THEN
 ELSE
 	Pelletizer_Status_String := 'Slave in OP state';
 END_IF
+
+
+AirKnife_Status_String := SlaveStatus_FB(GVL_AirKnife.AirKnife_VFD.VFD_Connection_Status, Slave_Disconnected => AirKnife_Disconnected);
+
+Waterbath_Status_String := SlaveStatus_FB(GVL_Waterbath.Waterbath_Connection_Status, Slave_Disconnected => Waterbath_Disconnected);
 ]]></ST>
     </Implementation>
     <LineIds Name="Machine_Status">
-      <LineId Id="5" Count="0" />
       <LineId Id="27" Count="0" />
       <LineId Id="23" Count="0" />
       <LineId Id="26" Count="0" />
@@ -38,6 +43,8 @@ END_IF
       <LineId Id="22" Count="0" />
       <LineId Id="28" Count="1" />
       <LineId Id="34" Count="1" />
+      <LineId Id="50" Count="1" />
+      <LineId Id="55" Count="2" />
       <LineId Id="9" Count="0" />
     </LineIds>
   </POU>

@@ -10,15 +10,18 @@ END_VAR
       <ST><![CDATA[IF GVL_AirKnife.AirKnife_Start THEN
 	IF GVL_AirKnife.AirKnife_Filter_Change_Setting <= GVL_AirKnife.AirKnife_Vacuum_Level THEN
 		Change_Filter := TRUE;
-	ELSE
-		Change_Filter := FALSE;
 	END_IF
+ELSE
+		Change_Filter := FALSE;
 END_IF]]></ST>
     </Implementation>
     <LineIds Name="Check_Filter">
       <LineId Id="10" Count="0" />
       <LineId Id="18" Count="0" />
-      <LineId Id="12" Count="3" />
+      <LineId Id="12" Count="0" />
+      <LineId Id="15" Count="0" />
+      <LineId Id="24" Count="0" />
+      <LineId Id="23" Count="0" />
       <LineId Id="5" Count="0" />
     </LineIds>
   </POU>

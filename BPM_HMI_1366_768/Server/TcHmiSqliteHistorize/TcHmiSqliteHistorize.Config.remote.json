@@ -25,7 +25,37 @@
             "recordingEnabled": true,
             "rowLimit": 100000
         },
+        "PLC1.Scaling_And_Conversions.AirKnife_DC_Bus_Voltage_Scaled": {
+            "interval": "PT1S",
+            "maxEntries": 10000,
+            "recordingEnabled": true,
+            "rowLimit": 100000
+        },
+        "PLC1.Scaling_And_Conversions.Feedroll_Actual_Current_Scaled": {
+            "interval": "PT1S",
+            "maxEntries": 10000,
+            "recordingEnabled": true,
+            "rowLimit": 100000
+        },
+        "PLC1.Scaling_And_Conversions.Feedroll_Actual_Torque_Scaled": {
+            "interval": "PT1S",
+            "maxEntries": 10000,
+            "recordingEnabled": true,
+            "rowLimit": 100000
+        },
         "PLC1.Scaling_And_Conversions.Feedroll_DC_Bus_Voltage_Scaled": {
+            "interval": "PT1S",
+            "maxEntries": 10000,
+            "recordingEnabled": true,
+            "rowLimit": 100000
+        },
+        "PLC1.Scaling_And_Conversions.Rotor_Actual_Current_Scaled": {
+            "interval": "PT1S",
+            "maxEntries": 10000,
+            "recordingEnabled": true,
+            "rowLimit": 100000
+        },
+        "PLC1.Scaling_And_Conversions.Rotor_Actual_Torque_Scaled": {
             "interval": "PT1S",
             "maxEntries": 10000,
             "recordingEnabled": true,

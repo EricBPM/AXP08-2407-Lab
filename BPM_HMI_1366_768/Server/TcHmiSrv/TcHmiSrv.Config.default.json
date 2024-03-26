@@ -2729,7 +2729,7 @@
                         "$ref": "tchmi:general#/definitions/REAL"
                     },
                     {
-                        "comment": "Move to Global for HMI Config"
+                        "comment": "Dont lose the calibration factor."
                     }
                 ]
             },
@@ -2751,7 +2751,14 @@
             "DYNAMIC": true,
             "MAPPING": "PLC1::Diameter_Algo::StrandWidth",
             "SCHEMA": {
-                "$ref": "tchmi:general#/definitions/LREAL"
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/LREAL"
+                    },
+                    {
+                        "comment": "Move to Global for HMI Config"
+                    }
+                ]
             },
             "USEMAPPING": true
         },
@@ -2916,8 +2923,8 @@
                         "$ref": "tchmi:general#/definitions/BOOL"
                     },
                     {
-                        "comment": "This is part of the Status Word; Fault bit 3",
-                        "propertyOrder": 7
+                        "comment": ":= VFD_Status_Word.3;\t\t\t\tThis callout doesnt seem to work during Runtime.\t\t\t\t\t\t//This is part of the Status Word; Fault bit 3",
+                        "propertyOrder": 8
                     }
                 ]
             },
@@ -2934,8 +2941,8 @@
                         "$ref": "tchmi:general#/definitions/BOOL"
                     },
                     {
-                        "comment": "This is part of the Control Word; Fault Reset bit 7",
-                        "propertyOrder": 12
+                        "comment": ":= VFD_Control_Word.7;\t\t\t\tThis callout doesnt seem to work during Runtime.\t\t\t\t//This is part of the Control Word; Fault Reset bit 7",
+                        "propertyOrder": 14
                     }
                 ]
             },
@@ -2956,7 +2963,7 @@
                             "TcAddressType": "Output"
                         },
                         "comment": "Sets the Speed of the VFD in RPM",
-                        "propertyOrder": 9
+                        "propertyOrder": 11
                     }
                 ]
             },
@@ -3428,15 +3435,15 @@
             },
             "USEMAPPING": true
         },
-        "PLC1.GVL_Waterbath.Process_Water_FLOW": {
+        "PLC1.GVL_Waterbath.Pump_Fault": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
             "DYNAMIC": true,
-            "MAPPING": "PLC1::GVL_Waterbath::Process_Water_FLOW",
+            "MAPPING": "PLC1::GVL_Waterbath::Pump_Fault",
             "SCHEMA": {
                 "allOf": [
                     {
-                        "$ref": "tchmi:general#/definitions/DINT"
+                        "$ref": "tchmi:general#/definitions/BOOL"
                     },
                     {
                         "attributes": {
@@ -3447,89 +3454,163 @@
             },
             "USEMAPPING": true
         },
-        "PLC1.GVL_Waterbath.Process_Water_IN": {
+        "PLC1.GVL_Waterbath.Pump_OL_Reset": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
             "DYNAMIC": true,
-            "MAPPING": "PLC1::GVL_Waterbath::Process_Water_IN",
+            "MAPPING": "PLC1::GVL_Waterbath::Pump_OL_Reset",
             "SCHEMA": {
                 "allOf": [
                     {
-                        "$ref": "tchmi:general#/definitions/DINT"
-                    },
-                    {
-                        "attributes": {
-                            "TcAddressType": "Input"
-                        },
-                        "comment": "INPUTS"
-                    }
-                ]
-            },
-            "USEMAPPING": true
-        },
-        "PLC1.GVL_Waterbath.Process_Water_OUT": {
-            "ACCESS": 3,
-            "DOMAIN": "ADS",
-            "DYNAMIC": true,
-            "MAPPING": "PLC1::GVL_Waterbath::Process_Water_OUT",
-            "SCHEMA": {
-                "allOf": [
-                    {
-                        "$ref": "tchmi:general#/definitions/DINT"
-                    },
-                    {
-                        "attributes": {
-                            "TcAddressType": "Input"
-                        }
-                    }
-                ]
-            },
-            "USEMAPPING": true
-        },
-        "PLC1.GVL_Waterbath.Process_Water_Setpoint": {
-            "ACCESS": 3,
-            "DOMAIN": "ADS",
-            "DYNAMIC": true,
-            "MAPPING": "PLC1::GVL_Waterbath::Process_Water_Setpoint",
-            "SCHEMA": {
-                "allOf": [
-                    {
-                        "$ref": "tchmi:general#/definitions/DINT"
-                    },
-                    {
-                        "attributes": {
-                            "TcAddressType": "Input"
-                        }
-                    }
-                ]
-            },
-            "USEMAPPING": true
-        },
-        "PLC1.GVL_Waterbath.Prop_Valve": {
-            "ACCESS": 3,
-            "DOMAIN": "ADS",
-            "DYNAMIC": true,
-            "MAPPING": "PLC1::GVL_Waterbath::Prop_Valve",
-            "SCHEMA": {
-                "allOf": [
-                    {
-                        "$ref": "tchmi:general#/definitions/DINT"
+                        "$ref": "tchmi:general#/definitions/BOOL"
                     },
                     {
                         "attributes": {
                             "TcAddressType": "Output"
-                        },
-                        "comment": "OUTPUTS"
+                        }
                     }
                 ]
             },
             "USEMAPPING": true
         },
-        "PLC1.Imperial_Metric_Switching.Pellet_Length_Metric_Input": {
+        "PLC1.GVL_Waterbath.Waterbath_Actual_Temp": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
             "DYNAMIC": true,
-            "MAPPING": "PLC1::Imperial_Metric_Switching::Pellet_Length_Metric_Input",
+            "MAPPING": "PLC1::GVL_Waterbath::Waterbath_Actual_Temp",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Waterbath.Waterbath_CalculatedBTULoss": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Waterbath_CalculatedBTULoss",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Waterbath.Waterbath_Delta_Temp": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Waterbath_Delta_Temp",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Waterbath.Waterbath_Flow_Rate": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Waterbath_Flow_Rate",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Waterbath.Waterbath_Local_Control": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Waterbath_Local_Control",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Waterbath.Waterbath_Return_Temp": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Waterbath_Return_Temp",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Waterbath.Waterbath_SetPoint_Temp": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Waterbath_SetPoint_Temp",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/REAL"
+                    },
+                    {
+                        "comment": "These are the HMI Variables after they are scaled correctly."
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Waterbath.Waterbath_Start": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Waterbath_Start",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Waterbath.Waterbath_StartwithSystem": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Waterbath_StartwithSystem",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "System Variables"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Waterbath.Waterbath_System_Control": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Waterbath_System_Control",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        }
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Waterbath.Waterbath_TempControl_Auto": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Waterbath_TempControl_Auto",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Waterbath.Waterbath_Valve_Position_Percentage": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Waterbath_Valve_Position_Percentage",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/REAL"
             },
@@ -3591,7 +3672,14 @@
             "DYNAMIC": true,
             "MAPPING": "PLC1::Machine_Limits::Feedroll_Motor_Rated_RPM",
             "SCHEMA": {
-                "$ref": "tchmi:general#/definitions/REAL"
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/REAL"
+                    },
+                    {
+                        "comment": "For calculation purposes only. This calculates the min and max line speeds so that we can display these ranges on the speed gauges."
+                    }
+                ]
             },
             "USEMAPPING": true
         },
@@ -3685,6 +3773,26 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Machine_Status.Waterbath_Disconnected": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Machine_Status::Waterbath_Disconnected",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Machine_Status.Waterbath_Status_String": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Machine_Status::Waterbath_Status_String",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/STRING%2880%29"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Main.connected": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -3720,16 +3828,6 @@
             "DOMAIN": "ADS",
             "DYNAMIC": true,
             "MAPPING": "PLC1::Scaling_And_Conversions::AirKnife_DC_Bus_Voltage_Scaled",
-            "SCHEMA": {
-                "$ref": "tchmi:general#/definitions/REAL"
-            },
-            "USEMAPPING": true
-        },
-        "PLC1.Scaling_And_Conversions.AirKnife_Vacuum_Level": {
-            "ACCESS": 3,
-            "DOMAIN": "ADS",
-            "DYNAMIC": true,
-            "MAPPING": "PLC1::Scaling_And_Conversions::AirKnife_Vacuum_Level",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/REAL"
             },
@@ -6094,8 +6192,10 @@
                 "PLC1.Diameter_Algo.nSubpixIter_1": 3,
                 "PLC1.GVL_AirKnife.AirKnife_Filter_Change_Setting": 3,
                 "PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input": 3,
+                "PLC1.GVL_AirKnife.AirKnife_Running": 3,
                 "PLC1.GVL_AirKnife.AirKnife_Start": 3,
                 "PLC1.GVL_AirKnife.AirKnife_StartwithSystem": 3,
+                "PLC1.GVL_AirKnife.AirKnife_Stop": 3,
                 "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Fault": 3,
                 "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Fault_Reset": 3,
                 "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed": 3,
@@ -6137,6 +6237,20 @@
                 "PLC1.GVL_Waterbath.Process_Water_OUT": 3,
                 "PLC1.GVL_Waterbath.Process_Water_Setpoint": 3,
                 "PLC1.GVL_Waterbath.Prop_Valve": 3,
+                "PLC1.GVL_Waterbath.Pump_Fault": 3,
+                "PLC1.GVL_Waterbath.Pump_OL_Reset": 3,
+                "PLC1.GVL_Waterbath.Waterbath_Actual_Temp": 3,
+                "PLC1.GVL_Waterbath.Waterbath_CalculatedBTULoss": 3,
+                "PLC1.GVL_Waterbath.Waterbath_Delta_Temp": 3,
+                "PLC1.GVL_Waterbath.Waterbath_Flow_Rate": 3,
+                "PLC1.GVL_Waterbath.Waterbath_Local_Control": 3,
+                "PLC1.GVL_Waterbath.Waterbath_Return_Temp": 3,
+                "PLC1.GVL_Waterbath.Waterbath_SetPoint_Temp": 3,
+                "PLC1.GVL_Waterbath.Waterbath_Start": 3,
+                "PLC1.GVL_Waterbath.Waterbath_StartwithSystem": 3,
+                "PLC1.GVL_Waterbath.Waterbath_System_Control": 3,
+                "PLC1.GVL_Waterbath.Waterbath_TempControl_Auto": 3,
+                "PLC1.GVL_Waterbath.Waterbath_Valve_Position_Percentage": 3,
                 "PLC1.Imperial_Metric_Switching.Pellet_Length_Metric_Input": 3,
                 "PLC1.Machine_Limits.Feedroll_Max_Ft_Per_Min": 3,
                 "PLC1.Machine_Limits.Feedroll_Min_Ft_Per_Min": 3,
@@ -6153,6 +6267,8 @@
                 "PLC1.Machine_Status.AirKnife_Disconnected": 3,
                 "PLC1.Machine_Status.AirKnife_Status_String": 3,
                 "PLC1.Machine_Status.Pelletizer_Status_String": 3,
+                "PLC1.Machine_Status.Waterbath_Disconnected": 3,
+                "PLC1.Machine_Status.Waterbath_Status_String": 3,
                 "PLC1.Main.connected": 3,
                 "PLC1.Pellet_Calibration.SET_CALIBRATON_VALUE": 3,
                 "PLC1.Scaling_And_Conversions.AirKnife_Actual_Current_Scaled": 3,

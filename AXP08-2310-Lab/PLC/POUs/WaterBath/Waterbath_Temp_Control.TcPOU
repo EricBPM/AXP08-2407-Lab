@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="Waterbath_Temp_Control" Id="{b3036ecf-705d-4338-ba2a-dc985e3d728c}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Waterbath_Temp_Control
+VAR
+	Cooling_PID: FB_BasicPID;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF GVL_Waterbath.Waterbath_TempControl_Auto THEN
+	Cooling_PID(
+	fSetpointValue:= , 
+	fActualValue:= , 
+	bReset:= , 
+	fCtrlCycleTime:= , 
+	fKp:= , 
+	fTn:= , 
+	fTv:= , 
+	fTd:= , 
+	fCtrlOutput=> , 
+	nErrorStatus=> );
+ELSE
+	GVL_Waterbath.Waterbath_Valve_Position_Percentage;
+END_IF
+
+
+
+
+
+GVL_Waterbath.Waterbath_Delta_Temp := GVL_Waterbath.Waterbath_Return_Temp - GVL_Waterbath.Waterbath_Actual_Temp;
+GVL_Waterbath.Waterbath_CalculatedBTULoss := GVL_Waterbath.Waterbath_Flow_Rate * (GVL_Waterbath.Waterbath_Delta_Temp) * 500.4;
+// BTU Loss = Flow Rate In GPM (of water) x (Temperature Leaving Process - Temperature Entering Process) x 500.4]]></ST>
+    </Implementation>
+    <LineIds Name="Waterbath_Temp_Control">
+      <LineId Id="5" Count="0" />
+      <LineId Id="11" Count="9" />
+      <LineId Id="8" Count="0" />
+      <LineId Id="7" Count="0" />
+      <LineId Id="21" Count="1" />
+      <LineId Id="28" Count="6" />
+      <LineId Id="27" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

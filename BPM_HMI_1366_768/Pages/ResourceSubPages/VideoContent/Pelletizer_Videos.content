@@ -1,24 +1,219 @@
 <div id="AirKnife_Videos_2" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-height-mode="Parent" data-tchmi-width-mode="Parent">
-<div id="TcHmiVideo_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiVideo" data-tchmi-controls="true" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-mute="true" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-autoplay="true" data-tchmi-loop="true">
+<div id="Pelletizer_VideoPlayer" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiVideo" data-tchmi-controls="true" data-tchmi-mute="true" data-tchmi-width-mode="Value" data-tchmi-height-mode="Parent" data-tchmi-autoplay="true" data-tchmi-loop="true" data-tchmi-is-enabled="true" data-tchmi-left="220" data-tchmi-right="0" data-tchmi-height="100" data-tchmi-top="0" data-tchmi-height-unit="px" data-tchmi-bottom="0">
+
+
 
 <script data-tchmi-target-attribute="data-tchmi-src-list" type="application/json">
 [
   {
-    "source": "Pages/Resources/Video/Pelletizer_Video.mp4",
+    "source": "Pages/Resources/Video/Rotor-Gap-Adjust---v5.mp4",
     "type": "video/mp4"
   }
 ]
 </script>
-</div>
-<div id="TcHmiTextbox_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="296" data-tchmi-left-unit="px" data-tchmi-text="Need Video (Placeholder)" data-tchmi-top="39" data-tchmi-top-unit="px" data-tchmi-width="257" data-tchmi-width-unit="px">
-<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
 {
-  "top": 3,
-  "right": 3,
-  "bottom": 3,
-  "left": 3
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
 }
 </script>
 
+
+</div>
+<div id="RotorGapAdjust_Toggle" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="13" data-tchmi-left-unit="px" data-tchmi-text="Rotor Gap Adjustment" data-tchmi-top="13" data-tchmi-top-unit="px" data-tchmi-width="195" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-toggle-group="PelletizerVideoGroup" data-tchmi-toggle-state="Active">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "RotorGapAdjust_Toggle.onStatePressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Pelletizer_VideoPlayer::SrcList%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiVideo.VideoSourceList",
+          "value": [
+            {
+              "source": "Pages/Resources/Video/Rotor-Gap-Adjust---v5.mp4",
+              "type": "video/mp4"
+            }
+          ]
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="Rotor_Removal_Toggle" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="13" data-tchmi-left-unit="px" data-tchmi-text="Rotor Removal" data-tchmi-top="75" data-tchmi-top-unit="px" data-tchmi-width="195" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-toggle-group="PelletizerVideoGroup">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Rotor_Removal_Toggle.onStatePressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Pelletizer_VideoPlayer::SrcList%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiVideo.VideoSourceList",
+          "value": [
+            {
+              "source": "Pages/Resources/Video/AXP - Rotor Removal.mp4",
+              "type": "video/mp4"
+            }
+          ]
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="Rotor_Install_Toggle" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="13" data-tchmi-left-unit="px" data-tchmi-text="Rotor Reinstall Assembly" data-tchmi-top="135" data-tchmi-top-unit="px" data-tchmi-width="195" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-toggle-group="PelletizerVideoGroup">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Rotor_Install_Toggle.onStatePressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Pelletizer_VideoPlayer::SrcList%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiVideo.VideoSourceList",
+          "value": [
+            {
+              "source": "Pages/Resources/Video/AXP - Rotor Reinstall.mp4",
+              "type": "video/mp4"
+            }
+          ]
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="BedknifeRemoveandInstall_Toggle" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="13" data-tchmi-left-unit="px" data-tchmi-text="Bed Knife Removal & Installation" data-tchmi-top="195" data-tchmi-top-unit="px" data-tchmi-width="195" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-toggle-group="PelletizerVideoGroup">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "BedknifeRemoveandInstall_Toggle.onStatePressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Pelletizer_VideoPlayer::SrcList%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiVideo.VideoSourceList",
+          "value": [
+            {
+              "source": "Pages/Resources/Video/AXP - Bed Knife Removal & Install.mp4",
+              "type": "video/mp4"
+            }
+          ]
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="FeedrollRemoval_Toggle" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="13" data-tchmi-left-unit="px" data-tchmi-text="Feedroll Removal" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="195" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-toggle-group="PelletizerVideoGroup">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "FeedrollRemoval_Toggle.onStatePressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Pelletizer_VideoPlayer::SrcList%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiVideo.VideoSourceList",
+          "value": [
+            {
+              "source": "Pages/Resources/Video/AXP - Feedroll Removal.mp4",
+              "type": "video/mp4"
+            }
+          ]
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="UpperFeedrollBearing_Toggle" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="13" data-tchmi-left-unit="px" data-tchmi-text="Upper Feedroll Bearing Block" data-tchmi-top="375" data-tchmi-top-unit="px" data-tchmi-width="195" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-toggle-group="PelletizerVideoGroup">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "UpperFeedrollBearing_Toggle.onStatePressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Pelletizer_VideoPlayer::SrcList%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiVideo.VideoSourceList",
+          "value": [
+            {
+              "source": "Pages/Resources/Video/AXPChangingUpperFeedrollBearingBlock.mp4",
+              "type": "video/mp4"
+            }
+          ]
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="LowerFeedrollBearingBlock_Toggle" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="13" data-tchmi-left-unit="px" data-tchmi-text="Lower Feedroll Bearing Block" data-tchmi-top="315" data-tchmi-top-unit="px" data-tchmi-width="195" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-toggle-group="PelletizerVideoGroup">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "LowerFeedrollBearingBlock_Toggle.onStatePressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Pelletizer_VideoPlayer::SrcList%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiVideo.VideoSourceList",
+          "value": [
+            {
+              "source": "Pages/Resources/Video/AXP Changing Lower Feedroll Bearing Block.mp4",
+              "type": "video/mp4"
+            }
+          ]
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
 </div>
 </div>

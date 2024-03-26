@@ -224,6 +224,7 @@
     </Content>
     <Content Include="Pages\MainContent\Vision.content">
       <SubType>Content</SubType>
+      <Cache>False</Cache>
     </Content>
     <Content Include="Pages\ResourceSubPages\3dModelContent\AirKnife_3dModel.content">
       <SubType>Content</SubType>
@@ -282,16 +283,37 @@
     <Content Include="Pages\Resources\SubNavigationMenu\PelletizerSubNav.content">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Resources\Video\AirKnife_Video.mp4">
+    <Content Include="Pages\Resources\Video\AXPBedKnifeInstallation.mp4">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Resources\Video\Pelletizer_Video.mp4">
+    <Content Include="Pages\Resources\Video\AXP - Bed Knife Removal &amp; Install.mp4">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Resources\Video\WaterBath_Video.mp4">
+    <Content Include="Pages\Resources\Video\AXP - Feedroll Removal.mp4">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Resources\Video\Extruder_Video.mp4">
+    <Content Include="Pages\Resources\Video\AXP - Lower Feedroll Installation.mp4">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Video\AXP - Rotor Reinstall.mp4">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Video\AXP - Rotor Removal.mp4">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Video\AXP - Upper Feedroll Removal.mp4">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Video\AXP Changing Lower Feedroll Bearing Block.mp4">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Video\AXPChangingUpperFeedrollBearingBlock.mp4">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Video\Flip-Bed-Knife---v8.mp4">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Video\Rotor-Gap-Adjust---v5.mp4">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\SettingsContent\AirKnife_Settings.content">

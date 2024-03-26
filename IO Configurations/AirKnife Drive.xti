@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.54" ClassName="CFlbTermDef" SubType="9099">
+	<ImageDatas>
+		<ImageData Id="1000">424de6000000000000007600000028000000100000000e000000010004000000000070000000000000000000000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00fffffffffffffffffccccccffffffffffcfffecefffffffffcfffecef80008fffcfffecef00000fffcfffecef00900fffcfffecef00000fffcfffecef80008fffccccccefffffffffcfffecefffffffffccffccefffffffffecccceeffffffffffeeeeefffffffffffffffffffffffff</ImageData>
+	</ImageDatas>
+	<Box Id="5" BoxType="9099" BoxFlags="#x00000020">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="2" PdiType="#x3080" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="13" EoeType="1" FoeType="1" VendorId="#x0000003b" ProductCode="#x69055500" RevisionNo="#x00070000" InfoDataAddr="true" EnableWdDivider0400="true" EnableWdTime0420="true" TimeoutStateChange2="3000" TimeoutStateChange3="3000" TimeoutStateChange4="3000" TimeoutMailbox2="2000" CheckRevisionNoType="2" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="i550 Protec V07.00.xx" Desc="Inverter i550 Protec">
+			<SyncMan>001080002600010001000000800000018000001026010000</SyncMan>
+			<SyncMan>001180002200010002000000800000018000001122010000</SyncMan>
+			<SyncMan>001204006400010003000000000020000400001264010000</SyncMan>
+			<SyncMan>00130e002000010004000000000020000600001320010000</SyncMan>
+			<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+			<Fmmu>0000000000000000001300010100000002000000000000000000000000000000</Fmmu>
+			<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+			<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+			<BootStrapData>0010000100110001</BootStrapData>
+			<HcData>0100000008000000020000000000000000000000000000000000000000000000</HcData>
+			<Pdo Name="TPDO (A) Velocity" Index="#x1a03" Flags="#x0010" SyncMan="3">
+				<Entry Name="CiA status word" Index="#x6041">
+					<Type>UINT</Type>
+				</Entry>
+				<Entry Name="Actual speed" Index="#x6044">
+					<Type>INT</Type>
+				</Entry>
+				<Entry Name="Error code" Index="#x603f">
+					<Type>UINT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="TPDO (A) user config" Index="#x1a05" Flags="#x0000" SyncMan="3">
+				<Entry Name="DC-bus voltage" Index="#x6079">
+					<Type>UDINT</Type>
+				</Entry>
+				<Entry Name="Actual current" Index="#x6078">
+					<Type>INT</Type>
+				</Entry>
+				<Entry Name="AnalogInput1_Diagnostic" Index="#x2da4" Sub="#x01">
+					<Type>INT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="RPDO (A) Velocity" Index="#x1603" InOut="1" Flags="#x0010" SyncMan="2">
+				<Entry Name="CiA control word" Index="#x6040">
+					<Type>UINT</Type>
+				</Entry>
+				<Entry Name="Set speed" Index="#x6042">
+					<Type>INT</Type>
+				</Entry>
+			</Pdo>
+			<Pdo Name="RPDO (A) user config" Index="#x1605" InOut="1" Flags="#x0000" SyncMan="2"/>
+		</EtherCAT>
+	</Box>
+	<Mappings>
+		<OwnerA Name="__THIS__">
+			<OwnerB Name="TIPC^PLC^PLC Instance">
+				<Link VarA="InfoData^State" VarB="PlcTask Inputs^GVL_AirKnife.AirKnife_VFD.VFD_Connection_Status"/>
+				<Link VarA="RPDO (A) Velocity^CiA control word" VarB="PlcTask Outputs^GVL_AirKnife.AirKnife_VFD.VFD_Control_Word"/>
+				<Link VarA="RPDO (A) Velocity^Set speed" VarB="PlcTask Outputs^GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed"/>
+				<Link VarA="TPDO (A) Velocity^CiA status word" VarB="PlcTask Inputs^GVL_AirKnife.AirKnife_VFD.VFD_Status_Word"/>
+				<Link VarA="TPDO (A) user config^Actual current" VarB="PlcTask Inputs^GVL_AirKnife.AirKnife_VFD.VFD_Actual_Current"/>
+				<Link VarA="TPDO (A) user config^AnalogInput1_Diagnostic" VarB="PlcTask Inputs^GVL_AirKnife.AirKnife_Analog_Input"/>
+				<Link VarA="TPDO (A) user config^DC-bus voltage" VarB="PlcTask Inputs^GVL_AirKnife.AirKnife_VFD.VFD_DC_Bus_Voltage"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
+</TcSmItem>
