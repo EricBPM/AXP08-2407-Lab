@@ -691,6 +691,10 @@
       "basePath": "/Beckhoff.TwinCAT.HMI.Functions"
     },
     {
+      "name": "Beckhoff.TwinCAT.HMI.PDFViewer",
+      "basePath": "/Beckhoff.TwinCAT.HMI.PDFViewer"
+    },
+    {
       "name": "Beckhoff.TwinCAT.HMI.Vision.Controls",
       "basePath": "/Beckhoff.TwinCAT.HMI.Vision.Controls"
     },

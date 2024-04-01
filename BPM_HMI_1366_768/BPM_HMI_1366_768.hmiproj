@@ -268,7 +268,22 @@
     <Content Include="Pages\Resources\3D_Model\evak-12-std-mech-1.html">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Resources\3D_Model\wbx1008-10-2333.html">
+    <Content Include="Pages\Resources\3D_Model\wbx1008-10-2404.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\3D_Model\zse 27maxx 3d.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\AXP08-2310_.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\EVAK-12-STD-MECH-1_.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\WBX1008-10-2404_.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\ZSE27MAXX.pdf">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Resources\SubNavigationMenu\AirKnifeSubNav.content">

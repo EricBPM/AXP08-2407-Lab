@@ -25,8 +25,8 @@ VAR_GLOBAL
 	Waterbath_Local_Control : BOOL;
 	
 	//These are the HMI Variables after they are scaled correctly.
-	Waterbath_SetPoint_Temp : REAL;
-	Waterbath_Actual_Temp : REAL;
+	Waterbath_SetPoint_Temp : LREAL;
+	Waterbath_Actual_Temp : LREAL;
 	Waterbath_Return_Temp : REAL;
 	Waterbath_Flow_Rate : REAL;
 

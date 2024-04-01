@@ -19,14 +19,6 @@
     "maxWidthUnit": "px",
     "minWidthUnit": "px",
     "overflow": false
-  },
-  {
-    "width": 1.0,
-    "widthUnit": "factor",
-    "widthMode": "Value",
-    "maxWidthUnit": "px",
-    "minWidthUnit": "px",
-    "overflow": false
   }
 ]
 </script>
@@ -101,44 +93,7 @@
 ]
 </script>
 </div>
-<div id="Waterbath_Video_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-text="Video" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%Waterbath_Video_Btn::RenderedWidth%/ctrl%" data-tchmi-right="25" data-tchmi-right-unit="%" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-toggle-group="SubNavToggleGroup">
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "Waterbath_Video_Btn.onStatePressed",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%Resources_Region::TargetContent%/ctrl%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/ResourceSubPages/VideoContent/WaterBath_Videos.content"
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
-{
-  "topLeft": 5.0,
-  "topRight": 5.0,
-  "bottomLeft": 5.0,
-  "bottomRight": 5.0,
-  "topLeftUnit": "px",
-  "topRightUnit": "px",
-  "bottomLeftUnit": "px",
-  "bottomRightUnit": "px"
-}
-</script>
-</div>
-<div id="Waterbath_Documents_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-text="Documents" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-right="25" data-tchmi-bottom-unit="px" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%Waterbath_Documents_Btn::RenderedWidth%/ctrl%" data-tchmi-toggle-group="SubNavToggleGroup">
-
+<div id="Waterbath_Documents_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-text="Documents" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-right="25" data-tchmi-bottom-unit="px" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%Waterbath_Documents_Btn::RenderedWidth%/ctrl%" data-tchmi-toggle-group="SubNavToggleGroup">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 5.0,

@@ -1,3 +1,348 @@
 <div id="WaterBath_Settings" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-width-unit="%" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Content">
 
+<div id="Waterbath_Settings_Grid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="720" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content">
+
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidth": 320.0,
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-cell-options" type="application/json">
+[
+  {
+    "columnIndex": 0,
+    "rowIndex": 0,
+    "padding": {
+      "left": 16,
+      "right": 16,
+      "top": 16,
+      "bottom": 16,
+      "leftUnit": "px",
+      "rightUnit": "px",
+      "topUnit": "px",
+      "bottomUnit": "px"
+    },
+    "backgroundImageWidthUnit": "px",
+    "backgroundImageHeightUnit": "px",
+    "backgroundImageHorizontalAlignment": "Center",
+    "backgroundImageVerticalAlignment": "Center"
+  },
+  {
+    "columnIndex": 1,
+    "rowIndex": 0,
+    "padding": {
+      "left": 16,
+      "right": 16,
+      "top": 16,
+      "bottom": 16,
+      "leftUnit": "px",
+      "rightUnit": "px",
+      "topUnit": "px",
+      "bottomUnit": "px"
+    },
+    "backgroundImageWidthUnit": "px",
+    "backgroundImageHeightUnit": "px",
+    "backgroundImageHorizontalAlignment": "Center",
+    "backgroundImageVerticalAlignment": "Center"
+  },
+  {
+    "columnIndex": 2,
+    "rowIndex": 0,
+    "padding": {
+      "left": 16,
+      "right": 16,
+      "top": 16,
+      "bottom": 16,
+      "leftUnit": "px",
+      "rightUnit": "px",
+      "topUnit": "px",
+      "bottomUnit": "px"
+    },
+    "backgroundImageWidthUnit": "px",
+    "backgroundImageHeightUnit": "px",
+    "backgroundImageHorizontalAlignment": "Center",
+    "backgroundImageVerticalAlignment": "Center"
+  },
+  {
+    "columnIndex": 3,
+    "rowIndex": 0,
+    "padding": {
+      "left": 16,
+      "right": 16,
+      "top": 16,
+      "bottom": 16,
+      "leftUnit": "px",
+      "rightUnit": "px",
+      "topUnit": "px",
+      "bottomUnit": "px"
+    },
+    "backgroundImageWidthUnit": "px",
+    "backgroundImageHeightUnit": "px",
+    "backgroundImageHorizontalAlignment": "Center",
+    "backgroundImageVerticalAlignment": "Center"
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeight": 400.0,
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="3" id="Waterbath_Settings_Container" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-creator-locked="False">
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "background-container"
+]
+</script>
+<div id="Waterbath_Kp_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="2" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-max-value="1000" data-tchmi-min-value="-1000" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="73" data-tchmi-top-unit="px" data-tchmi-value="%s%PLC1.Waterbath_Temp_Control.WaterbathPID_Kp%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-creator-visibility="Visible" data-tchmi-placeholder="32" data-tchmi-system-keyboard-input-mode="numeric" data-tchmi-tooltip="Controller amplification / controller coefficient">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Waterbath_Kp_Numeric.onValueChanged",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.Waterbath_Temp_Control.WaterbathPID_Kp%/s%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%ctrl%Waterbath_Kp_Numeric::Value%/ctrl%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="Waterbath_Kp_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="15" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Proportional Gain" data-tchmi-top="57" data-tchmi-top-unit="px" data-tchmi-width="145" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-width-mode="Value" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-horizontal-alignment="Left" data-tchmi-tooltip="Controller amplification / controller coefficient">
+</div>
+<div id="RotorData_Lbl_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Cooling PID Settings" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="174" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-width-mode="Value">
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+          [
+          "headline-3"
+          ]
+        </script>
+      </div>
+<div id="Waterbath_Tn_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="15" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Integral Time (s)" data-tchmi-top="122" data-tchmi-top-unit="px" data-tchmi-width="145" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-width-mode="Value" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-horizontal-alignment="Left" data-tchmi-tooltip="Integral action time [s]">
+</div>
+<div id="Waterbath_Tn_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="2" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-max-value="1000" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="138" data-tchmi-top-unit="px" data-tchmi-value="%s%PLC1.Waterbath_Temp_Control.WaterbathPID_Tn%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-creator-visibility="Visible" data-tchmi-placeholder="32" data-tchmi-system-keyboard-input-mode="numeric" data-tchmi-tooltip="Integral action time [s]">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Waterbath_Tn_Numeric.onValueChanged",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.Waterbath_Temp_Control.WaterbathPID_Tn%/s%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%ctrl%Waterbath_Tn_Numeric::Value%/ctrl%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="Waterbath_Tv_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="15" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Rate Time (s)" data-tchmi-top="187" data-tchmi-top-unit="px" data-tchmi-width="145" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-width-mode="Value" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-horizontal-alignment="Left">
+</div>
+<div id="Waterbath_Tv_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="2" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-max-value="1000" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="203" data-tchmi-top-unit="px" data-tchmi-value="%s%PLC1.Waterbath_Temp_Control.WaterbathPID_Tv%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-creator-visibility="Visible" data-tchmi-placeholder="32" data-tchmi-system-keyboard-input-mode="numeric">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Waterbath_Tv_Numeric.onValueChanged",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.Waterbath_Temp_Control.WaterbathPID_Tv%/s%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%ctrl%Waterbath_Tv_Numeric::Value%/ctrl%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="Waterbath_Td_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="2" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-max-value="1000" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="268" data-tchmi-top-unit="px" data-tchmi-value="%s%PLC1.Waterbath_Temp_Control.WaterbathPID_Td%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-creator-visibility="Visible" data-tchmi-placeholder="32" data-tchmi-system-keyboard-input-mode="numeric">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Waterbath_Td_Numeric.onValueChanged",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.Waterbath_Temp_Control.WaterbathPID_Td%/s%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%ctrl%Waterbath_Td_Numeric::Value%/ctrl%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="Waterbath_Td_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="15" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Damping Time (s)" data-tchmi-top="252" data-tchmi-top-unit="px" data-tchmi-width="145" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-width-mode="Value" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-horizontal-alignment="Left">
+</div>
+<div id="Waterbath_CycleTime_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="2" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="189" data-tchmi-left-unit="px" data-tchmi-max-value="1000" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="72" data-tchmi-top-unit="px" data-tchmi-value="%s%PLC1.Waterbath_Temp_Control.WaterbathPID_CycleTime%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-creator-visibility="Visible" data-tchmi-placeholder="32" data-tchmi-system-keyboard-input-mode="numeric" data-tchmi-tooltip="Cycle time with which the function block is called and with which the control loop is processed [s].">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Waterbath_CycleTime_Numeric.onValueChanged",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.Waterbath_Temp_Control.WaterbathPID_CycleTime%/s%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%ctrl%Waterbath_CycleTime_Numeric::Value%/ctrl%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="Waterbath_CyclTime_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="15" data-tchmi-height-unit="px" data-tchmi-left="189" data-tchmi-left-unit="px" data-tchmi-text="Control Cycle Time (s)" data-tchmi-top="56" data-tchmi-top-unit="px" data-tchmi-width="145" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-width-mode="Value" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-horizontal-alignment="Left" data-tchmi-tooltip="Cycle time with which the function block is called and with which the control loop is processed [s].">
+</div>
+<div id="Waterbath_ValveSim_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="15" data-tchmi-height-unit="px" data-tchmi-left="189" data-tchmi-left-unit="px" data-tchmi-text="Output Signal Value" data-tchmi-top="122" data-tchmi-top-unit="px" data-tchmi-width="145" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-width-mode="Value" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-horizontal-alignment="Left" data-tchmi-tooltip="Output of the PID-element." data-tchmi-is-enabled="true">
+</div>
+<div id="Waterbath_SimVal_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="2" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="189" data-tchmi-left-unit="px" data-tchmi-max-value="10000" data-tchmi-min-value="-10000" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="138" data-tchmi-top-unit="px" data-tchmi-value="%s%PLC1.Waterbath_Temp_Control.WaterbathPID_ControlOutput%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-creator-visibility="Visible" data-tchmi-placeholder="32" data-tchmi-system-keyboard-input-mode="numeric" data-tchmi-tooltip="Output of the PID-element." data-tchmi-is-enabled="false">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Waterbath_SimVal_Numeric.onValueChanged",
+    "actions": []
+  }
+]
+</script>
+</div>
+<div id="Waterbath_PIDError_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="15" data-tchmi-height-unit="px" data-tchmi-left="189" data-tchmi-left-unit="px" data-tchmi-text="PID Error" data-tchmi-top="187" data-tchmi-top-unit="px" data-tchmi-width="145" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-width-mode="Value" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-horizontal-alignment="Left" data-tchmi-tooltip="Output of the PID-element." data-tchmi-is-enabled="true">
+</div>
+<div id="PIDError_Combobox" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-auto-focus-out="false" data-tchmi-combobox-text="" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="189" data-tchmi-left-unit="px" data-tchmi-top="203" data-tchmi-top-unit="px" data-tchmi-width="145" data-tchmi-width-unit="px" data-tchmi-is-enabled="false" data-tchmi-enum-data-symbol="%s%PLC1.Waterbath_Temp_Control.WaterbathPID_ErrorStatus%/s%">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-src-data" type="application/json">
+[
+  {
+    "text": "No Error",
+    "value": 0
+  },
+  {
+    "text": "Invalid Parameter",
+    "value": 1
+  },
+  {
+    "text": "Invalid Cycle Time",
+    "value": 2
+  }
+]
+</script>
+</div>
+<div id="PID_Reset_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="189" data-tchmi-left-unit="px" data-tchmi-text="Reset PID Output" data-tchmi-top="252" data-tchmi-top-unit="px" data-tchmi-width="145" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-state-symbol="%s%PLC1.Waterbath_Temp_Control.Waterbath_ResetPID%/s%">
+</div>
+</div>
+</div>
 </div>

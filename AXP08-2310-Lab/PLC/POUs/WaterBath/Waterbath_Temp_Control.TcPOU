@@ -2,25 +2,38 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
   <POU Name="Waterbath_Temp_Control" Id="{b3036ecf-705d-4338-ba2a-dc985e3d728c}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM Waterbath_Temp_Control
-VAR
+VAR PERSISTENT
 	Cooling_PID: FB_BasicPID;
+	
+	WaterbathPID_CycleTime : LREAL;
+	Waterbath_ResetPID : BOOL;
+	WaterbathPID_Kp : LREAL;
+	WaterbathPID_Tn : LREAL;
+	WaterbathPID_Tv : LREAL;
+	WaterbathPID_Td : LREAL;
+	
+	WaterbathPID_ControlOutput : LREAL;
+	WaterbathPID_ErrorStatus : UINT;
+	
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[IF GVL_Waterbath.Waterbath_TempControl_Auto THEN
 	Cooling_PID(
-	fSetpointValue:= , 
-	fActualValue:= , 
-	bReset:= , 
-	fCtrlCycleTime:= , 
-	fKp:= , 
-	fTn:= , 
-	fTv:= , 
-	fTd:= , 
-	fCtrlOutput=> , 
-	nErrorStatus=> );
+	fSetpointValue:= GVL_Waterbath.Waterbath_SetPoint_Temp, 
+	fActualValue:= GVL_Waterbath.Waterbath_Actual_Temp, 
+	bReset:= Waterbath_ResetPID, 
+	fCtrlCycleTime:= WaterbathPID_CycleTime, 
+	fKp:= WaterbathPID_Kp, 
+	fTn:= WaterbathPID_Tn, 
+	fTv:= WaterbathPID_Tv, 
+	fTd:= WaterbathPID_Td, 
+	fCtrlOutput=> WaterbathPID_ControlOutput, 
+	nErrorStatus=> WaterbathPID_ErrorStatus);
+	
+	GVL_Waterbath.Waterbath_Valve_Position_Percentage := WaterbathPID_ControlOutput;
 ELSE
-	GVL_Waterbath.Waterbath_Valve_Position_Percentage;
+	WaterbathPID_ControlOutput := GVL_Waterbath.Waterbath_Valve_Position_Percentage;
 END_IF
 
 
@@ -35,6 +48,7 @@ GVL_Waterbath.Waterbath_CalculatedBTULoss := GVL_Waterbath.Waterbath_Flow_Rate *
       <LineId Id="5" Count="0" />
       <LineId Id="11" Count="9" />
       <LineId Id="8" Count="0" />
+      <LineId Id="51" Count="1" />
       <LineId Id="7" Count="0" />
       <LineId Id="21" Count="1" />
       <LineId Id="28" Count="6" />

@@ -37,7 +37,7 @@
   }
 ]
 </script>
-<div id="Pelletizer_ResourcesNav_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="Pelletizer" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="false" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%Pelletizer_ResourcesNav_Btn::RenderedWidth%/ctrl%" data-tchmi-creator-locked="True" data-tchmi-toggle-group="ResourcesMachinesToggle">
+<div id="Pelletizer_ResourcesNav_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="Pelletizer" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="false" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%Pelletizer_ResourcesNav_Btn::RenderedWidth%/ctrl%" data-tchmi-creator-locked="True" data-tchmi-toggle-group="ResourcesMachinesToggle" data-tchmi-toggle-state="Active">
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
@@ -156,18 +156,7 @@
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/Resources/SubNavigationMenu/ExtrudSubNav.content"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%AirKnife_ResourcesNav_Btn::ToggleState%/ctrl%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/ToggleState",
-          "value": null
+          "value": "Pages/Resources/SubNavigationMenu/ExtruderSubNav.content"
         },
         "asyncWait": true
       }
@@ -190,7 +179,7 @@
 </script>
 </div>
 </div>
-<div id="Resources_Region" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="510" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-mode="Parent" data-tchmi-min-width="100" data-tchmi-max-width="1126" data-tchmi-bottom="50" data-tchmi-right="10" data-tchmi-target-content="Pages/Resources/ContentPages/3dModelContent/Pelletizer_3dModel.content" data-tchmi-creator-locked="True">
+<div id="Resources_Region" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="510" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-mode="Parent" data-tchmi-min-width="100" data-tchmi-max-width="1126" data-tchmi-bottom="50" data-tchmi-right="10" data-tchmi-target-content="Pages/ResourceSubPages/3dModelContent/Pelletizer_3dModel.content" data-tchmi-creator-locked="True">
 <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
 {
   "left": "Solid",
@@ -228,4 +217,25 @@
 </div>
 <div id="SubNavRegion" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-right="10" data-tchmi-width-mode="Parent" data-tchmi-max-width="1124" data-tchmi-min-width="0" data-tchmi-target-content="Pages/Resources/SubNavigationMenu/PelletizerSubNav.content" data-tchmi-bottom="55" data-tchmi-creator-locked="True">
 </div>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Resources.onAttached",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Pelletizer_ResourcesNav_Btn::ToggleState%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/ToggleState",
+          "value": "Active"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
 </div>

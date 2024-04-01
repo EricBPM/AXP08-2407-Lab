@@ -3893,6 +3893,86 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Waterbath_Temp_Control.WaterbathPID_ControlOutput": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Waterbath_Temp_Control::WaterbathPID_ControlOutput",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/LREAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Waterbath_Temp_Control.WaterbathPID_CycleTime": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Waterbath_Temp_Control::WaterbathPID_CycleTime",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/LREAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Waterbath_Temp_Control.WaterbathPID_ErrorStatus": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Waterbath_Temp_Control::WaterbathPID_ErrorStatus",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/UINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Waterbath_Temp_Control.WaterbathPID_Kp": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Waterbath_Temp_Control::WaterbathPID_Kp",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/LREAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Waterbath_Temp_Control.WaterbathPID_Td": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Waterbath_Temp_Control::WaterbathPID_Td",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/LREAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Waterbath_Temp_Control.WaterbathPID_Tn": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Waterbath_Temp_Control::WaterbathPID_Tn",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/LREAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Waterbath_Temp_Control.WaterbathPID_Tv": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Waterbath_Temp_Control::WaterbathPID_Tv",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/LREAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Waterbath_Temp_Control.Waterbath_ResetPID": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Waterbath_Temp_Control::Waterbath_ResetPID",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
         "RefreshDefinitions": {
             "ACCESS": 3,
             "DOMAIN": "TcHmiSrv",
@@ -6281,6 +6361,14 @@
                 "PLC1.Scaling_And_Conversions.Rotor_Actual_Torque_Scaled": 3,
                 "PLC1.Scaling_And_Conversions.Rotor_DC_Bus_Voltage_Scaled": 3,
                 "PLC1.Torque_Scaling.Rotor_Actual_Torque_Scaled": 3,
+                "PLC1.Waterbath_Temp_Control.WaterbathPID_ControlOutput": 3,
+                "PLC1.Waterbath_Temp_Control.WaterbathPID_CycleTime": 3,
+                "PLC1.Waterbath_Temp_Control.WaterbathPID_ErrorStatus": 3,
+                "PLC1.Waterbath_Temp_Control.WaterbathPID_Kp": 3,
+                "PLC1.Waterbath_Temp_Control.WaterbathPID_Td": 3,
+                "PLC1.Waterbath_Temp_Control.WaterbathPID_Tn": 3,
+                "PLC1.Waterbath_Temp_Control.WaterbathPID_Tv": 3,
+                "PLC1.Waterbath_Temp_Control.Waterbath_ResetPID": 3,
                 "SetLocale": 3,
                 "SubscribeEvents": 3,
                 "TcHmiEcDiagnostics.Diagnostics": 1,
@@ -6357,6 +6445,7 @@
         "/Beckhoff.TwinCAT.HMI.Controls": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Controls.12.760.59\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.EcDiagnosticsControl": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.EcDiagnosticsControl.12.760.48\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.Functions": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Functions.12.760.59\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.PDFViewer": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.PDFViewer.12.760.59\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.Vision.Controls": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Vision.Controls.1.2.2\\runtimes\\native1.12-tchmi",
         "/LineTrendExt": "..\\..\\Packages\\LineTrendExt.1.0.0\\runtimes\\native1.12-tchmi",
         "/bin": "..\\..\\BPM_HMI_1366_768\\bin\\",
