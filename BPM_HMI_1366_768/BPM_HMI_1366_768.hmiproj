@@ -114,11 +114,16 @@
     <Folder Include="Imports" />
     <Folder Include="Imports\Images" />
     <Folder Include="Imports\MachineIcons" />
+    <Folder Include="Imports\TabIcons" />
     <Folder Include="Imports\Videos" />
     <Folder Include="KeyboardLayouts\" />
     <Folder Include="Localization" />
     <Folder Include="Pages\" />
     <Folder Include="Pages\MainContent" />
+    <Folder Include="Pages\Resources\Documents\AirKnifeDocuments" />
+    <Folder Include="Pages\Resources\Documents\ExtruderDocuments" />
+    <Folder Include="Pages\Resources\Documents\PelletizerDocuments" />
+    <Folder Include="Pages\Resources\Documents\WaterbathDocuments" />
     <Folder Include="Pages\TrendSubPages" />
     <Folder Include="Pages\SettingsContent" />
     <Folder Include="Pages\Resources" />
@@ -189,6 +194,33 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Overview_Line_Layout_Raw4-removebg.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\TabIcons\camera-edited.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\TabIcons\chart-line-edited.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\TabIcons\diagnostic-wrench-edited.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\TabIcons\houseedit.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\TabIcons\Logbook-edited.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\TabIcons\Recipe-edited.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\TabIcons\Resources-edited.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\TabIcons\settings-edited.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\TabIcons\sliders-edited.svg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\MainContent\Diagnostic.content">
@@ -274,16 +306,91 @@
     <Content Include="Pages\Resources\3D_Model\zse 27maxx 3d.html">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Resources\Documents\AXP08-2310_.pdf">
+    <Content Include="Pages\Resources\Documents\AirKnifeDocuments\Base Assembly.pdf">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Resources\Documents\EVAK-12-STD-MECH-1_.pdf">
+    <Content Include="Pages\Resources\Documents\AirKnifeDocuments\Cyclone Assembly.pdf">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Resources\Documents\WBX1008-10-2404_.pdf">
+    <Content Include="Pages\Resources\Documents\AirKnifeDocuments\EVAK-12-STD-MECH-1_APPROVAL.pdf">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Pages\Resources\Documents\ZSE27MAXX.pdf">
+    <Content Include="Pages\Resources\Documents\AirKnifeDocuments\Nozzle Adapter Assembly.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\AirKnifeDocuments\Strand Comb.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\AirKnifeDocuments\Water Pump Return Assembly.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\ExtruderDocuments\ZSE27MAXX.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\PelletizerDocuments\AX Base Assembly.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\PelletizerDocuments\AXP08-2310_.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\PelletizerDocuments\Cutting Chamber.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\PelletizerDocuments\Discharge Chute.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\PelletizerDocuments\Drive Assembly.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\PelletizerDocuments\Electrical Schematic.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\PelletizerDocuments\LFR Drive Assembly.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\PelletizerDocuments\Lower Feedroll.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\PelletizerDocuments\Pnuematic Assembly.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\PelletizerDocuments\Rotor.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\PelletizerDocuments\Sound Hood.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\PelletizerDocuments\Sound_Hood_Switch.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\PelletizerDocuments\Spreader Bar Assembly.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\PelletizerDocuments\UFR Serpentine Assembly.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\PelletizerDocuments\Upper Feedroll.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\WaterbathDocuments\%28WBX1008-10-2404%29 Electrical Schematic.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\WaterbathDocuments\Linear Motion Assembly.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\WaterbathDocuments\Plumbing Assembly.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\WaterbathDocuments\Roller Arm Assembly.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\WaterbathDocuments\Tank Assembly.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\WaterbathDocuments\WB Base Assembly.pdf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Resources\Documents\WaterbathDocuments\WBX1008-10-2404_.pdf">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Resources\SubNavigationMenu\AirKnifeSubNav.content">

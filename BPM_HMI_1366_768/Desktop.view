@@ -182,65 +182,65 @@
   {
     "name": "%l%L_SystemHome%/l%",
     "content": "Pages/MainContent/SystemHome.content",
-    "icon_a": "%tr%TR_Icon_SystemHome_active%/tr%",
-    "icon_n": "%tr%TR_Icon_SystemHome_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_SystemHome_pressed%/tr%"
+    "icon_a": "Imports/TabIcons/houseedit.svg",
+    "icon_n": "Imports/TabIcons/houseedit.svg",
+    "icon_p": "Imports/TabIcons/houseedit.svg"
   },
   {
     "name": "%l%L_SystemControl%/l%",
     "content": "Pages/MainContent/SystemControl.content",
-    "icon_a": "%tr%TR_Icon_SystemControl_active%/tr%",
-    "icon_n": "%tr%TR_Icon_SystemControl_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_SystemControl_pressed%/tr%"
+    "icon_a": "Imports/TabIcons/sliders-edited.svg",
+    "icon_n": "Imports/TabIcons/sliders-edited.svg",
+    "icon_p": "Imports/TabIcons/sliders-edited.svg"
   },
   {
     "name": "%l%L_Recipe%/l%",
     "content": "Pages/MainContent/Recipe.content",
-    "icon_a": "%tr%TR_Icon_Recipe_active%/tr%",
-    "icon_n": "%tr%TR_Icon_Recipe_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_Recipe_pressed%/tr%"
+    "icon_a": "Imports/TabIcons/Recipe-edited.svg",
+    "icon_n": "Imports/TabIcons/Recipe-edited.svg",
+    "icon_p": "Imports/TabIcons/Recipe-edited.svg"
   },
   {
     "name": "%l%L_Trend%/l%",
     "content": "Pages/MainContent/Trend.content",
-    "icon_a": "%tr%TR_Icon_Trend_active%/tr%",
-    "icon_n": "%tr%TR_Icon_Trend_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_Trend_pressed%/tr%"
+    "icon_a": "Imports/TabIcons/chart-line-edited.svg",
+    "icon_n": "Imports/TabIcons/chart-line-edited.svg",
+    "icon_p": "Imports/TabIcons/chart-line-edited.svg"
   },
   {
     "name": "%l%L_Setting%/l%",
     "content": "Pages/MainContent/Setting.content",
-    "icon_a": "%tr%TR_Icon_Setting_active%/tr%",
-    "icon_n": "%tr%TR_Icon_Setting_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_Setting_pressed%/tr%"
+    "icon_a": "Imports/TabIcons/settings-edited.svg",
+    "icon_n": "Imports/TabIcons/settings-edited.svg",
+    "icon_p": "Imports/TabIcons/settings-edited.svg"
   },
   {
     "name": "%l%L_EventLog%/l%",
     "content": "Pages/MainContent/EventLog.content",
-    "icon_a": "%tr%TR_Icon_EventLog_active%/tr%",
-    "icon_n": "%tr%TR_Icon_EventLog_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_EventLog_pressed%/tr%"
+    "icon_a": "Imports/TabIcons/Logbook-edited.svg",
+    "icon_n": "Imports/TabIcons/Logbook-edited.svg",
+    "icon_p": "Imports/TabIcons/Logbook-edited.svg"
   },
   {
     "name": "%l%L_Diagnostic%/l%",
     "content": "Pages/MainContent/Diagnostic.content",
-    "icon_a": "%tr%TR_Icon_Diagnostic_active%/tr%",
-    "icon_n": "%tr%TR_Icon_Diagnostic_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_Diagnostic_pressed%/tr%"
+    "icon_a": "Imports/TabIcons/diagnostic-wrench-edited.svg",
+    "icon_n": "Imports/TabIcons/diagnostic-wrench-edited.svg",
+    "icon_p": "Imports/TabIcons/diagnostic-wrench-edited.svg"
   },
   {
     "name": "Vision",
     "content": "Pages/MainContent/Vision.content",
-    "icon_a": "%tr%TR_Icon_Resources_active%/tr%",
-    "icon_n": "%tr%TR_Icon_Resources_active%/tr%",
-    "icon_p": "%tr%TR_Icon_Resources_active%/tr%"
+    "icon_a": "Imports/TabIcons/camera-edited.svg",
+    "icon_n": "Imports/TabIcons/camera-edited.svg",
+    "icon_p": "Imports/TabIcons/camera-edited.svg"
   },
   {
     "name": "%l%L_Resources%/l%",
     "content": "Pages/MainContent/Resources.content",
-    "icon_a": "%tr%TR_Icon_Resources_active%/tr%",
-    "icon_n": "%tr%TR_Icon_Resources_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_Resources_pressed%/tr%"
+    "icon_a": "Imports/TabIcons/Resources-edited.svg",
+    "icon_n": "Imports/TabIcons/Resources-edited.svg",
+    "icon_p": "Imports/TabIcons/Resources-edited.svg"
   }
 ]
 </script></div><div id="Region_Center" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-left="%ctrl%Navigation_Left::Width%/ctrl%" data-tchmi-top="%f%%ctrl%Header_Top::Height%/ctrl%+ 64%/f%" data-tchmi-scrolling="Auto" data-tchmi-bottom="0" data-tchmi-right="0">

@@ -431,6 +431,12 @@
         "type": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.AffectedControlList",
         "persist": true,
         "readonly": true
+      },
+      "DocumentEnum": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/INT",
+        "persist": false,
+        "readonly": false
       }
     },
     "themedResources": {

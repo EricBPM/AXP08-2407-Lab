@@ -1,5 +1,5 @@
 <div id="Extruder_Documents" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-right="0" data-tchmi-bottom="0">
 
-<div id="TcHmiPdfViewer_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiPdfViewer" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-file="Pages/Resources/Documents/ZSE27MAXX.pdf">
+<div id="TcHmiPdfViewer_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiPdfViewer" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-file="Pages/Resources/Documents/ExtruderDocuments/ZSE27MAXX.pdf" data-tchmi-page-mode="thumbs">
 </div>
 </div>
