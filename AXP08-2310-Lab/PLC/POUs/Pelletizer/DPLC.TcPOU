@@ -5,13 +5,16 @@
 VAR
 	DPLC : F_DPLC;
 
+	Calibrated_Pellet_Length : REAL;
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[GVL_Pelletizer.MyPelletizer.Feedroll_Motor_RPM := GVL_Pelletizer.MyPelletizer.Feedroll_VFD.VFD_Actual_Speed;
 
+Calibrated_Pellet_Length := GVL_Pelletizer.MyPelletizer.Pellet_Length_Inch_Input * GVL_Pelletizer.MyPelletizer.Pellet_Length_Calibration_Value;
+
 DPLC(
-	Pellet_Length_Inch_Input		:= GVL_Pelletizer.MyPelletizer.Pellet_Length_Inch_Input,
+	Pellet_Length_Inch_Input		:= Calibrated_Pellet_Length,
 	Feedroll_Diameter				:= GVL_Pelletizer.MyPelletizer.Feedroll_Diameter_Inch,
 	Feedroll_Drive_Gear				:= GVL_Pelletizer.MyPelletizer.Feedroll_Drive_Pulley,
 	Feedroll_Driven_Gear			:= GVL_Pelletizer.MyPelletizer.Feedroll_Driven_Pulley,
@@ -28,6 +31,7 @@ GVL_Pelletizer.MyPelletizer.Rotor_VFD.VFD_Set_Speed := REAL_TO_INT(GVL_Pelletize
     </Implementation>
     <LineIds Name="DPLC">
       <LineId Id="317" Count="0" />
+      <LineId Id="329" Count="1" />
       <LineId Id="320" Count="0" />
       <LineId Id="239" Count="0" />
       <LineId Id="303" Count="3" />

@@ -37,7 +37,13 @@ GVL_Airknife.AirKnife_Vacuum_Level := INT_TO_REAL(GVL_AirKnife.AirKnife_Analog_I
 //100% = -401.76 Inches of Water
 //0% = 0 inches of water
 //The analog input is read in as a percentage, not as 4-20ma
-]]></ST>
+
+GVL_Waterbath.Waterbath_Actual_Temp := (((INT_TO_REAL(GVL_Waterbath.Process_Water_OUT) / 10) * 1.8) + 32.0);	//Convert thermocouple to Degrees F. 
+GVL_Waterbath.Waterbath_Return_Temp := ((INT_TO_REAL(GVL_Waterbath.Process_Water_IN) / 30518.0) * 158);	//14F Degrees = 0 ADC; //158F Degrees = 30518
+GVL_Waterbath.Waterbath_Pellet_Temperature := (((INT_TO_REAL(GVL_Waterbath.Pellet_Temp_Probe) / 10) * 1.8) + 32.0); //Convert thermocouple to Degrees F.
+
+//0 - 198.129 GPM
+GVL_Waterbath.Waterbath_Flow_Rate := ((INT_TO_REAL(GVL_WAterbath.Process_Water_FLOW) / 30518.0) * 198.129);]]></ST>
     </Implementation>
     <LineIds Name="Scaling_And_Conversions">
       <LineId Id="5" Count="0" />
@@ -55,7 +61,12 @@ GVL_Airknife.AirKnife_Vacuum_Level := INT_TO_REAL(GVL_AirKnife.AirKnife_Analog_I
       <LineId Id="87" Count="0" />
       <LineId Id="91" Count="0" />
       <LineId Id="90" Count="0" />
+      <LineId Id="110" Count="0" />
       <LineId Id="89" Count="0" />
+      <LineId Id="111" Count="0" />
+      <LineId Id="131" Count="1" />
+      <LineId Id="130" Count="0" />
+      <LineId Id="129" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>

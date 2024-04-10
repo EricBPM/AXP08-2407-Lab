@@ -145,6 +145,7 @@
     </PlaceholderReference>
     <PlaceholderReference Include="Tc3_Vision">
       <DefaultResolution>Tc3_Vision, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc3_Vision</Namespace>
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>

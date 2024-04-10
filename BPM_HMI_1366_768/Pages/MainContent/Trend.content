@@ -28,14 +28,7 @@
     "width": 1.0,
     "widthUnit": "factor",
     "widthMode": "Value",
-    "maxWidthUnit": "px",
-    "minWidthUnit": "px",
-    "overflow": false
-  },
-  {
-    "width": 1.0,
-    "widthUnit": "factor",
-    "widthMode": "Value",
+    "maxWidth": 180.0,
     "maxWidthUnit": "px",
     "minWidthUnit": "px",
     "overflow": false
@@ -235,52 +228,6 @@
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/Path",
           "value": "Imports/MachineIcons/WBX1008-10-2404-removebg-preview.png"
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]
-</script>
-</div>
-<div id="Extruder_Trend_Content_Btn_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-grid-column-index="4" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Extruder" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%Extruder_Trend_Content_Btn_1::RenderedWidth%/ctrl%" data-tchmi-toggle-group="Trend_ToggleGroup">
-<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
-{
-  "topLeft": 5.0,
-  "topRight": 5.0,
-  "bottomLeft": 5.0,
-  "bottomRight": 5.0,
-  "topLeftUnit": "px",
-  "topRightUnit": "px",
-  "bottomLeftUnit": "px",
-  "bottomRightUnit": "px"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "Extruder_Trend_Content_Btn_1.onPressed",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TrendRegion::TargetContent%/ctrl%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/TrendSubPages/ExtruderTrend.content"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%Trend_CurrentContentIcon::Src%/ctrl%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Path",
-          "value": "Imports/MachineIcons/extru-removebg-preview.png"
         },
         "asyncWait": true
       }

@@ -13,42 +13,86 @@ VAR PERSISTENT
 	WaterbathPID_Td : LREAL;
 	
 	WaterbathPID_ControlOutput : LREAL;
+	WaterbathPID_ControlOutput_Temp : LREAL;
+
 	WaterbathPID_ErrorStatus : UINT;
+	
+	
+	
+	
+	//Erics Proportional Control
+	
+	Error : REAL;
+	Gain : REAL;
+	Deadband : REAL;
 	
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[IF GVL_Waterbath.Waterbath_TempControl_Auto THEN
-	Cooling_PID(
-	fSetpointValue:= GVL_Waterbath.Waterbath_SetPoint_Temp, 
-	fActualValue:= GVL_Waterbath.Waterbath_Actual_Temp, 
-	bReset:= Waterbath_ResetPID, 
-	fCtrlCycleTime:= WaterbathPID_CycleTime, 
-	fKp:= WaterbathPID_Kp, 
-	fTn:= WaterbathPID_Tn, 
-	fTv:= WaterbathPID_Tv, 
-	fTd:= WaterbathPID_Td, 
-	fCtrlOutput=> WaterbathPID_ControlOutput, 
-	nErrorStatus=> WaterbathPID_ErrorStatus);
+//	Cooling_PID(
+//	fSetpointValue:= GVL_Waterbath.Waterbath_SetPoint_Temp, 
+//	fActualValue:= GVL_Waterbath.Waterbath_Actual_Temp, 
+//	bReset:= Waterbath_ResetPID, 
+//	fCtrlCycleTime:= WaterbathPID_CycleTime, 
+//	fKp:= WaterbathPID_Kp, 
+//	fTn:= WaterbathPID_Tn, 
+//	fTv:= WaterbathPID_Tv, 
+//	fTd:= WaterbathPID_Td, 
+//	fCtrlOutput=> WaterbathPID_ControlOutput, 
+//	nErrorStatus=> WaterbathPID_ErrorStatus);
+
+
+//Erics Proportional Algorithm
+//Calculate error in temp difference
+	Error := (GVL_Waterbath.Waterbath_Actual_Temp - GVL_Waterbath.Waterbath_SetPoint_Temp);	
+//See if error is within deadband of 2 degrees
+	IF ABS(Error) < Deadband THEN
+		Error := 0;
+	END_IF
+//Error times the gain to set the output
+	WaterbathPID_ControlOutput_Temp := Error * Gain;
+//Limits on output. 	
+	IF WaterbathPID_ControlOutput_Temp >= 100 THEN
+		WaterbathPID_ControlOutput_Temp := 100;
+	ELSIF WaterbathPID_ControlOutput_Temp < 0 THEN
+		WaterbathPID_ControlOutput_Temp := 0;
+	END_IF
 	
-	GVL_Waterbath.Waterbath_Valve_Position_Percentage := WaterbathPID_ControlOutput;
+	GVL_Waterbath.Waterbath_Valve_Position_Percentage := WaterbathPID_ControlOutput_Temp;
+	WaterbathPID_ControlOutput := (GVL_Waterbath.Waterbath_Valve_Position_Percentage / 100) * 30518.0;
 ELSE
-	WaterbathPID_ControlOutput := GVL_Waterbath.Waterbath_Valve_Position_Percentage;
+	WaterbathPID_ControlOutput := (GVL_Waterbath.Waterbath_Valve_Position_Percentage / 100) * 30518.0;
 END_IF
 
-
+GVL_Waterbath.Prop_Valve := LREAL_TO_INT(WaterbathPID_ControlOutput);
 
 
 
 GVL_Waterbath.Waterbath_Delta_Temp := GVL_Waterbath.Waterbath_Return_Temp - GVL_Waterbath.Waterbath_Actual_Temp;
-GVL_Waterbath.Waterbath_CalculatedBTULoss := GVL_Waterbath.Waterbath_Flow_Rate * (GVL_Waterbath.Waterbath_Delta_Temp) * 500.4;
+GVL_Waterbath.Waterbath_CalculatedBTULoss := (GVL_Waterbath.Waterbath_Flow_Rate * (GVL_Waterbath.Waterbath_Delta_Temp) * 500.4);
 // BTU Loss = Flow Rate In GPM (of water) x (Temperature Leaving Process - Temperature Entering Process) x 500.4]]></ST>
     </Implementation>
     <LineIds Name="Waterbath_Temp_Control">
       <LineId Id="5" Count="0" />
       <LineId Id="11" Count="9" />
       <LineId Id="8" Count="0" />
-      <LineId Id="51" Count="1" />
+      <LineId Id="97" Count="1" />
+      <LineId Id="69" Count="0" />
+      <LineId Id="99" Count="0" />
+      <LineId Id="70" Count="0" />
+      <LineId Id="96" Count="0" />
+      <LineId Id="92" Count="0" />
+      <LineId Id="94" Count="1" />
+      <LineId Id="93" Count="0" />
+      <LineId Id="90" Count="0" />
+      <LineId Id="89" Count="0" />
+      <LineId Id="68" Count="0" />
+      <LineId Id="80" Count="1" />
+      <LineId Id="87" Count="0" />
+      <LineId Id="85" Count="1" />
+      <LineId Id="52" Count="0" />
+      <LineId Id="102" Count="0" />
       <LineId Id="7" Count="0" />
       <LineId Id="21" Count="1" />
       <LineId Id="28" Count="6" />

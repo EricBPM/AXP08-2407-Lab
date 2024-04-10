@@ -3523,6 +3523,16 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.GVL_Waterbath.Waterbath_Pellet_Temperature": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Waterbath_Pellet_Temperature",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.GVL_Waterbath.Waterbath_Return_Temp": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -3888,6 +3898,43 @@
             "DOMAIN": "ADS",
             "DYNAMIC": true,
             "MAPPING": "PLC1::Scaling_And_Conversions::Rotor_DC_Bus_Voltage_Scaled",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Waterbath_Temp_Control.Deadband": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Waterbath_Temp_Control::Deadband",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Waterbath_Temp_Control.Error": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Waterbath_Temp_Control::Error",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/REAL"
+                    },
+                    {
+                        "comment": "Erics Proportional Control"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Waterbath_Temp_Control.Gain": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Waterbath_Temp_Control::Gain",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/REAL"
             },
@@ -6324,6 +6371,7 @@
                 "PLC1.GVL_Waterbath.Waterbath_Delta_Temp": 3,
                 "PLC1.GVL_Waterbath.Waterbath_Flow_Rate": 3,
                 "PLC1.GVL_Waterbath.Waterbath_Local_Control": 3,
+                "PLC1.GVL_Waterbath.Waterbath_Pellet_Temperature": 3,
                 "PLC1.GVL_Waterbath.Waterbath_Return_Temp": 3,
                 "PLC1.GVL_Waterbath.Waterbath_SetPoint_Temp": 3,
                 "PLC1.GVL_Waterbath.Waterbath_Start": 3,
@@ -6361,6 +6409,9 @@
                 "PLC1.Scaling_And_Conversions.Rotor_Actual_Torque_Scaled": 3,
                 "PLC1.Scaling_And_Conversions.Rotor_DC_Bus_Voltage_Scaled": 3,
                 "PLC1.Torque_Scaling.Rotor_Actual_Torque_Scaled": 3,
+                "PLC1.Waterbath_Temp_Control.Deadband": 3,
+                "PLC1.Waterbath_Temp_Control.Error": 3,
+                "PLC1.Waterbath_Temp_Control.Gain": 3,
                 "PLC1.Waterbath_Temp_Control.WaterbathPID_ControlOutput": 3,
                 "PLC1.Waterbath_Temp_Control.WaterbathPID_CycleTime": 3,
                 "PLC1.Waterbath_Temp_Control.WaterbathPID_ErrorStatus": 3,

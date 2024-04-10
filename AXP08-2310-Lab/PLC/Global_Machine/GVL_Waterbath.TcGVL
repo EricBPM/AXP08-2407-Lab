@@ -2,7 +2,7 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
   <GVL Name="GVL_Waterbath" Id="{4e0389f6-d444-475e-b034-359833017b6d}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
-VAR_GLOBAL
+VAR_GLOBAL PERSISTENT
 	//OUTPUTS
 	Prop_Valve AT %Q* : INT; 
 	Pump_Start AT %Q* : BOOL;
@@ -12,6 +12,7 @@ VAR_GLOBAL
 	Process_Water_IN AT %I* : INT;
 	Process_Water_OUT AT %I* : INT;
 	Process_Water_FLOW AT %I* : INT;
+	Pellet_Temp_Probe AT %I* : INT;
 	Process_Water_Setpoint : INT;
 	Waterbath_Connection_Status AT %I* : UINT;
 	Waterbath_System_Control AT %I* : BOOL;
@@ -29,7 +30,7 @@ VAR_GLOBAL
 	Waterbath_Actual_Temp : LREAL;
 	Waterbath_Return_Temp : REAL;
 	Waterbath_Flow_Rate : REAL;
-
+	Waterbath_Pellet_Temperature : REAL;
 	
 	Waterbath_TempControl_Auto : BOOL;
 
