@@ -3354,7 +3354,7 @@
 			</SubItem>
 		</DataType>
 		<DataType>
-			<Name GUID="{80ACA4BE-DDD5-4CCF-BE66-BF62FE26EF5E}" PersistentType="true">Pelletizer_Events</Name>
+			<Name GUID="{501DC0BA-716D-44F0-80D8-16B43E05D726}" PersistentType="true">Pelletizer_Events</Name>
 			<DisplayName TxtId=""><![CDATA[Pelletizer Events]]></DisplayName>
 			<EventId>
 				<Name Id="1">Start_Button_Event</Name>
@@ -3369,62 +3369,42 @@
 			<EventId>
 				<Name Id="3">Emergency_Stop_Set_Event</Name>
 				<DisplayName TxtId=""><![CDATA[Emergency Stop has been pressed!]]></DisplayName>
-				<Severity>Verbose</Severity>
+				<Severity>Error</Severity>
 			</EventId>
 			<EventId>
 				<Name Id="4">Emergency_Stop_Reset_Event</Name>
 				<DisplayName TxtId=""><![CDATA[Emergency Stop has been cleared!]]></DisplayName>
-				<Severity>Verbose</Severity>
+				<Severity>Info</Severity>
 			</EventId>
 			<EventId>
 				<Name Id="5">Feedroll_Drive_Fault_Event</Name>
 				<DisplayName TxtId=""><![CDATA[The Feedroll VFD has faulted!]]></DisplayName>
-				<Severity>Verbose</Severity>
+				<Severity>Critical</Severity>
 			</EventId>
 			<EventId>
 				<Name Id="6">Rotor_Drive_Fault_Event</Name>
 				<DisplayName TxtId=""><![CDATA[The Rotor VFD has faulted!]]></DisplayName>
-				<Severity>Verbose</Severity>
+				<Severity>Critical</Severity>
 			</EventId>
 			<EventId>
 				<Name Id="11">Feedroll_Drive_Fault_Reset_Event</Name>
 				<DisplayName TxtId=""><![CDATA[A Fault Reset has been issued to the Feedroll Drive!]]></DisplayName>
-				<Severity>Verbose</Severity>
+				<Severity>Info</Severity>
 			</EventId>
 			<EventId>
 				<Name Id="12">Rotor_Drive_Fault_Reset_Event</Name>
 				<DisplayName TxtId=""><![CDATA[A Fault Reset has been issued to the Rotor Drive!]]></DisplayName>
-				<Severity>Verbose</Severity>
-			</EventId>
-			<EventId>
-				<Name Id="7">FeedThroat_NotPresent_Event</Name>
-				<DisplayName TxtId=""><![CDATA[The Feedthroat has been removed!]]></DisplayName>
-				<Severity>Verbose</Severity>
-			</EventId>
-			<EventId>
-				<Name Id="8">FeedThroat_Present_Event</Name>
-				<DisplayName TxtId=""><![CDATA[The Feedthroat has been installed!]]></DisplayName>
-				<Severity>Verbose</Severity>
-			</EventId>
-			<EventId>
-				<Name Id="9">Discharge_Chute_NotPresent_Event</Name>
-				<DisplayName TxtId=""><![CDATA[The Dischage Chute has been removed!]]></DisplayName>
-				<Severity>Verbose</Severity>
-			</EventId>
-			<EventId>
-				<Name Id="10">Discharge_Chute_Present_Event</Name>
-				<DisplayName TxtId=""><![CDATA[The Dischage Chute has been installed!]]></DisplayName>
-				<Severity>Verbose</Severity>
+				<Severity>Info</Severity>
 			</EventId>
 			<EventId>
 				<Name Id="13">Machine_Shutdown_Event</Name>
 				<DisplayName TxtId=""><![CDATA[Power has been disconnected from the machine! Powering Down!]]></DisplayName>
-				<Severity>Verbose</Severity>
+				<Severity>Warning</Severity>
 			</EventId>
 			<EventId>
 				<Name Id="14">Machine_PowerOn_Event</Name>
 				<DisplayName TxtId=""><![CDATA[Power has been applied to the machine! Powering On!]]></DisplayName>
-				<Severity>Verbose</Severity>
+				<Severity>Info</Severity>
 			</EventId>
 			<Hides>
 				<Hide GUID="{08138074-28A6-4F5B-B4F0-92C842C05DE0}"/>
@@ -3433,6 +3413,52 @@
 				<Hide GUID="{764D27C9-4C09-4C00-83C9-90DE77CDF86C}"/>
 				<Hide GUID="{383CFB44-01D6-4FE9-8E8E-6C5D31EBBE0F}"/>
 				<Hide GUID="{F67F9E45-F49B-4AD5-B162-1A0233EAADFC}"/>
+				<Hide GUID="{80ACA4BE-DDD5-4CCF-BE66-BF62FE26EF5E}"/>
+			</Hides>
+		</DataType>
+		<DataType>
+			<Name GUID="{DDA0BFA8-727F-4590-BB18-4E53CD4D8876}" PersistentType="true">AirKnife_Events</Name>
+			<DisplayName TxtId=""><![CDATA[Air Knife Events]]></DisplayName>
+			<EventId>
+				<Name Id="1">Change_Filter_Event</Name>
+				<DisplayName TxtId=""><![CDATA[Check the particulate filter on the Air Knife! Low Vacuum Level Sensed!]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="2">Filter_OKAY_Event</Name>
+				<DisplayName TxtId=""><![CDATA[The particulate filter on the Air Knife has adequate vacuum levels.]]></DisplayName>
+				<Severity>Info</Severity>
+			</EventId>
+			<Hides>
+				<Hide GUID="{9EBDA3ED-88D1-482B-A57D-37582D3A6B6D}"/>
+			</Hides>
+		</DataType>
+		<DataType>
+			<Name GUID="{29DA8A40-4C39-4596-9839-01C042FEB590}" PersistentType="true">Waterbath_Events</Name>
+			<DisplayName TxtId=""><![CDATA[Water Bath Events]]></DisplayName>
+			<EventId>
+				<Name Id="1">Local_Mode_Active</Name>
+				<DisplayName TxtId=""><![CDATA[The Waterbath has been set to Local Control Mode!]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="2">Remote_Mode_Active</Name>
+				<DisplayName TxtId=""><![CDATA[The Waterbath has been set to Remote Control Mode!]]></DisplayName>
+				<Severity>Info</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="3">Pump_Start_Event</Name>
+				<DisplayName TxtId=""><![CDATA[The Water Bath Pump has been started!]]></DisplayName>
+				<Severity>Info</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="4">Pump_Stop_Event</Name>
+				<DisplayName TxtId=""><![CDATA[The Water Bath Pump has been stopped!]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<Hides>
+				<Hide GUID="{78E9291B-9BB8-4B65-B4F4-16BB2F1462F5}"/>
+				<Hide GUID="{14CAD53D-1C3E-4098-B3EE-BA655C62FAEC}"/>
 			</Hides>
 		</DataType>
 	</DataTypes>
@@ -3459,8 +3485,8 @@
 			<Licenses>
 				<Target>
 					<ManualSelect>{B1065A48-8131-4608-A378-D67FA8BD826E}</ManualSelect>
-					<ManualSelect>{8161723B-0C2E-405C-B829-EDC5DAAB5104}</ManualSelect>
 					<ManualSelect>{D58728E0-7762-4145-8A93-80D55E0453A6}</ManualSelect>
+					<ManualSelect>{8161723B-0C2E-405C-B829-EDC5DAAB5104}</ManualSelect>
 				</Target>
 			</Licenses>
 			<Tasks>
@@ -3473,14 +3499,14 @@
 				<Task Id="7" Priority="8" CycleTime="100000" AmsPort="354" Affinity="#x00000020" AdtTasks="true">
 					<Name>VnTask ADS (AlviumG5)</Name>
 				</Task>
-				<Task Id="4" Priority="12" CycleTime="500000" AmsPort="351" Affinity="#x00000010" WatchdogStackCapacity="10" AdtTasks="true">
+				<Task Id="4" Priority="12" CycleTime="500000" AmsPort="351" Affinity="#x00000010" DisableFpExceptions="true" WatchdogStackCapacity="10" AdtTasks="true">
 					<Name>VisionTask</Name>
 				</Task>
 			</Tasks>
 		</System>
 		<Plc>
 			<Project GUID="{C2463DFE-8D25-458F-B39B-892E853BBF0C}" Name="PLC" PrjFilePath="PLC\PLC.plcproj" TmcFilePath="PLC\PLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{64F21B50-CA94-F7A9-6A02-064CDDBB3CBE}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{4BD137E0-87E3-82BC-6EDE-B2E9B3CB5ACE}">
 					<Name>PLC Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
@@ -3589,10 +3615,6 @@
 							<Type>UINT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Waterbath.Waterbath_System_Control</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
 							<Name>GVL_Waterbath.Process_Water_IN</Name>
 							<Comment><![CDATA[INPUTS]]></Comment>
 							<Type>INT</Type>
@@ -3606,12 +3628,16 @@
 							<Type>INT</Type>
 						</Var>
 						<Var>
+							<Name>GVL_Waterbath.Pellet_Temp_Probe</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
 							<Name>GVL_Waterbath.Waterbath_Connection_Status</Name>
 							<Type>UINT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Waterbath.Pellet_Temp_Probe</Name>
-							<Type>INT</Type>
+							<Name>GVL_Waterbath.Waterbath_System_Control</Name>
+							<Type>BOOL</Type>
 						</Var>
 					</Vars>
 					<Vars VarGrpType="2" AreaNo="1">
@@ -3647,13 +3673,13 @@
 							<Type>INT</Type>
 						</Var>
 						<Var>
-							<Name>GVL_Waterbath.Pump_Start</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
 							<Name>GVL_Waterbath.Prop_Valve</Name>
 							<Comment><![CDATA[OUTPUTS]]></Comment>
 							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>GVL_Waterbath.Pump_Start</Name>
+							<Type>BOOL</Type>
 						</Var>
 					</Vars>
 					<Vars VarGrpType="1" ContextId="1" AreaNo="16">
@@ -48364,7 +48390,7 @@
 			</App>
 		</Vision>
 		<Io>
-			<Device Id="1" DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="10.0.1.43.2.1" RemoteName="Device 1 (EtherCAT)" InfoImageId="2">
+			<Device Id="1" DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="169.254.135.64.2.1" RemoteName="Device 1 (EtherCAT)" InfoImageId="2">
 				<Name>Device 1 (EtherCAT)</Name>
 				<AddressInfo>
 					<Pnp>

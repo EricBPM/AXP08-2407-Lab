@@ -1,0 +1,52 @@
+{
+    "recipeList": {
+        "Material Recipe": {
+            "recipeTypeName": "Material_Recipe_Template",
+            "values": {
+                "Air Knife Speed": 22.0,
+                "Pellet Length": 0.1,
+                "Water Temperature Set Point": 20.0
+            }
+        }
+    },
+    "recipeTypeList": {
+        "Material_Recipe_Template": {
+            "members": {
+                "Air Knife Speed": {
+                    "comment": "Air Knife speed correlates to vacuum level.",
+                    "defaultValue": 80.0,
+                    "enabled": true,
+                    "group": "",
+                    "order": 2,
+                    "schema": {},
+                    "symbol": "PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input",
+                    "unit": "%"
+                },
+                "Pellet Length": {
+                    "comment": "Pellet Cut Length. This determines the rotor speed based off of the line speed. ",
+                    "defaultValue": 0.125,
+                    "enabled": true,
+                    "group": "",
+                    "order": 0,
+                    "schema": {},
+                    "symbol": "PLC1.GVL_Pelletizer.MyPelletizer.Pellet_Length_Inch_Input",
+                    "unit": "Inch"
+                },
+                "Water Temperature Set Point": {
+                    "comment": "The set point for Automatic Temperature Control.",
+                    "defaultValue": 85.0,
+                    "enabled": true,
+                    "group": "",
+                    "order": 1,
+                    "schema": {},
+                    "symbol": "PLC1.GVL_Waterbath.Waterbath_SetPoint_Temp",
+                    "unit": "F"
+                }
+            },
+            "options": {
+                "enabled": "None"
+            },
+            "recipeTypeNames": []
+        }
+    }
+}

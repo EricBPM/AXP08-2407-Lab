@@ -1,0 +1,198 @@
+{
+  "$schema": "../../TcHmiSrv/schema/ExtensionSettings.Schema.json",
+  "version": "1.12.760.59",
+  "configVersion": "1.0.0.15",
+  "guid": "202AA035-2258-492E-965D-DE1EA9D12D59",
+  "visibility": "AlwaysShow",
+  "policies": [
+    "StrictPropertyValidation"
+  ],
+  "symbols": {
+    "ActivateRecipe": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "path"
+        ]
+      },
+      "description": "Write all symbols of the given recipe.",
+      "sample": {
+        "description": "List the whole path to the recipe",
+        "value": {
+          "path": "testfolder::testRecipe"
+        }
+      }
+    },
+    "ReadFromTarget": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "readValue": {
+        "function": true,
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "values": {
+            "type": "object",
+            "additionalProperties": {}
+          }
+        }
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "path"
+        ]
+      },
+      "description": "Read all symbols of the given recipe",
+      "sample": {
+        "description": "List the whole path to the recipe",
+        "value": {
+          "path": "testfolder::testRecipe"
+        }
+      }
+    },
+    "UpdateRecipe": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "readValue": {
+        "function": true,
+        "type": "object",
+        "properties": {
+          "info": {
+            "description": "List of updates made",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "path"
+        ]
+      },
+      "description": "After changing a recipeType updateRecipe is used to update values of all recipes based on this recipeType",
+      "sample": {
+        "description": "Updates recipe values from recipe testfolder::testRecipe",
+        "value": {
+          "path": "testfolder::testRecipe"
+        }
+      }
+    },
+    "GetRecipes": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "readValue": {
+        "function": true,
+        "type": "array",
+        "items": {
+          "recipes": {
+            "type": "string"
+          }
+        }
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "recipeTypePath": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "recipeTypePath"
+        ]
+      },
+      "description": "Returns all recipes based on a recipe type",
+      "sample": {
+        "description": "Get all recipes based on a specific recipe type path.",
+        "value": {
+          "recipeTypePath": "testfolder::testRecipeType"
+        }
+      }
+    },
+    "GetActiveRecipes": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "readValue": {
+        "function": true,
+        "type": "array",
+        "items": {
+          "recipe": {
+            "type": "string"
+          }
+        }
+      },
+      "writeValue": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "recipe name(s)"
+            }
+          },
+          {
+            "$ref": "tchmi:general#/definitions/VOID"
+          }
+        ]
+      },
+      "description": "Returns active recipes.",
+      "sample": {
+        "description": "Check whether the 'recipe2' recipe is active.",
+        "value": [
+          "recipe2"
+        ]
+      }
+    },
+    "ListRecipes": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "readValue": {
+        "function": true
+      },
+      "description": "Returns all recipes and recipe folders"
+    },
+    "ListRecipeTypes": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "readValue": {
+        "function": true
+      },
+      "description": "Returns all recipe types and recipe type folders"
+    }
+  },
+  "packageVersion": "19.0.120",
+  "productVersion": "1.12.760.59",
+  "signature": "L4z7MsY6QMaVTE863eTLl9TreFrsKhENdCKTRolJN/jHoYNoMYhTafYtbUEXfq1IajcZPZNgsa6D2oodpO9tR8yJhwv4MaiSamuTRKrlSIybc+vX7EN38j/zaXeqEJ77rGpAwtP1JXYyocf/16jpjbrRc8+q5jSz+CRiHu2dfGKP3W7gW12ClhlYrCKCeOWkuHPotDkLHUAEvC/52jUHYDCLQcx6/1b2EfGdbCOx99HN/tozi/5s9O6eipYImxzwf7EjUKumAsn1hxTJ0jcdRApuGWXovYZziA0bNqHK/nSPI633eik8Os9lPnH+qf2kh8CZSHQDabDpJqDVn0682w=="
+}

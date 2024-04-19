@@ -1528,7 +1528,7 @@
 ]
 </script>
 </div>
-<div id="Set_Calibration_Button" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Set Calibration Value" data-tchmi-top="236" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-state-symbol="%s%PLC1.Pellet_Calibration.SET_CALIBRATON_VALUE%/s%" data-tchmi-right="10" data-tchmi-width-mode="Parent">
+<div id="Set_Calibration_Button" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Set Calibration Value" data-tchmi-top="236" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right="10" data-tchmi-width-mode="Parent" data-tchmi-state-symbol="%s%PLC1.Pellet_Calibration.SET_CALIBRATON_VALUE%/s%">
 
 <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
 [

@@ -101,6 +101,9 @@
     <Compile Include="POUs\Vision\Diameter_Algo.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\Vision\Set_Strand_Calib.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\WaterBath\WaterBath_Control.TcPOU">
       <SubType>Code</SubType>
     </Compile>

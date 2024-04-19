@@ -4,25 +4,30 @@
     <Declaration><![CDATA[PROGRAM Check_Filter
 VAR
 	Change_Filter : BOOL;
+	Startup_Timer : TON;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[IF GVL_AirKnife.AirKnife_Start THEN
-	IF GVL_AirKnife.AirKnife_Filter_Change_Setting <= GVL_AirKnife.AirKnife_Vacuum_Level THEN
-		Change_Filter := TRUE;
-	END_IF
+      <ST><![CDATA[Startup_Timer(IN := GVL_airknife.AirKnife_Start,PT:=T#15S);	//Dont flag an alarm while it is starting up. Give it 15 seconds
+
+
+IF (GVL_AirKnife.AirKnife_Filter_Change_Setting <= GVL_AirKnife.AirKnife_Vacuum_Level) AND (GVL_AirKnife.AirKnife_Vacuum_Level < -0.2) AND Startup_Timer.Q THEN
+	Change_Filter := TRUE;
 ELSE
-		Change_Filter := FALSE;
-END_IF]]></ST>
+	Change_Filter := FALSE;
+END_IF
+
+]]></ST>
     </Implementation>
     <LineIds Name="Check_Filter">
-      <LineId Id="10" Count="0" />
+      <LineId Id="32" Count="2" />
       <LineId Id="18" Count="0" />
       <LineId Id="12" Count="0" />
-      <LineId Id="15" Count="0" />
       <LineId Id="24" Count="0" />
       <LineId Id="23" Count="0" />
       <LineId Id="5" Count="0" />
+      <LineId Id="31" Count="0" />
+      <LineId Id="30" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>

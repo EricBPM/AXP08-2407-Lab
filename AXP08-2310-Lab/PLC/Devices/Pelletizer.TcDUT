@@ -34,8 +34,8 @@ STRUCT
 	Pelletizer_Start : BOOL;
 	Pelletizer_Fault : BOOL;
 	Pelletizer_Fault_Reset : BOOL;
+	Pelletizer_STO : BOOL;
 END_STRUCT
-END_TYPE
-]]></Declaration>
+END_TYPE]]></Declaration>
   </DUT>
 </TcPlcObject>

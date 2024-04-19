@@ -2,9 +2,9 @@
 <TcLicenseInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2011/11/TcLicenseInfo">
 	<LicenseInfo>
 		<SystemId>{360B2C88-552F-28EB-2731-AA86809D368D}</SystemId>
-		<IssueTime>2024-04-08T17:57:00</IssueTime>
-		<ExpireTime>2024-04-16T00:00:00</ExpireTime>
-		<LicenseKey>b83b1ff10db131681d510a423cc8694afeedacfeb903d7cf10dd794140823d4900d3a3fcbdf4b6d21f7e7c470aa8bdc67696b5552601b8bb767b800394deac3aa95ae60939966d7122eccf2caca9b6cf3aa4ef73ec3b15c988a0f1a8ba12d0ec39e18e092330bff14900372fc257cc153714cf54a61769c072d286224e6b670db8e5275223dafc9332ac8f520cc6a8b6a1d930db8d4c3351824102fc4516be4a44d723bcbea5cf32a03b04603010bca99c201fef869885a9c3ad6180e909d100ab60a152a1dd6d4d0a2225b6a1adbcbe3701e845f10f403b39a6641962deebd5356513189b15f335eba735d523f516977604339987ce63ec7234b277738a31e8</LicenseKey>
+		<IssueTime>2024-04-18T17:15:00</IssueTime>
+		<ExpireTime>2024-04-26T00:00:00</ExpireTime>
+		<LicenseKey>0a98b866ce9d47ae232456161023c535654f23d2939ee0f38b73218dc11d43698f80cc6345ddfc65082001e7c29baa94ff81cc69ca4ab8381415a05f26bc40dac75cddb0b5c56bb331d3b970454ad55ab08e3d138b82192a36f66863c736a5b7b7ff36c387d45c2d91c08b65161923af335866af5299b4cde1ef3ef250ba9d2bb07553b7b34426ee94e597dd163528b06e73425ce2542aa84266ca99f8867f751c1ad3256639eae8438599ac593bb7e019e13838b0d72b434d6255e501a8125e944be295e3f8ffd771e589b5470d30907e1177b7947d8b1b8e874df9e663238509618933b91da915d17678bc71ae94939a8b29970ad403a75924a90faa15e6b3</LicenseKey>
 		<License>
 			<LicenseId>{4C256767-E6E6-4AF5-BD68-9F7ABAD0C200}</LicenseId>
 			<Name>TC3 ADS</Name>
@@ -21,25 +21,14 @@
 			<OrderNo>TC1200</OrderNo>
 		</License>
 		<License>
-			<LicenseId>{AE83F222-BB78-448F-BDED-7494A70CD776}</LicenseId>
-			<Name>TC3 EtherNet/IP Adapter (Slave)</Name>
-			<OrderNo>TF6280</OrderNo>
+			<LicenseId>{2FF93140-10E2-4662-A464-31B8A4673F26}</LicenseId>
+			<Name>TC3 GigE Vision Connector</Name>
+			<Instances>2</Instances>
 		</License>
 		<License>
 			<LicenseId>{081AC839-28D0-49CA-9792-72680E1F3249}</LicenseId>
 			<Name>TC3 TCP/UDP RT</Name>
 			<OrderNo>TF6311</OrderNo>
-		</License>
-		<License>
-			<LicenseId>{87DBEEFC-A548-4B37-9797-C9521D3A43A2}</LicenseId>
-			<Name>TC3 EtherNet/IP Scanner (Master)</Name>
-			<OrderNo>TF6281</OrderNo>
-			<Instances>1</Instances>
-		</License>
-		<License>
-			<LicenseId>{2FF93140-10E2-4662-A464-31B8A4673F26}</LicenseId>
-			<Name>TC3 GigE Vision Connector</Name>
-			<Instances>2</Instances>
 		</License>
 		<License>
 			<LicenseId>{B1065A48-8131-4608-A378-D67FA8BD826E}</LicenseId>
@@ -72,14 +61,14 @@
 			<OrderNo>TF2000</OrderNo>
 		</License>
 		<License>
-			<LicenseId>{D58728E0-7762-4145-8A93-80D55E0453A6}</LicenseId>
-			<Name>TC3 HMI Extension SDK</Name>
-			<OrderNo>TF2200</OrderNo>
-		</License>
-		<License>
 			<LicenseId>{8161723B-0C2E-405C-B829-EDC5DAAB5104}</LicenseId>
 			<Name>TC3 HMI Clients Pack 10</Name>
 			<OrderNo>TF2030</OrderNo>
+		</License>
+		<License>
+			<LicenseId>{D58728E0-7762-4145-8A93-80D55E0453A6}</LicenseId>
+			<Name>TC3 HMI Extension SDK</Name>
+			<OrderNo>TF2200</OrderNo>
 		</License>
 	</LicenseInfo>
 </TcLicenseInfo>
