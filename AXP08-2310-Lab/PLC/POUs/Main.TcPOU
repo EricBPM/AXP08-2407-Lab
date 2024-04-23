@@ -2,15 +2,12 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
   <POU Name="Main" Id="{2ad019de-d0a4-4668-a92c-2ee0c996bdad}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM Main
-VAR
+VAR PERSISTENT
 
 	Hour_Meter : Hour_Meter_FB;
 
-
 	TempVar : BOOL := TRUE;
-	
-	poop: STRING;
-	connected : Bool;
+	connected : BOOL;
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -498,7 +495,7 @@ END_VAR
                       <l2 n="InputItems" cet="BoxTreeOperand">
                         <o>
                           <o n="Operand" t="Operand">
-                            <v n="Operand">"TempVar"</v>
+                            <v n="Operand">"GVL_Pelletizer.MyPelletizer.Pelletizer_Start"</v>
                             <v n="Type">"BOOL"</v>
                             <v n="Comment">""</v>
                             <v n="SymbolComment">""</v>
