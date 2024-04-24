@@ -6,7 +6,6 @@ VAR PERSISTENT
 
 	Hour_Meter : Hour_Meter_FB;
 
-	TempVar : BOOL := TRUE;
 	connected : BOOL;
 END_VAR
 ]]></Declaration>
