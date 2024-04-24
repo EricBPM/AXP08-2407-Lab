@@ -426,6 +426,8 @@
 </div>
 <div id="Waterbath_Deadband_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="15" data-tchmi-height-unit="px" data-tchmi-left="438" data-tchmi-left-unit="px" data-tchmi-text="Deadband" data-tchmi-top="186" data-tchmi-top-unit="px" data-tchmi-width="145" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-width-mode="Value" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-horizontal-alignment="Left">
 </div>
+<div id="Waterbath_Stopwithsystem_Checkbox" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCheckbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="E-Stop with System" data-tchmi-top="82" data-tchmi-top-unit="px" data-tchmi-width="280" data-tchmi-width-unit="px" data-tchmi-toggle-state="Active" data-tchmi-state-symbol="%s%PLC1.GVL_Waterbath.Waterbath_StopwithSystem%/s%">
+</div>
 </div>
 </div>
 </div>

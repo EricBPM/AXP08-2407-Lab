@@ -2909,6 +2909,16 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.GVL_AirKnife.AirKnife_StopwithSystem": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_AirKnife::AirKnife_StopwithSystem",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Fault": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -3591,6 +3601,16 @@
                         "comment": "System Variables"
                     }
                 ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Waterbath.Waterbath_StopwithSystem": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Waterbath::Waterbath_StopwithSystem",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
             },
             "USEMAPPING": true
         },
@@ -6666,6 +6686,7 @@
                 "PLC1.GVL_AirKnife.AirKnife_Start": 3,
                 "PLC1.GVL_AirKnife.AirKnife_StartwithSystem": 3,
                 "PLC1.GVL_AirKnife.AirKnife_Stop": 3,
+                "PLC1.GVL_AirKnife.AirKnife_StopwithSystem": 3,
                 "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Fault": 3,
                 "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Fault_Reset": 3,
                 "PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed": 3,
@@ -6720,6 +6741,7 @@
                 "PLC1.GVL_Waterbath.Waterbath_SetPoint_Temp": 3,
                 "PLC1.GVL_Waterbath.Waterbath_Start": 3,
                 "PLC1.GVL_Waterbath.Waterbath_StartwithSystem": 3,
+                "PLC1.GVL_Waterbath.Waterbath_StopwithSystem": 3,
                 "PLC1.GVL_Waterbath.Waterbath_System_Control": 3,
                 "PLC1.GVL_Waterbath.Waterbath_TempControl_Auto": 3,
                 "PLC1.GVL_Waterbath.Waterbath_Valve_Position_Percentage": 3,

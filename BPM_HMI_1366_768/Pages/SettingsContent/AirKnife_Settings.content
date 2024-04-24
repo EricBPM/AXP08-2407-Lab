@@ -35,5 +35,7 @@
 ]
 </script>
 </div>
+<div id="AirKnife_Stopwithsystem_Checkbox" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCheckbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="E-Stop with System" data-tchmi-top="82" data-tchmi-top-unit="px" data-tchmi-width="280" data-tchmi-width-unit="px" data-tchmi-toggle-state="Active" data-tchmi-state-symbol="%s%PLC1.GVL_AirKnife.AirKnife_StopwithSystem%/s%">
+</div>
 </div>
 </div>

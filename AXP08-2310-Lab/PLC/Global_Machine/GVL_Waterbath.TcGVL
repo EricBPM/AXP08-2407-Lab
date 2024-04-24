@@ -21,6 +21,7 @@ VAR_GLOBAL PERSISTENT
 	
 	//System Variables
 	Waterbath_StartwithSystem : BOOL;
+	Waterbath_StopwithSystem : BOOL;
 	Waterbath_Start : BOOL;
 	Waterbath_Running : BOOL;
 	Waterbath_Local_Control : BOOL;
