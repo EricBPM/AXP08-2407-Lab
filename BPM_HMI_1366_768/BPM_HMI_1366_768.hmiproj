@@ -183,6 +183,9 @@
     <Content Include="Imports\CAMERA_STAND_FRONT_VIEW-removebg-preview.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Imports\Images\Overview_Line_Layout_Raw4-removebg-0.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\MachineIcons\axp08-2310-lab.png">
       <SubType>Content</SubType>
     </Content>

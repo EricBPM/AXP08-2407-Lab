@@ -38,7 +38,7 @@
 </div>
 <div id="WaterTemp_IN_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Actual Water Temperature" data-tchmi-top="14" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="24" data-tchmi-text-horizontal-alignment="Center">
 </div>
-<div id="TcHmiNumericInput_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="56" data-tchmi-left-unit="px" data-tchmi-max-value="1000" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-value="%s%PLC1.GVL_Waterbath.Waterbath_Actual_Temp%/s%" data-tchmi-width="210" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="36" data-tchmi-is-enabled="false">
+<div id="TcHmiNumericInput_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="56" data-tchmi-left-unit="px" data-tchmi-max-value="1000" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="210" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="36" data-tchmi-is-enabled="false" data-tchmi-value="70">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -49,7 +49,7 @@
 </script>
 
 </div>
-<div id="WaterTempSetpoint_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="56" data-tchmi-left-unit="px" data-tchmi-max-value="250" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="236" data-tchmi-top-unit="px" data-tchmi-value="%s%PLC1.GVL_Waterbath.Waterbath_SetPoint_Temp%/s%" data-tchmi-width="210" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="36">
+<div id="WaterTempSetpoint_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="56" data-tchmi-left-unit="px" data-tchmi-max-value="250" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="236" data-tchmi-top-unit="px" data-tchmi-width="210" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="36" data-tchmi-value="70">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -83,7 +83,7 @@
 </div>
 <div id="WaterTempSetpoint_Textblock" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Water Temperature Set Point" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="24" data-tchmi-text-horizontal-alignment="Center">
 </div>
-<div id="AutoManual_Toggle" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleSwitch" data-tchmi-height="99" data-tchmi-height-unit="px" data-tchmi-left="65" data-tchmi-left-unit="px" data-tchmi-top="356" data-tchmi-top-unit="px" data-tchmi-width="201" data-tchmi-width-unit="px" data-tchmi-state-symbol="%s%PLC1.GVL_Waterbath.Waterbath_TempControl_Auto%/s%" data-tchmi-toggle-state="Active">
+<div id="AutoManual_Toggle" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleSwitch" data-tchmi-height="99" data-tchmi-height-unit="px" data-tchmi-left="65" data-tchmi-left-unit="px" data-tchmi-top="356" data-tchmi-top-unit="px" data-tchmi-width="201" data-tchmi-width-unit="px" data-tchmi-toggle-state="Active">
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
@@ -574,7 +574,7 @@
 ]
 </script>
 </div>
-<div id="Waterbath_Start_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="150" data-tchmi-height-unit="px" data-tchmi-left="35.0" data-tchmi-left-unit="%" data-tchmi-text="Start" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="338" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="35" data-tchmi-right-unit="%" data-tchmi-text-font-size="44" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-toggle-group="StartStop_Waterbath" data-tchmi-text-font-weight="Normal" data-tchmi-state-symbol="%s%PLC1.GVL_Waterbath.Waterbath_Start%/s%">
+<div id="Waterbath_Start_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="150" data-tchmi-height-unit="px" data-tchmi-left="35.0" data-tchmi-left-unit="%" data-tchmi-text="Start" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="338" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="35" data-tchmi-right-unit="%" data-tchmi-text-font-size="44" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-toggle-group="StartStop_Waterbath" data-tchmi-text-font-weight="Normal">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 5.0,
@@ -1055,7 +1055,7 @@
 ]
 </script>
 </div>
-<div id="Waterbath_State_Textbox_Cntrl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left-unit="%" data-tchmi-text="%s%PLC1.Machine_Status.Waterbath_Status_String%/s%" data-tchmi-width="338" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-is-enabled="false" data-tchmi-zindex="2" data-tchmi-word-wrap="false" data-tchmi-multiline="false" data-tchmi-text-font-size="14" data-tchmi-bottom="10" data-tchmi-left="35.0">
+<div id="Waterbath_State_Textbox_Cntrl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left-unit="%" data-tchmi-width="338" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-is-enabled="false" data-tchmi-zindex="2" data-tchmi-word-wrap="false" data-tchmi-multiline="false" data-tchmi-text-font-size="14" data-tchmi-bottom="10" data-tchmi-left="35.0" data-tchmi-text="Slave in OP state">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -1564,7 +1564,7 @@
   }
 ]
 </script>
-<div id="WaterBath_Flow_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="34" data-tchmi-height-unit="px" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-max-value="1000" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="35" data-tchmi-top-unit="%" data-tchmi-value="%s%PLC1.GVL_Waterbath.Waterbath_Flow_Rate%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="18" data-tchmi-is-enabled="false">
+<div id="WaterBath_Flow_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="34" data-tchmi-height-unit="px" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-max-value="1000" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="35" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="18" data-tchmi-is-enabled="false" data-tchmi-value="45.21">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -1579,7 +1579,7 @@
 </div>
 <div id="ReturnWaterTemp_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="Return Water Temperature" data-tchmi-top="7" data-tchmi-top-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-grid-row-index="1" data-tchmi-right="0">
 </div>
-<div id="ReturnWaterTemp_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="34" data-tchmi-height-unit="px" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="35" data-tchmi-top-unit="%" data-tchmi-value="%s%PLC1.GVL_Waterbath.Waterbath_Return_Temp%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-value-font-size="18" data-tchmi-value-horizontal-alignment="Center" data-tchmi-is-enabled="false" data-tchmi-grid-row-index="1">
+<div id="ReturnWaterTemp_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="34" data-tchmi-height-unit="px" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="35" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-value-font-size="18" data-tchmi-value-horizontal-alignment="Center" data-tchmi-is-enabled="false" data-tchmi-grid-row-index="1" data-tchmi-value="73">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -1590,7 +1590,7 @@
 </script>
 
 </div>
-<div id="WaterTemp_Delta_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="34" data-tchmi-height-unit="px" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="35" data-tchmi-top-unit="%" data-tchmi-value="%s%PLC1.GVL_Waterbath.Waterbath_Delta_Temp%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="18" data-tchmi-is-enabled="false" data-tchmi-grid-row-index="2">
+<div id="WaterTemp_Delta_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="34" data-tchmi-height-unit="px" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="35" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="18" data-tchmi-is-enabled="false" data-tchmi-grid-row-index="2" data-tchmi-value="3">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -1603,7 +1603,7 @@
 </div>
 <div id="WaterTemp_Delta_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="Water Temperature Delta " data-tchmi-top="7" data-tchmi-top-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-grid-row-index="2" data-tchmi-right="0">
 </div>
-<div id="BTULoss_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="34" data-tchmi-height-unit="px" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-max-value="100000000" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="35" data-tchmi-top-unit="%" data-tchmi-value="%f%%s%PLC1.GVL_Waterbath.Waterbath_CalculatedBTULoss%/s% / 1000%/f%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="18" data-tchmi-is-enabled="false" data-tchmi-grid-row-index="3" data-tchmi-min-value="0">
+<div id="BTULoss_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="34" data-tchmi-height-unit="px" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-max-value="100000000" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="35" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="18" data-tchmi-is-enabled="false" data-tchmi-grid-row-index="3" data-tchmi-min-value="0" data-tchmi-value="33">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,

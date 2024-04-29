@@ -40,7 +40,7 @@
 }
 </script>
 </div>
-<div id="AirKnife_ActualAmps_Gauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLinearGauge" data-tchmi-base-animation-time="1000" data-tchmi-height="357" data-tchmi-height-unit="px" data-tchmi-label-range="20" data-tchmi-show-labels="true" data-tchmi-show-ticks="true" data-tchmi-show-value-text="false" data-tchmi-start-from-zero="true" data-tchmi-top="94" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-right="10" data-tchmi-orientation="Vertical" data-tchmi-value="%s%PLC1.Scaling_And_Conversions.AirKnife_Actual_Current_Scaled%/s%">
+<div id="AirKnife_ActualAmps_Gauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLinearGauge" data-tchmi-base-animation-time="1000" data-tchmi-height="357" data-tchmi-height-unit="px" data-tchmi-label-range="20" data-tchmi-show-labels="true" data-tchmi-show-ticks="true" data-tchmi-show-value-text="false" data-tchmi-start-from-zero="true" data-tchmi-top="94" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-right="10" data-tchmi-orientation="Vertical" data-tchmi-value="48.1">
 <script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
 [
   {
@@ -392,7 +392,7 @@
 </div>
 <div id="AirKnife_Amps_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-text="Blower Amps" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="false" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="24" data-tchmi-right="10">
 </div>
-<div id="AirKnife_Start_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="150" data-tchmi-height-unit="px" data-tchmi-left="35" data-tchmi-left-unit="%" data-tchmi-text="Start" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="338" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="35" data-tchmi-right-unit="%" data-tchmi-text-font-size="44" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-toggle-group="StartStop_AirKnife" data-tchmi-text-font-weight="Normal" data-tchmi-state-symbol="%s%PLC1.GVL_AirKnife.AirKnife_Start%/s%" data-tchmi-is-enabled="false">
+<div id="AirKnife_Start_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="150" data-tchmi-height-unit="px" data-tchmi-left="35" data-tchmi-left-unit="%" data-tchmi-text="Start" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="338" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="35" data-tchmi-right-unit="%" data-tchmi-text-font-size="44" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-toggle-group="StartStop_AirKnife" data-tchmi-text-font-weight="Normal" data-tchmi-is-enabled="true">
 
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
@@ -540,7 +540,7 @@
 ]
 </script>
 </div>
-<div id="AirKnife_Stop_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="150" data-tchmi-height-unit="px" data-tchmi-left="35.0" data-tchmi-left-unit="%" data-tchmi-text="Stop" data-tchmi-top="218" data-tchmi-top-unit="px" data-tchmi-width="338" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="45.0" data-tchmi-right-unit="%" data-tchmi-text-font-size="44" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-toggle-group="StartStop_AirKnife" data-tchmi-toggle-state="Active" data-tchmi-is-enabled="false">
+<div id="AirKnife_Stop_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="150" data-tchmi-height-unit="px" data-tchmi-left="35.0" data-tchmi-left-unit="%" data-tchmi-text="Stop" data-tchmi-top="218" data-tchmi-top-unit="px" data-tchmi-width="338" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="45.0" data-tchmi-right-unit="%" data-tchmi-text-font-size="44" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-toggle-group="StartStop_AirKnife" data-tchmi-toggle-state="Active" data-tchmi-is-enabled="true">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 5.0,
@@ -1105,7 +1105,7 @@
 }
 </script>
 </div>
-<div id="AirKnife_DC_Bus_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="false" data-tchmi-decimal-digits="2" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-max-value="0" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="false" data-tchmi-value="%s%PLC1.Scaling_And_Conversions.AirKnife_DC_Bus_Voltage_Scaled%/s%" data-tchmi-width="210" data-tchmi-width-unit="px" data-tchmi-bottom="10" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="36" data-tchmi-is-enabled="false">
+<div id="AirKnife_DC_Bus_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="false" data-tchmi-decimal-digits="2" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-max-value="0" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="false" data-tchmi-width="210" data-tchmi-width-unit="px" data-tchmi-bottom="10" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="36" data-tchmi-is-enabled="false" data-tchmi-value="697.82">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -1180,7 +1180,7 @@
 ]
 </script>
 </div>
-<div id="AirKnife_Vacuum_Level_Gauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLinearGauge" data-tchmi-base-animation-time="1000" data-tchmi-height="357" data-tchmi-height-unit="px" data-tchmi-label-range="10" data-tchmi-show-labels="true" data-tchmi-show-ticks="true" data-tchmi-show-value-text="false" data-tchmi-start-from-zero="true" data-tchmi-top="94" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-right="170" data-tchmi-orientation="Vertical" data-tchmi-value="%s%PLC1.GVL_AirKnife.AirKnife_Vacuum_Level%/s%" data-tchmi-max-value="0" data-tchmi-min-value="-50" data-tchmi-step="0">
+<div id="AirKnife_Vacuum_Level_Gauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLinearGauge" data-tchmi-base-animation-time="1000" data-tchmi-height="357" data-tchmi-height-unit="px" data-tchmi-label-range="10" data-tchmi-show-labels="true" data-tchmi-show-ticks="true" data-tchmi-show-value-text="false" data-tchmi-start-from-zero="true" data-tchmi-top="94" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-right="170" data-tchmi-orientation="Vertical" data-tchmi-max-value="0" data-tchmi-min-value="-50" data-tchmi-step="0" data-tchmi-value="-21.48">
 <script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
 [
   {
@@ -1294,7 +1294,7 @@
 </div>
 
 
-<div id="AirKnife_State_Textbox_Cntrl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left-unit="%" data-tchmi-text="%s%PLC1.Machine_Status.AirKnife_Status_String%/s%" data-tchmi-width="338" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-is-enabled="false" data-tchmi-zindex="2" data-tchmi-word-wrap="false" data-tchmi-multiline="false" data-tchmi-text-font-size="14" data-tchmi-bottom="10" data-tchmi-left="35">
+<div id="AirKnife_State_Textbox_Cntrl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left-unit="%" data-tchmi-width="338" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-is-enabled="false" data-tchmi-zindex="2" data-tchmi-word-wrap="false" data-tchmi-multiline="false" data-tchmi-text-font-size="14" data-tchmi-bottom="10" data-tchmi-left="35" data-tchmi-text="Slave in OP state">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
