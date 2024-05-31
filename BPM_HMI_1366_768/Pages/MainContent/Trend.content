@@ -1,5 +1,5 @@
 <div id="Trend" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="624" data-tchmi-width-unit="%" data-tchmi-height-unit="px" data-tchmi-max-width="1146" data-tchmi-min-width="400" data-tchmi-width-mode="Parent" data-tchmi-right="10" data-tchmi-bottom="10">
-<div id="TrendRegion" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="515" data-tchmi-height-unit="px" data-tchmi-left="15" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-right="0" data-tchmi-bottom="100" data-tchmi-width-mode="Parent" data-tchmi-max-width="1126" data-tchmi-min-width="100">
+<div id="TrendRegion" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="515" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-right="5" data-tchmi-bottom="100" data-tchmi-width-mode="Parent" data-tchmi-max-width="1126" data-tchmi-min-width="100">
 
 
 

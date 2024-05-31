@@ -1,0 +1,10 @@
+{
+    "RUNTIMES": {
+        "PLC1": {
+            "ENABLED": true,
+            "NETID": "169.254.135.64.1.1",
+            "PORT": 851,
+            "STREAM_SERVER_PORT": -1
+        }
+    }
+}

@@ -146,13 +146,6 @@
       "preloadBindings": true
     },
     {
-      "url": "Pages/MainContent/Vision.content",
-      "preload": false,
-      "keepAlive": true,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
       "url": "Pages/ResourceSubPages/3dModelContent/AirKnife_3dModel.content",
       "preload": false,
       "keepAlive": false,
@@ -699,14 +692,6 @@
     {
       "name": "Beckhoff.TwinCAT.HMI.PDFViewer",
       "basePath": "/Beckhoff.TwinCAT.HMI.PDFViewer"
-    },
-    {
-      "name": "Beckhoff.TwinCAT.HMI.Vision.Controls",
-      "basePath": "/Beckhoff.TwinCAT.HMI.Vision.Controls"
-    },
-    {
-      "name": "LineTrendExt",
-      "basePath": "/LineTrendExt"
     }
   ],
   "keyboardLayouts": [

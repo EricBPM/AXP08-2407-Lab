@@ -1,3 +1,0 @@
-﻿The Beckhoff.TwinCAT.HMI.Vision.Controls Package uses the following open source software components:
-
-Currently none.

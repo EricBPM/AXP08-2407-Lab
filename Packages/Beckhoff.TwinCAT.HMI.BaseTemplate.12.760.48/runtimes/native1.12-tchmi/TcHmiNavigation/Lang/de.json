@@ -1,7 +1,0 @@
-{
-    "$schema": "../../../TcHmiFramework/Schema/LocalizationDescription.Schema.json",
-    "locale": "de",
-    "localizedText": {
-        "ButtonBack_Text": "Zurück"
-    }
-}
