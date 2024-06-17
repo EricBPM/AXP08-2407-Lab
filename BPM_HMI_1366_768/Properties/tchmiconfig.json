@@ -90,6 +90,13 @@
   "userControls": [],
   "content": [
     {
+      "url": "Pages/MainContent/Calender.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
       "url": "Pages/MainContent/Diagnostic.content",
       "preload": true,
       "keepAlive": true,
@@ -144,13 +151,6 @@
       "keepAlive": true,
       "loadSync": true,
       "preloadBindings": true
-    },
-    {
-      "url": "Pages/MainContent/Vision.content",
-      "preload": false,
-      "keepAlive": true,
-      "loadSync": false,
-      "preloadBindings": false
     },
     {
       "url": "Pages/ResourceSubPages/3dModelContent/AirKnife_3dModel.content",
@@ -699,14 +699,6 @@
     {
       "name": "Beckhoff.TwinCAT.HMI.PDFViewer",
       "basePath": "/Beckhoff.TwinCAT.HMI.PDFViewer"
-    },
-    {
-      "name": "Beckhoff.TwinCAT.HMI.Vision.Controls",
-      "basePath": "/Beckhoff.TwinCAT.HMI.Vision.Controls"
-    },
-    {
-      "name": "LineTrendExt",
-      "basePath": "/LineTrendExt"
     }
   ],
   "keyboardLayouts": [

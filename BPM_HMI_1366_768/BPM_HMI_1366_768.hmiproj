@@ -22,7 +22,7 @@
     <TargetFramework>native1.12-tchmi</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>BPM_HMI_1366_768</Name>
-    <HmiCommunicationRouterPort>10102</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10104</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13001</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.760.37</HmiInitial>
     <HmiRecent>1.12.760.59</HmiRecent>
@@ -147,7 +147,6 @@
     <Folder Include="Server\TcHmiSqliteLogger\" />
     <Folder Include="Server\TcHmiSrv\" />
     <Folder Include="Server\TcHmiUserManagement\" />
-    <Folder Include="Server\TcHmiVision" />
     <Folder Include="Themes" />
     <Folder Include="Themes\Base-Dark\Images\" />
     <Folder Include="Themes\Base-Dark\Images\Events\" />
@@ -225,6 +224,9 @@
     <Content Include="Imports\TabIcons\sliders-edited.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Pages\MainContent\Calender.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Pages\MainContent\Diagnostic.content">
       <SubType>Content</SubType>
       <Cache>True</Cache>
@@ -255,10 +257,6 @@
     <Content Include="Pages\MainContent\Trend.content">
       <SubType>Content</SubType>
       <Cache>True</Cache>
-    </Content>
-    <Content Include="Pages\MainContent\Vision.content">
-      <SubType>Content</SubType>
-      <Cache>False</Cache>
     </Content>
     <Content Include="Pages\ResourceSubPages\3dModelContent\AirKnife_3dModel.content">
       <SubType>Content</SubType>
@@ -612,15 +610,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Storage.json">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Server\TcHmiVision\TcHmiVision.Config.default.json">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Server\TcHmiVision\TcHmiVision.Config.remote.json">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Server\TcHmiVision\TcHmiVision.Storage.json">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Themes\Base-Dark\Base-Dark.theme">

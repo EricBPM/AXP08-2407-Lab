@@ -51,10 +51,6 @@
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
-    <Compile Include="Global_Machine\GVL_Vision.TcGVL">
-      <SubType>Code</SubType>
-      <LinkAlways>true</LinkAlways>
-    </Compile>
     <Compile Include="Global_Machine\GVL_Waterbath.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
@@ -98,19 +94,10 @@
     <Compile Include="POUs\System\WritePersistentData_POU.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\Vision\Diameter_Algo.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\Vision\Set_Strand_Calib.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="POUs\WaterBath\WaterBath_Control.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\WaterBath\Waterbath_Temp_Control.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="VisionTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -120,7 +107,6 @@
     <Folder Include="FBs" />
     <Folder Include="POUs\AirKnife" />
     <Folder Include="POUs\WaterBath" />
-    <Folder Include="POUs\Vision" />
     <Folder Include="POUs\System" />
     <Folder Include="POUs\Pelletizer" />
     <Folder Include="POUs" />
@@ -145,10 +131,6 @@
     <PlaceholderReference Include="Tc3_Module">
       <DefaultResolution>Tc3_Module, * (Beckhoff Automation GmbH)</DefaultResolution>
       <Namespace>Tc3_Module</Namespace>
-    </PlaceholderReference>
-    <PlaceholderReference Include="Tc3_Vision">
-      <DefaultResolution>Tc3_Vision, * (Beckhoff Automation GmbH)</DefaultResolution>
-      <Namespace>Tc3_Vision</Namespace>
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>

@@ -236,6 +236,13 @@
     "icon_p": "Imports/TabIcons/camera-edited.svg"
   },
   {
+    "name": "Calender",
+    "content": "Pages/MainContent/Resources.content",
+    "icon_a": "Imports/TabIcons/Resources-edited.svg",
+    "icon_n": "Imports/TabIcons/Resources-edited.svg",
+    "icon_p": "Imports/TabIcons/Resources-edited.svg"
+  },
+  {
     "name": "%l%L_Resources%/l%",
     "content": "Pages/MainContent/Resources.content",
     "icon_a": "Imports/TabIcons/Resources-edited.svg",

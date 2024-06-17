@@ -209,7 +209,7 @@
         "TcHmiEcDiagnostics": {
             "ENABLED": true,
             "NAME": "TcHmiEcDiagnostics",
-            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.EcDiagnostics.19.0.109\\runtimes\\win-x64\\native\\",
+            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.EcDiagnostics.19.0.120\\runtimes\\win-x64\\native\\",
             "REQUIRED": false,
             "STARTUPTYPE": 1
         },
@@ -256,13 +256,6 @@
             "PATH": "TcHmiUserManagement\\",
             "PROCESSID": -1,
             "REQUIRED": true,
-            "STARTUPTYPE": 1
-        },
-        "TcHmiVision": {
-            "ENABLED": true,
-            "NAME": "TcHmiVision",
-            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Vision.13.7.120\\runtimes\\win\\net472\\",
-            "REQUIRED": false,
             "STARTUPTYPE": 1
         }
     },
@@ -6869,9 +6862,9 @@
     "VIDEOSEGMENTSIZE": 1048576,
     "VIRTUALDIRECTORIES": {
         "/": "..\\..\\BPM_HMI_1366_768\\",
-        "/Beckhoff.TwinCAT.HMI.BaseTemplate": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.BaseTemplate.12.760.48\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.BaseTemplate": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.BaseTemplate.12.760.59\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.Controls": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Controls.12.760.59\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.EcDiagnosticsControl": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.EcDiagnosticsControl.12.760.48\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.EcDiagnosticsControl": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.EcDiagnosticsControl.12.760.59\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.Functions": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Functions.12.760.59\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.PDFViewer": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.PDFViewer.12.760.59\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.Vision.Controls": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Vision.Controls.1.2.2\\runtimes\\native1.12-tchmi",

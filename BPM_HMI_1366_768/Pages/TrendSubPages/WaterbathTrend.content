@@ -1,6 +1,5 @@
 <div id="WaterbathTrend" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="624" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-width-unit="%" data-tchmi-width-mode="Parent" data-tchmi-max-width="1146" data-tchmi-min-width="400">
-
-<div id="Waterbath_LineTrendExtControl" data-tchmi-type="TcHmi.Controls.LineTrendExt.LineTrendExtControl" data-tchmi-end="Latest" data-tchmi-height="485" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-start="PT20M" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-x-axis-name="x-axis 1" data-tchmi-x-sub-tick-steps="4" data-tchmi-y-sub-tick-steps="4" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-width-mode="Parent" data-tchmi-show-legend="true" data-tchmi-show-menu-bar="true">
+<div id="TcHmiTrendLineChart" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTrendLineChart" data-tchmi-end="Latest" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-start="First" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-x-axis-name="x-axis 1" data-tchmi-x-sub-tick-steps="4" data-tchmi-y-sub-tick-steps="4" data-tchmi-right="0" data-tchmi-bottom="110" data-tchmi-show-legend="true" data-tchmi-show-menu-bar="true">
 <script data-tchmi-target-attribute="data-tchmi-y-axis" type="application/json">
 [
   {
@@ -32,33 +31,7 @@
 [
   {
     "yAxisId": 1,
-    "legendName": "Actual Water Temperature",
-    "scaleFactor": 1.0,
-    "showAxis": true,
-    "lineWidth": 1,
-    "pointDot": false,
-    "pointDotRadius": 3,
-    "pointDotStrokeWidth": 1,
-    "lineColor": {
-      "color": "rgba(76, 158, 234, 1)"
-    },
-    "pointDotFillColor": {
-      "color": "rgba(76, 158, 234, 1)"
-    },
-    "pointDotStrokeColor": {
-      "color": "rgba(76, 158, 234, 1)"
-    },
-    "pointDotInStopMode": true,
-    "fillMode": "None",
-    "fillColor": {
-      "color": "rgba(76, 158, 234, 1)"
-    },
-    "fillTransparency": 50.0,
-    "symbol": "PLC1.GVL_Waterbath.Waterbath_Actual_Temp"
-  },
-  {
-    "yAxisId": 1,
-    "legendName": "Pellet Temperature",
+    "legendName": null,
     "scaleFactor": 1.0,
     "showAxis": true,
     "lineWidth": 1,
@@ -72,137 +45,7 @@
     "fillMode": "None",
     "fillColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::LineGraphDescriptionFillColor%/tr%",
     "fillTransparency": 50.0,
-    "symbol": "PLC1.GVL_Waterbath.Waterbath_Pellet_Temperature"
-  },
-  {
-    "yAxisId": 1,
-    "legendName": "Set point Water Temperature",
-    "scaleFactor": 1.0,
-    "showAxis": true,
-    "lineWidth": 1,
-    "pointDot": false,
-    "pointDotRadius": 3,
-    "pointDotStrokeWidth": 1,
-    "lineColor": {
-      "color": "rgba(10, 29, 168, 1)"
-    },
-    "pointDotFillColor": {
-      "color": "rgba(10, 29, 168, 1)"
-    },
-    "pointDotStrokeColor": {
-      "color": "rgba(10, 29, 168, 1)"
-    },
-    "pointDotInStopMode": true,
-    "fillMode": "None",
-    "fillColor": {
-      "color": "rgba(10, 29, 168, 1)"
-    },
-    "fillTransparency": 50.0,
-    "symbol": "PLC1.GVL_Waterbath.Waterbath_SetPoint_Temp"
-  },
-  {
-    "yAxisId": 1,
-    "legendName": "BTU Losses in Water",
-    "scaleFactor": 1.0,
-    "showAxis": true,
-    "lineWidth": 1,
-    "pointDot": false,
-    "pointDotRadius": 3,
-    "pointDotStrokeWidth": 1,
-    "lineColor": {
-      "color": "rgba(248, 41, 41, 1)"
-    },
-    "pointDotFillColor": {
-      "color": "rgba(248, 41, 41, 1)"
-    },
-    "pointDotStrokeColor": {
-      "color": "rgba(248, 41, 41, 1)"
-    },
-    "pointDotInStopMode": true,
-    "fillMode": "None",
-    "fillColor": {
-      "color": "rgba(248, 41, 41, 1)"
-    },
-    "fillTransparency": 50.0,
-    "symbol": "PLC1.GVL_Waterbath.Waterbath_CalculatedBTULoss"
-  },
-  {
-    "yAxisId": 1,
-    "legendName": "Flow Rate (GPM)",
-    "scaleFactor": 1.0,
-    "showAxis": true,
-    "lineWidth": 1,
-    "pointDot": false,
-    "pointDotRadius": 3,
-    "pointDotStrokeWidth": 1,
-    "lineColor": {
-      "color": "rgba(207, 239, 37, 1)"
-    },
-    "pointDotFillColor": {
-      "color": "rgba(207, 239, 37, 1)"
-    },
-    "pointDotStrokeColor": {
-      "color": "rgba(207, 239, 37, 1)"
-    },
-    "pointDotInStopMode": true,
-    "fillMode": "None",
-    "fillColor": {
-      "color": "rgba(207, 239, 37, 1)"
-    },
-    "fillTransparency": 50.0,
     "symbol": "PLC1.GVL_Waterbath.Waterbath_Flow_Rate"
-  },
-  {
-    "yAxisId": 1,
-    "legendName": "Return Water Temperature",
-    "scaleFactor": 1.0,
-    "showAxis": true,
-    "lineWidth": 1,
-    "pointDot": false,
-    "pointDotRadius": 3,
-    "pointDotStrokeWidth": 1,
-    "lineColor": {
-      "color": "rgba(133, 20, 187, 1)"
-    },
-    "pointDotFillColor": {
-      "color": "rgba(133, 20, 187, 1)"
-    },
-    "pointDotStrokeColor": {
-      "color": "rgba(133, 20, 187, 1)"
-    },
-    "pointDotInStopMode": true,
-    "fillMode": "None",
-    "fillColor": {
-      "color": "rgba(133, 20, 187, 1)"
-    },
-    "fillTransparency": 50.0,
-    "symbol": "PLC1.GVL_Waterbath.Waterbath_Return_Temp"
-  },
-  {
-    "yAxisId": 1,
-    "legendName": "Auto-Valve Position (%)",
-    "scaleFactor": 1.0,
-    "showAxis": true,
-    "lineWidth": 1,
-    "pointDot": false,
-    "pointDotRadius": 3,
-    "pointDotStrokeWidth": 1,
-    "lineColor": {
-      "color": "rgba(241, 124, 79, 1)"
-    },
-    "pointDotFillColor": {
-      "color": "rgba(241, 124, 79, 1)"
-    },
-    "pointDotStrokeColor": {
-      "color": "rgba(241, 124, 79, 1)"
-    },
-    "pointDotInStopMode": true,
-    "fillMode": "None",
-    "fillColor": {
-      "color": "rgba(241, 124, 79, 1)"
-    },
-    "fillTransparency": 50.0,
-    "symbol": "PLC1.GVL_Waterbath.Waterbath_Valve_Position_Percentage"
   }
 ]
 </script>

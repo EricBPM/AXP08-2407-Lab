@@ -1,6 +1,5 @@
 <div id="AirKnifeTrend" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="624" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-width-unit="%" data-tchmi-width-mode="Parent" data-tchmi-min-width="400" data-tchmi-max-width="1146">
-
-<div id="AirKnife_LineTrendExtControl" data-tchmi-type="TcHmi.Controls.LineTrendExt.LineTrendExtControl" data-tchmi-end="Latest" data-tchmi-height="485" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-start="PT20M" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-x-axis-name="x-axis 1" data-tchmi-x-sub-tick-steps="4" data-tchmi-y-sub-tick-steps="4" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-width-mode="Parent" data-tchmi-show-legend="true" data-tchmi-show-menu-bar="true">
+<div id="TcHmiTrendLineChart_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTrendLineChart" data-tchmi-end="Latest" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-start="First" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-x-axis-name="x-axis 1" data-tchmi-x-sub-tick-steps="4" data-tchmi-y-sub-tick-steps="4" data-tchmi-right="0" data-tchmi-bottom="110" data-tchmi-show-legend="true" data-tchmi-show-menu-bar="true">
 <script data-tchmi-target-attribute="data-tchmi-y-axis" type="application/json">
 [
   {
@@ -32,33 +31,7 @@
 [
   {
     "yAxisId": 1,
-    "legendName": "Vacuum Level (inH20)",
-    "scaleFactor": 1.0,
-    "showAxis": true,
-    "lineWidth": 1,
-    "pointDot": false,
-    "pointDotRadius": 3,
-    "pointDotStrokeWidth": 1,
-    "lineColor": {
-      "color": "rgba(4, 185, 62, 1)"
-    },
-    "pointDotFillColor": {
-      "color": "rgba(4, 185, 62, 1)"
-    },
-    "pointDotStrokeColor": {
-      "color": "rgba(4, 185, 62, 1)"
-    },
-    "pointDotInStopMode": true,
-    "fillMode": "None",
-    "fillColor": {
-      "color": "rgba(4, 185, 62, 1)"
-    },
-    "fillTransparency": 50.0,
-    "symbol": "PLC1.GVL_AirKnife.AirKnife_Vacuum_Level"
-  },
-  {
-    "yAxisId": 1,
-    "legendName": "Air Knife DC Bus Voltage",
+    "legendName": null,
     "scaleFactor": 1.0,
     "showAxis": true,
     "lineWidth": 1,
@@ -72,33 +45,7 @@
     "fillMode": "None",
     "fillColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::LineGraphDescriptionFillColor%/tr%",
     "fillTransparency": 50.0,
-    "symbol": "PLC1.Scaling_And_Conversions.AirKnife_DC_Bus_Voltage_Scaled"
-  },
-  {
-    "yAxisId": 1,
-    "legendName": "Speed Setting",
-    "scaleFactor": 1.0,
-    "showAxis": true,
-    "lineWidth": 1,
-    "pointDot": false,
-    "pointDotRadius": 3,
-    "pointDotStrokeWidth": 1,
-    "lineColor": {
-      "color": "rgba(46, 248, 224, 1)"
-    },
-    "pointDotFillColor": {
-      "color": "rgba(46, 248, 224, 1)"
-    },
-    "pointDotStrokeColor": {
-      "color": "rgba(46, 248, 224, 1)"
-    },
-    "pointDotInStopMode": true,
-    "fillMode": "None",
-    "fillColor": {
-      "color": "rgba(46, 248, 224, 1)"
-    },
-    "fillTransparency": 50.0,
-    "symbol": "PLC1.GVL_AirKnife.AirKnife_Percent_Speed_Input"
+    "symbol": "PLC1.GVL_Waterbath.Waterbath_Flow_Rate"
   }
 ]
 </script>
