@@ -22,6 +22,9 @@
     <PouCall>
       <Name>Events</Name>
     </PouCall>
+    <PouCall>
+      <Name>WritePersistentData_POU</Name>
+    </PouCall>
     <TaskFBGuid>{e9887c5f-ca22-48da-a514-a04f0078f749}</TaskFBGuid>
     <Fb_init>{65231c38-576e-4f7e-8f78-0f73cbadeac3}</Fb_init>
     <Fb_exit>{648d000b-20d4-40c8-b81d-3b9f4bf789c3}</Fb_exit>

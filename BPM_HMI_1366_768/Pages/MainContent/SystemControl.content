@@ -109,7 +109,7 @@
     "actions": [
       {
         "objectType": "WriteToSymbol",
-        "active": true,
+        "active": false,
         "symbolExpression": "%ctrl%SystemControlRegion::TargetContent%/ctrl%",
         "value": {
           "objectType": "StaticValue",
@@ -120,7 +120,7 @@
       },
       {
         "objectType": "WriteToSymbol",
-        "active": true,
+        "active": false,
         "symbolExpression": "%ctrl%Pelletizer_Control_Content_Btn::ToggleState%/ctrl%",
         "value": {
           "objectType": "StaticValue",

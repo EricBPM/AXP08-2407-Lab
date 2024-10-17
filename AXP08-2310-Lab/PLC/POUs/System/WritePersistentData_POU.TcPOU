@@ -21,9 +21,9 @@ END_VAR
       <ST><![CDATA[
 
 
-fbR_Trig( CLK:=GVL_Pelletizer.Pelletizer_Running);
+fbR_Trig( CLK:=GVL_Pelletizer.MyPelletizer.Pelletizer_Start);
 IF fbR_Trig.Q THEN
-	fbWritePersistentData(NETID:=NETID,PORT:=PORT, START := GVL_Pelletizer.Pelletizer_Running, TMOUT:=TMOUT, MODE:=1);
+	fbWritePersistentData(NETID:=NETID,PORT:=PORT, START := GVL_Pelletizer.MyPelletizer.Pelletizer_Start, TMOUT:=TMOUT, MODE:=1);
 ELSE
     fbWritePersistentData( START:=FALSE);
 END_IF]]></ST>

@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <TcLicenseInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2011/11/TcLicenseInfo">
 	<LicenseInfo>
-		<SystemId>{360B2C88-552F-28EB-2731-AA86809D368D}</SystemId>
-		<IssueTime>2024-04-24T12:40:00</IssueTime>
-		<ExpireTime>2024-05-02T00:00:00</ExpireTime>
-		<LicenseKey>11e19af7b70fefa19d77fa8fe9d1020abf4fd0507f846afcf045a08dec861e124daa76730f318bf99a127949e6d0929a37237331de38eddefdd30b22ef7ed02d4eac2974e93f665702d7019252590cb277b7901f93d7bfc0fa097dc105d7aabb13bb377b8c150c4de9861eb3ea35e44eece2e574bf8c642af7cbce5f3e55845e753e2b9523a9492a15843b280881b5e16141a5b8392493419d3bdfeef232bf76da81286164ae517c5542734d8e4a3dbde142ab65e11187e7a0187d1bad62da5c610274a72bbfb1991bb6d538679571fb0f66c5252f7091bd737c39bbd96df04e97f991706423fdcb2e9d1f667fd010b4b6e9ce5615aaf6e8d60c40006dfc39e9</LicenseKey>
+		<SystemId>{10106AA1-2436-334B-618D-21592C97C0DA}</SystemId>
+		<IssueTime>2024-09-25T15:57:00</IssueTime>
+		<ExpireTime>2024-10-03T00:00:00</ExpireTime>
+		<LicenseKey>3eac272e90c61ad6ccf4c8b88431742fdf20b5f27e51de8509e0d396007006dc0f1c6c7fffcd13315af86dcd28e00c37076690daa1c750e3b6213ccd13071a683466442fe9534a56e1097c6580a334ac85af7cb9aa06e704271df83f4cff986eaca82d804978994550d883c196169888d0ab36dab237aaa7d8f7e4b6f6252d6de6a85bb8925cbfccf5a06450c1f7a92175f1b22004793fe25128ce5b391b65d9555e758537398d076428ae5bf711e192eb97d1ca7b7cc27ad72ef860b2122752c1b479fc1acd9075c2fb22fa053ac2ed1de49ae35d8de0a6a9ac88bb25f37e60cda936ca2d20289d37b3c59e6b3da1ccc644b4c15671c92a884f374655825443</LicenseKey>
 		<License>
 			<LicenseId>{4C256767-E6E6-4AF5-BD68-9F7ABAD0C200}</LicenseId>
 			<Name>TC3 ADS</Name>
@@ -36,16 +36,6 @@
 			<OrderNo>TF7000</OrderNo>
 		</License>
 		<License>
-			<LicenseId>{2C358067-6E81-4F6A-B8D9-AC1F63FEB6FD}</LicenseId>
-			<Name>TC3 Vision Base</Name>
-			<OrderNo>TF7100</OrderNo>
-		</License>
-		<License>
-			<LicenseId>{05A2BB1C-6F39-46A3-BAEE-FC6B5DA5439C}</LicenseId>
-			<Name>TC3 Vision Metrology 2D</Name>
-			<OrderNo>TF7300</OrderNo>
-		</License>
-		<License>
 			<LicenseId>{37E5160D-987B-4640-888D-0F97727B53E2}</LicenseId>
 			<Name>TC3 HMI Clients</Name>
 			<Instances>11</Instances>
@@ -64,11 +54,6 @@
 			<LicenseId>{8161723B-0C2E-405C-B829-EDC5DAAB5104}</LicenseId>
 			<Name>TC3 HMI Clients Pack 10</Name>
 			<OrderNo>TF2030</OrderNo>
-		</License>
-		<License>
-			<LicenseId>{D58728E0-7762-4145-8A93-80D55E0453A6}</LicenseId>
-			<Name>TC3 HMI Extension SDK</Name>
-			<OrderNo>TF2200</OrderNo>
 		</License>
 	</LicenseInfo>
 </TcLicenseInfo>
