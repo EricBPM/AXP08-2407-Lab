@@ -1,28 +1,37 @@
 {
+    "PASSWORD_BLACKLIST": "",
+    "PASSWORD_ENABLE_AGING": false,
+    "PASSWORD_FORCE_COMPLEX": 0,
+    "PASSWORD_MAXIMUM_AGE": "P90D",
+    "PASSWORD_MINIMUM_LENGTH": 1,
     "USERS": {
         "Admin": {
             "ALGORITHM": 1,
             "ENABLED": true,
             "PASSWORD": "bd7d95384c9bbb739df4b720d93500c6a3999fd575ccd0ec1384dce0cf625a2731d6b111d248cb97e8173de43b73e9db3054d495d54509a160382d0dd346c70d",
-            "SALT": "2l4cM/j/7XC6ogOhFJRaBipY4zZo/FI7e+x1ux6fDeknMxpMne7Aypoz61GZ2a7UMTLGNEsZCLZ+jrj3hsNh2A=="
+            "SALT": "2l4cM/j/7XC6ogOhFJRaBipY4zZo/FI7e+x1ux6fDeknMxpMne7Aypoz61GZ2a7UMTLGNEsZCLZ+jrj3hsNh2A==",
+            "TWO_FACTOR_AUTHENTICATION_ENABLED": false
         },
         "__SystemAdministrator": {
             "ALGORITHM": 0,
             "ENABLED": false,
             "PASSWORD": "",
-            "SALT": ""
+            "SALT": "",
+            "TWO_FACTOR_AUTHENTICATION_ENABLED": false
         },
         "__SystemGuest": {
             "ALGORITHM": 0,
             "ENABLED": true,
             "PASSWORD": "",
-            "SALT": ""
+            "SALT": "",
+            "TWO_FACTOR_AUTHENTICATION_ENABLED": false
         },
         "__SystemUser": {
             "ALGORITHM": 0,
             "ENABLED": true,
             "PASSWORD": "",
-            "SALT": ""
+            "SALT": "",
+            "TWO_FACTOR_AUTHENTICATION_ENABLED": false
         }
     }
 }

@@ -72,10 +72,9 @@
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "AirKnife_3dModel_Btn.onStatePressed",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onStatePressed",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -90,8 +89,7 @@
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="AirKnife_Documents_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-text="Documents" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-right="25" data-tchmi-bottom-unit="px" data-tchmi-bottom="5" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-toggle-group="SubNavToggleGroup" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%AirKnife_Documents_Btn::RenderedWidth%/ctrl%">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
@@ -107,10 +105,9 @@
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "AirKnife_Documents_Btn.onStatePressed",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onStatePressed",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -125,8 +122,7 @@
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 </div>
 </div>

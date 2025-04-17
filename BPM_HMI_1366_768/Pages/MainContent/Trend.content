@@ -74,10 +74,9 @@
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "Pelletizer_Trend_Content_Btn.onAttached",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onAttached",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -104,7 +103,7 @@
       {
         "objectType": "WriteToSymbol",
         "active": true,
-        "symbolExpression": "%ctrl%Pelletizer_Trend_Content_Btn::ToggleState%/ctrl%",
+        "symbolExpression": "%ctx%owner::ToggleState%/ctx%",
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/ToggleState",
@@ -115,7 +114,7 @@
     ]
   },
   {
-    "event": "Pelletizer_Trend_Content_Btn.onPressed",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onPressed",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -141,8 +140,7 @@
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="AirKnife_Trend_Content_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Air Knife" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%AirKnife_Trend_Content_Btn::RenderedWidth%/ctrl%" data-tchmi-toggle-group="Trend_ToggleGroup">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
@@ -158,10 +156,9 @@
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "AirKnife_Trend_Content_Btn.onPressed",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onPressed",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -187,8 +184,7 @@
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="WaterBath_Trend_Content_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-grid-column-index="3" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Water Bath" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-width-mode="Parent" data-tchmi-height-mode="Parent" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="%ctrl%WaterBath_Trend_Content_Btn::RenderedWidth%/ctrl%" data-tchmi-toggle-group="Trend_ToggleGroup">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
@@ -204,10 +200,9 @@
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "WaterBath_Trend_Content_Btn.onPressed",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onPressed",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -233,8 +228,7 @@
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 </div>
 </div>

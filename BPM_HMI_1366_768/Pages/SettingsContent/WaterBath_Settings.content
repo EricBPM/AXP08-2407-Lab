@@ -123,10 +123,9 @@
 </script>
 
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "Waterbath_Kp_Numeric.onValueChanged",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onValueChanged",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -135,14 +134,13 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%ctrl%Waterbath_Kp_Numeric::Value%/ctrl%"
+          "symbolExpression": "%ctx%owner::Value%/ctx%"
         },
         "asyncWait": true
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="Waterbath_Kp_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="15" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Proportional Gain" data-tchmi-top="57" data-tchmi-top-unit="px" data-tchmi-width="145" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-width-mode="Value" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-horizontal-alignment="Left" data-tchmi-tooltip="Controller amplification / controller coefficient" data-tchmi-visibility="Collapsed">
 </div>
@@ -166,10 +164,9 @@
 </script>
 
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "Waterbath_Tn_Numeric.onValueChanged",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onValueChanged",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -178,14 +175,13 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%ctrl%Waterbath_Tn_Numeric::Value%/ctrl%"
+          "symbolExpression": "%ctx%owner::Value%/ctx%"
         },
         "asyncWait": true
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="Waterbath_Tv_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="15" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Rate Time (s)" data-tchmi-top="187" data-tchmi-top-unit="px" data-tchmi-width="145" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-width-mode="Value" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-horizontal-alignment="Left" data-tchmi-visibility="Collapsed">
 </div>
@@ -200,10 +196,9 @@
 </script>
 
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "Waterbath_Tv_Numeric.onValueChanged",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onValueChanged",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -212,14 +207,13 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%ctrl%Waterbath_Tv_Numeric::Value%/ctrl%"
+          "symbolExpression": "%ctx%owner::Value%/ctx%"
         },
         "asyncWait": true
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="Waterbath_Td_Numeric" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="2" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-max-value="1000" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="268" data-tchmi-top-unit="px" data-tchmi-value="%s%PLC1.Waterbath_Temp_Control.WaterbathPID_Td%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-width-mode="Parent" data-tchmi-creator-visibility="Visible" data-tchmi-placeholder="32" data-tchmi-system-keyboard-input-mode="numeric" data-tchmi-visibility="Collapsed">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
@@ -232,10 +226,9 @@
 </script>
 
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "Waterbath_Td_Numeric.onValueChanged",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onValueChanged",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -244,14 +237,13 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%ctrl%Waterbath_Td_Numeric::Value%/ctrl%"
+          "symbolExpression": "%ctx%owner::Value%/ctx%"
         },
         "asyncWait": true
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="Waterbath_Td_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="15" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Damping Time (s)" data-tchmi-top="252" data-tchmi-top-unit="px" data-tchmi-width="145" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-width-mode="Value" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-horizontal-alignment="Left" data-tchmi-visibility="Collapsed">
 </div>
@@ -266,10 +258,9 @@
 </script>
 
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "Waterbath_CycleTime_Numeric.onValueChanged",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onValueChanged",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -278,14 +269,13 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%ctrl%Waterbath_CycleTime_Numeric::Value%/ctrl%"
+          "symbolExpression": "%ctx%owner::Value%/ctx%"
         },
         "asyncWait": true
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="Waterbath_CyclTime_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="15" data-tchmi-height-unit="px" data-tchmi-left="189" data-tchmi-left-unit="px" data-tchmi-text="Control Cycle Time (s)" data-tchmi-top="56" data-tchmi-top-unit="px" data-tchmi-width="145" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-width-mode="Value" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-horizontal-alignment="Left" data-tchmi-tooltip="Cycle time with which the function block is called and with which the control loop is processed [s]." data-tchmi-visibility="Collapsed">
 </div>
@@ -302,14 +292,12 @@
 </script>
 
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "Waterbath_SimVal_Numeric.onValueChanged",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onValueChanged",
     "actions": []
   }
-]
-</script>
+]</script>
 </div>
 <div id="Waterbath_PIDError_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="15" data-tchmi-height-unit="px" data-tchmi-left="189" data-tchmi-left-unit="px" data-tchmi-text="PID Error" data-tchmi-top="187" data-tchmi-top-unit="px" data-tchmi-width="145" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-width-mode="Value" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-horizontal-alignment="Left" data-tchmi-tooltip="Output of the PID-element." data-tchmi-is-enabled="true" data-tchmi-visibility="Collapsed">
 </div>
@@ -369,10 +357,9 @@
 </script>
 
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "Waterbath_Gain_Numeric.onValueChanged",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onValueChanged",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -381,14 +368,13 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%ctrl%Waterbath_Gain_Numeric::Value%/ctrl%"
+          "symbolExpression": "%ctx%owner::Value%/ctx%"
         },
         "asyncWait": true
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="Waterbath_Gain_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="15" data-tchmi-height-unit="px" data-tchmi-left="438" data-tchmi-left-unit="px" data-tchmi-text="Gain" data-tchmi-top="121" data-tchmi-top-unit="px" data-tchmi-width="145" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-width-mode="Value" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-horizontal-alignment="Left">
 </div>
@@ -403,10 +389,9 @@
 </script>
 
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "Waterbath_Deadband_Numeric.onValueChanged",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onValueChanged",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -415,14 +400,13 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%ctrl%Waterbath_Deadband_Numeric::Value%/ctrl%"
+          "symbolExpression": "%ctx%owner::Value%/ctx%"
         },
         "asyncWait": true
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="Waterbath_Deadband_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="15" data-tchmi-height-unit="px" data-tchmi-left="438" data-tchmi-left-unit="px" data-tchmi-text="Deadband" data-tchmi-top="186" data-tchmi-top-unit="px" data-tchmi-width="145" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-width-mode="Value" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-horizontal-alignment="Left">
 </div>

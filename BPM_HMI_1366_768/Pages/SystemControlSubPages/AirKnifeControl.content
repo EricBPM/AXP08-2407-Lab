@@ -1,4 +1,4 @@
-<div id="AirKnife_Control" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-height="511" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-height-unit="px" data-tchmi-width-mode="Parent" data-tchmi-min-width="320" data-tchmi-max-width="1126">
+<div id="AirKnife_Control" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-height="511" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-height-unit="px" data-tchmi-width-mode="Parent" data-tchmi-min-width="320" data-tchmi-max-width="1126" data-tchmi-is-enabled="%s%ADS.PLC1.Machine_Status.AirKnife_Connected%/s%">
 <div id="AirKnifeHeaderTextblock" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="37" data-tchmi-height-unit="px" data-tchmi-left="35" data-tchmi-left-unit="%" data-tchmi-text="Air Knife" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="24" data-tchmi-text-font-style="Auto" data-tchmi-right-unit="%" data-tchmi-right="35" data-tchmi-width-mode="Parent">
 
 
@@ -87,10 +87,9 @@
 
 
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "OneBtnStart_CheckBox.onToggleStateChanged",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onToggleStateChanged",
     "actions": [
       {
         "objectType": "Condition",
@@ -102,7 +101,7 @@
                 "compare1": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/String",
-                  "symbolExpression": "%ctrl%OneBtnStart_CheckBox::ToggleState%/ctrl%"
+                  "symbolExpression": "%ctx%owner::ToggleState%/ctx%"
                 },
                 "compare2": {
                   "objectType": "StaticValue",
@@ -170,7 +169,7 @@
     ]
   },
   {
-    "event": "OneBtnStart_CheckBox.onAttached",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onAttached",
     "actions": [
       {
         "objectType": "Condition",
@@ -182,7 +181,7 @@
                 "compare1": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:framework#/definitions/ToggleState",
-                  "symbolExpression": "%ctrl%OneBtnStart_CheckBox::ToggleState%/ctrl%"
+                  "symbolExpression": "%ctx%owner::ToggleState%/ctx%"
                 },
                 "compare2": {
                   "objectType": "StaticValue",
@@ -249,8 +248,7 @@
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="AirKnife_Speed_NumericInput" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="57" data-tchmi-height-unit="px" data-tchmi-left="37" data-tchmi-left-unit="px" data-tchmi-max-value="3450" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="632" data-tchmi-top-unit="px" data-tchmi-value="%s%PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Set_Speed%/s%" data-tchmi-width="210" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="36" data-tchmi-ignore-invalid-values="true" data-tchmi-system-keyboard-input-mode="numeric">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
@@ -263,10 +261,9 @@
 </script>
 
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "AirKnife_Speed_NumericInput.onValueChanged",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onValueChanged",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -275,21 +272,19 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%ctrl%AirKnife_Speed_NumericInput::Value%/ctrl%"
+          "symbolExpression": "%ctx%owner::Value%/ctx%"
         },
         "asyncWait": true
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="Speed_Increase_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left="37" data-tchmi-left-unit="px" data-tchmi-text="▲" data-tchmi-top="552" data-tchmi-top-unit="px" data-tchmi-width="210" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="36">
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "Speed_Increase_Btn.onStatePressed",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onStatePressed",
     "actions": [
       {
         "objectType": "Condition",
@@ -334,15 +329,13 @@
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="Speed_Decrease_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left="37" data-tchmi-left-unit="px" data-tchmi-text="▼" data-tchmi-top="699" data-tchmi-top-unit="px" data-tchmi-width="210" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="36" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "Speed_Decrease_Btn.onStatePressed",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onStatePressed",
     "actions": [
       {
         "objectType": "Condition",
@@ -387,8 +380,7 @@
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="AirKnife_Amps_Lbl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-text="Blower Amps" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="false" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="24" data-tchmi-right="10">
 </div>
@@ -425,10 +417,9 @@
 
 
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "AirKnife_Start_Btn.onToggleStateChanged",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onToggleStateChanged",
     "actions": [
       {
         "objectType": "Condition",
@@ -479,7 +470,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%AirKnife_Start_Btn::BackgroundColor%/ctrl%",
+                "symbolExpression": "%ctx%owner::BackgroundColor%/ctx%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/Color",
@@ -520,7 +511,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%AirKnife_Start_Btn::BackgroundColor%/ctrl%",
+                "symbolExpression": "%ctx%owner::BackgroundColor%/ctx%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/Color",
@@ -537,8 +528,7 @@
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="AirKnife_Stop_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="150" data-tchmi-height-unit="px" data-tchmi-left="35.0" data-tchmi-left-unit="%" data-tchmi-text="Stop" data-tchmi-top="218" data-tchmi-top-unit="px" data-tchmi-width="338" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="45.0" data-tchmi-right-unit="%" data-tchmi-text-font-size="44" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-toggle-group="StartStop_AirKnife" data-tchmi-toggle-state="Active" data-tchmi-is-enabled="false">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
@@ -566,10 +556,9 @@
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "AirKnife_Stop_Btn.onToggleStateChanged",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onToggleStateChanged",
     "actions": [
       {
         "objectType": "Condition",
@@ -675,7 +664,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%AirKnife_Stop_Btn::ToggleState%/ctrl%",
+                "symbolExpression": "%ctx%owner::ToggleState%/ctx%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/ToggleState",
@@ -686,7 +675,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%AirKnife_Stop_Btn::BackgroundColor%/ctrl%",
+                "symbolExpression": "%ctx%owner::BackgroundColor%/ctx%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/Color",
@@ -703,7 +692,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%AirKnife_Stop_Btn::ToggleState%/ctrl%",
+                "symbolExpression": "%ctx%owner::ToggleState%/ctx%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/ToggleState",
@@ -714,7 +703,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%AirKnife_Stop_Btn::BackgroundColor%/ctrl%",
+                "symbolExpression": "%ctx%owner::BackgroundColor%/ctx%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/Color",
@@ -732,7 +721,7 @@
     ]
   },
   {
-    "event": "AirKnife_Stop_Btn.onAttached",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onAttached",
     "actions": [
       {
         "objectType": "Condition",
@@ -838,7 +827,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%AirKnife_Stop_Btn::ToggleState%/ctrl%",
+                "symbolExpression": "%ctx%owner::ToggleState%/ctx%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/ToggleState",
@@ -849,7 +838,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%AirKnife_Stop_Btn::BackgroundColor%/ctrl%",
+                "symbolExpression": "%ctx%owner::BackgroundColor%/ctx%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/Color",
@@ -866,7 +855,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%AirKnife_Stop_Btn::ToggleState%/ctrl%",
+                "symbolExpression": "%ctx%owner::ToggleState%/ctx%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/ToggleState",
@@ -877,7 +866,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%AirKnife_Stop_Btn::BackgroundColor%/ctrl%",
+                "symbolExpression": "%ctx%owner::BackgroundColor%/ctx%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/Color",
@@ -928,7 +917,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%AirKnife_Stop_Btn::IsEnabled%/ctrl%",
+                "symbolExpression": "%ctx%owner::IsEnabled%/ctx%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:general#/definitions/Boolean",
@@ -954,7 +943,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%AirKnife_Stop_Btn::IsEnabled%/ctrl%",
+                "symbolExpression": "%ctx%owner::IsEnabled%/ctx%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:general#/definitions/Boolean",
@@ -1003,7 +992,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%AirKnife_Stop_Btn::IsEnabled%/ctrl%",
+                "symbolExpression": "%ctx%owner::IsEnabled%/ctx%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:general#/definitions/Boolean",
@@ -1029,7 +1018,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%AirKnife_Stop_Btn::IsEnabled%/ctrl%",
+                "symbolExpression": "%ctx%owner::IsEnabled%/ctx%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:general#/definitions/Boolean",
@@ -1044,8 +1033,7 @@
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="AirKnife_Fault_Reset_Btn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="35" data-tchmi-left-unit="%" data-tchmi-text="Air Knife Faulted - Press to Reset" data-tchmi-top="371" data-tchmi-top-unit="px" data-tchmi-width="338" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-state-symbol="%s%PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Fault_Reset%/s%" data-tchmi-is-enabled="%s%PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Fault%/s%" data-tchmi-background-image="Images/Icons/RedFaulted.png" data-tchmi-opacity="%s%PLC1.GVL_AirKnife.AirKnife_VFD.VFD_Fault%/s%" data-tchmi-background-image-height="100" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-horizontal-alignment="Right" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="19" data-tchmi-text-font-style="Auto" data-tchmi-text-font-weight="Bold">
 
@@ -1159,10 +1147,9 @@
 </script>
 
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "AirKnife_SpeedGauge.onValueChanged",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onValueChanged",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -1171,14 +1158,13 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%ctrl%AirKnife_SpeedGauge::Value%/ctrl%"
+          "symbolExpression": "%ctx%owner::Value%/ctx%"
         },
         "asyncWait": true
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="AirKnife_Vacuum_Level_Gauge" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLinearGauge" data-tchmi-base-animation-time="1000" data-tchmi-height="357" data-tchmi-height-unit="px" data-tchmi-label-range="10" data-tchmi-show-labels="true" data-tchmi-show-ticks="true" data-tchmi-show-value-text="false" data-tchmi-start-from-zero="true" data-tchmi-top="94" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-right="170" data-tchmi-orientation="Vertical" data-tchmi-value="%s%PLC1.GVL_AirKnife.AirKnife_Vacuum_Level%/s%" data-tchmi-max-value="0" data-tchmi-min-value="-50" data-tchmi-step="0">
 <script data-tchmi-target-attribute="data-tchmi-range" type="application/json">
@@ -1318,10 +1304,9 @@
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "AirKnife_State_Textbox_Cntrl.onTextChanged",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onTextChanged",
     "actions": [
       {
         "objectType": "Condition",
@@ -1562,7 +1547,7 @@
     ]
   },
   {
-    "event": "AirKnife_State_Textbox_Cntrl.onAttached",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onAttached",
     "actions": [
       {
         "objectType": "Condition",
@@ -1705,7 +1690,6 @@
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 </div>

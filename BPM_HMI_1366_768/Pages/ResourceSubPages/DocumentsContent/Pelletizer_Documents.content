@@ -73,10 +73,9 @@
 ]
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "PelletizerDocsCombobox.onSelectionChanged",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onSelectionChanged",
     "actions": [
       {
         "objectType": "SwitchCase",
@@ -84,7 +83,7 @@
         "compare": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/UDINT",
-          "symbolExpression": "%ctrl%PelletizerDocsCombobox::SelectedId%/ctrl%"
+          "symbolExpression": "%ctx%owner::SelectedId%/ctx%"
         },
         "cases": [
           {
@@ -373,7 +372,7 @@
     ]
   },
   {
-    "event": "PelletizerDocsCombobox.onAttached",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onAttached",
     "actions": [
       {
         "objectType": "SwitchCase",
@@ -381,7 +380,7 @@
         "compare": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/UDINT",
-          "symbolExpression": "%ctrl%PelletizerDocsCombobox::SelectedId%/ctrl%"
+          "symbolExpression": "%ctx%owner::SelectedId%/ctx%"
         },
         "cases": [
           {
@@ -669,7 +668,6 @@
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 </div>

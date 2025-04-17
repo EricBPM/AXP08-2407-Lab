@@ -2,9 +2,9 @@
 <TcLicenseInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2011/11/TcLicenseInfo">
 	<LicenseInfo>
 		<SystemId>{10106AA1-2436-334B-618D-21592C97C0DA}</SystemId>
-		<IssueTime>2024-09-25T15:57:00</IssueTime>
-		<ExpireTime>2024-10-03T00:00:00</ExpireTime>
-		<LicenseKey>3eac272e90c61ad6ccf4c8b88431742fdf20b5f27e51de8509e0d396007006dc0f1c6c7fffcd13315af86dcd28e00c37076690daa1c750e3b6213ccd13071a683466442fe9534a56e1097c6580a334ac85af7cb9aa06e704271df83f4cff986eaca82d804978994550d883c196169888d0ab36dab237aaa7d8f7e4b6f6252d6de6a85bb8925cbfccf5a06450c1f7a92175f1b22004793fe25128ce5b391b65d9555e758537398d076428ae5bf711e192eb97d1ca7b7cc27ad72ef860b2122752c1b479fc1acd9075c2fb22fa053ac2ed1de49ae35d8de0a6a9ac88bb25f37e60cda936ca2d20289d37b3c59e6b3da1ccc644b4c15671c92a884f374655825443</LicenseKey>
+		<IssueTime>2025-04-16T20:29:00</IssueTime>
+		<ExpireTime>2025-04-24T00:00:00</ExpireTime>
+		<LicenseKey>0deae7f15dac2968846eef4c3b5fad75929f4ae119ff20d20e827e00bd9128ef7e3ed93493a718f7d4e004b9f4f5843c50e3a41e76da826e1638656161c476d0cb98aa33d706c4222759dfc0fc082c4c2baffd85e10a626598b9dc49ec1bdb2991cd39244a7abc64f603dda5d1619038137fccecbffc1f2702cd33538f2a57a5b7a36db16da3e42a3b3c059b2816a177ec27277ea82ce54868585b96b4b611ef940d297986c2196e0d5ef3709f66401eb83d695d53c767f0b4f9ffda6a07adb8a9c8c1a56a458da24edb5788e78a5d2133b1c24314ab23cf23b2c3f777ad72bf78ecc27cf89f5d552b3260552104c0bf2ba29e2989e02fd1f52b30ea5532520e</LicenseKey>
 		<License>
 			<LicenseId>{4C256767-E6E6-4AF5-BD68-9F7ABAD0C200}</LicenseId>
 			<Name>TC3 ADS</Name>
@@ -44,6 +44,10 @@
 			<LicenseId>{A2091C4C-7D04-4202-B173-9984E7125BC0}</LicenseId>
 			<Name>TC3 HMI Targets</Name>
 			<Instances>1</Instances>
+		</License>
+		<License>
+			<LicenseId>{CCE50C10-2CAA-4243-8182-080F02C5BE3D}</LicenseId>
+			<Name>TC3 Reporting Server</Name>
 		</License>
 		<License>
 			<LicenseId>{796D380F-D49E-4C0C-A05F-500052FAC883}</LicenseId>

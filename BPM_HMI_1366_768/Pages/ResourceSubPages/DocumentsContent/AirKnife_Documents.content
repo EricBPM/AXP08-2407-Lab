@@ -42,10 +42,9 @@
 ]
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "AirKnifeDocumentsCombobox.onSelectionChanged",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onSelectionChanged",
     "actions": [
       {
         "objectType": "SwitchCase",
@@ -53,7 +52,7 @@
         "compare": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/UDINT",
-          "symbolExpression": "%ctrl%AirKnifeDocumentsCombobox::SelectedId%/ctrl%"
+          "symbolExpression": "%ctx%owner::SelectedId%/ctx%"
         },
         "cases": [
           {
@@ -182,7 +181,7 @@
     ]
   },
   {
-    "event": "AirKnifeDocumentsCombobox.onAttached",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onAttached",
     "actions": [
       {
         "objectType": "SwitchCase",
@@ -190,7 +189,7 @@
         "compare": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/UDINT",
-          "symbolExpression": "%ctrl%AirKnifeDocumentsCombobox::SelectedId%/ctrl%"
+          "symbolExpression": "%ctx%owner::SelectedId%/ctx%"
         },
         "cases": [
           {
@@ -318,7 +317,6 @@
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 </div>

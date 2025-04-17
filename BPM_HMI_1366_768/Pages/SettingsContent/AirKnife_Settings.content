@@ -14,10 +14,9 @@
 </script>
 
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "AirKnife_Filter_Setting_Numeric.onValueChanged",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onValueChanged",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -26,14 +25,13 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%ctrl%AirKnife_Filter_Setting_Numeric::Value%/ctrl%"
+          "symbolExpression": "%ctx%owner::Value%/ctx%"
         },
         "asyncWait": true
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 <div id="AirKnife_Stopwithsystem_Checkbox" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCheckbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="E-Stop with System" data-tchmi-top="82" data-tchmi-top-unit="px" data-tchmi-width="280" data-tchmi-width-unit="px" data-tchmi-toggle-state="Active" data-tchmi-state-symbol="%s%PLC1.GVL_AirKnife.AirKnife_StopwithSystem%/s%">
 </div>

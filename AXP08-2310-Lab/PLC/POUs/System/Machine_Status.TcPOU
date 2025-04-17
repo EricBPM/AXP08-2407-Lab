@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4026.11">
   <POU Name="Machine_Status" Id="{0fb206cd-a8a2-4a59-bc2b-cd719b567cca}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM Machine_Status
 VAR
 	AirKnife_Status_String : STRING;
 	AirKnife_Disconnected : BOOL;
+	AirKnife_Connected : bool;
 	
 	Rotor_Status_String : STRING;
 	Rotor_Disconnected : BOOL;
@@ -15,7 +16,9 @@ VAR
 	Pelletizer_Status_String : STRING;
 	
 	Waterbath_Status_String : STRING;
-	Waterbath_Disconnected : bool;
+	Waterbath_Disconnected : BOOL;
+	Waterbath_Connected : BOOL;
+	
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -31,9 +34,10 @@ END_IF
 
 
 AirKnife_Status_String := SlaveStatus_FB(GVL_AirKnife.AirKnife_VFD.VFD_Connection_Status, Slave_Disconnected => AirKnife_Disconnected);
+AirKnife_connected := NOT Airknife_Disconnected;
 
 Waterbath_Status_String := SlaveStatus_FB(GVL_Waterbath.Waterbath_Connection_Status, Slave_Disconnected => Waterbath_Disconnected);
-]]></ST>
+Waterbath_Connected := NOT Waterbath_Disconnected;]]></ST>
     </Implementation>
     <LineIds Name="Machine_Status">
       <LineId Id="27" Count="0" />
@@ -44,7 +48,9 @@ Waterbath_Status_String := SlaveStatus_FB(GVL_Waterbath.Waterbath_Connection_Sta
       <LineId Id="28" Count="1" />
       <LineId Id="34" Count="1" />
       <LineId Id="50" Count="1" />
-      <LineId Id="55" Count="2" />
+      <LineId Id="55" Count="0" />
+      <LineId Id="58" Count="0" />
+      <LineId Id="56" Count="1" />
       <LineId Id="9" Count="0" />
     </LineIds>
   </POU>

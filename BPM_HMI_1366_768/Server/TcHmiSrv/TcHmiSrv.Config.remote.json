@@ -2,6 +2,8 @@
     "CERTIFICATEEXPIRATION": "P14000D",
     "REQUIREAUTH": 2,
     "VIRTUALDIRECTORIES": {
-        "/": "www"
+        "/": "www",
+        "/Beckhoff.TwinCAT.HMI.Vision.Controls": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Vision.Controls.1.2.2\\runtimes\\native1.12-tchmi",
+        "/LineTrendExt": "..\\..\\Packages\\LineTrendExt.1.0.0\\runtimes\\native1.12-tchmi"
     }
 }

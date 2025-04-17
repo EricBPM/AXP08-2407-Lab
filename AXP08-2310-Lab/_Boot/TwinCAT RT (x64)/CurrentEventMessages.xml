@@ -1,599 +1,745 @@
 <?xml version="1.0"?>
 <TcEventSources Version="2">
+	<Translations>
+		<Text TxtId="A Fault Reset has been issued to the Feedroll Drive!"/>
+		<Text TxtId="A Fault Reset has been issued to the Rotor Drive!"/>
+		<Text TxtId="Air Knife Events"/>
+		<Text TxtId="Analog input 2 fault"/>
+		<Text TxtId="Analog output 1 fault"/>
+		<Text TxtId="Analog output 2 fault"/>
+		<Text TxtId="Assertion level monitoring (Low/High)"/>
+		<Text TxtId="Automatic start disabled"/>
+		<Text TxtId="BACnet time-out"/>
+		<Text TxtId="CAN: bus off"/>
+		<Text TxtId="CAN: heartbeat time-out consumer 1"/>
+		<Text TxtId="CAN: heartbeat time-out consumer 2"/>
+		<Text TxtId="CAN: heartbeat time-out consumer 3"/>
+		<Text TxtId="CAN: heartbeat time-out consumer 4"/>
+		<Text TxtId="CAN: RPDO1 time-out"/>
+		<Text TxtId="CAN: RPDO2 time-out"/>
+		<Text TxtId="CAN: RPDO3 time-out"/>
+		<Text TxtId="CAN: warning"/>
+		<Text TxtId="Cascading overload"/>
+		<Text TxtId="Changed device ID not yet active"/>
+		<Text TxtId="Check the particulate filter on the Air Knife! Low Vacuum Level Sensed!"/>
+		<Text TxtId="CiA: Continuous over current (internal)"/>
+		<Text TxtId="CiA: i²xt overload (thermal state)"/>
+		<Text TxtId="Clamp responded too often"/>
+		<Text TxtId="Communication faulty"/>
+		<Text TxtId="CU: load error ID tag"/>
+		<Text TxtId="Data not compl. saved before powerdown"/>
+		<Text TxtId="DC bus overvoltage warning"/>
+		<Text TxtId="DC bus undervoltage warning"/>
+		<Text TxtId="DC-bus voltage to low for power up"/>
+		<Text TxtId="Default settings not yet active"/>
+		<Text TxtId="Emergency Stop has been cleared!"/>
+		<Text TxtId="Emergency Stop has been pressed!"/>
+		<Text TxtId="Encoder open circuit"/>
+		<Text TxtId="EPM data: firmware type incompatible"/>
+		<Text TxtId="EPM data: new firmware type detected"/>
+		<Text TxtId="EPM data: new PU size detected"/>
+		<Text TxtId="EPM data: PU size incompatible"/>
+		<Text TxtId="EPM data: unknown parameter found"/>
+		<Text TxtId="EPM firmware version incomp."/>
+		<Text TxtId="External supply voltage critical"/>
+		<Text TxtId="External temperature above threshold"/>
+		<Text TxtId="External temperature below threshold"/>
+		<Text TxtId="Fatal Error"/>
+		<Text TxtId="Fault - Analog input 1"/>
+		<Text TxtId="Fault - Brake resistor overload"/>
+		<Text TxtId="Fault - DC bus overvoltage"/>
+		<Text TxtId="Fault - DC bus undervoltage"/>
+		<Text TxtId="Fault - Device utilization (ixt) too high"/>
+		<Text TxtId="Fault - Heat sink temperature sensor"/>
+		<Text TxtId="Fault - Pole position identification"/>
+		<Text TxtId="Fault - Power unit overtemperature"/>
+		<Text TxtId="Feedback system: speed limit"/>
+		<Text TxtId="FMF Error"/>
+		<Text TxtId="Function not allowed in selected operating mode"/>
+		<Text TxtId="Heat sink fan warning"/>
+		<Text TxtId="HTL input fault"/>
+		<Text TxtId="i550 Cabinet V06.04.xx"/>
+		<Text TxtId="Increase pellet length setting or lower machine speed."/>
+		<Text TxtId="Internal error"/>
+		<Text TxtId="Invalid para. changeover configuration"/>
+		<Text TxtId="Invalid user data"/>
+		<Text TxtId="Keypad full control"/>
+		<Text TxtId="Keypad removed"/>
+		<Text TxtId="Load loss detected"/>
+		<Text TxtId="Mains phase fault"/>
+		<Text TxtId="Manual mode activated"/>
+		<Text TxtId="Manual mode disabled"/>
+		<Text TxtId="Manual mode time-out"/>
+		<Text TxtId="Max. motor freq. reached"/>
+		<Text TxtId="Maximum current reached"/>
+		<Text TxtId="Maximuml allowed troubles exceeded"/>
+		<Text TxtId="Memory module is full"/>
+		<Text TxtId="Memory module not present"/>
+		<Text TxtId="Memory module: invalid OEM data"/>
+		<Text TxtId="Memory module: wrong type"/>
+		<Text TxtId="Modbus TCP Keep Alive time-out"/>
+		<Text TxtId="Modbus TCP master time-out"/>
+		<Text TxtId="Modbus: incorrect request by master"/>
+		<Text TxtId="Modbus: network time-out"/>
+		<Text TxtId="Motor overcurrent"/>
+		<Text TxtId="Motor overload"/>
+		<Text TxtId="Motor overspeed"/>
+		<Text TxtId="Motor overtemperature"/>
+		<Text TxtId="Motor parameter identification fault"/>
+		<Text TxtId="Motor phase failure phase U"/>
+		<Text TxtId="Motor phase failure phase V"/>
+		<Text TxtId="Motor phase failure phase W"/>
+		<Text TxtId="Motor phase missing"/>
+		<Text TxtId="NetWordIN1 configuration incorrect"/>
+		<Text TxtId="Network - Configuration error"/>
+		<Text TxtId="Network - Disruption of cyclic data exchange"/>
+		<Text TxtId="Network - Initialization error"/>
+		<Text TxtId="Network - Invalid cyclic process data"/>
+		<Text TxtId="Network - Overall communication time-out"/>
+		<Text TxtId="Network - PDO mapping error"/>
+		<Text TxtId="Network - Time-out explicit message"/>
+		<Text TxtId="Network - Watchdog time-out"/>
+		<Text TxtId="Network: user fault 1"/>
+		<Text TxtId="Network: user fault 2"/>
+		<Text TxtId="No error"/>
+		<Text TxtId="OEM hardware incompatible"/>
+		<Text TxtId="Overload 24 V supply"/>
+		<Text TxtId="Parameter loss"/>
+		<Text TxtId="Pelletizer Events"/>
+		<Text TxtId="Power has been applied to the machine! Powering On!"/>
+		<Text TxtId="Power has been disconnected from the machine! Powering Down!"/>
+		<Text TxtId="Power stage communication Tx packet not ready in time"/>
+		<Text TxtId="Power unit fatal error"/>
+		<Text TxtId="Power unit unknown"/>
+		<Text TxtId="POWERLINK: CRC error"/>
+		<Text TxtId="POWERLINK: Loss of SoC"/>
+		<Text TxtId="PU overtemperature warning"/>
+		<Text TxtId="PU: load error ID tag"/>
+		<Text TxtId="Safety option - Internal error"/>
+		<Text TxtId="Short circuit at the motor end"/>
+		<Text TxtId="Short circuit or earth leakage at the motor end"/>
+		<Text TxtId="SL-PSM stall detection"/>
+		<Text TxtId="The Feedroll VFD has faulted!"/>
+		<Text TxtId="The particulate filter on the Air Knife has adequate vacuum levels."/>
+		<Text TxtId="The Rotor Speed is above its maximum limit"/>
+		<Text TxtId="The Rotor VFD has faulted!"/>
+		<Text TxtId="The Start Button has been pressed!"/>
+		<Text TxtId="The Stop Button has been pressed!"/>
+		<Text TxtId="The Water Bath Pump has been started!"/>
+		<Text TxtId="The Water Bath Pump has been stopped!"/>
+		<Text TxtId="The Waterbath has been set to Local Control Mode!"/>
+		<Text TxtId="The Waterbath has been set to Remote Control Mode!"/>
+		<Text TxtId="Time-out (PAM)"/>
+		<Text TxtId="Torque limit reached"/>
+		<Text TxtId="Trigger/functions connected incorrectly"/>
+		<Text TxtId="UPS operation active"/>
+		<Text TxtId="User-defined fault (LECOM)"/>
+		<Text TxtId="User-defined fault 1"/>
+		<Text TxtId="User-defined fault 2"/>
+		<Text TxtId="Warning"/>
+		<Text TxtId="Warning - Brake resistor overload"/>
+		<Text TxtId="Warning - Device utilization (ixt) too high"/>
+		<Text TxtId="Warning - Internal fan"/>
+		<Text TxtId="Warning invert rotation"/>
+		<Text TxtId="Warning: Maximum Rotor Speed Exceeded! Pellet Length may be incorrectly cut!"/>
+		<Text TxtId="Water Bath Events"/>
+		<Text TxtId="Wrong ID tag"/>
+		<Text TxtId="Wrong password"/>
+	</Translations>
 	<Source>
 		<GUID>{28111931-003B-0000-0050-056904000600}</GUID>
-		<Name LcId="1033">i550 Cabinet V06.04.xx</Name>
+		<Name>i550 Cabinet V06.04.xx</Name>
 		<Event>
 			<Id>0</Id>
-			<Message LcId="1033">No error</Message>
+			<Message>No error</Message>
 		</Event>
 		<Event>
 			<Id>5</Id>
-			<Message LcId="1033">Fault - Device utilization (ixt) too high</Message>
+			<Message>Fault - Device utilization (ixt) too high</Message>
 		</Event>
 		<Event>
 			<Id>6</Id>
-			<Message LcId="1033">Warning - Device utilization (ixt) too high</Message>
+			<Message>Warning - Device utilization (ixt) too high</Message>
 		</Event>
 		<Event>
 			<Id>7</Id>
-			<Message LcId="1033">Fault - DC bus overvoltage</Message>
+			<Message>Fault - DC bus overvoltage</Message>
 		</Event>
 		<Event>
 			<Id>8</Id>
-			<Message LcId="1033">Fault - DC bus undervoltage</Message>
+			<Message>Fault - DC bus undervoltage</Message>
 		</Event>
 		<Event>
 			<Id>9</Id>
-			<Message LcId="1033">Fault - Power unit overtemperature</Message>
+			<Message>Fault - Power unit overtemperature</Message>
 		</Event>
 		<Event>
 			<Id>11</Id>
-			<Message LcId="1033">External supply voltage critical</Message>
+			<Message>External supply voltage critical</Message>
 		</Event>
 		<Event>
 			<Id>36</Id>
-			<Message LcId="1033">Motor phase missing</Message>
+			<Message>Motor phase missing</Message>
 		</Event>
 		<Event>
 			<Id>37</Id>
-			<Message LcId="1033">Motor phase failure phase U</Message>
+			<Message>Motor phase failure phase U</Message>
 		</Event>
 		<Event>
 			<Id>38</Id>
-			<Message LcId="1033">Motor phase failure phase V</Message>
+			<Message>Motor phase failure phase V</Message>
 		</Event>
 		<Event>
 			<Id>39</Id>
-			<Message LcId="1033">Motor phase failure phase W</Message>
+			<Message>Motor phase failure phase W</Message>
 		</Event>
 		<Event>
 			<Id>43</Id>
-			<Message LcId="1033">Network - PDO mapping error</Message>
+			<Message>Network - PDO mapping error</Message>
 		</Event>
 		<Event>
 			<Id>45</Id>
-			<Message LcId="1033">Clamp responded too often</Message>
+			<Message>Clamp responded too often</Message>
 		</Event>
 		<Event>
 			<Id>64</Id>
-			<Message LcId="1033">Fault - Brake resistor overload</Message>
+			<Message>Fault - Brake resistor overload</Message>
 		</Event>
 		<Event>
 			<Id>65</Id>
-			<Message LcId="1033">Mains phase fault</Message>
+			<Message>Mains phase fault</Message>
 		</Event>
 		<Event>
 			<Id>72</Id>
-			<Message LcId="1033">Motor parameter identification fault</Message>
+			<Message>Motor parameter identification fault</Message>
 		</Event>
 		<Event>
 			<Id>83</Id>
-			<Message LcId="1033">Assertion level monitoring (Low/High)</Message>
+			<Message>Assertion level monitoring (Low/High)</Message>
 		</Event>
 		<Event>
 			<Id>84</Id>
-			<Message LcId="1033">Fault - Analog input 1</Message>
+			<Message>Fault - Analog input 1</Message>
 		</Event>
 		<Event>
 			<Id>85</Id>
-			<Message LcId="1033">Analog input 2 fault</Message>
+			<Message>Analog input 2 fault</Message>
 		</Event>
 		<Event>
 			<Id>86</Id>
-			<Message LcId="1033">Power unit unknown</Message>
+			<Message>Power unit unknown</Message>
 		</Event>
 		<Event>
 			<Id>93</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>97</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>101</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>103</Id>
-			<Message LcId="1033">Fault - Heat sink temperature sensor</Message>
+			<Message>Fault - Heat sink temperature sensor</Message>
 		</Event>
 		<Event>
 			<Id>104</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>105</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>106</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>107</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>108</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>109</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>110</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>111</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>112</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>113</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>114</Id>
-			<Message LcId="1033">Memory module is full</Message>
+			<Message>Memory module is full</Message>
 		</Event>
 		<Event>
 			<Id>115</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>116</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>117</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>118</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>121</Id>
-			<Message LcId="1033">Trigger/functions connected incorrectly</Message>
+			<Message>Trigger/functions connected incorrectly</Message>
 		</Event>
 		<Event>
 			<Id>122</Id>
-			<Message LcId="1033">CU: load error ID tag</Message>
+			<Message>CU: load error ID tag</Message>
 		</Event>
 		<Event>
 			<Id>123</Id>
-			<Message LcId="1033">PU: load error ID tag</Message>
+			<Message>PU: load error ID tag</Message>
 		</Event>
 		<Event>
 			<Id>124</Id>
-			<Message LcId="1033">Memory module not present</Message>
+			<Message>Memory module not present</Message>
 		</Event>
 		<Event>
 			<Id>125</Id>
-			<Message LcId="1033">Invalid user data</Message>
+			<Message>Invalid user data</Message>
 		</Event>
 		<Event>
 			<Id>126</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>127</Id>
-			<Message LcId="1033">Safety option - Internal error</Message>
+			<Message>Safety option - Internal error</Message>
 		</Event>
 		<Event>
 			<Id>130</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>131</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>132</Id>
-			<Message LcId="1033">DC bus overvoltage warning</Message>
+			<Message>DC bus overvoltage warning</Message>
 		</Event>
 		<Event>
 			<Id>133</Id>
-			<Message LcId="1033">DC bus undervoltage warning</Message>
+			<Message>DC bus undervoltage warning</Message>
 		</Event>
 		<Event>
 			<Id>136</Id>
-			<Message LcId="1033">PU overtemperature warning</Message>
+			<Message>PU overtemperature warning</Message>
 		</Event>
 		<Event>
 			<Id>137</Id>
-			<Message LcId="1033">CiA: Continuous over current (internal)</Message>
+			<Message>CiA: Continuous over current (internal)</Message>
 		</Event>
 		<Event>
 			<Id>138</Id>
-			<Message LcId="1033">Short circuit at the motor end</Message>
+			<Message>Short circuit at the motor end</Message>
 		</Event>
 		<Event>
 			<Id>140</Id>
-			<Message LcId="1033">CiA: i²xt overload (thermal state)</Message>
+			<Message>CiA: i²xt overload (thermal state)</Message>
 		</Event>
 		<Event>
 			<Id>141</Id>
-			<Message LcId="1033">CAN: warning</Message>
+			<Message>CAN: warning</Message>
 		</Event>
 		<Event>
 			<Id>142</Id>
-			<Message LcId="1033">CAN: bus off</Message>
+			<Message>CAN: bus off</Message>
 		</Event>
 		<Event>
 			<Id>144</Id>
-			<Message LcId="1033">CAN: heartbeat time-out consumer 4</Message>
+			<Message>CAN: heartbeat time-out consumer 4</Message>
 		</Event>
 		<Event>
 			<Id>145</Id>
-			<Message LcId="1033">CAN: heartbeat time-out consumer 3</Message>
+			<Message>CAN: heartbeat time-out consumer 3</Message>
 		</Event>
 		<Event>
 			<Id>146</Id>
-			<Message LcId="1033">CAN: heartbeat time-out consumer 2</Message>
+			<Message>CAN: heartbeat time-out consumer 2</Message>
 		</Event>
 		<Event>
 			<Id>147</Id>
-			<Message LcId="1033">CAN: heartbeat time-out consumer 1</Message>
+			<Message>CAN: heartbeat time-out consumer 1</Message>
 		</Event>
 		<Event>
 			<Id>149</Id>
-			<Message LcId="1033">CAN: RPDO3 time-out</Message>
+			<Message>CAN: RPDO3 time-out</Message>
 		</Event>
 		<Event>
 			<Id>150</Id>
-			<Message LcId="1033">CAN: RPDO2 time-out</Message>
+			<Message>CAN: RPDO2 time-out</Message>
 		</Event>
 		<Event>
 			<Id>151</Id>
-			<Message LcId="1033">CAN: RPDO1 time-out</Message>
+			<Message>CAN: RPDO1 time-out</Message>
 		</Event>
 		<Event>
 			<Id>152</Id>
-			<Message LcId="1033">Motor overcurrent</Message>
+			<Message>Motor overcurrent</Message>
 		</Event>
 		<Event>
 			<Id>153</Id>
-			<Message LcId="1033">Motor overtemperature</Message>
+			<Message>Motor overtemperature</Message>
 		</Event>
 		<Event>
 			<Id>154</Id>
-			<Message LcId="1033">User-defined fault 2</Message>
+			<Message>User-defined fault 2</Message>
 		</Event>
 		<Event>
 			<Id>155</Id>
-			<Message LcId="1033">User-defined fault 1</Message>
+			<Message>User-defined fault 1</Message>
 		</Event>
 		<Event>
 			<Id>156</Id>
-			<Message LcId="1033">Motor overspeed</Message>
+			<Message>Motor overspeed</Message>
 		</Event>
 		<Event>
 			<Id>157</Id>
-			<Message LcId="1033">Fault - Pole position identification</Message>
+			<Message>Fault - Pole position identification</Message>
 		</Event>
 		<Event>
 			<Id>158</Id>
-			<Message LcId="1033">Warning invert rotation</Message>
+			<Message>Warning invert rotation</Message>
 		</Event>
 		<Event>
 			<Id>159</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>160</Id>
-			<Message LcId="1033">Warning - Internal fan</Message>
+			<Message>Warning - Internal fan</Message>
 		</Event>
 		<Event>
 			<Id>161</Id>
-			<Message LcId="1033">Heat sink fan warning</Message>
+			<Message>Heat sink fan warning</Message>
 		</Event>
 		<Event>
 			<Id>163</Id>
-			<Message LcId="1033">Short circuit or earth leakage at the motor end</Message>
+			<Message>Short circuit or earth leakage at the motor end</Message>
 		</Event>
 		<Event>
 			<Id>166</Id>
-			<Message LcId="1033">Analog output 1 fault</Message>
+			<Message>Analog output 1 fault</Message>
 		</Event>
 		<Event>
 			<Id>167</Id>
-			<Message LcId="1033">Analog output 2 fault</Message>
+			<Message>Analog output 2 fault</Message>
 		</Event>
 		<Event>
 			<Id>168</Id>
-			<Message LcId="1033">Modbus: network time-out</Message>
+			<Message>Modbus: network time-out</Message>
 		</Event>
 		<Event>
 			<Id>169</Id>
-			<Message LcId="1033">Modbus: incorrect request by master</Message>
+			<Message>Modbus: incorrect request by master</Message>
 		</Event>
 		<Event>
 			<Id>170</Id>
-			<Message LcId="1033">Data not compl. saved before powerdown</Message>
+			<Message>Data not compl. saved before powerdown</Message>
 		</Event>
 		<Event>
 			<Id>172</Id>
-			<Message LcId="1033">Network - Configuration error</Message>
+			<Message>Network - Configuration error</Message>
 		</Event>
 		<Event>
 			<Id>173</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>174</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>175</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>176</Id>
-			<Message LcId="1033">Warning - Brake resistor overload</Message>
+			<Message>Warning - Brake resistor overload</Message>
 		</Event>
 		<Event>
 			<Id>177</Id>
-			<Message LcId="1033">Network - Watchdog time-out</Message>
+			<Message>Network - Watchdog time-out</Message>
 		</Event>
 		<Event>
 			<Id>178</Id>
-			<Message LcId="1033">Network - Disruption of cyclic data exchange</Message>
+			<Message>Network - Disruption of cyclic data exchange</Message>
 		</Event>
 		<Event>
 			<Id>179</Id>
-			<Message LcId="1033">Network - Initialization error</Message>
+			<Message>Network - Initialization error</Message>
 		</Event>
 		<Event>
 			<Id>181</Id>
-			<Message LcId="1033">Automatic start disabled</Message>
+			<Message>Automatic start disabled</Message>
 		</Event>
 		<Event>
 			<Id>182</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>183</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>184</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>185</Id>
-			<Message LcId="1033">Internal error</Message>
+			<Message>Internal error</Message>
 		</Event>
 		<Event>
 			<Id>186</Id>
-			<Message LcId="1033">Network - Invalid cyclic process data</Message>
+			<Message>Network - Invalid cyclic process data</Message>
 		</Event>
 		<Event>
 			<Id>187</Id>
-			<Message LcId="1033">Maximuml allowed troubles exceeded</Message>
+			<Message>Maximuml allowed troubles exceeded</Message>
 		</Event>
 		<Event>
 			<Id>188</Id>
-			<Message LcId="1033">DC-bus voltage to low for power up</Message>
+			<Message>DC-bus voltage to low for power up</Message>
 		</Event>
 		<Event>
 			<Id>190</Id>
-			<Message LcId="1033">Keypad removed</Message>
+			<Message>Keypad removed</Message>
 		</Event>
 		<Event>
 			<Id>191</Id>
-			<Message LcId="1033">User-defined fault (LECOM)</Message>
+			<Message>User-defined fault (LECOM)</Message>
 		</Event>
 		<Event>
 			<Id>192</Id>
-			<Message LcId="1033">Network: user fault 1</Message>
+			<Message>Network: user fault 1</Message>
 		</Event>
 		<Event>
 			<Id>193</Id>
-			<Message LcId="1033">Network: user fault 2</Message>
+			<Message>Network: user fault 2</Message>
 		</Event>
 		<Event>
 			<Id>194</Id>
-			<Message LcId="1033">NetWordIN1 configuration incorrect</Message>
+			<Message>NetWordIN1 configuration incorrect</Message>
 		</Event>
 		<Event>
 			<Id>195</Id>
-			<Message LcId="1033">Max. motor freq. reached</Message>
+			<Message>Max. motor freq. reached</Message>
 		</Event>
 		<Event>
 			<Id>196</Id>
-			<Message LcId="1033">Memory module: invalid OEM data</Message>
+			<Message>Memory module: invalid OEM data</Message>
 		</Event>
 		<Event>
 			<Id>197</Id>
-			<Message LcId="1033">EPM firmware version incomp.</Message>
+			<Message>EPM firmware version incomp.</Message>
 		</Event>
 		<Event>
 			<Id>198</Id>
-			<Message LcId="1033">EPM data: firmware type incompatible</Message>
+			<Message>EPM data: firmware type incompatible</Message>
 		</Event>
 		<Event>
 			<Id>199</Id>
-			<Message LcId="1033">EPM data: new firmware type detected</Message>
+			<Message>EPM data: new firmware type detected</Message>
 		</Event>
 		<Event>
 			<Id>201</Id>
-			<Message LcId="1033">Invalid para. changeover configuration</Message>
+			<Message>Invalid para. changeover configuration</Message>
 		</Event>
 		<Event>
 			<Id>202</Id>
-			<Message LcId="1033">EPM data: unknown parameter found</Message>
+			<Message>EPM data: unknown parameter found</Message>
 		</Event>
 		<Event>
 			<Id>203</Id>
-			<Message LcId="1033">OEM hardware incompatible</Message>
+			<Message>OEM hardware incompatible</Message>
 		</Event>
 		<Event>
 			<Id>204</Id>
-			<Message LcId="1033">Feedback system: speed limit</Message>
+			<Message>Feedback system: speed limit</Message>
 		</Event>
 		<Event>
 			<Id>205</Id>
-			<Message LcId="1033">EPM data: PU size incompatible</Message>
+			<Message>EPM data: PU size incompatible</Message>
 		</Event>
 		<Event>
 			<Id>206</Id>
-			<Message LcId="1033">EPM data: new PU size detected</Message>
+			<Message>EPM data: new PU size detected</Message>
 		</Event>
 		<Event>
 			<Id>207</Id>
-			<Message LcId="1033">Network - Time-out explicit message</Message>
+			<Message>Network - Time-out explicit message</Message>
 		</Event>
 		<Event>
 			<Id>208</Id>
-			<Message LcId="1033">Network - Overall communication time-out</Message>
+			<Message>Network - Overall communication time-out</Message>
 		</Event>
 		<Event>
 			<Id>209</Id>
-			<Message LcId="1033">Torque limit reached</Message>
+			<Message>Torque limit reached</Message>
 		</Event>
 		<Event>
 			<Id>210</Id>
-			<Message LcId="1033">Memory module: wrong type</Message>
+			<Message>Memory module: wrong type</Message>
 		</Event>
 		<Event>
 			<Id>211</Id>
-			<Message LcId="1033">Overload 24 V supply</Message>
+			<Message>Overload 24 V supply</Message>
 		</Event>
 		<Event>
 			<Id>212</Id>
-			<Message LcId="1033">Encoder open circuit</Message>
+			<Message>Encoder open circuit</Message>
 		</Event>
 		<Event>
 			<Id>213</Id>
-			<Message LcId="1033">Parameter loss</Message>
+			<Message>Parameter loss</Message>
 		</Event>
 		<Event>
 			<Id>214</Id>
-			<Message LcId="1033">Communication faulty</Message>
+			<Message>Communication faulty</Message>
 		</Event>
 		<Event>
 			<Id>215</Id>
-			<Message LcId="1033">Keypad full control</Message>
+			<Message>Keypad full control</Message>
 		</Event>
 		<Event>
 			<Id>216</Id>
-			<Message LcId="1033">Time-out (PAM)</Message>
+			<Message>Time-out (PAM)</Message>
 		</Event>
 		<Event>
 			<Id>217</Id>
-			<Message LcId="1033">SL-PSM stall detection</Message>
+			<Message>SL-PSM stall detection</Message>
 		</Event>
 		<Event>
 			<Id>218</Id>
-			<Message LcId="1033">HTL input fault</Message>
+			<Message>HTL input fault</Message>
 		</Event>
 		<Event>
 			<Id>220</Id>
-			<Message LcId="1033">Wrong password</Message>
+			<Message>Wrong password</Message>
 		</Event>
 		<Event>
 			<Id>221</Id>
-			<Message LcId="1033">Warning</Message>
+			<Message>Warning</Message>
 		</Event>
 		<Event>
 			<Id>222</Id>
-			<Message LcId="1033">Fatal Error</Message>
+			<Message>Fatal Error</Message>
 		</Event>
 		<Event>
 			<Id>223</Id>
-			<Message LcId="1033">Power unit fatal error</Message>
+			<Message>Power unit fatal error</Message>
 		</Event>
 		<Event>
 			<Id>224</Id>
-			<Message LcId="1033">Modbus TCP master time-out</Message>
+			<Message>Modbus TCP master time-out</Message>
 		</Event>
 		<Event>
 			<Id>225</Id>
-			<Message LcId="1033">Modbus TCP Keep Alive time-out</Message>
+			<Message>Modbus TCP Keep Alive time-out</Message>
 		</Event>
 		<Event>
 			<Id>226</Id>
-			<Message LcId="1033">UPS operation active</Message>
+			<Message>UPS operation active</Message>
 		</Event>
 		<Event>
 			<Id>230</Id>
-			<Message LcId="1033">FMF Error</Message>
+			<Message>FMF Error</Message>
 		</Event>
 		<Event>
 			<Id>231</Id>
-			<Message LcId="1033">BACnet time-out</Message>
+			<Message>BACnet time-out</Message>
 		</Event>
 		<Event>
 			<Id>232</Id>
-			<Message LcId="1033">POWERLINK: Loss of SoC</Message>
+			<Message>POWERLINK: Loss of SoC</Message>
 		</Event>
 		<Event>
 			<Id>233</Id>
-			<Message LcId="1033">POWERLINK: CRC error</Message>
+			<Message>POWERLINK: CRC error</Message>
 		</Event>
 		<Event>
 			<Id>234</Id>
-			<Message LcId="1033">Load loss detected</Message>
+			<Message>Load loss detected</Message>
 		</Event>
 		<Event>
 			<Id>235</Id>
-			<Message LcId="1033">Wrong ID tag</Message>
+			<Message>Wrong ID tag</Message>
 		</Event>
 		<Event>
 			<Id>236</Id>
-			<Message LcId="1033">Maximum current reached</Message>
+			<Message>Maximum current reached</Message>
 		</Event>
 		<Event>
 			<Id>237</Id>
-			<Message LcId="1033">Function not allowed in selected operating mode</Message>
+			<Message>Function not allowed in selected operating mode</Message>
 		</Event>
 		<Event>
 			<Id>238</Id>
-			<Message LcId="1033">Power stage communication Tx packet not ready in time</Message>
+			<Message>Power stage communication Tx packet not ready in time</Message>
 		</Event>
 		<Event>
 			<Id>265</Id>
-			<Message LcId="1033">Motor overload</Message>
+			<Message>Motor overload</Message>
 		</Event>
 		<Event>
 			<Id>1794</Id>
-			<Message LcId="1033">Manual mode activated</Message>
+			<Message>Manual mode activated</Message>
 		</Event>
 		<Event>
 			<Id>1795</Id>
-			<Message LcId="1033">Manual mode disabled</Message>
+			<Message>Manual mode disabled</Message>
 		</Event>
 		<Event>
 			<Id>1796</Id>
-			<Message LcId="1033">Manual mode time-out</Message>
+			<Message>Manual mode time-out</Message>
 		</Event>
 		<Event>
 			<Id>1804</Id>
-			<Message LcId="1033">Cascading overload</Message>
+			<Message>Cascading overload</Message>
 		</Event>
 		<Event>
 			<Id>1954</Id>
-			<Message LcId="1033">Changed device ID not yet active</Message>
+			<Message>Changed device ID not yet active</Message>
 		</Event>
 		<Event>
 			<Id>2363</Id>
-			<Message LcId="1033">Default settings not yet active</Message>
+			<Message>Default settings not yet active</Message>
 		</Event>
 		<Event>
 			<Id>2425</Id>
-			<Message LcId="1033">External temperature above threshold</Message>
+			<Message>External temperature above threshold</Message>
 		</Event>
 		<Event>
 			<Id>2426</Id>
-			<Message LcId="1033">External temperature below threshold</Message>
+			<Message>External temperature below threshold</Message>
 		</Event>
 		<Property>
 			<Name>DisplayTxtId</Name>
@@ -601,79 +747,87 @@
 		</Property>
 	</Source>
 	<Source>
-		<GUID>{501DC0BA-716D-44F0-80D8-16B43E05D726}</GUID>
-		<Name LcId="1033">Pelletizer Events</Name>
+		<GUID>{55301971-4835-4CF2-9256-3AC5C6FF5F62}</GUID>
+		<Name>Pelletizer Events</Name>
 		<Event>
 			<Id>1</Id>
-			<Message LcId="1033">The Start Button has been pressed!</Message>
+			<Message>The Start Button has been pressed!</Message>
 		</Event>
 		<Event>
 			<Id>2</Id>
-			<Message LcId="1033">The Stop Button has been pressed!</Message>
+			<Message>The Stop Button has been pressed!</Message>
 		</Event>
 		<Event>
 			<Id>3</Id>
-			<Message LcId="1033">Emergency Stop has been pressed!</Message>
+			<Message>Emergency Stop has been pressed!</Message>
 		</Event>
 		<Event>
 			<Id>4</Id>
-			<Message LcId="1033">Emergency Stop has been cleared!</Message>
+			<Message>Emergency Stop has been cleared!</Message>
 		</Event>
 		<Event>
 			<Id>5</Id>
-			<Message LcId="1033">The Feedroll VFD has faulted!</Message>
+			<Message>The Feedroll VFD has faulted!</Message>
 		</Event>
 		<Event>
 			<Id>6</Id>
-			<Message LcId="1033">The Rotor VFD has faulted!</Message>
+			<Message>The Rotor VFD has faulted!</Message>
 		</Event>
 		<Event>
 			<Id>11</Id>
-			<Message LcId="1033">A Fault Reset has been issued to the Feedroll Drive!</Message>
+			<Message>A Fault Reset has been issued to the Feedroll Drive!</Message>
 		</Event>
 		<Event>
 			<Id>12</Id>
-			<Message LcId="1033">A Fault Reset has been issued to the Rotor Drive!</Message>
+			<Message>A Fault Reset has been issued to the Rotor Drive!</Message>
 		</Event>
 		<Event>
 			<Id>13</Id>
-			<Message LcId="1033">Power has been disconnected from the machine! Powering Down!</Message>
+			<Message>Power has been disconnected from the machine! Powering Down!</Message>
 		</Event>
 		<Event>
 			<Id>14</Id>
-			<Message LcId="1033">Power has been applied to the machine! Powering On!</Message>
+			<Message>Power has been applied to the machine! Powering On!</Message>
+		</Event>
+		<Event>
+			<Id>15</Id>
+			<Message>Warning: Maximum Rotor Speed Exceeded! Pellet Length may be incorrectly cut!</Message>
+			<CauseRemedy Idx="1">
+				<Cause>The Rotor Speed is above its maximum limit</Cause>
+				<Remedy>Increase pellet length setting or lower machine speed.</Remedy>
+			</CauseRemedy>
 		</Event>
 	</Source>
 	<Source>
 		<GUID>{DDA0BFA8-727F-4590-BB18-4E53CD4D8876}</GUID>
-		<Name LcId="1033">Air Knife Events</Name>
+		<Name>Air Knife Events</Name>
 		<Event>
 			<Id>1</Id>
-			<Message LcId="1033">Check the particulate filter on the Air Knife! Low Vacuum Level Sensed!</Message>
+			<Message>Check the particulate filter on the Air Knife! Low Vacuum Level Sensed!</Message>
 		</Event>
 		<Event>
 			<Id>2</Id>
-			<Message LcId="1033">The particulate filter on the Air Knife has adequate vacuum levels.</Message>
+			<Message>The particulate filter on the Air Knife has adequate vacuum levels.</Message>
 		</Event>
 	</Source>
 	<Source>
 		<GUID>{29DA8A40-4C39-4596-9839-01C042FEB590}</GUID>
-		<Name LcId="1033">Water Bath Events</Name>
+		<Name>Water Bath Events</Name>
 		<Event>
 			<Id>1</Id>
-			<Message LcId="1033">The Waterbath has been set to Local Control Mode!</Message>
+			<Message>The Waterbath has been set to Local Control Mode!</Message>
 		</Event>
 		<Event>
 			<Id>2</Id>
-			<Message LcId="1033">The Waterbath has been set to Remote Control Mode!</Message>
+			<Message>The Waterbath has been set to Remote Control Mode!</Message>
 		</Event>
 		<Event>
 			<Id>3</Id>
-			<Message LcId="1033">The Water Bath Pump has been started!</Message>
+			<Message>The Water Bath Pump has been started!</Message>
 		</Event>
 		<Event>
 			<Id>4</Id>
-			<Message LcId="1033">The Water Bath Pump has been stopped!</Message>
+			<Message>The Water Bath Pump has been stopped!</Message>
 		</Event>
 	</Source>
 </TcEventSources>

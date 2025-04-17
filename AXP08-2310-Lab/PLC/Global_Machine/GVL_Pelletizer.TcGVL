@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4026.11">
   <GVL Name="GVL_Pelletizer" Id="{2c5f70f4-a9f8-4704-8562-03f72ee33d82}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 ///PERSISTENT VARIABLES: retain their value after an uncontrolled termination, a Reset cold or a new download of the PLC project. 
@@ -9,6 +9,8 @@ VAR_GLOBAL PERSISTENT
 	MyPelletizer : Pelletizer;
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 	
+
+	Pellet_Length_Incorrect : BOOL;
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

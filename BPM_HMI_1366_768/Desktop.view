@@ -37,7 +37,7 @@
     "minWidthUnit": "px",
     "classList": [],
     "accessRights": [],
-    "text": "AXP08-2310"
+    "text": "AXP08-2407"
   },
   {
     "itemType": "EventLine",
@@ -52,18 +52,6 @@
     "classList": [],
     "accessRights": [],
     "messageFormat": [
-      {
-        "name": "timeRaised"
-      },
-      {
-        "text": " | "
-      },
-      {
-        "name": "domain"
-      },
-      {
-        "text": " | "
-      },
       {
         "name": "text"
       }
@@ -83,6 +71,7 @@
         "value": "TcHmiAlarm"
       }
     ],
+    "textOverflow": "Ellipsis",
     "targetRegion": "%ctrl%Region_Center%/ctrl%",
     "targetContent": "Pages/EventLog.content"
   },
@@ -250,33 +239,33 @@
     "icon_p": "Imports/TabIcons/Resources-edited.svg"
   }
 ]
-</script></div><div id="Region_Center" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-left="%ctrl%Navigation_Left::Width%/ctrl%" data-tchmi-top="%f%%ctrl%Header_Top::Height%/ctrl%+ 64%/f%" data-tchmi-scrolling="Auto" data-tchmi-bottom="0" data-tchmi-right="0">
+</script></div><div id="Region_Center" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-left="%ctrl%Navigation_Left::Width%/ctrl%" data-tchmi-top="%f%%ctrl%Header_Top::Height%/ctrl%+ 55%/f%" data-tchmi-scrolling="Auto" data-tchmi-bottom="0" data-tchmi-right="0">
 
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json"></script></div><div id="Breadcrumb" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiBreadcrumb" data-tchmi-height="32" data-tchmi-left="%f%%ctrl%Region_Center::Left%/ctrl%+ 16%/f%" data-tchmi-top="%f%%ctrl%Header_Top::Height%/ctrl%+ 16%/f%" data-tchmi-right="%f%%ctrl%Region_Center::Right%/ctrl%+ 16%/f%" data-tchmi-navigationcontrol="%ctrl%Navigation_Left%/ctrl%">
 
-</div><script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[ 
-                {   
-                    "event": "%ctrl%Desktop::RenderedWidth%/ctrl%", 
-                    "actions": [ 
-                        {  
-                            "objectType": "Function",
-                            "active": true,  
-                            "fn":  "TcHmiResponsiveBehaviour", 
-                            "fnParams": [ 
-                                {  
-                                    "objectType": "Symbol",  
-                                    "valueType":  "tchmi:general#/definitions/String",  
-                                    "symbolExpression":  "%i%MediaQueryList%/i%" 
-                                }, 
-                                {  
-                                    "objectType": "Symbol", 
-                                    "valueType": "tchmi:general#/definitions/String", 
-                                    "symbolExpression": "%i%AffectedControls%/i%" 
-                                } 
-                            ], 
-                            "asyncWait": true 
-                        } 
-                    ] 
-                } 
-            ]</script>
+</div><script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
+  {
+    "event": "%ctx%owner::RenderedWidth%/ctx%",
+    "actions": [
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmiResponsiveBehaviour",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%i%MediaQueryList%/i%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%i%AffectedControls%/i%"
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]</script>
 </div>

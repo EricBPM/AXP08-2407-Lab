@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4026.11">
   <POU Name="SlaveStatus_FB" Id="{765bba84-5c53-4b07-9219-51c66998cc41}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION SlaveStatus_FB : STRING
 VAR_INPUT
@@ -38,6 +38,7 @@ CASE Masked_State OF
 ELSE
     // Handle invalid input or unknown status
     SlaveStatus_FB := 'Abnormal Status'; // Set an appropriate error value
+	Slave_Disconnected := TRUE;
 END_CASE;
 
 SlaveStatus_FB := CONCAT(SlaveStatus_FB, Bit8_message);	//Add both messages to display.
@@ -77,6 +78,7 @@ SlaveStatus_FB := CONCAT(SlaveStatus_FB, Bit8_message);	//Add both messages to d
       <LineId Id="66" Count="6" />
       <LineId Id="96" Count="0" />
       <LineId Id="86" Count="1" />
+      <LineId Id="148" Count="0" />
       <LineId Id="45" Count="0" />
       <LineId Id="47" Count="0" />
       <LineId Id="65" Count="0" />

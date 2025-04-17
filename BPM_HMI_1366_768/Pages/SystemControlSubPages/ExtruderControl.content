@@ -41,15 +41,14 @@
 <div id="HiddenPasswordBtn" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="66" data-tchmi-height-unit="px" data-tchmi-left="999" data-tchmi-left-unit="px" data-tchmi-text="89729
 Admin89726" data-tchmi-top="435" data-tchmi-top-unit="px" data-tchmi-width="117" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-toggle-state="Active" data-tchmi-opacity="0">
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
-    "event": "HiddenPasswordBtn.onStatePressed",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onStatePressed",
     "actions": [
       {
         "objectType": "WriteToSymbol",
         "active": true,
-        "symbolExpression": "%ctrl%HiddenPasswordBtn::Opacity%/ctrl%",
+        "symbolExpression": "%ctx%owner::Opacity%/ctx%",
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/Fraction",
@@ -60,12 +59,12 @@ Admin89726" data-tchmi-top="435" data-tchmi-top-unit="px" data-tchmi-width="117"
     ]
   },
   {
-    "event": "HiddenPasswordBtn.onStateReleased",
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onStateReleased",
     "actions": [
       {
         "objectType": "WriteToSymbol",
         "active": true,
-        "symbolExpression": "%ctrl%HiddenPasswordBtn::Opacity%/ctrl%",
+        "symbolExpression": "%ctx%owner::Opacity%/ctx%",
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/Fraction",
@@ -75,7 +74,6 @@ Admin89726" data-tchmi-top="435" data-tchmi-top-unit="px" data-tchmi-width="117"
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 </div>

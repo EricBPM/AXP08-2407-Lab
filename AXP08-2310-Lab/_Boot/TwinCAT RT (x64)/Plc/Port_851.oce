@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<TcEventSources Version="2">
+	<Source>
+		<GUID>{55301971-4835-4CF2-9256-3AC5C6FF5F62}</GUID>
+		<Name LcId="1033">Pelletizer Events</Name>
+		<Event>
+			<Id>1</Id>
+			<Message LcId="1033">The Start Button has been pressed!</Message>
+		</Event>
+		<Event>
+			<Id>2</Id>
+			<Message LcId="1033">The Stop Button has been pressed!</Message>
+		</Event>
+		<Event>
+			<Id>3</Id>
+			<Message LcId="1033">Emergency Stop has been pressed!</Message>
+		</Event>
+		<Event>
+			<Id>4</Id>
+			<Message LcId="1033">Emergency Stop has been cleared!</Message>
+		</Event>
+		<Event>
+			<Id>5</Id>
+			<Message LcId="1033">The Feedroll VFD has faulted!</Message>
+		</Event>
+		<Event>
+			<Id>6</Id>
+			<Message LcId="1033">The Rotor VFD has faulted!</Message>
+		</Event>
+		<Event>
+			<Id>11</Id>
+			<Message LcId="1033">A Fault Reset has been issued to the Feedroll Drive!</Message>
+		</Event>
+		<Event>
+			<Id>12</Id>
+			<Message LcId="1033">A Fault Reset has been issued to the Rotor Drive!</Message>
+		</Event>
+		<Event>
+			<Id>13</Id>
+			<Message LcId="1033">Power has been disconnected from the machine! Powering Down!</Message>
+		</Event>
+		<Event>
+			<Id>14</Id>
+			<Message LcId="1033">Power has been applied to the machine! Powering On!</Message>
+		</Event>
+		<Event>
+			<Id>15</Id>
+			<Message LcId="1033">Warning: Maximum Rotor Speed Exceeded! Pellet Length may be incorrectly cut!</Message>
+			<CauseRemedy Idx="1">
+				<Cause LcId="1033">The Rotor Speed is above its maximum limit</Cause>
+				<Remedy LcId="1033">Increase pellet length setting or lower machine speed.</Remedy>
+			</CauseRemedy>
+		</Event>
+	</Source>
+	<Source>
+		<GUID>{DDA0BFA8-727F-4590-BB18-4E53CD4D8876}</GUID>
+		<Name LcId="1033">Air Knife Events</Name>
+		<Event>
+			<Id>1</Id>
+			<Message LcId="1033">Check the particulate filter on the Air Knife! Low Vacuum Level Sensed!</Message>
+		</Event>
+		<Event>
+			<Id>2</Id>
+			<Message LcId="1033">The particulate filter on the Air Knife has adequate vacuum levels.</Message>
+		</Event>
+	</Source>
+	<Source>
+		<GUID>{29DA8A40-4C39-4596-9839-01C042FEB590}</GUID>
+		<Name LcId="1033">Water Bath Events</Name>
+		<Event>
+			<Id>1</Id>
+			<Message LcId="1033">The Waterbath has been set to Local Control Mode!</Message>
+		</Event>
+		<Event>
+			<Id>2</Id>
+			<Message LcId="1033">The Waterbath has been set to Remote Control Mode!</Message>
+		</Event>
+		<Event>
+			<Id>3</Id>
+			<Message LcId="1033">The Water Bath Pump has been started!</Message>
+		</Event>
+		<Event>
+			<Id>4</Id>
+			<Message LcId="1033">The Water Bath Pump has been stopped!</Message>
+		</Event>
+	</Source>
+</TcEventSources>
